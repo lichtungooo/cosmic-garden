@@ -1,0 +1,276 @@
+[
+  {
+    "id": "anastasia",
+    "name": "Anastasia und die Klingenden Zedern",
+    "untertitel": "Wladimir Megre · ab 1996",
+    "symbol": "🌲",
+    "kurz": "Eine Buchreihe mit einer Garten-Philosophie der Vielfalt, der Bewusstheit und des Familienlandsitzes.",
+    "meta": {},
+    "bloecke": [
+      {
+        "titel": "Wer und Was",
+        "text": "Wladimir Megre, ein russischer Unternehmer, veroeffentlichte ab 1996 zehn Baende ueber seine angebliche Begegnung mit **Anastasia**, einer in der sibirischen Taiga lebenden Frau. Sie soll ihm eine umfassende Lebens- und Garten-Philosophie weitergegeben haben. Die Buecher wurden in 26 Sprachen uebersetzt, weltweit ueber 30 Millionen Mal verkauft. Ob Anastasia real existiert oder eine literarische Figur ist — umstritten und letztlich offen."
+      },
+      {
+        "titel": "Garten-Lehren",
+        "text": "Konkrete Praktiken: **Samen-Ritus** — Saatgut 9 Minuten in den Haenden oder im Mund halten, dabei klar an die Person denken, fuer die es waechst. Idee: die Pflanze lernt den Menschen kennen und produziert genau die Stoffe, die er braucht. **Vielfalt statt Monokultur** — verwandt mit dem Gedanken der [Mischkultur](wissen:praxis:mischkultur). Gemuese, Kraeuter, Beeren, Baeume durcheinander, Wildpflanzen geduldet. **Barfuss arbeiten** — Hautkontakt mit der Erde. **Hecken statt Zaeune**. **Keine Pestizide, keine Kunstduenger**. **Gespraech mit Pflanzen** — Aufmerksamkeit als Wachstumsfaktor."
+      },
+      {
+        "titel": "Familienlandsitz",
+        "text": "Zentrales Konzept: **Rodovoe pomestje** — ein Hektar (10.000 m²) Land pro Familie, dauerhaft, steuerfrei, generationen-lang vererbbar. Selbstversorgung durch eigene Lebensmittel, Baeume die ueber Generationen wachsen, Wasserquelle, Wildnis. In Russland gibt es heute hunderte solcher Siedlungen. Auch in Deutschland, Frankreich und der Schweiz existieren kleinere Anastasia-inspirierte Projekte."
+      },
+      {
+        "titel": "Im Garten umsetzbar",
+        "text": "Auch ohne 1 Hektar: **Saat bewusst** ansetzen — die Hand auf das Samenpaeckchen legen, ruhig atmen, an den entstehenden Garten denken. **Pflanze grueßen** beim Vorbeigehen. **Hand statt Handschuh** wo moeglich. **Vielfalt** ueber Reinkultur stellen. **Wildkraeuter** zwischen Gemuese stehen lassen. **Mit Kindern** im Garten arbeiten — sie nehmen die Beziehung zum Wachsenden anders auf. Diese Praktiken funktionieren unabhaengig vom Glauben an Anastasias Existenz."
+      },
+      {
+        "titel": "Kritische Einordnung",
+        "text": "Die Buecher haben **religioes-esoterische** Schichten (Schoepfungsmythen, Reinkarnation, ausserirdische Wesen) — wer das nicht teilt, kann die praktischen Garten-Lehren herausziehen. **In Deutschland** ist die Anastasia-Bewegung seit ca. 2010 gewachsen, mit Siedlungs-Projekten und einer eigenen Verlagsstruktur. Einige Teile dieser Bewegung haben **problematische Naehe zur Reichsbuerger-Szene** — das ist dokumentiert und sollte bekannt sein. Die guten Garten-Ideen stehen davon unabhaengig."
+      }
+    ],
+    "verwandt": [
+      { "sektion": "traditionen", "eintrag": "permakultur" },
+      { "sektion": "traditionen", "eintrag": "sepp-holzer" },
+      { "sektion": "traditionen", "eintrag": "naturgarten" },
+      { "sektion": "bruecken", "eintrag": "mond-pflanzen" }
+    ]
+  },
+  {
+    "id": "biodynamik",
+    "name": "Demeter und biodynamische Landwirtschaft",
+    "untertitel": "Rudolf Steiner · 1924",
+    "symbol": "✶",
+    "kurz": "Die aelteste organisch-spirituelle Landwirtschaftsform Europas.",
+    "meta": {},
+    "bloecke": [
+      {
+        "titel": "Ursprung",
+        "text": "Im Juni 1924 hielt **Rudolf Steiner** auf Bitten von Landwirten den **Landwirtschaftlichen Kurs** in Koberwitz (Schlesien) — acht Vortraege ueber 'die geistigen Grundlagen zum Gedeihen der Landwirtschaft'. Daraus entstand die biodynamische Landwirtschaft. **Demeter** ist seit 1928 das Markenzeichen biodynamischer Hoefe. Heute ueber 5.000 Demeter-Hoefe weltweit. Vergleiche die [kosmischen Rhythmen](wissen:bruecken:kosmische-rhythmen) als Hintergrund."
+      },
+      {
+        "titel": "Praeparate und Praxis",
+        "text": "Acht Praeparate, mit Nummern bezeichnet. **Hornmist (500)**: Kuhmist in einem Kuhhorn ueber Winter im Boden vergraben — wird verduennt und auf den Boden gespritzt, regt Bodenleben an. **Hornkiesel (501)**: feiner Bergkristall im Sommerhorn, regt Lichtaufnahme der Pflanzen an. **Kompostpraeparate (502-507)**: Heilkraeuter (Schafgarbe, Kamille, Brennnessel, Eichenrinde, Loewenzahn, Baldrian) in spezifischen Tierhuellen vergraben — fuer den Kompost. Plus **[Aussaatkalender nach Sternzeichen](wissen:traditionen:maria-thun-tradition)** — [Maria Thuns Werk](wissen:bruecken:maria-thun) baut darauf auf."
+      },
+      {
+        "titel": "Heute",
+        "text": "Die wissenschaftliche Bewertung ist zwiespaeltig: viele biodynamische Hoefe produzieren nachweislich gesuendere Boeden, hoehere Mikroben-Vielfalt, qualitative Lebensmittel — aber die spezifische Wirkung der Praeparate ist nicht eindeutig belegbar. Trotzdem: die Demeter-Hoefe gehoeren zu den oekologisch staerksten der Welt. Die **anthroposophische Grundannahme** (geistige Wesen wirken in der Pflanze) ist eine Glaubensfrage."
+      },
+      {
+        "titel": "Im Kleingarten",
+        "text": "Auch ohne Praeparate uebertragbar: **Aussaat nach Sternzeichen** ([Maria Thun Aussaatkalender](wissen:traditionen:maria-thun-tradition)), **[Heilkraeuter-Komposttee](wissen:praxis:effektive-mikroorganismen)** (Schafgarbe, Kamille, Brennnessel zusammen), **Hornmist-Kompost** als Ersatz fuer reines Hornmist-Praeparat. Demeter-Saatgut bekommst du im gut sortierten Hofladen oder online — wertvoll fuer eigene Pflanzen."
+      }
+    ],
+    "verwandt": [
+      { "sektion": "bruecken", "eintrag": "maria-thun" },
+      { "sektion": "traditionen", "eintrag": "maria-thun-tradition" },
+      { "sektion": "bruecken", "eintrag": "kosmische-rhythmen" }
+    ]
+  },
+  {
+    "id": "permakultur",
+    "name": "Permakultur",
+    "untertitel": "Bill Mollison, David Holmgren · ab 1978",
+    "symbol": "♺",
+    "kurz": "Garten und Hof als langfristig stabiles System, das sich weitgehend selbst erhaelt.",
+    "meta": {},
+    "bloecke": [
+      {
+        "titel": "Ursprung",
+        "text": "**Permakultur** = Permanent Agriculture. 1978 in Australien von **Bill Mollison** und seinem Studenten **David Holmgren** entwickelt. Reaktion auf die industrielle Landwirtschaft und ihre Bodenzerstoerung. Inspiriert von Beobachtungen der Aborigines, japanischer Landwirtschaft (Masanobu Fukuoka), oekologischer Forschung."
+      },
+      {
+        "titel": "Die zwoelf Prinzipien",
+        "text": "1. Beobachten und Wechselwirken. 2. Energie sammeln und speichern. 3. Ertraege erzielen. 4. Selbstregulation. 5. Erneuerbare Ressourcen nutzen. 6. Keinen Abfall produzieren. 7. Vom Muster zum Detail entwerfen. 8. Verbindungen statt Trennungen. 9. Kleine, langsame Loesungen. 10. Vielfalt foerdern. 11. Rand-Effekte nutzen. 12. Kreativ auf Wandel reagieren. Drei ethische Grundsaetze: Sorge fuer die Erde, Sorge fuer die Menschen, Anteil teilen."
+      },
+      {
+        "titel": "Zonen-Planung",
+        "text": "Permakultur denkt in **Zonen** rund um das Wohnen: **Zone 0** Haus. **Zone 1** taegliche Kraeuter, Salate (5 m). **Zone 2** Gemuesegarten, Hochbeete (30 m). **Zone 3** Obstbaeume, Beerenstraeucher. **Zone 4** Wald, Holzwirtschaft. **Zone 5** Wildnis, unberuehrt. Je weiter weg, desto seltener besucht — und entsprechend pflegearmer geplant."
+      },
+      {
+        "titel": "Im Kleingarten",
+        "text": "Auch im 100-m²-Garten umsetzbar: **Hochbeete nah am Haus** fuer taegliche Pflanzen. **Mehrjaehrige Pflanzen** (Beeren, Kraeuter) statt jedes Jahr neu zu saeen. **Begleitpflanzen** ([Mischkultur](wissen:praxis:mischkultur)) — [Tomate](pflanze:tomate) und [Basilikum](pflanze:basilikum), [Moehre](pflanze:moehre) und [Zwiebel](pflanze:zwiebel). **[Mulchen](wissen:praxis:mulchen)** statt Hacken. **Wasser sammeln** (Regentonne). **Wildnisecke** fuer Tiere. Wissenschaftlich gut belegt, ohne esoterische Schicht."
+      }
+    ],
+    "verwandt": [
+      { "sektion": "traditionen", "eintrag": "sepp-holzer" },
+      { "sektion": "traditionen", "eintrag": "huegelkultur" },
+      { "sektion": "traditionen", "eintrag": "forest-garden" },
+      { "sektion": "traditionen", "eintrag": "naturgarten" }
+    ]
+  },
+  {
+    "id": "sepp-holzer",
+    "name": "Sepp Holzer und der Krameterhof",
+    "untertitel": "Agrar-Rebell aus dem Lungau · seit 1962",
+    "symbol": "🏔",
+    "kurz": "Der Mann, der auf 1.500 m Hoehe Wein, Pfirsich und Kirsche zieht. Sieben Techniken, die im Kleingarten funktionieren.",
+    "meta": {},
+    "bloecke": [
+      {
+        "titel": "Wer er ist",
+        "text": "**Josef 'Sepp' Holzer** (geboren 1942) uebernahm 1962 mit 19 Jahren den elterlichen Krameterhof im Lungau (Salzburger Land), 45 Hektar zwischen 1.100 und 1.500 m Hoehe. Statt nach den Vorschriften des Forst- und Landwirtschaftsamts zu arbeiten, entwickelte er ueber Jahrzehnte eine eigene Praxis. Heute waechst auf dem Krameterhof, was eigentlich nicht moeglich sein duerfte: Wein, Pfirsich, Kirsche, Kiwi, sogar Zitronen — auf Almenhoehe."
+      },
+      {
+        "titel": "1. Wasserlandschaft",
+        "text": "**Wasser als Waerme-Speicher und Lichtreflektor**. Sepp Holzer hat ueber 70 kleine Teiche und Wasserlaeufe angelegt. Sie speichern tags die Waerme der Sonne und geben sie nachts ab — das schuetzt empfindliche Pflanzen vor Frost. Das Wasser reflektiert Licht ins Beet, mehr Photosynthese. Fische (Forelle, Karpfen) wachsen darin. Wasserpflanzen filtern. Im Kleingarten: schon **eine Regentonne, ein kleiner Teich (1-2 m²)** schaffen Mikroklima."
+      },
+      {
+        "titel": "2. Huegelbeete",
+        "text": "**Holz unten, Erde oben — der [Huegel](wissen:traditionen:huegelkultur) naehrt sich selbst.** Aufbau: morsche Baumstaemme zuunterst (60 cm hoch), darauf Reisig, Laub, Grasschnitt, Kompost, oben 30 cm Erde. Das Holz zersetzt sich ueber 5-7 Jahre, gibt Naehrstoffe und Waerme ab. **Sued- und Nordseite haben verschiedene Mikroklimas** — auf der Sued waechst [Tomate](pflanze:tomate), auf der Nord [Salat](pflanze:kopfsalat). Kein Buecken. Mehr Anbauflaeche durch die Schraegen. Im Kleingarten: 1,2 m breit, 60 cm hoch, beliebig lang."
+      },
+      {
+        "titel": "3. Krater-Garten",
+        "text": "**Vertiefte Beete als Frost- und Wind-Schutz**. Eine Senke in den Boden gegraben (1-2 m tief, beliebig breit), Steine am Rand. Wirkt wie ein natuerlicher Treibhaus-Effekt: Wind weht drueber, kalte Luft sammelt sich nicht, die Steine speichern Waerme. Holzer baut so in Berghoehe sogar Wein an. Im Stadtgarten: eine kleine Mulden-Anlage (50 cm tief, 3 m breit) mit Steinmauer Sued-orientiert schafft einen **Mediterranen Hot Spot** fuer Feige, Rosmarin, Wein."
+      },
+      {
+        "titel": "4. Steine als Waerme-Speicher",
+        "text": "**Steine sind Waerme-Akkus**. Tags speichern sie Sonne, nachts geben sie sie ab. Eine **Trockenmauer** an der Sueseite eines Beetes verlaengert die Wachstumsperiode um 2-3 Wochen. Steine sind auch Habitat fuer Eidechsen, die wiederum Schnecken und Insekten fressen. Im Kleingarten: eine **Steinmauer von 50 cm Hoehe entlang der Sueseite** wirkt direkt. Auch ein Steinhaufen in der Ecke hilft."
+      },
+      {
+        "titel": "5. Saat-Ballen (Saat-Bomben)",
+        "text": "**Wildaussaat ueber Vielfalt**. Holzer mischt Dutzende Saatgut-Sorten mit feuchtem Lehm und Kompost zu kleinen Baellen — Erbse, Linse, Kohl, Radieschen, Salat, Wildblumen alles zusammen. Diese Saat-Ballen werden einfach aufs Beet geworfen, Regen tut den Rest. **Selektion durch die Natur**: was am Standort passt, waechst auf. Was nicht passt, verschwindet. Ueber Jahre entsteht ein **standortgerechter Bestand**. Im Kleingarten: eine schoene Praxis fuer Wildecken und Bluehflaechen."
+      },
+      {
+        "titel": "6. Tiere als Mitarbeiter",
+        "text": "**Schweine als Pflug**: Holzer laesst seine Schweine ueber die Beete laufen, sie wuehlen den Boden mit der Schnauze, fressen Wurzeln und Schaedlinge. Im Stadtgarten geht das nicht — aber **Huehner** koennen das in kleinerem Massstab. Auch **Insekten und Voegel** sind Mitarbeiter: Wildbienen, Marienkaefer, Igel, Eidechsen. Wer ein Mini-Biotop schafft (Steinhaufen, Wasser, Wildecke), bekommt das Tierreich als Helfer geschenkt."
+      },
+      {
+        "titel": "7. Pilze und Bodenleben",
+        "text": "**Der Boden ist ein lebendiges Wesen**. Holzer beimpft Holz und Stroh mit **Pilzbrut** (Austernpilz, Shiitake). Auf morschen Staemmen wachsen dann mehrere Jahre lang Speisepilze — eine Ernte, die niemand kommen sieht. **[Mykorrhiza-Pilze](wissen:praxis:mykorrhiza)** im Boden verbinden Pflanzenwurzeln untereinander und transportieren Naehrstoffe — sie sind das 'Internet des Waldes'. Im Garten: nicht zu tief umgraben (zerstoert die Pilz-Netze), [Mulch](wissen:praxis:mulchen) statt nackter Boden."
+      },
+      {
+        "titel": "Buecher und Vermaechtnis",
+        "text": "Holzers Hauptbuecher: **Sepp Holzers Permakultur** (2004, Grundwerk), **Wo Schmetterlinge tanzen** (2008, biographisch), **Aufbaeumen** (2014, Vision). Sein Sohn Josef fuehrt den Krameterhof heute fort. **Fuehrungen sind moeglich** (krameterhof.at). Sepp wurde oft mit den Behoerden konfrontiert wegen seiner ungenehmigten Erdbewegungen — er gilt als 'Agrar-Rebell'. Seine Botschaft: **vertraue der Natur, beobachte, experimentiere — nicht nach Regeln, sondern nach Wirkung**."
+      }
+    ],
+    "verwandt": [
+      { "sektion": "traditionen", "eintrag": "permakultur" },
+      { "sektion": "traditionen", "eintrag": "huegelkultur" },
+      { "sektion": "traditionen", "eintrag": "forest-garden" },
+      { "sektion": "traditionen", "eintrag": "anastasia" }
+    ]
+  },
+  {
+    "id": "huegelkultur",
+    "name": "Huegelkultur",
+    "untertitel": "Eine Sepp-Holzer-Technik im Detail",
+    "symbol": "⛰",
+    "kurz": "Hochbeete aus Holz, Erde und Reisig — selbstwaermend, selbstduengend, 5-7 Jahre.",
+    "meta": {},
+    "bloecke": [
+      {
+        "titel": "Aufbau",
+        "text": "Ein klassisches Huegelbeet ist **1,2-1,5 m breit, 60-100 cm hoch, beliebig lang**. Schichten von unten nach oben: 1. **Morsche Baumstaemme** (Buche, Eiche, Birke — kein Nadelholz, kein Walnuss). 2. **Reisig und kleinerer Astschnitt**. 3. **Laub und Grasschnitt**. 4. **Halbreifer Kompost**. 5. **30 cm fertige Erde** als Aussaat-Schicht. Insgesamt 60-80 cm Material."
+      },
+      {
+        "titel": "Wie es wirkt",
+        "text": "Das Holz darunter zersetzt sich ueber 5-7 Jahre. Bakterien und Pilze wandeln es in Humus um, geben **Stickstoff, Phosphor, Kalium** ab — der Huegel duengt sich selbst. Die **Zersetzungswaerme** erwaermt den Boden um 2-3 Grad — gute Keimung, frueher Saat moeglich. Die schraege Seitenflaeche vergroessert die **Anbauflaeche um 30%**. Sued- und Nordseite haben verschiedene Mikroklimas — Vielfalt automatisch."
+      },
+      {
+        "titel": "Pflanz-Rhythmus",
+        "text": "**Erstes Jahr** (sehr stickstoffreich): Starkzehrer — [Kuerbis](pflanze:kuerbis), [Zucchini](pflanze:zucchini), Kohl, [Tomate](pflanze:tomate). **Zweites/drittes Jahr**: Mittelzehrer — Salat, Bohnen, Erbsen, [Moehre](pflanze:moehre). **Spaetere Jahre**: Schwachzehrer und Kraeuter — [Petersilie](pflanze:petersilie), Erdbeere, [Thymian](pflanze:thymian). Nach 7 Jahren sinkt der Huegel deutlich ab — entweder Reste in den Boden einarbeiten und **neuen Huegel anlegen**, oder Erde auffuellen und weitermachen."
+      },
+      {
+        "titel": "Im Kleingarten",
+        "text": "**Mini-Huegelbeet auf 4-6 m²** funktioniert. Material: Holzschnitt aus dem Stadtgarten (oft gratis), Laub aus dem Park, Grasschnitt vom Rasen, Kompost. Lage: **Sued-Nord-Ausrichtung** der Laengsseite — beide Seiten bekommen Sonne, jede etwas anders. **Vorsicht bei Walnussholz** (Saeureproblem) und **Nadelholz** (versauert den Boden zu stark). Beste Holzart: **Buche, Eiche, Birke, Esche**."
+      }
+    ],
+    "verwandt": [
+      { "sektion": "traditionen", "eintrag": "sepp-holzer" },
+      { "sektion": "traditionen", "eintrag": "permakultur" }
+    ]
+  },
+  {
+    "id": "forest-garden",
+    "name": "Forest Garden",
+    "untertitel": "Robert Hart · England, 1980er",
+    "symbol": "🌳",
+    "kurz": "Garten in sieben Schichten — wie ein junger Wald mit Essensschwerpunkt.",
+    "meta": {},
+    "bloecke": [
+      {
+        "titel": "Robert Hart",
+        "text": "**Robert Hart** (1913-2000) lebte in Shropshire, England, und entwickelte auf 500 m² einen **Waldgarten**, der ihn ueber Jahre fast vollstaendig versorgte. Sein Buch *Forest Gardening* (1991) wurde Grundlage fuer die englische Permakultur-Bewegung. Idee: ein Garten, der wie ein natuerlicher junger Wald aufgebaut ist — vielfaeltig, mehrstoeckig, mit minimalem Pflegeaufwand."
+      },
+      {
+        "titel": "Die sieben Schichten",
+        "text": "1. **Baumkrone** (8-15 m): grosse Obstbaeume, Walnuss. 2. **Niedrigere Baumkrone** (3-8 m): kleine Apfel, Pflaume, Quitte. 3. **Strauch** (1-3 m): Beerenstraeucher, Haselnuss, Holunder. 4. **Kraeuter** (Bodenhoehe): mehrjaehrige Gewuerze, Heilpflanzen. 5. **Bodendecker**: Erdbeeren, Walderdbeeren. 6. **Wurzel-Schicht**: Knoblauch, Topinambur, Kartoffel. 7. **Ranker**: Kiwi, Wein, Hopfen. Jede Schicht traegt zur Ernte bei. Insgesamt ein **dichter, lebensreicher Raum**."
+      },
+      {
+        "titel": "Vorteile",
+        "text": "**Wenig Pflege**: nach 3-4 Aufbau-Jahren weitgehend selbsterhaltend. **Hohe Vielfalt**: 60-100 verschiedene Pflanzen auf 200 m² moeglich. **Resilienz**: wenn eine Art schwaechelt, kompensieren andere. **Klimaschutz**: Baeume binden CO₂, Boden bleibt feucht. **Wenig Wasserbedarf**: Mulch + Bodendecker halten Feuchtigkeit. **Lange Ernte-Saison**: von Mai (Erdbeeren) bis Oktober (Aepfel, Nuesse)."
+      },
+      {
+        "titel": "Im Kleingarten",
+        "text": "Auch auf 50-100 m² moeglich: 1-2 mittelgrosse Obstbaeume als Geruest, dann Beerenstraeucher unter und neben den Baeumen, Kraeuter und Bodendecker dazwischen. Schwierig in Kleingaerten mit strenger Vereinsordnung — manche verlangen Reihen und freie Wege. Ueberzeugungsarbeit kann hilfreich sein. Bilder vom Krameterhof oder Harts Garten zeigen, dass es funktioniert."
+      }
+    ],
+    "verwandt": [
+      { "sektion": "traditionen", "eintrag": "permakultur" },
+      { "sektion": "traditionen", "eintrag": "sepp-holzer" },
+      { "sektion": "traditionen", "eintrag": "anastasia" }
+    ]
+  },
+  {
+    "id": "naturgarten",
+    "name": "Naturgarten",
+    "untertitel": "Reinhard Witt und die deutsche Bewegung",
+    "symbol": "🦋",
+    "kurz": "Garten fuer heimische Pflanzen, Wildbienen und Vielfalt der Insekten.",
+    "meta": {},
+    "bloecke": [
+      {
+        "titel": "Idee",
+        "text": "Die deutsche Naturgarten-Bewegung (Verein **Naturgarten e.V.**, gegruendet 1990) setzt auf **heimische Pflanzen**. Argument: Heimische Bluetenpflanzen werden von 10-20 Insektenarten genutzt, exotische Zier-Pflanzen von 1-3. Wer die Insekten retten will, pflanzt heimisch. **Reinhard Witt** ist der bekannteste Vordenker der Bewegung in Deutschland."
+      },
+      {
+        "titel": "Praxis",
+        "text": "**Heimische Wildpflanzen**: Wiesenblume statt Tagetes, Wildrosen statt Edelrosen, Heidelbeere statt Forsythie. **Wildblumenwiese** statt Rasen — einmal pro Jahr maehen, Mahd abtragen. **Totholz, Trockenmauern, Sandflaechen** als Insektenhabitate. **Wildbienenhotel** (richtig gebaut, nicht der baumarkt-Schwurbel). **Wasserstelle** mit Pflanzen. **Keine Pestizide, kein Torf, kein Kunstduenger**."
+      },
+      {
+        "titel": "Wissenschaftlich solide",
+        "text": "Die Naturgarten-Praxis ist **wissenschaftlich gut belegt**. Studien zeigen klar: heimische Pflanzen schaffen 10-30 mal mehr Insekten-Vielfalt als exotische. Insekten sind die Grundlage fuer Voegel, Igel, Kroeten. Ein Naturgarten ist also auch ein **Beitrag zum lokalen Artenschutz**. In Deutschland sind 50% aller Wildbienen-Arten gefaehrdet — der Naturgarten wirkt direkt."
+      },
+      {
+        "titel": "Im Kleingarten",
+        "text": "Auch auf 20 m² wirksam: eine **Wildecke** stehen lassen mit hohem Gras, Brennnessel (fuer Schmetterlingsraupen), Sand-Stein-Haufen. **Heimische Kraeuter** wie Thymian, Salbei, Lavendel (mediterran, aber gut fuer Bienen), echter Storchschnabel, Schafgarbe. **Bluehzeiten staffeln**: ab Maerz (Krokus, Schluesselblume) bis November (Aster, Sonnenhut). Eine Bluete pro Woche im Garten — Mindestziel."
+      }
+    ],
+    "verwandt": [
+      { "sektion": "traditionen", "eintrag": "permakultur" },
+      { "sektion": "traditionen", "eintrag": "forest-garden" }
+    ]
+  },
+  {
+    "id": "maria-thun-tradition",
+    "name": "Maria Thuns Aussaatkalender",
+    "untertitel": "Eine kleine deutsche Garten-Tradition",
+    "symbol": "☽",
+    "kurz": "Vier Jahrzehnte Mond- und Sternzeichen-Beobachtung. Grundlage unseres Tools.",
+    "meta": {},
+    "bloecke": [
+      {
+        "titel": "Eine Tradition unter mehreren",
+        "text": "[Maria Thuns](wissen:bruecken:maria-thun) Aussaatkalender (ab 1963 jaehrlich) ist die in Deutschland verbreitetste Form der mondrhythmischen Landwirtschaft. Sie steht in einer Linie mit **Rudolf Steiners [biodynamischer Bewegung](wissen:traditionen:biodynamik)**, aber Maria Thun hat das Sternzeichen-System konkret und praktisch ausgearbeitet. Heute fuehren ihr Sohn Matthias Thun und Enkel Friedrich den Kalender fort."
+      },
+      {
+        "titel": "Was sie unterscheidet",
+        "text": "**Vier Tagestypen** (Wurzel/Blatt/Bluete/Frucht) nach **siderischen Sternzeichen** (am echten Sternbild). Plus **[aufsteigender/absteigender Mond](wissen:mond:aufsteigend-absteigend)** und **[Mondknoten](wissen:mond:mondknoten)**-Sperrtage. [Anastasias](wissen:traditionen:anastasia) Garten-Ideen sind philosophisch-erzaehlerisch — Maria Thuns System ist quantitativ und ueberpruefbar."
+      },
+      {
+        "titel": "Tiefer in Bruecken-Sektion",
+        "text": "In der **Bruecken-Sektion** dieses Werks gibt es einen ausfuehrlichen Eintrag zu Maria Thun. Ihr System ist die Grundlage unserer Garten-Software: jeder Tag in unserem Kalender ist nach ihrer Methodik berechnet."
+      },
+      {
+        "titel": "Wie sie sich zur Anastasia-Tradition verhaelt",
+        "text": "Beide Traditionen achten den Rhythmus des Kosmos. Maria Thun arbeitet **astronomisch praezise**, Anastasia **bildhaft-spirituell**. Beides hat Wert. Wer sich entscheidet, soll wissen: Maria Thun ist ueberpruefbarer, Anastasia ist offener fuer eigene Interpretation. Beide funktionieren im praktischen Gartenalltag — ohne dass man die jeweilige Weltanschauung ganz uebernehmen muss."
+      }
+    ],
+    "verwandt": [
+      { "sektion": "bruecken", "eintrag": "maria-thun" },
+      { "sektion": "traditionen", "eintrag": "biodynamik" },
+      { "sektion": "traditionen", "eintrag": "anastasia" },
+      { "sektion": "mond", "eintrag": "siderischer-monat" }
+    ]
+  }
+]

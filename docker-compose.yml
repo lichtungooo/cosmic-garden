@@ -1,0 +1,14 @@
+services:
+  web:
+    image: ghcr.io/lichtungooo/cosmic-garden:latest
+    container_name: cosmic-garden
+    restart: unless-stopped
+    network_mode: bridge
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.cosmicgarden.rule=Host(`mein-kosmischer-garten.de`) || Host(`www.mein-kosmischer-garten.de`)"
+      - "traefik.http.routers.cosmicgarden.entrypoints=websecure"
+      - "traefik.http.routers.cosmicgarden.tls.certresolver=letsencrypt"
+      - "traefik.http.services.cosmicgarden.loadbalancer.server.port=80"
+      # Watchtower-Polling fuer Auto-Update bei neuem Image
+      - "com.centurylinklabs.watchtower.enable=true"

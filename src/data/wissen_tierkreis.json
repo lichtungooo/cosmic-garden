@@ -1,0 +1,410 @@
+[
+  {
+    "id": "widder",
+    "name": "Widder",
+    "untertitel": "Mesha · Aries",
+    "symbol": "♈",
+    "kurz": "Anfang, Initiative, Sturm und Drang. Die rohe Aufbruchskraft des Fruehjahrs.",
+    "meta": {
+      "element": "Feuer",
+      "thunTyp": "frucht",
+      "sonneSidVon": "14. April",
+      "sonneSidBis": "14. Mai",
+      "sonneTropVon": "21. Maerz",
+      "sonneTropBis": "19. April"
+    },
+    "bloecke": [
+      {
+        "titel": "Astronomie",
+        "text": "Der Widder ist ein unauffaelliges Sternbild zwischen [Fischen](wissen:tierkreis:fische) und [Stier](wissen:tierkreis:stier). Seine Hauptsterne Hamal (Alpha Arietis), Sheratan (Beta) und Mesarthim (Gamma) bilden ein dreieckiges Haupt. Wegen der [Praezession des Fruehlingspunktes](wissen:sonne:praezession) (~25.770 Jahre Umlauf) hat sich die Sonne im Lauf von 2.000 Jahren aus dem tropischen Widder herausverschoben — heute steht sie zur Fruehlings-Tagundnachtgleiche tatsaechlich im Sternbild Fische. Im siderischen System tritt sie erst Mitte April in den echten Widder ein."
+      },
+      {
+        "titel": "Mythologie",
+        "text": "In der griechischen Sage der goldene Widder, der die Geschwister Phrixos und Helle vor dem Tod rettete. Sein Vlies wurde zum Ziel der Argonautenfahrt. Im vedischen Jyotish steht Mesha fuer das Aufflammen, das Stuermische des Anfangs. Bei den Mayas gibt es kein direktes Pendant — sie ordneten den Fruehling am Maissaat-Zyklus aus."
+      },
+      {
+        "titel": "Bedeutung",
+        "text": "Ich-Werdung. Reine, ungezaehmte Energie. Das erste Aufstossen der Saat durch die Erdoberflaeche. Im siderischen System faellt der Widder in unsere Aprilmitte bis Maimitte — die Zeit des explodierenden Lebens nach der Eisheiligen-Schwelle. Der Mond im Widder schenkt Fruchttagen besondere Kraft."
+      },
+      {
+        "titel": "Im Garten",
+        "text": "Fruchttage. Der Boden ist nun durchgewaermt, Wachstum stoesst nach oben. Fruchtpflanzen aussaeen oder auspflanzen — [Paprika](pflanze:paprika), [Chili](pflanze:chili), fruehe [Tomaten](pflanze:tomate). [Veredelungen](arbeit:veredeln-pfropfen) an Obstbaeumen sind in dieser Zeit empfaenglich. Bei zunehmendem Mond besonders kraftvoll fuer Saaten, die rasch wachsen sollen."
+      }
+    ],
+    "pflanzen": ["Paprika", "Chili", "fruehe Tomaten", "Sonnenblume", "Aubergine"]
+  },
+  {
+    "id": "stier",
+    "name": "Stier",
+    "untertitel": "Vrishabha · Taurus",
+    "symbol": "♉",
+    "kurz": "Stabilitaet, Verwurzelung, Sinnenfreude. Die Erde traegt und naehrt.",
+    "meta": {
+      "element": "Erde",
+      "thunTyp": "wurzel",
+      "sonneSidVon": "14. Mai",
+      "sonneSidBis": "14. Juni",
+      "sonneTropVon": "20. April",
+      "sonneTropBis": "20. Mai"
+    },
+    "bloecke": [
+      {
+        "titel": "Astronomie",
+        "text": "Eines der aeltesten erkannten Sternbilder. Auffaellig durch den roten Riesen Aldebaran (Alpha Tauri, das 'rote Auge des Stiers') und die **[Plejaden](wissen:maya:plejaden-orion)** ('Siebengestirn'). Die V-foermigen Hyaden bilden den Stirnring. Die Plejaden waren bei vielen Voelkern Zeitgeber — bei den [Mayas](wissen:maya:mayazivilisation) hiess das Sternbild Tzab. Wenn die Plejaden um Mitternacht im Zenit standen, war das [52-Jahres-Neujahr](wissen:maya:calendar-round)."
+      },
+      {
+        "titel": "Mythologie",
+        "text": "Der weisse Stier des Zeus, der Europa entfuehrte. Bei den vedischen Sehern Vrishabha als der pflueg-ende Stier, Traeger der Erde. Im aegyptischen Apis-Kult der Heilige Stier. Bei den Mayas waren die Plejaden zentral — sie galten als das Geraet, an dem die Welt erschaffen wurde, und ihre Stellung im Zenit beendete jede 52-Jahres-Aera."
+      },
+      {
+        "titel": "Bedeutung",
+        "text": "Materie wird greifbar. Die Erde naehrt. Stabilitaet, Bewahrung, sinnliche Genuessen. Im siderischen System ist die Stier-Zeit der eigentliche Mai-Hoehepunkt — Wachstum mit Tiefe, kein lautes Aufflammen mehr, sondern stetiges Wurzeln. Mond im Stier schenkt Wurzelpflanzen ihre Kraft."
+      },
+      {
+        "titel": "Im Garten",
+        "text": "Wurzeltage. Pflanzzeit fuer Wurzelgemuese. [Beete vorbereiten](arbeit:beete-vorbereiten), Bodenarbeiten, [Kompost ausbringen](arbeit:kompost-umsetzen). Kartoffeln stecken, [Moehren](pflanze:moehre) saeen. Die Erde ist aufnahmebereit, das Saatgut findet Halt. Auch eine gute Zeit fuer Baumpflanzungen und [Veredelungen](arbeit:veredeln-pfropfen), die anwachsen sollen."
+      }
+    ],
+    "pflanzen": ["Moehren", "Rote Bete", "Kartoffeln", "Sellerie", "Rettich", "Pastinake", "Zwiebel"]
+  },
+  {
+    "id": "zwillinge",
+    "name": "Zwillinge",
+    "untertitel": "Mithuna · Gemini",
+    "symbol": "♊",
+    "kurz": "Begegnung, Austausch, Beweglichkeit. Geist und Wort.",
+    "meta": {
+      "element": "Luft",
+      "thunTyp": "bluete",
+      "sonneSidVon": "14. Juni",
+      "sonneSidBis": "16. Juli",
+      "sonneTropVon": "21. Mai",
+      "sonneTropBis": "21. Juni"
+    },
+    "bloecke": [
+      {
+        "titel": "Astronomie",
+        "text": "Die zwei Hauptsterne Castor (Alpha Geminorum) und Pollux (Beta) bilden das markante Zwillingspaar am Winterhimmel — auf der Nordhalbkugel sichtbar von Oktober bis April. Das Sternbild liegt am oestlichen Rand der Milchstrasse, nahe dem Krebs-Sternbild."
+      },
+      {
+        "titel": "Mythologie",
+        "text": "Castor und Pollux, die Dioskuren — Halbbrueder, einer sterblich und einer unsterblich. Bei den vedischen Sehern Mithuna als das goettliche Paar der Vereinigung. Bei den [Mayas](wissen:maya:mayazivilisation) waren die Hero Twins **Hunahpu und Xbalanque** die zentrale Mythos-Figur des [Popol Vuh](wissen:maya:popol-vuh) — Schoepfer der jetzigen Welt, die in der Unterwelt gegen den Tod kaempften."
+      },
+      {
+        "titel": "Bedeutung",
+        "text": "Begegnung, Austausch, Beweglichkeit. Geist und Wort. Verbindung der Gegensaetze. Im siderischen Hochsommer-Beginn — die Tage werden am laengsten, alles atmet auf. Mond in den Zwillingen schenkt Bluetenpflanzen ihre Form. Der menschliche Atem als kosmisches Werkzeug."
+      },
+      {
+        "titel": "Im Garten",
+        "text": "Bluetentage. [Heilkraeuter zur Bluete sammeln](arbeit:kraeuter-ernten), [Brokkoli](pflanze:brokkoli) und [Blumenkohl](pflanze:blumenkohl) pflanzen, Schnittblumen pflegen. Bienen besuchen die offenen Blueten. Blumen-Aussaat besonders kraftvoll. Auch gute Zeit fuer das [Auslesen von Saatgut](arbeit:saatgut-ernten) aus Bluetenpflanzen."
+      }
+    ],
+    "pflanzen": ["Brokkoli", "Blumenkohl", "Sonnenblume", "Lavendel", "Ringelblume", "Heilkraeuter"]
+  },
+  {
+    "id": "krebs",
+    "name": "Krebs",
+    "untertitel": "Karkata · Cancer",
+    "symbol": "♋",
+    "kurz": "Gefuehl, Schutz, Innerlichkeit. Wasser, das naehrt. Heimat.",
+    "meta": {
+      "element": "Wasser",
+      "thunTyp": "blatt",
+      "sonneSidVon": "16. Juli",
+      "sonneSidBis": "16. August",
+      "sonneTropVon": "22. Juni",
+      "sonneTropBis": "22. Juli"
+    },
+    "bloecke": [
+      {
+        "titel": "Astronomie",
+        "text": "Ein eher unauffaelliges Sternbild zwischen Zwillingen und Loewen. Beherbergt den offenen Sternhaufen Praesepe ('Krippe'), eines der naechsten Sterncluster zur Erde. Im siderischen System tritt die Sonne erst Mitte Juli in den echten Krebs ein."
+      },
+      {
+        "titel": "Mythologie",
+        "text": "Der Krebs der Hydra, den Hera gegen Herakles schickte. Karkata im vedischen System als Wesen, das immer rueckwaerts geht — die Erinnerung traegt. Bei den [Mayas](wissen:maya:mayazivilisation) war die **Schildkroete** (Aak) Traegerin der Welt — auf ihrem Rueckenpanzer leben die [drei Sterne des Orion](wissen:maya:plejaden-orion): die 'drei Steine' der Maya-Schoepfung, an denen das erste Feuer entzuendet wurde."
+      },
+      {
+        "titel": "Bedeutung",
+        "text": "Gefuehl, Schutz, Innerlichkeit. Wasser, das naehrt. Heimat und Schoss. In dieser siderischen Hochsommerzeit findet die Pflanze in ihrem Wasserhaushalt zur groessten Tiefe — Saftaufstieg ist hoch, Bluetenfuelle steht offen. Mond im Krebs schenkt Blatt-Pflanzen ihre Saftigkeit."
+      },
+      {
+        "titel": "Im Garten",
+        "text": "Blatttage. Salate, [Spinat](pflanze:spinat), [Mangold](pflanze:mangold) pflanzen. [Giessen](wissen:praxis:giessen) wirkt heute besonders. Wasserpflanzen pflegen. [Mulchen](arbeit:mulchen) schuetzt vor Verdunstung. Hochsommerlicher Schutz fuer junge Pflanzen — Schattennetze, Wassergaben am Abend."
+      }
+    ],
+    "pflanzen": ["Salat", "Spinat", "Mangold", "Kohl", "Lauch", "Petersilie", "Basilikum"]
+  },
+  {
+    "id": "loewe",
+    "name": "Loewe",
+    "untertitel": "Simha · Leo",
+    "symbol": "♌",
+    "kurz": "Strahlen, Wuerde, Selbstausdruck. Die Sonne in ihrer warmen Reife.",
+    "meta": {
+      "element": "Feuer",
+      "thunTyp": "frucht",
+      "sonneSidVon": "16. August",
+      "sonneSidBis": "16. September",
+      "sonneTropVon": "23. Juli",
+      "sonneTropBis": "22. August"
+    },
+    "bloecke": [
+      {
+        "titel": "Astronomie",
+        "text": "Markant durch Regulus (Alpha Leonis, der 'Kleine Koenig') und die Sichelform des Loewenkopfes. Eines der wenigen Sternbilder, das tatsaechlich seinem Namensgeber aehnelt. Die hellsten Sterne bilden die maehnen-aehnliche Krone. Liegt im noerdlichen Teil der Ekliptik."
+      },
+      {
+        "titel": "Mythologie",
+        "text": "Der Nemeische Loewe — Herakles erste Heldentat. Im vedischen System Simha als das Sonnen-Tier, wuerdevoll und gerecht. Bei den [Mayas](wissen:maya:mayazivilisation) ist der **Jaguar** (Balam) das verwandte Wesen — Erdseele, Schamane, Geheimnis. Das vierzehnte [Tzolkin](wissen:maya:tzolkin-tiefe)-Zeichen Ix bedeutet Jaguar; es traegt magische Kraft."
+      },
+      {
+        "titel": "Bedeutung",
+        "text": "Strahlen, Wuerde, Selbstausdruck. Die Sonne in ihrer warmen Reife. Im siderischen System faellt der Loewe in den August bis Mitte September — die Zeit der vollen Fruchtreife. Tomate, Kuerbis, Pfirsich, Apfel — sie ueben sich in der Loewen-Kraft.  Mond im Loewen schenkt Fruchttagen ihren Strahl."
+      },
+      {
+        "titel": "Im Garten",
+        "text": "Fruchttage. [Tomaten](pflanze:tomate) und Sommerfruechte ernten und einlegen. Bohnen, [Kuerbis](pflanze:kuerbis) pflegen. Veredelungen an Obstbaeumen — die [Okulation](arbeit:okulation) (Augenveredelung) ist in dieser Zeit besonders erfolgreich. [Saatgut](arbeit:saatgut-ernten) von Frucht-Pflanzen ernten."
+      }
+    ],
+    "pflanzen": ["Tomate", "Zucchini", "Kuerbis", "Bohne", "Sonnenblume", "Mais"]
+  },
+  {
+    "id": "jungfrau",
+    "name": "Jungfrau",
+    "untertitel": "Kanya · Virgo",
+    "symbol": "♍",
+    "kurz": "Reife, Erntezeit, Sorgfalt. Die Aehre bricht.",
+    "meta": {
+      "element": "Erde",
+      "thunTyp": "wurzel",
+      "sonneSidVon": "16. September",
+      "sonneSidBis": "16. Oktober",
+      "sonneTropVon": "23. August",
+      "sonneTropBis": "22. September"
+    },
+    "bloecke": [
+      {
+        "titel": "Astronomie",
+        "text": "Das groesste Sternbild des Tierkreises. Hauptstern **Spica** ('Aehre') — eine der hellsten Sterne des Fruehlingshimmels, blaeulich strahlend. Traegt traditionell eine Kornaehre. In siderischer Position der reichhaltigste Erntemonat."
+      },
+      {
+        "titel": "Mythologie",
+        "text": "Demeter, Persephone, oder die griechische Astraea — Goettin der Gerechtigkeit, die als letzte den Menschen verliess. Im vedischen System Kanya als die junge Frau mit der Aehre — Reinheit, Erntereife. Bei den [Mayas](wissen:maya:mayazivilisation) verbunden mit **Ix Chel**, der Mondgoettin und Heilerin — Schutzpatronin der Geburt, des Webens, der Heilkraeuter und der Felder."
+      },
+      {
+        "titel": "Bedeutung",
+        "text": "Reife, Erntezeit, Sorgfalt. Die Aehre bricht. Unterscheidungsvermoegen. Erde nimmt wieder auf, was sie gab. Im siderischen Herbst — die Pflanze zieht ihre Kraefte in Frucht und Wurzel zurueck. Mond in der Jungfrau schenkt Wurzeltagen Sorgfalt."
+      },
+      {
+        "titel": "Im Garten",
+        "text": "Wurzeltage. [Wurzelgemuese ernten und einlagern](arbeit:gemuese-ernten-lagern). Boden fuer Wintersaaten vorbereiten. [Gruenduengung saeen](arbeit:gruenduengung-saen) (Phacelia, Senf, Wicke). Kompost ausbringen. [Stauden teilen](arbeit:stauden-teilen). Die Aerde bedankt sich fuer Sorgfalt."
+      }
+    ],
+    "pflanzen": ["Moehren", "Rote Bete", "Rettich", "Sellerie", "Pastinake", "Wintergemuese"]
+  },
+  {
+    "id": "waage",
+    "name": "Waage",
+    "untertitel": "Tula · Libra",
+    "symbol": "♎",
+    "kurz": "Gleichgewicht, Wechsel, Begegnung. Tag und Nacht in Waage.",
+    "meta": {
+      "element": "Luft",
+      "thunTyp": "bluete",
+      "sonneSidVon": "16. Oktober",
+      "sonneSidBis": "15. November",
+      "sonneTropVon": "23. September",
+      "sonneTropBis": "22. Oktober"
+    },
+    "bloecke": [
+      {
+        "titel": "Astronomie",
+        "text": "Klein, zwischen Jungfrau und Skorpion. Trug urspruenglich den Namen 'Klauen des Skorpions' — die Roemer machten daraus die Waage. Hauptsterne Zubenelgenubi und Zubeneschamali (arabisch fuer 'suedliche/noerdliche Klaue'). Das einzige Sternbild des Tierkreises, das kein Lebewesen darstellt."
+      },
+      {
+        "titel": "Mythologie",
+        "text": "Die Waage der Themis und Justitia — Werkzeug der Goettin der Gerechtigkeit. Im vedischen System Tula als Werkzeug der Abwaegung. Bei den [Mayas](wissen:maya:mayazivilisation) verbunden mit der [Herbst-Tagundnachtgleiche](wissen:sonne:sonnwenden-tng) und dem Balancepunkt zwischen Welten — bei der die Schlange aus Licht und Schatten an der Pyramide von Chichen Itza erscheint."
+      },
+      {
+        "titel": "Bedeutung",
+        "text": "Gleichgewicht, Wechsel, Begegnung. Tag und Nacht in Waage. Uebergang. Im siderischen Herbst der eigentliche Equinoctium-Punkt — der Punkt der Stille zwischen dem Atemzug. Mond in der Waage schenkt Bluetentagen Klarheit."
+      },
+      {
+        "titel": "Im Garten",
+        "text": "Bluetentage. Spaete Blumen, [Stauden teilen](arbeit:stauden-teilen), [Heilkraeuter sammeln](arbeit:kraeuter-ernten). Letzte Bienenarbeit vor dem Winter. [Saatgut aus Blueh-Pflanzen einsammeln](arbeit:saatgut-ernten). [Lavendel](arbeit:lavendel-schneiden), [Salbei](pflanze:salbei), [Rosmarin](pflanze:rosmarin) zurueckschneiden."
+      }
+    ],
+    "pflanzen": ["Lavendel", "Salbei", "Rosmarin", "spaete Blueher", "Stauden zum Teilen"]
+  },
+  {
+    "id": "skorpion",
+    "name": "Skorpion",
+    "untertitel": "Vrishchika · Scorpius",
+    "symbol": "♏",
+    "kurz": "Tiefe, Wandlung, das Verborgene. Tod und Wiedergeburt.",
+    "meta": {
+      "element": "Wasser",
+      "thunTyp": "blatt",
+      "sonneSidVon": "15. November",
+      "sonneSidBis": "14. Dezember",
+      "sonneTropVon": "23. Oktober",
+      "sonneTropBis": "21. November"
+    },
+    "bloecke": [
+      {
+        "titel": "Astronomie",
+        "text": "Markant am Sommerhimmel, mit dem roten Riesen **Antares** ('Gegen-Mars') als Herz. Schwanz und Stachel klar erkennbar. Liegt direkt vor dem galaktischen Zentrum der Milchstrasse — der dichteste Sternenraum am Nachthimmel. Eine der wenigen Sternbilder, die wirklich wie ihr Namensgeber aussehen."
+      },
+      {
+        "titel": "Mythologie",
+        "text": "Der Skorpion, den Gaia oder Artemis schickte, um Orion zu erschlagen — daher stehen beide nie gleichzeitig am Himmel. Im vedischen System Vrishchika als das Wesen des Verborgenen, der Krisen, der Wandlung. Bei den [Mayas](wissen:maya:mayazivilisation) wurde der Skorpion-Stachel mit Hexerei und Transformation verbunden — eine kraftvolle, aber gefaehrliche Energie."
+      },
+      {
+        "titel": "Bedeutung",
+        "text": "Tiefe, Wandlung, das Verborgene. Wasser unter der Erde. Tod und Wiedergeburt. In dieser spaeten Herbstzeit zieht alles in die Wurzeln zurueck — die Pflanze gibt ihr oberirdisches Leben fuer das untere. Mond im Skorpion schenkt Blatttagen ihre Tiefenkraft. Auch gute Zeit fuer Innenarbeit, Heilung."
+      },
+      {
+        "titel": "Im Garten",
+        "text": "Blatttage. Letzte Salate ernten, Wintergruen pflegen ([Feldsalat](pflanze:feldsalat), [Gruenkohl](pflanze:gruenkohl)). Wassergaben sparsam. [Kompost umsetzen](arbeit:kompost-umsetzen) — die Bakterien des Komposts arbeiten im Skorpion-Wasser tief. Wintergemuese mit [Vlies schuetzen](arbeit:vlies-friehbeet)."
+      }
+    ],
+    "pflanzen": ["Feldsalat", "Spinat", "Gruenkohl", "Winterkraeuter", "Lagerkohl"]
+  },
+  {
+    "id": "schuetze",
+    "name": "Schuetze",
+    "untertitel": "Dhanu · Sagittarius",
+    "symbol": "♐",
+    "kurz": "Sinnstreben, Hoeheres, Weisheit. Feuer der Erkenntnis.",
+    "meta": {
+      "element": "Feuer",
+      "thunTyp": "frucht",
+      "sonneSidVon": "14. Dezember",
+      "sonneSidBis": "13. Januar",
+      "sonneTropVon": "22. November",
+      "sonneTropBis": "21. Dezember"
+    },
+    "bloecke": [
+      {
+        "titel": "Astronomie",
+        "text": "Bogenschuetze mit gespanntem Bogen, der gerade auf Antares (das [Skorpion-Herz](wissen:tierkreis:skorpion)) zielt. Liegt in Richtung des **galaktischen Zentrums** — die meisten Sterne unserer Milchstrasse befinden sich hinter dem Schuetzen. Der 'dunkle Riss' der Milchstrasse, ein Staubwolken-Gebiet, ist hier sichtbar. Die [Wintersonnenwende 2012](wissen:maya:2012-wahrheit) stand exakt vor dieser Stelle."
+      },
+      {
+        "titel": "Mythologie",
+        "text": "Der Kentaur Chiron, weiser Lehrer der Helden. Im vedischen System Dhanu als der gerichtete Pfeil — Ziel, Sinn, Hoeheres Streben. Bei den [Mayas](wissen:maya:mayazivilisation) wichtig: das **galaktische Zentrum**, der dunkle Riss, in dessen Richtung die Wintersonne 2012 die Wintersonnenwende erlebte. Daher die [kosmische Bedeutung des 21.12.2012](wissen:maya:2012-wahrheit)."
+      },
+      {
+        "titel": "Bedeutung",
+        "text": "Sinnstreben, Hoeheres, Weisheit. Feuer der Erkenntnis. In dieser Wintersonnenwende-Zeit das Wenden des Lichts — das Licht kehrt wieder zurueck nach der laengsten Nacht. Mond im Schuetzen schenkt Fruchttagen ihre Richtung. Auch gute Zeit fuer Sinnsuche, Studium, Reisen des Geistes."
+      },
+      {
+        "titel": "Im Garten",
+        "text": "Fruchttage. Wenig aktiver Garten — aber [Obstbaum-Schnitt im Winter](arbeit:obstbaum-winterschnitt) ist guenstig. Werkzeug warten, [Saatplan](arbeit:saatplan) fuer das neue Jahr. Saatgut sichten. [Veredelungs-Edelreiser](arbeit:veredeln-pfropfen) jetzt schneiden, bei Frost kuehl-feucht einschlagen."
+      }
+    ],
+    "pflanzen": ["Obstbaeume schneiden", "Saatplan", "Werkzeug warten"]
+  },
+  {
+    "id": "steinbock",
+    "name": "Steinbock",
+    "untertitel": "Makara · Capricornus",
+    "symbol": "♑",
+    "kurz": "Tiefe, Bewahrung, Vorsicht. Die Erde im Winterschlaf.",
+    "meta": {
+      "element": "Erde",
+      "thunTyp": "wurzel",
+      "sonneSidVon": "13. Januar",
+      "sonneSidBis": "12. Februar",
+      "sonneTropVon": "22. Dezember",
+      "sonneTropBis": "19. Januar"
+    },
+    "bloecke": [
+      {
+        "titel": "Astronomie",
+        "text": "Klein und sternarm, zwischen Schuetze und Wassermann. Traditionell als Ziegen-Fisch dargestellt — mit Vorderteil Ziege, Schwanz Fisch. Sehr alt — schon babylonisch belegt. In der siderischen Position der eigentliche Wintersonnen-Sektor."
+      },
+      {
+        "titel": "Mythologie",
+        "text": "Pan, der sich vor dem Ungeheuer Typhon ins Wasser warf — die untere Haelfte verwandelte sich in einen Fisch, die obere blieb Ziege. Im vedischen System Makara als das Meerwesen — Tor zum tieferen Wasser. Bei den [Mayas](wissen:maya:mayazivilisation) verbunden mit der Schoepfungszeit und dem Wasser-Aspekt der Welt — die Goetter formten die Menschen aus Mais nach mehreren [Schoepfungsversuchen](wissen:maya:popol-vuh)."
+      },
+      {
+        "titel": "Bedeutung",
+        "text": "Tiefe, Bewahrung, Vorsicht. Die Erde im Winterschlaf. Konzentration auf das Wesentliche. Im tiefsten Winter zieht sich alles zusammen. Mond im Steinbock schenkt Wurzeltagen Tiefe. Geduld, Festigkeit, Tradition."
+      },
+      {
+        "titel": "Im Garten",
+        "text": "Wurzeltage. Wenig aktive Gartenarbeit, aber Anfang Februar Vorzucht beginnen — [Paprika](pflanze:paprika), [Chili](pflanze:chili), [Aubergine](pflanze:aubergine). Im Haus an warmer Stelle. Werkzeug schaerfen. Saatgut testen (Keimprobe)."
+      }
+    ],
+    "pflanzen": ["Paprika-Vorzucht", "Chili-Vorzucht", "Aubergine-Vorzucht"]
+  },
+  {
+    "id": "wassermann",
+    "name": "Wassermann",
+    "untertitel": "Kumbha · Aquarius",
+    "symbol": "♒",
+    "kurz": "Freiheit, Neuerung, Stroemen. Luft, die Wasser bringt.",
+    "meta": {
+      "element": "Luft",
+      "thunTyp": "bluete",
+      "sonneSidVon": "12. Februar",
+      "sonneSidBis": "14. Maerz",
+      "sonneTropVon": "20. Januar",
+      "sonneTropBis": "18. Februar"
+    },
+    "bloecke": [
+      {
+        "titel": "Astronomie",
+        "text": "Grosses aber sternarmes Sternbild. Traegt einen Krug, aus dem Wasser fliesst — daher der Name. Liegt zwischen Steinbock und Fischen. Die alten Astronomen sahen die Region als 'wasserreichen Teil des Himmels' — mit Fischen, Walfisch, Suedlichem Fisch alle nahe beieinander."
+      },
+      {
+        "titel": "Mythologie",
+        "text": "Ganymed, der schoene Mundschenk der Goetter, der den Wasserkrug haelt. Im vedischen System Kumbha — der Krug, der Wasser fuer die Welt verschuettet. Bei der **Kumbha Mela**, einem indischen Pilgerfest, baden Millionen Menschen im Wasser, wenn Sonne und Jupiter im Wassermann stehen. Bei den [Mayas](wissen:maya:mayazivilisation) das Wasser-Element wichtig fuer Schoepfung und [Maisanbau](wissen:maya:popol-vuh)."
+      },
+      {
+        "titel": "Bedeutung",
+        "text": "Freiheit, Neuerung, Stroemen. Luft, die Wasser bringt. Sozialer Geist, der ueber das Persoenliche hinausreicht. Im siderischen System die Schwellenzeit zum Fruehling — Imbolc und Lichtmess fallen hier hinein. Erste Anzeichen des wiederkehrenden Lichts. Mond im Wassermann schenkt Bluetentagen Weite."
+      },
+      {
+        "titel": "Im Garten",
+        "text": "Bluetentage. Vorzucht von Lichtkeimern auf der Fensterbank — [Basilikum](pflanze:basilikum), [Tagetes](pflanze:tagetes), [Sellerie](pflanze:sellerie), [Lauch](pflanze:lauch), [Petersilie](pflanze:petersilie). Imbolc-Zeit, Schwellen-Energie. [Pflanzkataloge studieren](arbeit:saatplan), neue Sorten waehlen."
+      }
+    ],
+    "pflanzen": ["Basilikum-Vorzucht", "Tagetes", "Sellerie", "Lauch", "Petersilie"]
+  },
+  {
+    "id": "fische",
+    "name": "Fische",
+    "untertitel": "Mina · Pisces",
+    "symbol": "♓",
+    "kurz": "Hingabe, Aufloesung, Mitgefuehl. Wasser kehrt ins Meer zurueck.",
+    "meta": {
+      "element": "Wasser",
+      "thunTyp": "blatt",
+      "sonneSidVon": "14. Maerz",
+      "sonneSidBis": "14. April",
+      "sonneTropVon": "19. Februar",
+      "sonneTropBis": "20. Maerz"
+    },
+    "bloecke": [
+      {
+        "titel": "Astronomie",
+        "text": "Zwei Fische, durch ein Band verbunden. Sehr grosses, aber sehr lichtschwaches Sternbild. Wegen der [Praezession](wissen:sonne:praezession) liegt heute der tropische **Fruehlingspunkt** im Sternbild Fische — der Punkt, an dem die Sonne im Maerz die Himmelsaequator-Ekliptik kreuzt. Daher die Rede vom 'Zeitalter der Fische', das jetzt langsam ins 'Zeitalter des [Wassermanns](wissen:tierkreis:wassermann)' uebergeht."
+      },
+      {
+        "titel": "Mythologie",
+        "text": "Aphrodite und Eros verwandelten sich in Fische, um vor dem Ungeheuer Typhon zu fliehen — durch ein Band blieben sie verbunden. Im vedischen System Mina als Aufloesung in das groessere Wasser. In der christlichen Symbolik der Fisch (ichthys) als Zeichen Christi — das Zeitalter der Fische begann etwa mit seinem Wirken."
+      },
+      {
+        "titel": "Bedeutung",
+        "text": "Hingabe, Aufloesung, Mitgefuehl. Wasser kehrt ins Meer zurueck. Die Schwellenzeit vor dem Wiedererwachen. Im siderischen Fruehling — Boden taut, alles wartet auf den Aufbruch. Mond in den Fischen schenkt Blatttagen Sanftheit. Gute Zeit fuer innere Sammlung, Meditation, Hingabe."
+      },
+      {
+        "titel": "Im Garten",
+        "text": "Blatttage. Vorzucht von Blattgemuese im Fruehbeet — fruehe Salate, [Spinat](pflanze:spinat), [Mangold](pflanze:mangold). [Vorbereitung der Beete](arbeit:beete-vorbereiten) fuer die Aussaat. Erstes Beobachten der Bodentemperatur. Geduld — der Boden ist noch kuehl, aber der Saft beginnt zu steigen."
+      }
+    ],
+    "pflanzen": ["Salat-Vorzucht", "Spinat", "Mangold", "fruehe Kraeuter", "Frostfeste Salate"]
+  }
+]

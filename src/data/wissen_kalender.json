@@ -1,0 +1,134 @@
+[
+  {
+    "id": "gregorianisch",
+    "name": "Gregorianischer Kalender",
+    "untertitel": "Unser Alltagskalender",
+    "symbol": "📅",
+    "kurz": "1582 von Papst Gregor XIII. eingefuehrt — der genaueste reine Sonnenkalender.",
+    "meta": {},
+    "bloecke": [
+      {
+        "titel": "Geschichte",
+        "text": "Reform des julianischen Kalenders (von Julius Caesar, 46 v.Chr.) durch Papst Gregor XIII. 1582. Grund: der julianische Kalender war jedes Jahr 11 Minuten zu lang — bis 1582 hatte sich das auf 10 Tage akkumuliert. Die Tagundnachtgleiche faellt auf 11. Maerz statt 21. Maerz — und die Osterberechnung stimmte nicht mehr."
+      },
+      {
+        "titel": "Regel",
+        "text": "365 Tage. Schalttag alle 4 Jahre. **Aber** Jahre teilbar durch 100 sind keine Schaltjahre, ausser sie sind durch 400 teilbar. So gilt 2000 als Schaltjahr, 2100 aber nicht. Damit weicht der Kalender vom [tropischen Jahr](wissen:sonne:tropisches-jahr) nur 26 Sekunden pro Jahr ab."
+      },
+      {
+        "titel": "Im Garten",
+        "text": "Unser Alltagsbezug. Wir nutzen ihn, weil er praktisch ist und die Jahreszeiten richtig zaehlt. Die Pflanzentermine (Aussaat, Eisheilige, Mittsommer) sind im gregorianischen System gut verankert. Mond und Sterne wandern darin — daher die parallelen Zaehlungen."
+      }
+    ]
+  },
+  {
+    "id": "juedischer-kalender",
+    "name": "Juedischer Kalender",
+    "untertitel": "Lunisolar — Mond und Sonne zusammen",
+    "symbol": "✡",
+    "kurz": "12 oder 13 Mondmonate pro Jahr. Sieben Schaltmonate in 19 Jahren.",
+    "meta": {},
+    "bloecke": [
+      {
+        "titel": "Aufbau",
+        "text": "Monate sind echte [Mondmonate](wissen:mond:synodischer-monat) (29 oder 30 Tage). Ein normales Jahr hat 12 Monate (354 Tage) — Schaltjahre haben 13 Monate (384 Tage). Im 19-Jahres-Zyklus ([Metonscher Zyklus](wissen:kalender:metonischer-zyklus)) gibt es 7 Schaltjahre: Jahre 3, 6, 8, 11, 14, 17, 19. So gleicht sich der Mondkalender langfristig dem Sonnenjahr an."
+      },
+      {
+        "titel": "Bedeutung",
+        "text": "Pessach (Passah) faellt immer auf den 14. Nisan, also am Vollmond. Das funktioniert nur wenn die Monate Mondmonate sind. Der juedische Tag beginnt mit dem Sonnenuntergang — die Nacht gehoert zum Folgetag. Schoepfungsbild: 'es ward Abend, und es ward Morgen.'"
+      },
+      {
+        "titel": "Im Garten",
+        "text": "Die juedische Tradition kennt **Schmita** — alle 7 Jahre ein Brachjahr fuer das Land. Felder ruhen. Dies ist eine der aeltesten dokumentierten Bodenruhe-Regeln. Modern wieder beachtet als Form der Bodengesundheit."
+      }
+    ]
+  },
+  {
+    "id": "islamischer-kalender",
+    "name": "Islamischer Kalender",
+    "untertitel": "Hidschra — reiner Mondkalender",
+    "symbol": "☪",
+    "kurz": "354 Tage pro Jahr. Die Feste wandern durchs Sonnenjahr.",
+    "meta": {},
+    "bloecke": [
+      {
+        "titel": "Aufbau",
+        "text": "12 Mondmonate à 29 oder 30 Tage. **Kein Schaltmonat.** Daher 354 Tage pro Jahr — 11 Tage weniger als das Sonnenjahr. Beginn am 16. Juli 622 (gregorianisch) mit der Hidschra (Auswanderung) Mohammeds von Mekka nach Medina."
+      },
+      {
+        "titel": "Bedeutung",
+        "text": "Weil der islamische Kalender keine Sonnenkorrektur kennt, wandern die Feste durch das Sonnenjahr. Ramadan kann im Winter, Sommer, Fruehling oder Herbst liegen. Innerhalb von 33 Jahren durchlaeuft jeder Feiertag das gesamte Sonnenjahr. Dieser Rhythmus war urspruenglich an die Sichtung der Mondsichel gebunden."
+      },
+      {
+        "titel": "Im Garten",
+        "text": "Reine Mondkalender sind fuer den Pflanzanbau wenig praktisch — die Jahreszeiten wandern. Im Wuestenklima Arabiens spielten Aussaattermine eine andere Rolle als in unseren Breiten. Aber: die Mondsichtung als Zeitmesser ist ein urspruengliches Verhaeltnis zur Realitaet — Beobachtung am Himmel statt mechanischer Uhr."
+      }
+    ]
+  },
+  {
+    "id": "hindu-kalender",
+    "name": "Hindu-Kalender",
+    "untertitel": "Vikram Samvat und andere Systeme",
+    "symbol": "🕉",
+    "kurz": "Lunisolar mit Schaltmonaten. Siderische Sternzeichen.",
+    "meta": {},
+    "bloecke": [
+      {
+        "titel": "Aufbau",
+        "text": "Es gibt mehrere Hindu-Kalender, die wichtigsten sind **Vikram Samvat** (Nordindien, beginnt 57 v.Chr.) und **Saka Samvat** (offizieller Staatskalender Indiens, beginnt 78 n.Chr.). Beide sind lunisolar mit Schaltmonaten. Die Sternzeichen sind siderisch — wo der Mond/die Sonne tatsaechlich am Himmel steht."
+      },
+      {
+        "titel": "Bedeutung",
+        "text": "Der Hindu-Kalender ist die Grundlage von **Jyotish** (vedischer [Astrologie](wissen:bruecken:astrologie-astronomie)), die jeden Tag in 27 **Nakshatras** (Mondhaeuser) einteilt — etwas feiner als die 12 Tierkreiszeichen. Jedes Nakshatra hat einen eigenen Charakter, einen Gott, eine Pflanze, eine Farbe."
+      },
+      {
+        "titel": "Im Garten",
+        "text": "Indische biodynamische Tradition kennt die Mondrhythmen seit Jahrtausenden. Die 27 Nakshatras geben einen feineren Tagestyp-Rhythmus als unsere 12 Sternzeichen — etwa alle 27 Tage hat jedes Nakshatra seinen Tag. Vergleichbar mit [Maria Thuns Aussaattagen](wissen:bruecken:maria-thun), aber praeziser."
+      }
+    ]
+  },
+  {
+    "id": "chinesischer-kalender",
+    "name": "Chinesischer Kalender",
+    "untertitel": "Lunisolar mit 60-Jahre-Zyklus",
+    "symbol": "🐉",
+    "kurz": "12 Tierkreiszeichen × 5 Elemente = 60 Jahre.",
+    "meta": {},
+    "bloecke": [
+      {
+        "titel": "Aufbau",
+        "text": "Lunisolar wie der juedische und Hindu-Kalender. Aber zusaetzlich: ein 60-Jahre-Zyklus aus 12 Tieren (Ratte, Ochse, Tiger, Hase, Drache, Schlange, Pferd, Ziege, Affe, Hahn, Hund, Schwein) und 5 Elementen (Holz, Feuer, Erde, Metall, Wasser). Jede Kombination kehrt erst nach 60 Jahren wieder — wie bei den Mayas der [52-Jahres-Zyklus](wissen:maya:calendar-round)."
+      },
+      {
+        "titel": "Bedeutung",
+        "text": "Das chinesische Neujahr (Fruehlingsfest) faellt auf den Neumond zwischen 21. Januar und 20. Februar — also in der Zeit der westlichen Imbolc/Lichtmess. Beide Traditionen markieren den Beginn der lebendigen Saison. **Bauern-Kalender** wie der nong li sind bis heute in laendlichen Gegenden Chinas in Gebrauch."
+      },
+      {
+        "titel": "Im Garten",
+        "text": "Die chinesische Tradition kennt die '24 Sonnenpunkte' (jieqi) — alle 15 Tage ein neuer landwirtschaftlicher Termin: 'Bewaegen des Tiefen', 'Insektenerwachen', 'Klares Licht', 'Kornregen'. Ein wunderbares feines Beobachtungssystem fuer den Garten, geboren aus jahrtausendelangem Bauernwissen."
+      }
+    ]
+  },
+  {
+    "id": "metonischer-zyklus",
+    "name": "Metonscher Zyklus",
+    "untertitel": "19 Jahre = 235 Mondmonate",
+    "symbol": "∞",
+    "kurz": "Die fast perfekte Versoehnung von Mond und Sonne.",
+    "meta": {},
+    "bloecke": [
+      {
+        "titel": "Astronomie",
+        "text": "Im Jahr 432 v.Chr. entdeckte der Athener Astronom **Meton**, dass 19 Sonnenjahre fast genau 235 [Mondmonaten](wissen:mond:synodischer-monat) entsprechen: 19 × 365,2422 = 6939,60 Tage; 235 × 29,5306 = 6939,69 Tage. Differenz: 0,09 Tage — zwei Stunden in 19 Jahren! Eine erstaunliche Konstellation."
+      },
+      {
+        "titel": "Bedeutung",
+        "text": "Mit diesem Zyklus kann man Mondphasen jahrhundertelang vorausrechnen. Der **Osterzyklus** der christlichen Kirche baut darauf auf, ebenso der juedische und Hindu-Kalender. Die **Goldene Zahl** (1-19) gibt an, an welcher Stelle des Metonschen Zyklus ein Jahr steht — sie steht in vielen alten Kalendern."
+      },
+      {
+        "titel": "Im Garten",
+        "text": "Praktischer Nutzen: nach 19 Jahren wiederholen sich die Mondphasen-Daten fast genau. Wenn du Aufzeichnungen ueber den Mond an einem bestimmten Datum hast, wird das Bild in 19 Jahren wieder aehnlich sein. Eine lange Generation der Beobachtung."
+      }
+    ]
+  }
+]

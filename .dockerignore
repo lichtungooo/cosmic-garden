@@ -1,0 +1,14 @@
+node_modules
+dist
+.git
+.github
+.vscode
+.idea
+.env
+.env.*
+*.log
+tsconfig.tsbuildinfo
+recherche
+README.md
+CLAUDE.md
+docker-compose.yml

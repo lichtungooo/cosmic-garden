@@ -1,0 +1,183 @@
+[
+  {
+    "id": "pilz-grundlagen",
+    "name": "Pilz-Grundlagen",
+    "untertitel": "Mycel und Fruchtkoerper",
+    "symbol": "🍄",
+    "kurz": "Pilze sind eigene Lebensform — weder Pflanze noch Tier. Das Mycel webt unsichtbar im Boden, der Fruchtkoerper traegt die Sporen.",
+    "bloecke": [
+      {
+        "titel": "Was ist ein Pilz",
+        "text": "Ein Pilz ist ein **Geflecht aus Faeden** — den **Hyphen**. Tausende Hyphen bilden das **Mycel**, ein lebendes Netz, das durch Holz, Boden oder Stroh waechst. Was wir Pilz nennen — Hut und Stiel — ist nur die **Fruchtform**, vergleichbar mit dem Apfel am Baum. Pilze haben weder Chlorophyll noch Wurzeln. Sie ernaehren sich, indem sie Substanzen ausserhalb ihres Koerpers verdauen und die geloesten Stoffe wieder aufnehmen. Im Reich des Lebens stehen sie naeher bei den Tieren als bei den Pflanzen."
+      },
+      {
+        "titel": "Lebenszyklus",
+        "text": "Eine **Spore** keimt in feuchtem Substrat und bildet ein erstes Hyphengeflecht. Trifft sie auf ein zweites passendes Mycel, verschmelzen die beiden — das **Sekundaer-Mycel** ist fruchtfaehig. Bei richtiger Temperatur, Feuchte und Lichtreiz schiebt das Mycel seine **Fruchtkoerper** an die Oberflaeche. Aus den Lamellen oder Poren rieseln Milliarden Sporen in die Welt. Ein einziger Austernpilz streut bis zu eine Milliarde Sporen pro Tag — der Wind traegt sie ueber Kontinente."
+      },
+      {
+        "titel": "Symbiose und Zersetzung",
+        "text": "Pilze leben in drei grossen Rollen. **Saprophyten** zersetzen totes Material — Laub, Holz, Stroh — und bauen Humus. **Mykorrhiza-Pilze** schliessen mit Pflanzenwurzeln einen Pakt: Zucker gegen Mineralien (siehe [Mykorrhiza](wissen:praxis:mykorrhiza)). **Parasiten** leben auf lebenden Wirten. Ohne Pilze gaebe es weder Wald noch Wiese — Paul Stamets nennt sie zurecht das *\"Internet der Erde\"*. Auch die [Permakultur](wissen:traditionen:permakultur) baut auf diesem Wissen auf."
+      },
+      {
+        "titel": "Im Garten",
+        "text": "Der Garten ist voller Pilze, auch wenn man sie selten sieht. Im Komposthaufen arbeiten Schimmel und Hefen. Im Mulch siedeln Tintlinge. An morschem Holz wachsen Schwefelporlinge. Wer das Mycel pflegt — mit Mulch, Laub, ungestoertem Boden — pflegt die unsichtbare Halbschicht des Gartens. Spaten und Fraese zerschneiden das Netz, deshalb arbeiten viele Gaertner zunehmend bodenschonend."
+      }
+    ],
+    "verwandt": [
+      { "sektion": "praxis", "eintrag": "mykorrhiza" },
+      { "sektion": "pilze", "eintrag": "pilz-arten" },
+      { "sektion": "pilze", "eintrag": "pilze-und-pflanzen" }
+    ]
+  },
+  {
+    "id": "pilz-substrate",
+    "name": "Substrate",
+    "untertitel": "Worauf Pilze wachsen",
+    "symbol": "🌾",
+    "kurz": "Stroh, Holz, Kaffeesatz — jedes Substrat traegt seine Pilze. Mit Pasteurisation oder Sterilisation gewinnt das Mycel den Vorsprung gegen Schimmel.",
+    "bloecke": [
+      {
+        "titel": "Was Substrate sind",
+        "text": "Das Substrat ist die Nahrung des Pilzes. Es muss zwei Dinge bieten: **Naehrstoffe** (Kohlenhydrate, ein wenig Stickstoff) und **Struktur** (Hohlraeume fuer Luft und Wasser). Klassisch nutzt der Hobby-Kultivator **Stroh**, **Hartholz**, **Kaffeesatz**, **Saegemehl** oder Mischungen. Jede Pilzart bevorzugt ihr Substrat — Austernpilze nehmen fast alles, Shiitake braucht Hartholz, Stockschwaemmchen liebt Laubholzstuempfe."
+      },
+      {
+        "titel": "Pasteurisation und Sterilisation",
+        "text": "Ein nacktes Substrat ist voller Konkurrenz: Schimmel, Hefen, Bakterien. Zwei Wege schaffen Vorsprung fuers Mycel. **Pasteurisation** (60-80 Grad fuer 1-2 Stunden, etwa heisses Wasser im Fass) toetet die meisten Schaedlinge, laesst aber nuetzliche Mikroben leben — passend fuer Stroh und Austernpilze. **Sterilisation** (121 Grad im Dampfdrucktopf) macht das Substrat keimfrei — noetig fuer naehrstoffreiche Mischungen mit Getreide oder Saegemehl. Anfaenger starten mit Pasteurisation, der Schritt in die Druckkochtopf-Welt kommt spaeter."
+      },
+      {
+        "titel": "Stroh und Kaffeesatz",
+        "text": "**Stroh-Methode (Eimer)**: Stroh haeckseln, mit kochendem Wasser uebergiessen, 12 Stunden im verschlossenen Eimer stehen lassen, ausdruecken, im Plastiksack mit Koernerbrut schichten. Nach 2-3 Wochen ist der Sack durchwachsen, dann Loecher schneiden und feucht stellen. **Kaffeesatz** ist bereits pasteurisiert durch die Bruehmaschine. Frisch aus dem Cafe nutzen (innerhalb 24 Stunden), mit etwas Strohhaecksel mischen, in Tueten oder Glaeser fuellen — wird gerne von Austernpilz besiedelt."
+      },
+      {
+        "titel": "Holz fuer Mehrjaehriges",
+        "text": "Wer **Shiitake** oder **Stockschwaemmchen** zieht, arbeitet mit Holzstaemmen. Frisch geschlagene Laubholzstaemme (Eiche, Buche, Birke, Erle) — keine Nadelhoelzer, kein altes oder vermoderndes Holz. In den Stamm Loecher bohren, **Duebel mit Mycel** einsetzen, mit Wachs verschliessen. Im Halbschatten lagern. Nach 6-18 Monaten beginnt die erste Ernte — und das geht fuer 3-5 Jahre weiter. Geduld ist die wichtigste Zutat. Der Ansatz folgt der Tradition des japanischen Shiitake-Anbaus auf Eichenstaemmen."
+      }
+    ],
+    "verwandt": [
+      { "sektion": "pilze", "eintrag": "pilz-arten" },
+      { "sektion": "pilze", "eintrag": "pilz-werkzeug-hygiene" },
+      { "sektion": "pilze", "eintrag": "pilzbeet-im-garten" }
+    ]
+  },
+  {
+    "id": "pilz-arten",
+    "name": "Pilz-Arten fuer den Garten",
+    "untertitel": "Die Wichtigen fuer Hobby-Kultur",
+    "symbol": "🍄",
+    "kurz": "Fuenf Pilze, die Anfaenger gluecklich machen — Austernpilz, Shiitake, Kraeuterseitling, Stockschwaemmchen, Limonenseitling.",
+    "bloecke": [
+      {
+        "titel": "Austernpilz",
+        "text": "**Pleurotus ostreatus** — der einfachste Pilz fuer den Einstieg. Waechst auf fast jedem Substrat: Stroh, Kaffeesatz, Karton, Saegemehl. Fruchtet bei 10-20 Grad. Die graue, blaue und gelbe Variante haben den gleichen Geschmack, leicht aromatisch, fleischig im Biss. Erste Ernte 3-5 Wochen nach Beimpfung, danach 2-3 weitere Wellen alle 10-14 Tage. Ein 2-kg-Strohbeutel liefert 500-1000 g Pilze. Paul Stamets hat diesen Pilz weltweit zum Tor in die Mykologie gemacht."
+      },
+      {
+        "titel": "Shiitake",
+        "text": "**Lentinula edodes** — der Koenig der asiatischen Heilpilze. Waechst klassisch auf **Hartholzstaemmen** (Eiche, Buche), modern auch auf Saegemehl-Bloecken. Geduldsprobe: erste Pilze nach 6-12 Monaten, danach 3-5 Jahre Ernte aus einem Stamm. Geschmack rauchig-erdig, Textur wie zartes Fleisch. Shiitake-Anbau hat in Japan eine 800-jaehrige Tradition. Auf Stammkultur stossen die Staemme nach Regen besonders gerne — Wassertaufe mit Eiswasser regt die Fruchtkoerper-Bildung an."
+      },
+      {
+        "titel": "Kraeuterseitling und Limonenseitling",
+        "text": "**Kraeuterseitling (Pleurotus eryngii)** — fester Stiel, kleiner Hut, im Biss fast wie Steinpilz. Liebt warme Bedingungen (18-24 Grad), Strohmischung mit Saegemehl. Geschaetzt in der Mittelmeerkueche. **Limonenseitling (Pleurotus citrinopileatus)** — leuchtend gelb, fruchtig im Aroma, manchmal mit Hauch von Wassermelone oder Anis. Braucht **20-26 Grad**, also Sommer oder beheizte Indoor-Kultur (siehe [Indoor-Klima](wissen:indoor:indoor-klima)). Optisch das schoenste Buchstaben-Y am Strohballen."
+      },
+      {
+        "titel": "Stockschwaemmchen",
+        "text": "**Kuehneromyces mutabilis** — der unterschaetzte Mehrjahres-Pilz. Waechst an Stuempfen von Birke, Erle, Pappel im Halbschatten. Nach Beimpfen 1-2 Jahre warten, dann 5-8 Jahre jaehrliche Ernte im Spaetsommer und Herbst. Honiggelber Hut, feiner Stiel mit Ring. Vorsicht beim Sammeln in der Natur: **Verwechslungsgefahr** mit dem giftigen Gifthaeubling. Im eigenen Beet auf bekanntem Stamm ist das Risiko ausgeschlossen."
+      }
+    ],
+    "verwandt": [
+      { "sektion": "pilze", "eintrag": "pilz-grundlagen" },
+      { "sektion": "pilze", "eintrag": "pilz-substrate" },
+      { "sektion": "pilze", "eintrag": "pilzbeet-im-garten" }
+    ]
+  },
+  {
+    "id": "pilzbeet-im-garten",
+    "name": "Pilzbeet im Garten",
+    "untertitel": "Pilze draussen kultivieren",
+    "symbol": "🌳",
+    "kurz": "Eine schattige Ecke, ein Holzhaufen, eine Tuete Mycel — und in zwei Jahren waechst dort eine eigene Pilzernte.",
+    "bloecke": [
+      {
+        "titel": "Standort waehlen",
+        "text": "Pilzbeete moegen **Halbschatten bis Schatten** — unter einer Hecke, im Norden eines Schuppens, unter einem Strauch. **Feuchter Boden**, kein Stau-Nass. Keine direkte Mittagssonne, kein Wind, der austrocknet. Eine Hand voll Holz und Laub auf dem Boden bedeutet: hier kann Pilz-Leben gedeihen. In trockenen Sommern muss das Beet gegossen werden — wie ein Salatbeet, doch nur leicht."
+      },
+      {
+        "titel": "Holzbruette anlegen",
+        "text": "Klassisches Vorgehen: **Hartholz-Hackschnitzel** (Buche, Eiche, Birke) 10-15 cm hoch auf nackten Boden schichten. **Mycelbrut** einarbeiten (entweder Koernerbrut oder Duebelbrut, beim Pilzversand bestellt). Mit weiteren Hackschnitzeln bedecken. Mit **Laub** abdecken. Im ersten Jahr durchwaechst das Mycel, ab dem zweiten Herbst trags die ersten Pilze. **Braunkappe**, **Riesentraeuschling** und **Austernpilz** eignen sich besonders fuer das Aussenbeet."
+      },
+      {
+        "titel": "Brachflaeche bewachsen lassen",
+        "text": "Eine ungenutzte Ecke wird zur Pilz-Wildnis. **Laub** im Herbst nicht abraeumen, **Aeste und Reisig** liegen lassen, **Mulch** auflegen. Innerhalb von 2-4 Jahren siedeln sich von selbst Tintling, Nelkenschwindling, Schopftintling und andere Saprophyten an — ohne dass man impft. Gleichzeitig baut sich Humus auf, Regenwuermer ziehen ein, der Boden wird lebendig. Diese Form des **Nicht-Tuns** ist Kern der [Permakultur](wissen:traditionen:permakultur) und von Masanobu Fukuokas Naturlandbau."
+      },
+      {
+        "titel": "Pflege und Ernte",
+        "text": "Ein Pilzbeet braucht weniger Pflege als ein Gemuesebeet. **Im Sommer wassern**, wenn drei Wochen kein Regen faellt. **Im Herbst Laub** auflegen — frisches Futter fuers Mycel. **Geerntet** wird, sobald die Hueter voll geoeffnet sind, mit der Hand abdrehen oder mit Messer abschneiden. Wer ein Drittel der Pilze stehen laesst, sichert die Sporen-Verteilung und die naechste Welle."
+      }
+    ],
+    "verwandt": [
+      { "sektion": "pilze", "eintrag": "pilz-substrate" },
+      { "sektion": "praxis", "eintrag": "mulchen" },
+      { "sektion": "traditionen", "eintrag": "permakultur" },
+      { "sektion": "traditionen", "eintrag": "forest-garden" }
+    ]
+  },
+  {
+    "id": "pilze-und-pflanzen",
+    "name": "Pilze und Pflanzen",
+    "untertitel": "Die Symbiose unter der Erde",
+    "symbol": "🌱",
+    "kurz": "95 Prozent aller Landpflanzen leben in Pakt mit Pilzen. Mykorrhiza ist das aelteste Buendnis der Natur.",
+    "bloecke": [
+      {
+        "titel": "Das alte Buendnis",
+        "text": "Vor 450 Millionen Jahren wuchsen die ersten Pflanzen ans Land — sie brachten ihre Pilzpartner mit. Heute leben **95 Prozent aller Landpflanzen** in Symbiose mit Pilzen, der **Mykorrhiza** (Pilz-Wurzel). Die Pflanze gibt Zucker aus der Photosynthese ab, der Pilz liefert Wasser, Phosphor, Stickstoff, Spurenelemente aus weiten Bodenbereichen, die die Wurzel allein nie erreichen wuerde. Ohne dieses Buendnis gaebe es keinen Wald (siehe [Mykorrhiza](wissen:praxis:mykorrhiza))."
+      },
+      {
+        "titel": "Endo- und Ektomykorrhiza",
+        "text": "Zwei Bauformen unterscheidet die Wissenschaft. **Endomykorrhiza** (arbuskulaere Mykorrhiza, AMF) — die Pilzhyphen dringen in die Wurzelzellen ein und bilden dort feine Verzweigungen. Gilt fuer die meisten Gemuese und Kraeuter, fuer [Tomate](pflanze:tomate), [Moehre](pflanze:moehre), Kuerbis, Mais, Obstbaeume, Beerenstraeucher, Wiesengras. **Ektomykorrhiza** — der Pilz umhuellt die Wurzelspitze von aussen mit einem feinen Pelz. Klassisch bei **Baeumen**: Eiche, Buche, Birke, Fichte, Kiefer. Steinpilz, Pfifferling, Maronenroehrling sind Ektomykorrhiza-Pilze."
+      },
+      {
+        "titel": "Welche Pflanze will welchen Pilz",
+        "text": "**Eiche, Buche, Birke** — Steinpilz, Pfifferling, Maronenroehrling, Trueffel. **Fichte und Kiefer** — Maronenroehrling, Edelreizker, Hexenroehrling. **Obstbaeume** (Apfel, Birne) — arbuskulaere Mykorrhiza, kein essbarer Fruchtkoerper, aber gewaltige Ertragssteigerung. **Erdbeere, Tomate, Kraeuter** — AMF, kommerziell als Impfgranulat erhaeltlich. **Kohlgewaechse, Spinat, Mangold, Rote Bete** — bilden **keine Mykorrhiza**, sind die Aussenseiter im Gemuesegarten."
+      },
+      {
+        "titel": "Im Garten foerdern",
+        "text": "Mykorrhiza braucht **lebendigen Boden** und **wenig Stoerung**. **Pflug und tiefes Umgraben** zerstoeren das Netz. **Mineralduenger**, vor allem Phosphor, schaltet die Symbiose ab — die Pflanze braucht den Pilz nicht mehr und stellt den Zuckerstrom ein. **Fungizide** toeten den Partner. Wer Mykorrhiza pflegen will: mulchen (siehe [Mulchen](wissen:praxis:mulchen)), kein tiefes Umgraben, organisch duengen mit [Kompost](wissen:praxis:effektive-mikroorganismen), und bei der Pflanzung Mykorrhiza-Granulat in das Pflanzloch geben. Nach 2-3 Jahren ist das Netz im Boden gewachsen."
+      }
+    ],
+    "verwandt": [
+      { "sektion": "praxis", "eintrag": "mykorrhiza" },
+      { "sektion": "pilze", "eintrag": "pilz-grundlagen" },
+      { "sektion": "praxis", "eintrag": "mulchen" },
+      { "sektion": "traditionen", "eintrag": "permakultur" }
+    ]
+  },
+  {
+    "id": "pilz-werkzeug-hygiene",
+    "name": "Werkzeug und Hygiene",
+    "untertitel": "Sauberkeit, Sporen-Drucke, Geraete",
+    "symbol": "🧹",
+    "kurz": "Saubere Hand, sauberer Raum, sauberes Substrat — drei Regeln, die den Schimmel fernhalten.",
+    "bloecke": [
+      {
+        "titel": "Warum Hygiene",
+        "text": "Wer Pilze zieht, fuehrt einen leisen Wettlauf gegen Schimmel und Bakterien. Pilzsporen schweben **ueberall in der Luft** — die meisten davon sind harmlose Saprophyten, einige aber sind aggressive Konkurrenten wie *Trichoderma* (gruener Schimmel). Sie lieben dieselben Substrate. Wer nicht sauber arbeitet, sieht statt eines schoenen Mycels einen gruenen Belag, der alles ueberwaechst. Die einfache Regel: **alles kochheiss, dann sofort verschliessen**."
+      },
+      {
+        "titel": "Pasteurisation im Kochtopf",
+        "text": "Fuer kleine Mengen Stroh oder Kaffeesatz reicht der **Kochtopf**. Stroh haeckseln, in einen Stoffbeutel oder ein Sieb fuellen, in den Topf mit 80 Grad heissem Wasser haengen, **1 Stunde halten** (nicht kochen!). Herausnehmen, ausdruecken, abkuehlen lassen auf etwa 25 Grad, dann mit der **Koernerbrut** mischen. Alles auf einer **alkohol-gereinigten Oberflaeche**. Wer haeufig kultiviert, schafft sich einen alten Wasserkocher oder ein Dampfsterilisator-Geraet an."
+      },
+      {
+        "titel": "Sporen-Drucke",
+        "text": "Ein **Sporen-Druck** ist die einfachste Form, Pilzgenetik zu sichern und weiterzugeben. Reifen Pilzhut **abschneiden**, mit den Lamellen nach unten auf weisses oder schwarzes Papier legen (Aluminium ist auch gut), mit Glasschale abdecken, 12-24 Stunden ruhen lassen. Die Sporen rieseln und bilden ein wunderschoenes Muster — der **Sporen-Abdruck** des Lamellenmusters. Trocken aufbewahrt haelt der Druck **Jahre**. Zum Wiederbeleben mit sterilem Wasser einweichen und auf Agar oder Substrat geben."
+      },
+      {
+        "titel": "Werkzeug-Liste",
+        "text": "Was am Anfang reicht: **autoklaventaugliche Plastik-Saecke** mit Filterstreifen (Pilzversand), **Skalpell oder scharfes Messer**, **Spiritus** zum Abflammen, **70-Prozent-Isopropanol** als Sprueh, **Einmal-Handschuhe**, **Mundschutz** (gegen eigene Atemkeime), **Spaten** und Eimer fuer Substrat. Spaeter wachsen die Werkzeuge: **Druckkochtopf**, **Sterilbox** (Glove Box oder Still-Air-Box), **Petrischalen** mit Malzextrakt-Agar fuer eigene Stammkultur. Paul Stamets beschreibt den Weg vom Kuechentisch zum Labor in seinem Buch *Growing Gourmet and Medicinal Mushrooms*."
+      }
+    ],
+    "verwandt": [
+      { "sektion": "pilze", "eintrag": "pilz-substrate" },
+      { "sektion": "pilze", "eintrag": "pilz-arten" }
+    ]
+  }
+]

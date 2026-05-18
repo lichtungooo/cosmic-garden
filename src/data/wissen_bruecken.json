@@ -1,0 +1,138 @@
+[
+  {
+    "id": "maria-thun",
+    "name": "Maria Thun und die biodynamische Forschung",
+    "untertitel": "Eine Bauerntochter, die der Welt zuhoerte",
+    "symbol": "🌱",
+    "kurz": "Vier Jahrzehnte Versuche mit Sternzeichen-Aussaat. Eine Tradition mit Daten.",
+    "meta": {},
+    "bloecke": [
+      {
+        "titel": "Wer war sie",
+        "text": "Maria Thun (1922-2012) war eine deutsche Bauerntochter aus Schwarzenbornerhuette. Sie begann in den 1950er Jahren systematisch zu untersuchen, ob die Sternzeichen-Position des Mondes das Pflanzenwachstum beeinflusst. Ihre Methode: gleiche Saatgut-Mengen am gleichen Tag auf gleichen Beeten — aber mit unterschiedlichen Sternzeichen-Bezuegen aussaeen, dann Ertrag und Qualitaet messen."
+      },
+      {
+        "titel": "Was sie fand",
+        "text": "Nach Jahrzehnten konsistenter Versuche: **wenn Aussaat an Wurzeltagen** (Mond in Erd-Zeichen) erfolgt, wachsen Wurzelgemuese tatsaechlich besser und groesser. Blattgemuese gedeiht an Blatttagen. Bluetenpflanzen an Bluetentagen. Frucht-Pflanzen an Fruchttagen. Die Effekte waren bei einigen Pflanzen 20-50% Mehrertrag oder Qualitaetsunterschied. Bei einigen Pflanzen ist der Effekt klein, bei anderen sehr klar."
+      },
+      {
+        "titel": "Wie ihr Werk weiterlebt",
+        "text": "Maria Thun publizierte ab 1963 jaehrlich den **[Aussaattage-Kalender](wissen:traditionen:maria-thun-tradition)**, der heute von ihrem Sohn Matthias Thun fortgefuehrt wird. Unsere App folgt dieser Methodik ([siderischer Tierkreis](wissen:mond:siderischer-monat), 4 Tagestypen). Wissenschaftliche Studien an der Universitaet Kassel haben Teile ihrer Beobachtungen bestaetigt. Das Phaenomen ist real, der Wirkmechanismus noch nicht vollstaendig verstanden."
+      }
+    ],
+    "verwandt": [
+      { "sektion": "traditionen", "eintrag": "biodynamik" },
+      { "sektion": "traditionen", "eintrag": "maria-thun-tradition" },
+      { "sektion": "mond", "eintrag": "siderischer-monat" },
+      { "sektion": "mond", "eintrag": "aufsteigend-absteigend" }
+    ]
+  },
+  {
+    "id": "mond-pflanzen",
+    "name": "Mond und Pflanzenwirkung",
+    "untertitel": "Was wir wissen, was wir vermuten",
+    "symbol": "☽",
+    "kurz": "Wissenschaftlich nachweisbar — und immer noch ein Mysterium.",
+    "meta": {},
+    "bloecke": [
+      {
+        "titel": "Was nachgewiesen ist",
+        "text": "**Gezeitenkraft des Mondes**: nicht nur Ozeane heben sich. Auch das Grundwasser, der Saft in Baeumen, sogar die Knochenmineralien zeigen leichte Mondrhythmen. **Mondlicht**: Vollmond reflektiert etwa 0,3% des Sonnenlichts — genug, dass manche Pflanzen Mondlicht im Photosystem registrieren. Studien an Forst-Holzproben: zu Vollmond geschlagenes Holz enthaelt weniger Wasser und ist haltbarer (Ernst Zuercher, ETH Zuerich). Vergleiche [Perigaeum und Apogaeum](wissen:mond:perigaeum-apogaeum)."
+      },
+      {
+        "titel": "Was umstritten ist",
+        "text": "**Sternzeichen-Wirkung** ([Maria Thun](wissen:bruecken:maria-thun), [biodynamisch](wissen:traditionen:biodynamik)): einzelne Studien zeigen Effekte, andere finden keine. Die Methodik ist schwierig zu standardisieren. Die Hypothese: kosmische Strahlung, vielleicht Neutrinos oder noch unbekannte Krafte, wirken durch den Mond als Linse je nach Sternzeichen unterschiedlich. Es gibt eine plausible Wirkmechanismus-Vermutung, aber keinen klaren Beweis."
+      },
+      {
+        "titel": "Praktischer Zugang",
+        "text": "**Eigene Beobachtung** ist hier wertvoller als Studien. Saet ueber zwei Jahre die gleiche Pflanze an verschiedenen Tagestypen aus, beobachte die Pflanzen. Fuehrt ein Garten-Tagebuch. Du wirst sehen, was du selbst wahrnehmen kannst — und was nicht. Manche Menschen sind sensibler fuer diese Rhythmen als andere."
+      }
+    ],
+    "verwandt": [
+      { "sektion": "bruecken", "eintrag": "maria-thun" },
+      { "sektion": "mond", "eintrag": "synodischer-monat" },
+      { "sektion": "mond", "eintrag": "perigaeum-apogaeum" }
+    ]
+  },
+  {
+    "id": "lineare-zyklische-zeit",
+    "name": "Lineare und zyklische Zeit",
+    "untertitel": "Zwei Weltbilder",
+    "symbol": "⟳",
+    "kurz": "Die christlich-westliche Zeit kennt nur eine Richtung. Die alten Kulturen kannten Kreise.",
+    "meta": {},
+    "bloecke": [
+      {
+        "titel": "Lineare Zeit",
+        "text": "Unsere westliche Zeit-Vorstellung ist linear: vom Anfang (Schoepfung, Urknall) zum Ende (Jenseits, Waermetod). Jahre zaehlen vorwaerts ohne Wiederkehr. Geschichte ist eindeutig. Die christliche und juedische Tradition tragen diese Linearitaet — von Adam zur Apokalypse. Spaeter saekularisiert: Fortschritt, Entwicklung, Wachstum."
+      },
+      {
+        "titel": "Zyklische Zeit",
+        "text": "Die meisten alten Kulturen lebten in **zyklischer** Zeit: Hindus, [Mayas](wissen:maya:mayazivilisation), indigene Voelker, Chinesen. Die Zeit kehrt zurueck. Tag und Nacht, Mondzyklus, Jahresrhythmus, Welt-Zeitalter (Yuga, [Bak'tun](wissen:maya:2012-wahrheit)). Auch der Mensch wird wiedergeboren. Diese Zeit ist nicht 'unwissenschaftlich' — sie ist eine andere Ordnungsmoeglichkeit, die sehr gut zur Natur passt."
+      },
+      {
+        "titel": "Beides",
+        "text": "Modernes Bewusstsein kann beide Zeitformen tragen. **Lineare Zeit** fuer Wissenschaft, Projektplanung, Geschichte. **Zyklische Zeit** fuer Natur, Spiritualitaet, koerperliche Rhythmen. Garten zu pflegen heisst, der zyklischen Zeit zu lauschen — Aussaattage kehren wieder, Pflanzen folgen ewigen Rhythmen, das gleiche Beet ist im Mai immer im Mai. Beide Zeiten haben Wuerde. Siehe auch [Calendar Round](wissen:maya:calendar-round)."
+      }
+    ],
+    "verwandt": [
+      { "sektion": "maya", "eintrag": "calendar-round" },
+      { "sektion": "maya", "eintrag": "mayazivilisation" },
+      { "sektion": "bruecken", "eintrag": "kosmische-rhythmen" }
+    ]
+  },
+  {
+    "id": "astrologie-astronomie",
+    "name": "Astrologie und Astronomie",
+    "untertitel": "Frueher ein Wissensgebiet, heute zwei",
+    "symbol": "✶",
+    "kurz": "Bis Kepler war es das gleiche. Was ist verloren, was gewonnen?",
+    "meta": {},
+    "bloecke": [
+      {
+        "titel": "Eine Tradition",
+        "text": "Bis ins 17. Jahrhundert war Astrologie/Astronomie ein einziges Wissensgebiet. Babylonier, Aegypter, [Mayas](wissen:maya:mayazivilisation), Griechen, Inder, mittelalterliche Europaeer: alle beobachteten den Himmel, um zugleich die Welt zu verstehen UND in ihr zu handeln. **Kepler** war Astrologe, ebenso Galileo, Newton. Erst die Aufklaerung trennte beides."
+      },
+      {
+        "titel": "Was Astronomie heute kann",
+        "text": "Wissenschaftliche Astronomie misst, rechnet, sagt voraus. Sie hat uns das tiefste Universum gezeigt: 13,8 Milliarden Jahre, 200 Milliarden Galaxien. Sie ist eine Sprache der Praezision. Doch sie hat den **Sinn** der Sterne aus der Beobachtung herausgeschnitten. Ein Stern ist 'nur' eine Plasma-Kugel, kein Bote, kein Anteilgeber. Vergleiche die [Praezession des Fruehlingspunktes](wissen:sonne:praezession)."
+      },
+      {
+        "titel": "Was Astrologie traegt",
+        "text": "Astrologie traegt das alte **symbolische** Wissen. Sie spricht ueber Bedeutung, Charakter, Schicksal. Sie ist nicht Wissenschaft, sondern eine andere Form der Aufmerksamkeit — vergleichbar mit Poesie, Traumarbeit, Mythologie. Niemand muss sie 'beweisen'. Die Frage ist: laesst du dich von ihr beruehren? Findest du in ihr Stimmungen wieder, die in dir wirklich sind? Dann hat sie ihren Wert."
+      }
+    ],
+    "verwandt": [
+      { "sektion": "sonne", "eintrag": "praezession" },
+      { "sektion": "kalender", "eintrag": "hindu-kalender" },
+      { "sektion": "tierkreis", "eintrag": "widder" }
+    ]
+  },
+  {
+    "id": "kosmische-rhythmen",
+    "name": "Kosmische Rhythmen im Alltag",
+    "untertitel": "Was Steiner, Goethe, die Indigenen sahen",
+    "symbol": "♾",
+    "kurz": "Die Welt schwingt. Wir sind Teil dieses Schwingens. Das ist die Grundlage.",
+    "meta": {},
+    "bloecke": [
+      {
+        "titel": "Goethes Beobachtung",
+        "text": "Johann Wolfgang von Goethe verstand Natur nicht als Maschine, sondern als **lebendiges Werden**. Pflanzen zeigen eine 'Metamorphose' — Blatt wird Bluete wird Frucht. Diese Verwandlung folgt rhythmischen Kraeften, die nicht nur in der Pflanze, sondern auch im Kosmos sind. Mond, Sonne, Sterne sind nicht 'aussen', sondern wirken in jedes wachsende Wesen."
+      },
+      {
+        "titel": "Rudolf Steiners Erweiterung",
+        "text": "Rudolf Steiner (1861-1925) hat das im Wesentlichen aufgegriffen: jeder Stern, jeder Planet 'spricht' in der Pflanze. Der **Mond** wirkt auf das Wasser, **Saturn** auf die Saftbildung, **Mars** auf das Eisen. Steiner gab den [Biodynamikern](wissen:traditionen:biodynamik) Praeparate, Aussaatrhythmen, eine Sicht: der Garten ist eingebettet in den ganzen Kosmos. Goetheanistisches Schauen — beobachten, fuehlen, dann denken."
+      },
+      {
+        "titel": "Was die Indigenen wussten",
+        "text": "[Maya](wissen:maya:mayazivilisation)-, Andin-, indianische, afrikanische, aboriginen-Kulturen lebten alle in dem Bewusstsein: **alles ist verbunden**. Pflanze, Tier, Mensch, Stern, Erde — keine getrennten 'Sachen', sondern ein einziges Lebewesen, das atmet. Diese Sicht ist nicht primitiv — sie ist die alte Wahrheit, von der die moderne Quantenphysik langsam wieder spricht: nichts existiert isoliert, alles ist in Beziehung."
+      }
+    ],
+    "verwandt": [
+      { "sektion": "traditionen", "eintrag": "biodynamik" },
+      { "sektion": "traditionen", "eintrag": "anastasia" },
+      { "sektion": "maya", "eintrag": "mayazivilisation" }
+    ]
+  }
+]

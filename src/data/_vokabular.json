@@ -1,0 +1,96 @@
+{
+  "kuratiert": {
+    "wurzeltag":     { "name": "Wurzeltag",     "gruppe": "tagestyp" },
+    "blatttag":      { "name": "Blatttag",      "gruppe": "tagestyp" },
+    "bluetentag":    { "name": "Bluetentag",    "gruppe": "tagestyp" },
+    "fruchttag":     { "name": "Fruchttag",     "gruppe": "tagestyp" },
+
+    "neumond":       { "name": "Neumond",       "gruppe": "mondphase" },
+    "zunehmend":     { "name": "zunehmend",     "gruppe": "mondphase" },
+    "vollmond":      { "name": "Vollmond",      "gruppe": "mondphase" },
+    "abnehmend":     { "name": "abnehmend",     "gruppe": "mondphase" },
+    "aufsteigend":   { "name": "aufsteigend",   "gruppe": "mondbahn" },
+    "absteigend":    { "name": "absteigend",    "gruppe": "mondbahn" },
+    "mondknoten":    { "name": "Mondknoten",    "gruppe": "mondbahn" },
+
+    "fruehling":     { "name": "Fruehling",     "gruppe": "jahreszeit" },
+    "sommer":        { "name": "Sommer",        "gruppe": "jahreszeit" },
+    "herbst":        { "name": "Herbst",        "gruppe": "jahreszeit" },
+    "winter":        { "name": "Winter",        "gruppe": "jahreszeit" },
+
+    "vorzucht":      { "name": "Vorzucht",      "gruppe": "anbau" },
+    "direktsaat":    { "name": "Direktsaat",    "gruppe": "anbau" },
+    "auspflanzen":   { "name": "Auspflanzen",   "gruppe": "anbau" },
+    "ernte":         { "name": "Ernte",         "gruppe": "anbau" },
+    "lagerung":      { "name": "Lagerung",      "gruppe": "anbau" },
+    "schnitt":       { "name": "Schnitt",       "gruppe": "anbau" },
+    "veredelung":    { "name": "Veredelung",    "gruppe": "anbau" },
+    "mulchen":       { "name": "Mulchen",       "gruppe": "praxis" },
+    "giessen":       { "name": "Giessen",       "gruppe": "praxis" },
+    "duengen":       { "name": "Duengen",       "gruppe": "praxis" },
+    "kompostieren":  { "name": "Kompostieren",  "gruppe": "praxis" },
+    "mischkultur":   { "name": "Mischkultur",   "gruppe": "praxis" },
+
+    "hellkeimer":    { "name": "Hellkeimer",    "gruppe": "keimung" },
+    "dunkelkeimer":  { "name": "Dunkelkeimer",  "gruppe": "keimung" },
+
+    "fruchtgemuese": { "name": "Fruchtgemuese", "gruppe": "pflanzentyp" },
+    "blattgemuese":  { "name": "Blattgemuese",  "gruppe": "pflanzentyp" },
+    "wurzelgemuese": { "name": "Wurzelgemuese", "gruppe": "pflanzentyp" },
+    "kraeuter":      { "name": "Kraeuter",      "gruppe": "pflanzentyp" },
+    "blueher":       { "name": "Bluehende",     "gruppe": "pflanzentyp" },
+
+    "biodynamik":    { "name": "Biodynamik",    "gruppe": "schule" },
+    "permakultur":   { "name": "Permakultur",   "gruppe": "schule" },
+    "naturgarten":   { "name": "Naturgarten",   "gruppe": "schule" },
+    "anastasia":     { "name": "Anastasia",     "gruppe": "schule" },
+    "maria-thun":    { "name": "Maria Thun",    "gruppe": "schule" },
+    "sepp-holzer":   { "name": "Sepp Holzer",   "gruppe": "schule" },
+    "huegelkultur":  { "name": "Huegelkultur",  "gruppe": "schule" },
+    "forest-garden": { "name": "Forest Garden", "gruppe": "schule" },
+
+    "tzolkin":       { "name": "Tzolkin",       "gruppe": "maya" },
+    "haab":          { "name": "Haab",          "gruppe": "maya" },
+    "long-count":    { "name": "Long Count",    "gruppe": "maya" },
+    "venus":         { "name": "Venus",         "gruppe": "maya" },
+    "plejaden":      { "name": "Plejaden",      "gruppe": "maya" },
+
+    "tropisch":      { "name": "tropisch",      "gruppe": "astrologie" },
+    "siderisch":     { "name": "siderisch",     "gruppe": "astrologie" },
+    "praezession":   { "name": "Praezession",   "gruppe": "astrologie" },
+
+    "schaedling":    { "name": "Schaedling",    "gruppe": "schaedling" },
+    "blattlaus":     { "name": "Blattlaeuse",   "gruppe": "schaedling" },
+    "schnecke":      { "name": "Schnecken",     "gruppe": "schaedling" },
+    "mehltau":       { "name": "Mehltau",       "gruppe": "krankheit" },
+    "kraut-braun":   { "name": "Krautfaeule",   "gruppe": "krankheit" },
+    "rost":          { "name": "Rost",          "gruppe": "krankheit" },
+
+    "brennnessel":   { "name": "Brennnessel",   "gruppe": "wildpflanze" },
+    "schachtelhalm": { "name": "Schachtelhalm", "gruppe": "wildpflanze" },
+    "beinwell":      { "name": "Beinwell",      "gruppe": "wildpflanze" },
+    "loewenzahn":    { "name": "Loewenzahn",    "gruppe": "wildpflanze" },
+
+    "jauche":        { "name": "Jauche",        "gruppe": "mittel" },
+    "tinktur":       { "name": "Tinktur",       "gruppe": "mittel" },
+    "bruehe":        { "name": "Bruehe",        "gruppe": "mittel" },
+    "kompost":       { "name": "Kompost",       "gruppe": "mittel" },
+    "mykorrhiza":    { "name": "Mykorrhiza",    "gruppe": "mittel" },
+    "em":            { "name": "EM",            "gruppe": "mittel" },
+    "bokashi":       { "name": "Bokashi",       "gruppe": "mittel" }
+  },
+  "synonyme": {
+    "voranzucht": "vorzucht",
+    "anzucht": "vorzucht",
+    "anbau": "auspflanzen",
+    "muelchen": "mulchen",
+    "duenger": "duengen",
+    "ackerschachtelhalm": "schachtelhalm",
+    "knoblauch-tinktur": "tinktur",
+    "brennnessel-jauche": "jauche",
+    "effektive-mikroorganismen": "em",
+    "lichtkeimer": "hellkeimer",
+    "nachtschattengewaechse": "fruchtgemuese"
+  },
+  "langTail": []
+}

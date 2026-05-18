@@ -1,0 +1,189 @@
+[
+  {
+    "id": "synodischer-monat",
+    "name": "Synodischer Mondmonat",
+    "untertitel": "29 Tage, 12 Stunden, 44 Minuten",
+    "symbol": "☽",
+    "kurz": "Von Neumond zu Neumond. Der sichtbare Rhythmus der Mondphasen.",
+    "meta": {},
+    "bloecke": [
+      {
+        "titel": "Astronomie",
+        "text": "29,5306 Tage von einem Neumond zum naechsten. Der Mond braucht laenger als seinen siderischen Umlauf, weil sich die Erde in dieser Zeit ein zwoelftel ihrer Sonnenbahn weiter bewegt — der Mond muss diesen Bogen 'einholen'. Daher der Unterschied zu den 27,32 Tagen Sternumlauf."
+      },
+      {
+        "titel": "Bedeutung",
+        "text": "Dies ist der Mondzyklus, den jeder mit blossem Auge sehen kann. Die alten Hochkulturen rechneten danach: Babylonier, Mayas, Inder, Hebraeer. Zwoelf solche Zyklen ergeben 354 Tage — elf weniger als das Sonnenjahr. Diese Differenz nennt man Epakte und ist der Grund fuer Schaltmonate in lunisolaren Kalendern."
+      },
+      {
+        "titel": "Im Garten",
+        "text": "[Maria Thun](wissen:bruecken:maria-thun) hat beobachtet: zunehmender Mond zieht den Saft nach oben (Blattwachstum), abnehmender nach unten (Wurzelbildung). Aussaat zu zunehmendem Mond fuer Blatt- und Bluetenpflanzen, zu abnehmendem fuer Wurzelgemuese und Lagerware."
+      }
+    ],
+    "verwandt": [
+      { "sektion": "mond", "eintrag": "siderischer-monat" },
+      { "sektion": "bruecken", "eintrag": "mond-pflanzen" },
+      { "sektion": "bruecken", "eintrag": "maria-thun" }
+    ]
+  },
+  {
+    "id": "siderischer-monat",
+    "name": "Siderischer Mondmonat",
+    "untertitel": "27 Tage, 7 Stunden, 43 Minuten",
+    "symbol": "☾",
+    "kurz": "Wie lange der Mond braucht, um die zwoelf Tierkreiszeichen einmal zu durchwandern.",
+    "meta": {},
+    "bloecke": [
+      {
+        "titel": "Astronomie",
+        "text": "27,3217 Tage fuer einen vollen Umlauf des Mondes um die Erde — gemessen an einem Fixstern. Pro Tag bewegt sich der Mond etwa 13 Grad weiter durch den Tierkreis. Daher wechselt er etwa alle 2,3 Tage in ein neues Zeichen."
+      },
+      {
+        "titel": "Bedeutung",
+        "text": "Dieser Zyklus ist die Grundlage der biodynamischen [Maria-Thun](wissen:bruecken:maria-thun)-Aussaattage. In welchem Sternzeichen der Mond gerade steht, bestimmt den Tagestyp: Erd-Zeichen ([Stier](wissen:tierkreis:stier), [Jungfrau](wissen:tierkreis:jungfrau), [Steinbock](wissen:tierkreis:steinbock)) ergeben Wurzeltage, Wasser-Zeichen Blatttage, Luft-Zeichen Bluetentage, Feuer-Zeichen Fruchttage."
+      },
+      {
+        "titel": "Im Garten",
+        "text": "Wenn man weiss, in welchem Zeichen der Mond steht, kennt man den Tagestyp. Ein Pflanzkalender (wie dieser) zeigt die siderische Mondposition — auch wenn keine Mondphase sichtbar waere. Innerhalb von 27 Tagen ist jeder Tagestyp etwa 6 mal aufgetreten."
+      }
+    ],
+    "verwandt": [
+      { "sektion": "mond", "eintrag": "synodischer-monat" },
+      { "sektion": "bruecken", "eintrag": "maria-thun" },
+      { "sektion": "sonne", "eintrag": "praezession" }
+    ]
+  },
+  {
+    "id": "mondknoten",
+    "name": "Mondknoten",
+    "untertitel": "Rahu und Ketu — die unsichtbaren Punkte",
+    "symbol": "☊",
+    "kurz": "Die Schnittpunkte der Mondbahn mit der Ekliptik. Sperrnaechte fuer Aussaat.",
+    "meta": {},
+    "bloecke": [
+      {
+        "titel": "Astronomie",
+        "text": "Der Mond bewegt sich nicht genau in der Ekliptik (Sonnenbahn), sondern ist um etwa 5,1 Grad geneigt. An zwei Punkten kreuzt seine Bahn die Ekliptik: aufsteigender und absteigender Knoten. Diese Punkte wandern rueckwaerts durch den Tierkreis und vollenden ihren Umlauf in 18,6 Jahren — dem [Saros-Zyklus](wissen:mond:saros)."
+      },
+      {
+        "titel": "Mythologie",
+        "text": "Im vedischen Jyotish heissen die Knoten **Rahu** (aufsteigend) und **Ketu** (absteigend). Sie werden als die zwei Haelften eines verschluckten Daemons gedacht, der die Sonne und den Mond bei Finsternissen verschlingt. Bei den Mayas wurden Mondknoten ebenfalls verfolgt — Finsternisse waren wichtige Ereignisse, die im Dresden Codex tabelliert sind."
+      },
+      {
+        "titel": "Im Garten",
+        "text": "[Maria Thun](wissen:bruecken:maria-thun) bezeichnet die Tage, an denen der Mond einen Knoten passiert (etwa alle 13,6 Tage), als 'ungeeignet' fuer Aussaat. Die Pflanzen wirken irritiert. Diese Sperrtage sind in der App mit dem Symbol ∅ markiert. Beobachten — pflanzen — Stille halten."
+      }
+    ],
+    "verwandt": [
+      { "sektion": "mond", "eintrag": "saros" },
+      { "sektion": "mond", "eintrag": "drakonitischer-monat" },
+      { "sektion": "bruecken", "eintrag": "maria-thun" }
+    ]
+  },
+  {
+    "id": "aufsteigend-absteigend",
+    "name": "Aufsteigender und absteigender Mond",
+    "untertitel": "Die Hoehe der Mondbahn im Tageslauf",
+    "symbol": "↕",
+    "kurz": "Nicht zu verwechseln mit zu- und abnehmendem Mond. Eine ganz andere Bewegung.",
+    "meta": {},
+    "bloecke": [
+      {
+        "titel": "Astronomie",
+        "text": "Im Verlauf eines [siderischen Monats](wissen:mond:siderischer-monat) wandert der Mond vom suedlichsten Punkt seiner Bahn (im [Schuetzen](wissen:tierkreis:schuetze)) zum noerdlichsten (in den [Zwillingen](wissen:tierkreis:zwillinge)) und zurueck. Diese Bewegung von suedlich (tief) nach noerdlich (hoch) heisst **aufsteigender Mond** — etwa 14 Tage. Die umgekehrte Bewegung ist **absteigend**."
+      },
+      {
+        "titel": "Bedeutung",
+        "text": "Wahrnehmbar: ein aufsteigender Mond geht im Lauf der Tage immer hoeher am Himmel auf, ein absteigender immer tiefer. Bei aufsteigendem Mond fliesst der Saft in den Pflanzen nach oben — gute Zeit fuer Aussaat und Ernte oberirdischer Teile. Bei absteigendem Mond zieht es zurueck — gute Zeit fuer Pflanzen, Veredeln, Schneiden."
+      },
+      {
+        "titel": "Im Garten",
+        "text": "Aufsteigend ([Schuetze](wissen:tierkreis:schuetze) bis [Zwillinge](wissen:tierkreis:zwillinge)): aussaeen, ernten was oberirdisch waechst. Absteigend (Zwillinge bis Schuetze): pflanzen, [veredeln](arbeit:veredeln-pfropfen), beschneiden, Wurzel ernten und einlagern. Diese Bewegung ist verschieden vom zu- und abnehmenden Mond (Mondphase) und ueberlagert sich mit ihm."
+      }
+    ],
+    "verwandt": [
+      { "sektion": "bruecken", "eintrag": "maria-thun" },
+      { "sektion": "mond", "eintrag": "synodischer-monat" },
+      { "sektion": "traditionen", "eintrag": "sepp-holzer" }
+    ]
+  },
+  {
+    "id": "saros",
+    "name": "Saros-Zyklus",
+    "untertitel": "18 Jahre, 11 Tage, 8 Stunden",
+    "symbol": "✦",
+    "kurz": "Der Rhythmus der Sonnen- und Mondfinsternisse. Schon den Babyloniern bekannt.",
+    "meta": {},
+    "bloecke": [
+      {
+        "titel": "Astronomie",
+        "text": "Nach 6585,3 Tagen kehren Sonne, Mond und Mondknoten in nahezu die gleiche Konstellation zurueck. Damit wiederholt sich auch das Muster der Finsternisse. Ein einzelner Saros-Zyklus dauert etwa 1.250 Jahre und enthaelt 71 Finsternisse."
+      },
+      {
+        "titel": "Mythologie",
+        "text": "Die Babylonier kannten den Zyklus bereits 700 v.Chr. und nutzten ihn, um Finsternisse vorherzusagen. Die Mayas haben Finsternisse im Dresden Codex tabelliert. Bei vielen alten Voelkern galten Finsternisse als kosmische Wendepunkte — Zeiten, an denen die normale Ordnung aussetzt."
+      },
+      {
+        "titel": "Im Garten",
+        "text": "An Finsternistagen halten viele biodynamische Gaertner Stille — keine Aussaat, kein Ernten. Der Erdmagnetfeld-Einfluss waehrend einer Finsternis ist messbar. Beobachtungswert: wie verhalten sich Tiere und Pflanzen vor und waehrend einer Finsternis?"
+      }
+    ],
+    "verwandt": [
+      { "sektion": "mond", "eintrag": "mondknoten" },
+      { "sektion": "mond", "eintrag": "drakonitischer-monat" },
+      { "sektion": "kalender", "eintrag": "metonischer-zyklus" }
+    ]
+  },
+  {
+    "id": "perigaeum-apogaeum",
+    "name": "Erdnaehe und Erdferne",
+    "untertitel": "Perigaeum und Apogaeum",
+    "symbol": "◐",
+    "kurz": "Der Mond ist nicht immer gleich weit von der Erde entfernt.",
+    "meta": {},
+    "bloecke": [
+      {
+        "titel": "Astronomie",
+        "text": "Die Mondbahn ist eine Ellipse mit der Erde im einen Brennpunkt. **Perigaeum** = Erdnaehe (etwa 363.300 km), **Apogaeum** = Erdferne (etwa 405.500 km). Differenz: 42.000 km. Der erdnaechste Vollmond eines Jahres wirkt im Bild bis zu 14% groesser als der erdfernste — daher 'Supermond'."
+      },
+      {
+        "titel": "Bedeutung",
+        "text": "Die Gezeitenkraft des Mondes ist beim Perigaeum etwa 50% staerker als beim Apogaeum. Springfluten faellen mit Vollmond oder Neumond bei Perigaeum zusammen. Diese Phasen werden in einigen Traditionen als besonders kraftvoll betrachtet — Aussaat, Wassergaben, Mondrhythmus."
+      },
+      {
+        "titel": "Im Garten",
+        "text": "Beim Vollmond in Perigaeum-Naehe wird der Saftaufstieg in Pflanzen als besonders kraftvoll beobachtet. Gute Zeit fuer Aussaat von schwer keimendem Saatgut. Verschiedene biodynamische Schulen werten das unterschiedlich — [Maria Thun](wissen:bruecken:maria-thun) gibt der Sternzeichen-Position mehr Gewicht als Apogaeum/Perigaeum."
+      }
+    ],
+    "verwandt": [
+      { "sektion": "mond", "eintrag": "synodischer-monat" },
+      { "sektion": "bruecken", "eintrag": "mond-pflanzen" }
+    ]
+  },
+  {
+    "id": "drakonitischer-monat",
+    "name": "Drakonitischer Mondmonat",
+    "untertitel": "27 Tage, 5 Stunden, 6 Minuten",
+    "symbol": "⊖",
+    "kurz": "Wie lange der Mond braucht, um zum gleichen Knoten zurueckzukehren.",
+    "meta": {},
+    "bloecke": [
+      {
+        "titel": "Astronomie",
+        "text": "27,2122 Tage von einem Mondknoten-Durchgang zum naechsten. Etwas kuerzer als der siderische Monat, weil die Knoten selbst rueckwaerts durch den Tierkreis wandern. Der Drache (drakon) — alte Bezeichnung fuer die Knoten — gibt diesem Zyklus den Namen."
+      },
+      {
+        "titel": "Bedeutung",
+        "text": "Aus dem Verhaeltnis von [synodischem](wissen:mond:synodischer-monat) zu drakonitischem Monat ergibt sich der **[Saros-Zyklus](wissen:mond:saros)** — alle 18,03 Jahre stehen Sonne, Mond und [Knoten](wissen:mond:mondknoten) wieder in derselben Beziehung, und Finsternisse wiederholen sich. Die alten Astronomen kannten diesen Zyklus."
+      },
+      {
+        "titel": "Im Garten",
+        "text": "Der drakonitische Monat ist eher ein astronomischer Begriff — fuer den Gartenpraktiker zaehlen die Knotentage (alle 13,6 Tage), die als Pausen empfohlen sind."
+      }
+    ],
+    "verwandt": [
+      { "sektion": "mond", "eintrag": "mondknoten" },
+      { "sektion": "mond", "eintrag": "saros" }
+    ]
+  }
+]
