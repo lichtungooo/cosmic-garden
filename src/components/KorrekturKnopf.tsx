@@ -4,6 +4,9 @@
 
 import { useState } from 'react';
 import { useKorrekturenZuScope } from '../lib/korrektur';
+import { useAuthState } from '@real-life-stack/toolkit';
+import { useAnmeldung } from '../lib/anmeldung-context';
+import { WoTEinladung } from './WoTEinladung';
 
 interface Props {
   scope: string;
@@ -12,6 +15,9 @@ interface Props {
 
 export function KorrekturKnopf({ scope, kontextLabel }: Props) {
   const { korrekturen, sendeKorrektur } = useKorrekturenZuScope(scope);
+  const authState = useAuthState();
+  const anmeldung = useAnmeldung();
+  const istAngemeldet = authState.status === 'authenticated';
   const [offen, setOffen] = useState(false);
   const [abschnitt, setAbschnitt] = useState('');
   const [hinweis, setHinweis] = useState('');
@@ -53,7 +59,14 @@ export function KorrekturKnopf({ scope, kontextLabel }: Props) {
         </div>
       )}
 
-      {offen && (
+      {offen && !istAngemeldet && (
+        <WoTEinladung
+          zweck="korrektur"
+          onAnmelden={() => { setOffen(false); anmeldung.oeffne(); }}
+        />
+      )}
+
+      {offen && istAngemeldet && (
         <div className="korrektur-formular">
           <p className="korrektur-formular-anleitung">
             Was an <strong>{kontextLabel}</strong> ist nicht ganz richtig? Sag kurz, wo und was —

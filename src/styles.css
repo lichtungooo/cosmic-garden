@@ -7651,3 +7651,120 @@ button { font-family: inherit; cursor: pointer; }
   .korrektur-link { font-size: .8rem; }
 }
 
+/* ====== WOT-EINLADUNG (Erklärung für nicht-angemeldete User) ====== */
+.wot-einladung {
+  background: linear-gradient(135deg, #f4ebd0 0%, #e8e0c4 100%);
+  border: 1px solid #c89b3a;
+  border-radius: var(--radius);
+  padding: 1.5rem 1.65rem;
+  margin: .75rem 0;
+  text-align: left;
+}
+.wot-einladung-kopf {
+  border-bottom: 1px solid rgba(0, 0, 0, .08);
+  padding-bottom: .85rem;
+  margin-bottom: 1rem;
+}
+.wot-einladung-kopf h3 {
+  font-family: 'Spectral', Georgia, serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin: 0;
+  color: #4d3a18;
+}
+.wot-einladung-inhalt {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.wot-einladung-lead {
+  font-family: 'Spectral', Georgia, serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #3a2c12;
+  margin: 0;
+}
+.wot-einladung-lead strong {
+  font-weight: 600;
+  color: #2a1f0a;
+}
+.wot-einladung-baustein {
+  background: rgba(255, 255, 255, .55);
+  border-radius: var(--radius);
+  padding: .85rem 1.1rem;
+}
+.wot-einladung-baustein h4 {
+  margin: 0 0 .35rem;
+  font-family: 'Spectral', Georgia, serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #4d3a18;
+}
+.wot-einladung-baustein p {
+  margin: 0;
+  font-size: .92rem;
+  line-height: 1.55;
+  color: #3a2c12;
+  font-family: 'Spectral', Georgia, serif;
+}
+.wot-einladung-baustein em {
+  font-style: italic;
+  color: #2a1f0a;
+}
+.wot-einladung-baustein strong {
+  font-weight: 600;
+  color: #2a1f0a;
+}
+.wot-einladung-fuss {
+  margin-top: .35rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .55rem;
+}
+.wot-einladung-knopf {
+  background: #4d3a18;
+  border: 1px solid #4d3a18;
+  color: #f4ebd0;
+  padding: .65rem 1.4rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all .15s ease;
+}
+.wot-einladung-knopf:hover {
+  background: #6a5223;
+  border-color: #6a5223;
+}
+.wot-einladung-fein {
+  margin: 0;
+  font-size: .8rem;
+  color: #6a5223;
+  text-align: center;
+  font-style: italic;
+  font-family: 'Spectral', Georgia, serif;
+  line-height: 1.45;
+}
+
+/* ===== Pseudonym-Anzeige am Post ===== */
+.frage-autor,
+.antwort-autor {
+  color: #5b3a8a;
+  font-weight: 500;
+}
+.frage-trenner,
+.antwort-trenner {
+  color: var(--ink-mute);
+  opacity: .5;
+}
+
+@media (max-width: 720px) {
+  .wot-einladung { padding: 1.15rem 1.15rem; }
+  .wot-einladung-kopf h3 { font-size: 1.1rem; }
+  .wot-einladung-lead { font-size: .95rem; }
+  .wot-einladung-baustein { padding: .7rem .85rem; }
+  .wot-einladung-baustein p { font-size: .88rem; }
+}
+

@@ -4,8 +4,11 @@
 
 import { useState, useEffect, useRef } from 'react';
 import { useFragenZuScope, useAntworten, type Frage } from '../lib/fragen';
-import { useCurrentUser } from '@real-life-stack/toolkit';
+import { useCurrentUser, useAuthState } from '@real-life-stack/toolkit';
 import { MarkdownText } from './MarkdownText';
+import { WoTEinladung } from './WoTEinladung';
+import { useAnmeldung } from '../lib/anmeldung-context';
+import { useProfilName } from '../lib/profil-name';
 
 interface Props {
   scope: string;          // z.B. 'pflanze:kopfsalat'
@@ -15,6 +18,9 @@ interface Props {
 export function FragenBlock({ scope, kontextLabel }: Props) {
   const { fragen, stelleFrage, loescheFrage } = useFragenZuScope(scope);
   const { data: user } = useCurrentUser();
+  const authState = useAuthState();
+  const anmeldung = useAnmeldung();
+  const istAngemeldet = authState.status === 'authenticated';
   const [formularOffen, setFormularOffen] = useState(false);
 
   async function neueFrageMitAntwort(titel: string, beobachtung: string, ersteAntwort: string) {
@@ -71,11 +77,16 @@ export function FragenBlock({ scope, kontextLabel }: Props) {
         >
           Eine Frage stellen
         </button>
-      ) : (
+      ) : istAngemeldet ? (
         <FrageStellenFormular
           kontextLabel={kontextLabel}
           onAbbrechen={() => setFormularOffen(false)}
           onAbsenden={neueFrageMitAntwort}
+        />
+      ) : (
+        <WoTEinladung
+          zweck="frage"
+          onAnmelden={() => { setFormularOffen(false); anmeldung.oeffne(); }}
         />
       )}
     </section>
@@ -93,6 +104,10 @@ interface FrageEintragProps {
 function FrageEintrag({ frage, istAutor, onLoeschen, ersteAntwortText, onErsteAntwortGeschrieben }: FrageEintragProps) {
   const { antworten, schreibeAntwort, loescheAntwort } = useAntworten(frage.id);
   const { data: user } = useCurrentUser();
+  const authState = useAuthState();
+  const anmeldung = useAnmeldung();
+  const istAngemeldet = authState.status === 'authenticated';
+  const autorName = useProfilName(frage.autorProfilId);
   const [antwortFormular, setAntwortFormular] = useState(false);
   const [antwortEntwurf, setAntwortEntwurf] = useState('');
   const ersteAntwortGeschrieben = useRef(false);
@@ -122,7 +137,9 @@ function FrageEintrag({ frage, istAutor, onLoeschen, ersteAntwortText, onErsteAn
       <header className="frage-kopf">
         <h3 className="frage-titel">{frage.titel}</h3>
         <span className="frage-meta">
-          {datumStr}
+          <span className="frage-autor">{autorName}</span>
+          <span className="frage-trenner">·</span>
+          <span className="frage-datum">{datumStr}</span>
           {istAutor && (
             <button
               type="button"
@@ -141,31 +158,14 @@ function FrageEintrag({ frage, istAutor, onLoeschen, ersteAntwortText, onErsteAn
       )}
 
       <div className="antworten-liste">
-        {antworten.map(a => {
-          const aIstAutor = user?.id === a.autorProfilId;
-          const aDatumStr = new Date(a.erstellt).toLocaleDateString('de-DE', {
-            day: '2-digit', month: 'short',
-          });
-          return (
-            <article key={a.id} className="antwort-eintrag">
-              <div className="antwort-text">
-                <MarkdownText text={a.text} />
-              </div>
-              <footer className="antwort-fuss">
-                <span>{aDatumStr}</span>
-                {aIstAutor && (
-                  <button
-                    type="button"
-                    className="antwort-loesch"
-                    onClick={() => loescheAntwort(a.id)}
-                    title="Antwort löschen"
-                    aria-label="Antwort löschen"
-                  >×</button>
-                )}
-              </footer>
-            </article>
-          );
-        })}
+        {antworten.map(a => (
+          <AntwortEintrag
+            key={a.id}
+            antwort={a}
+            istAutor={user?.id === a.autorProfilId}
+            onLoeschen={() => loescheAntwort(a.id)}
+          />
+        ))}
       </div>
 
       {!antwortFormular ? (
@@ -176,6 +176,11 @@ function FrageEintrag({ frage, istAutor, onLoeschen, ersteAntwortText, onErsteAn
         >
           Antworten
         </button>
+      ) : !istAngemeldet ? (
+        <WoTEinladung
+          zweck="antwort"
+          onAnmelden={() => { setAntwortFormular(false); anmeldung.oeffne(); }}
+        />
       ) : (
         <div className="antwort-formular">
           <textarea
@@ -205,6 +210,40 @@ function FrageEintrag({ frage, istAutor, onLoeschen, ersteAntwortText, onErsteAn
         </div>
       )}
     </li>
+  );
+}
+
+interface AntwortEintragProps {
+  antwort: { id: string; text: string; erstellt: number; autorProfilId: string };
+  istAutor: boolean;
+  onLoeschen: () => void;
+}
+
+function AntwortEintrag({ antwort, istAutor, onLoeschen }: AntwortEintragProps) {
+  const autorName = useProfilName(antwort.autorProfilId);
+  const datumStr = new Date(antwort.erstellt).toLocaleDateString('de-DE', {
+    day: '2-digit', month: 'short',
+  });
+  return (
+    <article className="antwort-eintrag">
+      <div className="antwort-text">
+        <MarkdownText text={antwort.text} />
+      </div>
+      <footer className="antwort-fuss">
+        <span className="antwort-autor">{autorName}</span>
+        <span className="antwort-trenner">·</span>
+        <span className="antwort-datum">{datumStr}</span>
+        {istAutor && (
+          <button
+            type="button"
+            className="antwort-loesch"
+            onClick={onLoeschen}
+            title="Antwort löschen"
+            aria-label="Antwort löschen"
+          >×</button>
+        )}
+      </footer>
+    </article>
   );
 }
 

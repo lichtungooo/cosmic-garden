@@ -21,6 +21,7 @@ import {
   type DetailRef,
   refZuPfad,
 } from './lib/detail-navigation';
+import { AnmeldungContext } from './lib/anmeldung-context';
 import { type Pflanze, type Gartenarbeit } from './lib/pflanzen';
 
 const LazyDIDAuthScreen = lazy(() =>
@@ -109,10 +110,15 @@ export function App() {
   })();
   const themenAktiv = location.pathname.startsWith('/welt/');
 
+  const anmeldungWert = useMemo(() => ({
+    oeffne: () => setAnmeldungOffen(true),
+  }), []);
+
   return (
     <StandortContext.Provider value={ort}>
       <DetailNavContext.Provider value={nav}>
       <WissenContext.Provider value={oeffneWissen}>
+      <AnmeldungContext.Provider value={anmeldungWert}>
       <div className="app">
         <header className="app-header">
           <div className="app-header-links">
@@ -261,6 +267,7 @@ export function App() {
         )}
 
       </div>
+      </AnmeldungContext.Provider>
       </WissenContext.Provider>
       </DetailNavContext.Provider>
     </StandortContext.Provider>
