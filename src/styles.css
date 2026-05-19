@@ -5491,6 +5491,61 @@ button { font-family: inherit; cursor: pointer; }
   background: var(--bg-soft);
 }
 
+/* === Pflanzen-Detail-Sektionen (erweiterter Steckbrief) === */
+.pflanze-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1.25rem 0;
+}
+.pflanze-sektion {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1rem 1.25rem;
+}
+.pflanze-sektion h2 {
+  font-family: 'Spectral', Georgia, serif;
+  font-size: 1.05rem;
+  font-weight: 500;
+  margin: 0 0 .65rem 0;
+  color: var(--ink);
+  padding-bottom: .35rem;
+  border-bottom: 1px solid var(--line);
+}
+.fakt-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .3rem;
+}
+.fakt-chip {
+  padding: .12rem .55rem;
+  background: var(--paper-soft);
+  border: 1px solid var(--line-strong);
+  border-radius: 1rem;
+  font-size: .82rem;
+  color: var(--ink);
+  font-family: inherit;
+}
+.fakt-chip-link {
+  cursor: pointer;
+  transition: background .12s, color .12s;
+}
+.fakt-chip-link:hover {
+  background: currentColor;
+}
+.fakt-chip-link:hover:not(:disabled) {
+  filter: brightness(0.95);
+}
+.fakt-chip-link:disabled { opacity: .45; cursor: not-allowed; }
+.fakt-markdown {
+  display: inline;
+}
+.fakt-markdown p {
+  margin: 0;
+  display: inline;
+}
+
 /* Anmelde-Hinweis-Seite (wenn nicht angemeldet auf geschuetzter Route) */
 .anmelden-hinweis {
   max-width: 32rem;

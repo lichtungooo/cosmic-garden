@@ -623,5 +623,62 @@
       { "sektion": "schaedlinge", "eintrag": "schlupfwespe" },
       { "sektion": "praxis", "eintrag": "pflanzenschutz-natuerlich" }
     ]
+  },
+  {
+    "id": "krautfaeule",
+    "name": "Kraut- und Braunfäule",
+    "untertitel": "Phytophthora infestans",
+    "symbol": "☣",
+    "kurz": "Pilzerkrankung der Nachtschattengewächse, die feuchte Sommer in wenigen Tagen verheeren kann.",
+    "bloecke": [
+      {
+        "titel": "Bild",
+        "text": "Beginnt mit braunen Flecken an Blattspitzen und -rändern, oft mit weißlichem Schimmel-Belag an der Unterseite. Stängel zeigen schwarzbraune Streifen. Früchte bekommen harte, lederartige braune Stellen, faulen von innen. Bei feucht-warmem Wetter (15-20°C, Regen, Tau) breitet sich der Pilz in 2-3 Tagen über das ganze Beet aus."
+      },
+      {
+        "titel": "Ursache",
+        "text": "**Phytophthora infestans** ist ein Eipilz, kein echter Pilz. Überwintert in Kartoffel-Knollen und befällt von dort über Wind und Spritzwasser auch [Tomate](pflanze:tomate). Sporen brauchen freies Wasser auf dem Blatt — deshalb sind Überkopf-Bewässerung und feuchte Nächte (Tau) die Hauptübertragungswege."
+      },
+      {
+        "titel": "Vorbeugen",
+        "text": "**Tomaten überdachen** (Folientunnel, Tomatenhaus) — der wirksamste Schutz. **Bodennah gießen**, nie über die Blätter. **Untere Blätter** bis zur ersten Blütentraube **entfernen** — Bodennähe ist Infektionszone. **Pflanzabstand 60-80 cm**, dazwischen Luft, schnelles Abtrocknen nach Tau. **[Schachtelhalm-Brühe](wissen:schaedlinge:schachtelhalm-bruehe)** spritzen ab Juni alle 10 Tage — Kieselsäure stärkt Zellwände. **Nicht in Nähe von Kartoffeln** pflanzen, niemals Kartoffel-Laub kompostieren. **Sortenwahl**: resistente Sorten wie *Phantasia*, *Resi*, *Primabella*."
+      },
+      {
+        "titel": "Behandeln",
+        "text": "Sobald **erste Flecken sichtbar**: befallene Blätter und Triebe sofort entfernen, **nicht in Kompost**, sondern in Restmüll. **Schachtelhalm-Brühe alle 3 Tage** weiter spritzen. Bei starkem Befall: ganze Pflanze raus, Erde 3 Jahre tomatenfrei lassen. **Kupferpräparate** wirken vorbeugend, dürfen aber im Biolandbau nur begrenzt eingesetzt werden — schädigen Bodenleben."
+      }
+    ],
+    "tags": ["pilzkrankheit", "tomate", "kartoffel", "feuchte"],
+    "verwandt": [
+      { "sektion": "schaedlinge", "eintrag": "schachtelhalm-bruehe" },
+      { "sektion": "schaedlinge", "eintrag": "mehltau" }
+    ]
+  },
+  {
+    "id": "mehltau",
+    "name": "Echter und Falscher Mehltau",
+    "untertitel": "Erysiphales / Peronosporales",
+    "symbol": "⚪",
+    "kurz": "Pilzerkrankungen mit weißem Belag — der echte oben auf den Blättern, der falsche von unten.",
+    "bloecke": [
+      {
+        "titel": "Zwei Krankheiten, ein Name",
+        "text": "**Echter Mehltau** wächst als weißer, mehlig-staubiger Belag **auf der Blatt-Oberseite**, mag warm und trocken (Tau-Nächte mit trockenen Tagen). Befällt Gurke, Kürbis, Zucchini, Apfel, Rose, Erdbeere. **Falscher Mehltau** wächst als grauweißer Belag **auf der Blatt-Unterseite**, mag feucht und kühl. Befällt Salat, Spinat, Zwiebel, Weinrebe."
+      },
+      {
+        "titel": "Vorbeugen",
+        "text": "**Standort luftig**, nicht zu dicht pflanzen. **Morgens gießen**, damit Blätter über Tag abtrocknen. **Nur bodennah gießen** beim falschen Mehltau. **[Schachtelhalm-Brühe](wissen:schaedlinge:schachtelhalm-bruehe)** alle 10 Tage spritzen, vorbeugend. Auch **Molke** (1:9 verdünnt) wirkt gut gegen echten Mehltau — Milchsäurebakterien hemmen den Pilz. **Resistente Sorten** wählen — bei Gurken etwa *La Diva*, *Marketmore*."
+      },
+      {
+        "titel": "Behandeln",
+        "text": "Befallene Blätter entfernen, **nicht kompostieren**. **Molke 1:9 verdünnt** alle 3 Tage spritzen (oben und unten). **[Brennnessel-Jauche](wissen:schaedlinge:brennnessel-jauche)** stärkt die Pflanze von innen. Bei starkem Befall: Backpulver-Lösung (1 TL auf 1 L Wasser + ein Tropfen Spülmittel) — wirkt durch pH-Verschiebung. Nicht in praller Sonne spritzen."
+      }
+    ],
+    "tags": ["pilzkrankheit", "gurke", "rose", "salat"],
+    "verwandt": [
+      { "sektion": "schaedlinge", "eintrag": "schachtelhalm-bruehe" },
+      { "sektion": "schaedlinge", "eintrag": "brennnessel-jauche" },
+      { "sektion": "schaedlinge", "eintrag": "krautfaeule" }
+    ]
   }
 ]

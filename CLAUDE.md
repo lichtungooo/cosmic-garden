@@ -145,7 +145,32 @@ Jeder Eintrag durchläuft den **Adapter** (`datenbank-adapter.ts`), der ihn ins 
 
 ### Eine neue Pflanze anlegen
 
-In `src/data/pflanzen.json` einfügen. Bestehende Einträge als Vorlage nehmen — Schema in `lib/pflanzen.ts` (Type `Pflanze`).
+In `src/data/pflanzen.json` einfügen. Bestehende Einträge als Vorlage nehmen — Schema in `lib/pflanzen.ts` (Type `Pflanze`). Als Pilot komplett befüllt: `tomate`.
+
+**Pflicht-Felder** (legacy, alle bisherigen Einträge haben sie):
+`id, name, lateinisch, familie, kategorie, thunTyp, vorzuchtVon, vorzuchtBis, auspflanzenVon, auspflanzenBis, ernteVon, ernteBis, saattiefeCm, keimerTyp, keimtempC, keimdauerTage, pflanzabstandCm, tipps, vorzucht`
+
+**Optionale Felder** (Steckbrief-Erweiterung — kommen in 10 thematischen Blöcken im UI an, leere Blöcke verschwinden):
+
+| Block | Felder |
+|---|---|
+| **1. Wesen** | `herkunft`, `lebenszyklus` ("einjaehrig"/"zweijaehrig"/"mehrjaehrig"), `wuchsform`, `hoehe` |
+| **2. Standort & Boden** | `licht` ("sonnig"/"halbschattig"/"schattig"), `bodenart[]` (z.B. ["humos","lehmig"]), `phBereich`, `naehrstoffbedarf` ("schwach"/"mittel"/"stark"), `frosthaerte` |
+| **3. Kosmischer Bezug** | `aussaatMondphase` ("zunehmend"/"abnehmend"/"vollmond"/"neumond"), `ernteMondphase`, `mondrichtungAussaat` ("aufsteigend"/"absteigend"), `planetenbezug` |
+| **4. Aussaat & Vorzucht** | `aussaatMethode` ("direktsaat"/"vorzucht"/"steckling"/"knolle"/"wurzelteilung"/"pfropfen"), `vorkulturDauer`, `reihenabstandCm`, `saatzeitNotiz` (Markdown) |
+| **5. Pflege** | `wasserbedarf` ("gering"/"mittel"/"hoch"), `duengung`, `stuetzung`, `rueckschnitt`, `mulchen`, `spezialpflege` (alle Markdown erlaubt) |
+| **6. Ernte** | `reifezeichen`, `erntemethode`, `mehrfachernte` (boolean), `ernteTagestyp` ("wurzel"/"blatt"/"bluete"/"frucht") |
+| **7. Verarbeitung & Lagerung** | `trocknung`, `verarbeitung`, `lagerung`, `saatgutGewinnung` (Markdown) |
+| **8. Verwendung** | `kueche`, `heilkundeKurz` (knapp, Tiefe lebt in heil-depot.de) |
+| **9. Schutz & Stärkung** | `schaedlinge[]`, `krankheiten[]`, `staerkungJauche[]` — alles **IDs aus `wissen_schaedlinge`** (klickbar); `schutzbegleiter[]` (Pflanzen-IDs); `anfaelligkeit` ("robust"/"mittel"/"empfindlich"); `vermeiden` (Freitext) |
+| **10. Sorten** | `sortenempfehlung` ("samenfest"/"F1"/"beides"), `alteSorten[]` (Namen), `regionenEignung` |
+
+**Regeln beim Befüllen:**
+
+- Alle erweiterten Felder sind **optional** — bei Zier- oder Wildpflanzen darf der ganze Kosmos-Block leer bleiben.
+- IDs in `schaedlinge`, `krankheiten`, `staerkungJauche` müssen in `src/data/wissen_schaedlinge.json` existieren. Fehlt ein Eintrag → erst dort anlegen, dann hier referenzieren.
+- IDs in `schutzbegleiter` müssen Pflanzen-IDs sein.
+- Heilkunde nur als kleiner Anriss — die ausführliche Heilpflanzenkunde lebt im separaten Projekt heil-depot.
 
 ## Deployment-Pipeline
 

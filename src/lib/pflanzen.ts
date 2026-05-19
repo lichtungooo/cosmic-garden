@@ -11,7 +11,20 @@ export interface Mischkultur {
   notiz?: string;           // freier Hinweis (Markdown)
 }
 
+// === Werte-Listen fuer den Steckbrief ===
+
+export type Lichtbedarf = 'sonnig' | 'halbschattig' | 'schattig';
+export type Naehrstoffbedarf = 'schwach' | 'mittel' | 'stark';
+export type Wasserbedarf = 'gering' | 'mittel' | 'hoch';
+export type Lebenszyklus = 'einjaehrig' | 'zweijaehrig' | 'mehrjaehrig';
+export type Anfaelligkeit = 'robust' | 'mittel' | 'empfindlich';
+export type Sortenempfehlung = 'samenfest' | 'F1' | 'beides';
+export type AussaatMethode = 'direktsaat' | 'vorzucht' | 'steckling' | 'knolle' | 'wurzelteilung' | 'pfropfen';
+export type MondPhaseEmpfehlung = 'zunehmend' | 'abnehmend' | 'vollmond' | 'neumond';
+export type Mondrichtung = 'aufsteigend' | 'absteigend';
+
 export interface Pflanze {
+  // === BASIS (Pflicht) ===
   id: string;
   name: string;
   lateinisch: string;
@@ -31,13 +44,78 @@ export interface Pflanze {
   pflanzabstandCm: number;
   tipps: string;
   vorzucht: boolean;
-  // Tiefe Inhalte (alle optional, Texte als Markdown):
-  geschichte?: string;      // Herkunft, Wege, Kulturgeschichte
-  wirkung?: string;         // Heilwirkung, Naehrwert, Geschmack
-  praxis?: string;          // detaillierte Pflege jenseits der Tipps
-  mythos?: string;          // kulturelle/spirituelle Bedeutung
+
+  // === ERWEITERTE INHALTE (alle optional, Markdown erlaubt wo Texte) ===
+
+  // --- 1. WESEN ---
+  herkunft?: string;             // "Anden, Suedamerika"
+  lebenszyklus?: Lebenszyklus;
+  wuchsform?: string;            // "buschig", "kletternd", "Rosette"
+  hoehe?: string;                // "60–180 cm"
+
+  // --- 2. STANDORT & BODEN ---
+  licht?: Lichtbedarf;
+  bodenart?: string[];           // ["humos", "lehmig", "durchlaessig"]
+  phBereich?: string;            // "6.0–7.0 (leicht sauer bis neutral)"
+  naehrstoffbedarf?: Naehrstoffbedarf;
+  frosthaerte?: string;          // "frostempfindlich" oder "winterhart bis -25°C"
+
+  // --- 3. KOSMISCHER BEZUG (optional bei Zierpflanzen) ---
+  aussaatMondphase?: MondPhaseEmpfehlung;
+  ernteMondphase?: MondPhaseEmpfehlung;
+  mondrichtungAussaat?: Mondrichtung;
+  planetenbezug?: string;        // "Mars (Steiner: Frucht-Kraft)"
+
+  // --- 4. AUSSAAT & VORZUCHT (zusaetzlich zu den Pflicht-Feldern) ---
+  aussaatMethode?: AussaatMethode;
+  vorkulturDauer?: string;       // "6–8 Wochen"
+  reihenabstandCm?: number;
+  saatzeitNotiz?: string;        // "nach den Eisheiligen ins Freiland"
+
+  // --- 5. PFLEGE ---
+  wasserbedarf?: Wasserbedarf;
+  duengung?: string;             // "alle 14 Tage Brennnesseljauche waehrend der Fruchtbildung"
+  stuetzung?: string;            // "Stab oder Schnur ab 30 cm Hoehe"
+  rueckschnitt?: string;         // "Geiztriebe woechentlich entfernen"
+  mulchen?: string;              // "Strohmulch ab Juni, haelt feucht + warm"
+  spezialpflege?: string;        // "Blueten nicht ueberkopf waessern — Krautfaeule"
+
+  // --- 6. ERNTE (zusaetzlich zu ernteVon/Bis) ---
+  reifezeichen?: string;         // "tiefrot, weicher Druck"
+  erntemethode?: string;         // "von Hand, mit Stielansatz"
+  mehrfachernte?: boolean;
+  ernteTagestyp?: ThunTyp;       // optimaler Maria-Thun-Tag fuer die Ernte
+
+  // --- 7. VERARBEITUNG & LAGERUNG ---
+  trocknung?: string;            // "Schatten, luftig, max. 35°C"
+  verarbeitung?: string;         // "Einkochen, Trocknen, Fermentieren"
+  lagerung?: string;             // "kuehl + dunkel, 8–12°C, haelt 2 Wochen"
+  saatgutGewinnung?: string;     // "Reife Frucht 3 Tage gaeren, ausspuelen, trocknen"
+
+  // --- 8. VERWENDUNG (kompakt) ---
+  kueche?: string;               // "roh, gekocht, getrocknet, eingelegt"
+  heilkundeKurz?: string;        // ein, zwei Saetze — Tiefe lebt in heil-depot.de
+
+  // --- 9. SCHUTZ & STAERKUNG ---
+  schaedlinge?: string[];        // Eintrag-IDs aus wissen_schaedlinge
+  krankheiten?: string[];        // Eintrag-IDs aus wissen_schaedlinge
+  anfaelligkeit?: Anfaelligkeit;
+  staerkungJauche?: string[];    // Eintrag-IDs aus wissen_schaedlinge (Brennnessel, Schachtelhalm, ...)
+  vermeiden?: string;            // "keinen frischen Mist — foerdert Krautfaeule"
+  schutzbegleiter?: string[];    // Pflanzen-IDs (z.B. ["tagetes", "basilikum"])
+
+  // --- 10. SORTEN ---
+  sortenempfehlung?: Sortenempfehlung;
+  alteSorten?: string[];         // Namen alter samenfester Sorten
+  regionenEignung?: string;      // "Norddeutschland im Gewaechshaus, Sueden Freiland"
+
+  // === BESTEHENDE FREITEXT-FELDER (Markdown) ===
+  geschichte?: string;           // Herkunft, Wege, Kulturgeschichte
+  wirkung?: string;              // Heilwirkung, Naehrwert, Geschmack (knapp halten)
+  praxis?: string;               // detaillierte Pflege jenseits der Tipps
+  mythos?: string;               // kulturelle/spirituelle Bedeutung
   mischkultur?: Mischkultur;
-  bezuege?: string[];       // zusaetzliche Wissens-/Arbeits-Bezuege (Format: "wissen:sektion:id" oder "arbeit:id")
+  bezuege?: string[];            // zusaetzliche Wissens-/Arbeits-Bezuege
 }
 
 export interface Gartenarbeit {

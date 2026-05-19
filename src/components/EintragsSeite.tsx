@@ -7,7 +7,7 @@ import { verwandtFuer, beziehungsLabel, type VerwandtTreffer } from '../lib/verw
 import { useDetailNav, refAusId } from '../lib/detail-navigation';
 import { thunTypFarbe, thunTypLabel } from '../lib/moon';
 import { weltAusKategorie, welt } from '../lib/welten';
-import { pflanzen as allePflanzen } from '../lib/pflanzen';
+import { pflanzen as allePflanzen, type Pflanze } from '../lib/pflanzen';
 import { MarkdownText } from './MarkdownText';
 
 const VS_TEXT = String.fromCharCode(0xFE0E);
@@ -77,6 +77,12 @@ export function EintragsSeite({ eintragId }: Props) {
       <p className="eintrag-kurz">{e.kurz}</p>
 
       <SteckbriefBlock eintrag={e} akzent={akzent} />
+
+      {e.typ === 'pflanze' && (() => {
+        const pflanzeId = e.id.split(':')[1];
+        const voll = allePflanzen.find(x => x.id === pflanzeId);
+        return voll ? <PflanzenSteckbrief p={voll} /> : null;
+      })()}
 
       {e.bloecke.length > 0 && (
         <div className="eintrag-bloecke">
@@ -263,4 +269,234 @@ function PflanzenChip({ id, klasse, nav }: { id: string; klasse: string; nav: Re
 function datumFmt(s: string): string {
   const [m, t] = s.split('-').map(Number);
   return `${t}. ${MONATE[m - 1]}`;
+}
+
+// === Pflanzen-Steckbrief: 10 thematische Bloecke, leer wird ausgeblendet ===
+
+function PflanzenSteckbrief({ p }: { p: Pflanze }) {
+  return (
+    <div className="pflanze-details">
+      <Sektion titel="Wesen" hasContent={!!(p.herkunft || p.lebenszyklus || p.wuchsform || p.hoehe)}>
+        <Faktenliste>
+          {p.herkunft && <Fakt label="Herkunft" wert={p.herkunft} />}
+          {p.lebenszyklus && <Fakt label="Lebenszyklus" wert={lebenszyklusLabel(p.lebenszyklus)} />}
+          {p.wuchsform && <Fakt label="Wuchsform" wert={p.wuchsform} />}
+          {p.hoehe && <Fakt label="Höhe" wert={p.hoehe} />}
+        </Faktenliste>
+      </Sektion>
+
+      <Sektion titel="Standort & Boden" hasContent={!!(p.licht || p.bodenart?.length || p.phBereich || p.naehrstoffbedarf || p.frosthaerte)}>
+        <Faktenliste>
+          {p.licht && <Fakt label="Licht" wert={lichtLabel(p.licht)} />}
+          {p.bodenart && p.bodenart.length > 0 && <Fakt label="Boden" wert={<ChipReihe items={p.bodenart} />} />}
+          {p.phBereich && <Fakt label="pH-Wert" wert={p.phBereich} />}
+          {p.naehrstoffbedarf && <Fakt label="Nährstoffe" wert={naehrstoffLabel(p.naehrstoffbedarf)} />}
+          {p.frosthaerte && <Fakt label="Frosthärte" wert={p.frosthaerte} />}
+        </Faktenliste>
+      </Sektion>
+
+      <Sektion titel="Kosmischer Bezug" hasContent={!!(p.aussaatMondphase || p.ernteMondphase || p.mondrichtungAussaat || p.planetenbezug)}>
+        <Faktenliste>
+          {p.aussaatMondphase && <Fakt label="Aussaat-Mondphase" wert={p.aussaatMondphase} />}
+          {p.mondrichtungAussaat && <Fakt label="Mondrichtung Aussaat" wert={p.mondrichtungAussaat} />}
+          {p.ernteMondphase && <Fakt label="Ernte-Mondphase" wert={p.ernteMondphase} />}
+          {p.planetenbezug && <Fakt label="Planeten-Bezug" wert={p.planetenbezug} />}
+        </Faktenliste>
+      </Sektion>
+
+      <Sektion titel="Aussaat & Vorzucht" hasContent={!!(p.aussaatMethode || p.vorkulturDauer || p.reihenabstandCm || p.saatzeitNotiz)}>
+        <Faktenliste>
+          {p.aussaatMethode && <Fakt label="Methode" wert={aussaatMethodeLabel(p.aussaatMethode)} />}
+          {p.vorkulturDauer && <Fakt label="Vorkultur-Dauer" wert={p.vorkulturDauer} />}
+          {p.reihenabstandCm && <Fakt label="Reihenabstand" wert={`${p.reihenabstandCm} cm`} />}
+          {p.saatzeitNotiz && <Fakt label="Hinweis" wert={<MarkdownInline text={p.saatzeitNotiz} />} />}
+        </Faktenliste>
+      </Sektion>
+
+      <Sektion titel="Pflege" hasContent={!!(p.wasserbedarf || p.duengung || p.stuetzung || p.rueckschnitt || p.mulchen || p.spezialpflege)}>
+        <Faktenliste>
+          {p.wasserbedarf && <Fakt label="Wasser" wert={wasserLabel(p.wasserbedarf)} />}
+          {p.duengung && <Fakt label="Düngung" wert={<MarkdownInline text={p.duengung} />} />}
+          {p.stuetzung && <Fakt label="Stützung" wert={<MarkdownInline text={p.stuetzung} />} />}
+          {p.rueckschnitt && <Fakt label="Rückschnitt" wert={<MarkdownInline text={p.rueckschnitt} />} />}
+          {p.mulchen && <Fakt label="Mulchen" wert={<MarkdownInline text={p.mulchen} />} />}
+          {p.spezialpflege && <Fakt label="Besonders" wert={<MarkdownInline text={p.spezialpflege} />} />}
+        </Faktenliste>
+      </Sektion>
+
+      <Sektion titel="Ernte" hasContent={!!(p.reifezeichen || p.erntemethode || p.mehrfachernte != null || p.ernteTagestyp)}>
+        <Faktenliste>
+          {p.reifezeichen && <Fakt label="Reifezeichen" wert={p.reifezeichen} />}
+          {p.erntemethode && <Fakt label="Methode" wert={p.erntemethode} />}
+          {p.mehrfachernte != null && <Fakt label="Mehrfachernte" wert={p.mehrfachernte ? 'ja' : 'nein'} />}
+          {p.ernteTagestyp && (
+            <Fakt label="Optimaler Tagestyp" wert={
+              <span style={{ color: thunTypFarbe(p.ernteTagestyp), fontWeight: 600 }}>{thunTypLabel(p.ernteTagestyp)}</span>
+            } />
+          )}
+        </Faktenliste>
+      </Sektion>
+
+      <Sektion titel="Verarbeitung & Lagerung" hasContent={!!(p.trocknung || p.verarbeitung || p.lagerung || p.saatgutGewinnung)}>
+        <Faktenliste>
+          {p.trocknung && <Fakt label="Trocknung" wert={<MarkdownInline text={p.trocknung} />} />}
+          {p.verarbeitung && <Fakt label="Verarbeitung" wert={<MarkdownInline text={p.verarbeitung} />} />}
+          {p.lagerung && <Fakt label="Lagerung" wert={<MarkdownInline text={p.lagerung} />} />}
+          {p.saatgutGewinnung && <Fakt label="Saatgut" wert={<MarkdownInline text={p.saatgutGewinnung} />} />}
+        </Faktenliste>
+      </Sektion>
+
+      <Sektion titel="Verwendung" hasContent={!!(p.kueche || p.heilkundeKurz)}>
+        <Faktenliste>
+          {p.kueche && <Fakt label="Küche" wert={p.kueche} />}
+          {p.heilkundeKurz && <Fakt label="Heilkunde" wert={<MarkdownInline text={p.heilkundeKurz} />} />}
+        </Faktenliste>
+      </Sektion>
+
+      <Sektion titel="Schutz & Stärkung" hasContent={!!(
+        p.schaedlinge?.length || p.krankheiten?.length || p.anfaelligkeit ||
+        p.staerkungJauche?.length || p.vermeiden || p.schutzbegleiter?.length
+      )}>
+        <Faktenliste>
+          {p.anfaelligkeit && <Fakt label="Anfälligkeit" wert={anfaelligkeitLabel(p.anfaelligkeit)} />}
+          {p.schaedlinge && p.schaedlinge.length > 0 && (
+            <Fakt label="Schädlinge" wert={<WissenChips ids={p.schaedlinge} sektion="schaedlinge" farbe="#a8423a" />} />
+          )}
+          {p.krankheiten && p.krankheiten.length > 0 && (
+            <Fakt label="Krankheiten" wert={<WissenChips ids={p.krankheiten} sektion="schaedlinge" farbe="#7a3a8a" />} />
+          )}
+          {p.staerkungJauche && p.staerkungJauche.length > 0 && (
+            <Fakt label="Stärkung" wert={<WissenChips ids={p.staerkungJauche} sektion="schaedlinge" farbe="#4a8a3a" />} />
+          )}
+          {p.schutzbegleiter && p.schutzbegleiter.length > 0 && (
+            <Fakt label="Schutz-Begleiter" wert={<PflanzenChips ids={p.schutzbegleiter} />} />
+          )}
+          {p.vermeiden && <Fakt label="Vermeiden" wert={<MarkdownInline text={p.vermeiden} />} />}
+        </Faktenliste>
+      </Sektion>
+
+      <Sektion titel="Sorten" hasContent={!!(p.sortenempfehlung || p.alteSorten?.length || p.regionenEignung)}>
+        <Faktenliste>
+          {p.sortenempfehlung && <Fakt label="Empfehlung" wert={sortenLabel(p.sortenempfehlung)} />}
+          {p.alteSorten && p.alteSorten.length > 0 && <Fakt label="Alte Sorten" wert={<ChipReihe items={p.alteSorten} />} />}
+          {p.regionenEignung && <Fakt label="Regionen" wert={p.regionenEignung} />}
+        </Faktenliste>
+      </Sektion>
+    </div>
+  );
+}
+
+function Sektion({ titel, hasContent, children }: { titel: string; hasContent: boolean; children: React.ReactNode }) {
+  if (!hasContent) return null;
+  return (
+    <section className="eintrag-block pflanze-sektion">
+      <h2>{titel}</h2>
+      {children}
+    </section>
+  );
+}
+
+function Faktenliste({ children }: { children: React.ReactNode }) {
+  return <dl className="steckbrief-dl">{children}</dl>;
+}
+
+function Fakt({ label, wert }: { label: string; wert: React.ReactNode }) {
+  return (
+    <div className="steckbrief-zeile">
+      <dt>{label}</dt>
+      <dd>{wert}</dd>
+    </div>
+  );
+}
+
+function ChipReihe({ items }: { items: string[] }) {
+  return (
+    <div className="fakt-chips">
+      {items.map(t => <span key={t} className="fakt-chip">{t}</span>)}
+    </div>
+  );
+}
+
+function MarkdownInline({ text }: { text: string }) {
+  return <div className="fakt-markdown"><MarkdownText text={text} /></div>;
+}
+
+function WissenChips({ ids, sektion, farbe }: { ids: string[]; sektion: string; farbe: string }) {
+  const nav = useDetailNav();
+  return (
+    <div className="fakt-chips">
+      {ids.map(id => {
+        const eintrag = findeEintrag(`wissen:${sektion}:${id}`);
+        const label = eintrag?.titel ?? id;
+        return (
+          <button
+            key={id}
+            type="button"
+            className="fakt-chip fakt-chip-link"
+            onClick={() => nav.oeffne({ kind: 'wissen', sektion, eintrag: id })}
+            style={{ borderColor: farbe, color: farbe }}
+          >
+            {label}
+          </button>
+        );
+      })}
+    </div>
+  );
+}
+
+function PflanzenChips({ ids }: { ids: string[] }) {
+  const nav = useDetailNav();
+  return (
+    <div className="fakt-chips">
+      {ids.map(id => {
+        const p = allePflanzen.find(x => x.id === id);
+        return (
+          <button
+            key={id}
+            type="button"
+            className="fakt-chip fakt-chip-link"
+            onClick={() => p && nav.oeffne({ kind: 'pflanze', id })}
+            disabled={!p}
+            style={{ borderColor: '#4a8a3a', color: '#4a8a3a' }}
+          >
+            {p?.name ?? id}
+          </button>
+        );
+      })}
+    </div>
+  );
+}
+
+// === Label-Helfer ===
+function lichtLabel(l: string): string {
+  return { sonnig: 'sonnig', halbschattig: 'halbschattig', schattig: 'schattig' }[l] ?? l;
+}
+function lebenszyklusLabel(l: string): string {
+  return { einjaehrig: 'einjährig', zweijaehrig: 'zweijährig', mehrjaehrig: 'mehrjährig' }[l] ?? l;
+}
+function naehrstoffLabel(n: string): string {
+  return { schwach: 'Schwachzehrer', mittel: 'Mittelzehrer', stark: 'Starkzehrer' }[n] ?? n;
+}
+function wasserLabel(w: string): string {
+  return { gering: 'wenig — Trockenheits-Verträger', mittel: 'mittel — gleichmäßig', hoch: 'viel — durstig' }[w] ?? w;
+}
+function aussaatMethodeLabel(m: string): string {
+  return {
+    direktsaat: 'Direktsaat ins Beet',
+    vorzucht: 'Vorzucht im Haus, später auspflanzen',
+    steckling: 'Stecklinge',
+    knolle: 'Knolle setzen',
+    wurzelteilung: 'Wurzelteilung',
+    pfropfen: 'Pfropfen / Veredeln',
+  }[m] ?? m;
+}
+function anfaelligkeitLabel(a: string): string {
+  return { robust: 'robust', mittel: 'mittel', empfindlich: 'empfindlich' }[a] ?? a;
+}
+function sortenLabel(s: string): string {
+  return {
+    samenfest: 'samenfest — eigene Vermehrung möglich',
+    F1: 'F1-Hybride — nur einmal kaufen',
+    beides: 'samenfest und F1 verfügbar',
+  }[s] ?? s;
 }
