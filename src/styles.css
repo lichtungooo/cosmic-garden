@@ -4593,34 +4593,25 @@ button { font-family: inherit; cursor: pointer; }
 }
 .start-hero {
   text-align: center;
-  padding: 3rem 0 2.5rem;
-  border-bottom: 1px solid var(--line);
-  margin-bottom: 2.5rem;
-}
-.start-hero-eyebrow {
-  font-size: .78rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: .2em;
-  color: var(--accent);
-  margin: 0 0 .85rem;
+  padding: 1rem 0 1rem;
+  margin-bottom: 1.25rem;
 }
 .start-hero-titel {
   font-family: 'Spectral', Georgia, serif;
-  font-size: 3rem;
-  line-height: 1.05;
-  margin: 0 0 1rem;
+  font-size: 1.85rem;
+  line-height: 1.1;
+  margin: 0;
   color: var(--kosmos);
   font-weight: 500;
   letter-spacing: -.01em;
 }
-.start-hero-lead {
-  max-width: 60ch;
-  margin: 0 auto;
-  font-family: 'Spectral', Georgia, serif;
-  font-size: 1.05rem;
-  line-height: 1.65;
+.start-hero-eyebrow {
+  font-size: .78rem;
+  font-weight: 500;
+  letter-spacing: .12em;
   color: var(--ink-mute);
+  margin: .25rem 0 0;
+  text-transform: uppercase;
 }
 
 .start-section-titel {
@@ -4638,17 +4629,30 @@ button { font-family: inherit; cursor: pointer; }
   border: 1px solid var(--line);
   border-top: 3px solid var(--accent);
   border-radius: var(--radius);
-  padding: 1.25rem 1.5rem;
+  padding: 1.25rem 1.5rem 1.5rem;
   margin-bottom: 2.5rem;
 }
-.start-heute-meta {
+.start-heute-datumzeile {
   display: flex;
-  justify-content: space-between;
-  font-size: .78rem;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 1.25rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--line);
+}
+.start-heute-datum-gross {
+  font-family: 'Spectral', Georgia, serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--kosmos);
+  line-height: 1.15;
+  letter-spacing: -.005em;
+}
+.start-heute-ort-zeile {
+  font-size: .9rem;
   color: var(--ink-mute);
-  margin-bottom: 1rem;
-  text-transform: uppercase;
-  letter-spacing: .08em;
+  margin-top: .15rem;
 }
 .start-heute-grid {
   display: grid;
@@ -4656,6 +4660,7 @@ button { font-family: inherit; cursor: pointer; }
   gap: 1rem;
 }
 @media (max-width: 720px) {
+  .start-heute-datum-gross { font-size: 1.25rem; }
   .start-heute-grid { grid-template-columns: 1fr; }
 }
 .start-heute-card {
@@ -4699,17 +4704,29 @@ button { font-family: inherit; cursor: pointer; }
   margin-right: .25rem;
 }
 .start-heute-empfehlung {
-  margin: .35rem 0;
-  font-size: .92rem;
+  margin: .5rem 0 .25rem;
+  font-size: .98rem;
   color: var(--ink);
-  line-height: 1.5;
+  line-height: 1.55;
   font-family: 'Spectral', Georgia, serif;
+}
+.start-heute-punkte {
+  margin: .35rem 0 .5rem;
+  padding-left: 1.1rem;
+  font-size: .9rem;
+  color: var(--ink);
+  line-height: 1.55;
+  list-style: disc;
+}
+.start-heute-punkte li {
+  margin-bottom: .25rem;
 }
 .start-heute-link {
   margin-top: auto;
   color: var(--accent);
   font-size: .85rem;
   font-weight: 500;
+  padding-top: .35rem;
 }
 .start-heute-neben {
   display: flex;
@@ -4740,6 +4757,11 @@ button { font-family: inherit; cursor: pointer; }
 .start-heute-kachel-sub {
   font-size: .78rem;
   color: var(--ink-mute);
+}
+.start-heute-wetter-wert {
+  display: flex;
+  align-items: center;
+  gap: .45rem;
 }
 
 /* === Werkzeuge === */

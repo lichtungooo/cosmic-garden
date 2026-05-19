@@ -4,7 +4,6 @@
 import { useMemo } from 'react';
 import { useStandort } from '../lib/standort';
 import { mondTag, thunTypFarbe, thunTypLabel, phaseLabel } from '../lib/moon';
-import { mayaDatum } from '../lib/maya';
 import {
   pflanzenZumAuspflanzen,
   pflanzenZurErnte,
@@ -21,6 +20,9 @@ import {
 } from '../lib/datenbank-suche';
 import type { Jahreszeit, Mondphase } from '../lib/datenbank';
 import type { MondPhase } from '../lib/moon';
+import { useWetter, findeWetterFuerDatum, klasse as wetterKlasse, klasseLabel as wetterKlasseLabel } from '../lib/wetter';
+import { WetterSymbol } from '../components/WetterSymbol';
+import { tagesHimmel, formatZeit } from '../lib/himmel';
 
 const WT_LANG = ['Sonntag', 'Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag'];
 const MONATE_LANG = ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember'];
@@ -55,13 +57,52 @@ function mondphaseFuerKontext(p: MondPhase): Mondphase | undefined {
   return undefined;
 }
 
-function tagestypEmpfehlung(typ: ReturnType<typeof thunTypLabel> extends string ? string : string): string {
-  return {
-    Wurzeltag: 'Wurzelgemuese säen, ernten, lagern. Boden lockern, Kompost ausbringen.',
-    Blatttag:  'Salat, Kohl, Spinat, Kraeuter. Giessen wirkt heute besonders.',
-    Bluetentag:'Brokkoli, Heilkraeuter, Schnittblumen. Bienen besuchen.',
-    Fruchttag: 'Tomate, Bohne, Kürbis, Obstbaeume. Veredelung an Fruchttraegern.',
-  }[typ] ?? 'Heute im Garten unterwegs sein.';
+interface TagestypHinweis {
+  kurz: string;
+  punkte: string[];
+}
+
+const TAGESTYP_HINWEISE: Record<string, TagestypHinweis> = {
+  Wurzeltag: {
+    kurz: 'Heute steht die Wurzel im Mittelpunkt — alles, was unter der Erde wächst und reift, profitiert von den Kräften des Tages.',
+    punkte: [
+      'Möhre, Rote Bete, Pastinake, Schwarzwurzel, Kartoffel, Zwiebel, Knoblauch — säen, pflanzen, ernten.',
+      'Boden lockern, hacken, harken — die Erde atmet jetzt am tiefsten.',
+      'Kompost ausbringen, mit Steinmehl aufdüngen, Mulch nachlegen.',
+      'Wurzelgemüse einlagern — heute geerntete Knollen halten am längsten.',
+    ],
+  },
+  Blatttag: {
+    kurz: 'Heute zieht das Wasser in das Blatt — alles Grün, was als Salat, Kohl oder Kraut wachsen soll, hat seinen besten Tag.',
+    punkte: [
+      'Kopfsalat, Pflücksalat, Spinat, Mangold, Kohl, Petersilie, Schnittlauch — säen und auspflanzen.',
+      'Gießen wirkt heute am stärksten — Beete einmal gründlich durchwässern.',
+      'Brennnessel- oder Beinwell-Jauche ansetzen, Kräuter pflanzen.',
+      'Blätter und Salate ernten für den Sofort-Verzehr (verlieren rasch an Frische).',
+    ],
+  },
+  Bluetentag: {
+    kurz: 'Heute zeigt der Tierkreis das Licht-Element — alle blühenden Pflanzen, Schnittblumen und Heilkräuter sind in ihrem Element.',
+    punkte: [
+      'Brokkoli, Blumenkohl, Sonnenblume, Tagetes, Ringelblume, Kapuzinerkresse — säen und pflanzen.',
+      'Heilkräuter ernten (Kamille, Lavendel, Schafgarbe) — das ätherische Öl ist am Mittag am stärksten.',
+      'Bienenweiden besuchen, Schnittblumen für die Vase schneiden.',
+      'Veredeln und okulieren an Rosen — Blütentag günstig für Rosen-Arbeiten.',
+    ],
+  },
+  Fruchttag: {
+    kurz: 'Heute trägt das Feuer-Element — alles Frucht-bildende profitiert: Tomate, Bohne, Kürbis und alle Obstbäume.',
+    punkte: [
+      'Tomate, Paprika, Aubergine, Gurke, Zucchini, Kürbis, Bohne, Erbse, Mais — säen und auspflanzen.',
+      'Obstbäume pflanzen, veredeln, schneiden — Wundheilung verläuft heute am ruhigsten.',
+      'Beerensträucher pflegen, Erdbeer-Ableger setzen.',
+      'Tomaten ausgeizen, Tomaten- und Kürbisbeete mulchen.',
+    ],
+  },
+};
+
+function hinweisFuerTag(typ: string): TagestypHinweis {
+  return TAGESTYP_HINWEISE[typ] ?? { kurz: 'Heute im Garten unterwegs sein.', punkte: [] };
 }
 
 interface Props {
@@ -77,7 +118,9 @@ export function StartView({ onWerkzeug, onJahreskreis, onMaya, onWelt, onTag }: 
   const heute = new Date();
   const nav = useDetailNav();
   const mond = useMemo(() => mondTag(heute), []);
-  const maya = useMemo(() => mayaDatum(heute), []);
+  const wetterDaten = useWetter(ort);
+  const wetterHeute = useMemo(() => findeWetterFuerDatum(wetterDaten, heute), [wetterDaten]);
+  const himmel = useMemo(() => tagesHimmel(heute, ort), [ort.lat, ort.lon]);
 
   const monat = heute.getMonth() + 1;
   const tag = heute.getDate();
@@ -113,31 +156,37 @@ export function StartView({ onWerkzeug, onJahreskreis, onMaya, onWelt, onTag }: 
     if (ref) nav.oeffne(ref);
   }
 
+  const wetterKl = wetterHeute ? wetterKlasse(wetterHeute.wettercode) : null;
+
   return (
     <div className="start-view">
       <header className="start-hero">
-        <p className="start-hero-eyebrow">Garten im Rhythmus von Sonne, Mond und Sternen</p>
         <h1 className="start-hero-titel">Mein kosmischer Garten</h1>
-        <p className="start-hero-lead">
-          Was heute waechst, was heute zu tun ist, was heute am Himmel steht — verbunden in einem Werk.
-          87 Pflanzen, 22 Arbeiten, 89 Wissens-Einträge. Maria Thun, Maya-Kalender, samenfeste Sorten,
-          Gemeinschaft. Ein Werkzeug für den, der wissen will, was die Erde traegt.
-        </p>
+        <p className="start-hero-eyebrow">Sonne, Mond und Sterne</p>
       </header>
 
       <section className="start-heute" style={{ borderTopColor: tagestypFarbe }}>
-        <div className="start-heute-meta">
-          <span className="start-heute-datum">{WT_LANG[heute.getDay()]}, {heute.getDate()}. {MONATE_LANG[heute.getMonth()]}</span>
-          <span className="start-heute-ort">{ort.name}</span>
+        <div className="start-heute-datumzeile">
+          <div className="start-heute-datum-gross">
+            {WT_LANG[heute.getDay()]}, {heute.getDate()}. {MONATE_LANG[heute.getMonth()]} {heute.getFullYear()}
+          </div>
+          <div className="start-heute-ort-zeile">in {ort.name}</div>
         </div>
         <div className="start-heute-grid">
           <button className="start-heute-card start-heute-haupt" onClick={onTag} style={{ ['--karte-farbe' as string]: tagestypFarbe }}>
-            <span className="start-heute-label">Heute</span>
+            <span className="start-heute-label">Heute am Himmel</span>
             <span className="start-heute-tagestyp">{tagestypName}</span>
             <span className="start-heute-zeichen">
-              <span className="zodiak-glyph">{mond.zeichen.symbol}</span> {mond.zeichen.name}
+              <span className="zodiak-glyph">{mond.zeichen.symbol}</span> Mond in {mond.zeichen.name}
             </span>
-            <p className="start-heute-empfehlung">{tagestypEmpfehlung(tagestypName)}</p>
+            <p className="start-heute-empfehlung">{hinweisFuerTag(tagestypName).kurz}</p>
+            {hinweisFuerTag(tagestypName).punkte.length > 0 && (
+              <ul className="start-heute-punkte">
+                {hinweisFuerTag(tagestypName).punkte.map(p => (
+                  <li key={p}>{p}</li>
+                ))}
+              </ul>
+            )}
             <span className="start-heute-link">Zur Tag-Ansicht →</span>
           </button>
           <div className="start-heute-neben">
@@ -147,10 +196,25 @@ export function StartView({ onWerkzeug, onJahreskreis, onMaya, onWelt, onTag }: 
               <span className="start-heute-kachel-sub">{Math.round(mond.illumination * 100)}% · {mond.aufstieg}</span>
             </div>
             <div className="start-heute-kachel">
-              <span className="start-heute-kachel-label">Maya</span>
-              <span className="start-heute-kachel-wert">{maya.tzolkinStr}</span>
-              <span className="start-heute-kachel-sub">{maya.haabStr}</span>
+              <span className="start-heute-kachel-label">Sonne</span>
+              <span className="start-heute-kachel-wert">{formatZeit(himmel.sonnenaufgang)} – {formatZeit(himmel.sonnenuntergang)}</span>
+              {himmel.tagesLaengeMin != null && (
+                <span className="start-heute-kachel-sub">{Math.floor(himmel.tagesLaengeMin / 60)} h {(himmel.tagesLaengeMin % 60).toString().padStart(2, '0')} min Tag</span>
+              )}
             </div>
+            {wetterHeute && wetterKl && (
+              <div className="start-heute-kachel start-heute-wetter">
+                <span className="start-heute-kachel-label">Wetter</span>
+                <span className="start-heute-kachel-wert start-heute-wetter-wert">
+                  <WetterSymbol klasse={wetterKl} size={20} title={wetterKlasseLabel(wetterKl)} />
+                  {Math.round(wetterHeute.tMin)}° – {Math.round(wetterHeute.tMax)}°
+                </span>
+                <span className="start-heute-kachel-sub">
+                  {wetterKlasseLabel(wetterKl)}
+                  {wetterHeute.niederschlagMm > 0.5 && ` · ${wetterHeute.niederschlagMm.toFixed(1)} mm Regen`}
+                </span>
+              </div>
+            )}
           </div>
         </div>
       </section>

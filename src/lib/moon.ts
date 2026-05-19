@@ -16,23 +16,24 @@ export interface TierkreisZeichen {
 
 // Sternbild-Grenzen in siderischer Laenge (Lahiri-Ayanamsa, Grad).
 // Maria Thun und das Goetheanum nutzen die echten astronomischen Sternbildgrenzen
-// und keine gleichmaessige 30°-Aufteilung — Jungfrau ist riesig (~67°),
-// Skorpion klein (~12°). Diese Tabelle gibt die untere Grenze (in siderischer
+// und keine gleichmaessige 30°-Aufteilung — Stier (~37°) und Jungfrau (~66°) sind
+// gross, Skorpion (~8°) klein. Diese Tabelle gibt die untere Grenze (in siderischer
 // Laenge) fuer jedes Zeichen, die obere Grenze ist der Beginn des naechsten.
-// Quellen: Astronomischer Kalender Goetheanum, Maria Thun Aussaattage.
+// Quelle: Astronomischer Kalender Goetheanum, Werner Bauer "Astronomie und
+// Astrologie" — entspricht den Aussaattagen von Maria Thun.
 export const TIERKREIS: (TierkreisZeichen & { startGrad: number })[] = [
   { name: 'Widder',     symbol: '♈', element: 'feuer',  thunTyp: 'frucht', startGrad:   0 },
-  { name: 'Stier',      symbol: '♉', element: 'erde',   thunTyp: 'wurzel', startGrad:  27 },
-  { name: 'Zwillinge',  symbol: '♊', element: 'luft',   thunTyp: 'bluete', startGrad:  51 },
-  { name: 'Krebs',      symbol: '♋', element: 'wasser', thunTyp: 'blatt',  startGrad:  92 },
+  { name: 'Stier',      symbol: '♉', element: 'erde',   thunTyp: 'wurzel', startGrad:  25 },
+  { name: 'Zwillinge',  symbol: '♊', element: 'luft',   thunTyp: 'bluete', startGrad:  63 },
+  { name: 'Krebs',      symbol: '♋', element: 'wasser', thunTyp: 'blatt',  startGrad:  91 },
   { name: 'Loewe',      symbol: '♌', element: 'feuer',  thunTyp: 'frucht', startGrad: 121 },
-  { name: 'Jungfrau',   symbol: '♍', element: 'erde',   thunTyp: 'wurzel', startGrad: 155 },
+  { name: 'Jungfrau',   symbol: '♍', element: 'erde',   thunTyp: 'wurzel', startGrad: 156 },
   { name: 'Waage',      symbol: '♎', element: 'luft',   thunTyp: 'bluete', startGrad: 222 },
-  { name: 'Skorpion',   symbol: '♏', element: 'wasser', thunTyp: 'blatt',  startGrad: 234 },
-  { name: 'Schuetze',   symbol: '♐', element: 'feuer',  thunTyp: 'frucht', startGrad: 256 },
-  { name: 'Steinbock',  symbol: '♑', element: 'erde',   thunTyp: 'wurzel', startGrad: 287 },
-  { name: 'Wassermann', symbol: '♒', element: 'luft',   thunTyp: 'bluete', startGrad: 305 },
-  { name: 'Fische',     symbol: '♓', element: 'wasser', thunTyp: 'blatt',  startGrad: 326 },
+  { name: 'Skorpion',   symbol: '♏', element: 'wasser', thunTyp: 'blatt',  startGrad: 240 },
+  { name: 'Schuetze',   symbol: '♐', element: 'feuer',  thunTyp: 'frucht', startGrad: 248 },
+  { name: 'Steinbock',  symbol: '♑', element: 'erde',   thunTyp: 'wurzel', startGrad: 282 },
+  { name: 'Wassermann', symbol: '♒', element: 'luft',   thunTyp: 'bluete', startGrad: 309 },
+  { name: 'Fische',     symbol: '♓', element: 'wasser', thunTyp: 'blatt',  startGrad: 332 },
 ];
 
 function zeichenFuerLaenge(laenge: number): TierkreisZeichen {
