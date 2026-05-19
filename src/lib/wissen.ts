@@ -55,7 +55,7 @@ export const SEKTIONEN: WissenSektion[] = [
   {
     id: 'tierkreis',
     name: 'Tierkreis',
-    beschreibung: 'Die zwoelf Tierkreiszeichen siderisch — wie sie heute tatsaechlich am Himmel stehen. Mit ihrer Astronomie, ihrer Mythologie aus drei Welten (griechisch, vedisch, Maya) und ihrer Bedeutung fuer den Garten.',
+    beschreibung: 'Die zwoelf Tierkreiszeichen siderisch — wie sie heute tatsaechlich am Himmel stehen. Mit ihrer Astronomie, ihrer Mythologie aus drei Welten (griechisch, vedisch, Maya) und ihrer Bedeutung für den Garten.',
     eintraege: tierkreisData as WissenEintrag[],
   },
   {
@@ -97,7 +97,7 @@ export const SEKTIONEN: WissenSektion[] = [
   {
     id: 'praxis',
     name: 'Praxis',
-    beschreibung: 'Konkrete Techniken fuer den Garten — Mischkultur, Mulchen, Giessen, Jauchen, Pflanzenschutz, Mykorrhiza, Mikroorganismen. Was man tatsaechlich tut, mit Rezepten und Mengen.',
+    beschreibung: 'Konkrete Techniken für den Garten — Mischkultur, Mulchen, Giessen, Jauchen, Pflanzenschutz, Mykorrhiza, Mikroorganismen. Was man tatsaechlich tut, mit Rezepten und Mengen.',
     eintraege: praxisData as WissenEintrag[],
   },
   {

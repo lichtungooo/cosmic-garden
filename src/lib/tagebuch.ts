@@ -1,39 +1,32 @@
-import { useEffect, useState, useCallback } from 'react';
+// Tagebuch — persistiert als WoT-Items im persoenlichen Doc.
+// Einträge bleiben privat (nicht in eine Group veroeffentlicht), Multi-Device-Sync
+// laeuft über Antons Vault automatisch.
+
+import { useCallback, useMemo } from 'react';
+import type { Item } from '@real-life-stack/data-interface';
+import {
+  useConnector,
+  useItems,
+  useCreateItem,
+  useUpdateItem,
+  useDeleteItem,
+  useCurrentUser,
+} from '@real-life-stack/toolkit';
 import { mondTag, type ThunTyp } from './moon';
 
 export type TagebuchArt = 'beobachtung' | 'aussaat' | 'pflanzung' | 'ernte' | 'pflege' | 'frage';
 
+export const TAGEBUCH_TYPE = 'tagebuch-eintrag';
+
 export interface TagebuchEintrag {
   id: string;
-  datum: string;          // YYYY-MM-DD
-  erstellt: number;       // timestamp
+  datum: string;
+  erstellt: number;
   text: string;
   art: TagebuchArt;
-  pflanzenIds?: string[]; // bezug zu pflanzen.json
-  thunTyp?: ThunTyp;      // welcher Tagestyp galt
-  zeichenName?: string;   // welcher Tierkreis
-}
-
-const STORAGE_KEY = 'garten.tagebuch';
-
-export function ladeEintraege(): TagebuchEintrag[] {
-  try {
-    const raw = localStorage.getItem(STORAGE_KEY);
-    if (!raw) return [];
-    const parsed = JSON.parse(raw);
-    if (!Array.isArray(parsed)) return [];
-    return parsed as TagebuchEintrag[];
-  } catch {
-    return [];
-  }
-}
-
-export function speichereEintraege(eintraege: TagebuchEintrag[]) {
-  try {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(eintraege));
-  } catch {
-    // leise weitergehen wenn quota voll
-  }
+  pflanzenIds?: string[];
+  thunTyp?: ThunTyp;
+  zeichenName?: string;
 }
 
 export function datumZuKey(d: Date): string {
@@ -43,17 +36,18 @@ export function datumZuKey(d: Date): string {
   return `${j}-${m}-${t}`;
 }
 
-export function neuerEintrag(text: string, datum: Date, art: TagebuchArt, pflanzenIds?: string[]): TagebuchEintrag {
-  const m = mondTag(datum);
+function itemZuEintrag(item: Item): TagebuchEintrag {
+  const data = item.data as Record<string, unknown>;
+  const erstellt = typeof data.erstellt === 'number' ? data.erstellt : Date.parse(item.createdAt) || Date.now();
   return {
-    id: `${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
-    datum: datumZuKey(datum),
-    erstellt: Date.now(),
-    text,
-    art,
-    pflanzenIds: pflanzenIds && pflanzenIds.length > 0 ? pflanzenIds : undefined,
-    thunTyp: m.thunTyp,
-    zeichenName: m.zeichen.name,
+    id: item.id,
+    datum: String(data.datum ?? ''),
+    erstellt,
+    text: String(data.text ?? ''),
+    art: (data.art as TagebuchArt) ?? 'beobachtung',
+    pflanzenIds: Array.isArray(data.pflanzenIds) ? (data.pflanzenIds as string[]) : undefined,
+    thunTyp: data.thunTyp as ThunTyp | undefined,
+    zeichenName: typeof data.zeichenName === 'string' ? data.zeichenName : undefined,
   };
 }
 
@@ -99,46 +93,48 @@ export function artFarbe(art: TagebuchArt): string {
   }[art];
 }
 
-// === Reaktiver Hook ===
-
-const subscribers = new Set<() => void>();
-let cache: TagebuchEintrag[] | null = null;
-
-function notify() {
-  cache = null;
-  subscribers.forEach(fn => fn());
-}
+const FILTER = { type: TAGEBUCH_TYPE };
 
 export function useTagebuch() {
-  const [, setVersion] = useState(0);
+  const { data: items } = useItems(FILTER);
+  const { data: user } = useCurrentUser();
+  const { mutate: createItem } = useCreateItem();
+  const { mutate: updateItem } = useUpdateItem();
+  const { mutate: deleteItem } = useDeleteItem();
 
-  useEffect(() => {
-    const fn = () => setVersion(v => v + 1);
-    subscribers.add(fn);
-    return () => { subscribers.delete(fn); };
-  }, []);
+  const eintraege = useMemo(() => items.map(itemZuEintrag), [items]);
 
-  const eintraege = cache ?? (cache = ladeEintraege());
+  const fuegeHinzu = useCallback(async (text: string, datum: Date, art: TagebuchArt, pflanzenIds?: string[]) => {
+    const m = mondTag(datum);
+    const eintrag = {
+      datum: datumZuKey(datum),
+      erstellt: Date.now(),
+      text,
+      art,
+      pflanzenIds: pflanzenIds && pflanzenIds.length > 0 ? pflanzenIds : undefined,
+      thunTyp: m.thunTyp,
+      zeichenName: m.zeichen.name,
+    };
+    const item = await createItem({
+      type: TAGEBUCH_TYPE,
+      createdBy: user?.id ?? 'anonym',
+      data: eintrag,
+    });
+    return item ? itemZuEintrag(item) : null;
+  }, [createItem, user?.id]);
 
-  const fuegeHinzu = useCallback((text: string, datum: Date, art: TagebuchArt, pflanzenIds?: string[]) => {
-    const eintrag = neuerEintrag(text, datum, art, pflanzenIds);
-    const aktuell = ladeEintraege();
-    speichereEintraege([...aktuell, eintrag]);
-    notify();
-    return eintrag;
-  }, []);
+  const aktualisiere = useCallback(async (id: string, text: string, art: TagebuchArt) => {
+    const vorhanden = items.find(i => i.id === id);
+    if (!vorhanden) return;
+    await updateItem(id, { data: { ...vorhanden.data, text, art } });
+  }, [updateItem, items]);
 
-  const aktualisiere = useCallback((id: string, text: string, art: TagebuchArt) => {
-    const aktuell = ladeEintraege();
-    speichereEintraege(aktuell.map(e => e.id === id ? { ...e, text, art } : e));
-    notify();
-  }, []);
-
-  const loesche = useCallback((id: string) => {
-    const aktuell = ladeEintraege();
-    speichereEintraege(aktuell.filter(e => e.id !== id));
-    notify();
-  }, []);
+  const loesche = useCallback(async (id: string) => {
+    await deleteItem(id);
+  }, [deleteItem]);
 
   return { eintraege, fuegeHinzu, aktualisiere, loesche };
 }
+
+// useConnector ist nur für Hook-Konsistenz exportiert (unused hier).
+void useConnector;

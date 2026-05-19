@@ -16,7 +16,7 @@ import type { Ort } from '../lib/standort';
 
 type Ansicht = 'tag' | 'woche' | 'monat' | 'jahr' | 'maya';
 
-const MONATE = ['Januar', 'Februar', 'Maerz', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember'];
+const MONATE = ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember'];
 const WOCHENTAGE = ['Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa', 'So'];
 
 interface Props {
@@ -174,9 +174,9 @@ function MonatsAnsicht({ datum, onTag }: MonatsAnsichtProps) {
         <div className="giess-banner">
           <span>Trockenheit der letzten Tage — Giessen vor Sonnenaufgang oder am spaeten Abend hilft.</span>
           <button
-            className="giess-banner-schliessen"
+            className="giess-banner-schließen"
             onClick={bannerSchliessen}
-            aria-label="Hinweis schliessen"
+            aria-label="Hinweis schließen"
             title="Heute nicht mehr zeigen"
           >×</button>
         </div>
@@ -207,7 +207,7 @@ function MonatsAnsicht({ datum, onTag }: MonatsAnsichtProps) {
               <div className="zelle-oben">
                 <span className="zelle-tag">{t.day}</span>
                 {istVollOderNeu ? (
-                  <span className="zelle-mond-gross" title={`${t.phaseEventLabel} ${t.phaseEventZeit}`}>
+                  <span className="zelle-mond-groß" title={`${t.phaseEventLabel} ${t.phaseEventZeit}`}>
                     <MondSymbol illumination={t.illumination!} waxing={t.waxing!} size={22} />
                   </span>
                 ) : (

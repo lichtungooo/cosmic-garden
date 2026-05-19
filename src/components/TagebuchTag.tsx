@@ -54,7 +54,7 @@ export function TagebuchTag({ datum, kompakt = false }: Props) {
           </div>
           <textarea
             className="tagebuch-textarea"
-            placeholder={`Was hast du heute beobachtet? Was wurde gesaet, gepflegt, geerntet? Welche Frage hast du?`}
+            placeholder={`Was hast du heute beobachtet? Was wurde gesät, gepflegt, geerntet? Welche Frage hast du?`}
             value={neu}
             onChange={e => setNeu(e.target.value)}
             rows={3}
@@ -72,7 +72,7 @@ export function TagebuchTag({ datum, kompakt = false }: Props) {
       )}
 
       {tagEintraege.length === 0 ? (
-        <p className="tagebuch-leer">{kompakt ? 'Noch keine Eintraege.' : 'Noch nichts notiert. Beobachtung, Aussaat, Ernte — alles findet hier Platz.'}</p>
+        <p className="tagebuch-leer">{kompakt ? 'Noch keine Einträge.' : 'Noch nichts notiert. Beobachtung, Aussaat, Ernte — alles findet hier Platz.'}</p>
       ) : (
         <ul className="tagebuch-liste">
           {tagEintraege.map(e => (

@@ -65,10 +65,11 @@ function gruppenLabel(pfad: string): string {
 export function WeltView({ weltId }: Props) {
   const w = welt(weltId);
   const nav = useDetailNav();
-  const [filter, setFilter] = useState('');
+  // Lokale Suche entfernt — die globale Suche oben im Header gilt für alle Welten.
+  const filter = '';
 
   const alle = useMemo(() => eintraegeNachKategorie(`${weltId}/`).concat(
-    // Eintraege deren Kategorie genau die Welt ist (z.B. "schulen" flach)
+    // Einträge deren Kategorie genau die Welt ist (z.B. "schulen" flach)
     eintraegeNachKategorie(weltId).filter(e => e.kategorie === weltId)
   ), [weltId]);
 
@@ -123,14 +124,7 @@ export function WeltView({ weltId }: Props) {
         <h1 className="welt-hero-titel">{w.name}</h1>
         <p className="welt-hero-lead">{w.beschreibung}</p>
         <div className="welt-kopf-meta">
-          <input
-            type="search"
-            className="welt-filter"
-            placeholder={`In ${w.name} suchen...`}
-            value={filter}
-            onChange={e => setFilter(e.target.value)}
-          />
-          <span className="welt-zaehler">{gefiltert.length} Eintraege</span>
+          <span className="welt-zaehler">{gefiltert.length} Einträge</span>
         </div>
       </header>
 
@@ -150,7 +144,7 @@ export function WeltView({ weltId }: Props) {
       )}
 
       {gruppen.length === 0 ? (
-        <p className="welt-leer">Keine Eintraege.</p>
+        <p className="welt-leer">Keine Einträge.</p>
       ) : (
         gruppen.map(g => (
           <section key={g.pfad} id={gruppenAnker(g.pfad)} className="welt-gruppe">

@@ -17,8 +17,27 @@ jobs:
       packages: write
 
     steps:
-      - name: Checkout
+      # garten (dieses Repo) — in Subdir, damit Sibling-Repos daneben passen
+      - name: Checkout garten
         uses: actions/checkout@v4
+        with:
+          path: garten
+
+      # Real-Life-Stack: Timos Fork (stabil mit web-of-trust verzahnt)
+      - name: Checkout real-life-stack (Timo-Fork)
+        uses: actions/checkout@v4
+        with:
+          repository: lichtungooo/real-life-stack
+          ref: master
+          path: real-life-stack
+
+      # Web-of-Trust (Antons Identitaets-Stack) — main-HEAD ist stabil
+      - name: Checkout web-of-trust
+        uses: actions/checkout@v4
+        with:
+          repository: antontranelis/web-of-trust
+          ref: main
+          path: web-of-trust
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
@@ -33,7 +52,9 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v6
         with:
+          # Build-Context = Parent-Verzeichnis mit allen drei Repos
           context: .
+          file: ./garten/Dockerfile
           push: true
           tags: |
             ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest

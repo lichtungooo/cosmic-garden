@@ -81,15 +81,15 @@ export function TagView({ datum, onPflanze, onArbeit }: Props) {
           className="tag-kopf-zentrum tag-zeichen-link"
           onClick={() => zeichenId && nav.oeffne({ kind: 'wissen', sektion: 'tierkreis', eintrag: zeichenId })}
           disabled={!zeichenId}
-          title={`Mehr ueber ${mond.zeichen.name}`}
+          title={`Mehr über ${mond.zeichen.name}`}
         >
-          <div className="tag-zeichen-gross">{mond.zeichen.symbol}</div>
+          <div className="tag-zeichen-groß">{mond.zeichen.symbol}</div>
           <div className="tag-zeichen-name">{mond.zeichen.name}</div>
           <div className="tag-element">Element {mond.element}</div>
         </button>
 
         <div className="tag-kopf-rechts">
-          <div className="tag-mond-gross">
+          <div className="tag-mond-groß">
             <MondSymbol illumination={mond.illumination} waxing={mond.waxing} size={64} />
           </div>
           <div className="tag-mond-text">
@@ -113,7 +113,7 @@ export function TagView({ datum, onPflanze, onArbeit }: Props) {
               <span className="hoch" title="hoechster Stand">☀ {formatZeit(himmel.sonnenHoechststand)}</span>
               <span title="Sonnenuntergang">↓ {formatZeit(himmel.sonnenuntergang)}</span>
             </span>
-            <small>{formatDauer(himmel.tagesLaengeMin)} · {himmel.sonnenHoeheGrad != null ? `${Math.round(himmel.sonnenHoeheGrad)}° Hoehe` : ''}</small>
+            <small>{formatDauer(himmel.tagesLaengeMin)} · {himmel.sonnenHoeheGrad != null ? `${Math.round(himmel.sonnenHoeheGrad)}° Höhe` : ''}</small>
           </div>
         </div>
         <div className="himmel-block">
@@ -195,7 +195,7 @@ export function TagView({ datum, onPflanze, onArbeit }: Props) {
           >
             <span className="tag-maya-label">Long Count</span>
             <span className="tag-maya-wert mono">{maya.longCountStr}</span>
-            <span className="tag-maya-fuss">Tag {maya.tageSeitNullpunkt.toLocaleString('de-DE')} seit Schoepfung</span>
+            <span className="tag-maya-fuss">Tag {maya.tageSeitNullpunkt.toLocaleString('de-DE')} seit Schöpfung</span>
           </button>
         </div>
       </section>
@@ -281,9 +281,9 @@ function Arbeitenblock({ arbeiten, mondTyp, onArbeit }: ArbeitenblockProps) {
 
 function empfehlung(typ: 'wurzel' | 'blatt' | 'bluete' | 'frucht'): string {
   return {
-    wurzel: 'Wurzeltag. Wurzelgemuese saeen, ernten, lagern. Boden lockern, Kompost ausbringen. Alles, was unter der Erde Kraft sammelt.',
+    wurzel: 'Wurzeltag. Wurzelgemuese säen, ernten, lagern. Boden lockern, Kompost ausbringen. Alles, was unter der Erde Kraft sammelt.',
     blatt:  'Blatttag. Salat, Kohl, Spinat, Kraeuter. Giessen wirkt heute besonders. Saftpflanzen und Blattgemuese.',
-    bluete: 'Bluetentag. Brokkoli, Blumenkohl, Heilkraeuter zur Bluete, Schnittblumen. Bienen besuchen, oelhaltige Pflanzen.',
-    frucht: 'Fruchttag. Tomate, Paprika, Bohne, Kuerbis, Obstbaeume. Alles, was Frucht und Samen traegt. Auch Veredelung.',
+    bluete: 'Bluetentag. Brokkoli, Blumenkohl, Heilkraeuter zur Blüte, Schnittblumen. Bienen besuchen, oelhaltige Pflanzen.',
+    frucht: 'Fruchttag. Tomate, Paprika, Bohne, Kürbis, Obstbaeume. Alles, was Frucht und Samen traegt. Auch Veredelung.',
   }[typ];
 }

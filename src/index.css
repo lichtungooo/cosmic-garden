@@ -1,0 +1,13 @@
+@import "tailwindcss";
+@import "@real-life-stack/toolkit/styles/globals.css";
+
+/* Tailwind v4 muss die Toolkit-Sources scannen, damit die Klassen
+   der Dialoge/Cards/Inputs etc. im Build landen. Sonst rendern Dialoge transparent. */
+@source "../../real-life-stack/packages/toolkit/src/**/*.tsx";
+@source "../../real-life-stack/packages/wot-connector/src/**/*.tsx";
+
+@custom-variant dark (&:is(.dark *));
+
+/* Garten-Layer — Magazin-Look. Wird nach Tailwind-Base + Toolkit-globals geladen,
+   damit eigene Selektoren gewinnen. */
+@import "./styles.css";

@@ -1,17 +1,17 @@
-// Verwandt-Logik: fuer einen Eintrag die thematisch verbundenen Eintraege finden.
+// Verwandt-Logik: für einen Eintrag die thematisch verbundenen Einträge finden.
 // Drei Quellen werden zusammengefuehrt:
 //   1. Explizite Beziehungen (handgesetzt in e.beziehungen)
 //   2. Backlinks (andere zeigen auf diesen Eintrag)
-//   3. Tag-Resonanz (Eintraege mit ueberlappenden Tags)
+//   3. Tag-Resonanz (Einträge mit ueberlappenden Tags)
 
 import type { Eintrag, BeziehungsArt } from './datenbank';
 import { alleEintraege, backlinksFuer, findeEintrag } from './datenbank-suche';
 
 export interface VerwandtTreffer {
   eintrag: Eintrag;
-  punkte: number;          // hoeher = naeher verwandt
+  punkte: number;          // höher = naeher verwandt
   quellen: VerwandtQuelle[];
-  art?: BeziehungsArt;     // erste passende Beziehungsart (fuer Label)
+  art?: BeziehungsArt;     // erste passende Beziehungsart (für Label)
 }
 
 export type VerwandtQuelle = 'explizit' | 'backlink' | 'tags';
@@ -85,19 +85,19 @@ export function verwandtFuer(id: string, optionen: VerwandtOptionen = {}): Verwa
   return liste.slice(0, maxTreffer);
 }
 
-// Eintraege mit gleichem Tag finden (fuer klickbare Tag-Chips)
+// Einträge mit gleichem Tag finden (für klickbare Tag-Chips)
 export function eintraegeMitTag(tag: string, ausserId?: string): Eintrag[] {
   return alleEintraege()
     .filter(e => e.tags.includes(tag) && e.id !== ausserId)
     .sort((a, b) => a.titel.localeCompare(b.titel));
 }
 
-// Label fuer die Beziehungs-Art
+// Label für die Beziehungs-Art
 export function beziehungsLabel(art?: BeziehungsArt): string {
   if (!art) return 'Verwandt';
   return ({
     'verwandt':      'Verwandt',
-    'praxis-fuer':   'Praxis fuer',
+    'praxis-fuer':   'Praxis für',
     'wirkt-an':      'Wirkt an',
     'tradition-von': 'Tradition von',
     'gehoert-zu':    'Gehoert zu',

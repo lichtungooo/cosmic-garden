@@ -1,5 +1,5 @@
-// Einheitliches Datenmodell fuer das Garten-Werk.
-// Eine zentrale Eintrag-Tabelle mit Discriminated Union ueber den Typ.
+// Einheitliches Datenmodell für das Garten-Werk.
+// Eine zentrale Eintrag-Tabelle mit Discriminated Union über den Typ.
 // Architektur-Entscheidung 16.05.2026 nach Deep-Research-Empfehlung.
 
 // === Basis-Typen ===
@@ -16,7 +16,7 @@ export type SonderZeit = 'mondknoten' | 'vollmond-exakt' | 'neumond-exakt' | 'so
 
 export type BeziehungsArt =
   | 'verwandt'        // thematisch verwandt
-  | 'praxis-fuer'     // konkrete Anwendung fuer (z.B. Brennnessel-Jauche praxis-fuer Tomate)
+  | 'praxis-fuer'     // konkrete Anwendung fuer (Brennnessel-Jauche praxis-fuer Tomate)
   | 'wirkt-an'        // wirkt am Tagestyp/Mondphase (z.B. Pflanze wirkt-an Fruchttag)
   | 'tradition-von'   // Tradition stammt von (z.B. Huegelkultur tradition-von Sepp Holzer)
   | 'gehoert-zu'      // ist Teil einer Hierarchie/Sektion
@@ -48,7 +48,7 @@ export interface Zeitbezug {
   sonderzeiten?: SonderZeit[];
 }
 
-// === Basis-Eintrag (gemeinsam fuer alle Typen) ===
+// === Basis-Eintrag (gemeinsam für alle Typen) ===
 
 export interface BasisEintrag {
   id: string;                    // global eindeutig: "pflanze:tomate", "wissen:mond:mondknoten"
@@ -67,7 +67,7 @@ export interface BasisEintrag {
   quellen?: string[];
 }
 
-// === Typ-spezifische Eintraege ===
+// === Typ-spezifische Einträge ===
 
 export interface PflanzeMeta {
   lateinisch: string;

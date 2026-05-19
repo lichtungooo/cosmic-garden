@@ -15,7 +15,7 @@ import { TagebuchTag } from '../components/TagebuchTag';
 
 const WT_LANG = ['Sonntag', 'Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag'];
 const MONATE_KURZ = ['Jan', 'Feb', 'Mrz', 'Apr', 'Mai', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Dez'];
-const MONATE_LANG = ['Januar', 'Februar', 'Maerz', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember'];
+const MONATE_LANG = ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember'];
 
 interface Props {
   datum: Date;
@@ -157,7 +157,7 @@ export function JahreskreisView({ datum, onDatum }: Props) {
             </radialGradient>
           </defs>
 
-          {/* === Klick-Sektoren fuer jeden Tag === */}
+          {/* === Klick-Sektoren für jeden Tag === */}
           {tagSektoren.map((t, i) => {
             const winkelStart = t.winkel - (360 / anzTage) / 2;
             const winkelEnde  = t.winkel + (360 / anzTage) / 2;
@@ -434,7 +434,7 @@ export function JahreskreisView({ datum, onDatum }: Props) {
       <div className="jahr-legende">
         <span className="leg-item"><span className="leg-dot" style={{ background: '#1b1c20' }} />Vollmond</span>
         <span className="leg-item"><span className="leg-dot" style={{ background: '#f4ecd6', border: '1px solid #7a6e54' }} />Neumond</span>
-        <span className="leg-item leg-hinweis">Tag im Aussenring antippen · Monat fuer Detail klicken · Mitte fuer Tagesdetail</span>
+        <span className="leg-item leg-hinweis">Tag im Aussenring antippen · Monat für Detail klicken · Mitte für Tagesdetail</span>
       </div>
 
       {detailOffen && <DetailPanel datum={datum} ort={ort} onClose={() => setDetailOffen(false)} />}
@@ -518,7 +518,7 @@ function ZentrumInhalt({ datum, ort }: { datum: Date; ort: { name: string; lat: 
         </text>
       </g>
 
-      {/* Datum gross */}
+      {/* Datum groß */}
       <text textAnchor="middle">
         <tspan x={0} y={16} fontSize={22} fontWeight={500} fill="var(--ink)">
           {datum.getDate()}. {MONATE_KURZ[datum.getMonth()]}
@@ -541,14 +541,14 @@ function ZentrumInhalt({ datum, ort }: { datum: Date; ort: { name: string; lat: 
           {ort.name} · {formatDauer(h.tagesLaengeMin)}
         </tspan>
         <tspan x={0} y={88} fontSize={6.5} fill="var(--ink-soft)" fontStyle="italic">
-          antippen fuer Details
+          antippen für Details
         </tspan>
       </text>
     </g>
   );
 }
 
-// === Detail-Panel fuer Tag ===
+// === Detail-Panel für Tag ===
 
 function DetailPanel({ datum, ort, onClose }: { datum: Date; ort: { name: string; lat: number; lon: number }; onClose: () => void }) {
   const mond = mondTag(datum);
@@ -569,10 +569,10 @@ function DetailPanel({ datum, ort, onClose }: { datum: Date; ort: { name: string
             <h2>{datum.getDate()}. {MONATE_LANG[datum.getMonth()]} {datum.getFullYear()}</h2>
           </div>
           <div className="jahr-detail-zeichen">
-            <span className="zeichen-symbol-gross zodiak-glyph">{mond.zeichen.symbol + VS_TEXT}</span>
-            <span className="zeichen-name-gross">
+            <span className="zeichen-symbol-groß zodiak-glyph">{mond.zeichen.symbol + VS_TEXT}</span>
+            <span className="zeichen-name-groß">
               {mond.zeichen.name}
-              <InfoIcon sektionId="tierkreis" eintragId={mond.zeichen.name.toLowerCase()} titel={`Mehr ueber ${mond.zeichen.name}`} />
+              <InfoIcon sektionId="tierkreis" eintragId={mond.zeichen.name.toLowerCase()} titel={`Mehr über ${mond.zeichen.name}`} />
             </span>
             <span className="thun-pille" style={{ background: farbe }}>{thunTypLabel(mond.thunTyp)}</span>
           </div>
@@ -589,7 +589,7 @@ function DetailPanel({ datum, ort, onClose }: { datum: Date; ort: { name: string
             <div className="jahr-detail-zeile"><span>Untergang</span><span>{formatZeit(h.sonnenuntergang)}</span></div>
             <div className="jahr-detail-zeile"><span>Tageslaenge</span><span>{formatDauer(h.tagesLaengeMin)}</span></div>
             {h.sonnenHoeheGrad != null && (
-              <div className="jahr-detail-zeile"><span>Hoehe Mittag</span><span>{Math.round(h.sonnenHoeheGrad)}°</span></div>
+              <div className="jahr-detail-zeile"><span>Höhe Mittag</span><span>{Math.round(h.sonnenHoeheGrad)}°</span></div>
             )}
           </section>
 
@@ -668,7 +668,7 @@ function DetailPanel({ datum, ort, onClose }: { datum: Date; ort: { name: string
                 <InfoIcon sektionId="maya" eintragId="2012-wahrheit" titel="21.12.2012 — was wirklich war" />
               </div>
               <div className="jahr-maya-wert mono">{maya.longCountStr}</div>
-              <div className="jahr-maya-meta">{maya.tageSeitNullpunkt.toLocaleString('de-DE')} Tage seit der Maya-Schoepfung (11.8.3114 v.Chr.)</div>
+              <div className="jahr-maya-meta">{maya.tageSeitNullpunkt.toLocaleString('de-DE')} Tage seit der Maya-Schöpfung (11.8.3114 v.Chr.)</div>
               <p className="jahr-maya-bedeutung">Bak'tun · K'atun · Tun · Winal · K'in. Der aktuelle 13. Bak'tun begann am 21.12.2012.</p>
             </div>
           </div>
@@ -680,7 +680,7 @@ function DetailPanel({ datum, ort, onClose }: { datum: Date; ort: { name: string
   );
 }
 
-// === Detail-Panel fuer Monat ===
+// === Detail-Panel für Monat ===
 
 function MonatsDetailPanel({
   monat, jahr, onClose, onTag,
@@ -717,7 +717,7 @@ function MonatsDetailPanel({
             <h2>{MONATE_LANG[monat]} {jahr}</h2>
           </div>
           <div className="jahr-detail-zeichen">
-            <span className="zeichen-name-gross">{tage.length} Tage</span>
+            <span className="zeichen-name-groß">{tage.length} Tage</span>
           </div>
         </header>
 

@@ -110,7 +110,7 @@ export function HaabRad({ datum, setDatum }: Props) {
           );
         })}
 
-        {/* === Tag-Markierungen (jeder Tag, 1-20 oder 1-5 fuer Wayeb) === */}
+        {/* === Tag-Markierungen (jeder Tag, 1-20 oder 1-5 für Wayeb) === */}
         {Array.from({ length: 365 }).map((_, t) => {
           const w = -90 + (t / 365) * 360;
           const innen = polar(w, R_MONAT_INNEN);

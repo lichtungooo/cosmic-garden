@@ -1,5 +1,5 @@
-// Lookup- und Such-Funktionen ueber die einheitliche Datenbank.
-// Mit MiniSearch-Index fuer Volltext + Tag-Filter (Phase 4 erledigt 16.05.2026).
+// Lookup- und Such-Funktionen über die einheitliche Datenbank.
+// Mit MiniSearch-Index für Volltext + Tag-Filter (Phase 4 erledigt 16.05.2026).
 
 import MiniSearch from 'minisearch';
 import type {
@@ -75,7 +75,7 @@ interface IndexDocument {
   untertitel: string;
   kurz: string;
   inhalt: string;
-  tagText: string;        // Tags als Text fuer Suche
+  tagText: string;        // Tags als Text für Suche
   typ: EintragsTyp;
   kategorie: string;
   tags: string[];
@@ -163,7 +163,7 @@ export function sucheVolltext(query: string, optionen: SuchOptionen = {}): SuchT
     .filter((x): x is SuchTreffer => x != null);
 }
 
-// Vorschlaege fuer Auto-Complete
+// Vorschlaege für Auto-Complete
 export function sucheVorschlaege(query: string, anzahl = 8): string[] {
   ensureIndex();
   const q = query.trim();
@@ -172,7 +172,7 @@ export function sucheVorschlaege(query: string, anzahl = 8): string[] {
   return vorschlaege.slice(0, anzahl).map(v => v.suggestion);
 }
 
-// Cache invalidieren, falls Daten geaendert wurden (kommt spaeter relevant)
+// Cache invalidieren, falls Daten geaendert wurden (kommt später relevant)
 export function indexNeuAufbauen() {
   suchIndex = null;
   dokumente = null;

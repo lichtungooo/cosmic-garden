@@ -13,7 +13,7 @@ export const TZOLKIN_NAMEN = [
   'Cib', 'Caban', 'Etznab', 'Cauac', 'Ahau',
 ] as const;
 
-// Kernbedeutungen — knapp, fuer Detailanzeige; Tiefe kommt in Phase F.
+// Kernbedeutungen — knapp, für Detailanzeige; Tiefe kommt in Phase F.
 export const TZOLKIN_BEDEUTUNG: Record<string, string> = {
   Imix:     'Erde, Urwasser, Drache — der Urgrund alles Werdenden.',
   Ik:       'Wind, Atem, Geist — das Lebendige, das durchweht.',
@@ -23,9 +23,9 @@ export const TZOLKIN_BEDEUTUNG: Record<string, string> = {
   Cimi:     'Tod, Tor — Wandlung, Übergang, Loslassen.',
   Manik:    'Hirsch, Hand — Geschicklichkeit, Werkzeug, Gabe.',
   Lamat:    'Stern, Venus — Hoffnung, Morgen- und Abendstern.',
-  Muluc:    'Wasser, Mond — Gefuehl, Reinigung, Mondesfluss.',
+  Muluc:    'Wasser, Mond — Gefühl, Reinigung, Mondesfluss.',
   Oc:       'Hund, Gefaehrte — Treue, Begleiter durch Welten.',
-  Chuen:    'Affe, Kuenstler — Spiel, Schoepfung, Webkunst.',
+  Chuen:    'Affe, Kuenstler — Spiel, Schöpfung, Webkunst.',
   Eb:       'Gras, Mensch — Weg, Pfad, das Beschreitbare.',
   Ben:      'Schilfrohr, Heim — Saeule, Aufrichtigkeit, Mais.',
   Ix:       'Jaguar, Magier — Erdseele, Schamane, Geheimnis.',
@@ -52,7 +52,7 @@ export const HAAB_BEDEUTUNG: Record<string, string> = {
   "Sotz":     'Fledermaus — Hoehlen, Schwellen.',
   "Sek":      'Tod / Schaedel — schwere Zeit, Erinnern.',
   "Xul":      'Hund — Ende einer Phase, Wende.',
-  "Yaxk'in":  'Neue Sonne — Helligkeit kommt zurueck.',
+  "Yaxk'in":  'Neue Sonne — Helligkeit kommt zurück.',
   "Mol":      'Wasser-Sammlung — Vorratszeit, Sammlung.',
   "Ch'en":    'Brunnen — Tiefe, Schwarz, das Innere.',
   "Yax":      'Gruen — Saat, Frischheit, Wachstum.',
@@ -79,7 +79,7 @@ function jdn(d: Date): number {
   return day + Math.floor((153 * mm + 2) / 5) + 365 * yy + Math.floor(yy / 4) - Math.floor(yy / 100) + Math.floor(yy / 400) - 32045;
 }
 
-// === Maya-Tage seit Schoepfung ===
+// === Maya-Tage seit Schöpfung ===
 export function mayaTageSeitNullpunkt(d: Date): number {
   return jdn(d) - GMT_KORRELATION;
 }
@@ -136,7 +136,7 @@ export function tzolkinString(t: Tzolkin): string {
 export interface Haab {
   monatIndex: number;    // 0..18
   monat: string;
-  tagImMonat: number;    // 0..19 (oder 0..4 fuer Wayeb)
+  tagImMonat: number;    // 0..19 (oder 0..4 für Wayeb)
   istWayeb: boolean;
 }
 
@@ -200,8 +200,8 @@ export const VENUS_PHASEN: VenusPhaseDef[] = [
   {
     id: 'unter-konj',
     name: 'Untere Konjunktion',
-    beschreibung: 'Venus zwischen Erde und Sonne, fuer das blosse Auge unsichtbar.',
-    bedeutung: 'Schwelle, gefaehrlicher Uebergang. Bei den Mayas eine Zeit der Vorsicht. Venus stirbt fuer kurze Zeit, um als Morgenstern wiedergeboren zu werden.',
+    beschreibung: 'Venus zwischen Erde und Sonne, für das blosse Auge unsichtbar.',
+    bedeutung: 'Schwelle, gefaehrlicher Uebergang. Bei den Mayas eine Zeit der Vorsicht. Venus stirbt für kurze Zeit, um als Morgenstern wiedergeboren zu werden.',
     farbe: '#2a2620',
     start: 0,
     ende: 8,
@@ -218,8 +218,8 @@ export const VENUS_PHASEN: VenusPhaseDef[] = [
   {
     id: 'ober-konj',
     name: 'Obere Konjunktion',
-    beschreibung: 'Venus hinter der Sonne, fuer das Auge wieder unsichtbar.',
-    bedeutung: 'Ruhezeit. Venus zieht sich hinter die Sonne zurueck. In der Maya-Sicht: die Vorbereitung auf die Wiederkehr als Abendstern.',
+    beschreibung: 'Venus hinter der Sonne, für das Auge wieder unsichtbar.',
+    bedeutung: 'Ruhezeit. Venus zieht sich hinter die Sonne zurück. In der Maya-Sicht: die Vorbereitung auf die Wiederkehr als Abendstern.',
     farbe: '#e8a82b',
     start: 244,
     ende: 334,
@@ -228,7 +228,7 @@ export const VENUS_PHASEN: VenusPhaseDef[] = [
     id: 'abendstern',
     name: 'Abendstern',
     beschreibung: 'Venus erscheint nach Sonnenuntergang am Westhimmel.',
-    bedeutung: 'Sanftere Erscheinung der Venus. Bei den Mayas weniger kriegerisch, mehr in Verbindung mit Schoenheit und Bluete. Begleiterin der untergehenden Sonne.',
+    bedeutung: 'Sanftere Erscheinung der Venus. Bei den Mayas weniger kriegerisch, mehr in Verbindung mit Schoenheit und Blüte. Begleiterin der untergehenden Sonne.',
     farbe: '#c89b3a',
     start: 334,
     ende: 584,
@@ -252,16 +252,16 @@ export function venus(d: Date): VenusDatum {
   return { tagImZyklus, phase, tagInPhase, zyklusNummer };
 }
 
-// Findet das Datum, an dem die naechste Phase mit der gegebenen ID beginnt.
+// Findet das Datum, an dem die nächste Phase mit der gegebenen ID beginnt.
 export function naechsterPhasenWechsel(d: Date, phaseId: VenusPhaseId): Date {
   const v = venus(d);
   const ziel = VENUS_PHASEN.find(p => p.id === phaseId);
   if (!ziel) return d;
   let delta = ziel.start - v.tagImZyklus;
   if (delta <= 0) delta += VENUS_ZYKLUS_TAGE;
-  const naechst = new Date(d);
-  naechst.setDate(naechst.getDate() + delta);
-  return naechst;
+  const nächst = new Date(d);
+  nächst.setDate(nächst.getDate() + delta);
+  return nächst;
 }
 
 // === Komfort-Funktion: alles auf einmal ===

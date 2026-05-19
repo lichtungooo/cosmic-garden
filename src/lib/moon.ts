@@ -1,5 +1,5 @@
 // Mondberechnung mit vereinfachten Meeus-Formeln.
-// Genauigkeit ca. 0.3 Grad — ausreichend fuer Maria-Thun-Kalender.
+// Genauigkeit ca. 0.3 Grad — ausreichend für Maria-Thun-Kalender.
 // Siderischer Tierkreis (Lahiri-Ayanamsa) wie in der biodynamischen Tradition.
 
 export type ThunTyp = 'wurzel' | 'blatt' | 'bluete' | 'frucht';
@@ -32,7 +32,7 @@ export const TIERKREIS: TierkreisZeichen[] = [
 const DEG = Math.PI / 180;
 
 function julianDay(date: Date): number {
-  // Julianisches Datum fuer 0h UT
+  // Julianisches Datum für 0h UT
   let y = date.getUTCFullYear();
   let m = date.getUTCMonth() + 1;
   const d = date.getUTCDate() + (date.getUTCHours() + date.getUTCMinutes() / 60) / 24;
@@ -46,7 +46,7 @@ function julianDay(date: Date): number {
 }
 
 function lahiriAyanamsa(jd: number): number {
-  // Lineare Naeherung Lahiri-Ayanamsa, gut fuer 2000-2050.
+  // Lineare Naeherung Lahiri-Ayanamsa, gut für 2000-2050.
   const T = (jd - 2451545.0) / 36525;
   return 23.85 + 1.39 * T;
 }
@@ -109,7 +109,7 @@ export interface MondTag {
 }
 
 export function mondTag(date: Date): MondTag {
-  // Wir nehmen 12:00 MEZ als Tagesreferenz (mittag, klassisch fuer Garten-Kalender).
+  // Wir nehmen 12:00 MEZ als Tagesreferenz (mittag, klassisch für Garten-Kalender).
   const reference = new Date(date);
   reference.setUTCHours(11, 0, 0, 0);
   const jd = julianDay(reference);

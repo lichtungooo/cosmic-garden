@@ -1,4 +1,4 @@
-// Eine Seite fuer alle Eintrags-Typen — Pflanze, Arbeit, Wissen.
+// Eine Seite für alle Eintrags-Typen — Pflanze, Arbeit, Wissen.
 // Gleicher Aufbau: Kopf, Tags, Kurz, Steckbrief (typ-spezifisch), Bloecke, Verwandt.
 
 import type { Eintrag, EintragsTyp, PflanzeEintrag, ArbeitEintrag, WissenEintrag } from '../lib/datenbank';
@@ -163,7 +163,7 @@ function VerwandtBlock({ treffer }: { treffer: VerwandtTreffer[] }) {
 
   return (
     <section className="eintrag-block eintrag-verwandt">
-      <h2>Das koennte dich auch interessieren</h2>
+      <h2>Das könnte dich auch interessieren</h2>
       <div className="verwandt-grid">
         {treffer.map(v => {
           const ref = refAusId(v.eintrag.id);
@@ -204,7 +204,7 @@ function TagChip({ tag }: { tag: string }) {
       type="button"
       className="tag-chip tag-chip-klickbar"
       onClick={() => nav.oeffne({ kind: 'tag', tag })}
-      title={`Alle Eintraege mit #${tag}`}
+      title={`Alle Einträge mit #${tag}`}
     >
       #{tag}
     </button>

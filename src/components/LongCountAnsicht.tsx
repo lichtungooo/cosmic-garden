@@ -7,7 +7,7 @@ interface Props {
 interface Einheit {
   name: string;
   wert: number;
-  max: number;  // 20 fuer alle ausser Winal (18)
+  max: number;  // 20 für alle ausser Winal (18)
   tage: number; // Anzahl Tage pro Einheit
 }
 
@@ -49,11 +49,11 @@ export function LongCountAnsicht({ datum }: Props) {
 
       <div className="lc-zaehler">
         <div className="lc-zaehler-zeile">
-          <span>Tage seit der Schoepfung</span>
+          <span>Tage seit der Schöpfung</span>
           <span className="lc-zahl">{tageGesamt.toLocaleString('de-DE')}</span>
         </div>
         <div className="lc-zaehler-zeile">
-          <span>Sonnenjahre seit der Schoepfung</span>
+          <span>Sonnenjahre seit der Schöpfung</span>
           <span className="lc-zahl">{(tageGesamt / 365.2422).toFixed(2)}</span>
         </div>
         <div className="lc-zaehler-zeile">
@@ -74,7 +74,7 @@ export function LongCountAnsicht({ datum }: Props) {
           </span>
           <span className="lc-strahl-marker lc-strahl-ende" style={{ right: '0%' }}>
             <span className="lc-strahl-label">14.0.0.0.0</span>
-            <span className="lc-strahl-datum">~ Maerz 4407</span>
+            <span className="lc-strahl-datum">~ März 4407</span>
           </span>
         </div>
         <div className="lc-strahl-untertitel">

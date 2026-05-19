@@ -27,7 +27,7 @@ export function festeImJahr(jahr: number): Jahresfest[] {
       germName: 'Wintersnacht',
       art: 'zwischenfest',
       datum: new Date(jahr - 1, 9, 31), // 31. Oktober Vorjahres = Jahresanfang
-      beschreibung: 'Ahnenfest. Beginn des neuen Jahres. Der Schleier zwischen den Welten ist duenn.',
+      beschreibung: 'Ahnenfest. Beginn des neuen Jahres. Der Schleier zwischen den Welten ist dünn.',
       farbe: '#5b3a8a',
     },
     {
@@ -80,7 +80,7 @@ export function festeImJahr(jahr: number): Jahresfest[] {
       germName: 'Lammas / Lughnasadh',
       art: 'zwischenfest',
       datum: new Date(jahr, 7, 1),
-      beschreibung: 'Erste Erntefest. Brotbacken aus neuem Korn, Dank fuer das Wachsen.',
+      beschreibung: 'Erste Erntefest. Brotbacken aus neuem Korn, Dank für das Wachsen.',
       farbe: '#c89b3a',
     },
     {
@@ -140,7 +140,7 @@ export function mondphasenImJahr(jahr: number): MondphasenJahr {
   };
 }
 
-// Tag im Jahr (0-365) — wird fuer Winkel-Berechnung gebraucht
+// Tag im Jahr (0-365) — wird für Winkel-Berechnung gebraucht
 export function tagImJahr(d: Date): number {
   const start = new Date(d.getFullYear(), 0, 1);
   return Math.floor((d.getTime() - start.getTime()) / 86400000);

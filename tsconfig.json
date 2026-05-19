@@ -13,7 +13,20 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "useDefineForClassFields": true
+    "useDefineForClassFields": true,
+    "types": ["vite/client"],
+    "baseUrl": ".",
+    "paths": {
+      "@real-life-stack/data-interface/demo-data": ["../real-life-stack/packages/data-interface/src/demo-data.ts"],
+      "@real-life-stack/data-interface": ["../real-life-stack/packages/data-interface/src/index.ts"],
+      "@real-life-stack/toolkit": ["../real-life-stack/packages/toolkit/src/index.ts"],
+      "@real-life-stack/wot-connector/components": ["../real-life-stack/packages/wot-connector/src/components/index.ts"],
+      "@real-life-stack/wot-connector": ["../real-life-stack/packages/wot-connector/src/index.ts"],
+      "@web_of_trust/adapter-yjs": ["../web-of-trust/packages/adapter-yjs/src/index.ts"],
+      "@web_of_trust/core": ["../web-of-trust/packages/wot-core/src/index.ts"],
+      "@real-life/adapter-yjs": ["../web-of-trust/packages/adapter-yjs/src/index.ts"],
+      "@real-life/wot-core": ["../web-of-trust/packages/wot-core/src/index.ts"]
+    }
   },
   "include": ["src"]
 }

@@ -23,7 +23,7 @@ import type { Jahreszeit, Mondphase } from '../lib/datenbank';
 import type { MondPhase } from '../lib/moon';
 
 const WT_LANG = ['Sonntag', 'Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag'];
-const MONATE_LANG = ['Januar', 'Februar', 'Maerz', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember'];
+const MONATE_LANG = ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember'];
 
 interface Werkzeug {
   id: 'kalender' | 'jahreskreis' | 'maya' | 'tagebuch';
@@ -34,7 +34,7 @@ interface Werkzeug {
 }
 
 const WERKZEUGE: Werkzeug[] = [
-  { id: 'kalender',    name: 'Kalender',     symbol: '☷', beschreibung: 'Tag fuer Tag durchs Jahr. Tagestypen nach Maria Thun, Mondphasen, Sonnenzeiten, Wetter.', farbe: '#4a8a3a' },
+  { id: 'kalender',    name: 'Kalender',     symbol: '☷', beschreibung: 'Tag für Tag durchs Jahr. Tagestypen nach Maria Thun, Mondphasen, Sonnenzeiten, Wetter.', farbe: '#4a8a3a' },
   { id: 'jahreskreis', name: 'Jahreskreis',  symbol: '◯', beschreibung: 'Das ganze Jahr als runder Kreis. Sonnwenden, Tagundnachtgleichen, der Tierkreis von oben.', farbe: '#d4a542' },
   { id: 'maya',        name: 'Maya-Kalender',symbol: '✶', beschreibung: 'Tzolkin, Haab, Long Count — die drei Maya-Kalender, die immer noch laufen. Plus Venus.', farbe: '#c0432f' },
   { id: 'tagebuch',    name: 'Tagebuch',     symbol: '✎', beschreibung: 'Eigene Notizen, Ernten, Beobachtungen. Was du im Garten erlebst, bleibt mit dir.', farbe: '#5b3a8a' },
@@ -57,10 +57,10 @@ function mondphaseFuerKontext(p: MondPhase): Mondphase | undefined {
 
 function tagestypEmpfehlung(typ: ReturnType<typeof thunTypLabel> extends string ? string : string): string {
   return {
-    Wurzeltag: 'Wurzelgemuese saeen, ernten, lagern. Boden lockern, Kompost ausbringen.',
+    Wurzeltag: 'Wurzelgemuese säen, ernten, lagern. Boden lockern, Kompost ausbringen.',
     Blatttag:  'Salat, Kohl, Spinat, Kraeuter. Giessen wirkt heute besonders.',
     Bluetentag:'Brokkoli, Heilkraeuter, Schnittblumen. Bienen besuchen.',
-    Fruchttag: 'Tomate, Bohne, Kuerbis, Obstbaeume. Veredelung an Fruchttraegern.',
+    Fruchttag: 'Tomate, Bohne, Kürbis, Obstbaeume. Veredelung an Fruchttraegern.',
   }[typ] ?? 'Heute im Garten unterwegs sein.';
 }
 
@@ -120,8 +120,8 @@ export function StartView({ onWerkzeug, onJahreskreis, onMaya, onWelt, onTag }: 
         <h1 className="start-hero-titel">Mein kosmischer Garten</h1>
         <p className="start-hero-lead">
           Was heute waechst, was heute zu tun ist, was heute am Himmel steht — verbunden in einem Werk.
-          87 Pflanzen, 22 Arbeiten, 89 Wissens-Eintraege. Maria Thun, Maya-Kalender, samenfeste Sorten,
-          Gemeinschaft. Ein Werkzeug fuer den, der wissen will, was die Erde traegt.
+          87 Pflanzen, 22 Arbeiten, 89 Wissens-Einträge. Maria Thun, Maya-Kalender, samenfeste Sorten,
+          Gemeinschaft. Ein Werkzeug für den, der wissen will, was die Erde traegt.
         </p>
       </header>
 
@@ -183,7 +183,7 @@ export function StartView({ onWerkzeug, onJahreskreis, onMaya, onWelt, onTag }: 
           <div className="start-saison-grid">
             {auspflanzen.length > 0 && (
               <div className="start-saison-block">
-                <h3>Jetzt aussaeen / auspflanzen</h3>
+                <h3>Jetzt aussäen / auspflanzen</h3>
                 <ul className="start-saison-liste">
                   {auspflanzen.map(p => (
                     <li key={p.id}>
@@ -284,7 +284,7 @@ export function StartView({ onWerkzeug, onJahreskreis, onMaya, onWelt, onTag }: 
       </section>
 
       <footer className="start-fuss">
-        <p>Mein kosmischer Garten · Werkzeug fuer zyklisches Gaertnern · {heute.getFullYear()}</p>
+        <p>Mein kosmischer Garten · Werkzeug für zyklisches Gaertnern · {heute.getFullYear()}</p>
       </footer>
     </div>
   );

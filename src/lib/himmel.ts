@@ -174,7 +174,7 @@ function elongation(jd: number): number {
   return norm360(moonEclipticLongitudeTrop(jd) - sunEclipticLongitudeTrop(jd));
 }
 
-// Findet Sonnenstand 0/90/180/270 Grad ekliptische Laenge (Fruehling/Sommer/Herbst/Winter-Sonnwende)
+// Findet Sonnenstand 0/90/180/270 Grad ekliptische Laenge (Frühling/Sommer/Herbst/Winter-Sonnwende)
 export function sonnwende(jahr: number, target: 0 | 90 | 180 | 270): Date {
   const richtwerte = { 0: [3, 20], 90: [6, 21], 180: [9, 22], 270: [12, 21] } as const;
   const [m, t] = richtwerte[target];

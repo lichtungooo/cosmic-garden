@@ -12,7 +12,7 @@ import type { Eintrag, EintragsTyp, Jahreszeit, Mondphase } from '../lib/datenba
 
 const VS_TEXT = String.fromCharCode(0xFE0E);
 const WT_LANG = ['Sonntag', 'Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag'];
-const MONATE_LANG = ['Januar', 'Februar', 'Maerz', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember'];
+const MONATE_LANG = ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember'];
 
 interface Props {
   datum: Date;
@@ -53,10 +53,10 @@ function mondphaseFuerKontext(p: MondPhase): Mondphase | undefined {
 
 function tagestypEmpfehlung(typ: ThunTyp): string {
   return {
-    wurzel: 'Wurzelgemuese saeen, ernten, lagern. Boden lockern.',
+    wurzel: 'Wurzelgemuese säen, ernten, lagern. Boden lockern.',
     blatt:  'Blattgemuese, Kraeuter. Giessen wirkt heute besonders.',
     bluete: 'Bluetenpflanzen, Brokkoli, Heilkraeuter, Bienen besuchen.',
-    frucht: 'Tomate, Bohne, Kuerbis. Auch Veredelung an Obstbaeumen.',
+    frucht: 'Tomate, Bohne, Kürbis. Auch Veredelung an Obstbaeumen.',
   }[typ];
 }
 
@@ -105,7 +105,7 @@ export function HeuteSidebar({ datum, setDatum }: Props) {
       <section className="heute-block" style={{ borderTopColor: farbe }}>
         <header className="heute-block-kopf">
           <h3>Tagestyp</h3>
-          <InfoIcon sektionId="tierkreis" eintragId={zeichenId} titel={`Mehr ueber ${mond.zeichen.name}`} />
+          <InfoIcon sektionId="tierkreis" eintragId={zeichenId} titel={`Mehr über ${mond.zeichen.name}`} />
         </header>
         <div className="heute-thun" style={{ background: farbe }}>{thunTypLabel(mond.thunTyp)}</div>
         <div className="heute-zeichen">
@@ -208,7 +208,7 @@ export function HeuteSidebar({ datum, setDatum }: Props) {
       <section className="heute-block">
         <header className="heute-block-kopf">
           <h3>Tagebuch</h3>
-          <span className="heute-meta">{tagebuchHeute.length} {tagebuchHeute.length === 1 ? 'Eintrag' : 'Eintraege'}</span>
+          <span className="heute-meta">{tagebuchHeute.length} {tagebuchHeute.length === 1 ? 'Eintrag' : 'Einträge'}</span>
         </header>
         {tagebuchHeute.length === 0 ? (
           <p className="heute-leer">Heute noch keine Notiz.</p>

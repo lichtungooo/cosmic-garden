@@ -52,7 +52,7 @@ function fensterZuMonaten(von: string | null, bis: string | null): number[] {
   if (vM <= bM) {
     for (let m = vM; m <= bM; m++) out.push(m);
   } else {
-    // wrap ueber Jahreswechsel
+    // wrap über Jahreswechsel
     for (let m = vM; m <= 12; m++) out.push(m);
     for (let m = 1; m <= bM; m++) out.push(m);
   }

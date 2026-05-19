@@ -65,7 +65,7 @@ export function kategorieLabel(k: Kategorie): string {
     frucht: 'Frucht',
     blatt: 'Blatt',
     wurzel: 'Wurzel',
-    bluete: 'Bluete',
+    bluete: 'Blüte',
     kraut: 'Kraut',
     baum: 'Baum',
     beere: 'Beere',
@@ -84,7 +84,7 @@ function inWindow(monat: number, tag: number, von: string | null, bis: string | 
   const vD = vM * 100 + vT;
   const bD = bM * 100 + bT;
   if (vD <= bD) return d >= vD && d <= bD;
-  // Fenster ueber Jahreswechsel (z.B. Gruenkohl-Ernte)
+  // Fenster über Jahreswechsel (z.B. Grünkohl-Ernte)
   return d >= vD || d <= bD;
 }
 

@@ -2,6 +2,7 @@ import { useMemo, useState, useEffect, useRef } from 'react';
 import { sucheVolltext } from '../lib/datenbank-suche';
 import type { Eintrag, EintragsTyp } from '../lib/datenbank';
 import { useDetailNav, refAusId } from '../lib/detail-navigation';
+import { useWotSuche, pinTrefferFarbe, pinTrefferKategorie, type WotTreffer } from '../lib/wot-suche';
 
 const TYP_LABEL: Record<EintragsTyp, string> = {
   pflanze:  'Pflanze',
@@ -19,12 +20,17 @@ const TYP_FARBE: Record<EintragsTyp, string> = {
   antwort:  '#a8423a',
 };
 
-export function GlobaleSuche() {
+interface Props {
+  onKarte?: (pinId: string) => void;
+}
+
+export function GlobaleSuche({ onKarte }: Props = {}) {
   const [q, setQ] = useState('');
   const [offen, setOffen] = useState(false);
   const [filterTyp, setFilterTyp] = useState<EintragsTyp | 'alle'>('alle');
   const wrap = useRef<HTMLDivElement>(null);
   const nav = useDetailNav();
+  const wotTreffer = useWotSuche(q);
 
   const treffer = useMemo(() => {
     if (!q.trim()) return [];
@@ -56,6 +62,14 @@ export function GlobaleSuche() {
     setQ('');
   }
 
+  function waehleWot(t: WotTreffer) {
+    if (t.kind === 'pin' && onKarte) {
+      onKarte(t.pin.id);
+    }
+    setOffen(false);
+    setQ('');
+  }
+
   return (
     <div className="suche-wrap" ref={wrap}>
       <svg className="suche-lupe" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true">
@@ -64,7 +78,7 @@ export function GlobaleSuche() {
       </svg>
       <input
         type="search"
-        placeholder="Suche ueber alles — Pflanze, Arbeit, Wissen..."
+        placeholder="Suche über alles — Pflanze, Arbeit, Wissen…"
         value={q}
         onChange={e => { setQ(e.target.value); setOffen(true); }}
         onFocus={() => setOffen(true)}
@@ -89,8 +103,8 @@ export function GlobaleSuche() {
             ))}
           </div>
 
-          {treffer.length === 0 ? (
-            <div className="suche-leer">Kein Treffer fuer "{q}"</div>
+          {treffer.length === 0 && wotTreffer.length === 0 ? (
+            <div className="suche-leer">Kein Treffer für „{q}“</div>
           ) : (
             <ul className="global-suche-liste">
               {treffer.map(t => (
@@ -110,6 +124,30 @@ export function GlobaleSuche() {
                   </div>
                 </li>
               ))}
+              {wotTreffer.slice(0, 10).map(t => {
+                const farbe = pinTrefferFarbe(t);
+                const kategorie = pinTrefferKategorie(t);
+                const titel = t.kind === 'pin' ? t.pin.titel : t.name;
+                const kurz = t.kind === 'pin'
+                  ? (t.pin.text.slice(0, 100) || t.pin.hashtags.map(h => '#' + h).join(' '))
+                  : t.hashtags.map(h => '#' + h).join(' ');
+                return (
+                  <li
+                    key={t.kind + ':' + (t.kind === 'pin' ? t.pin.id : t.profilId)}
+                    className="global-suche-eintrag"
+                    onClick={() => waehleWot(t)}
+                    style={{ borderLeftColor: farbe }}
+                  >
+                    <span className="global-suche-typ" style={{ background: farbe }}>
+                      {kategorie}
+                    </span>
+                    <div className="global-suche-info">
+                      <span className="global-suche-titel">{titel}</span>
+                      <span className="global-suche-kurz">{kurz}</span>
+                    </div>
+                  </li>
+                );
+              })}
             </ul>
           )}
         </div>

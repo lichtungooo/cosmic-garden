@@ -25,7 +25,7 @@ export function MondSymbol({ illumination, waxing, size = 18, title }: MondSymbo
     // Vollmond: voller schwarzer Kreis
     svgInner = <circle cx={cx} cy={cy} r={r} fill={lightFill} stroke={ringStroke} strokeWidth={0.8} />;
   } else {
-    // Wir nutzen Maskierung mit clipPath fuer die richtige helle Seite.
+    // Wir nutzen Maskierung mit clipPath für die richtige helle Seite.
     const id = `clip-${Math.round(illumination * 1000)}-${waxing ? 'w' : 'n'}`;
     // Welche Halbkreis-Seite ist hell?
     const lightSide = waxing ? 'right' : 'left';

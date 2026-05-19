@@ -86,7 +86,7 @@ export function MayaView({ datum, setDatum }: Props) {
             <aside className="maya-info-panel maya-info-links">
               <h3>
                 Haab
-                <InfoIcon sektionId="maya" eintragId="mayazivilisation" titel="Mehr ueber die Mayazivilisation" />
+                <InfoIcon sektionId="maya" eintragId="mayazivilisation" titel="Mehr über die Mayazivilisation" />
               </h3>
               <p className="maya-info-lead">
                 Der Sonnenkalender. 365 Tage, 18 Monate je 20 Tage plus 5 namenlose Tage (Wayeb).
@@ -104,7 +104,7 @@ export function MayaView({ datum, setDatum }: Props) {
               <p className="maya-info-bedeutung">{HAAB_BEDEUTUNG[maya.haab.monat]}</p>
               <p className="maya-info-fuss">
                 In Wayeb (den fuenf Tagen) ruhten viele Arbeiten. Die Mayas hielten sich still,
-                schuetzten ihre Haeuser, fasteten — die Schwelle zwischen den Jahren.
+                schuetzten ihre Häuser, fasteten — die Schwelle zwischen den Jahren.
               </p>
             </aside>
           </div>
@@ -123,7 +123,7 @@ export function MayaView({ datum, setDatum }: Props) {
               </p>
               <div className="maya-info-aktuell">
                 <div className="maya-info-zeile"><span>Heute</span><span className="maya-akzent mono">{maya.longCountStr}</span></div>
-                <div className="maya-info-zeile"><span>Tage seit Schoepfung</span><span>{maya.tageSeitNullpunkt.toLocaleString('de-DE')}</span></div>
+                <div className="maya-info-zeile"><span>Tage seit Schöpfung</span><span>{maya.tageSeitNullpunkt.toLocaleString('de-DE')}</span></div>
               </div>
             </aside>
             <LongCountAnsicht datum={datum} />
@@ -176,7 +176,7 @@ export function MayaView({ datum, setDatum }: Props) {
               <h4>Bedeutung</h4>
               <p className="maya-info-bedeutung">{venusJetzt.phase.bedeutung}</p>
               <p className="maya-info-fuss">
-                <strong>5 Venus-Zyklen = 8 Sonnenjahre</strong>. Fuer die Mayas war Venus
+                <strong>5 Venus-Zyklen = 8 Sonnenjahre</strong>. Für die Mayas war Venus
                 Quetzalcoatl/Kukulkan — der gefiederte Schlangengott.
               </p>
             </aside>

@@ -12,7 +12,7 @@ export interface Welt {
   symbol: string;            // ein Zeichen, das die Welt traegt
   farbe: string;             // Akzent-Farbe
   kurz: string;              // ein Satz
-  beschreibung: string;      // ein Absatz fuer den Welt-Kopf
+  beschreibung: string;      // ein Absatz für den Welt-Kopf
 }
 
 export const WELTEN: Welt[] = [
@@ -104,7 +104,7 @@ export function weltAusKategorie(kategorie: string): WeltId | null {
   return null;
 }
 
-// Welche Welt fuer einen Eintragstyp passend ist (zur Sortierung in Treffer-Listen)
+// Welche Welt für einen Eintragstyp passend ist (zur Sortierung in Treffer-Listen)
 export function defaultWeltFuerTyp(typ: EintragsTyp): WeltId {
   if (typ === 'pflanze') return 'pflanzen';
   if (typ === 'arbeit')  return 'praxis';

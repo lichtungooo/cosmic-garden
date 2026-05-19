@@ -1,4 +1,4 @@
-// Tag-Filter-Seite: zeigt alle Eintraege, die einen bestimmten Tag tragen.
+// Tag-Filter-Seite: zeigt alle Einträge, die einen bestimmten Tag tragen.
 // Gruppiert nach Welt und Typ. Klick auf Eintrag legt ihn auf den Stack.
 
 import { useMemo } from 'react';
@@ -81,7 +81,7 @@ export function TagSeite({ tag }: Props) {
           <h1>{def?.name ?? tag}</h1>
           <p className="tag-kopf-meta">
             {def && <span className="tag-kopf-gruppe">{GRUPPEN_LABEL[def.gruppe] ?? def.gruppe}</span>}
-            <span className="tag-kopf-zahl">{treffer.length} {treffer.length === 1 ? 'Eintrag' : 'Eintraege'}</span>
+            <span className="tag-kopf-zahl">{treffer.length} {treffer.length === 1 ? 'Eintrag' : 'Einträge'}</span>
           </p>
           {def?.beschreibung && <p className="tag-kopf-beschreibung">{def.beschreibung}</p>}
         </div>

@@ -3,7 +3,7 @@ import { useTagebuch, artLabel, artFarbe, type TagebuchArt } from '../lib/tagebu
 import { thunTypFarbe, thunTypLabel } from '../lib/moon';
 
 const WT_KURZ = ['So', 'Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa'];
-const MONATE_LANG = ['Januar', 'Februar', 'Maerz', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember'];
+const MONATE_LANG = ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember'];
 const ARTEN: TagebuchArt[] = ['beobachtung', 'aussaat', 'pflanzung', 'ernte', 'pflege', 'frage'];
 
 interface Props {
@@ -63,7 +63,7 @@ export function TagebuchView({ setDatum }: Props) {
       <div className="tagebuch-filter">
         <input
           type="search"
-          placeholder="Suche in den Eintraegen..."
+          placeholder="Suche in den Einträgen..."
           value={suche}
           onChange={e => setSuche(e.target.value)}
           className="tagebuch-such-input"
@@ -76,10 +76,10 @@ export function TagebuchView({ setDatum }: Props) {
       </div>
 
       {gefiltert.length === 0 ? (
-        <div className="tagebuch-leer-gross">
+        <div className="tagebuch-leer-groß">
           {eintraege.length === 0 ? (
             <>
-              <h2>Noch keine Eintraege.</h2>
+              <h2>Noch keine Einträge.</h2>
               <p>Wechsle zum Kalender, waehle einen Tag und schreibe deine erste Beobachtung.</p>
             </>
           ) : (
@@ -99,7 +99,7 @@ export function TagebuchView({ setDatum }: Props) {
                   type="button"
                   className="tagebuch-chrono-datum"
                   onClick={() => springeZuTag(e.datum)}
-                  title="Im Kalender oeffnen"
+                  title="Im Kalender öffnen"
                 >
                   <span className="tagebuch-chrono-tag">{datum.getDate()}</span>
                   <span className="tagebuch-chrono-monat">{MONATE_LANG[datum.getMonth()].slice(0, 3)}</span>

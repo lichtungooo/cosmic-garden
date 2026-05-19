@@ -1,5 +1,5 @@
-// Mega-Menue fuer die fuenf Welten — breit, kategorisiert, mit "Alle anzeigen".
-// Zeigt Sub-Sektionen wo vorhanden, sonst direkt Eintraege.
+// Mega-Menue für die fuenf Welten — breit, kategorisiert, mit "Alle anzeigen".
+// Zeigt Sub-Sektionen wo vorhanden, sonst direkt Einträge.
 
 import { useEffect, useMemo } from 'react';
 import { WELTEN, type WeltId } from '../lib/welten';
@@ -105,7 +105,7 @@ export function ThemenMega({ onWelt, onEintrag, onSchliessen }: Props) {
           .sort((a, b) => a.name.localeCompare(b.name));
         return { welt: w, anzahl: proWelt.length, modus: 'sub' as const, subs, eintraege: [] };
       }
-      // Keine Sub-Sektionen — Eintraege direkt zeigen
+      // Keine Sub-Sektionen — Einträge direkt zeigen
       const eintraege = proWelt
         .slice()
         .sort((a, b) => a.titel.localeCompare(b.titel));
