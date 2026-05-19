@@ -13,6 +13,8 @@ import { TagSeite } from './components/TagSeite';
 import { GlobaleSuche } from './components/GlobaleSuche';
 import { ThemenMega } from './components/ThemenMega';
 import { NutzerMenue } from './components/NutzerMenue';
+import { FreundeskreisModal } from './components/FreundeskreisModal';
+import { PrivacyBanner } from './components/PrivacyBanner';
 import { StandortContext, ladeStandort, speicherStandort, type Ort } from './lib/standort';
 import { WissenContext } from './lib/wissen-context';
 import { type WeltId } from './lib/welten';
@@ -67,6 +69,7 @@ export function App() {
   const [kontakteOffen, setKontakteOffen] = useState(false);
   const [verifyOffen, setVerifyOffen] = useState(false);
   const [anmeldungOffen, setAnmeldungOffen] = useState(false);
+  const [freundeskreisTab, setFreundeskreisTab] = useState<'freundeskreis' | 'recht' | 'datenschutz' | null>(null);
 
   useEffect(() => { speicherStandort(ort); }, [ort]);
 
@@ -251,6 +254,34 @@ export function App() {
               <Route path="*" element={<NichtGefunden />} />
             </Routes>
           </main>
+
+          <footer className="app-fuss">
+            <div className="app-fuss-zeile">
+              <span className="app-fuss-marke">Mein kosmischer Garten</span>
+              <span className="app-fuss-trenner">·</span>
+              <button
+                type="button"
+                className="app-fuss-link"
+                onClick={() => setFreundeskreisTab('freundeskreis')}
+              >Unter Freunden</button>
+              <span className="app-fuss-trenner">·</span>
+              <button
+                type="button"
+                className="app-fuss-link"
+                onClick={() => setFreundeskreisTab('recht')}
+              >Recht</button>
+              <span className="app-fuss-trenner">·</span>
+              <button
+                type="button"
+                className="app-fuss-link"
+                onClick={() => setFreundeskreisTab('datenschutz')}
+              >Datenschutz</button>
+            </div>
+            <p className="app-fuss-zusatz">
+              Im internationalen Privatrecht — von Freunden für Freunde. Kein
+              Tracking, kein Impressum, keine Werbung.
+            </p>
+          </footer>
         </div>
 
         {anmeldungOffen && !istAngemeldet && (
@@ -268,6 +299,14 @@ export function App() {
             </Suspense>
           </div>
         )}
+
+        <FreundeskreisModal
+          offen={freundeskreisTab !== null}
+          onSchliessen={() => setFreundeskreisTab(null)}
+          startTab={freundeskreisTab ?? 'freundeskreis'}
+        />
+
+        <PrivacyBanner onMehrErfahren={() => setFreundeskreisTab('datenschutz')} />
 
       </div>
       </AnmeldungContext.Provider>
