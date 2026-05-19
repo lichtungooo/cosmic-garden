@@ -7768,3 +7768,320 @@ button { font-family: inherit; cursor: pointer; }
   .wot-einladung-baustein p { font-size: .88rem; }
 }
 
+/* ====== WUNSCH-BLOCK (kontextuelle Wunschliste pro Welt) ====== */
+.wunsch-block {
+  margin-top: 3rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid var(--line);
+}
+.wunsch-block-kopf {
+  margin-bottom: 1.25rem;
+}
+.wunsch-block-kopf h2 {
+  font-family: 'Spectral', Georgia, serif;
+  font-size: 1.55rem;
+  font-weight: 500;
+  margin: 0 0 .35rem;
+  color: var(--kosmos);
+}
+.wunsch-block-lead {
+  margin: 0;
+  font-size: .95rem;
+  line-height: 1.55;
+  color: var(--ink-mute);
+  font-family: 'Spectral', Georgia, serif;
+}
+
+.wunsch-liste {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: .85rem;
+}
+.wunsch-eintrag {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-left: 3px solid #8b6f47;
+  border-radius: var(--radius);
+  padding: 1rem 1.15rem;
+}
+.wunsch-kopf {
+  margin-bottom: .65rem;
+}
+.wunsch-titel-zeile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .75rem;
+  margin-bottom: .35rem;
+}
+.wunsch-titel {
+  font-family: 'Spectral', Georgia, serif;
+  font-size: 1.15rem;
+  font-weight: 500;
+  margin: 0;
+  color: var(--ink);
+  line-height: 1.3;
+}
+.wunsch-status {
+  font-size: .72rem;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  font-weight: 600;
+  padding: .15rem .55rem;
+  border-radius: 9999px;
+  border: 1px solid;
+  background: var(--bg-soft);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.wunsch-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: .35rem;
+  font-size: .78rem;
+  color: var(--ink-mute);
+}
+.wunsch-autor {
+  color: #5b3a8a;
+  font-weight: 500;
+}
+.wunsch-trenner {
+  opacity: .5;
+}
+.wunsch-tiefe {
+  background: var(--bg-soft);
+  padding: .05rem .45rem;
+  border-radius: 9999px;
+  font-size: .72rem;
+}
+.wunsch-loesch {
+  background: none;
+  border: none;
+  color: var(--ink-mute);
+  cursor: pointer;
+  font-size: 1.1rem;
+  line-height: 1;
+  padding: 0 .25rem;
+  opacity: .55;
+  margin-left: auto;
+}
+.wunsch-loesch:hover {
+  opacity: 1;
+  color: #a8423a;
+}
+
+.wunsch-beschreibung {
+  font-size: .92rem;
+  line-height: 1.55;
+  color: var(--ink);
+  margin: 0 0 .65rem;
+}
+.wunsch-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .35rem;
+  margin: .35rem 0 0;
+}
+.wunsch-tag {
+  background: var(--bg-soft);
+  color: var(--ink-mute);
+  padding: .15rem .55rem;
+  border-radius: 9999px;
+  font-size: .78rem;
+}
+.wunsch-eingebaut-link {
+  display: inline-block;
+  margin-top: .65rem;
+  color: #4a8a3a;
+  font-size: .9rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+.wunsch-eingebaut-link:hover {
+  text-decoration: underline;
+}
+
+.wunsch-neu-knopf {
+  display: block;
+  width: 100%;
+  background: none;
+  border: 1.5px dashed #8b6f47;
+  color: #8b6f47;
+  padding: .85rem 1.25rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-size: .95rem;
+  font-family: inherit;
+  font-weight: 500;
+  transition: all .15s ease;
+}
+.wunsch-neu-knopf:hover {
+  background: #faf3e8;
+  border-color: #6b5333;
+  color: #6b5333;
+}
+
+.wunsch-formular {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.4rem;
+  margin-top: .5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.wunsch-formular-anleitung {
+  font-size: .92rem;
+  color: var(--ink-mute);
+  margin: 0;
+  line-height: 1.55;
+  font-family: 'Spectral', Georgia, serif;
+}
+.wunsch-feld {
+  display: flex;
+  flex-direction: column;
+  gap: .35rem;
+}
+.wunsch-feld-label {
+  font-size: .75rem;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: var(--ink-mute);
+  font-weight: 600;
+}
+.wunsch-formular input[type="text"],
+.wunsch-formular textarea {
+  font-family: inherit;
+  font-size: .95rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: .6rem .8rem;
+  background: var(--bg);
+  color: var(--ink);
+  resize: vertical;
+}
+.wunsch-formular input[type="text"]:focus,
+.wunsch-formular textarea:focus {
+  outline: none;
+  border-color: #8b6f47;
+}
+
+.wunsch-tiefe-wahl {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: .55rem;
+}
+.wunsch-tiefe-knopf {
+  background: var(--bg-soft);
+  border: 2px solid var(--line);
+  border-radius: var(--radius);
+  padding: .65rem .75rem;
+  cursor: pointer;
+  font-family: inherit;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: .15rem;
+  transition: all .15s ease;
+}
+.wunsch-tiefe-knopf:hover {
+  border-color: #8b6f47;
+}
+.wunsch-tiefe-knopf.aktiv {
+  border-color: #8b6f47;
+  background: #faf3e8;
+}
+.wunsch-tiefe-name {
+  font-weight: 600;
+  font-size: .9rem;
+  color: var(--ink);
+}
+.wunsch-tiefe-text {
+  font-size: .75rem;
+  color: var(--ink-mute);
+  line-height: 1.35;
+}
+
+.wunsch-tag-eingabe {
+  display: flex;
+  flex-direction: column;
+  gap: .45rem;
+}
+.wunsch-tag-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .35rem;
+}
+.wunsch-tag-chip {
+  background: #faf3e8;
+  color: #6b5333;
+  padding: .2rem .55rem;
+  border-radius: 9999px;
+  font-size: .8rem;
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+}
+.wunsch-tag-chip button {
+  background: none;
+  border: none;
+  color: #6b5333;
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1;
+  padding: 0;
+  opacity: .6;
+}
+.wunsch-tag-chip button:hover {
+  opacity: 1;
+}
+
+.wunsch-formular-fuss {
+  display: flex;
+  justify-content: flex-end;
+  gap: .65rem;
+  margin-top: .25rem;
+}
+.wunsch-abbrechen {
+  background: none;
+  border: 1px solid var(--line);
+  color: var(--ink-mute);
+  padding: .55rem 1.1rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-family: inherit;
+  font-size: .92rem;
+}
+.wunsch-absenden {
+  background: #8b6f47;
+  border: 1px solid #8b6f47;
+  color: white;
+  padding: .55rem 1.1rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-family: inherit;
+  font-size: .92rem;
+  font-weight: 500;
+}
+.wunsch-absenden:disabled {
+  opacity: .4;
+  cursor: not-allowed;
+}
+.wunsch-absenden:not(:disabled):hover {
+  background: #6b5333;
+  border-color: #6b5333;
+}
+
+@media (max-width: 720px) {
+  .wunsch-block { margin-top: 2.25rem; padding-top: 1.35rem; }
+  .wunsch-block-kopf h2 { font-size: 1.3rem; }
+  .wunsch-eintrag { padding: .85rem .95rem; }
+  .wunsch-tiefe-wahl { grid-template-columns: 1fr; }
+  .wunsch-formular { padding: 1rem; }
+}
+

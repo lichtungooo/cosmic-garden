@@ -3,6 +3,16 @@ import { eintraegeNachKategorie } from '../lib/datenbank-suche';
 import { welt, type WeltId } from '../lib/welten';
 import type { Eintrag, EintragsTyp } from '../lib/datenbank';
 import { useDetailNav, refAusId } from '../lib/detail-navigation';
+import { WunschBlock } from '../components/WunschBlock';
+
+// Beispiele pro Welt, die im Wunsch-Formular gezeigt werden.
+const WUNSCH_BEISPIELE: Record<WeltId, string> = {
+  kosmos:       'Plejaden-Zyklus tiefer',
+  pflanzen:     'Topinambur aufnehmen',
+  praxis:       'Mykorrhiza-Inokulation',
+  schulen:      'Hügelkultur tiefer behandeln',
+  gemeinschaft: 'Saatgut-Tausch-Treffen',
+};
 
 interface Props {
   weltId: WeltId;
@@ -184,6 +194,12 @@ export function WeltView({ weltId }: Props) {
           </section>
         ))
       )}
+
+      <WunschBlock
+        scope={`welt:${weltId}`}
+        weltLabel={w.name}
+        beispiel={WUNSCH_BEISPIELE[weltId]}
+      />
     </div>
   );
 }
