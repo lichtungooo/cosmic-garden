@@ -89,8 +89,8 @@ export function TagebuchTag({ datum, kompakt = false }: Props) {
                 <button
                   type="button"
                   className="tagebuch-loeschen"
-                  onClick={() => { if (confirm('Eintrag wirklich loeschen?')) loesche(e.id); }}
-                  title="Loeschen"
+                  onClick={() => { if (confirm('Eintrag wirklich löschen?')) loesche(e.id); }}
+                  title="Löschen"
                 >×</button>
               </header>
               <p className="tagebuch-eintrag-text">{e.text}</p>

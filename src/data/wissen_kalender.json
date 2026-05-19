@@ -9,11 +9,11 @@
     "bloecke": [
       {
         "titel": "Geschichte",
-        "text": "Reform des julianischen Kalenders (von Julius Caesar, 46 v.Chr.) durch Papst Gregor XIII. 1582. Grund: der julianische Kalender war jedes Jahr 11 Minuten zu lang — bis 1582 hatte sich das auf 10 Tage akkumuliert. Die Tagundnachtgleiche faellt auf 11. Maerz statt 21. Maerz — und die Osterberechnung stimmte nicht mehr."
+        "text": "Reform des julianischen Kalenders (von Julius Caesar, 46 v.Chr.) durch Papst Gregor XIII. 1582. Grund: der julianische Kalender war jedes Jahr 11 Minuten zu lang — bis 1582 hatte sich das auf 10 Tage akkumuliert. Die Tagundnachtgleiche faellt auf 11. März statt 21. März — und die Osterberechnung stimmte nicht mehr."
       },
       {
         "titel": "Regel",
-        "text": "365 Tage. Schalttag alle 4 Jahre. **Aber** Jahre teilbar durch 100 sind keine Schaltjahre, ausser sie sind durch 400 teilbar. So gilt 2000 als Schaltjahr, 2100 aber nicht. Damit weicht der Kalender vom [tropischen Jahr](wissen:sonne:tropisches-jahr) nur 26 Sekunden pro Jahr ab."
+        "text": "365 Tage. Schalttag alle 4 Jahre. **Aber** Jahre teilbar durch 100 sind keine Schaltjahre, außer sie sind durch 400 teilbar. So gilt 2000 als Schaltjahr, 2100 aber nicht. Damit weicht der Kalender vom [tropischen Jahr](wissen:sonne:tropisches-jahr) nur 26 Sekunden pro Jahr ab."
       },
       {
         "titel": "Im Garten",
@@ -39,7 +39,7 @@
       },
       {
         "titel": "Im Garten",
-        "text": "Die juedische Tradition kennt **Schmita** — alle 7 Jahre ein Brachjahr fuer das Land. Felder ruhen. Dies ist eine der aeltesten dokumentierten Bodenruhe-Regeln. Modern wieder beachtet als Form der Bodengesundheit."
+        "text": "Die juedische Tradition kennt **Schmita** — alle 7 Jahre ein Brachjahr für das Land. Felder ruhen. Dies ist eine der aeltesten dokumentierten Bodenruhe-Regeln. Modern wieder beachtet als Form der Bodengesundheit."
       }
     ]
   },
@@ -57,11 +57,11 @@
       },
       {
         "titel": "Bedeutung",
-        "text": "Weil der islamische Kalender keine Sonnenkorrektur kennt, wandern die Feste durch das Sonnenjahr. Ramadan kann im Winter, Sommer, Fruehling oder Herbst liegen. Innerhalb von 33 Jahren durchlaeuft jeder Feiertag das gesamte Sonnenjahr. Dieser Rhythmus war urspruenglich an die Sichtung der Mondsichel gebunden."
+        "text": "Weil der islamische Kalender keine Sonnenkorrektur kennt, wandern die Feste durch das Sonnenjahr. Ramadan kann im Winter, Sommer, Frühling oder Herbst liegen. Innerhalb von 33 Jahren durchlaeuft jeder Feiertag das gesamte Sonnenjahr. Dieser Rhythmus war urspruenglich an die Sichtung der Mondsichel gebunden."
       },
       {
         "titel": "Im Garten",
-        "text": "Reine Mondkalender sind fuer den Pflanzanbau wenig praktisch — die Jahreszeiten wandern. Im Wuestenklima Arabiens spielten Aussaattermine eine andere Rolle als in unseren Breiten. Aber: die Mondsichtung als Zeitmesser ist ein urspruengliches Verhaeltnis zur Realitaet — Beobachtung am Himmel statt mechanischer Uhr."
+        "text": "Reine Mondkalender sind für den Pflanzanbau wenig praktisch — die Jahreszeiten wandern. Im Wuestenklima Arabiens spielten Aussaattermine eine andere Rolle als in unseren Breiten. Aber: die Mondsichtung als Zeitmesser ist ein urspruengliches Verhaeltnis zur Realitaet — Beobachtung am Himmel statt mechanischer Uhr."
       }
     ]
   },
@@ -105,7 +105,7 @@
       },
       {
         "titel": "Im Garten",
-        "text": "Die chinesische Tradition kennt die '24 Sonnenpunkte' (jieqi) — alle 15 Tage ein neuer landwirtschaftlicher Termin: 'Bewaegen des Tiefen', 'Insektenerwachen', 'Klares Licht', 'Kornregen'. Ein wunderbares feines Beobachtungssystem fuer den Garten, geboren aus jahrtausendelangem Bauernwissen."
+        "text": "Die chinesische Tradition kennt die '24 Sonnenpunkte' (jieqi) — alle 15 Tage ein neuer landwirtschaftlicher Termin: 'Bewaegen des Tiefen', 'Insektenerwachen', 'Klares Licht', 'Kornregen'. Ein wunderbares feines Beobachtungssystem für den Garten, geboren aus jahrtausendelangem Bauernwissen."
       }
     ]
   },
@@ -127,7 +127,7 @@
       },
       {
         "titel": "Im Garten",
-        "text": "Praktischer Nutzen: nach 19 Jahren wiederholen sich die Mondphasen-Daten fast genau. Wenn du Aufzeichnungen ueber den Mond an einem bestimmten Datum hast, wird das Bild in 19 Jahren wieder aehnlich sein. Eine lange Generation der Beobachtung."
+        "text": "Praktischer Nutzen: nach 19 Jahren wiederholen sich die Mondphasen-Daten fast genau. Wenn du Aufzeichnungen über den Mond an einem bestimmten Datum hast, wird das Bild in 19 Jahren wieder aehnlich sein. Eine lange Generation der Beobachtung."
       }
     ]
   }

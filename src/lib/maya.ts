@@ -200,8 +200,8 @@ export const VENUS_PHASEN: VenusPhaseDef[] = [
   {
     id: 'unter-konj',
     name: 'Untere Konjunktion',
-    beschreibung: 'Venus zwischen Erde und Sonne, für das blosse Auge unsichtbar.',
-    bedeutung: 'Schwelle, gefaehrlicher Uebergang. Bei den Mayas eine Zeit der Vorsicht. Venus stirbt für kurze Zeit, um als Morgenstern wiedergeboren zu werden.',
+    beschreibung: 'Venus zwischen Erde und Sonne, für das bloße Auge unsichtbar.',
+    bedeutung: 'Schwelle, gefährlicher Übergang. Bei den Mayas eine Zeit der Vorsicht. Venus stirbt für kurze Zeit, um als Morgenstern wiedergeboren zu werden.',
     farbe: '#2a2620',
     start: 0,
     ende: 8,

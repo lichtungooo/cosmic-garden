@@ -172,7 +172,7 @@ function MonatsAnsicht({ datum, onTag }: MonatsAnsichtProps) {
     <div className="monat-kompakt">
       {giessen && giessBannerOffen && (
         <div className="giess-banner">
-          <span>Trockenheit der letzten Tage — Giessen vor Sonnenaufgang oder am spaeten Abend hilft.</span>
+          <span>Trockenheit der letzten Tage — Gießen vor Sonnenaufgang oder am späten Abend hilft.</span>
           <button
             className="giess-banner-schließen"
             onClick={bannerSchliessen}

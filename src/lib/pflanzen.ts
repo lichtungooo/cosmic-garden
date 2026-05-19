@@ -75,10 +75,10 @@ export interface Pflanze {
   // --- 5. PFLEGE ---
   wasserbedarf?: Wasserbedarf;
   duengung?: string;             // "alle 14 Tage Brennnesseljauche waehrend der Fruchtbildung"
-  stuetzung?: string;            // "Stab oder Schnur ab 30 cm Hoehe"
+  stuetzung?: string;            // "Stab oder Schnur ab 30 cm Höhe"
   rueckschnitt?: string;         // "Geiztriebe woechentlich entfernen"
   mulchen?: string;              // "Strohmulch ab Juni, haelt feucht + warm"
-  spezialpflege?: string;        // "Blueten nicht ueberkopf waessern — Krautfaeule"
+  spezialpflege?: string;        // "Blüten nicht überkopf waessern — Krautfäule"
 
   // --- 6. ERNTE (zusaetzlich zu ernteVon/Bis) ---
   reifezeichen?: string;         // "tiefrot, weicher Druck"
@@ -101,7 +101,7 @@ export interface Pflanze {
   krankheiten?: string[];        // Eintrag-IDs aus wissen_schaedlinge
   anfaelligkeit?: Anfaelligkeit;
   staerkungJauche?: string[];    // Eintrag-IDs aus wissen_schaedlinge (Brennnessel, Schachtelhalm, ...)
-  vermeiden?: string;            // "keinen frischen Mist — foerdert Krautfaeule"
+  vermeiden?: string;            // "keinen frischen Mist — foerdert Krautfäule"
   schutzbegleiter?: string[];    // Pflanzen-IDs (z.B. ["tagetes", "basilikum"])
 
   // --- 10. SORTEN ---

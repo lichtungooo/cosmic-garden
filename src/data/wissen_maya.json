@@ -9,7 +9,7 @@
     "bloecke": [
       {
         "titel": "Geschichte",
-        "text": "Die Mayazivilisation entstand um 2000 v.Chr. in Mesoamerika (heutiges Mexiko, Guatemala, Belize, Honduras). Bluetezeit der klassischen Periode 250-900 n.Chr. mit Stadtstaaten wie Tikal, Palenque, Copan. Nach 900 verlagerte sich das Zentrum nach Yucatan (Chichen Itza, Uxmal). Heute leben noch etwa 6 Millionen Mayas, die ihre Sprachen und Traditionen erhalten."
+        "text": "Die Mayazivilisation entstand um 2000 v.Chr. in Mesoamerika (heutiges Mexiko, Guatemala, Belize, Honduras). Blütezeit der klassischen Periode 250-900 n.Chr. mit Stadtstaaten wie Tikal, Palenque, Copan. Nach 900 verlagerte sich das Zentrum nach Yucatan (Chichen Itza, Uxmal). Heute leben noch etwa 6 Millionen Mayas, die ihre Sprachen und Traditionen erhalten."
       },
       {
         "titel": "Wissen",
@@ -17,14 +17,26 @@
       },
       {
         "titel": "Bedeutung",
-        "text": "Was wir von den Mayas lernen koennen: **Akzeptanz der Zyklen**, statt sie zu erzwingen. **Beobachtung als Erkenntnisweg**. **Verbindung von Astronomie, Landwirtschaft und Spiritualitaet**. **Das Heilige im Alltag** — jeder Tag traegt einen Namen, eine Energie, eine Bedeutung. Das ist nicht Aberglaube, sondern eine andere Art der Aufmerksamkeit."
+        "text": "Was wir von den Mayas lernen koennen: **Akzeptanz der Zyklen**, statt sie zu erzwingen. **Beobachtung als Erkenntnisweg**. **Verbindung von Astronomie, Landwirtschaft und Spiritualitaet**. **Das Heilige im Alltag** — jeder Tag trägt einen Namen, eine Energie, eine Bedeutung. Das ist nicht Aberglaube, sondern eine andere Art der Aufmerksamkeit."
       }
     ],
     "verwandt": [
-      { "sektion": "maya", "eintrag": "popol-vuh" },
-      { "sektion": "maya", "eintrag": "tzolkin-tiefe" },
-      { "sektion": "maya", "eintrag": "venus-codex" },
-      { "sektion": "bruecken", "eintrag": "lineare-zyklische-zeit" }
+      {
+        "sektion": "maya",
+        "eintrag": "popol-vuh"
+      },
+      {
+        "sektion": "maya",
+        "eintrag": "tzolkin-tiefe"
+      },
+      {
+        "sektion": "maya",
+        "eintrag": "venus-codex"
+      },
+      {
+        "sektion": "bruecken",
+        "eintrag": "lineare-zyklische-zeit"
+      }
     ]
   },
   {
@@ -41,7 +53,7 @@
       },
       {
         "titel": "Hero Twins",
-        "text": "Hunahpu und Xbalanque, die Hero Twins, sind die zentralen Figuren. Sie spielen Ballspiel gegen die Herren der Unterwelt **Xibalba**, werden geopfert, kommen wieder, besiegen die Toten und werden schliesslich zu Sonne und Mond. Das ist die Mythologie der [Zwillinge im Tierkreis](wissen:tierkreis:zwillinge). Ihr Sieg ueber den Tod ist die Geburt der jetzigen Welt."
+        "text": "Hunahpu und Xbalanque, die Hero Twins, sind die zentralen Figuren. Sie spielen Ballspiel gegen die Herren der Unterwelt **Xibalba**, werden geopfert, kommen wieder, besiegen die Toten und werden schliesslich zu Sonne und Mond. Das ist die Mythologie der [Zwillinge im Tierkreis](wissen:tierkreis:zwillinge). Ihr Sieg über den Tod ist die Geburt der jetzigen Welt."
       },
       {
         "titel": "Bedeutung",
@@ -49,9 +61,18 @@
       }
     ],
     "verwandt": [
-      { "sektion": "maya", "eintrag": "plejaden-orion" },
-      { "sektion": "maya", "eintrag": "mayazivilisation" },
-      { "sektion": "tierkreis", "eintrag": "zwillinge" }
+      {
+        "sektion": "maya",
+        "eintrag": "plejaden-orion"
+      },
+      {
+        "sektion": "maya",
+        "eintrag": "mayazivilisation"
+      },
+      {
+        "sektion": "tierkreis",
+        "eintrag": "zwillinge"
+      }
     ]
   },
   {
@@ -68,7 +89,7 @@
       },
       {
         "titel": "Die Glyphen",
-        "text": "20 Tagesnamen: Imix (Drache), Ik (Wind), Akbal (Nacht), Kan (Saat), Chicchan (Schlange), Cimi (Tod), Manik (Hirsch), Lamat (Stern), Muluc (Wasser), Oc (Hund), Chuen (Affe), Eb (Gras), Ben (Schilf), Ix (Jaguar), Men (Adler), Cib (Geier), Caban (Erde), Etznab (Feuerstein), Cauac (Sturm), Ahau (Sonne). Jede Glyphe traegt einen Aspekt der Welt — Detail in der [Glyphen-Uebersicht](wissen:maya:tzolkin-glyphen-uebersicht)."
+        "text": "20 Tagesnamen: Imix (Drache), Ik (Wind), Akbal (Nacht), Kan (Saat), Chicchan (Schlange), Cimi (Tod), Manik (Hirsch), Lamat (Stern), Muluc (Wasser), Oc (Hund), Chuen (Affe), Eb (Gras), Ben (Schilf), Ix (Jaguar), Men (Adler), Cib (Geier), Caban (Erde), Etznab (Feuerstein), Cauac (Sturm), Ahau (Sonne). Jede Glyphe trägt einen Aspekt der Welt — Detail in der [Glyphen-Übersicht](wissen:maya:tzolkin-glyphen-uebersicht)."
       },
       {
         "titel": "Bedeutung",
@@ -76,9 +97,18 @@
       }
     ],
     "verwandt": [
-      { "sektion": "maya", "eintrag": "tzolkin-glyphen-uebersicht" },
-      { "sektion": "maya", "eintrag": "calendar-round" },
-      { "sektion": "maya", "eintrag": "mayazivilisation" }
+      {
+        "sektion": "maya",
+        "eintrag": "tzolkin-glyphen-übersicht"
+      },
+      {
+        "sektion": "maya",
+        "eintrag": "calendar-round"
+      },
+      {
+        "sektion": "maya",
+        "eintrag": "mayazivilisation"
+      }
     ]
   },
   {
@@ -91,21 +121,30 @@
     "bloecke": [
       {
         "titel": "Der Codex",
-        "text": "Der **Dresden Codex** ist eines der wenigen Maya-Buecher, die die spanische Eroberung ueberstanden haben. Erhaltene 39 Blaetter aus Feigenrinde, beidseitig bemalt, etwa 11.-12. Jahrhundert. Enthaelt Tabellen fuer Venus-Phasen, Mondfinsternisse, Marsbewegungen, Regenzeit-Vorhersagen, religiöse Riten."
+        "text": "Der **Dresden Codex** ist eines der wenigen Maya-Bücher, die die spanische Eroberung ueberstanden haben. Erhaltene 39 Blaetter aus Feigenrinde, beidseitig bemalt, etwa 11.-12. Jahrhundert. Enthaelt Tabellen für Venus-Phasen, Mondfinsternisse, Marsbewegungen, Regenzeit-Vorhersagen, religiöse Riten."
       },
       {
         "titel": "Die Venus-Tafeln",
-        "text": "Sechs Seiten widmen sich exklusiv Venus. Sie geben fuer jeden Tag des 584-Tage-Zyklus an, wann Venus als Morgenstern aufgeht, wann sie verschwindet, wann sie als Abendstern erscheint. Die Tabellen decken **104 Jahre** (65 Venus-Zyklen) und sind so genau, dass moderne Astronomen sie bis heute mit Bewunderung studieren — Vergleich zu unseren [Plejaden-Aufgaengen](wissen:maya:plejaden-orion)."
+        "text": "Sechs Seiten widmen sich exklusiv Venus. Sie geben für jeden Tag des 584-Tage-Zyklus an, wann Venus als Morgenstern aufgeht, wann sie verschwindet, wann sie als Abendstern erscheint. Die Tabellen decken **104 Jahre** (65 Venus-Zyklen) und sind so genau, dass moderne Astronomen sie bis heute mit Bewunderung studieren — Vergleich zu unseren [Plejaden-Aufgaengen](wissen:maya:plejaden-orion)."
       },
       {
         "titel": "Was sie wussten",
-        "text": "Die Mayas wussten: Venus' synodischer Zyklus ist 583,92 Tage. Sie nutzten **584** mit periodischen Korrekturen — 4 Tage in 61 Zyklen. So konnten sie die heliacischen Aufgaenge ueber Jahrhunderte vorhersagen. Diese Praezision war militaerisch wichtig: Maya-Koenige planten Feldzuege nach Venus."
+        "text": "Die Mayas wussten: Venus' synodischer Zyklus ist 583,92 Tage. Sie nutzten **584** mit periodischen Korrekturen — 4 Tage in 61 Zyklen. So konnten sie die heliacischen Aufgaenge über Jahrhunderte vorhersagen. Diese Praezision war militaerisch wichtig: Maya-Koenige planten Feldzuege nach Venus."
       }
     ],
     "verwandt": [
-      { "sektion": "maya", "eintrag": "mayazivilisation" },
-      { "sektion": "maya", "eintrag": "plejaden-orion" },
-      { "sektion": "tierkreis", "eintrag": "loewe" }
+      {
+        "sektion": "maya",
+        "eintrag": "mayazivilisation"
+      },
+      {
+        "sektion": "maya",
+        "eintrag": "plejaden-orion"
+      },
+      {
+        "sektion": "tierkreis",
+        "eintrag": "loewe"
+      }
     ]
   },
   {
@@ -118,11 +157,11 @@
     "bloecke": [
       {
         "titel": "Die Plejaden",
-        "text": "Die Plejaden ('Siebengestirn') heissen in der Maya-Sprache **Tzab** — 'Rassel' (wie die Schwanzrassel der Klapperschlange). Wenn sie um Mitternacht im Zenit stehen — alle 52 Jahre — ist das **[Calendar Round](wissen:maya:calendar-round)**-Neujahr. Die [Mayas](wissen:maya:mayazivilisation) hielten dann das **Neue Feuer**-Fest: alle Feuer wurden geloescht, alle Toepfe zerschmettert, dann ein neues Feuer auf der Brust eines Opfers entzuendet. Die Plejaden liegen im Sternbild [Stier](wissen:tierkreis:stier)."
+        "text": "Die Plejaden ('Siebengestirn') heissen in der Maya-Sprache **Tzab** — 'Rassel' (wie die Schwanzrassel der Klapperschlange). Wenn sie um Mitternacht im Zenit stehen — alle 52 Jahre — ist das **[Calendar Round](wissen:maya:calendar-round)**-Neujahr. Die [Mayas](wissen:maya:mayazivilisation) hielten dann das **Neue Feuer**-Fest: alle Feuer wurden geloescht, alle Töpfe zerschmettert, dann ein neues Feuer auf der Brust eines Opfers entzuendet. Die Plejaden liegen im Sternbild [Stier](wissen:tierkreis:stier)."
       },
       {
         "titel": "Orions Guertel",
-        "text": "Die drei Sterne in Orions Guertel werden bei den Mayas als **die drei Steine** der Schoepfung gesehen — die Steine eines kosmischen Herdes. Auf ihnen wurde das erste Feuer entzuendet, das das Universum lichtete. Im Maya-Haus bis heute werden drei Steine fuer den Kochherd genutzt — direkte Verbindung zur Schoepfung."
+        "text": "Die drei Sterne in Orions Guertel werden bei den Mayas als **die drei Steine** der Schoepfung gesehen — die Steine eines kosmischen Herdes. Auf ihnen wurde das erste Feuer entzuendet, das das Universum lichtete. Im Maya-Haus bis heute werden drei Steine für den Kochherd genutzt — direkte Verbindung zur Schoepfung."
       },
       {
         "titel": "Mythologie",
@@ -130,9 +169,18 @@
       }
     ],
     "verwandt": [
-      { "sektion": "tierkreis", "eintrag": "stier" },
-      { "sektion": "maya", "eintrag": "popol-vuh" },
-      { "sektion": "maya", "eintrag": "calendar-round" }
+      {
+        "sektion": "tierkreis",
+        "eintrag": "stier"
+      },
+      {
+        "sektion": "maya",
+        "eintrag": "popol-vuh"
+      },
+      {
+        "sektion": "maya",
+        "eintrag": "calendar-round"
+      }
     ]
   },
   {
@@ -149,17 +197,26 @@
       },
       {
         "titel": "Das Neue Feuer-Fest",
-        "text": "Am Ende eines jeden Calendar Round (alle 52 Jahre) feierten die Azteken (und vermutlich auch die spaeten Mayas) das **Neue Feuer-Fest**. Alle Kochfeuer wurden geloescht, alle Toepfe und Werkzeuge zerstoert oder ersetzt. Wenn die [Plejaden](wissen:maya:plejaden-orion) um Mitternacht den Zenit erreichten, wurde ein neues Feuer entzuendet — die Welt war neu geboren."
+        "text": "Am Ende eines jeden Calendar Round (alle 52 Jahre) feierten die Azteken (und vermutlich auch die spaeten Mayas) das **Neue Feuer-Fest**. Alle Kochfeuer wurden geloescht, alle Töpfe und Werkzeuge zerstoert oder ersetzt. Wenn die [Plejaden](wissen:maya:plejaden-orion) um Mitternacht den Zenit erreichten, wurde ein neues Feuer entzuendet — die Welt war neu geboren."
       },
       {
         "titel": "Bedeutung",
-        "text": "52 Jahre als Lebenszyklus-Mass ist tief weise: lang genug, um eine ganze Generation umfasst zu haben, kurz genug, um in einem Menschenleben spuerbar zu sein. Heute koennten wir es so denken: alle 52 Jahre eine echte Wende, eine Neugruendung. Was wuerdest du loslassen? Was neu entzuenden?"
+        "text": "52 Jahre als Lebenszyklus-Maß ist tief weise: lang genug, um eine ganze Generation umfasst zu haben, kurz genug, um in einem Menschenleben spuerbar zu sein. Heute koennten wir es so denken: alle 52 Jahre eine echte Wende, eine Neugruendung. Was wuerdest du loslassen? Was neu entzuenden?"
       }
     ],
     "verwandt": [
-      { "sektion": "maya", "eintrag": "tzolkin-tiefe" },
-      { "sektion": "maya", "eintrag": "plejaden-orion" },
-      { "sektion": "kalender", "eintrag": "metonischer-zyklus" }
+      {
+        "sektion": "maya",
+        "eintrag": "tzolkin-tiefe"
+      },
+      {
+        "sektion": "maya",
+        "eintrag": "plejaden-orion"
+      },
+      {
+        "sektion": "kalender",
+        "eintrag": "metonischer-zyklus"
+      }
     ]
   },
   {
@@ -172,21 +229,30 @@
     "bloecke": [
       {
         "titel": "Was passierte",
-        "text": "Am 21. Dezember 2012 endete der 13. **Bak'tun** im Maya Long Count und der 14. begann. Das war seit 11. August 3114 v.Chr. der erste solche Wechsel — alle 144.000 Tage (etwa 394 Jahre) endet ein Bak'tun. Der **13. Bak'tun** war besonders, weil 13 eine heilige Zahl ist (13 Himmel). Dazu kam: an diesem Tag stand die Wintersonne genau im 'dunklen Riss' der Milchstrasse — vor dem galaktischen Zentrum, in Richtung [Schuetze](wissen:tierkreis:schuetze)."
+        "text": "Am 21. Dezember 2012 endete der 13. **Bak'tun** im Maya Long Count und der 14. begann. Das war seit 11. August 3114 v.Chr. der erste solche Wechsel — alle 144.000 Tage (etwa 394 Jahre) endet ein Bak'tun. Der **13. Bak'tun** war besonders, weil 13 eine heilige Zahl ist (13 Himmel). Dazu kam: an diesem Tag stand die Wintersonne genau im 'dunklen Riss' der Milchstrasse — vor dem galaktischen Zentrum, in Richtung [Schütze](wissen:tierkreis:schuetze)."
       },
       {
         "titel": "Der Mythos",
-        "text": "Westliche Esoteriker haben aus dem Bak'tun-Wechsel einen 'Weltuntergang' gemacht. Hollywood machte 2009 einen Film. Die Mayas selbst hatten nie von Untergang gesprochen — sie hatten Inschriften, die ueber das Datum hinaus rechneten (Tortuguero-Inschrift: bis ins Jahr 4772). Eine **Maya-Aelterstaette** hat 2012 ausdruecklich erklaert: dies ist ein Neuanfang, kein Ende."
+        "text": "Westliche Esoteriker haben aus dem Bak'tun-Wechsel einen 'Weltuntergang' gemacht. Hollywood machte 2009 einen Film. Die Mayas selbst hatten nie von Untergang gesprochen — sie hatten Inschriften, die über das Datum hinaus rechneten (Tortuguero-Inschrift: bis ins Jahr 4772). Eine **Maya-Aelterstaette** hat 2012 ausdruecklich erklaert: dies ist ein Neuanfang, kein Ende."
       },
       {
         "titel": "Was wir gewonnen haben",
-        "text": "Der 21.12.2012 hat ein weltweites Bewusstsein fuer Maya-Tradition geweckt. Viele Menschen haben damals begonnen, sich mit [zyklischer Zeit](wissen:bruecken:lineare-zyklische-zeit), ekologischer Erneuerung, planetarem Bewusstsein zu beschaeftigen. Das war der eigentliche 'Wechsel'. Wir leben jetzt im 13.0.13.10.x — die ersten 13 Jahre dieses neuen Welt-Zyklus von 5125 Jahren. Was werden wir aus ihm machen?"
+        "text": "Der 21.12.2012 hat ein weltweites Bewusstsein für Maya-Tradition geweckt. Viele Menschen haben damals begonnen, sich mit [zyklischer Zeit](wissen:bruecken:lineare-zyklische-zeit), ekologischer Erneuerung, planetarem Bewusstsein zu beschaeftigen. Das war der eigentliche 'Wechsel'. Wir leben jetzt im 13.0.13.10.x — die ersten 13 Jahre dieses neuen Welt-Zyklus von 5125 Jahren. Was werden wir aus ihm machen?"
       }
     ],
     "verwandt": [
-      { "sektion": "maya", "eintrag": "mayazivilisation" },
-      { "sektion": "tierkreis", "eintrag": "schuetze" },
-      { "sektion": "bruecken", "eintrag": "lineare-zyklische-zeit" }
+      {
+        "sektion": "maya",
+        "eintrag": "mayazivilisation"
+      },
+      {
+        "sektion": "tierkreis",
+        "eintrag": "schuetze"
+      },
+      {
+        "sektion": "bruecken",
+        "eintrag": "lineare-zyklische-zeit"
+      }
     ]
   },
   {
@@ -194,7 +260,7 @@
     "name": "Die 20 Tzolkin-Glyphen",
     "untertitel": "Imix bis Ahau — die Tagesnamen im Detail",
     "symbol": "❍",
-    "kurz": "Jeder Tag traegt eine Energie. Hier die kurze Charakteristik aller 20.",
+    "kurz": "Jeder Tag trägt eine Energie. Hier die kurze Charakteristik aller 20.",
     "meta": {},
     "bloecke": [
       {
@@ -211,8 +277,14 @@
       }
     ],
     "verwandt": [
-      { "sektion": "maya", "eintrag": "tzolkin-tiefe" },
-      { "sektion": "maya", "eintrag": "popol-vuh" }
+      {
+        "sektion": "maya",
+        "eintrag": "tzolkin-tiefe"
+      },
+      {
+        "sektion": "maya",
+        "eintrag": "popol-vuh"
+      }
     ]
   }
 ]

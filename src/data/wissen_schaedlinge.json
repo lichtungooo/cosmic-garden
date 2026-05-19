@@ -8,23 +8,38 @@
     "bloecke": [
       {
         "titel": "Erkennen",
-        "text": "**Gruene Blattlaus** sitzt gern an Rosen, [Paprika](pflanze:paprika) und vielen Gemuesearten. **Schwarze Bohnenlaus** befaellt [Buschbohne](pflanze:buschbohne), [Stangenbohne](pflanze:stangenbohne) und Spitzen von Kapuzinerkresse. Die Tiere sind 1-3 mm gross, sitzen oft dichtgedraengt an Triebspitzen und Blattunterseiten. **Klebriger Honigtau** auf Blaettern und ein typischer Russtau-Belag sind sichere Hinweise. Eingerollte, verkrueppelte junge Blaetter zeigen, dass die Laus schon laenger saugt. Ameisen, die an Pflanzen hochlaufen, sind Wegweiser — sie melken die Blattlaeuse."
+        "text": "**Gruene Blattlaus** sitzt gern an Rosen, [Paprika](pflanze:paprika) und vielen Gemuesearten. **Schwarze Bohnenlaus** befaellt [Buschbohne](pflanze:buschbohne), [Stangenbohne](pflanze:stangenbohne) und Spitzen von Kapuzinerkresse. Die Tiere sind 1-3 mm groß, sitzen oft dichtgedraengt an Triebspitzen und Blattunterseiten. **Klebriger Honigtau** auf Blaettern und ein typischer Russtau-Belag sind sichere Hinweise. Eingerollte, verkrueppelte junge Blaetter zeigen, dass die Laus schon laenger saugt. Ameisen, die an Pflanzen hochlaufen, sind Wegweiser — sie melken die Blattlaeuse."
       },
       {
         "titel": "Was hilft",
-        "text": "**Erste Stufe**: harter Wasserstrahl mit dem Schlauch, der die Tiere von den Trieben spuelt. Wiederholung nach 2-3 Tagen. **Zweite Stufe**: 20 g **Schmierseife** in 1 L Wasser, mit einem Tropfen Speiseoel, in Sprueh-Flasche fuellen, Blattunterseiten benetzen. **Dritte Stufe**: [Brennnessel-Jauche](wissen:schaedlinge:brennnessel-jauche) 1:50 als Spritzmittel. **Vierte Stufe**: [Marienkaefer](wissen:schaedlinge:marienkaefer)-Larven oder Florfliegen ansiedeln — eine Larve frisst bis zu 400 Laeuse. Bei starkem Befall kann auch [Knoblauch-Sud](wissen:schaedlinge:knoblauch-sud) gespritzt werden."
+        "text": "**Erste Stufe**: harter Wasserstrahl mit dem Schlauch, der die Tiere von den Trieben spuelt. Wiederholung nach 2-3 Tagen. **Zweite Stufe**: 20 g **Schmierseife** in 1 L Wasser, mit einem Tropfen Speiseoel, in Sprueh-Flasche fuellen, Blattunterseiten benetzen. **Dritte Stufe**: [Brennnessel-Jauche](wissen:schaedlinge:brennnessel-jauche) 1:50 als Spritzmittel. **Vierte Stufe**: [Marienkaefer](wissen:schaedlinge:marienkaefer)-Larven oder Florfliegen ansiedeln — eine Larve frisst bis zu 400 Läuse. Bei starkem Befall kann auch [Knoblauch-Sud](wissen:schaedlinge:knoblauch-sud) gespritzt werden."
       },
       {
         "titel": "Vorbeugung",
-        "text": "Stickstoffreich gefuetterte Pflanzen werden weicher und ziehen Laeuse an — moderat duengen. **Bluetenpflanzen** wie Ringelblume, Kornblume und Doldenbluetler locken Nuetzlinge an. [Mischkultur](wissen:praxis:mischkultur) mit [Kapuzinerkresse](pflanze:kapuzinerkresse) als Fangpflanze entlastet [Bohnen](pflanze:buschbohne) und Rosen. **Bohnenkraut** zwischen Buschbohnen haelt Schwarze Bohnenlaeuse erstaunlich gut fern. Hecken und Wildecken bieten ueber den Winter Quartier fuer Marienkaefer und Florfliegen."
+        "text": "Stickstoffreich gefuetterte Pflanzen werden weicher und ziehen Läuse an — moderat duengen. **Blütenpflanzen** wie Ringelblume, Kornblume und Doldenblütler locken Nuetzlinge an. [Mischkultur](wissen:praxis:mischkultur) mit [Kapuzinerkresse](pflanze:kapuzinerkresse) als Fangpflanze entlastet [Bohnen](pflanze:buschbohne) und Rosen. **Bohnenkraut** zwischen Buschbohnen haelt Schwarze Bohnenlaeuse erstaunlich gut fern. Hecken und Wildecken bieten über den Winter Quartier für Marienkaefer und Florfliegen."
       }
     ],
     "verwandt": [
-      { "sektion": "schaedlinge", "eintrag": "marienkaefer" },
-      { "sektion": "schaedlinge", "eintrag": "florfliege" },
-      { "sektion": "schaedlinge", "eintrag": "brennnessel-jauche" },
-      { "sektion": "schaedlinge", "eintrag": "knoblauch-sud" },
-      { "sektion": "praxis", "eintrag": "mischkultur" }
+      {
+        "sektion": "schaedlinge",
+        "eintrag": "marienkaefer"
+      },
+      {
+        "sektion": "schaedlinge",
+        "eintrag": "florfliege"
+      },
+      {
+        "sektion": "schaedlinge",
+        "eintrag": "brennnessel-jauche"
+      },
+      {
+        "sektion": "schaedlinge",
+        "eintrag": "knoblauch-sud"
+      },
+      {
+        "sektion": "praxis",
+        "eintrag": "mischkultur"
+      }
     ]
   },
   {
@@ -36,22 +51,34 @@
     "bloecke": [
       {
         "titel": "Erkennen",
-        "text": "**Spanische Wegschnecke** (Arion vulgaris) ist 8-12 cm lang, rotbraun bis orange, ohne Haus. Sie kam in den 1970er Jahren nach Mitteleuropa und verdraengt heimische Arten. **Nacktschnecken** sind kleiner, grau bis schwarz. Beide hinterlassen **silbrige Schleimspuren** und fressen nachts. Loechrige Blaetter mit gezackten Raendern an [Salat](pflanze:kopfsalat), Spinat, Erdbeeren und vielen Jungpflanzen sind das Bild. Bei Tag verstecken sich die Tiere unter Brettern, Steinen, dichtem Laub oder im Mulch. Die Haus-Schnecken (Weinbergschnecke, Baenderschnecken) sind keine Schaedlinge — die fressen vor allem totes Pflanzenmaterial."
+        "text": "**Spanische Wegschnecke** (Arion vulgaris) ist 8-12 cm lang, rotbraun bis orange, ohne Haus. Sie kam in den 1970er Jahren nach Mitteleuropa und verdraengt heimische Arten. **Nacktschnecken** sind kleiner, grau bis schwarz. Beide hinterlassen **silbrige Schleimspuren** und fressen nachts. Loechrige Blaetter mit gezackten Raendern an [Salat](pflanze:kopfsalat), Spinat, Erdbeeren und vielen Jungpflanzen sind das Bild. Bei Tag verstecken sich die Tiere unter Brettern, Steinen, dichtem Laub oder im Mulch. Die Haus-Schnecken (Weinbergschnecke, Baenderschnecken) sind keine Schädlinge — die fressen vor allem totes Pflanzenmaterial."
       },
       {
         "titel": "Was hilft",
-        "text": "**Erste Verteidigung**: ein [Schneckenzaun](wissen:schaedlinge:schneckenzaun) aus Metall, fest verlegt um Gemuesebeete. **Sammeln** in den Morgenstunden nach Regen oder am Abend bei feuchtem Wetter — taeglich, ueber 2-3 Wochen, bringt sichtbare Entlastung. **Eierschalen** und scharfer Sand als Barriere helfen bei Trockenheit, verlieren bei Regen aber ihre Wirkung. **Bierfalle** (eingegrabener Becher mit Bier) zieht Schnecken aus der Umgebung an — manche Gaertner lehnen sie ab, weil sie auch von ausserhalb anlocken. **Schneckenkorn auf Eisen-III-Phosphat-Basis** (Ferramol) ist demeter-zugelassen und nuetzlingsschonend."
+        "text": "**Erste Verteidigung**: ein [Schneckenzaun](wissen:schaedlinge:schneckenzaun) aus Metall, fest verlegt um Gemuesebeete. **Sammeln** in den Morgenstunden nach Regen oder am Abend bei feuchtem Wetter — taeglich, über 2-3 Wochen, bringt sichtbare Entlastung. **Eierschalen** und scharfer Sand als Barriere helfen bei Trockenheit, verlieren bei Regen aber ihre Wirkung. **Bierfalle** (eingegrabener Becher mit Bier) zieht Schnecken aus der Umgebung an — manche Gärtner lehnen sie ab, weil sie auch von ausserhalb anlocken. **Schneckenkorn auf Eisen-III-Phosphat-Basis** (Ferramol) ist demeter-zugelassen und nuetzlingsschonend."
       },
       {
         "titel": "Vorbeugung",
-        "text": "**[Igel](wissen:schaedlinge:igel)** und **Indische Laufenten** sind die besten natuerlichen Schneckenjaeger. **Trockene Wege** zwischen Beeten — Schnecken bewegen sich ungern ueber trockenen Sand oder Holzhaeckselpfade. **Morgens giessen**, nicht abends — feuchte Beete in der Nacht sind Schnecken-Paradies. **Jungpflanzen vorziehen** und kraeftig auspflanzen statt direkt saen, denn Saemlinge sind ein Festmahl. Tagetes und Kapuzinerkresse werden vor jungem [Salat](pflanze:kopfsalat) bevorzugt — beide funktionieren als Opferpflanzen."
+        "text": "**[Igel](wissen:schaedlinge:igel)** und **Indische Laufenten** sind die besten natuerlichen Schneckenjaeger. **Trockene Wege** zwischen Beeten — Schnecken bewegen sich ungern über trockenen Sand oder Holzhaeckselpfade. **Morgens giessen**, nicht abends — feuchte Beete in der Nacht sind Schnecken-Paradies. **Jungpflanzen vorziehen** und kräftig auspflanzen statt direkt saen, denn Sämlinge sind ein Festmahl. Tagetes und Kapuzinerkresse werden vor jungem [Salat](pflanze:kopfsalat) bevorzugt — beide funktionieren als Opferpflanzen."
       }
     ],
     "verwandt": [
-      { "sektion": "schaedlinge", "eintrag": "schneckenzaun" },
-      { "sektion": "schaedlinge", "eintrag": "igel" },
-      { "sektion": "praxis", "eintrag": "mulchen" },
-      { "sektion": "praxis", "eintrag": "giessen" }
+      {
+        "sektion": "schaedlinge",
+        "eintrag": "schneckenzaun"
+      },
+      {
+        "sektion": "schaedlinge",
+        "eintrag": "igel"
+      },
+      {
+        "sektion": "praxis",
+        "eintrag": "mulchen"
+      },
+      {
+        "sektion": "praxis",
+        "eintrag": "giessen"
+      }
     ]
   },
   {
@@ -59,11 +86,11 @@
     "name": "Weisse Fliege",
     "untertitel": "Trialeurodes vaporariorum",
     "symbol": "🦟",
-    "kurz": "Winzige weisse Mottenchen unter Tomatenblaettern — im Gewaechshaus eine ernste Plage, draussen seltener.",
+    "kurz": "Winzige weisse Mottenchen unter Tomatenblaettern — im Gewaechshaus eine ernste Plage, draußen seltener.",
     "bloecke": [
       {
         "titel": "Erkennen",
-        "text": "Die **Weisse Fliege** ist nur 1-2 mm gross, sieht aus wie eine winzige weisse Motte. Sie sitzt an der **Blattunterseite** von [Tomate](pflanze:tomate), [Gurke](pflanze:gurke), Kohl, Paprika. Beim Beruehren des Blatts fliegen die Tierchen in einer kleinen Wolke auf — das ist das deutlichste Zeichen. Larven sitzen flach und transparent an der Blattunterseite und saugen. **Honigtau** und Russtau wie bei Blattlaus. Vor allem im Gewaechshaus, Wintergarten und in warmen Sommern auch im Freiland."
+        "text": "Die **Weisse Fliege** ist nur 1-2 mm groß, sieht aus wie eine winzige weisse Motte. Sie sitzt an der **Blattunterseite** von [Tomate](pflanze:tomate), [Gurke](pflanze:gurke), Kohl, Paprika. Beim Beruehren des Blatts fliegen die Tierchen in einer kleinen Wolke auf — das ist das deutlichste Zeichen. Larven sitzen flach und transparent an der Blattunterseite und saugen. **Honigtau** und Russtau wie bei Blattlaus. Vor allem im Gewaechshaus, Wintergarten und in warmen Sommern auch im Freiland."
       },
       {
         "titel": "Was hilft",
@@ -71,14 +98,26 @@
       },
       {
         "titel": "Vorbeugung",
-        "text": "Im Gewaechshaus regelmaessig **lueften** — feuchtwarme stehende Luft ist das Lieblingsklima der Fliege. Befallene Pflanzenreste am Saisonende **konsequent entsorgen**, nicht auf den Kompost. **Tagetes** zwischen Tomaten — die Wurzel- und Blattgeruchstoffe stoeren die Eiablage. Im Winter Gewaechshaus leerstehen lassen, frieren laesst alle Lebensstadien sterben."
+        "text": "Im Gewaechshaus regelmäßig **lueften** — feuchtwarme stehende Luft ist das Lieblingsklima der Fliege. Befallene Pflanzenreste am Saisonende **konsequent entsorgen**, nicht auf den Kompost. **Tagetes** zwischen Tomaten — die Wurzel- und Blattgeruchstoffe stoeren die Eiablage. Im Winter Gewaechshaus leerstehen lassen, frieren laesst alle Lebensstadien sterben."
       }
     ],
     "verwandt": [
-      { "sektion": "schaedlinge", "eintrag": "schlupfwespe" },
-      { "sektion": "schaedlinge", "eintrag": "knoblauch-sud" },
-      { "sektion": "schaedlinge", "eintrag": "spinnmilbe" },
-      { "sektion": "praxis", "eintrag": "mischkultur" }
+      {
+        "sektion": "schaedlinge",
+        "eintrag": "schlupfwespe"
+      },
+      {
+        "sektion": "schaedlinge",
+        "eintrag": "knoblauch-sud"
+      },
+      {
+        "sektion": "schaedlinge",
+        "eintrag": "spinnmilbe"
+      },
+      {
+        "sektion": "praxis",
+        "eintrag": "mischkultur"
+      }
     ]
   },
   {
@@ -90,11 +129,11 @@
     "bloecke": [
       {
         "titel": "Erkennen",
-        "text": "Die **Gemeine Spinnmilbe** ist nur 0,5 mm gross und mit blossem Auge kaum zu sehen. Die ersten Zeichen sind **fein punktierte, gelbliche Blaetter** an [Gurke](pflanze:gurke), Bohnen, Auberginen, Zimmerpflanzen. Bei staerkerem Befall bilden die Milben **feine Spinnfaeden** zwischen Blaettern und Triebspitzen. Spinnmilben lieben **trockene heisse Luft** — im Gewaechshaus, am Suedfenster, im Hochsommer im Freiland. Eine Lupe zeigt die kleinen roetlichen bis gelben Pluenktchen an der Blattunterseite."
+        "text": "Die **Gemeine Spinnmilbe** ist nur 0,5 mm groß und mit blossem Auge kaum zu sehen. Die ersten Zeichen sind **fein punktierte, gelbliche Blaetter** an [Gurke](pflanze:gurke), Bohnen, Auberginen, Zimmerpflanzen. Bei staerkerem Befall bilden die Milben **feine Spinnfaeden** zwischen Blaettern und Triebspitzen. Spinnmilben lieben **trockene heisse Luft** — im Gewaechshaus, am Suedfenster, im Hochsommer im Freiland. Eine Lupe zeigt die kleinen roetlichen bis gelben Pluenktchen an der Blattunterseite."
       },
       {
         "titel": "Was hilft",
-        "text": "**Luftfeuchte erhoehen** ist das wichtigste — Spinnmilben verabscheuen feuchte Luft. Pflanzen am Morgen mit Wasser abspruehen, im Gewaechshaus den Boden waessern, am Wohnzimmerfenster eine Schale Wasser dazustellen. **Schmierseifenloesung** (20 g auf 1 L Wasser) auf Blattunterseiten spritzen, in 5-Tagen-Abstand wiederholen. **Phytoseiulus-persimilis-Raubmilben** sind der biologische Klassiker — bei 20-30 Grad und hoher Luftfeuchte raeumen sie binnen 2-3 Wochen auf. **[Knoblauch-Sud](wissen:schaedlinge:knoblauch-sud)** zusaetzlich spritzen unterstuetzt."
+        "text": "**Luftfeuchte erhoehen** ist das wichtigste — Spinnmilben verabscheuen feuchte Luft. Pflanzen am Morgen mit Wasser abspruehen, im Gewaechshaus den Boden waessern, am Wohnzimmerfenster eine Schale Wasser dazustellen. **Schmierseifenloesung** (20 g auf 1 L Wasser) auf Blattunterseiten spritzen, in 5-Tagen-Abstand wiederholen. **Phytoseiulus-persimilis-Raubmilben** sind der biologische Klassiker — bei 20-30 Grad und hoher Luftfeuchte räumen sie binnen 2-3 Wochen auf. **[Knoblauch-Sud](wissen:schaedlinge:knoblauch-sud)** zusaetzlich spritzen unterstuetzt."
       },
       {
         "titel": "Vorbeugung",
@@ -102,10 +141,22 @@
       }
     ],
     "verwandt": [
-      { "sektion": "schaedlinge", "eintrag": "weisse-fliege" },
-      { "sektion": "schaedlinge", "eintrag": "knoblauch-sud" },
-      { "sektion": "schaedlinge", "eintrag": "schachtelhalm-bruehe" },
-      { "sektion": "praxis", "eintrag": "giessen" }
+      {
+        "sektion": "schaedlinge",
+        "eintrag": "weisse-fliege"
+      },
+      {
+        "sektion": "schaedlinge",
+        "eintrag": "knoblauch-sud"
+      },
+      {
+        "sektion": "schaedlinge",
+        "eintrag": "schachtelhalm-brühe"
+      },
+      {
+        "sektion": "praxis",
+        "eintrag": "giessen"
+      }
     ]
   },
   {
@@ -117,22 +168,34 @@
     "bloecke": [
       {
         "titel": "Erkennen",
-        "text": "**Erdfloehe** sind 2-3 mm grosse, glaenzend-schwarze (manchmal mit gelbem Streifen) Kaeferchen, die bei Beruehrung sofort wegspringen — daher der Name. **Lochfrass** an [Radieschen](pflanze:radieschen), Rucola, [Kohlrabi](pflanze:kohlrabi), Senf, [Kohl](pflanze:weisskohl), Rauke. Die Loecher sind klein, rund und treten zu Dutzenden auf einem Blatt auf. Vor allem im **trockenen Fruehsommer** schaedigen sie Jungpflanzen schwer. Larven leben im Boden und nagen an Wurzeln, ohne grossen Schaden anzurichten."
+        "text": "**Erdfloehe** sind 2-3 mm grosse, glaenzend-schwarze (manchmal mit gelbem Streifen) Kaeferchen, die bei Beruehrung sofort wegspringen — daher der Name. **Lochfrass** an [Radieschen](pflanze:radieschen), Rucola, [Kohlrabi](pflanze:kohlrabi), Senf, [Kohl](pflanze:weisskohl), Rauke. Die Löcher sind klein, rund und treten zu Dutzenden auf einem Blatt auf. Vor allem im **trockenen Fruehsommer** schaedigen sie Jungpflanzen schwer. Larven leben im Boden und nagen an Wurzeln, ohne grossen Schaden anzurichten."
       },
       {
         "titel": "Was hilft",
-        "text": "**[Kulturschutznetz](wissen:schaedlinge:kulturschutznetz)** sofort nach Aussaat ueber das Beet legen, dicht abschliessen — Erdfloehe kommen nicht durch das engmaschige Vlies. **Boden feucht halten** mit regelmaessigem Giessen und [Mulchen](wissen:praxis:mulchen) — Erdfloehe lieben trockene Oberflaeche. **Brett oder gelbes Klebepapier** mit Honig bestrichen ueber die Pflanzen halten und vorsichtig vorbeischieben — die springenden Tiere bleiben kleben. **[Rainfarn-Bruehe](wissen:schaedlinge:rainfarn-bruehe)** spritzen, in 5-Tagen-Abstand."
+        "text": "**[Kulturschutznetz](wissen:schaedlinge:kulturschutznetz)** sofort nach Aussaat über das Beet legen, dicht abschliessen — Erdfloehe kommen nicht durch das engmaschige Vlies. **Boden feucht halten** mit regelmaessigem Giessen und [Mulchen](wissen:praxis:mulchen) — Erdfloehe lieben trockene Oberflaeche. **Brett oder gelbes Klebepapier** mit Honig bestrichen über die Pflanzen halten und vorsichtig vorbeischieben — die springenden Tiere bleiben kleben. **[Rainfarn-Brühe](wissen:schaedlinge:rainfarn-bruehe)** spritzen, in 5-Tagen-Abstand."
       },
       {
         "titel": "Vorbeugung",
-        "text": "**Fruehe Aussaat** im April, wenn die Erdfloh-Aktivitaet noch gering ist, oder spaete Aussaat ab August, wenn die Hauptzeit voruebersaai ist. **Boden vor der Aussaat hacken**, damit die Larven trocknen. **Mischkultur** mit [Salat](pflanze:kopfsalat) oder Spinat — diese Beschattung haelt die Bodenoberflaeche feucht. **Fruchtwechsel** strikt einhalten, im naechsten Jahr Kreuzbluetler an anderer Stelle ziehen."
+        "text": "**Fruehe Aussaat** im April, wenn die Erdfloh-Aktivitaet noch gering ist, oder spaete Aussaat ab August, wenn die Hauptzeit voruebersaai ist. **Boden vor der Aussaat hacken**, damit die Larven trocknen. **Mischkultur** mit [Salat](pflanze:kopfsalat) oder Spinat — diese Beschattung haelt die Bodenoberflaeche feucht. **Fruchtwechsel** strikt einhalten, im naechsten Jahr Kreuzblütler an anderer Stelle ziehen."
       }
     ],
     "verwandt": [
-      { "sektion": "schaedlinge", "eintrag": "kulturschutznetz" },
-      { "sektion": "schaedlinge", "eintrag": "rainfarn-bruehe" },
-      { "sektion": "praxis", "eintrag": "mulchen" },
-      { "sektion": "praxis", "eintrag": "mischkultur" }
+      {
+        "sektion": "schaedlinge",
+        "eintrag": "kulturschutznetz"
+      },
+      {
+        "sektion": "schaedlinge",
+        "eintrag": "rainfarn-brühe"
+      },
+      {
+        "sektion": "praxis",
+        "eintrag": "mulchen"
+      },
+      {
+        "sektion": "praxis",
+        "eintrag": "mischkultur"
+      }
     ]
   },
   {
@@ -140,11 +203,11 @@
     "name": "Kohlweissling",
     "untertitel": "Pieris brassicae und Pieris rapae",
     "symbol": "🦋",
-    "kurz": "Weisse Schmetterlinge ueber dem Kohlbeet sind schoen — die gruenen Raupen darunter machen Strunk und Strenge.",
+    "kurz": "Weisse Schmetterlinge über dem Kohlbeet sind schoen — die gruenen Raupen darunter machen Strunk und Strenge.",
     "bloecke": [
       {
         "titel": "Erkennen",
-        "text": "**Grosser Kohlweissling** (Pieris brassicae) und **Kleiner Kohlweissling** (Pieris rapae) sind die weissen Tagfalter mit schwarzen Punkten und Flecken auf den Fluegeln. Sie legen **gelbe Eier in Gruppen** an die Blattunterseite von [Weisskohl](pflanze:weisskohl), [Brokkoli](pflanze:brokkoli), [Blumenkohl](pflanze:blumenkohl), [Rosenkohl](pflanze:rosenkohl) und Wirsing. Aus den Eiern schluepfen **gruene bis gelblich-schwarz gepunktete Raupen**, die innerhalb von Tagen ein Kohlblatt skelettieren koennen. In starkem Befall bleibt nur die Mittelrippe. Bis zu drei Generationen pro Jahr."
+        "text": "**Grosser Kohlweissling** (Pieris brassicae) und **Kleiner Kohlweissling** (Pieris rapae) sind die weissen Tagfalter mit schwarzen Punkten und Flecken auf den Fluegeln. Sie legen **gelbe Eier in Gruppen** an die Blattunterseite von [Weißkohl](pflanze:weisskohl), [Brokkoli](pflanze:brokkoli), [Blumenkohl](pflanze:blumenkohl), [Rosenkohl](pflanze:rosenkohl) und Wirsing. Aus den Eiern schluepfen **gruene bis gelblich-schwarz gepunktete Raupen**, die innerhalb von Tagen ein Kohlblatt skelettieren koennen. In starkem Befall bleibt nur die Mittelrippe. Bis zu drei Generationen pro Jahr."
       },
       {
         "titel": "Was hilft",
@@ -152,15 +215,30 @@
       },
       {
         "titel": "Vorbeugung",
-        "text": "**[Schlupfwespen](wissen:schaedlinge:schlupfwespe)** parasitieren die Raupen — Doldenbluetler wie [Dill](pflanze:dill), [Petersilie](pflanze:petersilie) und [Fenchel](pflanze:fenchel) bluehen lassen, sie ziehen die Schlupfwespen an. **Singvoegel** ([siehe Voegel im Garten](wissen:schaedlinge:voegel-garten)) fressen Massen an Raupen — Hecken und Nistkaesten foerdern. **Fruchtwechsel** und nicht zwei Jahre hintereinander Kohl am gleichen Platz. **Sellerie** als Mischkulturpartner stoert die Falter durch seinen Duft."
+        "text": "**[Schlupfwespen](wissen:schaedlinge:schlupfwespe)** parasitieren die Raupen — Doldenblütler wie [Dill](pflanze:dill), [Petersilie](pflanze:petersilie) und [Fenchel](pflanze:fenchel) bluehen lassen, sie ziehen die Schlupfwespen an. **Singvoegel** ([siehe Voegel im Garten](wissen:schaedlinge:voegel-garten)) fressen Massen an Raupen — Hecken und Nistkaesten foerdern. **Fruchtwechsel** und nicht zwei Jahre hintereinander Kohl am gleichen Platz. **Sellerie** als Mischkulturpartner stoert die Falter durch seinen Duft."
       }
     ],
     "verwandt": [
-      { "sektion": "schaedlinge", "eintrag": "kulturschutznetz" },
-      { "sektion": "schaedlinge", "eintrag": "bacillus-thuringiensis" },
-      { "sektion": "schaedlinge", "eintrag": "schlupfwespe" },
-      { "sektion": "schaedlinge", "eintrag": "wermut-auszug" },
-      { "sektion": "praxis", "eintrag": "mischkultur" }
+      {
+        "sektion": "schaedlinge",
+        "eintrag": "kulturschutznetz"
+      },
+      {
+        "sektion": "schaedlinge",
+        "eintrag": "bacillus-thuringiensis"
+      },
+      {
+        "sektion": "schaedlinge",
+        "eintrag": "schlupfwespe"
+      },
+      {
+        "sektion": "schaedlinge",
+        "eintrag": "wermut-auszug"
+      },
+      {
+        "sektion": "praxis",
+        "eintrag": "mischkultur"
+      }
     ]
   },
   {
@@ -168,26 +246,38 @@
     "name": "Moehrenfliege",
     "untertitel": "Psila rosae",
     "symbol": "🪰",
-    "kurz": "Die Larven der kleinen Fliege ziehen braune Gaenge durch die Moehre — ein Frust nach langer Wachstumszeit.",
+    "kurz": "Die Larven der kleinen Fliege ziehen braune Gaenge durch die Möhre — ein Frust nach langer Wachstumszeit.",
     "bloecke": [
       {
         "titel": "Erkennen",
-        "text": "Die **Moehrenfliege** ist nur 4-5 mm gross, glaenzend schwarz mit gelbem Kopf und braeunlichen Fluegeln. Sie legt Eier dicht neben den Moehrenpflanzen ab. Die Larven kriechen zur [Moehre](pflanze:moehre) und ziehen **braune, rostrote Gaenge** durch das Ruebenfleisch. Erste Zeichen oben: **rotbraun verfaerbte Blaetter**, die welken und absterben. Befallene Moehren sind ungeniessbar oder verfaulen schnell. Zwei Generationen: Mai-Juni und August-September. Auch [Sellerie](pflanze:sellerie), [Pastinake](pflanze:pastinake) und Petersilienwurzel werden befallen."
+        "text": "Die **Moehrenfliege** ist nur 4-5 mm groß, glaenzend schwarz mit gelbem Kopf und braeunlichen Fluegeln. Sie legt Eier dicht neben den Moehrenpflanzen ab. Die Larven kriechen zur [Möhre](pflanze:moehre) und ziehen **braune, rostrote Gaenge** durch das Ruebenfleisch. Erste Zeichen oben: **rotbraun verfaerbte Blaetter**, die welken und absterben. Befallene Moehren sind ungeniessbar oder verfaulen schnell. Zwei Generationen: Mai-Juni und August-September. Auch [Sellerie](pflanze:sellerie), [Pastinake](pflanze:pastinake) und Petersilienwurzel werden befallen."
       },
       {
         "titel": "Was hilft",
-        "text": "**[Kulturschutznetz](wissen:schaedlinge:kulturschutznetz)** sofort nach Aussaat ueber das Moehrenbeet, vollstaendig dicht verschliessen — das ist die sicherste Methode. **[Moehre](pflanze:moehre) und [Zwiebel](pflanze:zwiebel) als Mischkultur** im Wechsel-Reihen pflanzen: der Zwiebelgeruch verwirrt die Moehrenfliege auf der Geruchssuche. Klassisch in der biodynamischen Tradition seit Generationen praktiziert. **[Knoblauch](pflanze:knoblauch)** und [Lauch](pflanze:lauch) wirken aehnlich. **Verwirrung im Beet** — nicht in geraden langen Reihen pflanzen, sondern verteilt. **Spaete Aussaat** ab Anfang Juni umgeht die erste Generation."
+        "text": "**[Kulturschutznetz](wissen:schaedlinge:kulturschutznetz)** sofort nach Aussaat über das Moehrenbeet, vollständig dicht verschliessen — das ist die sicherste Methode. **[Möhre](pflanze:moehre) und [Zwiebel](pflanze:zwiebel) als Mischkultur** im Wechsel-Reihen pflanzen: der Zwiebelgeruch verwirrt die Moehrenfliege auf der Geruchssuche. Klassisch in der biodynamischen Tradition seit Generationen praktiziert. **[Knoblauch](pflanze:knoblauch)** und [Lauch](pflanze:lauch) wirken aehnlich. **Verwirrung im Beet** — nicht in geraden langen Reihen pflanzen, sondern verteilt. **Spaete Aussaat** ab Anfang Juni umgeht die erste Generation."
       },
       {
         "titel": "Vorbeugung",
-        "text": "**Nicht Moehren auf Moehren** — Fruchtwechsel mit mehrjaehriger Pause. Beim **Vereinzeln** den Geruch der Moehre nicht freisetzen — junge Pflaenzchen nicht am Abend ausreissen, sondern morgens nach Tau abgetrocknet, weil die Fliege das Aroma riecht und sofort anfliegt. Erntereste **konsequent abraeumen**, damit Puppen nicht im Boden ueberwintern. Tiefer **Bodenlockerung im Herbst** legt Puppen frei, die Voegel und Frost erledigen."
+        "text": "**Nicht Moehren auf Moehren** — Fruchtwechsel mit mehrjaehriger Pause. Beim **Vereinzeln** den Geruch der Möhre nicht freisetzen — junge Pflaenzchen nicht am Abend ausreissen, sondern morgens nach Tau abgetrocknet, weil die Fliege das Aroma riecht und sofort anfliegt. Erntereste **konsequent abraeumen**, damit Puppen nicht im Boden ueberwintern. Tiefer **Bodenlockerung im Herbst** legt Puppen frei, die Voegel und Frost erledigen."
       }
     ],
     "verwandt": [
-      { "sektion": "schaedlinge", "eintrag": "kulturschutznetz" },
-      { "sektion": "schaedlinge", "eintrag": "knoblauch-sud" },
-      { "sektion": "praxis", "eintrag": "mischkultur" },
-      { "sektion": "traditionen", "eintrag": "biodynamik" }
+      {
+        "sektion": "schaedlinge",
+        "eintrag": "kulturschutznetz"
+      },
+      {
+        "sektion": "schaedlinge",
+        "eintrag": "knoblauch-sud"
+      },
+      {
+        "sektion": "praxis",
+        "eintrag": "mischkultur"
+      },
+      {
+        "sektion": "traditionen",
+        "eintrag": "biodynamik"
+      }
     ]
   },
   {
@@ -203,18 +293,30 @@
       },
       {
         "titel": "Was hilft",
-        "text": "**Kartoffel-Faangstuecke**: halbierte Kartoffel mit Schnittflaeche nach unten an Holzspiess in den Boden stecken, mit Markierung versehen. Nach 3-5 Tagen ausgraben, Drahtwuermer abklauben und sammeln. **Bodenbearbeitung im spaeten Herbst** — tiefes Umgraben legt die Larven frei, Frost und Voegel erledigen sie. **Schwarzbrache** im Sommer, regelmaessig hacken — Hitze und Trockenheit toeten Larven oberflaechennah. **Senf als Gruenduengung** und seine Glucosinolate stoeren die Larven."
+        "text": "**Kartoffel-Faangstuecke**: halbierte Kartoffel mit Schnittflaeche nach unten an Holzspiess in den Boden stecken, mit Markierung versehen. Nach 3-5 Tagen ausgraben, Drahtwuermer abklauben und sammeln. **Bodenbearbeitung im spaeten Herbst** — tiefes Umgraben legt die Larven frei, Frost und Voegel erledigen sie. **Schwarzbrache** im Sommer, regelmäßig hacken — Hitze und Trockenheit toeten Larven oberflaechennah. **Senf als Gruenduengung** und seine Glucosinolate stoeren die Larven."
       },
       {
         "titel": "Vorbeugung",
-        "text": "**Nicht direkt nach Wiesenumbruch** Kartoffeln pflanzen — erst 2-3 Jahre Vorkultur mit Hackfruechten oder Gruenduengung. **Tagetes** als Vorkultur baut die Population ab. **Voegel** anlocken (Drosseln, Stare), die Larven im offenen Boden fressen. **Bodenleben staerken** mit Kompost und [Mykorrhiza](wissen:praxis:mykorrhiza) — gesunde Boeden tragen ueblicherweise eine ausgewogene Tierwelt mit weniger Drahtwurm-Druck."
+        "text": "**Nicht direkt nach Wiesenumbruch** Kartoffeln pflanzen — erst 2-3 Jahre Vorkultur mit Hackfruechten oder Gruenduengung. **Tagetes** als Vorkultur baut die Population ab. **Voegel** anlocken (Drosseln, Stare), die Larven im offenen Boden fressen. **Bodenleben staerken** mit Kompost und [Mykorrhiza](wissen:praxis:mykorrhiza) — gesunde Böden tragen ueblicherweise eine ausgewogene Tierwelt mit weniger Drahtwurm-Druck."
       }
     ],
     "verwandt": [
-      { "sektion": "schaedlinge", "eintrag": "voegel-garten" },
-      { "sektion": "praxis", "eintrag": "mischkultur" },
-      { "sektion": "praxis", "eintrag": "mykorrhiza" },
-      { "sektion": "traditionen", "eintrag": "biodynamik" }
+      {
+        "sektion": "schaedlinge",
+        "eintrag": "voegel-garten"
+      },
+      {
+        "sektion": "praxis",
+        "eintrag": "mischkultur"
+      },
+      {
+        "sektion": "praxis",
+        "eintrag": "mykorrhiza"
+      },
+      {
+        "sektion": "traditionen",
+        "eintrag": "biodynamik"
+      }
     ]
   },
   {
@@ -226,50 +328,77 @@
     "bloecke": [
       {
         "titel": "Rezept",
-        "text": "**1 kg frische [Brennnessel](pflanze:brennnessel)** (vor der Bluete geerntet) grob zerkleinern. In ein **Holz-, Plastik- oder Steingutgefaess** geben — kein Metall, das reagiert. Mit **10 L Regenwasser** uebergiessen. Mit einem Tuch oder Brett **locker abdecken**, damit Insekten draussen bleiben, Luft aber rein kommt. **Taeglich einmal umruehren** mit einem Holzstab. Nach 1-2 Tagen beginnt es zu schaeumen, der Geruch wird streng. Nach 10-14 Tagen ist die Jauche **dunkelbraun, ohne Schaum**, der Geruch ist erdig statt stechend — dann ist sie fertig. **Eine Handvoll Steinmehl** ins Fass mindert den Geruch. Durch ein Sieb abgiessen."
+        "text": "**1 kg frische [Brennnessel](pflanze:brennnessel)** (vor der Blüte geerntet) grob zerkleinern. In ein **Holz-, Plastik- oder Steingutgefaess** geben — kein Metall, das reagiert. Mit **10 L Regenwasser** uebergiessen. Mit einem Tuch oder Brett **locker abdecken**, damit Insekten draußen bleiben, Luft aber rein kommt. **Taeglich einmal umruehren** mit einem Holzstab. Nach 1-2 Tagen beginnt es zu schaeumen, der Geruch wird streng. Nach 10-14 Tagen ist die Jauche **dunkelbraun, ohne Schaum**, der Geruch ist erdig statt stechend — dann ist sie fertig. **Eine Handvoll Steinmehl** ins Fass mindert den Geruch. Durch ein Sieb abgiessen."
       },
       {
         "titel": "Anwendung",
-        "text": "**Als Duenger giessen**: 1:10 mit Wasser verduennen, zum Wurzelballen junger und mittelalter Pflanzen geben. **[Tomate](pflanze:tomate), [Kohl](pflanze:weisskohl), [Gurke](pflanze:gurke), [Zucchini](pflanze:zucchini)** lieben das. Nicht ueber die Blaetter giessen. Alle 14 Tage waehrend der Wachstumsphase. **Als Spritzmittel gegen [Blattlaus](wissen:schaedlinge:blattlaus)**: 1:50 verduennen, mit Sprueh-Flasche auf Blattunterseiten am bedeckten Morgen oder Abend. Wiederholung nach 3-5 Tagen. **Nicht bei Bluetenpflanzen**, die Frucht ansetzen sollen — zu viel Stickstoff bremst Bluete."
+        "text": "**Als Duenger giessen**: 1:10 mit Wasser verduennen, zum Wurzelballen junger und mittelalter Pflanzen geben. **[Tomate](pflanze:tomate), [Kohl](pflanze:weisskohl), [Gurke](pflanze:gurke), [Zucchini](pflanze:zucchini)** lieben das. Nicht über die Blaetter giessen. Alle 14 Tage waehrend der Wachstumsphase. **Als Spritzmittel gegen [Blattlaus](wissen:schaedlinge:blattlaus)**: 1:50 verduennen, mit Sprueh-Flasche auf Blattunterseiten am bedeckten Morgen oder Abend. Wiederholung nach 3-5 Tagen. **Nicht bei Blütenpflanzen**, die Frucht ansetzen sollen — zu viel Stickstoff bremst Blüte."
       },
       {
         "titel": "Wirkung",
-        "text": "Die Brennnessel-Jauche ist reich an **Stickstoff, Kalium, Eisen, Magnesium** und mehreren Spurenelementen. Der Stickstoff treibt das Blattwachstum. Die Spurenelemente staerken die **Zellwaende**, machen die Pflanze widerstandsfaehiger. Als Spritzmittel toetet sie Blattlaeuse nicht direkt — sie macht den Pflanzensaft fuer die Saugerlebewesen unattraktiv. Heinrich Hamm und Maria Thun haben die Jauche in der biodynamischen Praxis (siehe [Biodynamik](wissen:traditionen:biodynamik)) hoch geschaetzt."
+        "text": "Die Brennnessel-Jauche ist reich an **Stickstoff, Kalium, Eisen, Magnesium** und mehreren Spurenelementen. Der Stickstoff treibt das Blattwachstum. Die Spurenelemente staerken die **Zellwaende**, machen die Pflanze widerstandsfaehiger. Als Spritzmittel toetet sie Blattlaeuse nicht direkt — sie macht den Pflanzensaft für die Saugerlebewesen unattraktiv. Heinrich Hamm und Maria Thun haben die Jauche in der biodynamischen Praxis (siehe [Biodynamik](wissen:traditionen:biodynamik)) hoch geschaetzt."
       }
     ],
     "verwandt": [
-      { "sektion": "schaedlinge", "eintrag": "blattlaus" },
-      { "sektion": "schaedlinge", "eintrag": "schachtelhalm-bruehe" },
-      { "sektion": "schaedlinge", "eintrag": "beinwell-jauche" },
-      { "sektion": "praxis", "eintrag": "jauchen" },
-      { "sektion": "traditionen", "eintrag": "biodynamik" }
+      {
+        "sektion": "schaedlinge",
+        "eintrag": "blattlaus"
+      },
+      {
+        "sektion": "schaedlinge",
+        "eintrag": "schachtelhalm-brühe"
+      },
+      {
+        "sektion": "schaedlinge",
+        "eintrag": "beinwell-jauche"
+      },
+      {
+        "sektion": "praxis",
+        "eintrag": "jauchen"
+      },
+      {
+        "sektion": "traditionen",
+        "eintrag": "biodynamik"
+      }
     ]
   },
   {
     "id": "schachtelhalm-bruehe",
-    "name": "Schachtelhalm-Bruehe",
+    "name": "Schachtelhalm-Brühe",
     "untertitel": "Kieselsaeure gegen Pilze",
     "symbol": "🌿",
     "kurz": "Ackerschachtelhalm ist reich an Kieselsaeure — sie staerkt Zellwaende, dass Pilze und Sporen die Blattepidermis nicht knacken.",
     "bloecke": [
       {
         "titel": "Rezept",
-        "text": "**300 g frisches Kraut** vom [Ackerschachtelhalm](pflanze:schachtelhalm) — oder 30 g getrocknet. Im Mai bis August gesammelt, vor dem Verholzen. Zerkleinern und in **10 L Wasser** geben. **24 Stunden einweichen lassen**. Dann **30 Minuten leicht koecheln** (nicht stark kochen, das zerstoert Kieselsaeure-Strukturen). Abkuehlen lassen, durch ein Sieb abgiessen. Die fertige Bruehe ist hellbraun und faengt nach 2-3 Tagen an zu gaeren — frisch verarbeiten oder im Kuehlschrank bis zu einer Woche aufbewahren."
+        "text": "**300 g frisches Kraut** vom [Ackerschachtelhalm](pflanze:schachtelhalm) — oder 30 g getrocknet. Im Mai bis August gesammelt, vor dem Verholzen. Zerkleinern und in **10 L Wasser** geben. **24 Stunden einweichen lassen**. Dann **30 Minuten leicht koecheln** (nicht stark kochen, das zerstoert Kieselsaeure-Strukturen). Abkuehlen lassen, durch ein Sieb abgiessen. Die fertige Brühe ist hellbraun und faengt nach 2-3 Tagen an zu gaeren — frisch verarbeiten oder im Kuehlschrank bis zu einer Woche aufbewahren."
       },
       {
         "titel": "Anwendung",
-        "text": "**1:5 mit Wasser verduennen** und am **frueh-sonnigen Morgen spritzen** — die Sonne aktiviert die Kieselsaeure auf den Blaettern. Praeventiv gegen **Mehltau, Kraut- und Knollenfaeule, Sternrusstau**: alle 14 Tage spritzen. Akut bei beginnendem Pilzbefall: alle 5-7 Tage, 3-4 Anwendungen. Besonders fuer [Tomate](pflanze:tomate), [Kartoffel](pflanze:kartoffel), [Gurke](pflanze:gurke), Rosen, Beerenobst. **Nicht spritzen** bei direkter Mittagshitze oder Regen-Aussicht."
+        "text": "**1:5 mit Wasser verduennen** und am **früh-sonnigen Morgen spritzen** — die Sonne aktiviert die Kieselsaeure auf den Blaettern. Praeventiv gegen **Mehltau, Kraut- und Knollenfaeule, Sternrusstau**: alle 14 Tage spritzen. Akut bei beginnendem Pilzbefall: alle 5-7 Tage, 3-4 Anwendungen. Besonders für [Tomate](pflanze:tomate), [Kartoffel](pflanze:kartoffel), [Gurke](pflanze:gurke), Rosen, Beerenobst. **Nicht spritzen** bei direkter Mittagshitze oder Regen-Aussicht."
       },
       {
         "titel": "Wirkung",
-        "text": "**Kieselsaeure (Siliziumdioxid)** ist der Wirkstoff. Sie lagert sich in der **Blatt-Epidermis** ab und macht die Zellwand fester. Pilzsporen koennen die Wand nicht mehr durchdringen. Die Bruehe staerkt also die **Selbstabwehr** der Pflanze, sie wirkt nicht als Fungizid. Wichtig: Schachtelhalm-Bruehe ist eine **Praeventiv-Massnahme** — bei einem schon ausgepraegten Pilzbefall kommt sie zu spaet. Maria Thun und Rudolf Steiner haben den Schachtelhalm-Tee als Praeparat 508 in die Biodynamik gebracht."
+        "text": "**Kieselsaeure (Siliziumdioxid)** ist der Wirkstoff. Sie lagert sich in der **Blatt-Epidermis** ab und macht die Zellwand fester. Pilzsporen koennen die Wand nicht mehr durchdringen. Die Brühe staerkt also die **Selbstabwehr** der Pflanze, sie wirkt nicht als Fungizid. Wichtig: Schachtelhalm-Brühe ist eine **Praeventiv-Maßnahme** — bei einem schon ausgepraegten Pilzbefall kommt sie zu spät. Maria Thun und Rudolf Steiner haben den Schachtelhalm-Tee als Praeparat 508 in die Biodynamik gebracht."
       }
     ],
     "verwandt": [
-      { "sektion": "schaedlinge", "eintrag": "brennnessel-jauche" },
-      { "sektion": "praxis", "eintrag": "pflanzenschutz-natuerlich" },
-      { "sektion": "traditionen", "eintrag": "biodynamik" },
-      { "sektion": "traditionen", "eintrag": "maria-thun-tradition" }
+      {
+        "sektion": "schaedlinge",
+        "eintrag": "brennnessel-jauche"
+      },
+      {
+        "sektion": "praxis",
+        "eintrag": "pflanzenschutz-natuerlich"
+      },
+      {
+        "sektion": "traditionen",
+        "eintrag": "biodynamik"
+      },
+      {
+        "sektion": "traditionen",
+        "eintrag": "maria-thun-tradition"
+      }
     ]
   },
   {
@@ -293,37 +422,61 @@
       }
     ],
     "verwandt": [
-      { "sektion": "schaedlinge", "eintrag": "blattlaus" },
-      { "sektion": "schaedlinge", "eintrag": "spinnmilbe" },
-      { "sektion": "schaedlinge", "eintrag": "weisse-fliege" },
-      { "sektion": "praxis", "eintrag": "pflanzenschutz-natuerlich" }
+      {
+        "sektion": "schaedlinge",
+        "eintrag": "blattlaus"
+      },
+      {
+        "sektion": "schaedlinge",
+        "eintrag": "spinnmilbe"
+      },
+      {
+        "sektion": "schaedlinge",
+        "eintrag": "weisse-fliege"
+      },
+      {
+        "sektion": "praxis",
+        "eintrag": "pflanzenschutz-natuerlich"
+      }
     ]
   },
   {
     "id": "rainfarn-bruehe",
-    "name": "Rainfarn-Bruehe",
+    "name": "Rainfarn-Brühe",
     "untertitel": "Bitterstoffe gegen Saugerinsekten",
     "symbol": "🌿",
     "kurz": "Der Rainfarn (Tanacetum vulgare) enthaelt Thujon und Bitterstoffe — wirkt gegen Blattlaus, Erdfloh und Kartoffelkaefer.",
     "bloecke": [
       {
         "titel": "Rezept",
-        "text": "**300 g frisches Rainfarnkraut** mit Blueten — Juli bis September am Wegrand oder Brachflaeche gesammelt. Oder 30 g getrocknet. Grob zerkleinern, in **10 L Wasser** geben. **Wasser zum Kochen bringen, dann ausstellen** und das Kraut hineingeben — kein langes Kochen. **24 Stunden ziehen lassen**, abgedeckt. Durch ein Sieb oder Mulltuch abgiessen. Die Bruehe ist gelblich-gruen. **Vorsicht beim Sammeln**: Rainfarn nicht mit dem aehnlich aussehenden Schafgarbe verwechseln, der hat weisse Blueten."
+        "text": "**300 g frisches Rainfarnkraut** mit Blüten — Juli bis September am Wegrand oder Brachflaeche gesammelt. Oder 30 g getrocknet. Grob zerkleinern, in **10 L Wasser** geben. **Wasser zum Kochen bringen, dann ausstellen** und das Kraut hineingeben — kein langes Kochen. **24 Stunden ziehen lassen**, abgedeckt. Durch ein Sieb oder Mulltuch abgiessen. Die Brühe ist gelblich-gruen. **Vorsicht beim Sammeln**: Rainfarn nicht mit dem aehnlich aussehenden Schafgarbe verwechseln, der hat weisse Blüten."
       },
       {
         "titel": "Anwendung",
-        "text": "**1:1 mit Wasser verduennen**, am bedeckten Morgen oder Abend spritzen. Gegen **[Blattlaus](wissen:schaedlinge:blattlaus), [Erdfloh](wissen:schaedlinge:erdfloh), Kartoffelkaefer-Larven, Spinnmilbe**. Auf [Kartoffel](pflanze:kartoffel), [Kohl](pflanze:weisskohl), Beerenobst, Rosen. **Alle 5-7 Tage** wiederholen, maximal 3-4 Anwendungen pro Saison. Nicht in Bluetezeit, da Bienen geschaedigt werden koennen."
+        "text": "**1:1 mit Wasser verduennen**, am bedeckten Morgen oder Abend spritzen. Gegen **[Blattlaus](wissen:schaedlinge:blattlaus), [Erdfloh](wissen:schaedlinge:erdfloh), Kartoffelkaefer-Larven, Spinnmilbe**. Auf [Kartoffel](pflanze:kartoffel), [Kohl](pflanze:weisskohl), Beerenobst, Rosen. **Alle 5-7 Tage** wiederholen, maximal 3-4 Anwendungen pro Saison. Nicht in Blütezeit, da Bienen geschaedigt werden koennen."
       },
       {
         "titel": "Wirkung und Vorsicht",
-        "text": "Rainfarn enthaelt **Thujon, Kampfer und etherische Oele**. Thujon ist toxisch fuer viele Insekten und in groesseren Mengen auch fuer Saeugetiere. Die Bruehe wirkt sowohl repellent (vertreibend) als auch toxisch auf Larvenstadien. **Wichtig**: nicht in der Naehe von Bienenkasten anwenden. Nicht auf Salat oder bluehenden Pflanzen direkt vor der Ernte. **Schwangere und Kinder** sollten das Sammeln und Verarbeiten anderen ueberlassen — Thujon ist kein zu unterschaetzendes Pflanzengift. In der Pferde- und Tierwirtschaft frueher als Wurmmittel eingesetzt."
+        "text": "Rainfarn enthaelt **Thujon, Kampfer und etherische Oele**. Thujon ist toxisch für viele Insekten und in größeren Mengen auch für Saeugetiere. Die Brühe wirkt sowohl repellent (vertreibend) als auch toxisch auf Larvenstadien. **Wichtig**: nicht in der Nähe von Bienenkasten anwenden. Nicht auf Salat oder bluehenden Pflanzen direkt vor der Ernte. **Schwangere und Kinder** sollten das Sammeln und Verarbeiten anderen ueberlassen — Thujon ist kein zu unterschaetzendes Pflanzengift. In der Pferde- und Tierwirtschaft frueher als Wurmmittel eingesetzt."
       }
     ],
     "verwandt": [
-      { "sektion": "schaedlinge", "eintrag": "wermut-auszug" },
-      { "sektion": "schaedlinge", "eintrag": "brennnessel-jauche" },
-      { "sektion": "schaedlinge", "eintrag": "erdfloh" },
-      { "sektion": "praxis", "eintrag": "pflanzenschutz-natuerlich" }
+      {
+        "sektion": "schaedlinge",
+        "eintrag": "wermut-auszug"
+      },
+      {
+        "sektion": "schaedlinge",
+        "eintrag": "brennnessel-jauche"
+      },
+      {
+        "sektion": "schaedlinge",
+        "eintrag": "erdfloh"
+      },
+      {
+        "sektion": "praxis",
+        "eintrag": "pflanzenschutz-natuerlich"
+      }
     ]
   },
   {
@@ -335,49 +488,73 @@
     "bloecke": [
       {
         "titel": "Rezept",
-        "text": "**300 g frisches Wermutkraut** — Mai bis August, vor der Bluete am kraeftigsten. Oder 30 g getrocknet. Grob zerkleinern, in **10 L Wasser** ohne Hitze. **3-4 Tage ansetzen** bei Zimmertemperatur, taeglich umruehren. Die Fluessigkeit wird gruenlich-braun und beginnt leicht zu gaeren. Vor Vollvergaerung ueber ein Sieb abgiessen. Frisch nutzen oder bis 1 Woche im Kuehlschrank lagern."
+        "text": "**300 g frisches Wermutkraut** — Mai bis August, vor der Blüte am kraeftigsten. Oder 30 g getrocknet. Grob zerkleinern, in **10 L Wasser** ohne Hitze. **3-4 Tage ansetzen** bei Zimmertemperatur, taeglich umruehren. Die Fluessigkeit wird gruenlich-braun und beginnt leicht zu gaeren. Vor Vollvergaerung über ein Sieb abgiessen. Frisch nutzen oder bis 1 Woche im Kuehlschrank lagern."
       },
       {
         "titel": "Anwendung",
-        "text": "**1:5 mit Wasser verduennen** und spritzen. Gegen **[Kohlweissling](wissen:schaedlinge:kohlweissling)-Raupen**, andere Schmetterlingsraupen, [Blattlaus](wissen:schaedlinge:blattlaus). Auch als **Ameisen-Vergraemer**: unverduennt auf Ameisenstrassen und Nester giessen — vertreibt, ohne zu toeten. Wermut-Pflanzen direkt im Beet wirken aehnlich, doch Achtung: ihr Wurzelausscheidungs-Toxin (**Absinthin**) hemmt das Wachstum benachbarter Pflanzen. Deshalb Wermut nur am Beet-Rand, nicht mitten zwischen Gemuese."
+        "text": "**1:5 mit Wasser verduennen** und spritzen. Gegen **[Kohlweissling](wissen:schaedlinge:kohlweissling)-Raupen**, andere Schmetterlingsraupen, [Blattlaus](wissen:schaedlinge:blattlaus). Auch als **Ameisen-Vergraemer**: unverduennt auf Ameisenstrassen und Nester giessen — vertreibt, ohne zu toeten. Wermut-Pflanzen direkt im Beet wirken aehnlich, doch Achtung: ihr Wurzelausscheidungs-Toxin (**Absinthin**) hemmt das Wachstum benachbarter Pflanzen. Deshalb Wermut nur am Beet-Rand, nicht mitten zwischen Gemüse."
       },
       {
         "titel": "Wirkung",
-        "text": "Der **Wermut** enthaelt **Absinthin, Thujon und Bitterstoffe**. Sie machen die Blaetter unappetitlich fuer Raupen. Schmetterlinge meiden bei der Eiablage Pflanzen, die nach Wermut riechen. Klassisches Hausmittel — Hildegard von Bingen hat den Wermut als kraeftigsten Bitterpflanzen-Helfer beschrieben. **Vorsicht**: nicht waehrend Schwangerschaft anwenden, nicht auf bluehende Bienenweide spritzen."
+        "text": "Der **Wermut** enthaelt **Absinthin, Thujon und Bitterstoffe**. Sie machen die Blaetter unappetitlich für Raupen. Schmetterlinge meiden bei der Eiablage Pflanzen, die nach Wermut riechen. Klassisches Hausmittel — Hildegard von Bingen hat den Wermut als kraeftigsten Bitterpflanzen-Helfer beschrieben. **Vorsicht**: nicht waehrend Schwangerschaft anwenden, nicht auf bluehende Bienenweide spritzen."
       }
     ],
     "verwandt": [
-      { "sektion": "schaedlinge", "eintrag": "kohlweissling" },
-      { "sektion": "schaedlinge", "eintrag": "rainfarn-bruehe" },
-      { "sektion": "schaedlinge", "eintrag": "brennnessel-jauche" },
-      { "sektion": "naturmagier", "eintrag": "hildegard-garten" }
+      {
+        "sektion": "schaedlinge",
+        "eintrag": "kohlweissling"
+      },
+      {
+        "sektion": "schaedlinge",
+        "eintrag": "rainfarn-brühe"
+      },
+      {
+        "sektion": "schaedlinge",
+        "eintrag": "brennnessel-jauche"
+      },
+      {
+        "sektion": "naturmagier",
+        "eintrag": "hildegard-garten"
+      }
     ]
   },
   {
     "id": "beinwell-jauche",
     "name": "Beinwell-Jauche",
-    "untertitel": "Kalium-Bombe fuer Fruchttraeger",
+    "untertitel": "Kalium-Bombe für Fruchttraeger",
     "symbol": "🌿",
-    "kurz": "Beinwell zieht Kalium aus tiefen Bodenschichten — als Jauche wird er zum besten Volldueg fuer [Tomate](pflanze:tomate) und [Kartoffel](pflanze:kartoffel).",
+    "kurz": "Beinwell zieht Kalium aus tiefen Bodenschichten — als Jauche wird er zum besten Volldueg für [Tomate](pflanze:tomate) und [Kartoffel](pflanze:kartoffel).",
     "bloecke": [
       {
         "titel": "Rezept",
-        "text": "**1 kg frischer [Beinwell](pflanze:beinwell)** (Symphytum officinale oder S. uplandicum), Blaetter und Stiele kurz vor der Bluete geerntet. Grob zerkleinern, in ein **Holz-, Plastik- oder Steingutfass**. Mit **10 L Regenwasser** uebergiessen. Mit Brett oder Tuch locker abdecken. **Taeglich umruehren**. Nach 10-14 Tagen ist die Jauche fertig — **dunkelbraun, schaumfrei**, der Geruch ist erdig statt stechend. **Steinmehl** dazu mindert den Geruch. Durch Sieb abgiessen."
+        "text": "**1 kg frischer [Beinwell](pflanze:beinwell)** (Symphytum officinale oder S. uplandicum), Blaetter und Stiele kurz vor der Blüte geerntet. Grob zerkleinern, in ein **Holz-, Plastik- oder Steingutfass**. Mit **10 L Regenwasser** uebergiessen. Mit Brett oder Tuch locker abdecken. **Taeglich umruehren**. Nach 10-14 Tagen ist die Jauche fertig — **dunkelbraun, schaumfrei**, der Geruch ist erdig statt stechend. **Steinmehl** dazu mindert den Geruch. Durch Sieb abgiessen."
       },
       {
         "titel": "Anwendung",
-        "text": "**1:10 mit Wasser verduennen** und zum Wurzelballen giessen. Beste Wirkung bei **Fruchttraegern**: [Tomate](pflanze:tomate), [Paprika](pflanze:paprika), [Aubergine](pflanze:aubergine), [Kartoffel](pflanze:kartoffel), [Gurke](pflanze:gurke), [Zucchini](pflanze:zucchini), [Kuerbis](pflanze:kuerbis). Auch sehr gut fuer **Beerenobst** wie [Erdbeere](pflanze:erdbeere), [Himbeere](pflanze:himbeere), [Johannisbeere](pflanze:johannisbeere). Anwendung beginnt mit der Bluetenbildung und wird alle 14 Tage wiederholt. **Nicht ueber Blaetter giessen**, der Geruch zieht Fliegen an."
+        "text": "**1:10 mit Wasser verduennen** und zum Wurzelballen giessen. Beste Wirkung bei **Fruchttraegern**: [Tomate](pflanze:tomate), [Paprika](pflanze:paprika), [Aubergine](pflanze:aubergine), [Kartoffel](pflanze:kartoffel), [Gurke](pflanze:gurke), [Zucchini](pflanze:zucchini), [Kürbis](pflanze:kuerbis). Auch sehr gut für **Beerenobst** wie [Erdbeere](pflanze:erdbeere), [Himbeere](pflanze:himbeere), [Johannisbeere](pflanze:johannisbeere). Anwendung beginnt mit der Bluetenbildung und wird alle 14 Tage wiederholt. **Nicht über Blaetter giessen**, der Geruch zieht Fliegen an."
       },
       {
         "titel": "Wirkung",
-        "text": "**Beinwell hat tiefe Pfahlwurzeln** — bis 2 m tief. Damit erschliesst er Mineralien, die fuer flachwurzelnde Gemuese unerreichbar bleiben. Seine Blaetter enthalten reichlich **Kalium**, dazu **Calcium, Magnesium, Stickstoff** und reichlich **Allantoin**. Kalium ist der Schluessel zur Bluete- und Fruchtbildung, zur Wasserregulation und zur Frostfestigkeit. Beinwell-Jauche ersetzt klassische Kalium-Duenger. Robert D. Hart hat sie im Forest Garden und in der [Permakultur](wissen:traditionen:permakultur) stark beworben."
+        "text": "**Beinwell hat tiefe Pfahlwurzeln** — bis 2 m tief. Damit erschliesst er Mineralien, die für flachwurzelnde Gemüse unerreichbar bleiben. Seine Blaetter enthalten reichlich **Kalium**, dazu **Calcium, Magnesium, Stickstoff** und reichlich **Allantoin**. Kalium ist der Schluessel zur Blüte- und Fruchtbildung, zur Wasserregulation und zur Frostfestigkeit. Beinwell-Jauche ersetzt klassische Kalium-Duenger. Robert D. Hart hat sie im Forest Garden und in der [Permakultur](wissen:traditionen:permakultur) stark beworben."
       }
     ],
     "verwandt": [
-      { "sektion": "schaedlinge", "eintrag": "brennnessel-jauche" },
-      { "sektion": "praxis", "eintrag": "jauchen" },
-      { "sektion": "praxis", "eintrag": "mulchen" },
-      { "sektion": "traditionen", "eintrag": "permakultur" }
+      {
+        "sektion": "schaedlinge",
+        "eintrag": "brennnessel-jauche"
+      },
+      {
+        "sektion": "praxis",
+        "eintrag": "jauchen"
+      },
+      {
+        "sektion": "praxis",
+        "eintrag": "mulchen"
+      },
+      {
+        "sektion": "traditionen",
+        "eintrag": "permakultur"
+      }
     ]
   },
   {
@@ -389,22 +566,34 @@
     "bloecke": [
       {
         "titel": "Wesen",
-        "text": "Der **Siebenpunkt-Marienkaefer** (Coccinella septempunctata) ist 6-8 mm gross, rot mit sieben schwarzen Punkten. Beide Lebensstadien sind Raeuber: die **Larve** ist 1 cm lang, schwarz-grau-orange, sieht aus wie ein winziges Krokodil. Sie frisst in 2-3 Wochen Larvenleben **bis zu 800 Blattlaeuse**. Der Kaefer schafft am Tag 50-100 Blattlaeuse. Eine Marienkaefer-Population im Garten loest [Blattlaus](wissen:schaedlinge:blattlaus)-Probleme oft ohne weiteres Zutun. **Asiatische Marienkaefer** (Harmonia axyridis, mit vielen Punkten oder kaum welchen) sind eingewandert und in manchen Regionen dominierend — sie helfen ebenso."
+        "text": "Der **Siebenpunkt-Marienkaefer** (Coccinella septempunctata) ist 6-8 mm groß, rot mit sieben schwarzen Punkten. Beide Lebensstadien sind Raeuber: die **Larve** ist 1 cm lang, schwarz-grau-orange, sieht aus wie ein winziges Krokodil. Sie frisst in 2-3 Wochen Larvenleben **bis zu 800 Blattlaeuse**. Der Kaefer schafft am Tag 50-100 Blattlaeuse. Eine Marienkaefer-Population im Garten loest [Blattlaus](wissen:schaedlinge:blattlaus)-Probleme oft ohne weiteres Zutun. **Asiatische Marienkaefer** (Harmonia axyridis, mit vielen Punkten oder kaum welchen) sind eingewandert und in manchen Regionen dominierend — sie helfen ebenso."
       },
       {
         "titel": "Foerderung",
-        "text": "**Wildecken** im Garten lassen — Brennnesseln, hohes Gras, [Loewenzahn](pflanze:loewenzahn), Schafgarbe ueber Winter stehen lassen. Marienkaefer ueberwintern in Laubhaufen, Falzen, Mauerritzen. **Bluetenpflanzen** wie [Ringelblume](pflanze:ringelblume), Kornblume, [Dill](pflanze:dill) und [Petersilie](pflanze:petersilie) als Nektarquelle. **[Kapuzinerkresse](pflanze:kapuzinerkresse)** als Fangpflanze fuer Blattlaeuse zieht Marienkaefer an. **Nicht spritzen** — auch organische Mittel toeten Marienkaefer. **Marienkaefer-Larven kaufen** ist bei akutem Blattlaus-Befall im Gewaechshaus eine schnelle Loesung."
+        "text": "**Wildecken** im Garten lassen — Brennnesseln, hohes Gras, [Löwenzahn](pflanze:loewenzahn), Schafgarbe über Winter stehen lassen. Marienkaefer ueberwintern in Laubhaufen, Falzen, Mauerritzen. **Blütenpflanzen** wie [Ringelblume](pflanze:ringelblume), Kornblume, [Dill](pflanze:dill) und [Petersilie](pflanze:petersilie) als Nektarquelle. **[Kapuzinerkresse](pflanze:kapuzinerkresse)** als Fangpflanze für Blattlaeuse zieht Marienkaefer an. **Nicht spritzen** — auch organische Mittel toeten Marienkaefer. **Marienkaefer-Larven kaufen** ist bei akutem Blattlaus-Befall im Gewaechshaus eine schnelle Loesung."
       },
       {
         "titel": "Beobachtung",
-        "text": "**Eipakete**: gelb-orange, dicht zusammenstehend an Blattunterseiten, oft in der Naehe einer Blattlaus-Kolonie. **Larven** sind die hungrigsten Stadien — niemals zerquetschen. **Puppen** sitzen oft an Blaettern oder Stielen, dunkel-orange, regungslos. Wer die Larven kennt, sieht sie ueberall — sonst werden sie leicht fuer Schaedlinge gehalten und entfernt. Geduld: nach einer ersten Blattlaus-Welle dauert es 1-2 Wochen, bis die Marienkaefer-Population aufgebaut ist und das Gleichgewicht hergestellt."
+        "text": "**Eipakete**: gelb-orange, dicht zusammenstehend an Blattunterseiten, oft in der Nähe einer Blattlaus-Kolonie. **Larven** sind die hungrigsten Stadien — niemals zerquetschen. **Puppen** sitzen oft an Blaettern oder Stielen, dunkel-orange, regungslos. Wer die Larven kennt, sieht sie ueberall — sonst werden sie leicht für Schädlinge gehalten und entfernt. Geduld: nach einer ersten Blattlaus-Welle dauert es 1-2 Wochen, bis die Marienkaefer-Population aufgebaut ist und das Gleichgewicht hergestellt."
       }
     ],
     "verwandt": [
-      { "sektion": "schaedlinge", "eintrag": "blattlaus" },
-      { "sektion": "schaedlinge", "eintrag": "florfliege" },
-      { "sektion": "schaedlinge", "eintrag": "schlupfwespe" },
-      { "sektion": "praxis", "eintrag": "mischkultur" }
+      {
+        "sektion": "schaedlinge",
+        "eintrag": "blattlaus"
+      },
+      {
+        "sektion": "schaedlinge",
+        "eintrag": "florfliege"
+      },
+      {
+        "sektion": "schaedlinge",
+        "eintrag": "schlupfwespe"
+      },
+      {
+        "sektion": "praxis",
+        "eintrag": "mischkultur"
+      }
     ]
   },
   {
@@ -412,26 +601,38 @@
     "name": "Florfliege",
     "untertitel": "Chrysoperla carnea — die Blattlaus-Loewin",
     "symbol": "🪰",
-    "kurz": "Zarte gruene Fluegelwesen mit goldenen Augen — die Larven heissen Blattlaus-Loewen und raeumen mit Heisshunger ab.",
+    "kurz": "Zarte gruene Fluegelwesen mit goldenen Augen — die Larven heissen Blattlaus-Löwen und räumen mit Heisshunger ab.",
     "bloecke": [
       {
         "titel": "Wesen",
-        "text": "Die **Gemeine Florfliege** (Chrysoperla carnea) ist 1,5 cm gross, hellgruen, mit goldgelben Augen und durchscheinenden Netz-Fluegeln. Sie ist daemmerungs- und nachtaktiv. Die **Larven** heissen *Blattlaus-Loewen* — sie sind 7-8 mm lang, hellbraun, mit gewaltigen Saugzangen. Eine Larve frisst in ihrem zweiwoechigen Larvenleben **bis zu 500 Blattlaeuse**, auch Spinnmilben, Thripsen und Schildlaus-Larven. Die Eier werden an winzigen Stielen an Blattunterseiten gehaengt, damit die schluepfenden Larven nicht ihre Geschwister fressen."
+        "text": "Die **Gemeine Florfliege** (Chrysoperla carnea) ist 1,5 cm groß, hellgruen, mit goldgelben Augen und durchscheinenden Netz-Fluegeln. Sie ist daemmerungs- und nachtaktiv. Die **Larven** heissen *Blattlaus-Löwen* — sie sind 7-8 mm lang, hellbraun, mit gewaltigen Saugzangen. Eine Larve frisst in ihrem zweiwoechigen Larvenleben **bis zu 500 Blattlaeuse**, auch Spinnmilben, Thripsen und Schildlaus-Larven. Die Eier werden an winzigen Stielen an Blattunterseiten gehaengt, damit die schluepfenden Larven nicht ihre Geschwister fressen."
       },
       {
         "titel": "Foerderung",
-        "text": "**Florfliegen-Kasten** an der Hauswand oder im Schuppen, gefuellt mit Stroh — Florfliegen suchen im Herbst Quartiere. Im Winter sind die Tiere oft **rosa bis braun** verfaerbt und sitzen reglos. **Nicht stoeren, nicht heizen** — sie verlassen das Quartier im Fruehjahr von selbst. **Wildblumen** wie Schafgarbe, Wilde Moehre, [Dill](pflanze:dill), [Fenchel](pflanze:fenchel) bluehen lassen — Florfliegen ernaehren sich als Imago von Pollen und Honigtau. **Nicht spritzen**, auch nicht mit Bt — Florfliegen sind empfindlich. Im Gewaechshaus koennen Florfliegen-Larven gezielt ausgesetzt werden."
+        "text": "**Florfliegen-Kasten** an der Hauswand oder im Schuppen, gefuellt mit Stroh — Florfliegen suchen im Herbst Quartiere. Im Winter sind die Tiere oft **rosa bis braun** verfaerbt und sitzen reglos. **Nicht stoeren, nicht heizen** — sie verlassen das Quartier im Frühjahr von selbst. **Wildblumen** wie Schafgarbe, Wilde Möhre, [Dill](pflanze:dill), [Fenchel](pflanze:fenchel) bluehen lassen — Florfliegen ernaehren sich als Imago von Pollen und Honigtau. **Nicht spritzen**, auch nicht mit Bt — Florfliegen sind empfindlich. Im Gewaechshaus koennen Florfliegen-Larven gezielt ausgesetzt werden."
       },
       {
         "titel": "Beobachtung",
-        "text": "**Eier auf Stielen** sind das auffaelligste Zeichen — sehen aus wie winzige Kugeln auf Haarkielen, weiss bis gruen. Wer diese im Blattgewirr findet, hat ein gutes Zeichen. **Larven sind klein** und gehen leicht ueber, deshalb beim Pflanzenputzen aufmerksam sein. **Imagines** sieht man oft abends an Fensterscheiben — die zarten gruenen Wesen mit den goldenen Augen sind unverwechselbar. Im November bis Maerz sitzen sie ueberwinternd in der Naehe von menschlichen Behausungen — Schuppen, Daechern, Vordaechern."
+        "text": "**Eier auf Stielen** sind das auffaelligste Zeichen — sehen aus wie winzige Kugeln auf Haarkielen, weiß bis gruen. Wer diese im Blattgewirr findet, hat ein gutes Zeichen. **Larven sind klein** und gehen leicht über, deshalb beim Pflanzenputzen aufmerksam sein. **Imagines** sieht man oft abends an Fensterscheiben — die zarten gruenen Wesen mit den goldenen Augen sind unverwechselbar. Im November bis März sitzen sie ueberwinternd in der Nähe von menschlichen Behausungen — Schuppen, Daechern, Vordaechern."
       }
     ],
     "verwandt": [
-      { "sektion": "schaedlinge", "eintrag": "marienkaefer" },
-      { "sektion": "schaedlinge", "eintrag": "blattlaus" },
-      { "sektion": "schaedlinge", "eintrag": "spinnmilbe" },
-      { "sektion": "praxis", "eintrag": "mischkultur" }
+      {
+        "sektion": "schaedlinge",
+        "eintrag": "marienkaefer"
+      },
+      {
+        "sektion": "schaedlinge",
+        "eintrag": "blattlaus"
+      },
+      {
+        "sektion": "schaedlinge",
+        "eintrag": "spinnmilbe"
+      },
+      {
+        "sektion": "praxis",
+        "eintrag": "mischkultur"
+      }
     ]
   },
   {
@@ -443,22 +644,34 @@
     "bloecke": [
       {
         "titel": "Wesen",
-        "text": "**Schlupfwespen** sind eine riesige Gruppe — allein in Deutschland leben tausende Arten. Sie sind 1-5 mm gross, schwarz oder braun, oft mit metallischem Schimmer. Jede Art ist auf einen oder wenige Wirte spezialisiert: **Encarsia formosa** parasitiert die [Weisse Fliege](wissen:schaedlinge:weisse-fliege), **Aphidius** legt Eier in [Blattlaeuse](wissen:schaedlinge:blattlaus), **Trichogramma** parasitiert Eier des Maiszuenslers und vieler Schmetterlinge. Das Weibchen sticht den Wirt an, legt ein Ei rein. Die Larve frisst den Wirt von innen, das Resultat ist eine *Mumie* — der trockene Hautrest des Wirts mit der schluepffertigen Wespe darin."
+        "text": "**Schlupfwespen** sind eine riesige Gruppe — allein in Deutschland leben tausende Arten. Sie sind 1-5 mm groß, schwarz oder braun, oft mit metallischem Schimmer. Jede Art ist auf einen oder wenige Wirte spezialisiert: **Encarsia formosa** parasitiert die [Weisse Fliege](wissen:schaedlinge:weisse-fliege), **Aphidius** legt Eier in [Blattlaeuse](wissen:schaedlinge:blattlaus), **Trichogramma** parasitiert Eier des Maiszuenslers und vieler Schmetterlinge. Das Weibchen sticht den Wirt an, legt ein Ei rein. Die Larve frisst den Wirt von innen, das Resultat ist eine *Mumie* — der trockene Hautrest des Wirts mit der schluepffertigen Wespe darin."
       },
       {
         "titel": "Foerderung",
-        "text": "**Doldenbluetler** bluehen lassen — [Dill](pflanze:dill), [Petersilie](pflanze:petersilie), [Fenchel](pflanze:fenchel), [Koriander](pflanze:koriander), Wilde Moehre, Bockshornklee. Die kleinen, flachen Blueten sind genau passend fuer den winzigen Wespen-Mund. **Korbbluetler** wie [Ringelblume](pflanze:ringelblume), Kornblume, [Tagetes](pflanze:tagetes) als Nektarquellen. **Nicht spritzen** — kein Insektizid, auch kein Pyrethrum oder Neem in der Naehe. **Wildkraut-Saum** rund um das Gemuesebeet als Rueckzugsraum. Im Gewaechshaus Encarsia-Karten kaufen und aufhaengen, sehr wirksam gegen Weisse Fliege."
+        "text": "**Doldenblütler** bluehen lassen — [Dill](pflanze:dill), [Petersilie](pflanze:petersilie), [Fenchel](pflanze:fenchel), [Koriander](pflanze:koriander), Wilde Möhre, Bockshornklee. Die kleinen, flachen Blüten sind genau passend für den winzigen Wespen-Mund. **Korbblütler** wie [Ringelblume](pflanze:ringelblume), Kornblume, [Tagetes](pflanze:tagetes) als Nektarquellen. **Nicht spritzen** — kein Insektizid, auch kein Pyrethrum oder Neem in der Nähe. **Wildkraut-Saum** rund um das Gemuesebeet als Rueckzugsraum. Im Gewaechshaus Encarsia-Karten kaufen und aufhaengen, sehr wirksam gegen Weisse Fliege."
       },
       {
         "titel": "Beobachtung",
-        "text": "**Mumien** an Pflanzen sind das deutlichste Zeichen — vertrocknete Blattlaus-Huellen, oft braeunlich, mit kleinem Schluepfloch. Wer das sieht, freut sich: die Wespen sind am Werk. **Encarsia-parasitierte Weisse-Fliege-Larven** werden schwarz statt weiss — auch ein gutes Zeichen. Die Wespen selbst sind so klein, dass man sie kaum sieht. Doch ein Garten, in dem doldenbluetlere und korbbluehende Wildkraeuter wachsen, ist immer ein Schlupfwespen-Garten."
+        "text": "**Mumien** an Pflanzen sind das deutlichste Zeichen — vertrocknete Blattlaus-Huellen, oft braeunlich, mit kleinem Schluepfloch. Wer das sieht, freut sich: die Wespen sind am Werk. **Encarsia-parasitierte Weisse-Fliege-Larven** werden schwarz statt weiß — auch ein gutes Zeichen. Die Wespen selbst sind so klein, dass man sie kaum sieht. Doch ein Garten, in dem doldenbluetlere und korbbluehende Wildkraeuter wachsen, ist immer ein Schlupfwespen-Garten."
       }
     ],
     "verwandt": [
-      { "sektion": "schaedlinge", "eintrag": "weisse-fliege" },
-      { "sektion": "schaedlinge", "eintrag": "kohlweissling" },
-      { "sektion": "schaedlinge", "eintrag": "blattlaus" },
-      { "sektion": "praxis", "eintrag": "mischkultur" }
+      {
+        "sektion": "schaedlinge",
+        "eintrag": "weisse-fliege"
+      },
+      {
+        "sektion": "schaedlinge",
+        "eintrag": "kohlweissling"
+      },
+      {
+        "sektion": "schaedlinge",
+        "eintrag": "blattlaus"
+      },
+      {
+        "sektion": "praxis",
+        "eintrag": "mischkultur"
+      }
     ]
   },
   {
@@ -470,22 +683,34 @@
     "bloecke": [
       {
         "titel": "Wesen",
-        "text": "Der **Braunbrust-Igel** (Erinaceus europaeus) ist 20-30 cm gross, traegt 6000-7000 Stacheln. Nachtaktiv, einzeln lebend, wandert in einer Nacht bis zu 3 km. **Schneckenfresser**, dazu Regenwuermer, Engerlinge, Wuermer, [Drahtwurm](wissen:schaedlinge:drahtwurm), Kaeferlarven. Auch Frosch- und Maus-Junge gehoeren zur Speisekarte. Ueberwintert zwischen November und Maerz in Laubhaufen, Reisigverstecken oder Holzhaufen. Igel sind in Deutschland **streng geschuetzt**."
+        "text": "Der **Braunbrust-Igel** (Erinaceus europaeus) ist 20-30 cm groß, trägt 6000-7000 Stacheln. Nachtaktiv, einzeln lebend, wandert in einer Nacht bis zu 3 km. **Schneckenfresser**, dazu Regenwuermer, Engerlinge, Wuermer, [Drahtwurm](wissen:schaedlinge:drahtwurm), Kaeferlarven. Auch Frosch- und Maus-Junge gehören zur Speisekarte. Ueberwintert zwischen November und März in Laubhaufen, Reisigverstecken oder Holzhaufen. Igel sind in Deutschland **streng geschuetzt**."
       },
       {
         "titel": "Foerderung",
-        "text": "**Laubhaufen** unter Hecken oder in der hinteren Garten-Ecke ueber Winter liegen lassen — das ist Igel-Winterquartier. **Reisighaufen** ebenso. **Wasserstelle** (flache Schale, taeglich frisches Wasser) im Sommer. **Durchlaesse in Zaeunen** (mindestens 13x13 cm), damit Igel zwischen Gaerten wandern koennen. **Keine Schneckenkoerner mit Metaldehyd** — toetet Igel mit. **Eisen-III-Phosphat-Koerner** sind die einzig vertretbare Alternative. **Maehroboter aus** ueber Nacht und in der Daemmerung — sie verletzen Igel schwer. Kein Laubsauger, kein Hochdruckreiniger ueber Laubhaufen."
+        "text": "**Laubhaufen** unter Hecken oder in der hinteren Garten-Ecke über Winter liegen lassen — das ist Igel-Winterquartier. **Reisighaufen** ebenso. **Wasserstelle** (flache Schale, taeglich frisches Wasser) im Sommer. **Durchlaesse in Zaeunen** (mindestens 13x13 cm), damit Igel zwischen Gärten wandern koennen. **Keine Schneckenkoerner mit Metaldehyd** — toetet Igel mit. **Eisen-III-Phosphat-Koerner** sind die einzig vertretbare Alternative. **Maehroboter aus** über Nacht und in der Daemmerung — sie verletzen Igel schwer. Kein Laubsauger, kein Hochdruckreiniger über Laubhaufen."
       },
       {
         "titel": "Beobachtung",
-        "text": "**Igel-Kot** ist 3-6 cm lang, dunkelbraun bis schwarz, oft mit erkennbaren Insektenteilen. Findet man morgens im Garten, ist ein Igel zugange. **Schnaufen und Schnueffeln** in der Daemmerung — Igel sind erstaunlich laut. **Junge Igel** im September unter 500 g brauchen Hilfe und gehoeren zu einer Auffangstation. Erwachsene Tiere ueber 600 g im Oktober schaffen den Winter selbst. **Niemals Milch geben** — Igel vertragen keine Laktose. Wenn man fuettert, dann Katzennassfutter ohne Sosse, kleine Mengen."
+        "text": "**Igel-Kot** ist 3-6 cm lang, dunkelbraun bis schwarz, oft mit erkennbaren Insektenteilen. Findet man morgens im Garten, ist ein Igel zugange. **Schnaufen und Schnueffeln** in der Daemmerung — Igel sind erstaunlich laut. **Junge Igel** im September unter 500 g brauchen Hilfe und gehören zu einer Auffangstation. Erwachsene Tiere über 600 g im Oktober schaffen den Winter selbst. **Niemals Milch geben** — Igel vertragen keine Laktose. Wenn man fuettert, dann Katzennassfutter ohne Sosse, kleine Mengen."
       }
     ],
     "verwandt": [
-      { "sektion": "schaedlinge", "eintrag": "schnecke" },
-      { "sektion": "schaedlinge", "eintrag": "voegel-garten" },
-      { "sektion": "schaedlinge", "eintrag": "drahtwurm" },
-      { "sektion": "traditionen", "eintrag": "naturgarten" }
+      {
+        "sektion": "schaedlinge",
+        "eintrag": "schnecke"
+      },
+      {
+        "sektion": "schaedlinge",
+        "eintrag": "voegel-garten"
+      },
+      {
+        "sektion": "schaedlinge",
+        "eintrag": "drahtwurm"
+      },
+      {
+        "sektion": "traditionen",
+        "eintrag": "naturgarten"
+      }
     ]
   },
   {
@@ -501,19 +726,34 @@
       },
       {
         "titel": "Foerderung",
-        "text": "**Nistkaesten** in 2-4 m Hoehe, mit verschiedenen Lochweiten: 28 mm fuer Blaumeise, 32 mm fuer Kohlmeise und Kleiber, 34 mm fuer Star. Ostseite oder Suedostseite, regenfest, nicht zu sonnig. **Hecken aus heimischen Gehoelzen**: Weissdorn, Schlehe, Holunder, Hartriegel, Hundsrose. Bieten Versteck, Nist- und Beerenquelle. **Wasserstelle** flach mit Steinen, im Sommer taeglich frisch. **Wintervogelfuetterung** zwischen November und Februar mit Sonnenblumenkernen, Erdnussbutter (ungesalzen), Apfelschnitten. **Katzen mit Glocke** wenn sie freilaufen, das halbiert die Vogel-Beute."
+        "text": "**Nistkaesten** in 2-4 m Höhe, mit verschiedenen Lochweiten: 28 mm für Blaumeise, 32 mm für Kohlmeise und Kleiber, 34 mm für Star. Ostseite oder Suedostseite, regenfest, nicht zu sonnig. **Hecken aus heimischen Gehoelzen**: Weissdorn, Schlehe, Holunder, Hartriegel, Hundsrose. Bieten Versteck, Nist- und Beerenquelle. **Wasserstelle** flach mit Steinen, im Sommer taeglich frisch. **Wintervogelfuetterung** zwischen November und Februar mit Sonnenblumenkernen, Erdnussbutter (ungesalzen), Apfelschnitten. **Katzen mit Glocke** wenn sie freilaufen, das halbiert die Vogel-Beute."
       },
       {
         "titel": "Beobachtung",
-        "text": "Wer Voegel im Garten kennen will, **steht morgens frueh auf** — die erste Stunde nach Sonnenaufgang ist die aktivste. Eine **Voegel-Liste** ueber das Jahr schreiben — wann kommt die erste Schwalbe, wann singt die Amsel, wann zieht der Star. Die NABU-Aktion *Stunde der Gartenvoegel* im Mai ist eine schoene Gelegenheit, sich systematisch einzulesen. Wer aufmerksam ist, lernt ueber Jahre 20-40 Arten im eigenen Garten kennen."
+        "text": "Wer Voegel im Garten kennen will, **steht morgens früh auf** — die erste Stunde nach Sonnenaufgang ist die aktivste. Eine **Voegel-Liste** über das Jahr schreiben — wann kommt die erste Schwalbe, wann singt die Amsel, wann zieht der Star. Die NABU-Aktion *Stunde der Gartenvoegel* im Mai ist eine schoene Gelegenheit, sich systematisch einzulesen. Wer aufmerksam ist, lernt über Jahre 20-40 Arten im eigenen Garten kennen."
       }
     ],
     "verwandt": [
-      { "sektion": "schaedlinge", "eintrag": "igel" },
-      { "sektion": "schaedlinge", "eintrag": "kohlweissling" },
-      { "sektion": "schaedlinge", "eintrag": "drahtwurm" },
-      { "sektion": "traditionen", "eintrag": "naturgarten" },
-      { "sektion": "traditionen", "eintrag": "permakultur" }
+      {
+        "sektion": "schaedlinge",
+        "eintrag": "igel"
+      },
+      {
+        "sektion": "schaedlinge",
+        "eintrag": "kohlweissling"
+      },
+      {
+        "sektion": "schaedlinge",
+        "eintrag": "drahtwurm"
+      },
+      {
+        "sektion": "traditionen",
+        "eintrag": "naturgarten"
+      },
+      {
+        "sektion": "traditionen",
+        "eintrag": "permakultur"
+      }
     ]
   },
   {
@@ -521,26 +761,38 @@
     "name": "Kulturschutznetz",
     "untertitel": "Engmaschiges Vlies als physische Barriere",
     "symbol": "🛡",
-    "kurz": "Die wirksamste, einfachste Methode gegen flugfaehige Schaedlinge — was nicht ans Beet kommt, kann auch keine Eier legen.",
+    "kurz": "Die wirksamste, einfachste Methode gegen flugfaehige Schädlinge — was nicht ans Beet kommt, kann auch keine Eier legen.",
     "bloecke": [
       {
         "titel": "Idee",
-        "text": "Ein **engmaschiges, leichtes Netz oder Vlies** wird direkt nach der Aussaat oder Pflanzung ueber das Beet gelegt. Es laesst Licht, Luft und Regen durch, haelt aber **Insekten ab**. Wirksam gegen **[Moehrenfliege](wissen:schaedlinge:moehrenfliege), [Kohlweissling](wissen:schaedlinge:kohlweissling), [Erdfloh](wissen:schaedlinge:erdfloh), Lauchmotte, Zwiebelfliege, Kohlfliege**. Die Maschenweite muss klein genug sein — fuer Moehrenfliege braucht es **1,3 mm**, fuer Kohlfliege **2 mm**, fuer Erdfloh **0,8 mm**. Standard-Kulturschutznetz mit 1,3 mm Maschen deckt fast alles ab."
+        "text": "Ein **engmaschiges, leichtes Netz oder Vlies** wird direkt nach der Aussaat oder Pflanzung über das Beet gelegt. Es laesst Licht, Luft und Regen durch, haelt aber **Insekten ab**. Wirksam gegen **[Moehrenfliege](wissen:schaedlinge:moehrenfliege), [Kohlweissling](wissen:schaedlinge:kohlweissling), [Erdfloh](wissen:schaedlinge:erdfloh), Lauchmotte, Zwiebelfliege, Kohlfliege**. Die Maschenweite muss klein genug sein — für Moehrenfliege braucht es **1,3 mm**, für Kohlfliege **2 mm**, für Erdfloh **0,8 mm**. Standard-Kulturschutznetz mit 1,3 mm Maschen deckt fast alles ab."
       },
       {
         "titel": "Anwendung",
-        "text": "**Sofort nach Aussaat oder Auspflanzung** auflegen, bevor irgendeine Fliege kommen kann. **Boden** muss schaedlingsfrei sein — das Netz schliesst Schaedlinge nicht aus, sondern ein, wenn Eier oder Puppen schon im Boden waren. **Raender mit Erde**, Brettern oder Steinen **dicht abschliessen** — sonst kriechen Schnecken oder fliegen Fliegen durch die Spalten. **Reichlich Spiel lassen**, damit das Netz mit der Pflanze wachsen kann — entweder direkt aufgelegt mit Reserve, oder ueber Boegen gespannt. **Bei Bluetenkulturen** (Kohl bluehend, Kuerbis, Gurke) abnehmen, wenn Bestaeubung gebraucht wird."
+        "text": "**Sofort nach Aussaat oder Auspflanzung** auflegen, bevor irgendeine Fliege kommen kann. **Boden** muss schaedlingsfrei sein — das Netz schliesst Schädlinge nicht aus, sondern ein, wenn Eier oder Puppen schon im Boden waren. **Raender mit Erde**, Brettern oder Steinen **dicht abschliessen** — sonst kriechen Schnecken oder fliegen Fliegen durch die Spalten. **Reichlich Spiel lassen**, damit das Netz mit der Pflanze wachsen kann — entweder direkt aufgelegt mit Reserve, oder über Boegen gespannt. **Bei Bluetenkulturen** (Kohl bluehend, Kürbis, Gurke) abnehmen, wenn Bestaeubung gebraucht wird."
       },
       {
         "titel": "Hinweise",
-        "text": "**Lebensdauer** von Qualitaetsnetz 5-10 Jahre, dann beginnt das UV-Licht zu zerstoeren. Im Winter trocken und dunkel lagern. **Beschriften** mit Datum und Maschenweite, damit man im naechsten Jahr weiss, wofuer es taugt. **Kein Plastik-Vlies** verwenden — das ist nicht atmungsaktiv, Wasser staut, Pilze breiten sich aus. **Vlies** (Frostschutz, Pflanzenfruehbeet) hat groessere Poren als Insektennetz — beide nicht verwechseln. Initialkosten 30-80 Euro pro 5x5 m, lohnt sich ueber Jahre."
+        "text": "**Lebensdauer** von Qualitaetsnetz 5-10 Jahre, dann beginnt das UV-Licht zu zerstoeren. Im Winter trocken und dunkel lagern. **Beschriften** mit Datum und Maschenweite, damit man im naechsten Jahr weiß, wofuer es taugt. **Kein Plastik-Vlies** verwenden — das ist nicht atmungsaktiv, Wasser staut, Pilze breiten sich aus. **Vlies** (Frostschutz, Pflanzenfruehbeet) hat groessere Poren als Insektennetz — beide nicht verwechseln. Initialkosten 30-80 Euro pro 5x5 m, lohnt sich über Jahre."
       }
     ],
     "verwandt": [
-      { "sektion": "schaedlinge", "eintrag": "moehrenfliege" },
-      { "sektion": "schaedlinge", "eintrag": "kohlweissling" },
-      { "sektion": "schaedlinge", "eintrag": "erdfloh" },
-      { "sektion": "praxis", "eintrag": "pflanzenschutz-natuerlich" }
+      {
+        "sektion": "schaedlinge",
+        "eintrag": "moehrenfliege"
+      },
+      {
+        "sektion": "schaedlinge",
+        "eintrag": "kohlweissling"
+      },
+      {
+        "sektion": "schaedlinge",
+        "eintrag": "erdfloh"
+      },
+      {
+        "sektion": "praxis",
+        "eintrag": "pflanzenschutz-natuerlich"
+      }
     ]
   },
   {
@@ -552,22 +804,34 @@
     "bloecke": [
       {
         "titel": "Idee",
-        "text": "**Schnecken bewegen sich kriechend** und koennen senkrechte Flaechen klettern. Doch wenn die obere Kante **nach aussen abgeknickt** ist, fallen sie zurueck. Der Schneckenzaun besteht aus verzinktem Stahlblech, 40 cm hoch, mit einer 4-5 cm breiten Schraege oben. Er **umgibt das Gemuesebeet als geschlossener Ring** — wenn auch nur ein Loch oder eine Pflanze ueberhaengt, ist das Tor offen. Die wirksamste Massnahme gegen Schnecken, vor allem die Spanische Wegschnecke."
+        "text": "**Schnecken bewegen sich kriechend** und koennen senkrechte Flaechen klettern. Doch wenn die obere Kante **nach aussen abgeknickt** ist, fallen sie zurueck. Der Schneckenzaun besteht aus verzinktem Stahlblech, 40 cm hoch, mit einer 4-5 cm breiten Schraege oben. Er **umgibt das Gemuesebeet als geschlossener Ring** — wenn auch nur ein Loch oder eine Pflanze ueberhaengt, ist das Tor offen. Die wirksamste Maßnahme gegen Schnecken, vor allem die Spanische Wegschnecke."
       },
       {
         "titel": "Aufbau",
-        "text": "**40 cm hohes Blech**, 30 cm tief im Boden eingegraben, 25 cm ueber dem Boden. Die **obere Kante mit 5 cm Schraege nach aussen** umgebogen. Ecken stabil — wenn Schnecken eine winzige Spalte finden, kommen sie durch. **Geschlossener Ring** um das Beet, kein Lueckenwerk. **Vor Pflanzung pruefen**, ob im Beet schon Schnecken sitzen oder Eier liegen — sonst sperrt man sie ein, statt aus. Eier (kleine weisse Perlen) im Boden finden sich unter Brettern und Steinen, die im Winter dort lagen."
+        "text": "**40 cm hohes Blech**, 30 cm tief im Boden eingegraben, 25 cm über dem Boden. Die **obere Kante mit 5 cm Schraege nach aussen** umgebogen. Ecken stabil — wenn Schnecken eine winzige Spalte finden, kommen sie durch. **Geschlossener Ring** um das Beet, kein Lueckenwerk. **Vor Pflanzung pruefen**, ob im Beet schon Schnecken sitzen oder Eier liegen — sonst sperrt man sie ein, statt aus. Eier (kleine weisse Perlen) im Boden finden sich unter Brettern und Steinen, die im Winter dort lagen."
       },
       {
         "titel": "Hinweise",
-        "text": "**Keine Pflanzen-Ueberhang** ueber den Zaun — eine ueberhaengende Tomatenblatt oder Kapuzinerkresse-Ranke wird zur Bruecke. **Regelmaessig pruefen**, Erde von der Aussenseite abkratzen, damit Schnecken nicht ueber Pflanzenreste klettern. **Pflanztiefe** beachten — wenn Schnecken durch den unverzinkten Boden eindringen koennen, ist der Zaun nutzlos. **Initialkosten** 5-10 Euro pro laufenden Meter, im Hochbeet einmal eingebaut hilft das Jahrzehnte. Auch in Kombination mit [Igel](wissen:schaedlinge:igel)-foerdernden Massnahmen — innen Zaun, drum herum Igel."
+        "text": "**Keine Pflanzen-Ueberhang** über den Zaun — eine ueberhaengende Tomatenblatt oder Kapuzinerkresse-Ranke wird zur Bruecke. **Regelmäßig pruefen**, Erde von der Aussenseite abkratzen, damit Schnecken nicht über Pflanzenreste klettern. **Pflanztiefe** beachten — wenn Schnecken durch den unverzinkten Boden eindringen koennen, ist der Zaun nutzlos. **Initialkosten** 5-10 Euro pro laufenden Meter, im Hochbeet einmal eingebaut hilft das Jahrzehnte. Auch in Kombination mit [Igel](wissen:schaedlinge:igel)-foerdernden Massnahmen — innen Zaun, drum herum Igel."
       }
     ],
     "verwandt": [
-      { "sektion": "schaedlinge", "eintrag": "schnecke" },
-      { "sektion": "schaedlinge", "eintrag": "igel" },
-      { "sektion": "schaedlinge", "eintrag": "kulturschutznetz" },
-      { "sektion": "praxis", "eintrag": "pflanzenschutz-natuerlich" }
+      {
+        "sektion": "schaedlinge",
+        "eintrag": "schnecke"
+      },
+      {
+        "sektion": "schaedlinge",
+        "eintrag": "igel"
+      },
+      {
+        "sektion": "schaedlinge",
+        "eintrag": "kulturschutznetz"
+      },
+      {
+        "sektion": "praxis",
+        "eintrag": "pflanzenschutz-natuerlich"
+      }
     ]
   },
   {
@@ -579,22 +843,34 @@
     "bloecke": [
       {
         "titel": "Idee",
-        "text": "Der **Kleine Frostspanner** (Operophtera brumata) und der **Grosse Frostspanner** sind Schmetterlinge, deren Weibchen **flugunfaehig** sind. Sie klettern im Spaetherbst (Oktober-Dezember) am Stamm hoch und legen Eier in die Knospen-Region. Im Fruehjahr schluepfen die gruenen **Spannerraupen**, die junge Blaetter und Bluetenknospen kahl fressen. Ein **Leimring** am Stamm fangt die Weibchen, bevor sie die Krone erreichen. Auch andere stammkletternde Schaedlinge wie Ameisen (die Blattlaeuse hochtragen) und Forleulen-Raupen werden gefangen."
+        "text": "Der **Kleine Frostspanner** (Operophtera brumata) und der **Grosse Frostspanner** sind Schmetterlinge, deren Weibchen **flugunfaehig** sind. Sie klettern im Spaetherbst (Oktober-Dezember) am Stamm hoch und legen Eier in die Knospen-Region. Im Frühjahr schluepfen die gruenen **Spannerraupen**, die junge Blaetter und Bluetenknospen kahl fressen. Ein **Leimring** am Stamm fangt die Weibchen, bevor sie die Krone erreichen. Auch andere stammkletternde Schädlinge wie Ameisen (die Blattlaeuse hochtragen) und Forleulen-Raupen werden gefangen."
       },
       {
         "titel": "Anwendung",
-        "text": "**September bis Maerz** anbringen, idealerweise vor dem ersten Frost. **Hoehe**: ca. 1 m ueber dem Boden, am glatten Stamm. **Glatten Untergrund schaffen**: rauhe Borke abkratzen, Risse mit Lehm oder Heuwickel verschliessen — sonst kriechen die Weibchen unter dem Ring durch. **Leimringe gibt es im Handel** als Papierband mit Leim, fertig zum Aufkleben. Alternativ wird Leim direkt auf eine Folie aufgetragen. **Regelmaessig pruefen**, alle 2-3 Wochen: zugeklebte Stellen abkratzen, bei Bedarf neue Schicht auftragen. **Im Maerz abnehmen**, damit Nuetzlinge wie Ohrwuermer nicht kleben bleiben."
+        "text": "**September bis März** anbringen, idealerweise vor dem ersten Frost. **Höhe**: ca. 1 m über dem Boden, am glatten Stamm. **Glatten Untergrund schaffen**: rauhe Borke abkratzen, Risse mit Lehm oder Heuwickel verschliessen — sonst kriechen die Weibchen unter dem Ring durch. **Leimringe gibt es im Handel** als Papierband mit Leim, fertig zum Aufkleben. Alternativ wird Leim direkt auf eine Folie aufgetragen. **Regelmäßig pruefen**, alle 2-3 Wochen: zugeklebte Stellen abkratzen, bei Bedarf neue Schicht auftragen. **Im März abnehmen**, damit Nuetzlinge wie Ohrwuermer nicht kleben bleiben."
       },
       {
         "titel": "Hinweise",
-        "text": "Leimringe **wirken nur, wenn rund herum geschlossen** — eine winzige Lueke macht den Ring nutzlos. **Vorsicht bei jungen Baeumen** mit duenner Rinde — Leim kann die Bastschicht schaedigen, deshalb erst Papier um den Stamm wickeln, dann Leim darauf. **Wirkung begrenzt** auf flugunfaehige Weibchen — fuer Apfelwickler oder Pflaumenwickler nutzlos, da deren Weibchen fliegen. Dort braucht es Pheromonfallen. Gegen [Voegel](wissen:schaedlinge:voegel-garten) als Frostspanner-Jaeger ist der Leimring eine ergaenzende, keine ersetzende Massnahme."
+        "text": "Leimringe **wirken nur, wenn rund herum geschlossen** — eine winzige Lueke macht den Ring nutzlos. **Vorsicht bei jungen Baeumen** mit duenner Rinde — Leim kann die Bastschicht schaedigen, deshalb erst Papier um den Stamm wickeln, dann Leim darauf. **Wirkung begrenzt** auf flugunfaehige Weibchen — für Apfelwickler oder Pflaumenwickler nutzlos, da deren Weibchen fliegen. Dort braucht es Pheromonfallen. Gegen [Voegel](wissen:schaedlinge:voegel-garten) als Frostspanner-Jaeger ist der Leimring eine ergaenzende, keine ersetzende Maßnahme."
       }
     ],
     "verwandt": [
-      { "sektion": "schaedlinge", "eintrag": "kohlweissling" },
-      { "sektion": "schaedlinge", "eintrag": "voegel-garten" },
-      { "sektion": "schaedlinge", "eintrag": "bacillus-thuringiensis" },
-      { "sektion": "praxis", "eintrag": "pflanzenschutz-natuerlich" }
+      {
+        "sektion": "schaedlinge",
+        "eintrag": "kohlweissling"
+      },
+      {
+        "sektion": "schaedlinge",
+        "eintrag": "voegel-garten"
+      },
+      {
+        "sektion": "schaedlinge",
+        "eintrag": "bacillus-thuringiensis"
+      },
+      {
+        "sektion": "praxis",
+        "eintrag": "pflanzenschutz-natuerlich"
+      }
     ]
   },
   {
@@ -602,7 +878,7 @@
     "name": "Bacillus thuringiensis",
     "untertitel": "Bt-Praeparate — biologisches Raupengift",
     "symbol": "🛡",
-    "kurz": "Ein Bodenbakterium, das ein Eiweiss bildet, das nur fuer Raupen toedlich ist — Bienen, Voegel, Saeugetiere und sogar viele Insekten bleiben unverletzt.",
+    "kurz": "Ein Bodenbakterium, das ein Eiweiss bildet, das nur für Raupen toedlich ist — Bienen, Voegel, Saeugetiere und sogar viele Insekten bleiben unverletzt.",
     "bloecke": [
       {
         "titel": "Idee",
@@ -614,14 +890,26 @@
       },
       {
         "titel": "Hinweise",
-        "text": "**Demeter zugelassen**, im Biolandbau Standard. **Nicht systemisch** — nur ueber Frassaufnahme, nicht durch Beruehrung. **Schmetterlingsraupen werden alle getroffen** — auch die der Tagpfauenauge auf [Brennnessel](pflanze:brennnessel) oder Schwalbenschwanz auf [Fenchel](pflanze:fenchel). Deshalb **gezielt** und nur an Kulturpflanzen anwenden, nie pauschal. Im **Vorratsbehaelter haltbar 2-3 Jahre** bei kuehler Lagerung. **Resistenz** durch jaehrliches Spritzen moeglich — deshalb mit anderen Massnahmen kombinieren wie [Kulturschutznetz](wissen:schaedlinge:kulturschutznetz) und [Schlupfwespen](wissen:schaedlinge:schlupfwespe)."
+        "text": "**Demeter zugelassen**, im Biolandbau Standard. **Nicht systemisch** — nur über Frassaufnahme, nicht durch Beruehrung. **Schmetterlingsraupen werden alle getroffen** — auch die der Tagpfauenauge auf [Brennnessel](pflanze:brennnessel) oder Schwalbenschwanz auf [Fenchel](pflanze:fenchel). Deshalb **gezielt** und nur an Kulturpflanzen anwenden, nie pauschal. Im **Vorratsbehaelter haltbar 2-3 Jahre** bei kuehler Lagerung. **Resistenz** durch jaehrliches Spritzen moeglich — deshalb mit anderen Massnahmen kombinieren wie [Kulturschutznetz](wissen:schaedlinge:kulturschutznetz) und [Schlupfwespen](wissen:schaedlinge:schlupfwespe)."
       }
     ],
     "verwandt": [
-      { "sektion": "schaedlinge", "eintrag": "kohlweissling" },
-      { "sektion": "schaedlinge", "eintrag": "kulturschutznetz" },
-      { "sektion": "schaedlinge", "eintrag": "schlupfwespe" },
-      { "sektion": "praxis", "eintrag": "pflanzenschutz-natuerlich" }
+      {
+        "sektion": "schaedlinge",
+        "eintrag": "kohlweissling"
+      },
+      {
+        "sektion": "schaedlinge",
+        "eintrag": "kulturschutznetz"
+      },
+      {
+        "sektion": "schaedlinge",
+        "eintrag": "schlupfwespe"
+      },
+      {
+        "sektion": "praxis",
+        "eintrag": "pflanzenschutz-natuerlich"
+      }
     ]
   },
   {
@@ -648,10 +936,21 @@
         "text": "Sobald **erste Flecken sichtbar**: befallene Blätter und Triebe sofort entfernen, **nicht in Kompost**, sondern in Restmüll. **Schachtelhalm-Brühe alle 3 Tage** weiter spritzen. Bei starkem Befall: ganze Pflanze raus, Erde 3 Jahre tomatenfrei lassen. **Kupferpräparate** wirken vorbeugend, dürfen aber im Biolandbau nur begrenzt eingesetzt werden — schädigen Bodenleben."
       }
     ],
-    "tags": ["pilzkrankheit", "tomate", "kartoffel", "feuchte"],
+    "tags": [
+      "pilzkrankheit",
+      "tomate",
+      "kartoffel",
+      "feuchte"
+    ],
     "verwandt": [
-      { "sektion": "schaedlinge", "eintrag": "schachtelhalm-bruehe" },
-      { "sektion": "schaedlinge", "eintrag": "mehltau" }
+      {
+        "sektion": "schaedlinge",
+        "eintrag": "schachtelhalm-brühe"
+      },
+      {
+        "sektion": "schaedlinge",
+        "eintrag": "mehltau"
+      }
     ]
   },
   {
@@ -674,11 +973,25 @@
         "text": "Befallene Blätter entfernen, **nicht kompostieren**. **Molke 1:9 verdünnt** alle 3 Tage spritzen (oben und unten). **[Brennnessel-Jauche](wissen:schaedlinge:brennnessel-jauche)** stärkt die Pflanze von innen. Bei starkem Befall: Backpulver-Lösung (1 TL auf 1 L Wasser + ein Tropfen Spülmittel) — wirkt durch pH-Verschiebung. Nicht in praller Sonne spritzen."
       }
     ],
-    "tags": ["pilzkrankheit", "gurke", "rose", "salat"],
+    "tags": [
+      "pilzkrankheit",
+      "gurke",
+      "rose",
+      "salat"
+    ],
     "verwandt": [
-      { "sektion": "schaedlinge", "eintrag": "schachtelhalm-bruehe" },
-      { "sektion": "schaedlinge", "eintrag": "brennnessel-jauche" },
-      { "sektion": "schaedlinge", "eintrag": "krautfaeule" }
+      {
+        "sektion": "schaedlinge",
+        "eintrag": "schachtelhalm-brühe"
+      },
+      {
+        "sektion": "schaedlinge",
+        "eintrag": "brennnessel-jauche"
+      },
+      {
+        "sektion": "schaedlinge",
+        "eintrag": "krautfaeule"
+      }
     ]
   }
 ]

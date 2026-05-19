@@ -67,13 +67,13 @@ export const SEKTIONEN: WissenSektion[] = [
   {
     id: 'sonne',
     name: 'Sonne',
-    beschreibung: 'Tropisches und siderisches Jahr, Sonnwenden, Praezession, Sonnenfleckenzyklus — die Sonne als Mass der Zeit.',
+    beschreibung: 'Tropisches und siderisches Jahr, Sonnwenden, Präzession, Sonnenfleckenzyklus — die Sonne als Maß der Zeit.',
     eintraege: sonneData as WissenEintrag[],
   },
   {
     id: 'kalender',
     name: 'Kalender',
-    beschreibung: 'Wie verschiedene Kulturen die Zeit gefasst haben. Gregorianisch, juedisch, islamisch, Hindu, chinesisch, Meton.',
+    beschreibung: 'Wie verschiedene Kulturen die Zeit gefasst haben. Gregorianisch, jüdisch, islamisch, Hindu, chinesisch, Meton.',
     eintraege: kalenderData as WissenEintrag[],
   },
   {
@@ -84,32 +84,32 @@ export const SEKTIONEN: WissenSektion[] = [
   },
   {
     id: 'bruecken',
-    name: 'Bruecken',
+    name: 'Brücken',
     beschreibung: 'Verbindendes Wissen — Maria Thuns Versuche, Mond-Pflanzen-Wirkung, lineare und zyklische Zeit, Astrologie und Astronomie, kosmische Rhythmen.',
     eintraege: brueckenData as WissenEintrag[],
   },
   {
     id: 'traditionen',
     name: 'Traditionen',
-    beschreibung: 'Garten-Schulen und Bewegungen, die den Anbau anders denken — Anastasia, Demeter, Permakultur, Huegelkultur, Forest Garden, Naturgarten, Maria Thun. Jede mit eigener Tiefe, Praxis und Geschichte.',
+    beschreibung: 'Garten-Schulen und Bewegungen, die den Anbau anders denken — Anastasia, Demeter, Permakultur, Hügelkultur, Forest Garden, Naturgarten, Maria Thun. Jede mit eigener Tiefe, Praxis und Geschichte.',
     eintraege: traditionenData as WissenEintrag[],
   },
   {
     id: 'praxis',
     name: 'Praxis',
-    beschreibung: 'Konkrete Techniken für den Garten — Mischkultur, Mulchen, Giessen, Jauchen, Pflanzenschutz, Mykorrhiza, Mikroorganismen. Was man tatsaechlich tut, mit Rezepten und Mengen.',
+    beschreibung: 'Konkrete Techniken für den Garten — Mischkultur, Mulchen, Gießen, Jauchen, Pflanzenschutz, Mykorrhiza, Mikroorganismen. Was man tatsächlich tut, mit Rezepten und Mengen.',
     eintraege: praxisData as WissenEintrag[],
   },
   {
     id: 'pilze',
     name: 'Pilze',
-    beschreibung: 'Pilze im Garten und auf dem Substrat — Mycel und Fruchtkoerper, Austernpilz und Shiitake, Pilzbeet und Strohballen. Symbiosen mit Pflanzen, das verborgene Netz unter der Erde.',
+    beschreibung: 'Pilze im Garten und auf dem Substrat — Mycel und Fruchtkörper, Austernpilz und Shiitake, Pilzbeet und Strohballen. Symbiosen mit Pflanzen, das verborgene Netz unter der Erde.',
     eintraege: pilzeData as WissenEintrag[],
   },
   {
     id: 'indoor',
     name: 'Indoor',
-    beschreibung: 'Garten unter Dach — Sprossen und Microgreens, Grow-Light und Hydrokultur, Indoor-Kraeuter, Klima im Topf. Was wachsen kann, wenn der Himmel zu weit ist.',
+    beschreibung: 'Garten unter Dach — Sprossen und Microgreens, Grow-Light und Hydrokultur, Indoor-Kräuter, Klima im Topf. Was wachsen kann, wenn der Himmel zu weit ist.',
     eintraege: indoorData as WissenEintrag[],
   },
   {
@@ -121,19 +121,19 @@ export const SEKTIONEN: WissenSektion[] = [
   {
     id: 'saatgut',
     name: 'Saatgut',
-    beschreibung: 'Das Korn der Wiederkehr — samenfeste Sorten, alte Kulturpflanzen, Vermehrung von Hand. Wie das Leben sich selbst erhaelt und wie wir es weitertragen. Dreschflegel, Arche Noah, ProSpecieRara, Open Source Seeds — die Hueter der Vielfalt.',
+    beschreibung: 'Das Korn der Wiederkehr — samenfeste Sorten, alte Kulturpflanzen, Vermehrung von Hand. Wie das Leben sich selbst erhält und wie wir es weitertragen. Dreschflegel, Arche Noah, ProSpecieRara, Open Source Seeds — die Hüter der Vielfalt.',
     eintraege: saatgutData as WissenEintrag[],
   },
   {
     id: 'schaedlinge',
-    name: 'Schaedlinge & Bekaempfung',
-    beschreibung: 'Wer kommt ungebeten — und wer hilft im Beet. Schaedlings-Portraits, Auszuege und Bruehen mit Rezept, Nuetzlinge zum Anlocken, mechanische Schutzmethoden. Vom Brennnessel-Sud bis zum Schneckenzaun.',
+    name: 'Schädlinge & Bekämpfung',
+    beschreibung: 'Wer kommt ungebeten — und wer hilft im Beet. Schädlings-Portraits, Auszüge und Brühen mit Rezept, Nützlinge zum Anlocken, mechanische Schutzmethoden. Vom Brennnessel-Sud bis zum Schneckenzaun.',
     eintraege: schaedlingeData as WissenEintrag[],
   },
   {
     id: 'gemeinschaft',
     name: 'Gemeinschaft',
-    beschreibung: 'Garten als Begegnung. Allmende, Stadtgaerten, Gemeinschaftsgaerten, Schulgaerten — wo Erde, Haende und Menschen zusammenkommen. Vom Kleingarten-Verein bis zum Permakultur-Hof.',
+    beschreibung: 'Garten als Begegnung. Allmende, Stadtgärten, Gemeinschaftsgärten, Schulgärten — wo Erde, Hände und Menschen zusammenkommen. Vom Kleingarten-Verein bis zum Permakultur-Hof.',
     eintraege: gemeinschaftData as WissenEintrag[],
   },
 ];

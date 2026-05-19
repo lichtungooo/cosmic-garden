@@ -13,17 +13,26 @@
       },
       {
         "titel": "Bedeutung",
-        "text": "Dies ist der Mondzyklus, den jeder mit blossem Auge sehen kann. Die alten Hochkulturen rechneten danach: Babylonier, Mayas, Inder, Hebraeer. Zwoelf solche Zyklen ergeben 354 Tage — elf weniger als das Sonnenjahr. Diese Differenz nennt man Epakte und ist der Grund fuer Schaltmonate in lunisolaren Kalendern."
+        "text": "Dies ist der Mondzyklus, den jeder mit blossem Auge sehen kann. Die alten Hochkulturen rechneten danach: Babylonier, Mayas, Inder, Hebraeer. Zwoelf solche Zyklen ergeben 354 Tage — elf weniger als das Sonnenjahr. Diese Differenz nennt man Epakte und ist der Grund für Schaltmonate in lunisolaren Kalendern."
       },
       {
         "titel": "Im Garten",
-        "text": "[Maria Thun](wissen:bruecken:maria-thun) hat beobachtet: zunehmender Mond zieht den Saft nach oben (Blattwachstum), abnehmender nach unten (Wurzelbildung). Aussaat zu zunehmendem Mond fuer Blatt- und Bluetenpflanzen, zu abnehmendem fuer Wurzelgemuese und Lagerware."
+        "text": "[Maria Thun](wissen:bruecken:maria-thun) hat beobachtet: zunehmender Mond zieht den Saft nach oben (Blattwachstum), abnehmender nach unten (Wurzelbildung). Aussaat zu zunehmendem Mond für Blatt- und Blütenpflanzen, zu abnehmendem für Wurzelgemüse und Lagerware."
       }
     ],
     "verwandt": [
-      { "sektion": "mond", "eintrag": "siderischer-monat" },
-      { "sektion": "bruecken", "eintrag": "mond-pflanzen" },
-      { "sektion": "bruecken", "eintrag": "maria-thun" }
+      {
+        "sektion": "mond",
+        "eintrag": "siderischer-monat"
+      },
+      {
+        "sektion": "bruecken",
+        "eintrag": "mond-pflanzen"
+      },
+      {
+        "sektion": "bruecken",
+        "eintrag": "maria-thun"
+      }
     ]
   },
   {
@@ -36,21 +45,30 @@
     "bloecke": [
       {
         "titel": "Astronomie",
-        "text": "27,3217 Tage fuer einen vollen Umlauf des Mondes um die Erde — gemessen an einem Fixstern. Pro Tag bewegt sich der Mond etwa 13 Grad weiter durch den Tierkreis. Daher wechselt er etwa alle 2,3 Tage in ein neues Zeichen."
+        "text": "27,3217 Tage für einen vollen Umlauf des Mondes um die Erde — gemessen an einem Fixstern. Pro Tag bewegt sich der Mond etwa 13 Grad weiter durch den Tierkreis. Daher wechselt er etwa alle 2,3 Tage in ein neues Zeichen."
       },
       {
         "titel": "Bedeutung",
-        "text": "Dieser Zyklus ist die Grundlage der biodynamischen [Maria-Thun](wissen:bruecken:maria-thun)-Aussaattage. In welchem Sternzeichen der Mond gerade steht, bestimmt den Tagestyp: Erd-Zeichen ([Stier](wissen:tierkreis:stier), [Jungfrau](wissen:tierkreis:jungfrau), [Steinbock](wissen:tierkreis:steinbock)) ergeben Wurzeltage, Wasser-Zeichen Blatttage, Luft-Zeichen Bluetentage, Feuer-Zeichen Fruchttage."
+        "text": "Dieser Zyklus ist die Grundlage der biodynamischen [Maria-Thun](wissen:bruecken:maria-thun)-Aussaattage. In welchem Sternzeichen der Mond gerade steht, bestimmt den Tagestyp: Erd-Zeichen ([Stier](wissen:tierkreis:stier), [Jungfrau](wissen:tierkreis:jungfrau), [Steinbock](wissen:tierkreis:steinbock)) ergeben Wurzeltage, Wasser-Zeichen Blatttage, Luft-Zeichen Blütentage, Feuer-Zeichen Fruchttage."
       },
       {
         "titel": "Im Garten",
-        "text": "Wenn man weiss, in welchem Zeichen der Mond steht, kennt man den Tagestyp. Ein Pflanzkalender (wie dieser) zeigt die siderische Mondposition — auch wenn keine Mondphase sichtbar waere. Innerhalb von 27 Tagen ist jeder Tagestyp etwa 6 mal aufgetreten."
+        "text": "Wenn man weiß, in welchem Zeichen der Mond steht, kennt man den Tagestyp. Ein Pflanzkalender (wie dieser) zeigt die siderische Mondposition — auch wenn keine Mondphase sichtbar waere. Innerhalb von 27 Tagen ist jeder Tagestyp etwa 6 mal aufgetreten."
       }
     ],
     "verwandt": [
-      { "sektion": "mond", "eintrag": "synodischer-monat" },
-      { "sektion": "bruecken", "eintrag": "maria-thun" },
-      { "sektion": "sonne", "eintrag": "praezession" }
+      {
+        "sektion": "mond",
+        "eintrag": "synodischer-monat"
+      },
+      {
+        "sektion": "bruecken",
+        "eintrag": "maria-thun"
+      },
+      {
+        "sektion": "sonne",
+        "eintrag": "praezession"
+      }
     ]
   },
   {
@@ -58,12 +76,12 @@
     "name": "Mondknoten",
     "untertitel": "Rahu und Ketu — die unsichtbaren Punkte",
     "symbol": "☊",
-    "kurz": "Die Schnittpunkte der Mondbahn mit der Ekliptik. Sperrnaechte fuer Aussaat.",
+    "kurz": "Die Schnittpunkte der Mondbahn mit der Ekliptik. Sperrnaechte für Aussaat.",
     "meta": {},
     "bloecke": [
       {
         "titel": "Astronomie",
-        "text": "Der Mond bewegt sich nicht genau in der Ekliptik (Sonnenbahn), sondern ist um etwa 5,1 Grad geneigt. An zwei Punkten kreuzt seine Bahn die Ekliptik: aufsteigender und absteigender Knoten. Diese Punkte wandern rueckwaerts durch den Tierkreis und vollenden ihren Umlauf in 18,6 Jahren — dem [Saros-Zyklus](wissen:mond:saros)."
+        "text": "Der Mond bewegt sich nicht genau in der Ekliptik (Sonnenbahn), sondern ist um etwa 5,1 Grad geneigt. An zwei Punkten kreuzt seine Bahn die Ekliptik: aufsteigender und absteigender Knoten. Diese Punkte wandern rückwärts durch den Tierkreis und vollenden ihren Umlauf in 18,6 Jahren — dem [Saros-Zyklus](wissen:mond:saros)."
       },
       {
         "titel": "Mythologie",
@@ -71,40 +89,58 @@
       },
       {
         "titel": "Im Garten",
-        "text": "[Maria Thun](wissen:bruecken:maria-thun) bezeichnet die Tage, an denen der Mond einen Knoten passiert (etwa alle 13,6 Tage), als 'ungeeignet' fuer Aussaat. Die Pflanzen wirken irritiert. Diese Sperrtage sind in der App mit dem Symbol ∅ markiert. Beobachten — pflanzen — Stille halten."
+        "text": "[Maria Thun](wissen:bruecken:maria-thun) bezeichnet die Tage, an denen der Mond einen Knoten passiert (etwa alle 13,6 Tage), als 'ungeeignet' für Aussaat. Die Pflanzen wirken irritiert. Diese Sperrtage sind in der App mit dem Symbol ∅ markiert. Beobachten — pflanzen — Stille halten."
       }
     ],
     "verwandt": [
-      { "sektion": "mond", "eintrag": "saros" },
-      { "sektion": "mond", "eintrag": "drakonitischer-monat" },
-      { "sektion": "bruecken", "eintrag": "maria-thun" }
+      {
+        "sektion": "mond",
+        "eintrag": "saros"
+      },
+      {
+        "sektion": "mond",
+        "eintrag": "drakonitischer-monat"
+      },
+      {
+        "sektion": "bruecken",
+        "eintrag": "maria-thun"
+      }
     ]
   },
   {
     "id": "aufsteigend-absteigend",
     "name": "Aufsteigender und absteigender Mond",
-    "untertitel": "Die Hoehe der Mondbahn im Tageslauf",
+    "untertitel": "Die Höhe der Mondbahn im Tageslauf",
     "symbol": "↕",
     "kurz": "Nicht zu verwechseln mit zu- und abnehmendem Mond. Eine ganz andere Bewegung.",
     "meta": {},
     "bloecke": [
       {
         "titel": "Astronomie",
-        "text": "Im Verlauf eines [siderischen Monats](wissen:mond:siderischer-monat) wandert der Mond vom suedlichsten Punkt seiner Bahn (im [Schuetzen](wissen:tierkreis:schuetze)) zum noerdlichsten (in den [Zwillingen](wissen:tierkreis:zwillinge)) und zurueck. Diese Bewegung von suedlich (tief) nach noerdlich (hoch) heisst **aufsteigender Mond** — etwa 14 Tage. Die umgekehrte Bewegung ist **absteigend**."
+        "text": "Im Verlauf eines [siderischen Monats](wissen:mond:siderischer-monat) wandert der Mond vom suedlichsten Punkt seiner Bahn (im [Schützen](wissen:tierkreis:schuetze)) zum noerdlichsten (in den [Zwillingen](wissen:tierkreis:zwillinge)) und zurueck. Diese Bewegung von suedlich (tief) nach noerdlich (hoch) heisst **aufsteigender Mond** — etwa 14 Tage. Die umgekehrte Bewegung ist **absteigend**."
       },
       {
         "titel": "Bedeutung",
-        "text": "Wahrnehmbar: ein aufsteigender Mond geht im Lauf der Tage immer hoeher am Himmel auf, ein absteigender immer tiefer. Bei aufsteigendem Mond fliesst der Saft in den Pflanzen nach oben — gute Zeit fuer Aussaat und Ernte oberirdischer Teile. Bei absteigendem Mond zieht es zurueck — gute Zeit fuer Pflanzen, Veredeln, Schneiden."
+        "text": "Wahrnehmbar: ein aufsteigender Mond geht im Lauf der Tage immer höher am Himmel auf, ein absteigender immer tiefer. Bei aufsteigendem Mond fließt der Saft in den Pflanzen nach oben — gute Zeit für Aussaat und Ernte oberirdischer Teile. Bei absteigendem Mond zieht es zurueck — gute Zeit für Pflanzen, Veredeln, Schneiden."
       },
       {
         "titel": "Im Garten",
-        "text": "Aufsteigend ([Schuetze](wissen:tierkreis:schuetze) bis [Zwillinge](wissen:tierkreis:zwillinge)): aussaeen, ernten was oberirdisch waechst. Absteigend (Zwillinge bis Schuetze): pflanzen, [veredeln](arbeit:veredeln-pfropfen), beschneiden, Wurzel ernten und einlagern. Diese Bewegung ist verschieden vom zu- und abnehmenden Mond (Mondphase) und ueberlagert sich mit ihm."
+        "text": "Aufsteigend ([Schütze](wissen:tierkreis:schuetze) bis [Zwillinge](wissen:tierkreis:zwillinge)): aussäen, ernten was oberirdisch waechst. Absteigend (Zwillinge bis Schütze): pflanzen, [veredeln](arbeit:veredeln-pfropfen), beschneiden, Wurzel ernten und einlagern. Diese Bewegung ist verschieden vom zu- und abnehmenden Mond (Mondphase) und ueberlagert sich mit ihm."
       }
     ],
     "verwandt": [
-      { "sektion": "bruecken", "eintrag": "maria-thun" },
-      { "sektion": "mond", "eintrag": "synodischer-monat" },
-      { "sektion": "traditionen", "eintrag": "sepp-holzer" }
+      {
+        "sektion": "bruecken",
+        "eintrag": "maria-thun"
+      },
+      {
+        "sektion": "mond",
+        "eintrag": "synodischer-monat"
+      },
+      {
+        "sektion": "traditionen",
+        "eintrag": "sepp-holzer"
+      }
     ]
   },
   {
@@ -125,13 +161,22 @@
       },
       {
         "titel": "Im Garten",
-        "text": "An Finsternistagen halten viele biodynamische Gaertner Stille — keine Aussaat, kein Ernten. Der Erdmagnetfeld-Einfluss waehrend einer Finsternis ist messbar. Beobachtungswert: wie verhalten sich Tiere und Pflanzen vor und waehrend einer Finsternis?"
+        "text": "An Finsternistagen halten viele biodynamische Gärtner Stille — keine Aussaat, kein Ernten. Der Erdmagnetfeld-Einfluss waehrend einer Finsternis ist messbar. Beobachtungswert: wie verhalten sich Tiere und Pflanzen vor und waehrend einer Finsternis?"
       }
     ],
     "verwandt": [
-      { "sektion": "mond", "eintrag": "mondknoten" },
-      { "sektion": "mond", "eintrag": "drakonitischer-monat" },
-      { "sektion": "kalender", "eintrag": "metonischer-zyklus" }
+      {
+        "sektion": "mond",
+        "eintrag": "mondknoten"
+      },
+      {
+        "sektion": "mond",
+        "eintrag": "drakonitischer-monat"
+      },
+      {
+        "sektion": "kalender",
+        "eintrag": "metonischer-zyklus"
+      }
     ]
   },
   {
@@ -144,7 +189,7 @@
     "bloecke": [
       {
         "titel": "Astronomie",
-        "text": "Die Mondbahn ist eine Ellipse mit der Erde im einen Brennpunkt. **Perigaeum** = Erdnaehe (etwa 363.300 km), **Apogaeum** = Erdferne (etwa 405.500 km). Differenz: 42.000 km. Der erdnaechste Vollmond eines Jahres wirkt im Bild bis zu 14% groesser als der erdfernste — daher 'Supermond'."
+        "text": "Die Mondbahn ist eine Ellipse mit der Erde im einen Brennpunkt. **Perigaeum** = Erdnaehe (etwa 363.300 km), **Apogaeum** = Erdferne (etwa 405.500 km). Differenz: 42.000 km. Der erdnaechste Vollmond eines Jahres wirkt im Bild bis zu 14% größer als der erdfernste — daher 'Supermond'."
       },
       {
         "titel": "Bedeutung",
@@ -152,12 +197,18 @@
       },
       {
         "titel": "Im Garten",
-        "text": "Beim Vollmond in Perigaeum-Naehe wird der Saftaufstieg in Pflanzen als besonders kraftvoll beobachtet. Gute Zeit fuer Aussaat von schwer keimendem Saatgut. Verschiedene biodynamische Schulen werten das unterschiedlich — [Maria Thun](wissen:bruecken:maria-thun) gibt der Sternzeichen-Position mehr Gewicht als Apogaeum/Perigaeum."
+        "text": "Beim Vollmond in Perigaeum-Nähe wird der Saftaufstieg in Pflanzen als besonders kraftvoll beobachtet. Gute Zeit für Aussaat von schwer keimendem Saatgut. Verschiedene biodynamische Schulen werten das unterschiedlich — [Maria Thun](wissen:bruecken:maria-thun) gibt der Sternzeichen-Position mehr Gewicht als Apogaeum/Perigaeum."
       }
     ],
     "verwandt": [
-      { "sektion": "mond", "eintrag": "synodischer-monat" },
-      { "sektion": "bruecken", "eintrag": "mond-pflanzen" }
+      {
+        "sektion": "mond",
+        "eintrag": "synodischer-monat"
+      },
+      {
+        "sektion": "bruecken",
+        "eintrag": "mond-pflanzen"
+      }
     ]
   },
   {
@@ -170,7 +221,7 @@
     "bloecke": [
       {
         "titel": "Astronomie",
-        "text": "27,2122 Tage von einem Mondknoten-Durchgang zum naechsten. Etwas kuerzer als der siderische Monat, weil die Knoten selbst rueckwaerts durch den Tierkreis wandern. Der Drache (drakon) — alte Bezeichnung fuer die Knoten — gibt diesem Zyklus den Namen."
+        "text": "27,2122 Tage von einem Mondknoten-Durchgang zum naechsten. Etwas kuerzer als der siderische Monat, weil die Knoten selbst rückwärts durch den Tierkreis wandern. Der Drache (drakon) — alte Bezeichnung für die Knoten — gibt diesem Zyklus den Namen."
       },
       {
         "titel": "Bedeutung",
@@ -178,12 +229,18 @@
       },
       {
         "titel": "Im Garten",
-        "text": "Der drakonitische Monat ist eher ein astronomischer Begriff — fuer den Gartenpraktiker zaehlen die Knotentage (alle 13,6 Tage), die als Pausen empfohlen sind."
+        "text": "Der drakonitische Monat ist eher ein astronomischer Begriff — für den Gartenpraktiker zaehlen die Knotentage (alle 13,6 Tage), die als Pausen empfohlen sind."
       }
     ],
     "verwandt": [
-      { "sektion": "mond", "eintrag": "mondknoten" },
-      { "sektion": "mond", "eintrag": "saros" }
+      {
+        "sektion": "mond",
+        "eintrag": "mondknoten"
+      },
+      {
+        "sektion": "mond",
+        "eintrag": "saros"
+      }
     ]
   }
 ]

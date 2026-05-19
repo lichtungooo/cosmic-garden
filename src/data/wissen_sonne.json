@@ -9,7 +9,7 @@
     "bloecke": [
       {
         "titel": "Astronomie",
-        "text": "365,2422 Tage von einer Fruehlings-Tagundnachtgleiche zur naechsten. Dies ist das Mass, an dem sich unser gregorianischer Kalender orientiert. Die Schaltjahr-Regel (alle 4 Jahre Schalttag, ausser Jahrhundertenden ohne 400-Teilbarkeit) gleicht den Bruchteil aus."
+        "text": "365,2422 Tage von einer Fruehlings-Tagundnachtgleiche zur naechsten. Dies ist das Maß, an dem sich unser gregorianischer Kalender orientiert. Die Schaltjahr-Regel (alle 4 Jahre Schalttag, außer Jahrhundertenden ohne 400-Teilbarkeit) gleicht den Bruchteil aus."
       },
       {
         "titel": "Bedeutung",
@@ -17,13 +17,22 @@
       },
       {
         "titel": "Im Garten",
-        "text": "Unsere [gregorianische](wissen:kalender:gregorianisch) Datierung ist tropisch — Sommeranfang, Schulferien, Aussaattermine — alles orientiert an [Sonnenwende und Tagundnachtgleiche](wissen:sonne:sonnwenden-tng). Praktisch fuer den Pflanzanbau, weil die Jahreszeiten stimmen, auch wenn die Sterne langsam wandern."
+        "text": "Unsere [gregorianische](wissen:kalender:gregorianisch) Datierung ist tropisch — Sommeranfang, Schulferien, Aussaattermine — alles orientiert an [Sonnenwende und Tagundnachtgleiche](wissen:sonne:sonnwenden-tng). Praktisch für den Pflanzanbau, weil die Jahreszeiten stimmen, auch wenn die Sterne langsam wandern."
       }
     ],
     "verwandt": [
-      { "sektion": "sonne", "eintrag": "sonnwenden-tng" },
-      { "sektion": "sonne", "eintrag": "praezession" },
-      { "sektion": "kalender", "eintrag": "gregorianisch" }
+      {
+        "sektion": "sonne",
+        "eintrag": "sonnwenden-tng"
+      },
+      {
+        "sektion": "sonne",
+        "eintrag": "praezession"
+      },
+      {
+        "sektion": "kalender",
+        "eintrag": "gregorianisch"
+      }
     ]
   },
   {
@@ -31,12 +40,12 @@
     "name": "Sonnwenden und Tagundnachtgleichen",
     "untertitel": "Die vier kosmischen Wendepunkte",
     "symbol": "⊙",
-    "kurz": "Sommer, Winter, Fruehling, Herbst — astronomisch definiert.",
+    "kurz": "Sommer, Winter, Frühling, Herbst — astronomisch definiert.",
     "meta": {},
     "bloecke": [
       {
         "titel": "Astronomie",
-        "text": "Die Erdachse ist gegen die Bahnebene um 23,5 Grad geneigt. Daher steht die Sonne im Laufe des Jahres ueber unterschiedlichen Breiten senkrecht im Zenit. **Sommersonnenwende** (~21.6.): Sonne ueber dem noerdlichen Wendekreis. **Wintersonnenwende** (~21.12.): suedlicher Wendekreis. **Tagundnachtgleichen** (~21.3., 22.9.): Sonne ueber dem Aequator, Tag und Nacht gleich lang."
+        "text": "Die Erdachse ist gegen die Bahnebene um 23,5 Grad geneigt. Daher steht die Sonne im Laufe des Jahres über unterschiedlichen Breiten senkrecht im Zenit. **Sommersonnenwende** (~21.6.): Sonne über dem noerdlichen Wendekreis. **Wintersonnenwende** (~21.12.): suedlicher Wendekreis. **Tagundnachtgleichen** (~21.3., 22.9.): Sonne über dem Aequator, Tag und Nacht gleich lang."
       },
       {
         "titel": "Bedeutung",
@@ -48,9 +57,18 @@
       }
     ],
     "verwandt": [
-      { "sektion": "sonne", "eintrag": "tropisches-jahr" },
-      { "sektion": "sonne", "eintrag": "sonnenhoechststand" },
-      { "sektion": "bruecken", "eintrag": "kosmische-rhythmen" }
+      {
+        "sektion": "sonne",
+        "eintrag": "tropisches-jahr"
+      },
+      {
+        "sektion": "sonne",
+        "eintrag": "sonnenhoechststand"
+      },
+      {
+        "sektion": "bruecken",
+        "eintrag": "kosmische-rhythmen"
+      }
     ]
   },
   {
@@ -63,7 +81,7 @@
     "bloecke": [
       {
         "titel": "Astronomie",
-        "text": "Die Erdachse bewegt sich wie ein Kreisel — ein voller Praezessions-Zyklus dauert etwa 25.770 Jahre. Dabei wandert der **Fruehlingspunkt** (der Schnittpunkt zwischen Ekliptik und Himmelsaequator) rueckwaerts durch den Tierkreis. Zur Zeit Christi war er im Sternbild [Widder](wissen:tierkreis:widder) — daher hiess dieser Tierkreis-Beginn 'Widder'. Heute liegt er in den [Fischen](wissen:tierkreis:fische), naehert sich dem [Wassermann](wissen:tierkreis:wassermann)."
+        "text": "Die Erdachse bewegt sich wie ein Kreisel — ein voller Praezessions-Zyklus dauert etwa 25.770 Jahre. Dabei wandert der **Fruehlingspunkt** (der Schnittpunkt zwischen Ekliptik und Himmelsaequator) rückwärts durch den Tierkreis. Zur Zeit Christi war er im Sternbild [Widder](wissen:tierkreis:widder) — daher hiess dieser Tierkreis-Beginn 'Widder'. Heute liegt er in den [Fischen](wissen:tierkreis:fische), naehert sich dem [Wassermann](wissen:tierkreis:wassermann)."
       },
       {
         "titel": "Bedeutung",
@@ -71,13 +89,22 @@
       },
       {
         "titel": "Im Garten",
-        "text": "Fuer die Garten-Beobachtung zaehlt der siderische Tierkreis — wo der Mond tatsaechlich am Himmel steht. Daher arbeitet unsere App siderisch mit Lahiri-Ayanamsa. [Maria Thun](wissen:bruecken:maria-thun) beobachtete am echten Sternbild, nicht am abstrakten Tierkreis-Zeichen."
+        "text": "Für die Garten-Beobachtung zaehlt der siderische Tierkreis — wo der Mond tatsaechlich am Himmel steht. Daher arbeitet unsere App siderisch mit Lahiri-Ayanamsa. [Maria Thun](wissen:bruecken:maria-thun) beobachtete am echten Sternbild, nicht am abstrakten Tierkreis-Zeichen."
       }
     ],
     "verwandt": [
-      { "sektion": "bruecken", "eintrag": "astrologie-astronomie" },
-      { "sektion": "tierkreis", "eintrag": "widder" },
-      { "sektion": "tierkreis", "eintrag": "fische" }
+      {
+        "sektion": "bruecken",
+        "eintrag": "astrologie-astronomie"
+      },
+      {
+        "sektion": "tierkreis",
+        "eintrag": "widder"
+      },
+      {
+        "sektion": "tierkreis",
+        "eintrag": "fische"
+      }
     ]
   },
   {
@@ -102,8 +129,14 @@
       }
     ],
     "verwandt": [
-      { "sektion": "bruecken", "eintrag": "kosmische-rhythmen" },
-      { "sektion": "bruecken", "eintrag": "mond-pflanzen" }
+      {
+        "sektion": "bruecken",
+        "eintrag": "kosmische-rhythmen"
+      },
+      {
+        "sektion": "bruecken",
+        "eintrag": "mond-pflanzen"
+      }
     ]
   },
   {
@@ -116,7 +149,7 @@
     "bloecke": [
       {
         "titel": "Astronomie",
-        "text": "Der **wahre Mittag** ist der Moment, in dem die Sonne den hoechsten Punkt am Tageshimmel erreicht — wenn sie genau im Sueden steht (auf der Nordhalbkugel). Wegen Zeitzonen und Sommerzeit liegt das selten genau bei 12 Uhr Uhrzeit. In Kassel im Juni z.B. ist der wahre Mittag um 13:20 MESZ — die Sonne erreicht dann etwa 62 Grad Hoehe."
+        "text": "Der **wahre Mittag** ist der Moment, in dem die Sonne den hoechsten Punkt am Tageshimmel erreicht — wenn sie genau im Süden steht (auf der Nordhalbkugel). Wegen Zeitzonen und Sommerzeit liegt das selten genau bei 12 Uhr Uhrzeit. In Kassel im Juni z.B. ist der wahre Mittag um 13:20 MESZ — die Sonne erreicht dann etwa 62 Grad Höhe."
       },
       {
         "titel": "Bedeutung",
@@ -128,8 +161,14 @@
       }
     ],
     "verwandt": [
-      { "sektion": "sonne", "eintrag": "sonnwenden-tng" },
-      { "sektion": "sonne", "eintrag": "tropisches-jahr" }
+      {
+        "sektion": "sonne",
+        "eintrag": "sonnwenden-tng"
+      },
+      {
+        "sektion": "sonne",
+        "eintrag": "tropisches-jahr"
+      }
     ]
   }
 ]

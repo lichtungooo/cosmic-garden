@@ -20,7 +20,7 @@ const GRUPPEN_LABEL: Record<string, string> = {
   schule:       'Garten-Schule',
   maya:         'Maya-Kalender',
   astrologie:   'Astrologie',
-  schaedling:   'Schaedlinge',
+  schaedling:   'Schädlinge',
   krankheit:    'Krankheiten',
   wildpflanze:  'Wildpflanze',
   mittel:       'Mittel',

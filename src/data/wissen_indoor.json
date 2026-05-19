@@ -4,36 +4,48 @@
     "name": "Indoor-Anbau",
     "untertitel": "Wachsen ohne Garten",
     "symbol": "🏠",
-    "kurz": "Fensterbank, Regal, Kammer — vier Quadratmeter geben Sprossen, Kraeuter, Salat das ganze Jahr.",
+    "kurz": "Fensterbank, Regal, Kammer — vier Quadratmeter geben Sprossen, Kräuter, Salat das ganze Jahr.",
     "bloecke": [
       {
         "titel": "Warum indoor",
-        "text": "Indoor-Anbau ist die Antwort auf drei Fragen: **wenig Platz**, **lange Winter**, **frische Naehrstoffe taeglich**. In Wohnung oder Keller waechst, was draussen Pause hat — Salat im Januar, Basilikum im Maerz, Sprossen jederzeit. Wer im Winter sein eigenes Gruen erntet, holt sich **lebendige Vitamine**, die kein Supermarkt mehr liefert. Die japanische Tradition kennt Indoor-Sprossen seit Jahrhunderten, in den USA hat Masanobu Fukuoka und spaeter die *Sprouting*-Bewegung die Praxis verbreitet."
+        "text": "Indoor-Anbau ist die Antwort auf drei Fragen: **wenig Platz**, **lange Winter**, **frische Nährstoffe taeglich**. In Wohnung oder Keller waechst, was draußen Pause hat — Salat im Januar, Basilikum im März, Sprossen jederzeit. Wer im Winter sein eigenes Gruen erntet, holt sich **lebendige Vitamine**, die kein Supermarkt mehr liefert. Die japanische Tradition kennt Indoor-Sprossen seit Jahrhunderten, in den USA hat Masanobu Fukuoka und spaeter die *Sprouting*-Bewegung die Praxis verbreitet."
       },
       {
         "titel": "Was indoor gut wird",
-        "text": "**Sprossen** (Mungo, Linse, Alfalfa) — sieben Tage von der Saat zum Teller. **Microgreens** (Sonnenblume, Erbse, Brokkoli) — zwei Wochen. **Kraeuter** (Basilikum, Petersilie, Schnittlauch, Thymian) — dauerhaft auf der Fensterbank. **Salate** (Pflueck-, Asia-Salate) — schnelles Wachstum. **Kleine Tomaten** (Cocktail-, Hagebutten-Sorten) — mit Grow-Light moeglich. **Chili und Paprika** — der Klassiker fuer Indoor-Gaertner."
+        "text": "**Sprossen** (Mungo, Linse, Alfalfa) — sieben Tage von der Saat zum Teller. **Microgreens** (Sonnenblume, Erbse, Brokkoli) — zwei Wochen. **Kräuter** (Basilikum, Petersilie, Schnittlauch, Thymian) — dauerhaft auf der Fensterbank. **Salate** (Pflueck-, Asia-Salate) — schnelles Wachstum. **Kleine Tomaten** (Cocktail-, Hagebutten-Sorten) — mit Grow-Light moeglich. **Chili und Paprika** — der Klassiker für Indoor-Gärtner."
       },
       {
         "titel": "Was indoor schwer wird",
-        "text": "**Wurzelgemuese** ([Moehre](pflanze:moehre), Pastinake, Rote Bete) braucht tiefe Toepfe und viel Geduld — fuer den Wohn-Indoor wenig sinnvoll. **Mais, Kuerbis, Zucchini** sind zu gross und zu hungrig. **Kohl** braucht Kaeltephase. **Kartoffel** geht in groesseren Saecken, ist aber Aufwand. Faustregel: Was klein bleibt, kurze Kulturzeit hat oder als Jungpflanze geerntet wird, ist indoor-tauglich. Was sich ausbreitet oder lange braucht, gehoert nach draussen."
+        "text": "**Wurzelgemüse** ([Möhre](pflanze:moehre), Pastinake, Rote Bete) braucht tiefe Töpfe und viel Geduld — für den Wohn-Indoor wenig sinnvoll. **Mais, Kürbis, Zucchini** sind zu groß und zu hungrig. **Kohl** braucht Kaeltephase. **Kartoffel** geht in größeren Saecken, ist aber Aufwand. Faustregel: Was klein bleibt, kurze Kulturzeit hat oder als Jungpflanze geerntet wird, ist indoor-tauglich. Was sich ausbreitet oder lange braucht, gehoert nach draußen."
       },
       {
         "titel": "Drei Schichten",
-        "text": "Indoor-Anbau organisiert sich in drei Schichten. **Schicht 1: passiv** — Fensterbank mit Suedfenster, kein Strom, Pflanzen erleben das natuerliche Licht. Salat, Kraeuter, Sprossen. **Schicht 2: leichtes Setup** — Regal mit LED-Roehre (siehe [Grow-Light](wissen:indoor:grow-light-licht)), feste Lichtzeiten, kleiner Ventilator. Salate ganzjaehrig, Microgreens, kleine Tomaten. **Schicht 3: vollausgebaut** — eigene Kammer mit [Hydrokultur](wissen:indoor:hydrokultur), Klimasteuerung, eigene Luftfeuchte. Ganzjaehrige Eigenversorgung."
+        "text": "Indoor-Anbau organisiert sich in drei Schichten. **Schicht 1: passiv** — Fensterbank mit Suedfenster, kein Strom, Pflanzen erleben das natuerliche Licht. Salat, Kräuter, Sprossen. **Schicht 2: leichtes Setup** — Regal mit LED-Roehre (siehe [Grow-Light](wissen:indoor:grow-light-licht)), feste Lichtzeiten, kleiner Ventilator. Salate ganzjaehrig, Microgreens, kleine Tomaten. **Schicht 3: vollausgebaut** — eigene Kammer mit [Hydrokultur](wissen:indoor:hydrokultur), Klimasteuerung, eigene Luftfeuchte. Ganzjaehrige Eigenversorgung."
       }
     ],
     "verwandt": [
-      { "sektion": "indoor", "eintrag": "grow-light-licht" },
-      { "sektion": "indoor", "eintrag": "sprossen-zucht" },
-      { "sektion": "indoor", "eintrag": "microgreens" },
-      { "sektion": "indoor", "eintrag": "indoor-klima" }
+      {
+        "sektion": "indoor",
+        "eintrag": "grow-light-licht"
+      },
+      {
+        "sektion": "indoor",
+        "eintrag": "sprossen-zucht"
+      },
+      {
+        "sektion": "indoor",
+        "eintrag": "microgreens"
+      },
+      {
+        "sektion": "indoor",
+        "eintrag": "indoor-klima"
+      }
     ]
   },
   {
     "id": "grow-light-licht",
     "name": "Grow-Light und Licht",
-    "untertitel": "Kunstsonne fuer das Pflanzenherz",
+    "untertitel": "Kunstsonne für das Pflanzenherz",
     "symbol": "💡",
     "kurz": "LED, Spektrum, Stundenplan — das richtige Licht ersetzt die Sommersonne und laesst auch im Dezember Salat wachsen.",
     "bloecke": [
@@ -43,21 +55,30 @@
       },
       {
         "titel": "Lampentypen im Vergleich",
-        "text": "**Gluehbirne**: ungeeignet, zu viel Waerme, falsches Spektrum. **Leuchtstoffroehre T5**: gute, guenstige Loesung fuer Sprossen, Microgreens und Anzucht — kaltweiss (6500 K) wirkt blaulastig. **LED**: heute Standard. **Vollspektrum-LEDs** mit 3000-4000 K plus zusaetzlichem Rot decken die meisten Beduerfnisse. **Quantum Boards** und **Strip-Lichter** verteilen Licht gleichmaessig. **Watt pro Quadratmeter**: 150-250 W LED reichen fuer Vegetatives, 300-500 W fuer Fruechte (Tomate, Chili)."
+        "text": "**Gluehbirne**: ungeeignet, zu viel Waerme, falsches Spektrum. **Leuchtstoffroehre T5**: gute, guenstige Loesung für Sprossen, Microgreens und Anzucht — kaltweiss (6500 K) wirkt blaulastig. **LED**: heute Standard. **Vollspektrum-LEDs** mit 3000-4000 K plus zusaetzlichem Rot decken die meisten Beduerfnisse. **Quantum Boards** und **Strip-Lichter** verteilen Licht gleichmaessig. **Watt pro Quadratmeter**: 150-250 W LED reichen für Vegetatives, 300-500 W für Fruechte (Tomate, Chili)."
       },
       {
         "titel": "Stundenplan je Pflanzphase",
-        "text": "**Sprossen und Microgreens**: 12-14 Stunden, blaulastig. **Salat und Kraeuter**: 14-16 Stunden, ausgewogenes Spektrum. **Vegetative Phase** (Tomate, Chili klein): **18 Stunden**, blaulastig. **Bluete und Frucht**: **12 Stunden** (so simuliert man Kurztag-Bedingungen), rotlastig. **Wichtig**: Pflanzen brauchen auch Dunkelheit. Mindestens **6 Stunden ohne Licht** am Tag, sonst stoppt der Stoffwechsel. Eine **Zeitschaltuhr** ist die wichtigste Anschaffung neben der Lampe."
+        "text": "**Sprossen und Microgreens**: 12-14 Stunden, blaulastig. **Salat und Kräuter**: 14-16 Stunden, ausgewogenes Spektrum. **Vegetative Phase** (Tomate, Chili klein): **18 Stunden**, blaulastig. **Blüte und Frucht**: **12 Stunden** (so simuliert man Kurztag-Bedingungen), rotlastig. **Wichtig**: Pflanzen brauchen auch Dunkelheit. Mindestens **6 Stunden ohne Licht** am Tag, sonst stoppt der Stoffwechsel. Eine **Zeitschaltuhr** ist die wichtigste Anschaffung neben der Lampe."
       },
       {
-        "titel": "DLI — das Tageslicht-Mass",
-        "text": "**DLI (Daily Light Integral)** misst, wie viel Licht eine Pflanze ueber 24 Stunden bekommt — in mol/m2/Tag. **Salat braucht 10-14 DLI**, **Kraeuter 14-18 DLI**, **Tomate 20-30 DLI**, **Sprossen reichen 5-8 DLI**. Wer eine PAR-Messung scheut, faehrt mit dieser Faustregel gut: **Hand 30 cm unter die Lampe halten — spuere ich Waerme?** Wenn ja, ist die Lampe zu nah. **Sehe ich keinen Schatten der Hand?** Dann zu schwach. Pflanzen sagen es auch: zu wenig Licht — lange, helle Triebe (Etiolement). Zu viel Licht — verbrannte Blattspitzen, gelbe Flecken."
+        "titel": "DLI — das Tageslicht-Maß",
+        "text": "**DLI (Daily Light Integral)** misst, wie viel Licht eine Pflanze über 24 Stunden bekommt — in mol/m2/Tag. **Salat braucht 10-14 DLI**, **Kräuter 14-18 DLI**, **Tomate 20-30 DLI**, **Sprossen reichen 5-8 DLI**. Wer eine PAR-Messung scheut, fährt mit dieser Faustregel gut: **Hand 30 cm unter die Lampe halten — spuere ich Waerme?** Wenn ja, ist die Lampe zu nah. **Sehe ich keinen Schatten der Hand?** Dann zu schwach. Pflanzen sagen es auch: zu wenig Licht — lange, helle Triebe (Etiolement). Zu viel Licht — verbrannte Blattspitzen, gelbe Flecken."
       }
     ],
     "verwandt": [
-      { "sektion": "indoor", "eintrag": "indoor-grundlagen" },
-      { "sektion": "indoor", "eintrag": "hell-dunkelkeimer-tief" },
-      { "sektion": "indoor", "eintrag": "indoor-klima" }
+      {
+        "sektion": "indoor",
+        "eintrag": "indoor-grundlagen"
+      },
+      {
+        "sektion": "indoor",
+        "eintrag": "hell-dunkelkeimer-tief"
+      },
+      {
+        "sektion": "indoor",
+        "eintrag": "indoor-klima"
+      }
     ]
   },
   {
@@ -69,25 +90,34 @@
     "bloecke": [
       {
         "titel": "Das Prinzip",
-        "text": "Pflanzen geben ueber den **Lichtschalter Phytochrom** an, wann der Samen keimen soll. **Lichtkeimer** brauchen Tageslicht, das durch eine duenne Erdschicht dringt — kleine Samen, die in der Natur oben auf dem Boden landen. **Dunkelkeimer** wollen feste Erddeckung — meist groessere Samen, die sich durch Tiere oder Wind tief vergraben. **Indifferente Keimer** keimen unter beiden Bedingungen. Wer den Typ kennt, weiss, **wie tief** der Samen in die Erde kommt: Lichtkeimer nur andruecken, Dunkelkeimer fingertief stecken. Die App verwendet das Feld `keimerTyp` fuer jede Pflanze."
+        "text": "Pflanzen geben über den **Lichtschalter Phytochrom** an, wann der Samen keimen soll. **Lichtkeimer** brauchen Tageslicht, das durch eine duenne Erdschicht dringt — kleine Samen, die in der Natur oben auf dem Boden landen. **Dunkelkeimer** wollen feste Erddeckung — meist groessere Samen, die sich durch Tiere oder Wind tief vergraben. **Indifferente Keimer** keimen unter beiden Bedingungen. Wer den Typ kennt, weiß, **wie tief** der Samen in die Erde kommt: Lichtkeimer nur andruecken, Dunkelkeimer fingertief stecken. Die App verwendet das Feld `keimerTyp` für jede Pflanze."
       },
       {
         "titel": "Lichtkeimer",
-        "text": "**Salate** (alle Sorten, [Kopfsalat](pflanze:kopfsalat) vorn dabei) — sofort an, nur 0,5 cm Erde druecken. **Basilikum**, **Kamille**, **Petunie**, **Loewenmaeulchen**, **Erdbeere**, **Mohn**, **Karotte** (sehr leicht). **Sellerie** und **Dill** ebenfalls. **Tipp**: Saatgut feucht ansaeen, nicht zudecken, mit Glasplatte oder Klarsichtfolie abdecken — so bleibt Feuchte ohne Erddeckung. Lichtkeimer keimen oft in 4-10 Tagen, brauchen aber konstante Feuchte."
+        "text": "**Salate** (alle Sorten, [Kopfsalat](pflanze:kopfsalat) vorn dabei) — sofort an, nur 0,5 cm Erde druecken. **Basilikum**, **Kamille**, **Petunie**, **Löwenmäulchen**, **Erdbeere**, **Mohn**, **Karotte** (sehr leicht). **Sellerie** und **Dill** ebenfalls. **Tipp**: Saatgut feucht ansaeen, nicht zudecken, mit Glasplatte oder Klarsichtfolie abdecken — so bleibt Feuchte ohne Erddeckung. Lichtkeimer keimen oft in 4-10 Tagen, brauchen aber konstante Feuchte."
       },
       {
         "titel": "Dunkelkeimer",
-        "text": "**Petersilie** — der klassische Dunkelkeimer, braucht 2-4 Wochen, dunkel und feucht halten. **Koriander**, **Kerbel**, **Kresse** (in dicker Schicht). **Bohne, Erbse, Kuerbis, Zucchini, Mais** — alle Samen mit grossem Korn, fingertief gesteckt. **Tagetes**, **Stiefmuetterchen**, **Phacelia**, **Schwarzkuemmel**. **Zwiebel und Lauch** moegen es ebenfalls dunkel. Faustregel: **Saattiefe = doppelter Korndurchmesser**, dann liegt der Dunkelkeimer richtig."
+        "text": "**Petersilie** — der klassische Dunkelkeimer, braucht 2-4 Wochen, dunkel und feucht halten. **Koriander**, **Kerbel**, **Kresse** (in dicker Schicht). **Bohne, Erbse, Kürbis, Zucchini, Mais** — alle Samen mit grossem Korn, fingertief gesteckt. **Tagetes**, **Stiefmuetterchen**, **Phacelia**, **Schwarzkuemmel**. **Zwiebel und Lauch** moegen es ebenfalls dunkel. Faustregel: **Saattiefe = doppelter Korndurchmesser**, dann liegt der Dunkelkeimer richtig."
       },
       {
         "titel": "Indifferente und Sonderfaelle",
-        "text": "**Tomate** und **Chili** — indifferent, keimen warm (22-26 Grad) in 7-14 Tagen, leichte Erdschicht (0,5-1 cm). **Gurke** und **Aubergine** ebenso. **Kohlgewaechse**, **Radieschen**, **Rucola** — indifferent, sehr schnell (3-5 Tage). **Sonderfaelle**: **Kaltkeimer** wie Baerlauch, Lavendel, Eisenhut brauchen **eine Frostperiode** (Stratifikation), bevor sie keimen. Samen 4-8 Wochen feucht in den Kuehlschrank, dann aussaen — die Natur macht das im Winter draussen. Im Indoor-Setup ist der Kuehlschrank die abgekuerzte Winterzeit."
+        "text": "**Tomate** und **Chili** — indifferent, keimen warm (22-26 Grad) in 7-14 Tagen, leichte Erdschicht (0,5-1 cm). **Gurke** und **Aubergine** ebenso. **Kohlgewaechse**, **Radieschen**, **Rucola** — indifferent, sehr schnell (3-5 Tage). **Sonderfaelle**: **Kaltkeimer** wie Baerlauch, Lavendel, Eisenhut brauchen **eine Frostperiode** (Stratifikation), bevor sie keimen. Samen 4-8 Wochen feucht in den Kuehlschrank, dann aussaen — die Natur macht das im Winter draußen. Im Indoor-Setup ist der Kuehlschrank die abgekuerzte Winterzeit."
       }
     ],
     "verwandt": [
-      { "sektion": "indoor", "eintrag": "indoor-grundlagen" },
-      { "sektion": "indoor", "eintrag": "grow-light-licht" },
-      { "sektion": "indoor", "eintrag": "sprossen-zucht" }
+      {
+        "sektion": "indoor",
+        "eintrag": "indoor-grundlagen"
+      },
+      {
+        "sektion": "indoor",
+        "eintrag": "grow-light-licht"
+      },
+      {
+        "sektion": "indoor",
+        "eintrag": "sprossen-zucht"
+      }
     ]
   },
   {
@@ -95,59 +125,77 @@
     "name": "Sprossen-Zucht",
     "untertitel": "Drei Tage von Korn zu Mahlzeit",
     "symbol": "🌱",
-    "kurz": "Mungo, Linse, Kresse — wer Sprossen zieht, hat die schnellste Ernte der Welt direkt in der Kueche.",
+    "kurz": "Mungo, Linse, Kresse — wer Sprossen zieht, hat die schnellste Ernte der Welt direkt in der Küche.",
     "bloecke": [
       {
         "titel": "Was Sprossen sind",
-        "text": "Eine **Sprosse** ist das gekeimte Samenkorn am Anfang seines Lebens — Wurzelspitze plus erste Faden-Wurzel, manchmal Keimblaetter. Sie ist **konzentriertes Leben**: das Korn lagert Naehrstoffe fuer den ersten Wachstumsschub, beim Keimen werden Enzyme aktiviert, **Vitamine vervielfachen sich**, Eiweisse werden aufgeschluesselt. Sprossen sind eine der **dichtesten Nahrungsquellen**, die wir kennen. In Japan, China und im arabischen Raum hat die Sprossenkueche eine Jahrtausende-Tradition."
+        "text": "Eine **Sprosse** ist das gekeimte Samenkorn am Anfang seines Lebens — Wurzelspitze plus erste Faden-Wurzel, manchmal Keimblaetter. Sie ist **konzentriertes Leben**: das Korn lagert Nährstoffe für den ersten Wachstumsschub, beim Keimen werden Enzyme aktiviert, **Vitamine vervielfachen sich**, Eiweisse werden aufgeschluesselt. Sprossen sind eine der **dichtesten Nahrungsquellen**, die wir kennen. In Japan, China und im arabischen Raum hat die Sprossenkueche eine Jahrtausende-Tradition."
       },
       {
         "titel": "Die einfachste Methode",
-        "text": "Was du brauchst: **ein Einmachglas**, **ein Stueck Gaze oder Stoff**, **ein Gummiband**. So gehts: 2-3 Esloeffel Saat ins Glas (z.B. **Mungobohnen**, **Linsen**, **Alfalfa**, **Brokkoli**), mit Wasser bedecken, 8-12 Stunden einweichen. Wasser abgiessen, Stoff drueberspannen, **schraeg ueber Kopf stellen** (damit Rest-Wasser ablaeuft). **Zweimal taeglich spuelen** — frisches Wasser rein, schwenken, wieder ablaufen. Nach **3-7 Tagen** sind die Sprossen erntereif. Im Kuehlschrank halten sie 5 Tage."
+        "text": "Was du brauchst: **ein Einmachglas**, **ein Stück Gaze oder Stoff**, **ein Gummiband**. So gehts: 2-3 Esloeffel Saat ins Glas (z.B. **Mungobohnen**, **Linsen**, **Alfalfa**, **Brokkoli**), mit Wasser bedecken, 8-12 Stunden einweichen. Wasser abgiessen, Stoff drueberspannen, **schraeg über Kopf stellen** (damit Rest-Wasser ablaeuft). **Zweimal taeglich spuelen** — frisches Wasser rein, schwenken, wieder ablaufen. Nach **3-7 Tagen** sind die Sprossen erntereif. Im Kuehlschrank halten sie 5 Tage."
       },
       {
-        "titel": "Welche Saat fuer welche Sprosse",
-        "text": "**Mungo (Bohnensprossen, 4-5 Tage)** — der Klassiker der asiatischen Kueche, dick und knackig. **Linse (3-4 Tage)** — mild, leicht erdig, mit kurzer Wurzelspitze geerntet. **Kichererbse (4-5 Tage)** — wuerziger, fuer Salate. **Alfalfa (5-7 Tage)** — fein, leicht nussig, klassisches Brot-Topping. **Brokkoli- und Senf-Sprossen (4-5 Tage)** — scharf, gesundheitsfoerdernd (Sulforaphan). **Kresse (5-7 Tage, auf Watte/Stoff statt im Glas)** — wuerzig, Klassiker fuer Kinderzucht."
+        "titel": "Welche Saat für welche Sprosse",
+        "text": "**Mungo (Bohnensprossen, 4-5 Tage)** — der Klassiker der asiatischen Küche, dick und knackig. **Linse (3-4 Tage)** — mild, leicht erdig, mit kurzer Wurzelspitze geerntet. **Kichererbse (4-5 Tage)** — wuerziger, für Salate. **Alfalfa (5-7 Tage)** — fein, leicht nussig, klassisches Brot-Topping. **Brokkoli- und Senf-Sprossen (4-5 Tage)** — scharf, gesundheitsfoerdernd (Sulforaphan). **Kresse (5-7 Tage, auf Watte/Stoff statt im Glas)** — wuerzig, Klassiker für Kinderzucht."
       },
       {
         "titel": "Hinweise und Hygiene",
-        "text": "Sprossen sind **feuchtwarm** — perfekte Bedingungen auch fuer Bakterien. Vier Regeln: **Spuele regelmaessig** (2-3x am Tag), **lasse Wasser komplett ablaufen** (Staunaesse ist toedlich), **achte auf Geruch** (riecht muffig oder sauer — wegwerfen), **kaufe Saatgut speziell fuer Sprossenzucht** (im Handel als 'keimfaehig fuer Sprossen' deklariert). Sprossengeraete mit Etagen sind bequem, ein **Einmachglas reicht** fuer den Anfang. Schwangere und Immunschwache essen Sprossen nur gegart — der EHEC-Ausbruch 2011 in Deutschland kam von Bockshornkleesprossen."
+        "text": "Sprossen sind **feuchtwarm** — perfekte Bedingungen auch für Bakterien. Vier Regeln: **Spuele regelmäßig** (2-3x am Tag), **lasse Wasser komplett ablaufen** (Staunaesse ist toedlich), **achte auf Geruch** (riecht muffig oder sauer — wegwerfen), **kaufe Saatgut speziell für Sprossenzucht** (im Handel als 'keimfaehig für Sprossen' deklariert). Sprossengeraete mit Etagen sind bequem, ein **Einmachglas reicht** für den Anfang. Schwangere und Immunschwache essen Sprossen nur gegart — der EHEC-Ausbruch 2011 in Deutschland kam von Bockshornkleesprossen."
       }
     ],
     "verwandt": [
-      { "sektion": "indoor", "eintrag": "indoor-grundlagen" },
-      { "sektion": "indoor", "eintrag": "microgreens" },
-      { "sektion": "indoor", "eintrag": "hell-dunkelkeimer-tief" }
+      {
+        "sektion": "indoor",
+        "eintrag": "indoor-grundlagen"
+      },
+      {
+        "sektion": "indoor",
+        "eintrag": "microgreens"
+      },
+      {
+        "sektion": "indoor",
+        "eintrag": "hell-dunkelkeimer-tief"
+      }
     ]
   },
   {
     "id": "microgreens",
     "name": "Microgreens",
-    "untertitel": "Junges Gruen fuer den Geschmack",
+    "untertitel": "Junges Gruen für den Geschmack",
     "symbol": "🌿",
     "kurz": "Zwischen Sprosse und Salat — Microgreens sind die jungen Pflanzen mit den ersten echten Blaettern. Konzentriertes Aroma, leichte Kultur.",
     "bloecke": [
       {
         "titel": "Was Microgreens sind",
-        "text": "Microgreens stehen zwischen [Sprossen](wissen:indoor:sprossen-zucht) und vollwertigen Pflanzen. Geerntet werden sie, wenn **die ersten echten Blaetter** (das **erste Laubblatt-Paar nach den Keimblaettern**) erscheinen — meist nach **10-21 Tagen**. Sie wachsen in **Erde oder auf Substrat** (Kokoshum, Hanfmatte), nicht im Glas. Geerntet wird mit der Schere oberhalb der Erde. Geschmack und Naehrstoffdichte sind **konzentriert** — die Pflanze hat alles ans Blatt geschickt. Die kalifornische Gourmet-Kueche der 1980er hat Microgreens populaer gemacht."
+        "text": "Microgreens stehen zwischen [Sprossen](wissen:indoor:sprossen-zucht) und vollwertigen Pflanzen. Geerntet werden sie, wenn **die ersten echten Blaetter** (das **erste Laubblatt-Paar nach den Keimblaettern**) erscheinen — meist nach **10-21 Tagen**. Sie wachsen in **Erde oder auf Substrat** (Kokoshum, Hanfmatte), nicht im Glas. Geerntet wird mit der Schere oberhalb der Erde. Geschmack und Naehrstoffdichte sind **konzentriert** — die Pflanze hat alles ans Blatt geschickt. Die kalifornische Gourmet-Küche der 1980er hat Microgreens populaer gemacht."
       },
       {
-        "titel": "Saaten fuer Microgreens",
-        "text": "**Sonnenblume** — der Liebling: nussig, knackig, gross. Saat ueber Nacht einweichen, dicht aussaen, 10-12 Tage, abschneiden. **Erbse** — milder Suessgeschmack, **junge Erbsenranken** wie ein Salat. **Brokkoli** und **Rotkohl** — wuerzig, leuchtende Farbe, gesundheitsfoerdernd. **Radieschen** — scharf wie Wasabi. **Rote-Bete** — herrlich pink, suesslich-erdig. **Basilikum** und **Koriander** — anspruchsvoller, langsamer, doch geschmacklich grossartig. Wer den richtigen Geschmack will, kombiniert drei bis vier Sorten."
+        "titel": "Saaten für Microgreens",
+        "text": "**Sonnenblume** — der Liebling: nussig, knackig, groß. Saat über Nacht einweichen, dicht aussaen, 10-12 Tage, abschneiden. **Erbse** — milder Suessgeschmack, **junge Erbsenranken** wie ein Salat. **Brokkoli** und **Rotkohl** — wuerzig, leuchtende Farbe, gesundheitsfoerdernd. **Radieschen** — scharf wie Wasabi. **Rote-Bete** — herrlich pink, suesslich-erdig. **Basilikum** und **Koriander** — anspruchsvoller, langsamer, doch geschmacklich grossartig. Wer den richtigen Geschmack will, kombiniert drei bis vier Sorten."
       },
       {
         "titel": "Anbau-Schritte",
-        "text": "**Schale**: 4-5 cm hoch mit Anzucht-Erde fuellen, andruecken, **dicht aussaen** (das Korn liegt fast neben dem Korn — fuer Sonnenblume etwa 1-2 cm Abstand). **Andruecken statt mit Erde decken**, leicht giessen mit Sprueher. **Erste 2-3 Tage dunkel** halten (Karton drueber), damit die Keimung im Dunkeln startet — danach ans Licht. **Hell stellen**, taeglich spruehen. **Ernten** mit der Schere knapp ueber dem Substrat, sobald die ersten **echten Blaetter** erscheinen. Eine Microgreen-Kultur regeneriert nur selten — neu aussaen ist effizienter."
+        "text": "**Schale**: 4-5 cm hoch mit Anzucht-Erde fuellen, andruecken, **dicht aussaen** (das Korn liegt fast neben dem Korn — für Sonnenblume etwa 1-2 cm Abstand). **Andruecken statt mit Erde decken**, leicht giessen mit Sprueher. **Erste 2-3 Tage dunkel** halten (Karton drueber), damit die Keimung im Dunkeln startet — danach ans Licht. **Hell stellen**, taeglich spruehen. **Ernten** mit der Schere knapp über dem Substrat, sobald die ersten **echten Blaetter** erscheinen. Eine Microgreen-Kultur regeneriert nur selten — neu aussaen ist effizienter."
       },
       {
         "titel": "Praxis und Ernaehrung",
-        "text": "**Pro Schale (20 x 30 cm)** etwa 50-80 g Ernte. Wer alle 1-2 Wochen eine neue Schale ansetzt, hat **kontinuierliche Ernte**. **Lagerung**: im Kuehlschrank, gewaschen oder ungewaschen, im offenen Behaelter, 5-7 Tage. Naehrstoffstudien (US-Universitaeten 2012) zeigen: Microgreens enthalten **4-40 mal mehr Naehrstoffe** als die ausgewachsene Pflanze. **Sprossen vs Microgreens**: Sprossen sind schneller (3-7 Tage) und brauchen kein Licht, Microgreens (10-21 Tage) brauchen Licht und Erde — geschmacklich gewinnt das Microgreen."
+        "text": "**Pro Schale (20 x 30 cm)** etwa 50-80 g Ernte. Wer alle 1-2 Wochen eine neue Schale ansetzt, hat **kontinuierliche Ernte**. **Lagerung**: im Kuehlschrank, gewaschen oder ungewaschen, im offenen Behaelter, 5-7 Tage. Naehrstoffstudien (US-Universitaeten 2012) zeigen: Microgreens enthalten **4-40 mal mehr Nährstoffe** als die ausgewachsene Pflanze. **Sprossen vs Microgreens**: Sprossen sind schneller (3-7 Tage) und brauchen kein Licht, Microgreens (10-21 Tage) brauchen Licht und Erde — geschmacklich gewinnt das Microgreen."
       }
     ],
     "verwandt": [
-      { "sektion": "indoor", "eintrag": "sprossen-zucht" },
-      { "sektion": "indoor", "eintrag": "grow-light-licht" },
-      { "sektion": "indoor", "eintrag": "indoor-grundlagen" }
+      {
+        "sektion": "indoor",
+        "eintrag": "sprossen-zucht"
+      },
+      {
+        "sektion": "indoor",
+        "eintrag": "grow-light-licht"
+      },
+      {
+        "sektion": "indoor",
+        "eintrag": "indoor-grundlagen"
+      }
     ]
   },
   {
@@ -159,11 +207,11 @@
     "bloecke": [
       {
         "titel": "Das Prinzip",
-        "text": "Pflanzen brauchen **Wasser**, **Naehrstoffe**, **Sauerstoff an der Wurzel**, **Licht**. Erde liefert all das, doch Hydrokultur arbeitet **ohne Erde**: die Wurzel waechst in **Naehrloesung** oder auf inertem Substrat (Blaehton, Steinwolle, Kokos), das Wasser zirkuliert und bringt **geloeste Mineralien**. Vorteile: **schnelleres Wachstum** (bis 30 Prozent), **weniger Wasserverbrauch** (90 Prozent weniger als Feldbau, da geschlossener Kreislauf), **kein Unkraut**, **kontrollierbare Ertraege**. Nachteile: **Stromabhaengig**, **Lerngeld**, **kein lebendiges Bodenmilieu**."
+        "text": "Pflanzen brauchen **Wasser**, **Nährstoffe**, **Sauerstoff an der Wurzel**, **Licht**. Erde liefert all das, doch Hydrokultur arbeitet **ohne Erde**: die Wurzel waechst in **Naehrloesung** oder auf inertem Substrat (Blaehton, Steinwolle, Kokos), das Wasser zirkuliert und bringt **geloeste Mineralien**. Vorteile: **schnelleres Wachstum** (bis 30 Prozent), **weniger Wasserverbrauch** (90 Prozent weniger als Feldbau, da geschlossener Kreislauf), **kein Unkraut**, **kontrollierbare Ertraege**. Nachteile: **Stromabhaengig**, **Lerngeld**, **kein lebendiges Bodenmilieu**."
       },
       {
         "titel": "NFT — Nutrient Film Technique",
-        "text": "Die schlanke Methode. Ein **leicht geneigtes Rohr** (1-2 Prozent Gefaelle), in dem ein **duenner Naehrwasser-Film** dauerhaft fliesst. Pflanzen sitzen mit der Wurzel im Rohr, in **Netztoepfen mit Blaehton oder Steinwolle**. Eine Pumpe foerdert das Wasser aus einem Tank am unteren Ende nach oben, oben laeuft es ein, am unteren Ende wieder in den Tank. **Salat, Kraeuter, Erdbeeren** lieben NFT. Stromausfall darf hier nur kurz dauern — die Wurzel trocknet schnell ohne Film."
+        "text": "Die schlanke Methode. Ein **leicht geneigtes Rohr** (1-2 Prozent Gefaelle), in dem ein **duenner Naehrwasser-Film** dauerhaft fließt. Pflanzen sitzen mit der Wurzel im Rohr, in **Netztoepfen mit Blaehton oder Steinwolle**. Eine Pumpe foerdert das Wasser aus einem Tank am unteren Ende nach oben, oben laeuft es ein, am unteren Ende wieder in den Tank. **Salat, Kräuter, Erdbeeren** lieben NFT. Stromausfall darf hier nur kurz dauern — die Wurzel trocknet schnell ohne Film."
       },
       {
         "titel": "DWC — Deep Water Culture",
@@ -171,13 +219,22 @@
       },
       {
         "titel": "Naehrloesung, EC und pH",
-        "text": "Pflanzen brauchen **drei Hauptnaehrstoffe** (NPK — Stickstoff, Phosphor, Kalium) und **Spurenelemente**. Im Handel gibt es Hydro-Duenger als Zweikomponenten-System (Loesung A und B, die getrennt gelagert werden). **EC-Wert** (elektrische Leitfaehigkeit, in mS/cm) misst die Konzentration — **Salat braucht 1,0-1,4**, **Tomate 2,0-3,0**. **pH-Wert** muss bei **5,5-6,5** liegen — sonst koennen die Wurzeln die Naehrstoffe nicht aufnehmen, auch wenn sie da sind. EC- und pH-Meter sind die wichtigsten Werkzeuge. **Naehrloesung alle 1-2 Wochen wechseln**, sonst kippt sie. Hydrokultur belohnt Sorgfalt, bestraft Schlamperei."
+        "text": "Pflanzen brauchen **drei Hauptnaehrstoffe** (NPK — Stickstoff, Phosphor, Kalium) und **Spurenelemente**. Im Handel gibt es Hydro-Duenger als Zweikomponenten-System (Loesung A und B, die getrennt gelagert werden). **EC-Wert** (elektrische Leitfaehigkeit, in mS/cm) misst die Konzentration — **Salat braucht 1,0-1,4**, **Tomate 2,0-3,0**. **pH-Wert** muss bei **5,5-6,5** liegen — sonst koennen die Wurzeln die Nährstoffe nicht aufnehmen, auch wenn sie da sind. EC- und pH-Meter sind die wichtigsten Werkzeuge. **Naehrloesung alle 1-2 Wochen wechseln**, sonst kippt sie. Hydrokultur belohnt Sorgfalt, bestraft Schlamperei."
       }
     ],
     "verwandt": [
-      { "sektion": "indoor", "eintrag": "indoor-grundlagen" },
-      { "sektion": "indoor", "eintrag": "grow-light-licht" },
-      { "sektion": "indoor", "eintrag": "indoor-klima" }
+      {
+        "sektion": "indoor",
+        "eintrag": "indoor-grundlagen"
+      },
+      {
+        "sektion": "indoor",
+        "eintrag": "grow-light-licht"
+      },
+      {
+        "sektion": "indoor",
+        "eintrag": "indoor-klima"
+      }
     ]
   },
   {
@@ -189,25 +246,34 @@
     "bloecke": [
       {
         "titel": "Temperatur je Pflanze",
-        "text": "**Anzucht-Phase** (Keimung): die meisten Gemuese wollen **22-26 Grad** an der Saat. Eine **Heizmatte** unter den Anzuchtschalen ist die beste Investition fuer Tomate, Paprika, Chili, Aubergine. **Vegetative Phase**: 20-24 Grad Tag, 16-18 Grad Nacht. **Fruchtphase Tomate/Paprika**: 22-26 Grad. **Salat und Spinat**: kuehler — 16-20 Grad. **Bei ueber 28 Grad** stellen viele Pflanzen das Wachstum ein (Bluetenabfall bei Tomate ueber 30 Grad). **Kuehle Nacht** (4-6 Grad weniger als Tag) entspricht dem Aussenrhythmus und foerdert kraeftiges Wachstum."
+        "text": "**Anzucht-Phase** (Keimung): die meisten Gemüse wollen **22-26 Grad** an der Saat. Eine **Heizmatte** unter den Anzuchtschalen ist die beste Investition für Tomate, Paprika, Chili, Aubergine. **Vegetative Phase**: 20-24 Grad Tag, 16-18 Grad Nacht. **Fruchtphase Tomate/Paprika**: 22-26 Grad. **Salat und Spinat**: kuehler — 16-20 Grad. **Bei über 28 Grad** stellen viele Pflanzen das Wachstum ein (Bluetenabfall bei Tomate über 30 Grad). **Kuehle Nacht** (4-6 Grad weniger als Tag) entspricht dem Aussenrhythmus und foerdert kraeftiges Wachstum."
       },
       {
         "titel": "Luftfeuchtigkeit",
-        "text": "**Anzucht und Sprossen** wollen **70-90 Prozent** Luftfeuchte — eine Klarsichthaube oder Klarsichtfolie ueber der Schale haelt sie. **Junge Pflanzen** brauchen **60-70 Prozent**, **erwachsene Frucht-Pflanzen** **40-60 Prozent**. **Zu trocken** (unter 30 Prozent — typisch im Winter bei Heizung) — Pflanzen kraempfen, Schaedlinge wie Spinnmilbe nehmen ueberhand. **Zu feucht** (ueber 80 Prozent dauerhaft) — Schimmel, Mehltau, Grauschimmel. Ein **Hygrometer** kostet 5 Euro und sagt die Wahrheit. Wer ein trockenes Wohnzimmer hat, stellt eine **Wasserschale** oder einen kleinen **Luftbefeuchter** in die Naehe."
+        "text": "**Anzucht und Sprossen** wollen **70-90 Prozent** Luftfeuchte — eine Klarsichthaube oder Klarsichtfolie über der Schale haelt sie. **Junge Pflanzen** brauchen **60-70 Prozent**, **erwachsene Frucht-Pflanzen** **40-60 Prozent**. **Zu trocken** (unter 30 Prozent — typisch im Winter bei Heizung) — Pflanzen kraempfen, Schädlinge wie Spinnmilbe nehmen ueberhand. **Zu feucht** (über 80 Prozent dauerhaft) — Schimmel, Mehltau, Grauschimmel. Ein **Hygrometer** kostet 5 Euro und sagt die Wahrheit. Wer ein trockenes Wohnzimmer hat, stellt eine **Wasserschale** oder einen kleinen **Luftbefeuchter** in die Nähe."
       },
       {
         "titel": "Lueftung und Luftbewegung",
-        "text": "Pflanzen brauchen **frische Luft** — sonst stagniert das CO2 (kein Wachstum), sonst staut sich Feuchte (Schimmel), sonst werden die Stiele duenn und schwach. **Kleiner Ventilator** auf niedriger Stufe, der die Bewegung von Wind nachahmt, macht **kraeftige, stabile Stiele** und reduziert Schaedlinge. **Lueftung**: bei Anbau im Zimmer reicht **taegliches Stosslueften**, in einer geschlossenen Kammer braucht es **Abluftventilator** mit Aktivkohle-Filter. Faustregel: **wer in seinem Indoor-Raum atmen kann, kann auch die Pflanze atmen lassen**."
+        "text": "Pflanzen brauchen **frische Luft** — sonst stagniert das CO2 (kein Wachstum), sonst staut sich Feuchte (Schimmel), sonst werden die Stiele duenn und schwach. **Kleiner Ventilator** auf niedriger Stufe, der die Bewegung von Wind nachahmt, macht **kraeftige, stabile Stiele** und reduziert Schädlinge. **Lueftung**: bei Anbau im Zimmer reicht **taegliches Stosslueften**, in einer geschlossenen Kammer braucht es **Abluftventilator** mit Aktivkohle-Filter. Faustregel: **wer in seinem Indoor-Raum atmen kann, kann auch die Pflanze atmen lassen**."
       },
       {
         "titel": "Heizmatte und Saisonen",
-        "text": "**Die Heizmatte** ist das wichtigste Geraet fuer die Vorzucht im Februar/Maerz. **20-25 Watt** unter eine Anzuchtschale, **Thermostat** auf 22 Grad — Tomate, Paprika, Chili keimen in 7 statt 21 Tagen. Im Spaetwinter, wenn das Aussen-[Klima](wissen:sonne:tagundnachtgleiche) noch winterlich ist, entscheidet die Heizmatte ueber den Erfolg der ganzen Saison. **Sommer indoor**: Sonne durch grosses Fenster bringt Hitze — die kann **40 Grad** uebersteigen. Dann muss gelueftet, beschattet oder umgestellt werden. **Klima ist das stille Spielfeld**, das ueber Ertrag oder Misserfolg entscheidet — wer es beobachtet, wird zum Gaertner."
+        "text": "**Die Heizmatte** ist das wichtigste Geraet für die Vorzucht im Februar/März. **20-25 Watt** unter eine Anzuchtschale, **Thermostat** auf 22 Grad — Tomate, Paprika, Chili keimen in 7 statt 21 Tagen. Im Spaetwinter, wenn das Aussen-[Klima](wissen:sonne:tagundnachtgleiche) noch winterlich ist, entscheidet die Heizmatte über den Erfolg der ganzen Saison. **Sommer indoor**: Sonne durch grosses Fenster bringt Hitze — die kann **40 Grad** uebersteigen. Dann muss gelueftet, beschattet oder umgestellt werden. **Klima ist das stille Spielfeld**, das über Ertrag oder Misserfolg entscheidet — wer es beobachtet, wird zum Gärtner."
       }
     ],
     "verwandt": [
-      { "sektion": "indoor", "eintrag": "indoor-grundlagen" },
-      { "sektion": "indoor", "eintrag": "grow-light-licht" },
-      { "sektion": "indoor", "eintrag": "hydrokultur" }
+      {
+        "sektion": "indoor",
+        "eintrag": "indoor-grundlagen"
+      },
+      {
+        "sektion": "indoor",
+        "eintrag": "grow-light-licht"
+      },
+      {
+        "sektion": "indoor",
+        "eintrag": "hydrokultur"
+      }
     ]
   }
 ]

@@ -9,22 +9,34 @@
     "bloecke": [
       {
         "titel": "Wer war sie",
-        "text": "Maria Thun (1922-2012) war eine deutsche Bauerntochter aus Schwarzenbornerhuette. Sie begann in den 1950er Jahren systematisch zu untersuchen, ob die Sternzeichen-Position des Mondes das Pflanzenwachstum beeinflusst. Ihre Methode: gleiche Saatgut-Mengen am gleichen Tag auf gleichen Beeten — aber mit unterschiedlichen Sternzeichen-Bezuegen aussaeen, dann Ertrag und Qualitaet messen."
+        "text": "Maria Thun (1922-2012) war eine deutsche Bauerntochter aus Schwarzenbornerhuette. Sie begann in den 1950er Jahren systematisch zu untersuchen, ob die Sternzeichen-Position des Mondes das Pflanzenwachstum beeinflusst. Ihre Methode: gleiche Saatgut-Mengen am gleichen Tag auf gleichen Beeten — aber mit unterschiedlichen Sternzeichen-Bezuegen aussäen, dann Ertrag und Qualitaet messen."
       },
       {
         "titel": "Was sie fand",
-        "text": "Nach Jahrzehnten konsistenter Versuche: **wenn Aussaat an Wurzeltagen** (Mond in Erd-Zeichen) erfolgt, wachsen Wurzelgemuese tatsaechlich besser und groesser. Blattgemuese gedeiht an Blatttagen. Bluetenpflanzen an Bluetentagen. Frucht-Pflanzen an Fruchttagen. Die Effekte waren bei einigen Pflanzen 20-50% Mehrertrag oder Qualitaetsunterschied. Bei einigen Pflanzen ist der Effekt klein, bei anderen sehr klar."
+        "text": "Nach Jahrzehnten konsistenter Versuche: **wenn Aussaat an Wurzeltagen** (Mond in Erd-Zeichen) erfolgt, wachsen Wurzelgemüse tatsaechlich besser und größer. Blattgemüse gedeiht an Blatttagen. Blütenpflanzen an Bluetentagen. Frucht-Pflanzen an Fruchttagen. Die Effekte waren bei einigen Pflanzen 20-50% Mehrertrag oder Qualitaetsunterschied. Bei einigen Pflanzen ist der Effekt klein, bei anderen sehr klar."
       },
       {
         "titel": "Wie ihr Werk weiterlebt",
-        "text": "Maria Thun publizierte ab 1963 jaehrlich den **[Aussaattage-Kalender](wissen:traditionen:maria-thun-tradition)**, der heute von ihrem Sohn Matthias Thun fortgefuehrt wird. Unsere App folgt dieser Methodik ([siderischer Tierkreis](wissen:mond:siderischer-monat), 4 Tagestypen). Wissenschaftliche Studien an der Universitaet Kassel haben Teile ihrer Beobachtungen bestaetigt. Das Phaenomen ist real, der Wirkmechanismus noch nicht vollstaendig verstanden."
+        "text": "Maria Thun publizierte ab 1963 jaehrlich den **[Aussaattage-Kalender](wissen:traditionen:maria-thun-tradition)**, der heute von ihrem Sohn Matthias Thun fortgefuehrt wird. Unsere App folgt dieser Methodik ([siderischer Tierkreis](wissen:mond:siderischer-monat), 4 Tagestypen). Wissenschaftliche Studien an der Universitaet Kassel haben Teile ihrer Beobachtungen bestaetigt. Das Phaenomen ist real, der Wirkmechanismus noch nicht vollständig verstanden."
       }
     ],
     "verwandt": [
-      { "sektion": "traditionen", "eintrag": "biodynamik" },
-      { "sektion": "traditionen", "eintrag": "maria-thun-tradition" },
-      { "sektion": "mond", "eintrag": "siderischer-monat" },
-      { "sektion": "mond", "eintrag": "aufsteigend-absteigend" }
+      {
+        "sektion": "traditionen",
+        "eintrag": "biodynamik"
+      },
+      {
+        "sektion": "traditionen",
+        "eintrag": "maria-thun-tradition"
+      },
+      {
+        "sektion": "mond",
+        "eintrag": "siderischer-monat"
+      },
+      {
+        "sektion": "mond",
+        "eintrag": "aufsteigend-absteigend"
+      }
     ]
   },
   {
@@ -45,13 +57,22 @@
       },
       {
         "titel": "Praktischer Zugang",
-        "text": "**Eigene Beobachtung** ist hier wertvoller als Studien. Saet ueber zwei Jahre die gleiche Pflanze an verschiedenen Tagestypen aus, beobachte die Pflanzen. Fuehrt ein Garten-Tagebuch. Du wirst sehen, was du selbst wahrnehmen kannst — und was nicht. Manche Menschen sind sensibler fuer diese Rhythmen als andere."
+        "text": "**Eigene Beobachtung** ist hier wertvoller als Studien. Saet über zwei Jahre die gleiche Pflanze an verschiedenen Tagestypen aus, beobachte die Pflanzen. Fuehrt ein Garten-Tagebuch. Du wirst sehen, was du selbst wahrnehmen kannst — und was nicht. Manche Menschen sind sensibler für diese Rhythmen als andere."
       }
     ],
     "verwandt": [
-      { "sektion": "bruecken", "eintrag": "maria-thun" },
-      { "sektion": "mond", "eintrag": "synodischer-monat" },
-      { "sektion": "mond", "eintrag": "perigaeum-apogaeum" }
+      {
+        "sektion": "bruecken",
+        "eintrag": "maria-thun"
+      },
+      {
+        "sektion": "mond",
+        "eintrag": "synodischer-monat"
+      },
+      {
+        "sektion": "mond",
+        "eintrag": "perigaeum-apogaeum"
+      }
     ]
   },
   {
@@ -64,7 +85,7 @@
     "bloecke": [
       {
         "titel": "Lineare Zeit",
-        "text": "Unsere westliche Zeit-Vorstellung ist linear: vom Anfang (Schoepfung, Urknall) zum Ende (Jenseits, Waermetod). Jahre zaehlen vorwaerts ohne Wiederkehr. Geschichte ist eindeutig. Die christliche und juedische Tradition tragen diese Linearitaet — von Adam zur Apokalypse. Spaeter saekularisiert: Fortschritt, Entwicklung, Wachstum."
+        "text": "Unsere westliche Zeit-Vorstellung ist linear: vom Anfang (Schoepfung, Urknall) zum Ende (Jenseits, Waermetod). Jahre zaehlen vorwärts ohne Wiederkehr. Geschichte ist eindeutig. Die christliche und juedische Tradition tragen diese Linearitaet — von Adam zur Apokalypse. Spaeter saekularisiert: Fortschritt, Entwicklung, Wachstum."
       },
       {
         "titel": "Zyklische Zeit",
@@ -72,13 +93,22 @@
       },
       {
         "titel": "Beides",
-        "text": "Modernes Bewusstsein kann beide Zeitformen tragen. **Lineare Zeit** fuer Wissenschaft, Projektplanung, Geschichte. **Zyklische Zeit** fuer Natur, Spiritualitaet, koerperliche Rhythmen. Garten zu pflegen heisst, der zyklischen Zeit zu lauschen — Aussaattage kehren wieder, Pflanzen folgen ewigen Rhythmen, das gleiche Beet ist im Mai immer im Mai. Beide Zeiten haben Wuerde. Siehe auch [Calendar Round](wissen:maya:calendar-round)."
+        "text": "Modernes Bewusstsein kann beide Zeitformen tragen. **Lineare Zeit** für Wissenschaft, Projektplanung, Geschichte. **Zyklische Zeit** für Natur, Spiritualitaet, koerperliche Rhythmen. Garten zu pflegen heisst, der zyklischen Zeit zu lauschen — Aussaattage kehren wieder, Pflanzen folgen ewigen Rhythmen, das gleiche Beet ist im Mai immer im Mai. Beide Zeiten haben Wuerde. Siehe auch [Calendar Round](wissen:maya:calendar-round)."
       }
     ],
     "verwandt": [
-      { "sektion": "maya", "eintrag": "calendar-round" },
-      { "sektion": "maya", "eintrag": "mayazivilisation" },
-      { "sektion": "bruecken", "eintrag": "kosmische-rhythmen" }
+      {
+        "sektion": "maya",
+        "eintrag": "calendar-round"
+      },
+      {
+        "sektion": "maya",
+        "eintrag": "mayazivilisation"
+      },
+      {
+        "sektion": "bruecken",
+        "eintrag": "kosmische-rhythmen"
+      }
     ]
   },
   {
@@ -98,14 +128,23 @@
         "text": "Wissenschaftliche Astronomie misst, rechnet, sagt voraus. Sie hat uns das tiefste Universum gezeigt: 13,8 Milliarden Jahre, 200 Milliarden Galaxien. Sie ist eine Sprache der Praezision. Doch sie hat den **Sinn** der Sterne aus der Beobachtung herausgeschnitten. Ein Stern ist 'nur' eine Plasma-Kugel, kein Bote, kein Anteilgeber. Vergleiche die [Praezession des Fruehlingspunktes](wissen:sonne:praezession)."
       },
       {
-        "titel": "Was Astrologie traegt",
-        "text": "Astrologie traegt das alte **symbolische** Wissen. Sie spricht ueber Bedeutung, Charakter, Schicksal. Sie ist nicht Wissenschaft, sondern eine andere Form der Aufmerksamkeit — vergleichbar mit Poesie, Traumarbeit, Mythologie. Niemand muss sie 'beweisen'. Die Frage ist: laesst du dich von ihr beruehren? Findest du in ihr Stimmungen wieder, die in dir wirklich sind? Dann hat sie ihren Wert."
+        "titel": "Was Astrologie trägt",
+        "text": "Astrologie trägt das alte **symbolische** Wissen. Sie spricht über Bedeutung, Charakter, Schicksal. Sie ist nicht Wissenschaft, sondern eine andere Form der Aufmerksamkeit — vergleichbar mit Poesie, Traumarbeit, Mythologie. Niemand muss sie 'beweisen'. Die Frage ist: laesst du dich von ihr beruehren? Findest du in ihr Stimmungen wieder, die in dir wirklich sind? Dann hat sie ihren Wert."
       }
     ],
     "verwandt": [
-      { "sektion": "sonne", "eintrag": "praezession" },
-      { "sektion": "kalender", "eintrag": "hindu-kalender" },
-      { "sektion": "tierkreis", "eintrag": "widder" }
+      {
+        "sektion": "sonne",
+        "eintrag": "praezession"
+      },
+      {
+        "sektion": "kalender",
+        "eintrag": "hindu-kalender"
+      },
+      {
+        "sektion": "tierkreis",
+        "eintrag": "widder"
+      }
     ]
   },
   {
@@ -118,7 +157,7 @@
     "bloecke": [
       {
         "titel": "Goethes Beobachtung",
-        "text": "Johann Wolfgang von Goethe verstand Natur nicht als Maschine, sondern als **lebendiges Werden**. Pflanzen zeigen eine 'Metamorphose' — Blatt wird Bluete wird Frucht. Diese Verwandlung folgt rhythmischen Kraeften, die nicht nur in der Pflanze, sondern auch im Kosmos sind. Mond, Sonne, Sterne sind nicht 'aussen', sondern wirken in jedes wachsende Wesen."
+        "text": "Johann Wolfgang von Goethe verstand Natur nicht als Maschine, sondern als **lebendiges Werden**. Pflanzen zeigen eine 'Metamorphose' — Blatt wird Blüte wird Frucht. Diese Verwandlung folgt rhythmischen Kraeften, die nicht nur in der Pflanze, sondern auch im Kosmos sind. Mond, Sonne, Sterne sind nicht 'aussen', sondern wirken in jedes wachsende Wesen."
       },
       {
         "titel": "Rudolf Steiners Erweiterung",
@@ -130,9 +169,18 @@
       }
     ],
     "verwandt": [
-      { "sektion": "traditionen", "eintrag": "biodynamik" },
-      { "sektion": "traditionen", "eintrag": "anastasia" },
-      { "sektion": "maya", "eintrag": "mayazivilisation" }
+      {
+        "sektion": "traditionen",
+        "eintrag": "biodynamik"
+      },
+      {
+        "sektion": "traditionen",
+        "eintrag": "anastasia"
+      },
+      {
+        "sektion": "maya",
+        "eintrag": "mayazivilisation"
+      }
     ]
   }
 ]

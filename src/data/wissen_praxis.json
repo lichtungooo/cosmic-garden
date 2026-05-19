@@ -9,15 +9,15 @@
     "bloecke": [
       {
         "titel": "Warum es wirkt",
-        "text": "Pflanzen sondern ueber Wurzeln und Blaetter chemische Stoffe ab — **Allelopathie**. Manche Stoffe vertreiben Schaedlinge, andere foerdern Nachbarn, manche hemmen. Plus: tiefe Wurzeln (Moehre) und flache (Salat) konkurrieren nicht. Klassisches Mischkultur-Wissen ist eine Mischung aus Tradition und neueren Studien zur Allelopathie."
+        "text": "Pflanzen sondern über Wurzeln und Blaetter chemische Stoffe ab — **Allelopathie**. Manche Stoffe vertreiben Schädlinge, andere foerdern Nachbarn, manche hemmen. Plus: tiefe Wurzeln (Möhre) und flache (Salat) konkurrieren nicht. Klassisches Mischkultur-Wissen ist eine Mischung aus Tradition und neueren Studien zur Allelopathie."
       },
       {
         "titel": "Gute Nachbarn",
-        "text": "**[Moehre](pflanze:moehre) + [Zwiebel](pflanze:zwiebel)/[Lauch](pflanze:lauch)**: vertreiben gegenseitig ihre Fliegen (Moehrenfliege, Zwiebelfliege). **[Tomate](pflanze:tomate) + [Basilikum](pflanze:basilikum) + [Petersilie](pflanze:petersilie)**: Basilikum vertreibt Mehltau, Tomaten profitieren vom Aroma. **Bohne + Bohnenkraut**: Bohnenkraut gegen Bohnenlaus. **Kohl + [Sellerie](pflanze:sellerie) + Tomate**: Sellerie-Aroma verwirrt Kohlweissling. **[Salat](pflanze:kopfsalat) + [Radieschen](pflanze:radieschen)**: Radieschen reift schnell, Salat braucht Schatten. **Erdbeere + Knoblauch**: Knoblauch gegen Erdbeer-Pilze. **Drei Schwestern** (Mais + Bohne + [Kuerbis](pflanze:kuerbis)): Mais stuetzt Bohne, Bohne duengt mit Stickstoff, Kuerbis beschattet Boden."
+        "text": "**[Möhre](pflanze:moehre) + [Zwiebel](pflanze:zwiebel)/[Lauch](pflanze:lauch)**: vertreiben gegenseitig ihre Fliegen (Moehrenfliege, Zwiebelfliege). **[Tomate](pflanze:tomate) + [Basilikum](pflanze:basilikum) + [Petersilie](pflanze:petersilie)**: Basilikum vertreibt Mehltau, Tomaten profitieren vom Aroma. **Bohne + Bohnenkraut**: Bohnenkraut gegen Bohnenlaus. **Kohl + [Sellerie](pflanze:sellerie) + Tomate**: Sellerie-Aroma verwirrt Kohlweissling. **[Salat](pflanze:kopfsalat) + [Radieschen](pflanze:radieschen)**: Radieschen reift schnell, Salat braucht Schatten. **Erdbeere + Knoblauch**: Knoblauch gegen Erdbeer-Pilze. **Drei Schwestern** (Mais + Bohne + [Kürbis](pflanze:kuerbis)): Mais stuetzt Bohne, Bohne duengt mit Stickstoff, Kürbis beschattet Boden."
       },
       {
         "titel": "Schlechte Nachbarn",
-        "text": "**[Tomate](pflanze:tomate) + Kartoffel**: gleiche Familie, gleiche Krankheiten (Kraut-Braunfaeule!). **Zwiebel + Bohne/Erbse**: Zwiebel hemmt Huelsenfruechte stark. **Kohl + Erdbeere**: gegenseitige Wachstumshemmung. **Petersilie + [Kopfsalat](pflanze:kopfsalat)**: vertragen sich nicht. **[Gurke](pflanze:gurke) + Tomate**: verschiedene Wasser- und Naehrstoff-Bedarfe, schwer zu balancieren. **[Salbei](pflanze:salbei) + Gurke**: Aroma stoert Gurke. **Fenchel + fast alles**: Fenchel ist der Eigenbroetler unter Pflanzen."
+        "text": "**[Tomate](pflanze:tomate) + Kartoffel**: gleiche Familie, gleiche Krankheiten (Kraut-Braunfaeule!). **Zwiebel + Bohne/Erbse**: Zwiebel hemmt Huelsenfruechte stark. **Kohl + Erdbeere**: gegenseitige Wachstumshemmung. **Petersilie + [Kopfsalat](pflanze:kopfsalat)**: vertragen sich nicht. **[Gurke](pflanze:gurke) + Tomate**: verschiedene Wasser- und Nährstoff-Bedarfe, schwer zu balancieren. **[Salbei](pflanze:salbei) + Gurke**: Aroma stoert Gurke. **Fenchel + fast alles**: Fenchel ist der Eigenbroetler unter Pflanzen."
       },
       {
         "titel": "Schutz-Pflanzen",
@@ -25,9 +25,18 @@
       }
     ],
     "verwandt": [
-      { "sektion": "praxis", "eintrag": "pflanzenschutz-natuerlich" },
-      { "sektion": "traditionen", "eintrag": "permakultur" },
-      { "sektion": "traditionen", "eintrag": "sepp-holzer" }
+      {
+        "sektion": "praxis",
+        "eintrag": "pflanzenschutz-natuerlich"
+      },
+      {
+        "sektion": "traditionen",
+        "eintrag": "permakultur"
+      },
+      {
+        "sektion": "traditionen",
+        "eintrag": "sepp-holzer"
+      }
     ]
   },
   {
@@ -35,30 +44,39 @@
     "name": "Mulchen",
     "untertitel": "Den Boden bedeckt halten — immer",
     "symbol": "🍂",
-    "kurz": "Mulch ist die wichtigste Massnahme. Welches Material wann und wieviel.",
+    "kurz": "Mulch ist die wichtigste Maßnahme. Welches Material wann und wieviel.",
     "meta": {},
     "bloecke": [
       {
         "titel": "Warum mulchen",
-        "text": "Ein offener Boden trocknet aus, verschlaemmt, erodiert, ueberhitzt. **Verdunstung sinkt um 50-70%** unter Mulch. **Bodentemperatur** bleibt konstanter. **Unkraut** unterdrueckt. **Regenwuermer** und Bodenmikroben werden aktiv. **Naehrstoffe** gehen langsam in den Boden ueber. Mulch ist nicht Deko — er ist die Decke, die der Boden im Wald immer hat."
+        "text": "Ein offener Boden trocknet aus, verschlaemmt, erodiert, ueberhitzt. **Verdunstung sinkt um 50-70%** unter Mulch. **Bodentemperatur** bleibt konstanter. **Unkraut** unterdrueckt. **Regenwuermer** und Bodenmikroben werden aktiv. **Nährstoffe** gehen langsam in den Boden über. Mulch ist nicht Deko — er ist die Decke, die der Boden im Wald immer hat."
       },
       {
         "titel": "Welches Material",
-        "text": "**Rasenschnitt**: am haeufigsten. Vor dem Auflegen **antrocknen** lassen, dann **duenn** (2-3 cm) — sonst faeult er. Stickstoffreich. **Stroh**: ideal fuer Erdbeeren (haelt Frucht sauber) und [Tomaten](pflanze:tomate). **Laub**: Wald-Charakter, foerdert Pilze. Buche, Eiche, Birke gut — Walnuss vermeiden. **Heu**: aufpassen wegen Samen. **Reisig und Aestchen**: mehrjaehrig, langsame Zersetzung. **Holzhackschnitzel**: fuer Wege und mehrjaehrige Beete. **Rindenmulch**: NICHT im Gemuesebeet (versauert)."
+        "text": "**Rasenschnitt**: am haeufigsten. Vor dem Auflegen **antrocknen** lassen, dann **duenn** (2-3 cm) — sonst faeult er. Stickstoffreich. **Stroh**: ideal für Erdbeeren (haelt Frucht sauber) und [Tomaten](pflanze:tomate). **Laub**: Wald-Charakter, foerdert Pilze. Buche, Eiche, Birke gut — Walnuss vermeiden. **Heu**: aufpassen wegen Samen. **Reisig und Aestchen**: mehrjährig, langsame Zersetzung. **Holzhackschnitzel**: für Wege und mehrjaehrige Beete. **Rindenmulch**: NICHT im Gemuesebeet (versauert)."
       },
       {
         "titel": "Wann mulchen",
-        "text": "**Fruehjahr nach der Aussaat**: wenn der Boden warm ist (zu fruehes Mulchen verzoegert die Erwaermung). **Sommer nach Pflanzung**: Schutz vor Hitze und Verdunstung. **Herbst** vor dem Winter: Boden mit Laub bedecken, Bodenleben bleibt aktiv, Frost bricht den Mulch in den Humus auf. Wichtig: **immer mit ausreichend Stickstoff** — wenn Rindenmulch oder viel Stroh aufgelegt wird, Hornspaene oder Kompost dazu, sonst entzieht der Mulch dem Boden Stickstoff beim Zersetzen."
+        "text": "**Frühjahr nach der Aussaat**: wenn der Boden warm ist (zu fruehes Mulchen verzoegert die Erwaermung). **Sommer nach Pflanzung**: Schutz vor Hitze und Verdunstung. **Herbst** vor dem Winter: Boden mit Laub bedecken, Bodenleben bleibt aktiv, Frost bricht den Mulch in den Humus auf. Wichtig: **immer mit ausreichend Stickstoff** — wenn Rindenmulch oder viel Stroh aufgelegt wird, Hornspaene oder Kompost dazu, sonst entzieht der Mulch dem Boden Stickstoff beim Zersetzen."
       },
       {
         "titel": "Was es nicht ist",
-        "text": "Mulch ist **kein Steinhaufen aus Lava-Granulat** auf nackter Erde — das schoene 'Garten-Center-Mulchen' ist meist Deko, nicht Boden-Schutz. Mulch ist auch **keine Folie** — die unterbricht den Gas- und Wasseraustausch. Echter Mulch ist organisch, atmet, zersetzt sich, wird Teil des Bodens. Wer **1 cm Mulch alle 4 Wochen** im Wachstumssommer auflegt, hat einen lebendigen Boden — Grundlage fuer [Mykorrhiza](wissen:praxis:mykorrhiza)."
+        "text": "Mulch ist **kein Steinhaufen aus Lava-Granulat** auf nackter Erde — das schoene 'Garten-Center-Mulchen' ist meist Deko, nicht Boden-Schutz. Mulch ist auch **keine Folie** — die unterbricht den Gas- und Wasseraustausch. Echter Mulch ist organisch, atmet, zersetzt sich, wird Teil des Bodens. Wer **1 cm Mulch alle 4 Wochen** im Wachstumssommer auflegt, hat einen lebendigen Boden — Grundlage für [Mykorrhiza](wissen:praxis:mykorrhiza)."
       }
     ],
     "verwandt": [
-      { "sektion": "praxis", "eintrag": "giessen" },
-      { "sektion": "praxis", "eintrag": "mykorrhiza" },
-      { "sektion": "traditionen", "eintrag": "huegelkultur" }
+      {
+        "sektion": "praxis",
+        "eintrag": "giessen"
+      },
+      {
+        "sektion": "praxis",
+        "eintrag": "mykorrhiza"
+      },
+      {
+        "sektion": "traditionen",
+        "eintrag": "huegelkultur"
+      }
     ]
   },
   {
@@ -71,31 +89,40 @@
     "bloecke": [
       {
         "titel": "Wann",
-        "text": "**Morgens am besten** (6-9 Uhr): die Sonne trocknet das Blatt ab — keine Pilzkrankheiten. Boden tankt fuer den heissen Tag. **Abends als Alternative** (nach 19 Uhr): geht auch, aber Pflanzen bleiben feucht ueber Nacht — kann Schnecken und Pilze anlocken. **Mittags VERMEIDEN**: Wasser verdunstet zu 50%, Tropfen wirken wie Brennglas. **Bei Hitze taeglich, bei Mischwetter alle 2-3 Tage**, im Herbst wenig."
+        "text": "**Morgens am besten** (6-9 Uhr): die Sonne trocknet das Blatt ab — keine Pilzkrankheiten. Boden tankt für den heissen Tag. **Abends als Alternative** (nach 19 Uhr): geht auch, aber Pflanzen bleiben feucht über Nacht — kann Schnecken und Pilze anlocken. **Mittags VERMEIDEN**: Wasser verdunstet zu 50%, Tropfen wirken wie Brennglas. **Bei Hitze taeglich, bei Mischwetter alle 2-3 Tage**, im Herbst wenig."
       },
       {
         "titel": "Wieviel",
-        "text": "**Tief und selten** ist besser als oberflaechlich und oft. Tiefes Giessen treibt die Wurzeln nach unten, oberflaechliches haelt sie oben — und dann ist die Pflanze bei Trockenheit hilflos. **Daumenregel**: 10-15 Liter pro m² pro Woche bei Trockenheit. **Fingerprobe**: 5 cm tief mit dem Finger in die Erde — feucht? Nicht giessen. **Direkt an die Wurzel**, nicht ueber das Blatt (Pilzgefahr, Verdunstungs-Verlust)."
+        "text": "**Tief und selten** ist besser als oberflaechlich und oft. Tiefes Giessen treibt die Wurzeln nach unten, oberflaechliches haelt sie oben — und dann ist die Pflanze bei Trockenheit hilflos. **Daumenregel**: 10-15 Liter pro m² pro Woche bei Trockenheit. **Fingerprobe**: 5 cm tief mit dem Finger in die Erde — feucht? Nicht giessen. **Direkt an die Wurzel**, nicht über das Blatt (Pilzgefahr, Verdunstungs-Verlust)."
       },
       {
         "titel": "Womit",
-        "text": "**Regenwasser optimal**: weich, kalkfrei, leicht sauer. Eine Regentonne fasst 200 L — bei einem Quadratmeter Dachflaeche fallen pro Jahr 500-800 Liter Niederschlag, davon koennen 60-80% in der Tonne landen. **Leitungswasser ok** fuer die meisten Pflanzen — aber **Kalk-Empfindliche** (Heidelbeere, Rhododendron, Azalee, Hortensie) brauchen Regenwasser. **Wassertemperatur**: nicht eiskalt direkt aus dem Hahn — Pflanzen erleiden Schock. Wasser in einer Tonne stehen lassen, anwaermen."
+        "text": "**Regenwasser optimal**: weich, kalkfrei, leicht sauer. Eine Regentonne fasst 200 L — bei einem Quadratmeter Dachflaeche fallen pro Jahr 500-800 Liter Niederschlag, davon koennen 60-80% in der Tonne landen. **Leitungswasser ok** für die meisten Pflanzen — aber **Kalk-Empfindliche** (Heidelbeere, Rhododendron, Azalee, Hortensie) brauchen Regenwasser. **Wassertemperatur**: nicht eiskalt direkt aus dem Hahn — Pflanzen erleiden Schock. Wasser in einer Tonne stehen lassen, anwaermen."
       },
       {
         "titel": "Wassersparen",
-        "text": "**[Mulchen](wissen:praxis:mulchen)** ist die wirksamste Wassersparung (siehe dort). **Tropfschlauch** statt Sprenger: 30-50% weniger Verbrauch, Wasser landet wo es soll. **Olla** (Tonkrug eingegraben, der langsam Wasser abgibt) — alte Technik aus Nordafrika, ideal fuer Beete. **Mulden** und **[Hugelkultur](wissen:traditionen:huegelkultur)** halten Wasser. **Bodengare**: regelmaessiges Hacken bei trockenem Wetter bricht Kapillaren, Wasser steigt nicht so schnell hoch."
+        "text": "**[Mulchen](wissen:praxis:mulchen)** ist die wirksamste Wassersparung (siehe dort). **Tropfschlauch** statt Sprenger: 30-50% weniger Verbrauch, Wasser landet wo es soll. **Olla** (Tonkrug eingegraben, der langsam Wasser abgibt) — alte Technik aus Nordafrika, ideal für Beete. **Mulden** und **[Hugelkultur](wissen:traditionen:huegelkultur)** halten Wasser. **Bodengare**: regelmaessiges Hacken bei trockenem Wetter bricht Kapillaren, Wasser steigt nicht so schnell hoch."
       }
     ],
     "verwandt": [
-      { "sektion": "praxis", "eintrag": "mulchen" },
-      { "sektion": "traditionen", "eintrag": "sepp-holzer" },
-      { "sektion": "mond", "eintrag": "siderischer-monat" }
+      {
+        "sektion": "praxis",
+        "eintrag": "mulchen"
+      },
+      {
+        "sektion": "traditionen",
+        "eintrag": "sepp-holzer"
+      },
+      {
+        "sektion": "mond",
+        "eintrag": "siderischer-monat"
+      }
     ]
   },
   {
     "id": "jauchen",
-    "name": "Jauchen und Pflanzen-Brueh",
-    "untertitel": "Brennnessel, Beinwell, Loewenzahn und mehr",
+    "name": "Jauchen und Pflanzen-Brüh",
+    "untertitel": "Brennnessel, Beinwell, Löwenzahn und mehr",
     "symbol": "🌱",
     "kurz": "Selbst gemachter Fluessigduenger aus Wildpflanzen — das alte Wissen, neu gelebt.",
     "meta": {},
@@ -106,21 +133,30 @@
       },
       {
         "titel": "Beinwell-Jauche",
-        "text": "**Die Kalium-Bombe**. Beinwell (Symphytum officinale) waechst wild — Wurzeln gehen tief, holen Mineralien aus dem Unterboden. Gleiches Rezept wie Brennnessel-Jauche. **Hoher Kalium-Gehalt** — ideal fuer **Bluetenbildung und Fruchtreife**. Anwendung an [Tomaten](pflanze:tomate), [Paprika](pflanze:paprika), [Aubergine](pflanze:aubergine), [Kuerbis](pflanze:kuerbis) ab Bluehbeginn. Verduennung 1:10. Geht auch als Blattduenger 1:20. **Eigener Anbau lohnt**: einmal gepflanzt, treibt jahrelang nach."
+        "text": "**Die Kalium-Bombe**. Beinwell (Symphytum officinale) waechst wild — Wurzeln gehen tief, holen Mineralien aus dem Unterboden. Gleiches Rezept wie Brennnessel-Jauche. **Hoher Kalium-Gehalt** — ideal für **Bluetenbildung und Fruchtreife**. Anwendung an [Tomaten](pflanze:tomate), [Paprika](pflanze:paprika), [Aubergine](pflanze:aubergine), [Kürbis](pflanze:kuerbis) ab Bluehbeginn. Verduennung 1:10. Geht auch als Blattduenger 1:20. **Eigener Anbau lohnt**: einmal gepflanzt, treibt jahrelang nach."
       },
       {
-        "titel": "Loewenzahn und Schachtelhalm",
-        "text": "**Loewenzahn-Jauche**: gleiche Methode. Kalium, Spurenelemente, allgemein staerkend. **Ackerschachtelhalm-Bruehe** (Equisetum arvense): 1 kg frisch oder 150 g getrocknet in 10 L Wasser **24 Stunden kalt einweichen**, dann **30 Minuten koecheln**. Verduennung 1:5 spritzen — **gegen Pilzkrankheiten** (Mehltau, Rost, Kraut-Braunfaeule, Schorf). Hoher **Kieselsaeure-Gehalt** macht Zellwaende fest. Vorbeugend bei feucht-warmem Wetter."
+        "titel": "Löwenzahn und Schachtelhalm",
+        "text": "**Löwenzahn-Jauche**: gleiche Methode. Kalium, Spurenelemente, allgemein staerkend. **Ackerschachtelhalm-Brühe** (Equisetum arvense): 1 kg frisch oder 150 g getrocknet in 10 L Wasser **24 Stunden kalt einweichen**, dann **30 Minuten koecheln**. Verduennung 1:5 spritzen — **gegen Pilzkrankheiten** (Mehltau, Rost, Kraut-Braunfaeule, Schorf). Hoher **Kieselsaeure-Gehalt** macht Zellwaende fest. Vorbeugend bei feucht-warmem Wetter."
       },
       {
         "titel": "Praktische Tipps",
-        "text": "**Fass**: Plastikfass mit Deckel, **nicht aus Metall** (reagiert mit der Saeure). 100-200 Liter ideal. **Standort**: sonnig, aber abseits — der Geruch ist intensiv. **Gegen Geruch**: eine Handvoll Steinmehl (Algenkalk) ueber die Oberflaeche streuen. **Lagerung**: fertige Jauche kann im verschlossenen Kanister 3-6 Monate gelagert werden. Geruch verschwindet. **Mondrhythmus**: viele [biodynamische](wissen:traditionen:biodynamik) Gaertner setzen Jauche bei zunehmendem Mond an, ernten bei abnehmendem — siehe [Maria Thun](wissen:bruecken:maria-thun)."
+        "text": "**Fass**: Plastikfass mit Deckel, **nicht aus Metall** (reagiert mit der Saeure). 100-200 Liter ideal. **Standort**: sonnig, aber abseits — der Geruch ist intensiv. **Gegen Geruch**: eine Handvoll Steinmehl (Algenkalk) über die Oberflaeche streuen. **Lagerung**: fertige Jauche kann im verschlossenen Kanister 3-6 Monate gelagert werden. Geruch verschwindet. **Mondrhythmus**: viele [biodynamische](wissen:traditionen:biodynamik) Gärtner setzen Jauche bei zunehmendem Mond an, ernten bei abnehmendem — siehe [Maria Thun](wissen:bruecken:maria-thun)."
       }
     ],
     "verwandt": [
-      { "sektion": "praxis", "eintrag": "pflanzenschutz-natuerlich" },
-      { "sektion": "traditionen", "eintrag": "biodynamik" },
-      { "sektion": "bruecken", "eintrag": "maria-thun" }
+      {
+        "sektion": "praxis",
+        "eintrag": "pflanzenschutz-natuerlich"
+      },
+      {
+        "sektion": "traditionen",
+        "eintrag": "biodynamik"
+      },
+      {
+        "sektion": "bruecken",
+        "eintrag": "maria-thun"
+      }
     ]
   },
   {
@@ -133,29 +169,38 @@
     "bloecke": [
       {
         "titel": "Vorbeugung zuerst",
-        "text": "Das beste Mittel gegen Schaedlinge ist ein **gesunder Boden** und **gestresste Pflanzen vermeiden**. Wer [Mischkultur](wissen:praxis:mischkultur) betreibt, [mulcht](wissen:praxis:mulchen), mit [Jauche](wissen:praxis:jauchen) staerkt, regelmaessig [Komposttee](wissen:praxis:effektive-mikroorganismen) giesst — hat kaum noch Schaedlinge. Spritzmittel sind die zweite Linie. **Nuetzlinge im Garten**: Marienkaefer, Florfliegen (Blattlaeuse), Schlupfwespen (Raupen), Igel (Schnecken), Voegel (Insekten). Wer ihnen Lebensraum gibt — Steinhaufen, Wildecke, Bluehflaechen — gewinnt die wirklichen Helfer."
+        "text": "Das beste Mittel gegen Schädlinge ist ein **gesunder Boden** und **gestresste Pflanzen vermeiden**. Wer [Mischkultur](wissen:praxis:mischkultur) betreibt, [mulcht](wissen:praxis:mulchen), mit [Jauche](wissen:praxis:jauchen) staerkt, regelmäßig [Komposttee](wissen:praxis:effektive-mikroorganismen) giesst — hat kaum noch Schädlinge. Spritzmittel sind die zweite Linie. **Nuetzlinge im Garten**: Marienkaefer, Florfliegen (Blattlaeuse), Schlupfwespen (Raupen), Igel (Schnecken), Voegel (Insekten). Wer ihnen Lebensraum gibt — Steinhaufen, Wildecke, Bluehflaechen — gewinnt die wirklichen Helfer."
       },
       {
         "titel": "Knoblauch-Tinktur",
         "text": "**Gegen Blattlaeuse und Spinnmilben**. 100 g zerkleinerter Knoblauch in 1 Liter Wasser, **24 Stunden ziehen lassen**, abseihen. Verduennung 1:5 spritzen, alle 3 Tage wiederholen. Wirkstoff Allicin schreckt saugende Insekten ab. **Variante**: Knoblauch + [Zwiebel](pflanze:zwiebel) + [Chili](pflanze:chili) zusammen — universelle 'Garten-Apotheke'. **Anwendung am besten morgens** oder abends, nicht in voller Sonne."
       },
       {
-        "titel": "Rainfarn- und Wermut-Bruehe",
-        "text": "**Rainfarn** (Tanacetum vulgare): 500 g frische Triebe in 10 L Wasser **30 Minuten koecheln**. Verduennung 1:5 spritzen — **gegen Erdfloh, Kartoffelkaefer, Lauchmotte**. **Wermut** (Artemisia absinthium): 100 g frische Triebe gleiche Methode — sehr bitter — **gegen Ameisen, Blattlaeuse, Raupen**. **Vorsicht**: beide auch fuer Nuetzlinge nicht harmlos. Gezielt einsetzen, nicht praeventiv ueberall. Vor Bluete nicht spritzen wegen Bienenschutz."
+        "titel": "Rainfarn- und Wermut-Brühe",
+        "text": "**Rainfarn** (Tanacetum vulgare): 500 g frische Triebe in 10 L Wasser **30 Minuten koecheln**. Verduennung 1:5 spritzen — **gegen Erdfloh, Kartoffelkaefer, Lauchmotte**. **Wermut** (Artemisia absinthium): 100 g frische Triebe gleiche Methode — sehr bitter — **gegen Ameisen, Blattlaeuse, Raupen**. **Vorsicht**: beide auch für Nuetzlinge nicht harmlos. Gezielt einsetzen, nicht praeventiv ueberall. Vor Blüte nicht spritzen wegen Bienenschutz."
       },
       {
         "titel": "Schmierseifen-Loesung",
-        "text": "**Gegen Blattlaeuse, Weisse Fliege, Spinnmilben**. 1 EL **Schmierseife (kein Spuelmittel!)** in 1 Liter lauwarmem Wasser aufloesen. Optional 1 EL Spiritus dazu — verstaerkt. Auf befallene Stellen spritzen, Blattunterseiten nicht vergessen. **Mehrere Anwendungen** im Abstand von 3-5 Tagen. **Mechanisch wirkend**: verklebt die Atemoeffnungen der Insekten. Harmlos fuer den Boden, gut abbaubar."
+        "text": "**Gegen Blattlaeuse, Weisse Fliege, Spinnmilben**. 1 EL **Schmierseife (kein Spuelmittel!)** in 1 Liter lauwarmem Wasser aufloesen. Optional 1 EL Spiritus dazu — verstaerkt. Auf befallene Stellen spritzen, Blattunterseiten nicht vergessen. **Mehrere Anwendungen** im Abstand von 3-5 Tagen. **Mechanisch wirkend**: verklebt die Atemoeffnungen der Insekten. Harmlos für den Boden, gut abbaubar."
       },
       {
         "titel": "Schnecken",
-        "text": "**Schnecken sind kein Schaedling — sie sind die wichtigsten Zersetzer**. Aber wenn sie ueberhand nehmen: **Bierfalle** in Beet-Naehe (alle 2-3 Tage frisches Bier), **Kupferband** um empfindliche Beete (Schnecken kriegen elektrische Reaktion), **Schneckenkragen** fuer Tomaten/Salat. Spaet abends mit Taschenlampe absammeln. **Indische Laufenten** fressen Schnecken — die radikalste Loesung, braucht aber Stall. **Schneckenkorn** als letzte Massnahme — auf Eisen-III-Phosphat-Basis (kein Metaldehyd, das toetet auch Igel)."
+        "text": "**Schnecken sind kein Schädling — sie sind die wichtigsten Zersetzer**. Aber wenn sie ueberhand nehmen: **Bierfalle** in Beet-Nähe (alle 2-3 Tage frisches Bier), **Kupferband** um empfindliche Beete (Schnecken kriegen elektrische Reaktion), **Schneckenkragen** für Tomaten/Salat. Spät abends mit Taschenlampe absammeln. **Indische Laufenten** fressen Schnecken — die radikalste Loesung, braucht aber Stall. **Schneckenkorn** als letzte Maßnahme — auf Eisen-III-Phosphat-Basis (kein Metaldehyd, das toetet auch Igel)."
       }
     ],
     "verwandt": [
-      { "sektion": "praxis", "eintrag": "jauchen" },
-      { "sektion": "praxis", "eintrag": "mischkultur" },
-      { "sektion": "traditionen", "eintrag": "naturgarten" }
+      {
+        "sektion": "praxis",
+        "eintrag": "jauchen"
+      },
+      {
+        "sektion": "praxis",
+        "eintrag": "mischkultur"
+      },
+      {
+        "sektion": "traditionen",
+        "eintrag": "naturgarten"
+      }
     ]
   },
   {
@@ -172,11 +217,11 @@
       },
       {
         "titel": "Die zwei Hauptformen",
-        "text": "**VAM/AM-Mykorrhiza** (vesikulaer-arbuskulaer, oft 'Endomykorrhiza' genannt): wirkt bei **80% aller Pflanzen** — Gemuese, Getreide, viele Baeume, Wiesenpflanzen. Pilz dringt in Wurzelzellen ein, bildet baumartige Strukturen darin (Arbuskel). **Ektomykorrhiza**: bei Waldbaeumen — Eiche, Buche, Birke, Kiefer, Fichte. Pilz umhuellt die Wurzelspitze, bildet einen Hyphen-Mantel. Sichtbare Frucht: die Speisepilze (Steinpilz, Pfifferling, Trueffel)."
+        "text": "**VAM/AM-Mykorrhiza** (vesikulaer-arbuskulaer, oft 'Endomykorrhiza' genannt): wirkt bei **80% aller Pflanzen** — Gemüse, Getreide, viele Baeume, Wiesenpflanzen. Pilz dringt in Wurzelzellen ein, bildet baumartige Strukturen darin (Arbuskel). **Ektomykorrhiza**: bei Waldbaeumen — Eiche, Buche, Birke, Kiefer, Fichte. Pilz umhuellt die Wurzelspitze, bildet einen Hyphen-Mantel. Sichtbare Frucht: die Speisepilze (Steinpilz, Pfifferling, Trueffel)."
       },
       {
         "titel": "Wie foerdern",
-        "text": "**Keine Pestizide, keine Kunstduenger** (toeten das Pilzgeflecht). **Wenig umgraben** — tiefes Pfluegen zerstoert das Pilz-Netzwerk. **[Mulchen](wissen:praxis:mulchen)** und **[Komposttee](wissen:praxis:effektive-mikroorganismen)** foerdern die Pilze. Beim Pflanzen **Mykorrhiza-Praeparat** ins Pflanzloch streuen (Produkte: MycorrhizaShop, INOQ, Symbio Tabletten — 5-15 Euro fuer 100-500 g). Besonders wirksam bei **Obstbaeumen, Beerenstraeuchern, [Tomaten](pflanze:tomate), [Paprika](pflanze:paprika)**. Einmal angesiedelt, bleibt das Netz im Boden — Jahre lang."
+        "text": "**Keine Pestizide, keine Kunstduenger** (toeten das Pilzgeflecht). **Wenig umgraben** — tiefes Pfluegen zerstoert das Pilz-Netzwerk. **[Mulchen](wissen:praxis:mulchen)** und **[Komposttee](wissen:praxis:effektive-mikroorganismen)** foerdern die Pilze. Beim Pflanzen **Mykorrhiza-Praeparat** ins Pflanzloch streuen (Produkte: MycorrhizaShop, INOQ, Symbio Tabletten — 5-15 Euro für 100-500 g). Besonders wirksam bei **Obstbaeumen, Beerenstraeuchern, [Tomaten](pflanze:tomate), [Paprika](pflanze:paprika)**. Einmal angesiedelt, bleibt das Netz im Boden — Jahre lang."
       },
       {
         "titel": "Bodenleben sehen",
@@ -184,9 +229,18 @@
       }
     ],
     "verwandt": [
-      { "sektion": "praxis", "eintrag": "effektive-mikroorganismen" },
-      { "sektion": "praxis", "eintrag": "mulchen" },
-      { "sektion": "traditionen", "eintrag": "sepp-holzer" }
+      {
+        "sektion": "praxis",
+        "eintrag": "effektive-mikroorganismen"
+      },
+      {
+        "sektion": "praxis",
+        "eintrag": "mulchen"
+      },
+      {
+        "sektion": "traditionen",
+        "eintrag": "sepp-holzer"
+      }
     ]
   },
   {
@@ -199,7 +253,7 @@
     "bloecke": [
       {
         "titel": "Effektive Mikroorganismen (EM)",
-        "text": "**EM** = Mischkultur aus **Milchsaeurebakterien, Hefen und Photosynthesebakterien**. Erfunden 1982 vom japanischen Wissenschaftler **Teruo Higa**. Foerdert positive Mikrobiologie im Boden, beschleunigt Verrottung, unterdrueckt schaedliche Bakterien und Pilze. Gibt es als Konzentrat (EM-Aktiv, Multikraft, EM-Chiemgau) und als Keramik-Granulat. **Verduennung 1:100 zum Giessen**, 1:1000 zum Blattspritzen. **Anwendung**: zur Bodenaufbereitung im Fruehjahr, beim Komposthaufen, im Kuechenabfall-Eimer (Bokashi)."
+        "text": "**EM** = Mischkultur aus **Milchsaeurebakterien, Hefen und Photosynthesebakterien**. Erfunden 1982 vom japanischen Wissenschaftler **Teruo Higa**. Foerdert positive Mikrobiologie im Boden, beschleunigt Verrottung, unterdrueckt schaedliche Bakterien und Pilze. Gibt es als Konzentrat (EM-Aktiv, Multikraft, EM-Chiemgau) und als Keramik-Granulat. **Verduennung 1:100 zum Giessen**, 1:1000 zum Blattspritzen. **Anwendung**: zur Bodenaufbereitung im Frühjahr, beim Komposthaufen, im Kuechenabfall-Eimer (Bokashi)."
       },
       {
         "titel": "Bokashi",
@@ -207,7 +261,7 @@
       },
       {
         "titel": "Komposttee",
-        "text": "**Reifer Kompost in Wasser eingelegt und belueftet** — eine fluessige Boden-Impfung. **Rezept**: 1 Kanne reifer Kompost in einem Kissen oder Tuch, in 10 Liter Regenwasser haengen, **24-36 Stunden mit Aquarienpumpe belueften**, dabei ueberschaeumen lassen. Optional: 1 EL **Melasse** dazu (Bakterien-Futter). Direkt verwenden, **innerhalb 4 Stunden** — sonst sterben die Mikroben. **[Giessen](wissen:praxis:giessen)** an Wurzel, **Spritzen** auf Blaetter. **Wirkt wie Probiotikum** fuer den Garten — verstaerkt das [Mykorrhiza](wissen:praxis:mykorrhiza)-Netz."
+        "text": "**Reifer Kompost in Wasser eingelegt und belueftet** — eine fluessige Boden-Impfung. **Rezept**: 1 Kanne reifer Kompost in einem Kissen oder Tuch, in 10 Liter Regenwasser haengen, **24-36 Stunden mit Aquarienpumpe belueften**, dabei ueberschaeumen lassen. Optional: 1 EL **Melasse** dazu (Bakterien-Futter). Direkt verwenden, **innerhalb 4 Stunden** — sonst sterben die Mikroben. **[Giessen](wissen:praxis:giessen)** an Wurzel, **Spritzen** auf Blaetter. **Wirkt wie Probiotikum** für den Garten — verstaerkt das [Mykorrhiza](wissen:praxis:mykorrhiza)-Netz."
       },
       {
         "titel": "Trichoderma und Bacillus",
@@ -215,9 +269,18 @@
       }
     ],
     "verwandt": [
-      { "sektion": "praxis", "eintrag": "mykorrhiza" },
-      { "sektion": "praxis", "eintrag": "jauchen" },
-      { "sektion": "traditionen", "eintrag": "biodynamik" }
+      {
+        "sektion": "praxis",
+        "eintrag": "mykorrhiza"
+      },
+      {
+        "sektion": "praxis",
+        "eintrag": "jauchen"
+      },
+      {
+        "sektion": "traditionen",
+        "eintrag": "biodynamik"
+      }
     ]
   }
 ]

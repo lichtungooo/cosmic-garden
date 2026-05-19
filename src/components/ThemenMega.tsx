@@ -48,7 +48,7 @@ const SEKTIONS_LABEL: Record<string, string> = {
   pilze: 'Pilze',
   indoor: 'Indoor-Anbau',
   saatgut: 'Saatgut',
-  schaedlinge: 'Schaedlinge',
+  schaedlinge: 'Schädlinge',
   traditionen: 'Traditionen',
   naturmagier: 'Naturmagier',
   gemeinschaft: 'Gemeinschaft',

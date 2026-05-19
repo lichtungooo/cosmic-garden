@@ -15,12 +15,10 @@ const ZEICHEN_ZU_ID: Record<string, string> = {
   'Stier': 'stier',
   'Zwillinge': 'zwillinge',
   'Krebs': 'krebs',
-  'Loewe': 'loewe',
   'Löwe': 'loewe',
   'Jungfrau': 'jungfrau',
   'Waage': 'waage',
   'Skorpion': 'skorpion',
-  'Schuetze': 'schuetze',
   'Schütze': 'schuetze',
   'Steinbock': 'steinbock',
   'Wassermann': 'wassermann',
@@ -110,7 +108,7 @@ export function TagView({ datum, onPflanze, onArbeit }: Props) {
             <strong>Sonne</strong>
             <span>
               <span title="Sonnenaufgang">↑ {formatZeit(himmel.sonnenaufgang)}</span>
-              <span className="hoch" title="hoechster Stand">☀ {formatZeit(himmel.sonnenHoechststand)}</span>
+              <span className="hoch" title="höchster Stand">☀ {formatZeit(himmel.sonnenHoechststand)}</span>
               <span title="Sonnenuntergang">↓ {formatZeit(himmel.sonnenuntergang)}</span>
             </span>
             <small>{formatDauer(himmel.tagesLaengeMin)} · {himmel.sonnenHoeheGrad != null ? `${Math.round(himmel.sonnenHoeheGrad)}° Höhe` : ''}</small>

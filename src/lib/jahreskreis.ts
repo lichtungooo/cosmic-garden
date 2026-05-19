@@ -36,7 +36,7 @@ export function festeImJahr(jahr: number): Jahresfest[] {
       germName: 'Jul / Yule',
       art: 'sonnwende',
       datum: julfestVorjahr,
-      beschreibung: 'Wintersonnenwende. Tiefster Stand der Sonne, Wiedergeburt des Lichts. Beginn der Raunaechte.',
+      beschreibung: 'Wintersonnenwende. Tiefster Stand der Sonne, Wiedergeburt des Lichts. Beginn der Raunächte.',
       farbe: '#3b4b6b',
     },
     {
@@ -45,7 +45,7 @@ export function festeImJahr(jahr: number): Jahresfest[] {
       germName: 'Disting',
       art: 'zwischenfest',
       datum: new Date(jahr, 1, 1),
-      beschreibung: 'Lichtmess. Erstes Anschwellen des Lichts, Reinigung. Schafe beginnen zu lammen, Milch fliesst wieder.',
+      beschreibung: 'Lichtmess. Erstes Anschwellen des Lichts, Reinigung. Schafe beginnen zu lammen, Milch fließt wieder.',
       farbe: '#d6c896',
     },
     {
@@ -53,7 +53,7 @@ export function festeImJahr(jahr: number): Jahresfest[] {
       name: 'Ostara',
       art: 'tagnachtgleiche',
       datum: fruehling,
-      beschreibung: 'Fruehlings-Tagundnachtgleiche. Tag und Nacht gleich lang, das Licht uebernimmt. Aussaat, Eier, Hasen.',
+      beschreibung: 'Frühlings-Tagundnachtgleiche. Tag und Nacht gleich lang, das Licht übernimmt. Aussaat, Eier, Hasen.',
       farbe: '#a8c98a',
     },
     {
@@ -62,7 +62,7 @@ export function festeImJahr(jahr: number): Jahresfest[] {
       germName: 'Beltane',
       art: 'zwischenfest',
       datum: new Date(jahr, 4, 1),
-      beschreibung: 'Maifeuer. Hochzeit von Himmel und Erde, fruchtbares Bluehen. Tanz um den Maibaum. Gegenpol zu Samhain.',
+      beschreibung: 'Maifeuer. Hochzeit von Himmel und Erde, fruchtbares Blühen. Tanz um den Maibaum. Gegenpol zu Samhain.',
       farbe: '#d4825a',
     },
     {
@@ -71,7 +71,7 @@ export function festeImJahr(jahr: number): Jahresfest[] {
       germName: 'Litha / Sonnwendfeier',
       art: 'sonnwende',
       datum: sommer,
-      beschreibung: 'Sommersonnenwende. Hoechster Sonnenstand, laengster Tag. Kraeuter sammeln, Sonnenfeuer. Gegenpol zum Julfest.',
+      beschreibung: 'Sommersonnenwende. Höchster Sonnenstand, längster Tag. Kräuter sammeln, Sonnenfeuer. Gegenpol zum Julfest.',
       farbe: '#e8a82b',
     },
     {
@@ -89,7 +89,7 @@ export function festeImJahr(jahr: number): Jahresfest[] {
       germName: 'Herbst-Equinoctium',
       art: 'tagnachtgleiche',
       datum: herbst,
-      beschreibung: 'Herbst-Tagundnachtgleiche. Zweite Ernte, Wein und Apfel. Die Nacht uebernimmt.',
+      beschreibung: 'Herbst-Tagundnachtgleiche. Zweite Ernte, Wein und Apfel. Die Nacht übernimmt.',
       farbe: '#a8423a',
     },
   ];

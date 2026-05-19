@@ -8,27 +8,42 @@
     "bloecke": [
       {
         "titel": "Der Unterschied",
-        "text": "Samenfest heisst: aus dem Korn waechst die Mutter wieder. Eine samenfeste Ochsenherz-[Tomate](pflanze:tomate) gibt im naechsten Jahr Ochsenherz-Tomaten. Form, Geschmack, Reifezeit bleiben — Generation um Generation. Wer das Saatgut weitergibt, gibt die Sorte weiter.\n\nF1 traegt das Versprechen einer einzigen Generation. Zwei Inzuchtlinien werden gekreuzt, die erste Tochter (F1) zeigt den sogenannten Heterosis-Effekt: kraftvoller Wuchs, einheitliche Frucht, hoher Ertrag. In dieser einen Saison glaenzt die Pflanze."
+        "text": "Samenfest heisst: aus dem Korn waechst die Mutter wieder. Eine samenfeste Ochsenherz-[Tomate](pflanze:tomate) gibt im naechsten Jahr Ochsenherz-Tomaten. Form, Geschmack, Reifezeit bleiben — Generation um Generation. Wer das Saatgut weitergibt, gibt die Sorte weiter.\n\nF1 trägt das Versprechen einer einzigen Generation. Zwei Inzuchtlinien werden gekreuzt, die erste Tochter (F1) zeigt den sogenannten Heterosis-Effekt: kraftvoller Wuchs, einheitliche Frucht, hoher Ertrag. In dieser einen Saison glaenzt die Pflanze."
       },
       {
         "titel": "Aufspaltung in der naechsten Generation",
-        "text": "Wer F1-Saatgut nachzieht, erlebt Mendels Spaltungsgesetz im eigenen Beet. Von sechzehn Tochterpflanzen tragen statistisch nur neun die gewuenschten Eigenschaften. Der Rest faellt zurueck — kleinere Fruechte, andere Farben, ungleiche Reife.\n\nDamit ist die Sorte als reproduzierbare Einheit verloren. Der Gaertner muss jedes Jahr neu kaufen. Genau dies ist das Geschaeftsmodell der grossen Saatgut-Konzerne."
+        "text": "Wer F1-Saatgut nachzieht, erlebt Mendels Spaltungsgesetz im eigenen Beet. Von sechzehn Tochterpflanzen tragen statistisch nur neun die gewuenschten Eigenschaften. Der Rest faellt zurueck — kleinere Fruechte, andere Farben, ungleiche Reife.\n\nDamit ist die Sorte als reproduzierbare Einheit verloren. Der Gärtner muss jedes Jahr neu kaufen. Genau dies ist das Geschaeftsmodell der grossen Saatgut-Konzerne."
       },
       {
         "titel": "F1 erkennen",
-        "text": "Auf der Tuete steht es: \"F1\" oder \"Hybrid\". Manchmal versteckt im Kleingedruckten. Wer beim Bio-Saatgut von [Dreschflegel und Schwester-Initiativen](wissen:saatgut:saatgut-vereine) kauft, bekommt nur samenfeste Sorten. Demeter-zertifiziertes Saatgut ist immer samenfest.\n\nAuch CMS-Hybriden gehoeren zur F1-Familie: bei ihnen wird die maennliche Sterilitaet ueber Zellfusion erzeugt. Demeter und Bioland schliessen sie aus."
+        "text": "Auf der Tuete steht es: \"F1\" oder \"Hybrid\". Manchmal versteckt im Kleingedruckten. Wer beim Bio-Saatgut von [Dreschflegel und Schwester-Initiativen](wissen:saatgut:saatgut-vereine) kauft, bekommt nur samenfeste Sorten. Demeter-zertifiziertes Saatgut ist immer samenfest.\n\nAuch CMS-Hybriden gehören zur F1-Familie: bei ihnen wird die maennliche Sterilitaet über Zellfusion erzeugt. Demeter und Bioland schliessen sie aus."
       },
       {
         "titel": "Warum samenfest zaehlt",
-        "text": "Drei Gruende tragen die Wahl: Die Sorte gehoert dem Gaertner, nicht dem Konzern. Geschmack und Lagerfaehigkeit zaehlen mehr als der maximale Ertrag. Anpassung an Boden, Klima, Hand des Gaertners braucht Sorten, die sich weiterentwickeln duerfen.\n\nWer drei Generationen lang aus dem eigenen Beet selektiert, formt eine Linie, die zum Standort passt. Dieser Weg ist mit F1 versperrt."
+        "text": "Drei Gruende tragen die Wahl: Die Sorte gehoert dem Gärtner, nicht dem Konzern. Geschmack und Lagerfaehigkeit zaehlen mehr als der maximale Ertrag. Anpassung an Boden, Klima, Hand des Gaertners braucht Sorten, die sich weiterentwickeln duerfen.\n\nWer drei Generationen lang aus dem eigenen Beet selektiert, formt eine Linie, die zum Standort passt. Dieser Weg ist mit F1 versperrt."
       }
     ],
     "verwandt": [
-      {"sektion": "saatgut", "eintrag": "saatgut-gewinnung"},
-      {"sektion": "saatgut", "eintrag": "selektion-sortenerhalt"},
-      {"sektion": "saatgut", "eintrag": "saatgut-vereine"},
-      {"sektion": "saatgut", "eintrag": "saatgut-recht"},
-      {"sektion": "traditionen", "eintrag": "biodynamik"}
+      {
+        "sektion": "saatgut",
+        "eintrag": "saatgut-gewinnung"
+      },
+      {
+        "sektion": "saatgut",
+        "eintrag": "selektion-sortenerhalt"
+      },
+      {
+        "sektion": "saatgut",
+        "eintrag": "saatgut-vereine"
+      },
+      {
+        "sektion": "saatgut",
+        "eintrag": "saatgut-recht"
+      },
+      {
+        "sektion": "traditionen",
+        "eintrag": "biodynamik"
+      }
     ]
   },
   {
@@ -40,39 +55,54 @@
     "bloecke": [
       {
         "titel": "Trockensaatgut",
-        "text": "Bei [Salat](pflanze:kopfsalat), [Moehre](pflanze:moehre), [Zwiebel](pflanze:zwiebel), [Bohne](pflanze:buschbohne) und [Erbse](pflanze:erbse) reift der Samen am Bluetenstand oder in der Huelse. Die Pflanze trocknet aus, das Korn schwillt zur vollen Reife.\n\nIm Garten heisst das: die Pflanze stehen lassen, bis Stiel und Huelse braun und trocken sind. Dann mit der Hand in ein Tuch ernten. Trockensaatgut wird gerebelt, gesiebt, vom Spreu getrennt."
+        "text": "Bei [Salat](pflanze:kopfsalat), [Möhre](pflanze:moehre), [Zwiebel](pflanze:zwiebel), [Bohne](pflanze:buschbohne) und [Erbse](pflanze:erbse) reift der Samen am Blütenstand oder in der Huelse. Die Pflanze trocknet aus, das Korn schwillt zur vollen Reife.\n\nIm Garten heisst das: die Pflanze stehen lassen, bis Stiel und Huelse braun und trocken sind. Dann mit der Hand in ein Tuch ernten. Trockensaatgut wird gerebelt, gesiebt, vom Spreu getrennt."
       },
       {
         "titel": "Nasssaatgut",
-        "text": "Bei [Tomate](pflanze:tomate), [Gurke](pflanze:gurke) und [Kuerbis](pflanze:kuerbis) sitzt der Samen in feuchtem Fruchtfleisch. Hier hilft die Gaerung: das Fruchtfleisch kommt zwei bis drei Tage in ein Glas, eine Hefeschicht bildet sich, das gute Saatgut sinkt zu Boden.\n\nDann waschen, ueber feinem Sieb spuelen, auf einem Teller trocknen — niemals auf Papier, dort klebt das Korn fest. Die Gaerung loest auch Krankheitserreger ab und gibt sauberes Saatgut."
+        "text": "Bei [Tomate](pflanze:tomate), [Gurke](pflanze:gurke) und [Kürbis](pflanze:kuerbis) sitzt der Samen in feuchtem Fruchtfleisch. Hier hilft die Gaerung: das Fruchtfleisch kommt zwei bis drei Tage in ein Glas, eine Hefeschicht bildet sich, das gute Saatgut sinkt zu Boden.\n\nDann waschen, über feinem Sieb spuelen, auf einem Teller trocknen — niemals auf Papier, dort klebt das Korn fest. Die Gaerung loest auch Krankheitserreger ab und gibt sauberes Saatgut."
       },
       {
         "titel": "Werkzeuge",
-        "text": "Ein feines Sieb, ein Glas mit weiter Oeffnung, ein Tuch zum Rebeln, ein flacher Teller zum Trocknen, Papiertueten zum Beschriften. Mehr braucht es nicht.\n\nWichtig ist die gruendliche Trocknung. Erst voellig trockene Samen kommen in das Lager-Glas. Ein Korn, das sich noch biegen laesst, ist nicht trocken genug — es schimmelt im Winter."
+        "text": "Ein feines Sieb, ein Glas mit weiter Oeffnung, ein Tuch zum Rebeln, ein flacher Teller zum Trocknen, Papiertueten zum Beschriften. Mehr braucht es nicht.\n\nWichtig ist die gruendliche Trocknung. Erst völlig trockene Samen kommen in das Lager-Glas. Ein Korn, das sich noch biegen laesst, ist nicht trocken genug — es schimmelt im Winter."
       },
       {
         "titel": "Saubere Sorten",
-        "text": "Wer aus dem eigenen Garten Saatgut gewinnt, muss die [Vermehrungs-Abstaende](wissen:saatgut:vermehrungs-abstaende) beachten. Zwei Sorten Kuerbis im Beet — und im naechsten Jahr waechst eine wilde Mischung.\n\nAls Faustregel im Hausgarten: pro Art und Saison nur eine Sorte zur Vermehrung. Oder mit zeitlichem Versatz arbeiten — frueh und spaet bluehende Linien trennen."
+        "text": "Wer aus dem eigenen Garten Saatgut gewinnt, muss die [Vermehrungs-Abstaende](wissen:saatgut:vermehrungs-abstaende) beachten. Zwei Sorten Kürbis im Beet — und im naechsten Jahr waechst eine wilde Mischung.\n\nAls Faustregel im Hausgarten: pro Art und Saison nur eine Sorte zur Vermehrung. Oder mit zeitlichem Versatz arbeiten — früh und spät bluehende Linien trennen."
       }
     ],
     "verwandt": [
-      {"sektion": "saatgut", "eintrag": "samenfest-oder-f1"},
-      {"sektion": "saatgut", "eintrag": "saatgut-lagerung"},
-      {"sektion": "saatgut", "eintrag": "vermehrungs-abstaende"},
-      {"sektion": "saatgut", "eintrag": "selektion-sortenerhalt"},
-      {"sektion": "praxis", "eintrag": "mischkultur"}
+      {
+        "sektion": "saatgut",
+        "eintrag": "samenfest-oder-f1"
+      },
+      {
+        "sektion": "saatgut",
+        "eintrag": "saatgut-lagerung"
+      },
+      {
+        "sektion": "saatgut",
+        "eintrag": "vermehrungs-abstaende"
+      },
+      {
+        "sektion": "saatgut",
+        "eintrag": "selektion-sortenerhalt"
+      },
+      {
+        "sektion": "praxis",
+        "eintrag": "mischkultur"
+      }
     ]
   },
   {
     "id": "saatgut-lagerung",
     "name": "Saatgut lagern",
-    "untertitel": "Kuehl, dunkel, trocken — und wie lange",
+    "untertitel": "Kühl, dunkel, trocken — und wie lange",
     "symbol": "📦",
     "kurz": "Drei Worte tragen die Lagerung — und eine Tabelle.",
     "bloecke": [
       {
         "titel": "Die drei Faustregeln",
-        "text": "Kuehl, dunkel, trocken. Optimum sind Temperaturen zwischen vier und acht Grad, eine Luftfeuchte zwischen zwanzig und fuenfzig Prozent, ein luftdichtes Glas.\n\nHeizungskeller verboten — zu warm. Gemuesekeller verboten — zu feucht. Dachboden verboten — Schwankungen zu gross. Eine Holzkiste im kuehlsten Zimmer des Hauses traegt durch den Winter. Wer Platz hat, nutzt den Kuehlschrank."
+        "text": "Kühl, dunkel, trocken. Optimum sind Temperaturen zwischen vier und acht Grad, eine Luftfeuchte zwischen zwanzig und fuenfzig Prozent, ein luftdichtes Glas.\n\nHeizungskeller verboten — zu warm. Gemuesekeller verboten — zu feucht. Dachboden verboten — Schwankungen zu groß. Eine Holzkiste im kuehlsten Zimmer des Hauses trägt durch den Winter. Wer Platz hat, nutzt den Kuehlschrank."
       },
       {
         "titel": "Gefaesse",
@@ -80,18 +110,30 @@
       },
       {
         "titel": "Keimfaehigkeit nach Art",
-        "text": "Jede Art hat ihre eigene Lebensspanne im Glas. [Tomate](pflanze:tomate) vier bis zehn Jahre. [Gurke](pflanze:gurke) fuenf bis zehn Jahre. [Kuerbis](pflanze:kuerbis) vier bis sechs Jahre. [Bohne](pflanze:buschbohne) drei Jahre. [Erbse](pflanze:erbse) drei Jahre.\n\nDie kurzlebigen: [Pastinake](pflanze:moehre) nur ein Jahr (wirklich nur eines, danach faellt sie steil ab). [Zwiebel](pflanze:zwiebel) ein bis zwei Jahre. [Salat](pflanze:kopfsalat) ein bis fuenf Jahre. [Moehre](pflanze:moehre) zwei bis drei Jahre. [Lauch](pflanze:lauch) zwei Jahre."
+        "text": "Jede Art hat ihre eigene Lebensspanne im Glas. [Tomate](pflanze:tomate) vier bis zehn Jahre. [Gurke](pflanze:gurke) fuenf bis zehn Jahre. [Kürbis](pflanze:kuerbis) vier bis sechs Jahre. [Bohne](pflanze:buschbohne) drei Jahre. [Erbse](pflanze:erbse) drei Jahre.\n\nDie kurzlebigen: [Pastinake](pflanze:moehre) nur ein Jahr (wirklich nur eines, danach faellt sie steil ab). [Zwiebel](pflanze:zwiebel) ein bis zwei Jahre. [Salat](pflanze:kopfsalat) ein bis fuenf Jahre. [Möhre](pflanze:moehre) zwei bis drei Jahre. [Lauch](pflanze:lauch) zwei Jahre."
       },
       {
         "titel": "Keimprobe",
-        "text": "Wer Saatgut aus dem Vorjahr verwendet, macht zwei Wochen vor der Aussaat eine Probe. Zehn Koerner auf feuchtes Kuechenpapier, in eine Plastikdose, an einen warmen Ort.\n\nVon zehn Koernern keimen sieben? Gute Quote, normal aussaeen. Nur vier? Doppelt so dicht legen. Null? Saatgut entsorgen, neu beschaffen. So spart der Garten Ueberraschungen im Mai."
+        "text": "Wer Saatgut aus dem Vorjahr verwendet, macht zwei Wochen vor der Aussaat eine Probe. Zehn Koerner auf feuchtes Kuechenpapier, in eine Plastikdose, an einen warmen Ort.\n\nVon zehn Koernern keimen sieben? Gute Quote, normal aussäen. Nur vier? Doppelt so dicht legen. Null? Saatgut entsorgen, neu beschaffen. So spart der Garten Ueberraschungen im Mai."
       }
     ],
     "verwandt": [
-      {"sektion": "saatgut", "eintrag": "saatgut-gewinnung"},
-      {"sektion": "saatgut", "eintrag": "samenfest-oder-f1"},
-      {"sektion": "saatgut", "eintrag": "selektion-sortenerhalt"},
-      {"sektion": "praxis", "eintrag": "mischkultur"}
+      {
+        "sektion": "saatgut",
+        "eintrag": "saatgut-gewinnung"
+      },
+      {
+        "sektion": "saatgut",
+        "eintrag": "samenfest-oder-f1"
+      },
+      {
+        "sektion": "saatgut",
+        "eintrag": "selektion-sortenerhalt"
+      },
+      {
+        "sektion": "praxis",
+        "eintrag": "mischkultur"
+      }
     ]
   },
   {
@@ -103,7 +145,7 @@
     "bloecke": [
       {
         "titel": "Die besten Mutterpflanzen",
-        "text": "Selektion heisst: aussuchen, was traegt. Bei der [Moehre](pflanze:moehre) werden im Herbst alle Wurzeln ausgegraben und nebeneinander auf das Beet gelegt. Das Laub wird zurueckgeschnitten bis auf die Herzblaetter.\n\nDer Gaertner geht die Reihe ab. Form, Farbe, Gesundheit, Geschmack — jede Wurzel wird angeschaut. Nur die besten kommen zurueck in die Erde, ueberwintern, bluehen im naechsten Jahr. Bei der [Tomate](pflanze:tomate) zaehlt Geschmack, Reifezeit, Standfestigkeit."
+        "text": "Selektion heisst: aussuchen, was trägt. Bei der [Möhre](pflanze:moehre) werden im Herbst alle Wurzeln ausgegraben und nebeneinander auf das Beet gelegt. Das Laub wird zurueckgeschnitten bis auf die Herzblaetter.\n\nDer Gärtner geht die Reihe ab. Form, Farbe, Gesundheit, Geschmack — jede Wurzel wird angeschaut. Nur die besten kommen zurueck in die Erde, ueberwintern, bluehen im naechsten Jahr. Bei der [Tomate](pflanze:tomate) zaehlt Geschmack, Reifezeit, Standfestigkeit."
       },
       {
         "titel": "Genetische Vielfalt im Bestand",
@@ -111,19 +153,34 @@
       },
       {
         "titel": "Drei Generationen formen eine Linie",
-        "text": "Selektion ist Gespraech zwischen Gaertner und Pflanze. Wer drei Jahre nach Geschmack waehlt, formt eine eigene Linie. Sie traegt den Standort in sich — Boden, Klima, Hand.\n\nDies ist die Geheimnis der alten Hausgaerten: die \"Oma-Tomate\", die in einer Familie ueber vier Generationen gezogen wurde, ist genetisch nicht mehr die gleiche wie 1950. Sie ist eine eigene Auspraegung geworden."
+        "text": "Selektion ist Gespraech zwischen Gärtner und Pflanze. Wer drei Jahre nach Geschmack waehlt, formt eine eigene Linie. Sie trägt den Standort in sich — Boden, Klima, Hand.\n\nDies ist die Geheimnis der alten Hausgaerten: die \"Oma-Tomate\", die in einer Familie über vier Generationen gezogen wurde, ist genetisch nicht mehr die gleiche wie 1950. Sie ist eine eigene Auspraegung geworden."
       },
       {
         "titel": "Tradition Maria Thun",
-        "text": "Die biologisch-dynamische Sortenarbeit nach [Maria Thun](wissen:bruecken:maria-thun) verbindet Selektion mit dem [kosmischen Rhythmus](wissen:bruecken:kosmische-rhythmen). Wer Wurzelgemuese fuer Saatgut waehlt, arbeitet an Wurzeltagen. Fruechte an Fruchttagen.\n\nDer Aussaatkalender wird zum Werkzeug der Zuechtung. Bingenheimer Saatgut und Dreschflegel-Hoefe arbeiten in dieser Tradition — das macht das Saatgut nicht nur sortenrein, sondern auch in den kosmischen Strom eingewoben."
+        "text": "Die biologisch-dynamische Sortenarbeit nach [Maria Thun](wissen:bruecken:maria-thun) verbindet Selektion mit dem [kosmischen Rhythmus](wissen:bruecken:kosmische-rhythmen). Wer Wurzelgemüse für Saatgut waehlt, arbeitet an Wurzeltagen. Fruechte an Fruchttagen.\n\nDer Aussaatkalender wird zum Werkzeug der Zuechtung. Bingenheimer Saatgut und Dreschflegel-Hoefe arbeiten in dieser Tradition — das macht das Saatgut nicht nur sortenrein, sondern auch in den kosmischen Strom eingewoben."
       }
     ],
     "verwandt": [
-      {"sektion": "saatgut", "eintrag": "samenfest-oder-f1"},
-      {"sektion": "saatgut", "eintrag": "vermehrungs-abstaende"},
-      {"sektion": "saatgut", "eintrag": "biodynamische-saatgut-arbeit"},
-      {"sektion": "bruecken", "eintrag": "maria-thun"},
-      {"sektion": "traditionen", "eintrag": "biodynamik"}
+      {
+        "sektion": "saatgut",
+        "eintrag": "samenfest-oder-f1"
+      },
+      {
+        "sektion": "saatgut",
+        "eintrag": "vermehrungs-abstaende"
+      },
+      {
+        "sektion": "saatgut",
+        "eintrag": "biodynamische-saatgut-arbeit"
+      },
+      {
+        "sektion": "bruecken",
+        "eintrag": "maria-thun"
+      },
+      {
+        "sektion": "traditionen",
+        "eintrag": "biodynamik"
+      }
     ]
   },
   {
@@ -131,11 +188,11 @@
     "name": "Alte Sorten",
     "untertitel": "Was wir bewahren, was verloren geht",
     "symbol": "🏛",
-    "kurz": "Eine alte Sorte ist ein Stueck Kulturlandschaft im Korn.",
+    "kurz": "Eine alte Sorte ist ein Stück Kulturlandschaft im Korn.",
     "bloecke": [
       {
         "titel": "Was wir verloren haben",
-        "text": "Um 1900 wuchsen in europaeischen Gaerten ueber 7000 [Apfelsorten](pflanze:apfel), hunderte Tomatensorten, dutzende Salate, Wurzelgemuese, deren Namen heute kein Markt mehr kennt. Mit der Industrialisierung der Landwirtschaft sind neun von zehn Sorten verschwunden.\n\nWas bleibt, ist auf Lager-Faehigkeit, Standardisierung und Transport optimiert. Geschmack, regionale Anpassung und Vielfalt der Erscheinung blieben auf der Strecke."
+        "text": "Um 1900 wuchsen in europaeischen Gärten über 7000 [Apfelsorten](pflanze:apfel), hunderte Tomatensorten, dutzende Salate, Wurzelgemüse, deren Namen heute kein Markt mehr kennt. Mit der Industrialisierung der Landwirtschaft sind neun von zehn Sorten verschwunden.\n\nWas bleibt, ist auf Lager-Fähigkeit, Standardisierung und Transport optimiert. Geschmack, regionale Anpassung und Vielfalt der Erscheinung blieben auf der Strecke."
       },
       {
         "titel": "Warum es geschehen ist",
@@ -143,23 +200,38 @@
       },
       {
         "titel": "Was die alten Sorten tragen",
-        "text": "Eine alte Sorte traegt mehr als Gene. Sie traegt Anpassung an Klima und Region. Geschmack, der sich nicht in Tabellen fassen laesst. Robustheit, die sich ueber Jahrhunderte gezeigt hat. Eine Geschichte — wer sie gezogen hat, wofuer sie gekocht wurde, an welchem Hang sie wuchs.\n\nWas verloren geht, ist ein Stueck Heimat. Und ein genetischer Schatz, den wir bei Klimawandel und neuen Krankheiten bitter brauchen werden."
+        "text": "Eine alte Sorte trägt mehr als Gene. Sie trägt Anpassung an Klima und Region. Geschmack, der sich nicht in Tabellen fassen laesst. Robustheit, die sich über Jahrhunderte gezeigt hat. Eine Geschichte — wer sie gezogen hat, wofuer sie gekocht wurde, an welchem Hang sie wuchs.\n\nWas verloren geht, ist ein Stück Heimat. Und ein genetischer Schatz, den wir bei Klimawandel und neuen Krankheiten bitter brauchen werden."
       },
       {
         "titel": "Die Hueter",
-        "text": "Bauern, [Vereine](wissen:saatgut:saatgut-vereine), Klosterarchive halten das Werk lebendig. Bekannte Beispiele: die Schwarze [Tomate](pflanze:tomate) \"Black Krim\" aus der Krim. Der \"Hessische Mais\" als regionale Landsorte. Der Knollenziest aus Japan, ueber Frankreich nach Europa.\n\nDie Schwaebische Alb-Linse, fast ausgestorben, seit den 2000ern wieder im Anbau. Alte [Apfelsorten](pflanze:apfel) wie der Borsdorfer, der Gravensteiner, der Boskoop, die in Streuobstwiesen ueberlebt haben."
+        "text": "Bauern, [Vereine](wissen:saatgut:saatgut-vereine), Klosterarchive halten das Werk lebendig. Bekannte Beispiele: die Schwarze [Tomate](pflanze:tomate) \"Black Krim\" aus der Krim. Der \"Hessische Mais\" als regionale Landsorte. Der Knollenziest aus Japan, über Frankreich nach Europa.\n\nDie Schwaebische Alb-Linse, fast ausgestorben, seit den 2000ern wieder im Anbau. Alte [Apfelsorten](pflanze:apfel) wie der Borsdorfer, der Gravensteiner, der Boskoop, die in Streuobstwiesen ueberlebt haben."
       },
       {
         "titel": "Bewahren heisst pflanzen",
-        "text": "Eine Sorte im Genbank-Tiefkuehler ist konserviert, nicht lebendig. Lebendig wird sie erst im Beet — wo sie weiterwaechst, sich anpasst, neue Generationen formt.\n\nWer im Garten eine alte Sorte zieht und das Saatgut weitergibt, ist Teil dieser Bewegung. Drei Pflanzen, ein Tuetchen, ein Nachbar — so traegt die Geschichte sich selbst."
+        "text": "Eine Sorte im Genbank-Tiefkuehler ist konserviert, nicht lebendig. Lebendig wird sie erst im Beet — wo sie weiterwaechst, sich anpasst, neue Generationen formt.\n\nWer im Garten eine alte Sorte zieht und das Saatgut weitergibt, ist Teil dieser Bewegung. Drei Pflanzen, ein Tuetchen, ein Nachbar — so trägt die Geschichte sich selbst."
       }
     ],
     "verwandt": [
-      {"sektion": "saatgut", "eintrag": "saatgut-vereine"},
-      {"sektion": "saatgut", "eintrag": "saatgut-recht"},
-      {"sektion": "saatgut", "eintrag": "samenfest-oder-f1"},
-      {"sektion": "saatgut", "eintrag": "biodynamische-saatgut-arbeit"},
-      {"sektion": "traditionen", "eintrag": "permakultur"}
+      {
+        "sektion": "saatgut",
+        "eintrag": "saatgut-vereine"
+      },
+      {
+        "sektion": "saatgut",
+        "eintrag": "saatgut-recht"
+      },
+      {
+        "sektion": "saatgut",
+        "eintrag": "samenfest-oder-f1"
+      },
+      {
+        "sektion": "saatgut",
+        "eintrag": "biodynamische-saatgut-arbeit"
+      },
+      {
+        "sektion": "traditionen",
+        "eintrag": "permakultur"
+      }
     ]
   },
   {
@@ -171,61 +243,85 @@
     "bloecke": [
       {
         "titel": "Saatgut-Verkehrsgesetz",
-        "text": "Saatgut darf in Deutschland nur in den Verkehr, wenn die Sorte zugelassen ist. Das Saatgut-Verkehrsgesetz traegt drei Grundsaetze: Unterscheidbarkeit, Homogenitaet, Bestaendigkeit. Jede Sorte muss sich klar abgrenzen, einheitlich aussehen, ueber Jahre stabil bleiben.\n\nEine [alte Sorte](wissen:saatgut:alte-sorten) mit natuerlicher Variation passt schwer in dieses Gitter. Die Regel war fuer industrielle Sorten gemacht — sie schuetzt Konzerne mehr als Vielfalt."
+        "text": "Saatgut darf in Deutschland nur in den Verkehr, wenn die Sorte zugelassen ist. Das Saatgut-Verkehrsgesetz trägt drei Grundsaetze: Unterscheidbarkeit, Homogenitaet, Bestaendigkeit. Jede Sorte muss sich klar abgrenzen, einheitlich aussehen, über Jahre stabil bleiben.\n\nEine [alte Sorte](wissen:saatgut:alte-sorten) mit natuerlicher Variation passt schwer in dieses Gitter. Die Regel war für industrielle Sorten gemacht — sie schuetzt Konzerne mehr als Vielfalt."
       },
       {
         "titel": "EU-Saatgut-Verordnung",
-        "text": "Die EU hat 2024 die Saatgut-Verordnung reformiert. Erhaltungssorten bekamen erleichterte Zulassungs-Kriterien. Eine eigene Kategorie fuer alte und seltene Sorten, mit reduzierten Anforderungen an Homogenitaet.\n\nAmateursorten — fuer den Hausgarten, ohne kommerziellen Anspruch — duerfen in kleinen Mengen abgegeben werden. Der Spielraum wuchs. Vollstaendige Freiheit bleibt aber den grossen Akteuren vorbehalten."
+        "text": "Die EU hat 2024 die Saatgut-Verordnung reformiert. Erhaltungssorten bekamen erleichterte Zulassungs-Kriterien. Eine eigene Kategorie für alte und seltene Sorten, mit reduzierten Anforderungen an Homogenitaet.\n\nAmateursorten — für den Hausgarten, ohne kommerziellen Anspruch — duerfen in kleinen Mengen abgegeben werden. Der Spielraum wuchs. Vollstaendige Freiheit bleibt aber den grossen Akteuren vorbehalten."
       },
       {
         "titel": "Open Source Seeds",
-        "text": "Eine deutsche Initiative hat 2017 die Open-Source-Seeds-Lizenz geschaffen. Sie macht Saatgut zur Allmende: jede so lizenzierte Sorte bleibt frei. Patente und Sortenschutz sind ausgeschlossen. Wer das Saatgut weitergibt, gibt die Lizenz mit weiter.\n\nDas Modell folgt der Open-Source-Idee aus der Software-Welt. Saatgut gehoert allen, die mit ihm arbeiten. Ueber 90 Sorten sind bereits lizenziert — Tomaten, Weizen, Gerste, [Mais](pflanze:mais)."
+        "text": "Eine deutsche Initiative hat 2017 die Open-Source-Seeds-Lizenz geschaffen. Sie macht Saatgut zur Allmende: jede so lizenzierte Sorte bleibt frei. Patente und Sortenschutz sind ausgeschlossen. Wer das Saatgut weitergibt, gibt die Lizenz mit weiter.\n\nDas Modell folgt der Open-Source-Idee aus der Software-Welt. Saatgut gehoert allen, die mit ihm arbeiten. Über 90 Sorten sind bereits lizenziert — Tomaten, Weizen, Gerste, [Mais](pflanze:mais)."
       },
       {
         "titel": "Schenken bleibt frei",
-        "text": "Wer im eigenen Garten Saatgut zieht und an Nachbarn verschenkt, bewegt sich frei. Saatgut-Tausch-Boersen sind erlaubt, solange kein Geld fliesst. Vereine wie Dreschflegel melden ihre Sorten in den Kategorien Erhaltungs- oder Amateursorten an.\n\nDie [Vereine](wissen:saatgut:saatgut-vereine) leisten zugleich politische Arbeit gegen Restriktionen. Wer eine alte Sorte weitergibt, ist Teil dieser Bewegung — ein Sortentauschtag mehr, ein Konzernanteil weniger."
+        "text": "Wer im eigenen Garten Saatgut zieht und an Nachbarn verschenkt, bewegt sich frei. Saatgut-Tausch-Boersen sind erlaubt, solange kein Geld fließt. Vereine wie Dreschflegel melden ihre Sorten in den Kategorien Erhaltungs- oder Amateursorten an.\n\nDie [Vereine](wissen:saatgut:saatgut-vereine) leisten zugleich politische Arbeit gegen Restriktionen. Wer eine alte Sorte weitergibt, ist Teil dieser Bewegung — ein Sortentauschtag mehr, ein Konzernanteil weniger."
       }
     ],
     "verwandt": [
-      {"sektion": "saatgut", "eintrag": "alte-sorten"},
-      {"sektion": "saatgut", "eintrag": "saatgut-vereine"},
-      {"sektion": "saatgut", "eintrag": "samenfest-oder-f1"},
-      {"sektion": "saatgut", "eintrag": "biodynamische-saatgut-arbeit"}
+      {
+        "sektion": "saatgut",
+        "eintrag": "alte-sorten"
+      },
+      {
+        "sektion": "saatgut",
+        "eintrag": "saatgut-vereine"
+      },
+      {
+        "sektion": "saatgut",
+        "eintrag": "samenfest-oder-f1"
+      },
+      {
+        "sektion": "saatgut",
+        "eintrag": "biodynamische-saatgut-arbeit"
+      }
     ]
   },
   {
     "id": "vermehrungs-abstaende",
     "name": "Vermehrungs-Abstaende",
-    "untertitel": "Isolation fuer reines Saatgut",
+    "untertitel": "Isolation für reines Saatgut",
     "symbol": "📏",
     "kurz": "Wer Saatgut gewinnt, muss wissen, mit wem sich die Pflanze kreuzt.",
     "bloecke": [
       {
         "titel": "Selbstbestaeuber",
-        "text": "[Tomate](pflanze:tomate), [Bohne](pflanze:buschbohne), [Erbse](pflanze:erbse), [Salat](pflanze:kopfsalat) bestaeuben sich in der eigenen Bluete. Kreuzungen sind selten. Hier reichen fuenf bis dreissig Meter Abstand zwischen den Sorten im Garten.\n\nIm Hausgarten ist das machbar: drei verschiedene Tomaten in unterschiedlichen Beeten, dazwischen ein paar Reihen anderes Gemuese — und das Saatgut bleibt rein."
+        "text": "[Tomate](pflanze:tomate), [Bohne](pflanze:buschbohne), [Erbse](pflanze:erbse), [Salat](pflanze:kopfsalat) bestaeuben sich in der eigenen Blüte. Kreuzungen sind selten. Hier reichen fuenf bis dreissig Meter Abstand zwischen den Sorten im Garten.\n\nIm Hausgarten ist das machbar: drei verschiedene Tomaten in unterschiedlichen Beeten, dazwischen ein paar Reihen anderes Gemüse — und das Saatgut bleibt rein."
       },
       {
         "titel": "Insektenbestaeuber",
-        "text": "[Kuerbis](pflanze:kuerbis), [Gurke](pflanze:gurke), [Moehre](pflanze:moehre), [Zwiebel](pflanze:zwiebel), Kohl, [Sonnenblume](pflanze:sonnenblume) brauchen Biene und Schwebfliege. Hier sind 500 bis 1500 Meter Abstand noetig — fuer den Hausgarten unmoeglich.\n\nDrei Wege helfen: pro Art und Jahr nur eine Sorte zur Vermehrung. Oder Vliestunnel mit gezielter Handbestaeubung. Oder die Beutel-Methode: einzelne Blueten mit Gaze einpacken, am Morgen oeffnen, von Hand bestaeuben, wieder schliessen."
+        "text": "[Kürbis](pflanze:kuerbis), [Gurke](pflanze:gurke), [Möhre](pflanze:moehre), [Zwiebel](pflanze:zwiebel), Kohl, [Sonnenblume](pflanze:sonnenblume) brauchen Biene und Schwebfliege. Hier sind 500 bis 1500 Meter Abstand noetig — für den Hausgarten unmoeglich.\n\nDrei Wege helfen: pro Art und Jahr nur eine Sorte zur Vermehrung. Oder Vliestunnel mit gezielter Handbestaeubung. Oder die Beutel-Methode: einzelne Blüten mit Gaze einpacken, am Morgen oeffnen, von Hand bestaeuben, wieder schliessen."
       },
       {
         "titel": "Windbestaeuber",
-        "text": "[Mais](pflanze:mais), [Rote Bete](pflanze:rote-bete), [Mangold](pflanze:mangold), [Spinat](pflanze:spinat) lassen ihren Pollen mit dem Wind fliegen. Pollen reist Kilometer weit. Hier braucht es 1000 bis 3000 Meter Abstand — oder zeitlichen Versatz mit frueh- und spaetbluehenden Sorten.\n\nIm Hausgarten heisst das: nur eine Maissorte pro Saison vermehren. Wer mehrere Sorten will, plant ueber Jahre und arbeitet eng mit Nachbar-Gaertnern zusammen."
+        "text": "[Mais](pflanze:mais), [Rote Bete](pflanze:rote-bete), [Mangold](pflanze:mangold), [Spinat](pflanze:spinat) lassen ihren Pollen mit dem Wind fliegen. Pollen reist Kilometer weit. Hier braucht es 1000 bis 3000 Meter Abstand — oder zeitlichen Versatz mit früh- und spaetbluehenden Sorten.\n\nIm Hausgarten heisst das: nur eine Maissorte pro Saison vermehren. Wer mehrere Sorten will, plant über Jahre und arbeitet eng mit Nachbar-Gärtnern zusammen."
       },
       {
         "titel": "Tuecke bei der Kohlfamilie",
-        "text": "Alle Kohlarten kreuzen sich untereinander. Rosenkohl mit [Kohlrabi](pflanze:kohlrabi), Blumenkohl mit Wirsing, [Weisskohl](pflanze:weisskohl) mit [Brokkoli](pflanze:brokkoli) — alles Brassica oleracea, alles eine Art.\n\nWer Kohl-Saatgut zieht, vermehrt pro Jahr nur eine Sorte aus dieser Familie. Oder arbeitet mit Vliestunneln und sorgfaeltiger Isolation. Die [Selektion](wissen:saatgut:selektion-sortenerhalt) braucht hier besonders viel Geduld."
+        "text": "Alle Kohlarten kreuzen sich untereinander. Rosenkohl mit [Kohlrabi](pflanze:kohlrabi), Blumenkohl mit Wirsing, [Weißkohl](pflanze:weisskohl) mit [Brokkoli](pflanze:brokkoli) — alles Brassica oleracea, alles eine Art.\n\nWer Kohl-Saatgut zieht, vermehrt pro Jahr nur eine Sorte aus dieser Familie. Oder arbeitet mit Vliestunneln und sorgfaeltiger Isolation. Die [Selektion](wissen:saatgut:selektion-sortenerhalt) braucht hier besonders viel Geduld."
       },
       {
         "titel": "Werkzeuge im Garten",
-        "text": "Vlies-Tunnel oder feinmaschige Netze fuer Insektenbestaeuber. Bestaeubungs-Beutel aus Gaze fuer einzelne Blueten. Pinsel oder Wattestaebchen fuer die Handbestaeubung.\n\nMarkierungs-Baender, um bestaeubte Frucht zu erkennen. Und ein Notizbuch — wer welche Sorte wann bestaeubt hat. Wer drei Jahre so arbeitet, hat sein Sortenarchiv aufgebaut."
+        "text": "Vlies-Tunnel oder feinmaschige Netze für Insektenbestaeuber. Bestaeubungs-Beutel aus Gaze für einzelne Blüten. Pinsel oder Wattestaebchen für die Handbestaeubung.\n\nMarkierungs-Baender, um bestaeubte Frucht zu erkennen. Und ein Notizbuch — wer welche Sorte wann bestaeubt hat. Wer drei Jahre so arbeitet, hat sein Sortenarchiv aufgebaut."
       }
     ],
     "verwandt": [
-      {"sektion": "saatgut", "eintrag": "saatgut-gewinnung"},
-      {"sektion": "saatgut", "eintrag": "selektion-sortenerhalt"},
-      {"sektion": "saatgut", "eintrag": "samenfest-oder-f1"},
-      {"sektion": "praxis", "eintrag": "mischkultur"}
+      {
+        "sektion": "saatgut",
+        "eintrag": "saatgut-gewinnung"
+      },
+      {
+        "sektion": "saatgut",
+        "eintrag": "selektion-sortenerhalt"
+      },
+      {
+        "sektion": "saatgut",
+        "eintrag": "samenfest-oder-f1"
+      },
+      {
+        "sektion": "praxis",
+        "eintrag": "mischkultur"
+      }
     ]
   },
   {
@@ -237,19 +333,19 @@
     "bloecke": [
       {
         "titel": "Dreschflegel",
-        "text": "Dreschflegel (Deutschland, seit 1990) ist ein Verbund von 18 biologisch wirtschaftenden Hoefen. Etwa 700 bis 800 samenfeste Sorten Gemuese, Kraeuter, Blumen. Biologisch-dynamisches Fundament, Demeter und Bioland als Richtlinien.\n\nDer jaehrliche Katalog \"Saaten und Taten\" ist ein Werk fuer sich. Der gleichnamige Verein leistet politische Arbeit gegen Patente auf Pflanzen. Wer den Verbund stuetzt, traegt die [biodynamische Saatgut-Arbeit](wissen:saatgut:biodynamische-saatgut-arbeit) ins Heute."
+        "text": "Dreschflegel (Deutschland, seit 1990) ist ein Verbund von 18 biologisch wirtschaftenden Hoefen. Etwa 700 bis 800 samenfeste Sorten Gemüse, Kräuter, Blumen. Biologisch-dynamisches Fundament, Demeter und Bioland als Richtlinien.\n\nDer jaehrliche Katalog \"Saaten und Taten\" ist ein Werk für sich. Der gleichnamige Verein leistet politische Arbeit gegen Patente auf Pflanzen. Wer den Verbund stuetzt, trägt die [biodynamische Saatgut-Arbeit](wissen:saatgut:biodynamische-saatgut-arbeit) ins Heute."
       },
       {
         "titel": "Arche Noah und VEN",
-        "text": "Arche Noah (Oesterreich, seit 1990) traegt ueber 18.000 Mitglieder und ein Sortenarchiv mit rund 6500 Sorten. Schaugarten in Schiltern, Sortenboerse, Bildungsarbeit. Die groesste deutschsprachige Saatgut-Bewegung.\n\nVEN — Verein zur Erhaltung der Nutzpflanzenvielfalt (Deutschland, seit 1986) — verbindet private Hueter und Hobby-Gaertner. Sortenbetreuer uebernehmen einzelne [alte Sorten](wissen:saatgut:alte-sorten), vermehren sie, geben sie weiter."
+        "text": "Arche Noah (Oesterreich, seit 1990) trägt über 18.000 Mitglieder und ein Sortenarchiv mit rund 6500 Sorten. Schaugarten in Schiltern, Sortenboerse, Bildungsarbeit. Die groesste deutschsprachige Saatgut-Bewegung.\n\nVEN — Verein zur Erhaltung der Nutzpflanzenvielfalt (Deutschland, seit 1986) — verbindet private Hueter und Hobby-Gärtner. Sortenbetreuer uebernehmen einzelne [alte Sorten](wissen:saatgut:alte-sorten), vermehren sie, geben sie weiter."
       },
       {
         "titel": "ProSpecieRara und Reinsaat",
-        "text": "ProSpecieRara (Schweiz, seit 1982) ist eine Stiftung mit rund 5000 Sorten und alten Tierrassen. Patensystem — Menschen uebernehmen eine Sorte, pflegen sie, halten sie lebendig.\n\nReinsaat (Oesterreich) ist die professionelle Saatgut-Erzeugung mit biologisch-dynamischer Tiefe. Bingenheimer Saatgut (Deutschland) traegt die [Demeter-Linie](wissen:saatgut:biodynamische-saatgut-arbeit) ins Saatguttuetchen."
+        "text": "ProSpecieRara (Schweiz, seit 1982) ist eine Stiftung mit rund 5000 Sorten und alten Tierrassen. Patensystem — Menschen uebernehmen eine Sorte, pflegen sie, halten sie lebendig.\n\nReinsaat (Oesterreich) ist die professionelle Saatgut-Erzeugung mit biologisch-dynamischer Tiefe. Bingenheimer Saatgut (Deutschland) trägt die [Demeter-Linie](wissen:saatgut:biodynamische-saatgut-arbeit) ins Saatguttuetchen."
       },
       {
         "titel": "IG Saatgut und Open Source Seeds",
-        "text": "IG Saatgut ist der Zusammenschluss aller wesentlichen Initiativen aus Deutschland, Oesterreich und der Schweiz. Gemeinsame Lobbyarbeit gegen einschraenkende [Saatgut-Gesetze](wissen:saatgut:saatgut-recht), gegen Patente, gegen Agro-Gentechnik.\n\nOpen Source Seeds (Deutschland, seit 2017) traegt das Lizenz-Modell — Saatgut als Allmende, fuer immer frei. Ueber 90 Sorten sind bereits lizenziert. Eine Saatgut-Stiftung in Gruendung soll langfristig Mittel sammeln."
+        "text": "IG Saatgut ist der Zusammenschluss aller wesentlichen Initiativen aus Deutschland, Oesterreich und der Schweiz. Gemeinsame Lobbyarbeit gegen einschraenkende [Saatgut-Gesetze](wissen:saatgut:saatgut-recht), gegen Patente, gegen Agro-Gentechnik.\n\nOpen Source Seeds (Deutschland, seit 2017) trägt das Lizenz-Modell — Saatgut als Allmende, für immer frei. Über 90 Sorten sind bereits lizenziert. Eine Saatgut-Stiftung in Gruendung soll langfristig Mittel sammeln."
       },
       {
         "titel": "Wie unterstuetzen",
@@ -257,11 +353,26 @@
       }
     ],
     "verwandt": [
-      {"sektion": "saatgut", "eintrag": "alte-sorten"},
-      {"sektion": "saatgut", "eintrag": "saatgut-recht"},
-      {"sektion": "saatgut", "eintrag": "biodynamische-saatgut-arbeit"},
-      {"sektion": "saatgut", "eintrag": "samenfest-oder-f1"},
-      {"sektion": "traditionen", "eintrag": "biodynamik"}
+      {
+        "sektion": "saatgut",
+        "eintrag": "alte-sorten"
+      },
+      {
+        "sektion": "saatgut",
+        "eintrag": "saatgut-recht"
+      },
+      {
+        "sektion": "saatgut",
+        "eintrag": "biodynamische-saatgut-arbeit"
+      },
+      {
+        "sektion": "saatgut",
+        "eintrag": "samenfest-oder-f1"
+      },
+      {
+        "sektion": "traditionen",
+        "eintrag": "biodynamik"
+      }
     ]
   },
   {
@@ -269,36 +380,54 @@
     "name": "Biodynamische Saatgut-Arbeit",
     "untertitel": "Steiner-Bruecke im Korn",
     "symbol": "✨",
-    "kurz": "Eine Sorte inkarniert sich ueber Generationen im Boden.",
+    "kurz": "Eine Sorte inkarniert sich über Generationen im Boden.",
     "bloecke": [
       {
         "titel": "Steiner-Impuls",
-        "text": "Rudolf Steiner antwortete 1924 in seinem Landwirtschaftlichen Kurs auf die Frage nach der Qualitaet der Kulturpflanzen: alle muessten neu gezuechtet werden. Diese Saat ging spaet auf. Erst Ende der 1970er Jahre nahmen biologisch-dynamische Zuechter den Faden auf.\n\nHeute traegt das Werk Sorten wie das Lichtkorn-Roggen, die Maria-Thun-Moehre, die Erntesegen-[Tomate](pflanze:tomate). Der [Steiner-Impuls](wissen:naturmagier:steiner-impuls) wirkt im Saatgut bis heute fort."
+        "text": "Rudolf Steiner antwortete 1924 in seinem Landwirtschaftlichen Kurs auf die Frage nach der Qualitaet der Kulturpflanzen: alle muessten neu gezuechtet werden. Diese Saat ging spät auf. Erst Ende der 1970er Jahre nahmen biologisch-dynamische Zuechter den Faden auf.\n\nHeute trägt das Werk Sorten wie das Lichtkorn-Roggen, die Maria-Thun-Möhre, die Erntesegen-[Tomate](pflanze:tomate). Der [Steiner-Impuls](wissen:naturmagier:steiner-impuls) wirkt im Saatgut bis heute fort."
       },
       {
         "titel": "Demeter-Saatgut",
-        "text": "Demeter-Saatgut wird ab Mutterpflanze biologisch-dynamisch vermehrt. Das heisst: nicht nur die letzte Generation ist Demeter, sondern die ganze Linie. Praeparate (Hornmist, Hornkiesel) wirken auf Vermehrungs- und Mutterpflanze. So traegt das Korn die Qualitaet in sich.\n\nDer Unterschied zum Bio-Saatgut: Bio-Vermehrung reicht meist nur eine oder zwei Generationen zurueck. Demeter erwartet die volle Linie. Bingenheimer Saatgut und Dreschflegel-Hoefe arbeiten in dieser Strenge."
+        "text": "Demeter-Saatgut wird ab Mutterpflanze biologisch-dynamisch vermehrt. Das heisst: nicht nur die letzte Generation ist Demeter, sondern die ganze Linie. Praeparate (Hornmist, Hornkiesel) wirken auf Vermehrungs- und Mutterpflanze. So trägt das Korn die Qualitaet in sich.\n\nDer Unterschied zum Bio-Saatgut: Bio-Vermehrung reicht meist nur eine oder zwei Generationen zurueck. Demeter erwartet die volle Linie. Bingenheimer Saatgut und Dreschflegel-Hoefe arbeiten in dieser Strenge."
       },
       {
         "titel": "Aussaattage nach Maria Thun",
-        "text": "[Maria Thun](wissen:bruecken:maria-thun) hat das Werk fortgesetzt. Ihr Aussaatkalender folgt dem Lauf des Mondes vor dem Tierkreis. Wurzel-, Blatt-, Bluete-, Fruchttage — vier Qualitaeten, die sich rhythmisch ueber den Monat verteilen.\n\nWer [Moehre](pflanze:moehre) fuer Saatgut waehlt, arbeitet an Wurzeltagen. [Tomate](pflanze:tomate) an Fruchttagen. So wird die [Selektion](wissen:saatgut:selektion-sortenerhalt) zur kosmischen Praxis. Was im Boden ist, traegt den Himmel in sich."
+        "text": "[Maria Thun](wissen:bruecken:maria-thun) hat das Werk fortgesetzt. Ihr Aussaatkalender folgt dem Lauf des Mondes vor dem Tierkreis. Wurzel-, Blatt-, Blüte-, Fruchttage — vier Qualitaeten, die sich rhythmisch über den Monat verteilen.\n\nWer [Möhre](pflanze:moehre) für Saatgut waehlt, arbeitet an Wurzeltagen. [Tomate](pflanze:tomate) an Fruchttagen. So wird die [Selektion](wissen:saatgut:selektion-sortenerhalt) zur kosmischen Praxis. Was im Boden ist, trägt den Himmel in sich."
       },
       {
         "titel": "Mondphasen bei der Vermehrung",
-        "text": "Neben den Konstellationen traegt der [synodische Monat](wissen:mond:synodischer-monat) eine eigene Qualitaet. Aussaat bei zunehmendem Mond fuer alles, was nach oben waechst. Aussaat bei abnehmendem Mond fuer Wurzelgewaechse.\n\nFuer die Vermehrung selbst gilt Maria Thuns Faustregel: an Wurzel-Tagen Wurzel-Saatgut, an Frucht-Tagen Frucht-Saatgut. Ernten vor Vollmond — dann ist die Pflanze gut gefuellt. So inkarniert sich die Sorte im Rhythmus."
+        "text": "Neben den Konstellationen trägt der [synodische Monat](wissen:mond:synodischer-monat) eine eigene Qualitaet. Aussaat bei zunehmendem Mond für alles, was nach oben waechst. Aussaat bei abnehmendem Mond für Wurzelgewaechse.\n\nFür die Vermehrung selbst gilt Maria Thuns Faustregel: an Wurzel-Tagen Wurzel-Saatgut, an Frucht-Tagen Frucht-Saatgut. Ernten vor Vollmond — dann ist die Pflanze gut gefuellt. So inkarniert sich die Sorte im Rhythmus."
       },
       {
         "titel": "Inkarnation einer Sorte",
-        "text": "Steiner sprach von Inkarnation. Eine Sorte ist nicht nur Genetik — sie ist Wesen, das sich ueber Generationen formt. Wer drei, fuenf, zehn Jahre nach biodynamischen Prinzipien selektiert, formt nicht nur das Genom, sondern die Aetherqualitaet.\n\nDer Bezug zu [Viktor Schauberger](wissen:naturmagier:schauberger) liegt nahe: lebendige Kraefte im Wasser, im Boden, im Korn. Saatgut traegt diese Kraefte — wenn der Gaertner sie pflegt. Vertreter dieser Arbeit: Bingenheimer, Dreschflegel, [Demeter](wissen:traditionen:biodynamik)."
+        "text": "Steiner sprach von Inkarnation. Eine Sorte ist nicht nur Genetik — sie ist Wesen, das sich über Generationen formt. Wer drei, fuenf, zehn Jahre nach biodynamischen Prinzipien selektiert, formt nicht nur das Genom, sondern die Aetherqualitaet.\n\nDer Bezug zu [Viktor Schauberger](wissen:naturmagier:schauberger) liegt nahe: lebendige Kraefte im Wasser, im Boden, im Korn. Saatgut trägt diese Kraefte — wenn der Gärtner sie pflegt. Vertreter dieser Arbeit: Bingenheimer, Dreschflegel, [Demeter](wissen:traditionen:biodynamik)."
       }
     ],
     "verwandt": [
-      {"sektion": "saatgut", "eintrag": "selektion-sortenerhalt"},
-      {"sektion": "saatgut", "eintrag": "saatgut-vereine"},
-      {"sektion": "saatgut", "eintrag": "alte-sorten"},
-      {"sektion": "bruecken", "eintrag": "maria-thun"},
-      {"sektion": "traditionen", "eintrag": "biodynamik"},
-      {"sektion": "naturmagier", "eintrag": "steiner-impuls"}
+      {
+        "sektion": "saatgut",
+        "eintrag": "selektion-sortenerhalt"
+      },
+      {
+        "sektion": "saatgut",
+        "eintrag": "saatgut-vereine"
+      },
+      {
+        "sektion": "saatgut",
+        "eintrag": "alte-sorten"
+      },
+      {
+        "sektion": "bruecken",
+        "eintrag": "maria-thun"
+      },
+      {
+        "sektion": "traditionen",
+        "eintrag": "biodynamik"
+      },
+      {
+        "sektion": "naturmagier",
+        "eintrag": "steiner-impuls"
+      }
     ]
   }
 ]

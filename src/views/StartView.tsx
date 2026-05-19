@@ -348,7 +348,7 @@ export function StartView({ onWerkzeug, onJahreskreis, onMaya, onWelt, onTag }: 
       </section>
 
       <footer className="start-fuss">
-        <p>Mein kosmischer Garten · Werkzeug für zyklisches Gaertnern · {heute.getFullYear()}</p>
+        <p>Mein kosmischer Garten · Werkzeug für zyklisches Gärtnern · {heute.getFullYear()}</p>
       </footer>
     </div>
   );
