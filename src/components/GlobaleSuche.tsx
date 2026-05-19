@@ -27,8 +27,11 @@ interface Props {
 export function GlobaleSuche({ onKarte }: Props = {}) {
   const [q, setQ] = useState('');
   const [offen, setOffen] = useState(false);
+  const [mobilOffen, setMobilOffen] = useState(false);
   const [filterTyp, setFilterTyp] = useState<EintragsTyp | 'alle'>('alle');
   const wrap = useRef<HTMLDivElement>(null);
+  const mobilSheet = useRef<HTMLDivElement>(null);
+  const mobilInput = useRef<HTMLInputElement>(null);
   const nav = useDetailNav();
   const wotTreffer = useWotSuche(q);
 
@@ -55,10 +58,25 @@ export function GlobaleSuche({ onKarte }: Props = {}) {
     return () => document.removeEventListener('mousedown', click);
   }, []);
 
+  // Mobile: ESC schliesst das Sheet, Body-Scroll bleiben
+  useEffect(() => {
+    if (!mobilOffen) return;
+    function onKey(e: KeyboardEvent) { if (e.key === 'Escape') schliesseMobil(); }
+    document.addEventListener('keydown', onKey);
+    setTimeout(() => mobilInput.current?.focus(), 50);
+    return () => document.removeEventListener('keydown', onKey);
+  }, [mobilOffen]);
+
+  function schliesseMobil() {
+    setMobilOffen(false);
+    setQ('');
+  }
+
   function waehle(eintrag: Eintrag) {
     const ref = refAusId(eintrag.id);
     if (ref) nav.oeffne(ref);
     setOffen(false);
+    setMobilOffen(false);
     setQ('');
   }
 
@@ -67,91 +85,141 @@ export function GlobaleSuche({ onKarte }: Props = {}) {
       onKarte(t.pin.id);
     }
     setOffen(false);
+    setMobilOffen(false);
     setQ('');
   }
 
-  return (
-    <div className="suche-wrap" ref={wrap}>
-      <svg className="suche-lupe" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true">
-        <circle cx="10" cy="10" r="6" fill="none" stroke="currentColor" strokeWidth="1.8" />
-        <line x1="14.5" y1="14.5" x2="19" y2="19" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
-      </svg>
-      <input
-        type="search"
-        placeholder="Suche über alles — Pflanze, Arbeit, Wissen…"
-        value={q}
-        onChange={e => { setQ(e.target.value); setOffen(true); }}
-        onFocus={() => setOffen(true)}
-        className="suche-input"
-      />
-      {offen && q.trim() && (
-        <div className="suche-dropdown global-suche-dropdown">
-          <div className="global-suche-filter">
-            <button
-              className={`global-filter-chip ${filterTyp === 'alle' ? 'aktiv' : ''}`}
-              onClick={() => setFilterTyp('alle')}
-            >alle ({treffer.length})</button>
-            {(['pflanze', 'arbeit', 'wissen'] as EintragsTyp[]).map(t => (
-              <button
-                key={t}
-                className={`global-filter-chip ${filterTyp === t ? 'aktiv' : ''}`}
-                onClick={() => setFilterTyp(t)}
-                style={filterTyp === t ? { background: TYP_FARBE[t], borderColor: TYP_FARBE[t], color: 'white' } : { borderLeftColor: TYP_FARBE[t] }}
+  const trefferListe = (
+    <>
+      <div className="global-suche-filter">
+        <button
+          className={`global-filter-chip ${filterTyp === 'alle' ? 'aktiv' : ''}`}
+          onClick={() => setFilterTyp('alle')}
+        >alle ({treffer.length})</button>
+        {(['pflanze', 'arbeit', 'wissen'] as EintragsTyp[]).map(t => (
+          <button
+            key={t}
+            className={`global-filter-chip ${filterTyp === t ? 'aktiv' : ''}`}
+            onClick={() => setFilterTyp(t)}
+            style={filterTyp === t ? { background: TYP_FARBE[t], borderColor: TYP_FARBE[t], color: 'white' } : { borderLeftColor: TYP_FARBE[t] }}
+          >
+            {TYP_LABEL[t]} ({gruppiert[t]?.length ?? 0})
+          </button>
+        ))}
+      </div>
+      {treffer.length === 0 && wotTreffer.length === 0 ? (
+        <div className="suche-leer">Kein Treffer für „{q}“</div>
+      ) : (
+        <ul className="global-suche-liste">
+          {treffer.map(t => (
+            <li
+              key={t.eintrag.id}
+              className="global-suche-eintrag"
+              onClick={() => waehle(t.eintrag)}
+              style={{ borderLeftColor: TYP_FARBE[t.eintrag.typ] }}
+            >
+              <span className="global-suche-typ" style={{ background: TYP_FARBE[t.eintrag.typ] }}>
+                {TYP_LABEL[t.eintrag.typ]}
+              </span>
+              <div className="global-suche-info">
+                <span className="global-suche-titel">{t.eintrag.titel}</span>
+                {t.eintrag.untertitel && <span className="global-suche-untertitel">{t.eintrag.untertitel}</span>}
+                <span className="global-suche-kurz">{t.eintrag.kurz}</span>
+              </div>
+            </li>
+          ))}
+          {wotTreffer.slice(0, 10).map(t => {
+            const farbe = pinTrefferFarbe(t);
+            const kategorie = pinTrefferKategorie(t);
+            const titel = t.kind === 'pin' ? t.pin.titel : t.name;
+            const kurz = t.kind === 'pin'
+              ? (t.pin.text.slice(0, 100) || t.pin.hashtags.map(h => '#' + h).join(' '))
+              : t.hashtags.map(h => '#' + h).join(' ');
+            return (
+              <li
+                key={t.kind + ':' + (t.kind === 'pin' ? t.pin.id : t.profilId)}
+                className="global-suche-eintrag"
+                onClick={() => waehleWot(t)}
+                style={{ borderLeftColor: farbe }}
               >
-                {TYP_LABEL[t]} ({gruppiert[t]?.length ?? 0})
-              </button>
-            ))}
-          </div>
+                <span className="global-suche-typ" style={{ background: farbe }}>
+                  {kategorie}
+                </span>
+                <div className="global-suche-info">
+                  <span className="global-suche-titel">{titel}</span>
+                  <span className="global-suche-kurz">{kurz}</span>
+                </div>
+              </li>
+            );
+          })}
+        </ul>
+      )}
+    </>
+  );
 
-          {treffer.length === 0 && wotTreffer.length === 0 ? (
-            <div className="suche-leer">Kein Treffer für „{q}“</div>
-          ) : (
-            <ul className="global-suche-liste">
-              {treffer.map(t => (
-                <li
-                  key={t.eintrag.id}
-                  className="global-suche-eintrag"
-                  onClick={() => waehle(t.eintrag)}
-                  style={{ borderLeftColor: TYP_FARBE[t.eintrag.typ] }}
-                >
-                  <span className="global-suche-typ" style={{ background: TYP_FARBE[t.eintrag.typ] }}>
-                    {TYP_LABEL[t.eintrag.typ]}
-                  </span>
-                  <div className="global-suche-info">
-                    <span className="global-suche-titel">{t.eintrag.titel}</span>
-                    {t.eintrag.untertitel && <span className="global-suche-untertitel">{t.eintrag.untertitel}</span>}
-                    <span className="global-suche-kurz">{t.eintrag.kurz}</span>
-                  </div>
-                </li>
-              ))}
-              {wotTreffer.slice(0, 10).map(t => {
-                const farbe = pinTrefferFarbe(t);
-                const kategorie = pinTrefferKategorie(t);
-                const titel = t.kind === 'pin' ? t.pin.titel : t.name;
-                const kurz = t.kind === 'pin'
-                  ? (t.pin.text.slice(0, 100) || t.pin.hashtags.map(h => '#' + h).join(' '))
-                  : t.hashtags.map(h => '#' + h).join(' ');
-                return (
-                  <li
-                    key={t.kind + ':' + (t.kind === 'pin' ? t.pin.id : t.profilId)}
-                    className="global-suche-eintrag"
-                    onClick={() => waehleWot(t)}
-                    style={{ borderLeftColor: farbe }}
-                  >
-                    <span className="global-suche-typ" style={{ background: farbe }}>
-                      {kategorie}
-                    </span>
-                    <div className="global-suche-info">
-                      <span className="global-suche-titel">{titel}</span>
-                      <span className="global-suche-kurz">{kurz}</span>
-                    </div>
-                  </li>
-                );
-              })}
-            </ul>
-          )}
+  return (
+    <>
+      {/* Desktop: Inline-Suchfeld (auf Mobile ausgeblendet via CSS) */}
+      <div className="suche-wrap suche-wrap-desktop" ref={wrap}>
+        <svg className="suche-lupe" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true">
+          <circle cx="10" cy="10" r="6" fill="none" stroke="currentColor" strokeWidth="1.8" />
+          <line x1="14.5" y1="14.5" x2="19" y2="19" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
+        </svg>
+        <input
+          type="search"
+          placeholder="Suche über alles — Pflanze, Arbeit, Wissen…"
+          value={q}
+          onChange={e => { setQ(e.target.value); setOffen(true); }}
+          onFocus={() => setOffen(true)}
+          className="suche-input"
+        />
+        {offen && q.trim() && (
+          <div className="suche-dropdown global-suche-dropdown">
+            {trefferListe}
+          </div>
+        )}
+      </div>
+
+      {/* Mobile: nur Lupen-Knopf, Klick oeffnet Bottom-Sheet (auf Desktop ausgeblendet) */}
+      <button
+        type="button"
+        className="suche-lupe-knopf"
+        onClick={() => setMobilOffen(true)}
+        aria-label="Suche öffnen"
+        title="Suche"
+      >
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+          <circle cx="10" cy="10" r="6" fill="none" stroke="currentColor" strokeWidth="1.8" />
+          <line x1="14.5" y1="14.5" x2="19" y2="19" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
+        </svg>
+      </button>
+
+      {mobilOffen && (
+        <div className="suche-mobil-overlay" onClick={schliesseMobil}>
+          <div className="suche-mobil-sheet" ref={mobilSheet} onClick={e => e.stopPropagation()}>
+            <header className="suche-mobil-kopf">
+              <input
+                ref={mobilInput}
+                type="search"
+                value={q}
+                onChange={e => setQ(e.target.value)}
+                placeholder="Suche über alles — Pflanze, Arbeit, Wissen…"
+                className="suche-mobil-input"
+              />
+              <button
+                className="suche-mobil-schliessen"
+                onClick={schliesseMobil}
+                aria-label="Suche schließen"
+              >×</button>
+            </header>
+            <div className="suche-mobil-koerper">
+              {q.trim() ? trefferListe : (
+                <p className="suche-leer">Tippe los, um Pflanzen, Arbeiten, Wissen und Karten-Pins zu finden.</p>
+              )}
+            </div>
+          </div>
         </div>
       )}
-    </div>
+    </>
   );
 }

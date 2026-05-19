@@ -3082,17 +3082,6 @@ button { font-family: inherit; cursor: pointer; }
   .tag-mit-fokus { grid-template-columns: repeat(4, 1fr); }
   .tag-mit-fokus .tag-spalte.fokus { grid-column: span 2; }
 }
-@media (max-width: 900px) {
-  .app-header {
-    grid-template-columns: 1fr auto;
-    row-gap: .35rem;
-  }
-  .app-brand { grid-column: 1; }
-  .standort-menu { grid-column: 2; justify-self: end; }
-  .app-nav { grid-column: 1 / -1; }
-  .suche-wrap { grid-column: 1 / -1; max-width: none; justify-self: stretch; }
-}
-
 /* Mobile: nur den fokussierten Tag, andere ausgeblendet */
 @media (max-width: 640px) {
   .woche-spalten { grid-template-columns: 1fr; }
@@ -3102,7 +3091,160 @@ button { font-family: inherit; cursor: pointer; }
   .zelle-zeichen, .zelle-mond { display: none; }
   .kalender-titel { min-width: 140px; }
   .heute-btn { padding: .25rem .5rem; }
-  .suche-wrap { max-width: none; flex-basis: 100%; margin: 0; }
+}
+
+/* ============================================================
+   HEADER — MOBILE (kompakt, Icon-only)
+   ============================================================ */
+
+/* Lupen-Knopf nur auf Mobile sichtbar, Inline-Suche auf Desktop */
+.suche-lupe-knopf {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  background: transparent;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  color: var(--ink-mute);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.suche-lupe-knopf:hover { border-color: var(--accent); color: var(--accent-deep); }
+
+/* Tab-Icons standardmaessig versteckt, auf Mobile sichtbar */
+.tab-icon { display: none; }
+
+@media (max-width: 720px) {
+  .app-header {
+    grid-template-columns: auto auto 1fr auto;
+    grid-template-columns: unset;
+    display: flex;
+    align-items: center;
+    gap: .35rem;
+    padding: .4rem .65rem .4rem .55rem;
+  }
+  .app-header-links {
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+    flex: 1;
+    min-width: 0;
+  }
+  .app-header-mitte { display: none; }
+  .app-header-rechts {
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+    flex-shrink: 0;
+  }
+  /* Brand wird zu reinem Logo */
+  .app-brand { padding: 0; }
+  .app-brand-text { display: none; }
+  .app-brand-symbol { width: 28px; height: 28px; }
+  /* Tab-Buttons werden zu Icon-Knoepfen */
+  .app-nav {
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+    margin-left: .25rem;
+  }
+  .tab {
+    padding: .35rem .45rem;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .tab .tab-text { display: none; }
+  .tab .tab-icon { display: inline-flex; }
+  .tab-trenner { display: none; }
+  .tab-themen { width: 2rem; height: 2rem; }
+  /* Suche: inline weg, Lupen-Knopf rein */
+  .suche-wrap-desktop { display: none; }
+  .suche-lupe-knopf { display: inline-flex; }
+  /* Einstellungen + Anmelden + Avatar kompakter */
+  .app-einstellungen { width: 2rem; height: 2rem; }
+  .anmelden-knopf {
+    padding: .35rem .65rem;
+    font-size: .8rem;
+  }
+  .nutzer-menue { width: 2rem; height: 2rem; }
+}
+
+/* Such-Sheet (Mobile, Bottom-Sheet) */
+.suche-mobil-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(13, 19, 40, .35);
+  z-index: 1500;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 1rem;
+}
+.suche-mobil-sheet {
+  width: 100%;
+  max-width: 32rem;
+  max-height: calc(100vh - 2rem);
+  background: var(--paper);
+  border-radius: var(--radius);
+  box-shadow: 0 8px 28px rgba(0,0,0,.2);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.suche-mobil-kopf {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .65rem .75rem;
+  border-bottom: 1px solid var(--line);
+}
+.suche-mobil-input {
+  flex: 1;
+  padding: .55rem .85rem;
+  border: 1px solid var(--line-strong);
+  border-radius: 2rem;
+  font: inherit;
+  font-size: .95rem;
+  background: var(--paper-soft);
+}
+.suche-mobil-input:focus {
+  outline: none;
+  border-color: var(--accent);
+  background: var(--paper);
+}
+.suche-mobil-schliessen {
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.4rem;
+  line-height: 1;
+  background: transparent;
+  border: none;
+  color: var(--ink-mute);
+  cursor: pointer;
+  border-radius: 50%;
+}
+.suche-mobil-schliessen:hover { background: var(--paper-soft); color: var(--ink); }
+.suche-mobil-koerper {
+  flex: 1;
+  overflow-y: auto;
+  padding: .85rem;
+}
+.suche-mobil-koerper .global-suche-filter {
+  margin-bottom: .75rem;
+}
+.suche-mobil-koerper .suche-leer {
+  text-align: center;
+  color: var(--ink-mute);
+  font-style: italic;
+  padding: 2rem 1rem;
+  line-height: 1.55;
 }
 
 /* ====== PFLANZEN / ARBEITEN / STERNE — unveraendert kompakt ====== */

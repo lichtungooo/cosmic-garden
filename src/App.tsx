@@ -29,12 +29,27 @@ const LazyDIDAuthScreen = lazy(() =>
   })),
 );
 
-interface WerkzeugDef { id: WerkzeugRoute; label: string; pfad: string }
+interface WerkzeugDef { id: WerkzeugRoute; label: string; pfad: string; icon: React.ReactNode }
 type WerkzeugRoute = 'karte' | 'kalender' | 'tagebuch';
 
+const KarteIcon = (
+  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <path d="M9 4l-6 2v14l6-2 6 2 6-2V4l-6 2-6-2z" />
+    <path d="M9 4v14" />
+    <path d="M15 6v14" />
+  </svg>
+);
+
+const KalenderIcon = (
+  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <rect x="3" y="5" width="18" height="16" rx="2" />
+    <path d="M3 9h18M8 3v4M16 3v4" />
+  </svg>
+);
+
 const WERKZEUGE: WerkzeugDef[] = [
-  { id: 'karte',    label: 'Karte',    pfad: '/karte' },
-  { id: 'kalender', label: 'Kalender', pfad: '/kalender' },
+  { id: 'karte',    label: 'Karte',    pfad: '/karte',    icon: KarteIcon },
+  { id: 'kalender', label: 'Kalender', pfad: '/kalender', icon: KalenderIcon },
 ];
 
 export function App() {
@@ -105,6 +120,7 @@ export function App() {
               className="app-brand"
               onClick={() => navigate('/')}
               aria-label="Mein kosmischer Garten — Startseite"
+              title="Startseite"
             >
               <img src="/logo.svg" alt="" className="app-brand-symbol" />
               <span className="app-brand-text">Mein kosmischer Garten</span>
@@ -115,8 +131,11 @@ export function App() {
                   key={w.id}
                   className={`tab tab-werkzeug ${aktiveWerkzeug === w.id ? 'tab-active' : ''}`}
                   onClick={() => navigate(w.pfad)}
+                  aria-label={w.label}
+                  title={w.label}
                 >
-                  {w.label}
+                  <span className="tab-icon" aria-hidden="true">{w.icon}</span>
+                  <span className="tab-text">{w.label}</span>
                 </button>
               ))}
               <span className="tab-trenner" aria-hidden="true" />
@@ -124,9 +143,18 @@ export function App() {
                 className={`tab tab-themen ${themenAktiv ? 'tab-active' : ''} ${themenMega ? 'tab-themen-offen' : ''}`}
                 onClick={() => setThemenMega(o => !o)}
                 aria-expanded={themenMega}
+                aria-label="Themen"
+                title="Themen"
               >
-                Themen
-                <span className="tab-themen-pfeil" aria-hidden="true">▾</span>
+                <span className="tab-icon tab-themen-hamburger" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" aria-hidden="true">
+                    <line x1="4" y1="7" x2="20" y2="7" />
+                    <line x1="4" y1="12" x2="20" y2="12" />
+                    <line x1="4" y1="17" x2="20" y2="17" />
+                  </svg>
+                </span>
+                <span className="tab-text">Themen</span>
+                <span className="tab-themen-pfeil tab-text" aria-hidden="true">▾</span>
               </button>
             </nav>
           </div>

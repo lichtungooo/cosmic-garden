@@ -145,7 +145,14 @@ Jeder Eintrag durchläuft den **Adapter** (`datenbank-adapter.ts`), der ihn ins 
 
 ### Eine neue Pflanze anlegen
 
-In `src/data/pflanzen.json` einfügen. Bestehende Einträge als Vorlage nehmen — Schema in `lib/pflanzen.ts` (Type `Pflanze`). Als Pilot komplett befüllt: `tomate`.
+In `src/data/pflanzen.json` einfügen. Bestehende Einträge als Vorlage nehmen — Schema in `lib/pflanzen.ts` (Type `Pflanze`).
+
+**Stand des Steckbrief-Roll-outs** (19. Mai 2026):
+
+Mit vollem 10-Block-Steckbrief befüllt (11 von 87 Pflanzen):
+`tomate`, `kartoffel`, `moehre`, `kopfsalat`, `kuerbis`, `brennnessel`, `tagetes`, `ringelblume`, `basilikum`, `knoblauch`, `apfel`
+
+Restliche 76 Pflanzen haben weiterhin nur die Pflicht-Felder + Markdown-Texte aus dem Ursprungs-Stand. Leere Steckbrief-Blöcke werden im UI ausgeblendet, kein visueller Bruch. Befüll-Reihenfolge nach Wichtigkeit / Häufigkeit im Hausgarten — Vorschlag für die nächsten Wellen: Zwiebel, Erbse, Buschbohne, Erdbeere, Spinat, Pflücksalat, Lauch, Zucchini, Gurke, Schachtelhalm.
 
 **Pflicht-Felder** (legacy, alle bisherigen Einträge haben sie):
 `id, name, lateinisch, familie, kategorie, thunTyp, vorzuchtVon, vorzuchtBis, auspflanzenVon, auspflanzenBis, ernteVon, ernteBis, saattiefeCm, keimerTyp, keimtempC, keimdauerTage, pflanzabstandCm, tipps, vorzucht`
