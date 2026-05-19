@@ -3,6 +3,7 @@ import { Routes, Route, useNavigate, useLocation, useParams } from 'react-router
 import { useConnector, useAuthState } from '@real-life-stack/toolkit';
 import { KalenderView } from './views/KalenderView';
 import { TagebuchView } from './views/TagebuchView';
+import { WunschlistenView } from './views/WunschlistenView';
 import { WeltView } from './views/WeltView';
 import { StartView } from './views/StartView';
 import { KarteView } from './views/KarteView';
@@ -245,6 +246,8 @@ export function App() {
               <Route path="/arbeit/:id" element={<EintragRoute typ="arbeit" />} />
               <Route path="/wissen/:sektion/:eintrag" element={<WissenRoute />} />
               <Route path="/tag/:tag" element={<TagRoute />} />
+              <Route path="/wunschliste" element={<WunschlistenView />} />
+              <Route path="/wunschliste/:bereich" element={<WunschlistenView />} />
               <Route path="*" element={<NichtGefunden />} />
             </Routes>
           </main>

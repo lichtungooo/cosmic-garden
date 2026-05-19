@@ -1,172 +1,131 @@
-// Sektion "Was wünscht sich die Gemeinschaft hier?" am Ende einer Welt-Seite
-// (und perspektivisch jeder Sektion). Wer angemeldet ist, gibt einen Wunsch
-// rein — Titel, Tiefe, Beschreibung, optionale Tags. Andere sehen die Liste.
-// Voting kommt mit W2.
+// Kompakter Wunsch-Teaser am Welt-Hero. Zeigt die wichtigsten Stats (offen,
+// in Arbeit, eingebaut) und zwei Knöpfe: Eigenen Wunsch eintragen → öffnet
+// Formular inline, oder zur vollen Wunschliste-Seite.
 
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
+import { useNavigate } from 'react-router-dom';
 import {
   useWuenscheZuScope,
-  tiefeLabel,
-  tiefeBeschreibung,
-  statusLabel,
+  stats,
   statusFarbe,
   type WunschTiefe,
-  type Wunsch,
+  bereichAusScope,
+  tiefeLabel,
+  tiefeBeschreibung,
 } from '../lib/wuensche';
-import { useCurrentUser, useAuthState } from '@real-life-stack/toolkit';
+import { useAuthState } from '@real-life-stack/toolkit';
 import { useAnmeldung } from '../lib/anmeldung-context';
-import { useProfilName } from '../lib/profil-name';
 import { WoTEinladung } from './WoTEinladung';
-import { MarkdownText } from './MarkdownText';
 
 interface Props {
-  scope: string;          // 'welt:pflanzen', 'welt:praxis', ...
-  weltLabel: string;      // 'Pflanzen', 'Praxis', ...
-  beispiel?: string;      // 'Topinambur', 'Mykorrhiza-Inokulation', ...
+  scope: string;
+  weltLabel: string;
+  beispiel?: string;
 }
 
 export function WunschBlock({ scope, weltLabel, beispiel }: Props) {
-  const { wuensche, wuenscheAuf, loescheWunsch } = useWuenscheZuScope(scope);
-  const { data: user } = useCurrentUser();
+  const { wuensche, wuenscheAuf } = useWuenscheZuScope(scope);
   const authState = useAuthState();
   const anmeldung = useAnmeldung();
   const istAngemeldet = authState.status === 'authenticated';
+  const navigate = useNavigate();
   const [formularOffen, setFormularOffen] = useState(false);
+
+  const wunschStats = useMemo(() => stats(wuensche), [wuensche]);
+  const bereich = bereichAusScope(scope);
 
   async function neuerWunsch(titel: string, beschreibung: string, tiefe: WunschTiefe, tags: string[]) {
     await wuenscheAuf(titel, beschreibung, tiefe, tags);
     setFormularOffen(false);
   }
 
+  function zurListe() {
+    if (bereich) navigate(`/wunschliste/${bereich.id}`);
+  }
+
   return (
-    <section className="wunsch-block">
-      <header className="wunsch-block-kopf">
+    <section className="wunsch-teaser">
+      <div className="wunsch-teaser-text">
         <h2>Was wünscht sich die Gemeinschaft hier?</h2>
-        <p className="wunsch-block-lead">
+        <p>
           Du vermisst etwas in {weltLabel}? Trag deinen Wunsch ein — die Spitzen ziehen
           wir regelmäßig heraus und bauen sie ein.
         </p>
-      </header>
+      </div>
 
-      {wuensche.length > 0 && (
-        <ul className="wunsch-liste">
-          {wuensche.map(w => (
-            <WunschEintrag
-              key={w.id}
-              wunsch={w}
-              istAutor={user?.id === w.autorProfilId}
-              onLoeschen={() => loescheWunsch(w.id)}
-            />
-          ))}
-        </ul>
+      {wunschStats.gesamt > 0 && (
+        <div className="wunsch-teaser-stats">
+          <span
+            className="wunsch-teaser-stat"
+            style={{ borderColor: statusFarbe('offen'), color: statusFarbe('offen') }}
+          >
+            <strong>{wunschStats.offen}</strong> offen
+          </span>
+          {wunschStats.inArbeit > 0 && (
+            <span
+              className="wunsch-teaser-stat"
+              style={{ borderColor: statusFarbe('in-arbeit'), color: statusFarbe('in-arbeit') }}
+            >
+              <strong>{wunschStats.inArbeit}</strong> in Arbeit
+            </span>
+          )}
+          {wunschStats.eingebaut > 0 && (
+            <span
+              className="wunsch-teaser-stat"
+              style={{ borderColor: statusFarbe('eingebaut'), color: statusFarbe('eingebaut') }}
+            >
+              <strong>{wunschStats.eingebaut}</strong> eingebaut
+            </span>
+          )}
+        </div>
       )}
 
-      {!formularOffen ? (
-        <button
-          type="button"
-          className="wunsch-neu-knopf"
-          onClick={() => setFormularOffen(true)}
-        >
-          {wuensche.length === 0 ? `Den ersten Wunsch für ${weltLabel} eintragen` : 'Eigenen Wunsch dazu'}
-        </button>
-      ) : istAngemeldet ? (
-        <WunschFormular
-          weltLabel={weltLabel}
-          beispiel={beispiel}
-          onAbbrechen={() => setFormularOffen(false)}
-          onAbsenden={neuerWunsch}
-        />
-      ) : (
-        <WoTEinladung
-          zweck="frage"
-          onAnmelden={() => { setFormularOffen(false); anmeldung.oeffne(); }}
-        />
-      )}
+      <div className="wunsch-teaser-aktionen">
+        {!formularOffen ? (
+          <>
+            <button
+              type="button"
+              className="wunsch-teaser-eintragen"
+              onClick={() => setFormularOffen(true)}
+            >
+              Eigenen Wunsch eintragen
+            </button>
+            {wunschStats.gesamt > 0 && (
+              <button
+                type="button"
+                className="wunsch-teaser-zur-liste"
+                onClick={zurListe}
+              >
+                Zur Wunschliste →
+              </button>
+            )}
+          </>
+        ) : istAngemeldet ? (
+          <WunschKurzFormular
+            weltLabel={weltLabel}
+            beispiel={beispiel}
+            onAbbrechen={() => setFormularOffen(false)}
+            onAbsenden={neuerWunsch}
+          />
+        ) : (
+          <WoTEinladung
+            zweck="frage"
+            onAnmelden={() => { setFormularOffen(false); anmeldung.oeffne(); }}
+          />
+        )}
+      </div>
     </section>
   );
 }
 
-interface WunschEintragProps {
-  wunsch: Wunsch;
-  istAutor: boolean;
-  onLoeschen: () => void;
-}
-
-function WunschEintrag({ wunsch, istAutor, onLoeschen }: WunschEintragProps) {
-  const autorName = useProfilName(wunsch.autorProfilId);
-  const datumStr = new Date(wunsch.erstellt).toLocaleDateString('de-DE', {
-    day: '2-digit', month: 'short', year: 'numeric',
-  });
-
-  return (
-    <li className="wunsch-eintrag">
-      <header className="wunsch-kopf">
-        <div className="wunsch-titel-zeile">
-          <h3 className="wunsch-titel">{wunsch.titel}</h3>
-          <span
-            className="wunsch-status"
-            style={{ borderColor: statusFarbe(wunsch.status), color: statusFarbe(wunsch.status) }}
-            title={`Status: ${statusLabel(wunsch.status)}`}
-          >
-            {statusLabel(wunsch.status)}
-          </span>
-        </div>
-        <span className="wunsch-meta">
-          <span className="wunsch-autor">{autorName}</span>
-          <span className="wunsch-trenner">·</span>
-          <span className="wunsch-datum">{datumStr}</span>
-          <span className="wunsch-trenner">·</span>
-          <span className="wunsch-tiefe" title={tiefeBeschreibung(wunsch.tiefe)}>
-            Tiefe: {tiefeLabel(wunsch.tiefe)}
-          </span>
-          {istAutor && (
-            <button
-              type="button"
-              className="wunsch-loesch"
-              onClick={onLoeschen}
-              title="Wunsch löschen"
-              aria-label="Wunsch löschen"
-            >×</button>
-          )}
-        </span>
-      </header>
-
-      {wunsch.beschreibung && (
-        <div className="wunsch-beschreibung">
-          <MarkdownText text={wunsch.beschreibung} />
-        </div>
-      )}
-
-      {wunsch.tags.length > 0 && (
-        <div className="wunsch-tags">
-          {wunsch.tags.map(t => (
-            <span key={t} className="wunsch-tag">#{t}</span>
-          ))}
-        </div>
-      )}
-
-      {wunsch.status === 'eingebaut' && wunsch.eingebautLink && (
-        <a
-          href={wunsch.eingebautLink}
-          className="wunsch-eingebaut-link"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          → Eingebaut, hier anschauen
-        </a>
-      )}
-    </li>
-  );
-}
-
-interface WunschFormularProps {
+interface WunschKurzFormularProps {
   weltLabel: string;
   beispiel?: string;
   onAbbrechen: () => void;
   onAbsenden: (titel: string, beschreibung: string, tiefe: WunschTiefe, tags: string[]) => void;
 }
 
-function WunschFormular({ weltLabel, beispiel, onAbbrechen, onAbsenden }: WunschFormularProps) {
+function WunschKurzFormular({ weltLabel, beispiel, onAbbrechen, onAbsenden }: WunschKurzFormularProps) {
   const [titel, setTitel] = useState('');
   const [beschreibung, setBeschreibung] = useState('');
   const [tiefe, setTiefe] = useState<WunschTiefe>('mittel');
@@ -192,7 +151,7 @@ function WunschFormular({ weltLabel, beispiel, onAbbrechen, onAbsenden }: Wunsch
   return (
     <div className="wunsch-formular">
       <p className="wunsch-formular-anleitung">
-        Sag uns, was du in <strong>{weltLabel}</strong> gerne hinzufügen würdest{beispiel ? ` — z.B. ${beispiel}` : ''}.
+        Sag uns, was du in <strong>{weltLabel}</strong> gerne hinzugefügt sehen würdest{beispiel ? ` — z.B. ${beispiel}` : ''}.
         Je klarer deine Beschreibung, desto schneller können wir es einbauen.
       </p>
 
@@ -202,8 +161,9 @@ function WunschFormular({ weltLabel, beispiel, onAbbrechen, onAbsenden }: Wunsch
           type="text"
           value={titel}
           onChange={e => setTitel(e.target.value)}
-          placeholder={beispiel ? `z.B. "${beispiel} aufnehmen"` : 'Eine Zeile, klar und konkret'}
+          placeholder={beispiel ? `z.B. "${beispiel}"` : 'Eine Zeile, klar und konkret'}
           maxLength={140}
+          autoFocus
         />
       </label>
 
@@ -247,7 +207,7 @@ function WunschFormular({ weltLabel, beispiel, onAbbrechen, onAbsenden }: Wunsch
                 tagHinzu();
               }
             }}
-            placeholder="Schreib einen Tag und drück Enter, z.B. wurzelgemuese"
+            placeholder="Schreib einen Tag und drück Enter"
             maxLength={40}
           />
           {tags.length > 0 && (

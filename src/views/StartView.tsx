@@ -2,6 +2,7 @@
 // Klick fuehrt jeweils direkt in die Action.
 
 import { useMemo } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { useStandort } from '../lib/standort';
 import { mondTag, thunTypFarbe, thunTypLabel, phaseLabel } from '../lib/moon';
 import {
@@ -117,6 +118,7 @@ export function StartView({ onWerkzeug, onJahreskreis, onMaya, onWelt, onTag }: 
   const ort = useStandort();
   const heute = new Date();
   const nav = useDetailNav();
+  const navigate = useNavigate();
   const mond = useMemo(() => mondTag(heute), []);
   const wetterDaten = useWetter(ort);
   const wetterHeute = useMemo(() => findeWetterFuerDatum(wetterDaten, heute), [wetterDaten]);
@@ -345,6 +347,21 @@ export function StartView({ onWerkzeug, onJahreskreis, onMaya, onWelt, onTag }: 
             </button>
           ))}
         </div>
+      </section>
+
+      <section className="start-ideen-bar">
+        <button
+          type="button"
+          className="start-ideen-knopf"
+          onClick={() => navigate('/wunschliste/app')}
+        >
+          <span className="start-ideen-symbol">💡</span>
+          <span className="start-ideen-text">
+            <strong>Ideen für die Seite?</strong>
+            <span>Was würde dir den Garten leichter machen? Trag deine Idee ein.</span>
+          </span>
+          <span className="start-ideen-pfeil">→</span>
+        </button>
       </section>
 
       <footer className="start-fuss">

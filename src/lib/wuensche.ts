@@ -120,3 +120,43 @@ export function statusLabel(s: WunschStatus): string {
 export function statusFarbe(s: WunschStatus): string {
   return { 'offen': '#8b6f47', 'in-arbeit': '#c89b3a', 'eingebaut': '#4a8a3a' }[s];
 }
+
+export interface WunschStats {
+  offen: number;
+  inArbeit: number;
+  eingebaut: number;
+  gesamt: number;
+}
+
+export function stats(wuensche: Wunsch[]): WunschStats {
+  let offen = 0, inArbeit = 0, eingebaut = 0;
+  for (const w of wuensche) {
+    if (w.status === 'offen') offen++;
+    else if (w.status === 'in-arbeit') inArbeit++;
+    else if (w.status === 'eingebaut') eingebaut++;
+  }
+  return { offen, inArbeit, eingebaut, gesamt: wuensche.length };
+}
+
+// Bereich-Definitionen für die Wunschlisten-Seite
+export type WunschBereich = 'pflanzen' | 'praxis' | 'schulen' | 'gemeinschaft' | 'kosmos' | 'app';
+
+export interface BereichDef {
+  id: WunschBereich;
+  scope: string;       // wie in items gespeichert
+  label: string;
+  beispiel: string;
+}
+
+export const BEREICHE: BereichDef[] = [
+  { id: 'pflanzen',     scope: 'welt:pflanzen',     label: 'Pflanzen',     beispiel: 'Topinambur aufnehmen' },
+  { id: 'praxis',       scope: 'welt:praxis',       label: 'Praxis',       beispiel: 'Mykorrhiza-Inokulation' },
+  { id: 'schulen',      scope: 'welt:schulen',      label: 'Schulen',      beispiel: 'Hügelkultur tiefer behandeln' },
+  { id: 'gemeinschaft', scope: 'welt:gemeinschaft', label: 'Gemeinschaft', beispiel: 'Saatgut-Tausch-Treffen' },
+  { id: 'kosmos',       scope: 'welt:kosmos',       label: 'Kosmos',       beispiel: 'Plejaden-Zyklus tiefer' },
+  { id: 'app',          scope: 'app',               label: 'Ideen zur Seite', beispiel: 'Druck-Ansicht für Pflanzen-Steckbriefe' },
+];
+
+export function bereichAusScope(scope: string): BereichDef | undefined {
+  return BEREICHE.find(b => b.scope === scope);
+}
