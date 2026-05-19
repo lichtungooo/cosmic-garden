@@ -421,9 +421,75 @@ button { font-family: inherit; cursor: pointer; }
   gap: .35rem;
 }
 @media (max-width: 720px) {
-  .kalender-toolbar { grid-template-columns: 1fr; gap: .3rem; }
-  .kalender-toolbar > .switch-group,
+  /* Toolbar in zwei Zeilen: Switches oben, Pfeile+Titel+Heute unten,
+     Standort versteckt (sitzt nur einmal beim Standort-Profil). */
+  .kalender-toolbar {
+    grid-template-columns: 1fr;
+    gap: .35rem;
+    padding: .35rem .5rem;
+  }
+  .kalender-toolbar > .kalender-toolbar-links { justify-self: stretch; }
+  .kalender-toolbar-links {
+    display: flex;
+    justify-content: space-between;
+    gap: .35rem;
+    width: 100%;
+  }
   .kalender-toolbar > .nav-group { justify-self: center; }
+  .kalender-toolbar > .kalender-toolbar-rechts { display: none; }
+  .switch { padding: .3rem .55rem; font-size: .8rem; }
+  .heute-knopf-toolbar { padding: .3rem .65rem; font-size: .8rem; }
+  .kalender-titel { min-width: auto; font-size: .9rem; }
+
+  /* === Monat: Zellen drastisch reduzieren — nur Tag + Thun-Farbe === */
+  .monat-zelle { padding: .18rem .25rem; gap: .05rem; }
+  .zelle-sonne,
+  .zelle-wetter,
+  .zelle-phase-zeit,
+  .zelle-mond-gross { display: none; }
+  .zelle-mond { display: none; }   /* schon vorher versteckt, sicherheitshalber */
+  .zelle-zeichen { font-size: .7rem; opacity: .5; }
+  .zelle-zeichen.wechsel { font-size: .85rem; opacity: .9; }
+  .zelle-tag { font-size: .75rem; font-weight: 500; }
+  .monat-zelle.heute .zelle-tag {
+    width: 1.4em; height: 1.4em;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .7rem;
+  }
+  .zelle-tooltip { display: none; } /* kein Hover auf Touch */
+  .monat-legende { font-size: .7rem; flex-wrap: wrap; gap: .3rem; }
+
+  /* === Jahreskreis: quadratisch, fuellt Bildschirmbreite === */
+  .jahreskreis-wrap {
+    aspect-ratio: 1;
+    height: auto;
+    min-height: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .jahreskreis-svg {
+    max-width: 100%;
+    max-height: none;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* === Maya: bleibt wie geplant — eine Spalte === */
+  /* (existierende @media-Regel auf .maya-rad-wrap zieht) */
+}
+
+/* Phone hochkant — alles noch kompakter */
+@media (max-width: 480px) {
+  .switch { padding: .25rem .4rem; font-size: .72rem; }
+  .heute-knopf-toolbar { padding: .25rem .5rem; font-size: .72rem; }
+  .switch-group { width: 100%; justify-content: stretch; }
+  .switch-group .switch { flex: 1; min-width: 0; }
+  .kalender-toolbar-links .tab-trenner { display: none; }
+  /* Wochentag-Header schmal */
+  .monat-header { font-size: .58rem; padding: .2rem 0; }
 }
 .switch-group {
   display: inline-flex;
