@@ -10,6 +10,7 @@ import { weltAusKategorie, welt } from '../lib/welten';
 import { pflanzen as allePflanzen, type Pflanze } from '../lib/pflanzen';
 import { MarkdownText } from './MarkdownText';
 import { FragenBlock } from './FragenBlock';
+import { KorrekturKnopf } from './KorrekturKnopf';
 
 const VS_TEXT = String.fromCharCode(0xFE0E);
 const MONATE = ['Jan', 'Feb', 'Mrz', 'Apr', 'Mai', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Dez'];
@@ -101,6 +102,8 @@ export function EintragsSeite({ eintragId }: Props) {
       <VerwandtBlock treffer={verwandt} />
 
       <FragenBlock scope={e.id} kontextLabel={e.titel} />
+
+      <KorrekturKnopf scope={e.id} kontextLabel={e.titel} />
     </article>
   );
 }

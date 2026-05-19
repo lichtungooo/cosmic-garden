@@ -7525,3 +7525,129 @@ button { font-family: inherit; cursor: pointer; }
   .antworten-liste { padding-left: .65rem; }
 }
 
+/* ====== KORREKTUR-KNOPF (private Korrektur-Hinweise) ====== */
+.korrektur-knopf-wrap {
+  margin-top: 2rem;
+  padding-top: 1.25rem;
+  border-top: 1px dashed var(--line);
+  text-align: center;
+}
+.korrektur-link {
+  background: none;
+  border: none;
+  color: var(--ink-mute);
+  font-size: .82rem;
+  font-family: inherit;
+  cursor: pointer;
+  padding: .5rem .85rem;
+  border-radius: var(--radius);
+  transition: all .15s ease;
+}
+.korrektur-link:hover {
+  color: #5b3a8a;
+  background: var(--bg-soft);
+}
+.korrektur-eigene-zahl {
+  font-size: .75rem;
+  opacity: .7;
+  margin-left: .25rem;
+}
+.korrektur-bestaetigt {
+  background: #e8f4e8;
+  border: 1px solid #b8d4b8;
+  border-radius: var(--radius);
+  padding: .85rem 1.15rem;
+  color: #3a6e3a;
+  font-family: 'Spectral', Georgia, serif;
+  font-size: .92rem;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.korrektur-formular {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  margin-top: .5rem;
+  display: flex;
+  flex-direction: column;
+  gap: .85rem;
+  text-align: left;
+}
+.korrektur-formular-anleitung {
+  font-size: .85rem;
+  color: var(--ink-mute);
+  margin: 0;
+  line-height: 1.55;
+  font-family: 'Spectral', Georgia, serif;
+}
+.korrektur-feld {
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+}
+.korrektur-feld-label {
+  font-size: .75rem;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: var(--ink-mute);
+  font-weight: 600;
+}
+.korrektur-formular input[type="text"],
+.korrektur-formular textarea {
+  font-family: inherit;
+  font-size: .92rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: .55rem .75rem;
+  background: var(--bg);
+  color: var(--ink);
+  resize: vertical;
+}
+.korrektur-formular input[type="text"]:focus,
+.korrektur-formular textarea:focus {
+  outline: none;
+  border-color: #5b3a8a;
+}
+.korrektur-formular-fuss {
+  display: flex;
+  justify-content: flex-end;
+  gap: .65rem;
+  margin-top: .25rem;
+}
+.korrektur-abbrechen {
+  background: none;
+  border: 1px solid var(--line);
+  color: var(--ink-mute);
+  padding: .45rem 1rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-family: inherit;
+  font-size: .9rem;
+}
+.korrektur-absenden {
+  background: #5b3a8a;
+  border: 1px solid #5b3a8a;
+  color: white;
+  padding: .45rem 1rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-family: inherit;
+  font-size: .9rem;
+  font-weight: 500;
+}
+.korrektur-absenden:disabled {
+  opacity: .4;
+  cursor: not-allowed;
+}
+.korrektur-absenden:not(:disabled):hover {
+  background: #4d3074;
+  border-color: #4d3074;
+}
+
+@media (max-width: 720px) {
+  .korrektur-formular { padding: .95rem; }
+  .korrektur-link { font-size: .8rem; }
+}
+
