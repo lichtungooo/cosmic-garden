@@ -15,25 +15,26 @@ export interface TierkreisZeichen {
 }
 
 // Sternbild-Grenzen in siderischer Laenge (Lahiri-Ayanamsa, Grad).
-// Maria Thun und das Goetheanum nutzen die echten astronomischen Sternbildgrenzen
-// und keine gleichmaessige 30°-Aufteilung — Stier (~37°) und Jungfrau (~66°) sind
-// gross, Skorpion (~8°) klein. Diese Tabelle gibt die untere Grenze (in siderischer
-// Laenge) fuer jedes Zeichen, die obere Grenze ist der Beginn des naechsten.
-// Quelle: Astronomischer Kalender Goetheanum, Werner Bauer "Astronomie und
-// Astrologie" — entspricht den Aussaattagen von Maria Thun.
+// Maria Thun (Aussaattage) und Werner Bauer (Astronomischer Kalender Goetheanum)
+// nehmen die echten Sternbild-Ausdehnungen — keine gleichmaessige 30°-Aufteilung.
+// Stier (Plejaden + Hyaden + Aldebaran) ist ein riesiges Sternbild (~50°),
+// Jungfrau ebenso (~46°). Skorpion (~6°) und Waage sind klein.
+// Diese Tabelle entspricht der biodynamischen Aussaattage-Tradition (Maria Thun),
+// damit der Tagestyp-Wechsel mit den gedruckten Kalendern uebereinstimmt.
+// Quelle: Werner Bauer "Sternbild und Tierkreis", Goetheanum.
 export const TIERKREIS: (TierkreisZeichen & { startGrad: number })[] = [
   { name: 'Widder',     symbol: '♈', element: 'feuer',  thunTyp: 'frucht', startGrad:   0 },
-  { name: 'Stier',      symbol: '♉', element: 'erde',   thunTyp: 'wurzel', startGrad:  25 },
-  { name: 'Zwillinge',  symbol: '♊', element: 'luft',   thunTyp: 'bluete', startGrad:  63 },
-  { name: 'Krebs',      symbol: '♋', element: 'wasser', thunTyp: 'blatt',  startGrad:  91 },
-  { name: 'Loewe',      symbol: '♌', element: 'feuer',  thunTyp: 'frucht', startGrad: 121 },
-  { name: 'Jungfrau',   symbol: '♍', element: 'erde',   thunTyp: 'wurzel', startGrad: 156 },
-  { name: 'Waage',      symbol: '♎', element: 'luft',   thunTyp: 'bluete', startGrad: 222 },
-  { name: 'Skorpion',   symbol: '♏', element: 'wasser', thunTyp: 'blatt',  startGrad: 240 },
-  { name: 'Schuetze',   symbol: '♐', element: 'feuer',  thunTyp: 'frucht', startGrad: 248 },
+  { name: 'Stier',      symbol: '♉', element: 'erde',   thunTyp: 'wurzel', startGrad:  27 },
+  { name: 'Zwillinge',  symbol: '♊', element: 'luft',   thunTyp: 'bluete', startGrad:  75 },
+  { name: 'Krebs',      symbol: '♋', element: 'wasser', thunTyp: 'blatt',  startGrad: 110 },
+  { name: 'Löwe',       symbol: '♌', element: 'feuer',  thunTyp: 'frucht', startGrad: 137 },
+  { name: 'Jungfrau',   symbol: '♍', element: 'erde',   thunTyp: 'wurzel', startGrad: 174 },
+  { name: 'Waage',      symbol: '♎', element: 'luft',   thunTyp: 'bluete', startGrad: 217 },
+  { name: 'Skorpion',   symbol: '♏', element: 'wasser', thunTyp: 'blatt',  startGrad: 241 },
+  { name: 'Schütze',    symbol: '♐', element: 'feuer',  thunTyp: 'frucht', startGrad: 247 },
   { name: 'Steinbock',  symbol: '♑', element: 'erde',   thunTyp: 'wurzel', startGrad: 282 },
-  { name: 'Wassermann', symbol: '♒', element: 'luft',   thunTyp: 'bluete', startGrad: 309 },
-  { name: 'Fische',     symbol: '♓', element: 'wasser', thunTyp: 'blatt',  startGrad: 332 },
+  { name: 'Wassermann', symbol: '♒', element: 'luft',   thunTyp: 'bluete', startGrad: 313 },
+  { name: 'Fische',     symbol: '♓', element: 'wasser', thunTyp: 'blatt',  startGrad: 333 },
 ];
 
 function zeichenFuerLaenge(laenge: number): TierkreisZeichen {
@@ -141,9 +142,9 @@ export function mondTag(date: Date): MondTag {
   const phase = derivePhase(elongation, illumination);
   const waxing = elongation < 180;
 
-  // Aufsteigender Mond: Wenn Mond in Schuetze, Steinbock, Wassermann, Fische, Widder, Stier oder Zwillinge.
-  // Absteigender Mond: Krebs, Loewe, Jungfrau, Waage, Skorpion.
-  const aufsteigendeZeichen = ['Schuetze', 'Steinbock', 'Wassermann', 'Fische', 'Widder', 'Stier', 'Zwillinge'];
+  // Aufsteigender Mond: Wenn Mond in Schütze, Steinbock, Wassermann, Fische, Widder, Stier oder Zwillinge.
+  // Absteigender Mond: Krebs, Löwe, Jungfrau, Waage, Skorpion.
+  const aufsteigendeZeichen = ['Schütze', 'Steinbock', 'Wassermann', 'Fische', 'Widder', 'Stier', 'Zwillinge'];
   const aufstieg: Aufstieg = aufsteigendeZeichen.includes(zeichen.name) ? 'aufsteigend' : 'absteigend';
 
   // Knoten-Tag: Mond steht nahe (innerhalb 12 Grad) am auf- oder absteigenden Knoten.
@@ -184,7 +185,7 @@ function derivePhase(elongation: number, illumination: number): MondPhase {
 }
 
 export function thunTypLabel(typ: ThunTyp): string {
-  return { wurzel: 'Wurzeltag', blatt: 'Blatttag', bluete: 'Bluetentag', frucht: 'Fruchttag' }[typ];
+  return { wurzel: 'Wurzeltag', blatt: 'Blatttag', bluete: 'Blütentag', frucht: 'Fruchttag' }[typ];
 }
 
 export function thunTypFarbe(typ: ThunTyp): string {

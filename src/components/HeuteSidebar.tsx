@@ -53,10 +53,10 @@ function mondphaseFuerKontext(p: MondPhase): Mondphase | undefined {
 
 function tagestypEmpfehlung(typ: ThunTyp): string {
   return {
-    wurzel: 'Wurzelgemuese säen, ernten, lagern. Boden lockern.',
-    blatt:  'Blattgemuese, Kraeuter. Giessen wirkt heute besonders.',
-    bluete: 'Bluetenpflanzen, Brokkoli, Heilkraeuter, Bienen besuchen.',
-    frucht: 'Tomate, Bohne, Kürbis. Auch Veredelung an Obstbaeumen.',
+    wurzel: 'Wurzelgemüse säen, ernten, lagern. Boden lockern.',
+    blatt:  'Blattgemüse, Kräuter. Gießen wirkt heute besonders.',
+    bluete: 'Blütenpflanzen, Brokkoli, Heilkräuter, Bienen besuchen.',
+    frucht: 'Tomate, Bohne, Kürbis. Auch Veredelung an Obstbäumen.',
   }[typ];
 }
 

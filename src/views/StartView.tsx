@@ -81,7 +81,7 @@ const TAGESTYP_HINWEISE: Record<string, TagestypHinweis> = {
       'Blätter und Salate ernten für den Sofort-Verzehr (verlieren rasch an Frische).',
     ],
   },
-  Bluetentag: {
+  Blütentag: {
     kurz: 'Heute zeigt der Tierkreis das Licht-Element — alle blühenden Pflanzen, Schnittblumen und Heilkräuter sind in ihrem Element.',
     punkte: [
       'Brokkoli, Blumenkohl, Sonnenblume, Tagetes, Ringelblume, Kapuzinerkresse — säen und pflanzen.',

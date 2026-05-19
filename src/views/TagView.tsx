@@ -281,9 +281,9 @@ function Arbeitenblock({ arbeiten, mondTyp, onArbeit }: ArbeitenblockProps) {
 
 function empfehlung(typ: 'wurzel' | 'blatt' | 'bluete' | 'frucht'): string {
   return {
-    wurzel: 'Wurzeltag. Wurzelgemuese säen, ernten, lagern. Boden lockern, Kompost ausbringen. Alles, was unter der Erde Kraft sammelt.',
-    blatt:  'Blatttag. Salat, Kohl, Spinat, Kraeuter. Giessen wirkt heute besonders. Saftpflanzen und Blattgemuese.',
-    bluete: 'Bluetentag. Brokkoli, Blumenkohl, Heilkraeuter zur Blüte, Schnittblumen. Bienen besuchen, oelhaltige Pflanzen.',
-    frucht: 'Fruchttag. Tomate, Paprika, Bohne, Kürbis, Obstbaeume. Alles, was Frucht und Samen traegt. Auch Veredelung.',
+    wurzel: 'Wurzeltag. Wurzelgemüse säen, ernten, lagern. Boden lockern, Kompost ausbringen. Alles, was unter der Erde Kraft sammelt.',
+    blatt:  'Blatttag. Salat, Kohl, Spinat, Kräuter. Gießen wirkt heute besonders. Saftpflanzen und Blattgemüse.',
+    bluete: 'Blütentag. Brokkoli, Blumenkohl, Heilkräuter zur Blüte, Schnittblumen. Bienen besuchen, ölhaltige Pflanzen.',
+    frucht: 'Fruchttag. Tomate, Paprika, Bohne, Kürbis, Obstbäume. Alles, was Frucht und Samen trägt. Auch Veredelung.',
   }[typ];
 }
