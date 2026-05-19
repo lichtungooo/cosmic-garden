@@ -14,20 +14,34 @@ export interface TierkreisZeichen {
   thunTyp: ThunTyp;
 }
 
-export const TIERKREIS: TierkreisZeichen[] = [
-  { name: 'Widder',     symbol: '♈', element: 'feuer',  thunTyp: 'frucht' },
-  { name: 'Stier',      symbol: '♉', element: 'erde',   thunTyp: 'wurzel' },
-  { name: 'Zwillinge',  symbol: '♊', element: 'luft',   thunTyp: 'bluete' },
-  { name: 'Krebs',      symbol: '♋', element: 'wasser', thunTyp: 'blatt' },
-  { name: 'Loewe',      symbol: '♌', element: 'feuer',  thunTyp: 'frucht' },
-  { name: 'Jungfrau',   symbol: '♍', element: 'erde',   thunTyp: 'wurzel' },
-  { name: 'Waage',      symbol: '♎', element: 'luft',   thunTyp: 'bluete' },
-  { name: 'Skorpion',   symbol: '♏', element: 'wasser', thunTyp: 'blatt' },
-  { name: 'Schuetze',   symbol: '♐', element: 'feuer',  thunTyp: 'frucht' },
-  { name: 'Steinbock',  symbol: '♑', element: 'erde',   thunTyp: 'wurzel' },
-  { name: 'Wassermann', symbol: '♒', element: 'luft',   thunTyp: 'bluete' },
-  { name: 'Fische',     symbol: '♓', element: 'wasser', thunTyp: 'blatt' },
+// Sternbild-Grenzen in siderischer Laenge (Lahiri-Ayanamsa, Grad).
+// Maria Thun und das Goetheanum nutzen die echten astronomischen Sternbildgrenzen
+// und keine gleichmaessige 30°-Aufteilung — Jungfrau ist riesig (~67°),
+// Skorpion klein (~12°). Diese Tabelle gibt die untere Grenze (in siderischer
+// Laenge) fuer jedes Zeichen, die obere Grenze ist der Beginn des naechsten.
+// Quellen: Astronomischer Kalender Goetheanum, Maria Thun Aussaattage.
+export const TIERKREIS: (TierkreisZeichen & { startGrad: number })[] = [
+  { name: 'Widder',     symbol: '♈', element: 'feuer',  thunTyp: 'frucht', startGrad:   0 },
+  { name: 'Stier',      symbol: '♉', element: 'erde',   thunTyp: 'wurzel', startGrad:  27 },
+  { name: 'Zwillinge',  symbol: '♊', element: 'luft',   thunTyp: 'bluete', startGrad:  51 },
+  { name: 'Krebs',      symbol: '♋', element: 'wasser', thunTyp: 'blatt',  startGrad:  92 },
+  { name: 'Loewe',      symbol: '♌', element: 'feuer',  thunTyp: 'frucht', startGrad: 121 },
+  { name: 'Jungfrau',   symbol: '♍', element: 'erde',   thunTyp: 'wurzel', startGrad: 155 },
+  { name: 'Waage',      symbol: '♎', element: 'luft',   thunTyp: 'bluete', startGrad: 222 },
+  { name: 'Skorpion',   symbol: '♏', element: 'wasser', thunTyp: 'blatt',  startGrad: 234 },
+  { name: 'Schuetze',   symbol: '♐', element: 'feuer',  thunTyp: 'frucht', startGrad: 256 },
+  { name: 'Steinbock',  symbol: '♑', element: 'erde',   thunTyp: 'wurzel', startGrad: 287 },
+  { name: 'Wassermann', symbol: '♒', element: 'luft',   thunTyp: 'bluete', startGrad: 305 },
+  { name: 'Fische',     symbol: '♓', element: 'wasser', thunTyp: 'blatt',  startGrad: 326 },
 ];
+
+function zeichenFuerLaenge(laenge: number): TierkreisZeichen {
+  const l = ((laenge % 360) + 360) % 360;
+  for (let i = TIERKREIS.length - 1; i >= 0; i--) {
+    if (l >= TIERKREIS[i].startGrad) return TIERKREIS[i];
+  }
+  return TIERKREIS[0]; // sollte nie passieren weil Widder bei 0° startet
+}
 
 const DEG = Math.PI / 180;
 
@@ -118,8 +132,7 @@ export function mondTag(date: Date): MondTag {
   const ayan = lahiriAyanamsa(jd);
   const moonSid = normalizeAngle(moonTrop - ayan);
 
-  const zeichenIndex = Math.floor(moonSid / 30) % 12;
-  const zeichen = TIERKREIS[zeichenIndex];
+  const zeichen = zeichenFuerLaenge(moonSid);
 
   const sunTrop = sunTropicalLongitude(jd);
   const elongation = normalizeAngle(moonTrop - sunTrop);
