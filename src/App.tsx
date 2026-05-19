@@ -1,4 +1,5 @@
 import { Suspense, lazy, useCallback, useEffect, useMemo, useState } from 'react';
+import { Routes, Route, useNavigate, useLocation, useParams } from 'react-router-dom';
 import { useConnector, useAuthState } from '@real-life-stack/toolkit';
 import { KalenderView } from './views/KalenderView';
 import { TagebuchView } from './views/TagebuchView';
@@ -6,8 +7,9 @@ import { WeltView } from './views/WeltView';
 import { StartView } from './views/StartView';
 import { KarteView } from './views/KarteView';
 import { ProfilView } from './views/ProfilView';
+import { EintragsSeite } from './components/EintragsSeite';
+import { TagSeite } from './components/TagSeite';
 import { GlobaleSuche } from './components/GlobaleSuche';
-import { DetailSeite } from './components/DetailSeite';
 import { ThemenMega } from './components/ThemenMega';
 import { NutzerMenue } from './components/NutzerMenue';
 import { StandortContext, ladeStandort, speicherStandort, type Ort } from './lib/standort';
@@ -17,7 +19,7 @@ import {
   DetailNavContext,
   type DetailNavigation,
   type DetailRef,
-  gleichRef,
+  refZuPfad,
 } from './lib/detail-navigation';
 import { type Pflanze, type Gartenarbeit } from './lib/pflanzen';
 
@@ -27,104 +29,70 @@ const LazyDIDAuthScreen = lazy(() =>
   })),
 );
 
-type WerkzeugTab = 'karte' | 'kalender' | 'tagebuch';
-type Tab =
-  | { kind: 'home' }
-  | { kind: 'werkzeug'; id: WerkzeugTab }
-  | { kind: 'welt'; id: WeltId }
-  | { kind: 'profil' };
+interface WerkzeugDef { id: WerkzeugRoute; label: string; pfad: string }
+type WerkzeugRoute = 'karte' | 'kalender' | 'tagebuch';
 
-const WERKZEUGE: { id: WerkzeugTab; label: string }[] = [
-  { id: 'karte',    label: 'Karte' },
-  { id: 'kalender', label: 'Kalender' },
+const WERKZEUGE: WerkzeugDef[] = [
+  { id: 'karte',    label: 'Karte',    pfad: '/karte' },
+  { id: 'kalender', label: 'Kalender', pfad: '/kalender' },
 ];
 
-function tabSchluessel(t: Tab): string {
-  if (t.kind === 'home') return 'home';
-  if (t.kind === 'profil') return 'profil';
-  return `${t.kind}:${t.id}`;
-}
-
 export function App() {
+  const navigate = useNavigate();
+  const location = useLocation();
   const connector = useConnector();
   const authState = useAuthState();
   const istAngemeldet = authState.status === 'authenticated';
 
-  const [tab, setTab] = useState<Tab>({ kind: 'home' });
   const [datum, setDatum] = useState(() => new Date());
-  const [detailStack, setDetailStack] = useState<DetailRef[]>([]);
   const [ort, setOrt] = useState<Ort>(() => ladeStandort());
   const [themenMega, setThemenMega] = useState(false);
   const [kontakteOffen, setKontakteOffen] = useState(false);
   const [verifyOffen, setVerifyOffen] = useState(false);
   const [anmeldungOffen, setAnmeldungOffen] = useState(false);
 
-  // Wer auf Profil-Tab will, ohne angemeldet zu sein, landet im Anmelde-Schirm.
-  function wechselTabSicher(t: Tab) {
-    if (t.kind === 'profil' && !istAngemeldet) {
-      setAnmeldungOffen(true);
-      return;
-    }
-    if (t.kind === 'werkzeug' && t.id === 'tagebuch' && !istAngemeldet) {
-      setAnmeldungOffen(true);
-      return;
-    }
-    wechselTab(t);
-  }
+  useEffect(() => { speicherStandort(ort); }, [ort]);
 
-  useEffect(() => {
-    speicherStandort(ort);
-  }, [ort]);
+  // Themen-Mega bei Navigation schliessen
+  useEffect(() => { setThemenMega(false); }, [location.pathname]);
 
+  // === Detail-Navigation: alles geht ueber Router ===
   const oeffneDetail = useCallback((ref: DetailRef) => {
-    setDetailStack(prev => {
-      const oben = prev[prev.length - 1];
-      if (oben && gleichRef(oben, ref)) return prev;
-      return [...prev, ref];
-    });
-  }, []);
-
-  const zurueck = useCallback(() => {
-    setDetailStack(prev => prev.slice(0, -1));
-  }, []);
-
-  const springeZu = useCallback((i: number) => {
-    setDetailStack(prev => prev.slice(0, i + 1));
-  }, []);
-
-  const schliesseDetail = useCallback(() => {
-    setDetailStack([]);
-  }, []);
-
-  const nav: DetailNavigation = useMemo(() => ({
-    oeffne: oeffneDetail,
-    zurueck,
-    springeZu,
-    schliesse: schliesseDetail,
-    stack: detailStack,
-  }), [oeffneDetail, zurueck, springeZu, schliesseDetail, detailStack]);
+    navigate(refZuPfad(ref));
+  }, [navigate]);
 
   const oeffneWissen = useCallback((sektion: string, eintrag: string) => {
     oeffneDetail({ kind: 'wissen', sektion, eintrag });
   }, [oeffneDetail]);
 
-  const onPflanze = useCallback((p: Pflanze) => {
-    oeffneDetail({ kind: 'pflanze', id: p.id });
-  }, [oeffneDetail]);
+  const nav: DetailNavigation = useMemo(() => ({
+    oeffne: oeffneDetail,
+    zurueck: () => navigate(-1),
+    springeZu: () => navigate('/'),
+    schliesse: () => navigate('/'),
+    stack: [],
+  }), [oeffneDetail, navigate]);
 
-  const onArbeit = useCallback((a: Gartenarbeit) => {
-    oeffneDetail({ kind: 'arbeit', id: a.id });
-  }, [oeffneDetail]);
-
-  function wechselTab(t: Tab) {
-    setTab(t);
-    setDetailStack([]);
-    setThemenMega(false);
+  // === Navigation mit Anmelde-Pruefung ===
+  function gehZu(pfad: string, brauchtAnmeldung = false) {
+    if (brauchtAnmeldung && !istAngemeldet) {
+      setAnmeldungOffen(true);
+      return;
+    }
+    navigate(pfad);
   }
 
-  const inDetail = detailStack.length > 0;
-  const aktiverSchluessel = tabSchluessel(tab);
-  const themenAktiv = !inDetail && tab.kind === 'welt';
+  const onPflanze = useCallback((p: Pflanze) => oeffneDetail({ kind: 'pflanze', id: p.id }), [oeffneDetail]);
+  const onArbeit  = useCallback((a: Gartenarbeit) => oeffneDetail({ kind: 'arbeit',  id: a.id }), [oeffneDetail]);
+
+  // === Aktiver Tab fuer Header-Styling ===
+  const aktiveWerkzeug = (() => {
+    for (const w of WERKZEUGE) {
+      if (location.pathname === w.pfad || location.pathname.startsWith(w.pfad + '/')) return w.id;
+    }
+    return null;
+  })();
+  const themenAktiv = location.pathname.startsWith('/welt/');
 
   return (
     <StandortContext.Provider value={ort}>
@@ -135,26 +103,22 @@ export function App() {
           <div className="app-header-links">
             <button
               className="app-brand"
-              onClick={() => wechselTab({ kind: 'home' })}
+              onClick={() => navigate('/')}
               aria-label="Mein kosmischer Garten — Startseite"
             >
               <img src="/logo.svg" alt="" className="app-brand-symbol" />
               <span className="app-brand-text">Mein kosmischer Garten</span>
             </button>
             <nav className="app-nav">
-              {WERKZEUGE.map(w => {
-                const t: Tab = { kind: 'werkzeug', id: w.id };
-                const aktiv = !inDetail && tabSchluessel(t) === aktiverSchluessel;
-                return (
-                  <button
-                    key={w.id}
-                    className={`tab tab-werkzeug ${aktiv ? 'tab-active' : ''}`}
-                    onClick={() => wechselTab(t)}
-                  >
-                    {w.label}
-                  </button>
-                );
-              })}
+              {WERKZEUGE.map(w => (
+                <button
+                  key={w.id}
+                  className={`tab tab-werkzeug ${aktiveWerkzeug === w.id ? 'tab-active' : ''}`}
+                  onClick={() => navigate(w.pfad)}
+                >
+                  {w.label}
+                </button>
+              ))}
               <span className="tab-trenner" aria-hidden="true" />
               <button
                 className={`tab tab-themen ${themenAktiv ? 'tab-active' : ''} ${themenMega ? 'tab-themen-offen' : ''}`}
@@ -168,7 +132,7 @@ export function App() {
           </div>
 
           <div className="app-header-mitte">
-            <GlobaleSuche onKarte={() => wechselTab({ kind: 'werkzeug', id: 'karte' })} />
+            <GlobaleSuche onKarte={() => navigate('/karte')} />
           </div>
 
           <div className="app-header-rechts">
@@ -185,7 +149,7 @@ export function App() {
             <NutzerMenue
               istAngemeldet={istAngemeldet}
               onAnmelden={() => setAnmeldungOffen(true)}
-              onProfil={() => wechselTabSicher({ kind: 'profil' })}
+              onProfil={() => gehZu('/profil', true)}
               kontakteOffen={kontakteOffen}
               setKontakteOffen={setKontakteOffen}
               verifyOffen={verifyOffen}
@@ -196,7 +160,7 @@ export function App() {
 
         {themenMega && (
           <ThemenMega
-            onWelt={(weltId) => wechselTab({ kind: 'welt', id: weltId })}
+            onWelt={(weltId) => navigate(`/welt/${weltId}`)}
             onEintrag={(ref) => { oeffneDetail(ref); setThemenMega(false); }}
             onSchliessen={() => setThemenMega(false)}
           />
@@ -204,47 +168,54 @@ export function App() {
 
         <div className="app-body">
           <main className="app-main">
-            {inDetail ? (
-              <DetailSeite />
-            ) : tab.kind === 'home' ? (
-              <StartView
-                onWerkzeug={(id) => wechselTab({ kind: 'werkzeug', id })}
-                onJahreskreis={() => wechselTab({ kind: 'werkzeug', id: 'kalender' })}
-                onMaya={() => wechselTab({ kind: 'werkzeug', id: 'kalender' })}
-                onWelt={(weltId) => wechselTab({ kind: 'welt', id: weltId })}
-                onTag={() => wechselTab({ kind: 'werkzeug', id: 'kalender' })}
-              />
-            ) : tab.kind === 'profil' ? (
-              <ProfilView
-                onTagebuch={() => wechselTabSicher({ kind: 'werkzeug', id: 'tagebuch' })}
-                onKarte={() => wechselTab({ kind: 'werkzeug', id: 'karte' })}
-                onKontakte={() => setKontakteOffen(true)}
-                onVerifizieren={() => setVerifyOffen(true)}
-              />
-            ) : tab.kind === 'werkzeug' ? (
-              <>
-                {tab.id === 'karte' && (
-                  <KarteView onProfil={() => wechselTabSicher({ kind: 'profil' })} />
-                )}
-                {tab.id === 'kalender' && (
-                  <KalenderView
-                    datum={datum}
-                    setDatum={setDatum}
-                    ort={ort}
-                    onOrt={setOrt}
-                    onPflanze={onPflanze}
-                    onArbeit={onArbeit}
-                  />
-                )}
-                {tab.id === 'tagebuch' && <TagebuchView setDatum={(d) => { setDatum(d); setTab({ kind: 'werkzeug', id: 'kalender' }); }} />}
-              </>
-            ) : (
-              <WeltView weltId={tab.id} />
-            )}
+            <Routes>
+              <Route path="/" element={
+                <StartView
+                  onWerkzeug={(id) => gehZu(id === 'tagebuch' ? '/profil' : '/kalender', id === 'tagebuch')}
+                  onJahreskreis={() => navigate('/kalender')}
+                  onMaya={() => navigate('/kalender')}
+                  onWelt={(weltId) => navigate(`/welt/${weltId}`)}
+                  onTag={() => navigate('/kalender')}
+                />
+              } />
+              <Route path="/karte" element={
+                <KarteView onProfil={() => gehZu('/profil', true)} />
+              } />
+              <Route path="/kalender" element={
+                <KalenderView
+                  datum={datum}
+                  setDatum={setDatum}
+                  ort={ort}
+                  onOrt={setOrt}
+                  onPflanze={onPflanze}
+                  onArbeit={onArbeit}
+                />
+              } />
+              <Route path="/tagebuch" element={
+                istAngemeldet
+                  ? <TagebuchView setDatum={(d) => { setDatum(d); navigate('/kalender'); }} />
+                  : <AnmeldenHinweis onAnmelden={() => setAnmeldungOffen(true)} />
+              } />
+              <Route path="/profil" element={
+                istAngemeldet
+                  ? <ProfilView
+                      onTagebuch={() => navigate('/tagebuch')}
+                      onKarte={() => navigate('/karte')}
+                      onKontakte={() => setKontakteOffen(true)}
+                      onVerifizieren={() => setVerifyOffen(true)}
+                    />
+                  : <AnmeldenHinweis onAnmelden={() => setAnmeldungOffen(true)} />
+              } />
+              <Route path="/welt/:weltId" element={<WeltRoute />} />
+              <Route path="/pflanze/:id" element={<EintragRoute typ="pflanze" />} />
+              <Route path="/arbeit/:id" element={<EintragRoute typ="arbeit" />} />
+              <Route path="/wissen/:sektion/:eintrag" element={<WissenRoute />} />
+              <Route path="/tag/:tag" element={<TagRoute />} />
+              <Route path="*" element={<NichtGefunden />} />
+            </Routes>
           </main>
         </div>
 
-        {/* Anmeldung als Vollbild-Overlay, nur wenn ausgeloest und noch nicht angemeldet */}
         {anmeldungOffen && !istAngemeldet && (
           <div className="anmeldung-overlay">
             <button
@@ -265,5 +236,68 @@ export function App() {
       </WissenContext.Provider>
       </DetailNavContext.Provider>
     </StandortContext.Provider>
+  );
+}
+
+// === Route-Komponenten ===
+
+function WeltRoute() {
+  const { weltId } = useParams<{ weltId: string }>();
+  return <WeltView weltId={weltId as WeltId} />;
+}
+
+function EintragRoute({ typ }: { typ: 'pflanze' | 'arbeit' }) {
+  const { id } = useParams<{ id: string }>();
+  if (!id) return <NichtGefunden />;
+  return (
+    <div className="detail-seite">
+      <div className="detail-inhalt">
+        <EintragsSeite eintragId={`${typ}:${id}`} />
+      </div>
+    </div>
+  );
+}
+
+function WissenRoute() {
+  const { sektion, eintrag } = useParams<{ sektion: string; eintrag: string }>();
+  if (!sektion || !eintrag) return <NichtGefunden />;
+  return (
+    <div className="detail-seite">
+      <div className="detail-inhalt">
+        <EintragsSeite eintragId={`wissen:${sektion}:${eintrag}`} />
+      </div>
+    </div>
+  );
+}
+
+function TagRoute() {
+  const { tag } = useParams<{ tag: string }>();
+  if (!tag) return <NichtGefunden />;
+  return (
+    <div className="detail-seite">
+      <div className="detail-inhalt">
+        <TagSeite tag={decodeURIComponent(tag)} />
+      </div>
+    </div>
+  );
+}
+
+function NichtGefunden() {
+  const navigate = useNavigate();
+  return (
+    <div className="detail-leer">
+      <p>Diese Seite gibt es nicht.</p>
+      <button className="profil-aktion-zweit" onClick={() => navigate('/')}>Zur Startseite</button>
+    </div>
+  );
+}
+
+function AnmeldenHinweis({ onAnmelden }: { onAnmelden: () => void }) {
+  return (
+    <div className="anmelden-hinweis">
+      <h2>Anmeldung nötig</h2>
+      <p>Dafür brauchst du einen Schlüssel — leg einen an oder melde dich mit deinen 12 Wörtern an.</p>
+      <button className="profil-aktion-primary" onClick={onAnmelden}>Jetzt anmelden</button>
+    </div>
   );
 }

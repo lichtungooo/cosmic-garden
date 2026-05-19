@@ -40,3 +40,11 @@ export function refAusId(id: string): DetailRef | null {
   if (t[0] === 'tag' && t[1]) return { kind: 'tag', tag: t.slice(1).join(':') };
   return null;
 }
+
+// === URL-Pfad fuer Detail-Ref ===
+export function refZuPfad(r: DetailRef): string {
+  if (r.kind === 'pflanze') return `/pflanze/${encodeURIComponent(r.id)}`;
+  if (r.kind === 'arbeit')  return `/arbeit/${encodeURIComponent(r.id)}`;
+  if (r.kind === 'wissen')  return `/wissen/${encodeURIComponent(r.sektion)}/${encodeURIComponent(r.eintrag)}`;
+  return `/tag/${encodeURIComponent(r.tag)}`;
+}

@@ -1,5 +1,6 @@
 import React, { Component, useEffect, useState, type ReactNode } from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
 import type { DataInterface } from '@real-life-stack/data-interface';
 import { ConnectorProvider, IncomingEventsProvider } from '@real-life-stack/toolkit';
 import { App } from './App';
@@ -31,11 +32,13 @@ function Wurzel() {
   }
 
   return (
-    <ConnectorProvider connector={connector}>
-      <IncomingEventsProvider>
-        <App />
-      </IncomingEventsProvider>
-    </ConnectorProvider>
+    <BrowserRouter>
+      <ConnectorProvider connector={connector}>
+        <IncomingEventsProvider>
+          <App />
+        </IncomingEventsProvider>
+      </ConnectorProvider>
+    </BrowserRouter>
   );
 }
 

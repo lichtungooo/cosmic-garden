@@ -5491,6 +5491,31 @@ button { font-family: inherit; cursor: pointer; }
   background: var(--bg-soft);
 }
 
+/* Anmelde-Hinweis-Seite (wenn nicht angemeldet auf geschuetzter Route) */
+.anmelden-hinweis {
+  max-width: 32rem;
+  margin: 4rem auto 0;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+.anmelden-hinweis h2 {
+  font-family: 'Spectral', Georgia, serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--ink);
+  margin: 0;
+}
+.anmelden-hinweis p {
+  color: var(--ink-mute);
+  line-height: 1.6;
+  margin: 0;
+  max-width: 28rem;
+}
+
 /* Anmelde-Knopf rechts oben statt Avatar — wenn nicht angemeldet */
 .anmelden-knopf {
   padding: .4rem .9rem;
