@@ -9,6 +9,7 @@ import { thunTypFarbe, thunTypLabel } from '../lib/moon';
 import { weltAusKategorie, welt } from '../lib/welten';
 import { pflanzen as allePflanzen, type Pflanze } from '../lib/pflanzen';
 import { MarkdownText } from './MarkdownText';
+import { FragenBlock } from './FragenBlock';
 
 const VS_TEXT = String.fromCharCode(0xFE0E);
 const MONATE = ['Jan', 'Feb', 'Mrz', 'Apr', 'Mai', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Dez'];
@@ -98,6 +99,8 @@ export function EintragsSeite({ eintragId }: Props) {
       {e.typ === 'pflanze' && <MischkulturBlock pflanzeId={e.id.split(':')[1]} />}
 
       <VerwandtBlock treffer={verwandt} />
+
+      <FragenBlock scope={e.id} kontextLabel={e.titel} />
     </article>
   );
 }
