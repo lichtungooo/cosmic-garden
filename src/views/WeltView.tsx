@@ -133,10 +133,13 @@ export function WeltView({ weltId }: Props) {
         <span className="welt-hero-eyebrow">Welt · {w.name}</span>
         <h1 className="welt-hero-titel">{w.name}</h1>
         <p className="welt-hero-lead">{w.beschreibung}</p>
-        <div className="welt-kopf-meta">
-          <span className="welt-zaehler">{gefiltert.length} Einträge</span>
-        </div>
       </header>
+
+      <WunschBlock
+        scope={`welt:${weltId}`}
+        weltLabel={w.name}
+        beispiel={WUNSCH_BEISPIELE[weltId]}
+      />
 
       {gruppen.length > 1 && (
         <nav className="welt-kategorien-leiste">
@@ -160,7 +163,6 @@ export function WeltView({ weltId }: Props) {
           <section key={g.pfad} id={gruppenAnker(g.pfad)} className="welt-gruppe">
             <header className="welt-gruppe-kopf">
               <h2>{g.label}</h2>
-              <span className="welt-gruppe-zahl">{g.eintraege.length}</span>
             </header>
             <div className="welt-grid">
               {g.eintraege.map(e => (
@@ -194,12 +196,6 @@ export function WeltView({ weltId }: Props) {
           </section>
         ))
       )}
-
-      <WunschBlock
-        scope={`welt:${weltId}`}
-        weltLabel={w.name}
-        beispiel={WUNSCH_BEISPIELE[weltId]}
-      />
     </div>
   );
 }

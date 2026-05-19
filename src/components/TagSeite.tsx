@@ -79,10 +79,11 @@ export function TagSeite({ tag }: Props) {
         <span className="tag-kopf-symbol">#</span>
         <div>
           <h1>{def?.name ?? tag}</h1>
-          <p className="tag-kopf-meta">
-            {def && <span className="tag-kopf-gruppe">{GRUPPEN_LABEL[def.gruppe] ?? def.gruppe}</span>}
-            <span className="tag-kopf-zahl">{treffer.length} {treffer.length === 1 ? 'Eintrag' : 'Einträge'}</span>
-          </p>
+          {def && (
+            <p className="tag-kopf-meta">
+              <span className="tag-kopf-gruppe">{GRUPPEN_LABEL[def.gruppe] ?? def.gruppe}</span>
+            </p>
+          )}
           {def?.beschreibung && <p className="tag-kopf-beschreibung">{def.beschreibung}</p>}
         </div>
       </header>
@@ -99,7 +100,6 @@ export function TagSeite({ tag }: Props) {
             <header className="tag-welt-kopf" style={{ borderLeftColor: w.farbe }}>
               <span className="tag-welt-symbol" style={{ color: w.farbe }}>{w.symbol}</span>
               <h2 style={{ color: w.farbe }}>{w.name}</h2>
-              <span className="tag-welt-zahl">{liste.length}</span>
             </header>
             <div className="tag-grid">
               {liste.map(e => (

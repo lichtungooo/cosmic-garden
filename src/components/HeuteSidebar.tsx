@@ -172,7 +172,6 @@ export function HeuteSidebar({ datum, setDatum }: Props) {
       <section className="heute-block">
         <header className="heute-block-kopf">
           <h3>Passend heute</h3>
-          <span className="heute-meta">{passend.length}</span>
         </header>
         {passend.length === 0 ? (
           <p className="heute-leer">Heute ruht das Werk.</p>
@@ -208,7 +207,6 @@ export function HeuteSidebar({ datum, setDatum }: Props) {
       <section className="heute-block">
         <header className="heute-block-kopf">
           <h3>Tagebuch</h3>
-          <span className="heute-meta">{tagebuchHeute.length} {tagebuchHeute.length === 1 ? 'Eintrag' : 'Einträge'}</span>
         </header>
         {tagebuchHeute.length === 0 ? (
           <p className="heute-leer">Heute noch keine Notiz.</p>

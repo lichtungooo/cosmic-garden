@@ -22,7 +22,7 @@ export const WELTEN: Welt[] = [
     symbol: '☉',
     farbe: '#3b4b6b',
     kurz: 'Sonne, Mond, Sterne, Kalender, kosmische Rhythmen.',
-    beschreibung: 'Die Ordnung am Himmel und ihre Wiederkehr. Sonnenlauf und Mondphasen, siderischer Tierkreis, die Kalendersysteme der Voelker (gregorianisch, juedisch, islamisch, Hindu, chinesisch, Meton, Maya) und die Bruecken zwischen Astronomie und Garten.',
+    beschreibung: 'Die Ordnung am Himmel und ihre Wiederkehr. Sonnenlauf und Mondphasen, siderischer Tierkreis, die Kalendersysteme der Völker (gregorianisch, jüdisch, islamisch, Hindu, chinesisch, Meton, Maya) und die Brücken zwischen Astronomie und Garten.',
   },
   {
     id: 'pflanzen',
@@ -30,7 +30,7 @@ export const WELTEN: Welt[] = [
     symbol: '🌱',
     farbe: '#4a7c3a',
     kurz: 'Die Wesen, die wir pflegen.',
-    beschreibung: 'Vierzig Pflanzenarten — ihre Familien, Saatzeiten, Erntefenster, Mischkultur-Partner und Tagestyp-Bezuege. Was sie wollen und was sie geben.',
+    beschreibung: 'Die Pflanzenarten unseres Gartens — ihre Familien, Saatzeiten, Erntefenster, Mischkultur-Partner und Tagestyp-Bezüge. Was sie wollen und was sie geben.',
   },
   {
     id: 'praxis',
@@ -38,7 +38,7 @@ export const WELTEN: Welt[] = [
     symbol: '⚒',
     farbe: '#5b3a8a',
     kurz: 'Was man tut. Boden, Wasser, Pflege.',
-    beschreibung: 'Gartenarbeiten und konkrete Techniken — Boden lockern, Mulchen, Giessen, Jauchen, Mykorrhiza, Mischkultur-Praxis, Pflanzenschutz. Mit Rezepten, Mengen und Zeitpunkten.',
+    beschreibung: 'Gartenarbeiten und konkrete Techniken — Boden lockern, Mulchen, Gießen, Jauchen, Mykorrhiza, Mischkultur-Praxis, Pflanzenschutz. Mit Rezepten, Mengen und Zeitpunkten.',
   },
   {
     id: 'schulen',

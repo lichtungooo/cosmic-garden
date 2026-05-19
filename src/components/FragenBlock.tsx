@@ -41,7 +41,6 @@ export function FragenBlock({ scope, kontextLabel }: Props) {
     <section className="fragen-block">
       <header className="fragen-block-kopf">
         <h2>Fragen zu {kontextLabel}</h2>
-        <span className="fragen-anzahl">{fragen.length}</span>
       </header>
 
       {fragen.length === 0 && !formularOffen && (
