@@ -8,6 +8,7 @@ import { WeltView } from './views/WeltView';
 import { StartView } from './views/StartView';
 import { KarteView } from './views/KarteView';
 import { ProfilView } from './views/ProfilView';
+import { ProfilLeseView } from './views/ProfilLeseView';
 import { EintragsSeite } from './components/EintragsSeite';
 import { TagSeite } from './components/TagSeite';
 import { GlobaleSuche } from './components/GlobaleSuche';
@@ -192,7 +193,7 @@ export function App() {
             <NutzerMenue
               istAngemeldet={istAngemeldet}
               onAnmelden={() => setAnmeldungOffen(true)}
-              onProfil={() => gehZu('/profil', true)}
+              onProfil={() => gehZu('/profil/bearbeiten', true)}
               kontakteOffen={kontakteOffen}
               setKontakteOffen={setKontakteOffen}
               verifyOffen={verifyOffen}
@@ -237,6 +238,16 @@ export function App() {
                   : <AnmeldenHinweis onAnmelden={() => setAnmeldungOffen(true)} />
               } />
               <Route path="/profil" element={
+                istAngemeldet
+                  ? <ProfilLeseView
+                      onBearbeiten={() => navigate('/profil/bearbeiten')}
+                      onTagebuch={() => navigate('/tagebuch')}
+                      onKontakte={() => setKontakteOffen(true)}
+                      onVerbinden={() => setVerifyOffen(true)}
+                    />
+                  : <AnmeldenHinweis onAnmelden={() => setAnmeldungOffen(true)} />
+              } />
+              <Route path="/profil/bearbeiten" element={
                 istAngemeldet
                   ? <ProfilView
                       onTagebuch={() => navigate('/tagebuch')}
