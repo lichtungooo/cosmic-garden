@@ -253,35 +253,35 @@ export function App() {
               <Route path="/wunschliste/:bereich" element={<WunschlistenView />} />
               <Route path="*" element={<NichtGefunden />} />
             </Routes>
-          </main>
 
-          <footer className="app-fuss">
-            <div className="app-fuss-zeile">
-              <span className="app-fuss-marke">Mein kosmischer Garten</span>
-              <span className="app-fuss-trenner">·</span>
-              <button
-                type="button"
-                className="app-fuss-link"
-                onClick={() => setFreundeskreisTab('freundeskreis')}
-              >Unter Freunden</button>
-              <span className="app-fuss-trenner">·</span>
-              <button
-                type="button"
-                className="app-fuss-link"
-                onClick={() => setFreundeskreisTab('recht')}
-              >Recht</button>
-              <span className="app-fuss-trenner">·</span>
-              <button
-                type="button"
-                className="app-fuss-link"
-                onClick={() => setFreundeskreisTab('datenschutz')}
-              >Datenschutz</button>
-            </div>
-            <p className="app-fuss-zusatz">
-              Im internationalen Privatrecht — von Freunden für Freunde. Kein
-              Tracking, kein Impressum, keine Werbung.
-            </p>
-          </footer>
+            <footer className="app-fuss">
+              <div className="app-fuss-zeile">
+                <span className="app-fuss-marke">Mein kosmischer Garten</span>
+                <span className="app-fuss-trenner">·</span>
+                <button
+                  type="button"
+                  className="app-fuss-link"
+                  onClick={() => setFreundeskreisTab('freundeskreis')}
+                >Unter Freunden</button>
+                <span className="app-fuss-trenner">·</span>
+                <button
+                  type="button"
+                  className="app-fuss-link"
+                  onClick={() => setFreundeskreisTab('recht')}
+                >Recht</button>
+                <span className="app-fuss-trenner">·</span>
+                <button
+                  type="button"
+                  className="app-fuss-link"
+                  onClick={() => setFreundeskreisTab('datenschutz')}
+                >Datenschutz</button>
+              </div>
+              <p className="app-fuss-zusatz">
+                Im internationalen Privatrecht — von Freunden für Freunde. Kein
+                Tracking, kein Impressum, keine Werbung.
+              </p>
+            </footer>
+          </main>
         </div>
 
         {anmeldungOffen && !istAngemeldet && (
