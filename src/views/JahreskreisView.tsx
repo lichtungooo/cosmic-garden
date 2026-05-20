@@ -148,7 +148,7 @@ export function JahreskreisView({ datum, onDatum }: Props) {
           <svg viewBox="-260 -260 520 520" className="jahreskreis-svg" preserveAspectRatio="xMidYMid meet">
           <defs>
             <linearGradient id="sonnen-grad" x1="0" y1="-1" x2="0" y2="1">
-              <stop offset="0%" stopColor="#e8a82b" stopOpacity="0.6" />
+              <stop offset="0%" stopColor="#E8B860" stopOpacity="0.6" />
               <stop offset="100%" stopColor="#fdf2c8" stopOpacity="0.35" />
             </linearGradient>
             <radialGradient id="zentrum-grad" cx="50%" cy="50%">
@@ -315,7 +315,7 @@ export function JahreskreisView({ datum, onDatum }: Props) {
                 onClick={() => onDatum?.(p.zeit)}
                 style={{ cursor: 'pointer' }}
               >
-                <circle cx={pos.x} cy={pos.y} r={4} fill="#1b1c20" stroke="#7a6e54" strokeWidth={0.5} />
+                <circle cx={pos.x} cy={pos.y} r={4} fill="#1A2638" stroke="#B5A87E" strokeWidth={0.5} />
               </g>
             );
           })}
@@ -331,7 +331,7 @@ export function JahreskreisView({ datum, onDatum }: Props) {
                 onClick={() => onDatum?.(p.zeit)}
                 style={{ cursor: 'pointer' }}
               >
-                <circle cx={pos.x} cy={pos.y} r={4} fill="#f4ecd6" stroke="#7a6e54" strokeWidth={0.7} />
+                <circle cx={pos.x} cy={pos.y} r={4} fill="#f4ecd6" stroke="#B5A87E" strokeWidth={0.7} />
               </g>
             );
           })}
@@ -347,8 +347,8 @@ export function JahreskreisView({ datum, onDatum }: Props) {
                 onClick={() => onDatum?.(p.zeit)}
                 style={{ cursor: 'pointer' }}
               >
-                <path d={`M ${pos.x} ${pos.y - 3} A 3 3 0 0 1 ${pos.x} ${pos.y + 3} Z`} fill="#1b1c20" />
-                <circle cx={pos.x} cy={pos.y} r={3} fill="none" stroke="#7a6e54" strokeWidth={0.5} />
+                <path d={`M ${pos.x} ${pos.y - 3} A 3 3 0 0 1 ${pos.x} ${pos.y + 3} Z`} fill="#1A2638" />
+                <circle cx={pos.x} cy={pos.y} r={3} fill="none" stroke="#B5A87E" strokeWidth={0.5} />
               </g>
             );
           })}
@@ -364,8 +364,8 @@ export function JahreskreisView({ datum, onDatum }: Props) {
                 onClick={() => onDatum?.(p.zeit)}
                 style={{ cursor: 'pointer' }}
               >
-                <path d={`M ${pos.x} ${pos.y - 3} A 3 3 0 0 0 ${pos.x} ${pos.y + 3} Z`} fill="#1b1c20" />
-                <circle cx={pos.x} cy={pos.y} r={3} fill="none" stroke="#7a6e54" strokeWidth={0.5} />
+                <path d={`M ${pos.x} ${pos.y - 3} A 3 3 0 0 0 ${pos.x} ${pos.y + 3} Z`} fill="#1A2638" />
+                <circle cx={pos.x} cy={pos.y} r={3} fill="none" stroke="#B5A87E" strokeWidth={0.5} />
               </g>
             );
           })}
@@ -432,8 +432,8 @@ export function JahreskreisView({ datum, onDatum }: Props) {
       </div>
 
       <div className="jahr-legende">
-        <span className="leg-item"><span className="leg-dot" style={{ background: '#1b1c20' }} />Vollmond</span>
-        <span className="leg-item"><span className="leg-dot" style={{ background: '#f4ecd6', border: '1px solid #7a6e54' }} />Neumond</span>
+        <span className="leg-item"><span className="leg-dot" style={{ background: '#1A2638' }} />Vollmond</span>
+        <span className="leg-item"><span className="leg-dot" style={{ background: '#f4ecd6', border: '1px solid #B5A87E' }} />Neumond</span>
         <span className="leg-item leg-hinweis">Tag im Aussenring antippen · Monat für Detail klicken · Mitte für Tagesdetail</span>
       </div>
 
@@ -504,12 +504,12 @@ function ZentrumInhalt({ datum, ort }: { datum: Date; ort: { name: string; lat: 
 
       {/* Sonnenbogen (Mini-Tagesuhr) */}
       <g>
-        <path d="M -45 -10 A 45 45 0 0 1 45 -10" fill="none" stroke="#e8a82b" strokeWidth={2} strokeLinecap="round" opacity={0.85} />
+        <path d="M -45 -10 A 45 45 0 0 1 45 -10" fill="none" stroke="#E8B860" strokeWidth={2} strokeLinecap="round" opacity={0.85} />
         <path d="M -45 -10 A 45 45 0 0 0 45 -10" fill="none" stroke="var(--ink-soft)" strokeWidth={0.7} strokeDasharray="2 2" opacity={0.5} />
         <line x1={-50} y1={-10} x2={50} y2={-10} stroke="var(--ink-mute)" strokeWidth={0.4} opacity={0.4} />
-        <circle cx={-45} cy={-10} r={3} fill="#e8a82b" />
-        <circle cx={45} cy={-10} r={3} fill="#c89b3a" />
-        <polygon points="0,-55 -3,-47 3,-47" fill="#e8a82b" />
+        <circle cx={-45} cy={-10} r={3} fill="#E8B860" />
+        <circle cx={45} cy={-10} r={3} fill="#C49758" />
+        <polygon points="0,-55 -3,-47 3,-47" fill="#E8B860" />
         {/* Aufgang/Untergang Zeiten klein darunter */}
         <text textAnchor="middle">
           <tspan x={-45} y={-2} fontSize={5.5} fill="var(--ink-soft)" style={{ fontVariantNumeric: 'tabular-nums' }}>{formatZeit(h.sonnenaufgang)}</tspan>

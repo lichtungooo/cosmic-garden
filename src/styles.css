@@ -933,7 +933,7 @@ button { font-family: inherit; cursor: pointer; }
 .leg-bogen {
   width: 18px; height: 8px;
   border-radius: 12px 12px 0 0;
-  border: 2px solid #3b4b6b;
+  border: 2px solid var(--kosmos);
   border-bottom: none;
   opacity: .65;
   display: inline-block;
@@ -4715,6 +4715,10 @@ button { font-family: inherit; cursor: pointer; }
   font-weight: 500;
   color: var(--ink);
   padding: 0 .25rem;
+  /* Feste Breite damit die Pfeile beim Tagwechsel nicht springen — alle Wochentags-Namen passen rein */
+  min-width: 12.5em;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
 }
 .start-heute-heute {
   background: var(--karte-farbe, var(--accent));
