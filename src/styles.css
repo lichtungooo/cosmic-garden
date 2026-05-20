@@ -3736,8 +3736,8 @@ button { font-family: inherit; cursor: pointer; }
 }
 .detail-inhalt {
   flex: 1;
-  overflow-y: auto;
   padding: 1.25rem 1.5rem 2rem;
+  /* KEIN overflow-y: auto — sonst doppelter Scrollbar zusammen mit .app-main */
 }
 .detail-leer {
   padding: 2rem;
