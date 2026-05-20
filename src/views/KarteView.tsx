@@ -78,6 +78,7 @@ export function KarteView({ onProfil }: { onProfil: () => void }) {
   const { profil } = useMeinProfil();
 
   const [fokusPin, setFokusPin] = useState<Pin | null>(null);
+  const [popupPos, setPopupPos] = useState<{ x: number; y: number } | null>(null);
   const [neuModus, setNeuModus] = useState<PinArt | null>(null);
   const [neuLatLng, setNeuLatLng] = useState<{ lat: number; lng: number } | null>(null);
   const [bling, setBling] = useState<{ lat: number; lng: number; id: number } | null>(null);
@@ -178,11 +179,23 @@ export function KarteView({ onProfil }: { onProfil: () => void }) {
     }
   }, [gefiltert, fokusPin]);
 
-  // Beim Fokus-Wechsel auf den Pin zoomen (sanft)
+  // Popup-Position am Pin halten — auch wenn die Karte sich bewegt
   useEffect(() => {
     const karte = mapRef.current;
-    if (!karte || !fokusPin) return;
-    karte.panTo([fokusPin.lat, fokusPin.lng], { animate: true });
+    if (!karte || !fokusPin) {
+      setPopupPos(null);
+      return;
+    }
+    function aktualisierePos() {
+      if (!karte || !fokusPin) return;
+      const pt = karte.latLngToContainerPoint([fokusPin.lat, fokusPin.lng]);
+      setPopupPos({ x: pt.x, y: pt.y });
+    }
+    aktualisierePos();
+    karte.on('move zoom', aktualisierePos);
+    return () => {
+      karte.off('move zoom', aktualisierePos);
+    };
   }, [fokusPin]);
 
   // Bling-Effekt: fluechtiger Sparkle-Marker an der Pin-Position
@@ -306,10 +319,11 @@ export function KarteView({ onProfil }: { onProfil: () => void }) {
           <div className="karte-meldung">{profilHinweis}</div>
         )}
 
-        {/* Vorschau-Modal beim Pin-Klick: Bild + Name + Kurz */}
-        {fokusPin && (
+        {/* Vorschau-Modal beim Pin-Klick: Bild + Name + Kurz, direkt ueber dem Pin */}
+        {fokusPin && popupPos && (
           <PinVorschau
             pin={fokusPin}
+            pos={popupPos}
             istMeiner={!!user && fokusPin.autorId === user.id}
             onSchliessen={() => setFokusPin(null)}
             onZuProfil={onProfil}
@@ -323,14 +337,20 @@ export function KarteView({ onProfil }: { onProfil: () => void }) {
 
 // === PinVorschau — kleines Modal beim Klick auf einen Pin auf der Karte ===
 
-function PinVorschau({ pin, istMeiner, onSchliessen, onZuProfil }: {
+function PinVorschau({ pin, pos, istMeiner, onSchliessen, onZuProfil }: {
   pin: Pin;
+  pos: { x: number; y: number };
   istMeiner: boolean;
   onSchliessen: () => void;
   onZuProfil: () => void;
 }) {
   return (
-    <aside className="karte-vorschau" role="dialog" aria-label={`Profil ${pin.titel}`}>
+    <aside
+      className="karte-vorschau"
+      role="dialog"
+      aria-label={`Profil ${pin.titel}`}
+      style={{ left: `${pos.x}px`, top: `${pos.y}px` }}
+    >
       <button className="karte-vorschau-x" onClick={onSchliessen} aria-label="Schließen">×</button>
       {pin.bild && (
         <div className="karte-vorschau-bild">
@@ -355,6 +375,7 @@ function PinVorschau({ pin, istMeiner, onSchliessen, onZuProfil }: {
           Profil anzeigen →
         </button>
       </div>
+      <span className="karte-vorschau-zeiger" aria-hidden="true" />
     </aside>
   );
 }

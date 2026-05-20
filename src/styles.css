@@ -9108,20 +9108,38 @@ body:has(.privacy-banner) .app-fuss {
 
 .karte-vorschau {
   position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
+  /* left/top kommen inline aus der Pin-Position; transform zentriert + hebt ueber den Pin */
+  transform: translate(-50%, calc(-100% - 36px));
   z-index: 1100;
-  width: 280px;
+  width: 260px;
   background: var(--paper);
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, .15);
-  overflow: hidden;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, .22);
+  overflow: visible;
   animation: vorschau-in .15s ease;
+  pointer-events: auto;
+}
+.karte-vorschau-zeiger {
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 14px;
+  height: 14px;
+  background: var(--paper);
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  rotate: 45deg;
+  z-index: 1;
+}
+.karte-vorschau-bild {
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
 }
 @keyframes vorschau-in {
-  from { opacity: 0; transform: translateY(-6px); }
-  to { opacity: 1; transform: translateY(0); }
+  from { opacity: 0; transform: translate(-50%, calc(-100% - 28px)); }
+  to   { opacity: 1; transform: translate(-50%, calc(-100% - 36px)); }
 }
 .karte-vorschau-x {
   position: absolute;
@@ -9212,11 +9230,7 @@ body:has(.privacy-banner) .app-fuss {
     padding: .55rem .75rem;
   }
   .karte-vorschau {
-    top: auto;
-    bottom: 5rem;
-    left: 1rem;
-    right: 1rem;
-    width: auto;
+    width: 230px;
   }
 }
 
