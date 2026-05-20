@@ -6754,13 +6754,19 @@ button { font-family: inherit; cursor: pointer; }
   gap: .65rem;
 }
 .bilder-eintrag {
-  position: relative;
-  aspect-ratio: 1;
+  display: flex;
+  flex-direction: column;
+  gap: .35rem;
+  background: var(--paper-soft);
   border-radius: var(--radius);
   overflow: hidden;
-  background: var(--paper-soft);
 }
-.bilder-eintrag img {
+.bilder-bild-rahmen {
+  position: relative;
+  aspect-ratio: 1;
+  overflow: hidden;
+}
+.bilder-bild-rahmen img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -6781,6 +6787,22 @@ button { font-family: inherit; cursor: pointer; }
   cursor: pointer;
 }
 .bilder-loeschen:hover { background: var(--warn); }
+.bilder-caption {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: .4rem .55rem;
+  font: inherit;
+  font-size: .82rem;
+  color: var(--ink);
+  resize: vertical;
+  min-height: 2.4rem;
+  margin: 0 .4rem .4rem;
+}
+.bilder-caption:focus {
+  outline: none;
+  border-color: var(--accent);
+}
 .bilder-hinzufuegen {
   display: flex;
   flex-direction: column;
@@ -9456,6 +9478,33 @@ body:has(.privacy-banner) .app-fuss {
 }
 .profil-lese-avatar-block {
   position: relative;
+  width: 112px;
+}
+.profil-lese-qr-badge {
+  position: absolute;
+  bottom: -6px;
+  right: -6px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: var(--paper);
+  border: 2px solid var(--paper);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .2);
+  color: var(--kosmos);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  transition: transform .12s ease, color .12s ease;
+}
+.profil-lese-qr-badge:hover {
+  color: var(--accent);
+  transform: scale(1.08);
+}
+.profil-lese-qr-badge:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
 }
 .profil-lese-avatar {
   width: 112px;
@@ -9600,17 +9649,27 @@ body:has(.privacy-banner) .app-fuss {
 }
 .profil-lese-bild {
   margin: 0;
-  aspect-ratio: 4 / 3;
   overflow: hidden;
   border-radius: var(--radius);
   border: 1px solid var(--line);
+  background: var(--paper);
+  display: flex;
+  flex-direction: column;
 }
 .profil-lese-bild img {
   width: 100%;
-  height: 100%;
+  aspect-ratio: 4 / 3;
   object-fit: cover;
   display: block;
 }
+.profil-lese-bild-caption {
+  padding: .45rem .65rem .6rem;
+  font-size: .82rem;
+  line-height: 1.4;
+  color: var(--ink);
+}
+.profil-lese-bild-caption .markdown-body { font-size: .82rem; }
+.profil-lese-bild-caption p { margin: 0; }
 
 .profil-lese-tagebuch {
   list-style: none;

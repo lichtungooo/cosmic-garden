@@ -28,6 +28,11 @@ export interface SichtbarkeitsMap {
   bilder?: Sichtbarkeit;
 }
 
+export interface GartenBild {
+  url: string;     // Daten-URL oder normale URL
+  caption: string; // Markdown-Text unter dem Bild
+}
+
 export interface GartenProfil {
   gartenkarriere: string;
   begabungen: string[];   // Hashtags ohne "#"
@@ -38,7 +43,7 @@ export interface GartenProfil {
   lieblingsPflanzen: string[];
   telegramHandle: string;
   telegramGruppe: string;
-  bilder: string[];       // Daten-URLs oder URLs
+  bilder: GartenBild[];
   sichtbarkeit: SichtbarkeitsMap;
 }
 
@@ -97,6 +102,21 @@ export function entferneTag(tags: string[], tag: string): string[] {
 
 // === Mapping ===
 
+// Migration: alte string[]-Bilder in {url, caption}-Form ueberfuehren
+function normalisiereBilder(roh: unknown): GartenBild[] {
+  if (!Array.isArray(roh)) return [];
+  return roh.map(b => {
+    if (typeof b === 'string') return { url: b, caption: '' };
+    if (b && typeof b === 'object' && typeof (b as GartenBild).url === 'string') {
+      return {
+        url: (b as GartenBild).url,
+        caption: typeof (b as GartenBild).caption === 'string' ? (b as GartenBild).caption : '',
+      };
+    }
+    return null;
+  }).filter((x): x is GartenBild => x !== null);
+}
+
 function itemZuProfil(item: Item | undefined): GartenProfil {
   if (!item) return { ...LEERES_PROFIL };
   const d = item.data as Record<string, unknown>;
@@ -110,7 +130,7 @@ function itemZuProfil(item: Item | undefined): GartenProfil {
     lieblingsPflanzen: Array.isArray(d.lieblingsPflanzen) ? (d.lieblingsPflanzen as string[]) : [],
     telegramHandle: typeof d.telegramHandle === 'string' ? d.telegramHandle : '',
     telegramGruppe: typeof d.telegramGruppe === 'string' ? d.telegramGruppe : '',
-    bilder: Array.isArray(d.bilder) ? (d.bilder as string[]) : [],
+    bilder: normalisiereBilder(d.bilder),
     sichtbarkeit: {
       ...LEERES_PROFIL.sichtbarkeit,
       ...(typeof d.sichtbarkeit === 'object' && d.sichtbarkeit ? (d.sichtbarkeit as SichtbarkeitsMap) : {}),

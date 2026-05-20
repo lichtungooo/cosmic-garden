@@ -59,6 +59,26 @@ export function ProfilLeseView({ onBearbeiten, onTagebuch, onVerbinden, onKontak
               <span className="profil-lese-kuerzel">{kuerzel}</span>
             )}
           </div>
+          <button
+            type="button"
+            className="profil-lese-qr-badge"
+            onClick={onVerbinden}
+            title="Verbindung teilen"
+            aria-label="Verbindung teilen, QR-Code zeigen"
+          >
+            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+              <rect x="3"  y="3"  width="7" height="7" rx="1" fill="none" stroke="currentColor" strokeWidth="1.6"/>
+              <rect x="14" y="3"  width="7" height="7" rx="1" fill="none" stroke="currentColor" strokeWidth="1.6"/>
+              <rect x="3"  y="14" width="7" height="7" rx="1" fill="none" stroke="currentColor" strokeWidth="1.6"/>
+              <rect x="5"  y="5"  width="3" height="3" fill="currentColor"/>
+              <rect x="16" y="5"  width="3" height="3" fill="currentColor"/>
+              <rect x="5"  y="16" width="3" height="3" fill="currentColor"/>
+              <rect x="14" y="14" width="3" height="3" fill="currentColor"/>
+              <rect x="19" y="14" width="2" height="2" fill="currentColor"/>
+              <rect x="14" y="19" width="2" height="2" fill="currentColor"/>
+              <rect x="17" y="17" width="4" height="4" fill="currentColor"/>
+            </svg>
+          </button>
         </div>
         <div className="profil-lese-haupt">
           <span className="profil-lese-eyebrow">Mein Garten</span>
@@ -140,7 +160,12 @@ export function ProfilLeseView({ onBearbeiten, onTagebuch, onVerbinden, onKontak
           <div className="profil-lese-bilder">
             {profil.bilder.map((b, i) => (
               <figure key={i} className="profil-lese-bild">
-                <img src={b} alt="" />
+                <img src={b.url} alt="" />
+                {b.caption && (
+                  <figcaption className="profil-lese-bild-caption">
+                    <MarkdownText text={b.caption} />
+                  </figcaption>
+                )}
               </figure>
             ))}
           </div>
