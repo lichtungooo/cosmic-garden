@@ -4594,7 +4594,11 @@ button { font-family: inherit; cursor: pointer; }
 .start-hero {
   text-align: center;
   padding: 1rem 0 1rem;
-  margin: 0 -1.5rem 0;  /* aus dem Content-Padding herausziehen, damit Bild bis zum Rand laeuft */
+  /* Full-bleed: aus dem .start-view Container ausbrechen bis zum echten Bildschirmrand */
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  margin-top: -2rem;  /* das obere padding von .start-view aufheben */
+  width: 100vw;
   min-height: 88vh;
   display: flex;
   flex-direction: column;
@@ -4605,7 +4609,6 @@ button { font-family: inherit; cursor: pointer; }
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border-radius: var(--radius);
   overflow: hidden;
 }
 /* Sanfter Verlauf am oberen Rand fuer bessere Lesbarkeit, da Logo dort liegt */
