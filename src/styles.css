@@ -4593,24 +4593,31 @@ button { font-family: inherit; cursor: pointer; }
 }
 .start-hero {
   text-align: center;
-  padding: 1rem 0 1rem;
-  margin-bottom: 1.25rem;
+  padding: .5rem 0 .25rem;
+  margin-bottom: .75rem;
 }
 .start-hero-titel {
   font-family: 'Spectral', Georgia, serif;
-  font-size: 1.85rem;
+  font-size: 1.2rem;
   line-height: 1.1;
   margin: 0;
   color: var(--kosmos);
   font-weight: 500;
-  letter-spacing: -.01em;
+  letter-spacing: -.005em;
+}
+.start-hero-logo {
+  display: block;
+  width: 28px;
+  height: 28px;
+  margin: .2rem auto;
+  opacity: .85;
 }
 .start-hero-eyebrow {
-  font-size: .78rem;
+  font-size: .68rem;
   font-weight: 500;
   letter-spacing: .12em;
   color: var(--ink-mute);
-  margin: .25rem 0 0;
+  margin: .15rem 0 0;
   text-transform: uppercase;
 }
 

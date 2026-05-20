@@ -164,6 +164,7 @@ export function StartView({ onWerkzeug, onJahreskreis, onMaya, onWelt, onTag }: 
     <div className="start-view">
       <header className="start-hero">
         <h1 className="start-hero-titel">Mein kosmischer Garten</h1>
+        <img src="/logo.svg" alt="" className="start-hero-logo" aria-hidden="true" />
         <p className="start-hero-eyebrow">Sonne, Mond und Sterne</p>
       </header>
 
