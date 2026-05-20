@@ -27,7 +27,7 @@ export const TIERKREIS: (TierkreisZeichen & { startGrad: number })[] = [
   { name: 'Stier',      symbol: '♉', element: 'erde',   thunTyp: 'wurzel', startGrad:  27 },
   { name: 'Zwillinge',  symbol: '♊', element: 'luft',   thunTyp: 'bluete', startGrad:  90 },
   { name: 'Krebs',      symbol: '♋', element: 'wasser', thunTyp: 'blatt',  startGrad: 118 },
-  { name: 'Löwe',       symbol: '♌', element: 'feuer',  thunTyp: 'frucht', startGrad: 140 },
+  { name: 'Löwe',       symbol: '♌', element: 'feuer',  thunTyp: 'frucht', startGrad: 150 },
   { name: 'Jungfrau',   symbol: '♍', element: 'erde',   thunTyp: 'wurzel', startGrad: 174 },
   { name: 'Waage',      symbol: '♎', element: 'luft',   thunTyp: 'bluete', startGrad: 217 },
   { name: 'Skorpion',   symbol: '♏', element: 'wasser', thunTyp: 'blatt',  startGrad: 241 },
@@ -125,9 +125,16 @@ export interface MondTag {
 }
 
 export function mondTag(date: Date): MondTag {
-  // Wir nehmen 12:00 MEZ als Tagesreferenz (mittag, klassisch für Garten-Kalender).
-  const reference = new Date(date);
-  reference.setUTCHours(11, 0, 0, 0);
+  // Referenz: 11:00 UTC (Mittag MEZ) am lokalen Datum des Inputs.
+  // Wichtig: Wir bauen das Datum aus year/month/day des Inputs neu auf, sonst
+  // landen wir bei Inputs wie "new Date(2026, 4, 24)" (00:00 lokal = 22:00 UTC
+  // am Vortag) nach setUTCHours(11) auf dem falschen Tag.
+  const reference = new Date(Date.UTC(
+    date.getFullYear(),
+    date.getMonth(),
+    date.getDate(),
+    11, 0, 0,
+  ));
   const jd = julianDay(reference);
 
   const moonTrop = moonTropicalLongitude(jd);

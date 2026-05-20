@@ -110,7 +110,9 @@ function altitudeAt(jd: number, lat: number, lonEast: number, body: 'sun' | 'moo
 }
 
 function findEvent(date: Date, ort: Ort, body: 'sun' | 'moon', hCutoff: number, direction: 'rise' | 'set'): Date | null {
-  const start = new Date(Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate(), 0, 0, 0));
+  // Lokales Datum nehmen — sonst landet "new Date(2026, 4, 24)" (00:00 lokal =
+  // 22:00 UTC am Vortag) auf dem falschen Tag und liefert Sonnenzeiten von gestern.
+  const start = new Date(Date.UTC(date.getFullYear(), date.getMonth(), date.getDate(), 0, 0, 0));
   let prevJd = julianDay(start);
   let prevAlt = altitudeAt(prevJd, ort.lat, ort.lon, body) - hCutoff;
   const stepMin = 5;

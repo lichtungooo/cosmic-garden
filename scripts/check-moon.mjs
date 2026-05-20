@@ -8,7 +8,7 @@ const TIERKREIS = [
   { name: 'Stier',      symbol: '♉', thunTyp: 'wurzel', startGrad:  27 },
   { name: 'Zwillinge',  symbol: '♊', thunTyp: 'bluete', startGrad:  90 },
   { name: 'Krebs',      symbol: '♋', thunTyp: 'blatt',  startGrad: 118 },
-  { name: 'Löwe',       symbol: '♌', thunTyp: 'frucht', startGrad: 140 },
+  { name: 'Löwe',       symbol: '♌', thunTyp: 'frucht', startGrad: 150 },
   { name: 'Jungfrau',   symbol: '♍', thunTyp: 'wurzel', startGrad: 174 },
   { name: 'Waage',      symbol: '♎', thunTyp: 'bluete', startGrad: 217 },
   { name: 'Skorpion',   symbol: '♏', thunTyp: 'blatt',  startGrad: 241 },
