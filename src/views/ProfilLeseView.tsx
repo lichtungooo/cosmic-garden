@@ -2,7 +2,7 @@
 // Zahnrad oben rechts wechselt in den Bearbeiten-Modus.
 // Klick auf einen verbundenen Gärtner öffnet (perspektivisch) dessen Profil.
 
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useState } from 'react';
 import {
   useConnector,
   useCurrentUser,
@@ -10,17 +10,15 @@ import {
 } from '@real-life-stack/toolkit';
 import { hasProfile } from '@real-life-stack/data-interface';
 import { useMeinProfil } from '../lib/profil';
-import { useTagebuch, artLabel, artFarbe, type TagebuchArt } from '../lib/tagebuch';
 import { MarkdownText } from '../components/MarkdownText';
 
 interface Props {
   onBearbeiten: () => void;
-  onTagebuch: () => void;
   onVerbinden: () => void;
   onKontakte: () => void;
 }
 
-export function ProfilLeseView({ onBearbeiten, onTagebuch, onVerbinden, onKontakte }: Props) {
+export function ProfilLeseView({ onBearbeiten, onVerbinden, onKontakte }: Props) {
   const connector = useConnector();
   const { data: user } = useCurrentUser();
   const { profil } = useMeinProfil();
@@ -81,14 +79,14 @@ export function ProfilLeseView({ onBearbeiten, onTagebuch, onVerbinden, onKontak
           </button>
         </div>
         <div className="profil-lese-haupt">
-          <span className="profil-lese-eyebrow">Mein Garten</span>
+          <span className="profil-lese-eyebrow">Gärtnerin</span>
           <h1 className="profil-lese-name">{name || 'Ohne Namen'}</h1>
-          {profil.standort && <p className="profil-lese-ort">{profil.standort}</p>}
           {bio && (
             <div className="profil-lese-bio">
               <MarkdownText text={bio} />
             </div>
           )}
+          {profil.standort && <p className="profil-lese-ort">{profil.standort}</p>}
         </div>
         <div className="profil-lese-aktionen">
           <button
@@ -172,15 +170,9 @@ export function ProfilLeseView({ onBearbeiten, onTagebuch, onVerbinden, onKontak
         </section>
       )}
 
-      <TagebuchVorschauLese onAuf={onTagebuch} />
-
-      <section className="profil-lese-abschnitt">
-        <h2>Verbundene Gärtner</h2>
-        {activeContacts.length === 0 ? (
-          <p className="profil-lese-leer">
-            Noch niemand verbunden. Im echten Leben begegnen, QR-Code tauschen.
-          </p>
-        ) : (
+      {activeContacts.length > 0 && (
+        <section className="profil-lese-abschnitt">
+          <h2>Verbundene Gärtner</h2>
           <ul className="profil-lese-kontakte">
             {activeContacts.map(c => (
               <li key={c.id} className="profil-lese-kontakt">
@@ -188,61 +180,11 @@ export function ProfilLeseView({ onBearbeiten, onTagebuch, onVerbinden, onKontak
               </li>
             ))}
           </ul>
-        )}
-        <div className="profil-lese-knopf-reihe">
-          {activeContacts.length > 0 && (
+          <div className="profil-lese-knopf-reihe">
             <button className="profil-aktion-zweit" onClick={onKontakte}>Alle Kontakte</button>
-          )}
-          <button className="profil-aktion-primary" onClick={onVerbinden}>Neuen Gärtner verbinden</button>
-        </div>
-      </section>
+          </div>
+        </section>
+      )}
     </div>
   );
-}
-
-function TagebuchVorschauLese({ onAuf }: { onAuf: () => void }) {
-  const { eintraege } = useTagebuch();
-  const letzte = useMemo(
-    () => eintraege.slice().sort((a, b) => b.erstellt - a.erstellt).slice(0, 5),
-    [eintraege],
-  );
-
-  if (letzte.length === 0) {
-    return (
-      <section className="profil-lese-abschnitt">
-        <h2>Mein Tagebuch</h2>
-        <p className="profil-lese-leer">Noch kein Eintrag. Beobachte, säe, ernte — und halte es fest.</p>
-        <div className="profil-lese-knopf-reihe">
-          <button className="profil-aktion-primary" onClick={onAuf}>Erster Eintrag</button>
-        </div>
-      </section>
-    );
-  }
-
-  return (
-    <section className="profil-lese-abschnitt">
-      <h2>Mein Tagebuch</h2>
-      <ul className="profil-lese-tagebuch">
-        {letzte.map(e => (
-          <li key={e.id} className="profil-lese-tagebuch-eintrag">
-            <span
-              className="profil-lese-tagebuch-art"
-              style={{ background: artFarbe(e.art), color: 'white' }}
-            >{artLabel(e.art as TagebuchArt)}</span>
-            <span className="profil-lese-tagebuch-datum">{formatDatum(e.datum)}</span>
-            <p className="profil-lese-tagebuch-text">{e.text.slice(0, 200)}{e.text.length > 200 ? '…' : ''}</p>
-          </li>
-        ))}
-      </ul>
-      <div className="profil-lese-knopf-reihe">
-        <button className="profil-aktion-zweit" onClick={onAuf}>Volles Tagebuch</button>
-      </div>
-    </section>
-  );
-}
-
-function formatDatum(iso: string): string {
-  const [j, m, t] = iso.split('-').map(Number);
-  if (!j || !m || !t) return iso;
-  return `${t.toString().padStart(2,'0')}.${m.toString().padStart(2,'0')}.${j}`;
 }

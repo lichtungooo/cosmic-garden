@@ -5,7 +5,8 @@
 import { useEffect, useRef, useState } from 'react';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
-import { useCurrentUser } from '@real-life-stack/toolkit';
+import { useConnector, useCurrentUser } from '@real-life-stack/toolkit';
+import { hasProfile } from '@real-life-stack/data-interface';
 import { useStandort } from '../lib/standort';
 import {
   usePins,
@@ -71,6 +72,7 @@ function blingIcon(): L.DivIcon {
 
 export function KarteView({ onProfil }: { onProfil: () => void }) {
   const { data: user } = useCurrentUser();
+  const connector = useConnector();
   const ort = useStandort();
   const pins = usePins();
   const aktionen = usePinAktionen();
@@ -246,9 +248,16 @@ export function KarteView({ onProfil }: { onProfil: () => void }) {
         ...profil.beduerfnisse,
         ...profil.lieblingsPflanzen,
       ];
-      const text = profil.standort
-        ? `Garten in ${profil.standort}.${profil.bodenart ? ' Boden: ' + profil.bodenart + '.' : ''}`
-        : '';
+      let bio = '';
+      if (hasProfile(connector)) {
+        try {
+          const item = await connector.getMyProfile();
+          const d = item?.data as Record<string, unknown> | undefined;
+          if (d && typeof d.bio === 'string') bio = d.bio;
+        } catch { /* Bio bleibt leer */ }
+      }
+      const text = bio
+        || (profil.standort ? `Garten in ${profil.standort}.` : '');
       if (meinProfilPin) {
         await aktionen.aendere(meinProfilPin.id, meinProfilPin, {
           lat: koord.lat,
@@ -337,42 +346,37 @@ export function KarteView({ onProfil }: { onProfil: () => void }) {
 
 // === PinVorschau — kleines Modal beim Klick auf einen Pin auf der Karte ===
 
-function PinVorschau({ pin, pos, istMeiner, onSchliessen, onZuProfil }: {
+function PinVorschau({ pin, pos, onSchliessen, onZuProfil }: {
   pin: Pin;
   pos: { x: number; y: number };
   istMeiner: boolean;
   onSchliessen: () => void;
   onZuProfil: () => void;
 }) {
+  const anzeigeName = pin.titel || pin.autorName || 'Gärtner';
+  const kuerzel = anzeigeName.slice(0, 2).toUpperCase();
   return (
     <aside
       className="karte-vorschau"
       role="dialog"
-      aria-label={`Profil ${pin.titel}`}
+      aria-label={`Profil ${anzeigeName}`}
       style={{ left: `${pos.x}px`, top: `${pos.y}px` }}
     >
       <button className="karte-vorschau-x" onClick={onSchliessen} aria-label="Schließen">×</button>
-      {pin.bild && (
-        <div className="karte-vorschau-bild">
-          <img src={pin.bild} alt="" />
-        </div>
-      )}
       <div className="karte-vorschau-inhalt">
-        <h3 className="karte-vorschau-name">{pin.titel || pin.autorName}</h3>
+        <div className="karte-vorschau-avatar">
+          {pin.bild ? <img src={pin.bild} alt="" /> : <span>{kuerzel}</span>}
+        </div>
+        <h3 className="karte-vorschau-name">{anzeigeName}</h3>
         {pin.text && (
-          <p className="karte-vorschau-kurz">{pin.text.length > 120 ? pin.text.slice(0, 120) + '…' : pin.text}</p>
-        )}
-        {pin.hashtags.length > 0 && (
-          <div className="karte-vorschau-tags">
-            {pin.hashtags.slice(0, 4).map(t => <span key={t} className="karte-hashtag">#{t}</span>)}
-          </div>
+          <p className="karte-vorschau-spruch">{pin.text.length > 100 ? pin.text.slice(0, 100) + '…' : pin.text}</p>
         )}
         <button
           type="button"
           className="karte-vorschau-zumprofil"
           onClick={onZuProfil}
         >
-          Profil anzeigen →
+          Profil anzeigen
         </button>
       </div>
       <span className="karte-vorschau-zeiger" aria-hidden="true" />

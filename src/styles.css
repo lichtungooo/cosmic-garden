@@ -9180,51 +9180,64 @@ body:has(.privacy-banner) .app-fuss {
   align-items: center;
   justify-content: center;
 }
-.karte-vorschau-bild {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  overflow: hidden;
+.karte-vorschau-inhalt {
+  padding: 1rem .9rem .9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .35rem;
 }
-.karte-vorschau-bild img {
+.karte-vorschau-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: color-mix(in srgb, var(--accent) 14%, var(--paper));
+  border: 2px solid var(--paper);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, .12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: .2rem;
+}
+.karte-vorschau-avatar img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
-.karte-vorschau-inhalt {
-  padding: .85rem 1rem 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: .45rem;
+.karte-vorschau-avatar span {
+  font-family: 'Spectral', Georgia, serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--kosmos);
 }
 .karte-vorschau-name {
   font-family: 'Spectral', Georgia, serif;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   font-weight: 500;
   margin: 0;
   color: var(--kosmos);
+  text-align: center;
 }
-.karte-vorschau-kurz {
-  font-size: .88rem;
-  line-height: 1.45;
-  color: var(--ink);
+.karte-vorschau-spruch {
+  font-size: .82rem;
+  line-height: 1.4;
+  color: var(--ink-mute);
   margin: 0;
-}
-.karte-vorschau-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: .25rem;
+  text-align: center;
+  font-style: italic;
 }
 .karte-vorschau-zumprofil {
-  margin-top: .35rem;
+  margin-top: .4rem;
   background: var(--accent);
   color: white;
   border: none;
-  padding: .5rem .85rem;
-  border-radius: var(--radius);
+  padding: .4rem .9rem;
+  border-radius: 999px;
   cursor: pointer;
   font-family: inherit;
-  font-size: .88rem;
+  font-size: .82rem;
   font-weight: 500;
   text-align: center;
 }
@@ -9804,23 +9817,84 @@ body:has(.privacy-banner) .app-fuss {
   min-height: 0;
 }
 .profil-modal-koerper .profil-lese {
-  padding: 1.25rem 1.25rem 1.75rem;
+  padding: 1rem 1.1rem 1.25rem;
   max-width: none;
 }
+.profil-modal-koerper .profil-lese-eyebrow {
+  font-size: .65rem;
+}
 .profil-modal-koerper .profil-lese-name {
-  font-size: 1.4rem;
+  font-size: 1.15rem;
+  margin: .1rem 0 .15rem;
+}
+.profil-modal-koerper .profil-lese-bio {
+  font-size: .82rem;
+  line-height: 1.4;
+  color: var(--ink-mute);
+}
+.profil-modal-koerper .profil-lese-ort {
+  font-size: .78rem;
+  margin: .25rem 0 0;
 }
 .profil-modal-koerper .profil-lese-avatar {
-  width: 88px;
-  height: 88px;
+  width: 62px;
+  height: 62px;
+  border-width: 2px;
 }
 .profil-modal-koerper .profil-lese-avatar-block {
-  width: 88px;
+  width: 62px;
+}
+.profil-modal-koerper .profil-lese-kuerzel {
+  font-size: 1.35rem;
+}
+.profil-modal-koerper .profil-lese-qr-badge {
+  width: 28px;
+  height: 28px;
+  bottom: -4px;
+  right: -4px;
+  border-width: 2px;
+}
+.profil-modal-koerper .profil-lese-qr-badge svg {
+  width: 16px;
+  height: 16px;
+}
+.profil-modal-koerper .profil-lese-aktion {
+  width: 30px;
+  height: 30px;
+  font-size: .95rem;
+}
+.profil-modal-koerper .profil-lese-aktion svg {
+  width: 14px;
+  height: 14px;
 }
 .profil-modal-koerper .profil-lese-kopf {
-  gap: .85rem;
-  padding-bottom: 1rem;
-  margin-bottom: 1.2rem;
+  gap: .75rem;
+  padding-bottom: .75rem;
+  margin-bottom: .9rem;
+}
+.profil-modal-koerper .profil-lese-abschnitt {
+  margin-bottom: 1rem;
+}
+.profil-modal-koerper .profil-lese-abschnitt h2 {
+  font-size: .82rem;
+  margin: 0 0 .35rem;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  font-weight: 600;
+  color: var(--ink-mute);
+}
+.profil-modal-koerper .profil-lese-chip {
+  font-size: .76rem;
+  padding: .15rem .55rem;
+}
+.profil-modal-koerper .profil-lese-kontakt-knopf {
+  padding: .3rem .7rem;
+  font-size: .8rem;
+  border-radius: 999px;
+}
+.profil-modal-koerper .profil-lese-kontakt {
+  font-size: .78rem;
+  padding: .2rem .6rem;
 }
 
 @media (max-width: 720px) {

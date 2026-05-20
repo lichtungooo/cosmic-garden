@@ -236,7 +236,6 @@ export function App() {
                 istAngemeldet
                   ? <ProfilLeseView
                       onBearbeiten={() => navigate('/profil/bearbeiten')}
-                      onTagebuch={() => navigate('/tagebuch')}
                       onKontakte={() => setKontakteOffen(true)}
                       onVerbinden={() => setVerifyOffen(true)}
                     />
@@ -320,7 +319,6 @@ export function App() {
           offen={profilModalOffen}
           onSchliessen={() => setProfilModalOffen(false)}
           onBearbeiten={() => navigate('/profil/bearbeiten')}
-          onTagebuch={() => navigate('/tagebuch')}
           onVerbinden={() => setVerifyOffen(true)}
           onKontakte={() => setKontakteOffen(true)}
         />

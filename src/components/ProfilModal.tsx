@@ -8,12 +8,11 @@ interface Props {
   offen: boolean;
   onSchliessen: () => void;
   onBearbeiten: () => void;
-  onTagebuch: () => void;
   onVerbinden: () => void;
   onKontakte: () => void;
 }
 
-export function ProfilModal({ offen, onSchliessen, onBearbeiten, onTagebuch, onVerbinden, onKontakte }: Props) {
+export function ProfilModal({ offen, onSchliessen, onBearbeiten, onVerbinden, onKontakte }: Props) {
   useEffect(() => {
     if (!offen) return;
     function aufEsc(e: KeyboardEvent) {
@@ -41,7 +40,6 @@ export function ProfilModal({ offen, onSchliessen, onBearbeiten, onTagebuch, onV
       <div className="profil-modal-koerper">
         <ProfilLeseView
           onBearbeiten={() => { onSchliessen(); onBearbeiten(); }}
-          onTagebuch={() => { onSchliessen(); onTagebuch(); }}
           onVerbinden={onVerbinden}
           onKontakte={onKontakte}
         />
