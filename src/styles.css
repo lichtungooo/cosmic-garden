@@ -5092,9 +5092,9 @@ button { font-family: inherit; cursor: pointer; }
   gap: .55rem;
 }
 .start-traeger-konto-inhalt > div {
-  display: grid;
-  grid-template-columns: 110px 1fr;
-  gap: .65rem;
+  display: flex;
+  flex-direction: column;
+  gap: .15rem;
   font-size: .85rem;
 }
 .start-traeger-konto-inhalt span {
