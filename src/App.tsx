@@ -113,6 +113,11 @@ export function App() {
     return null;
   })();
   const themenAktiv = location.pathname.startsWith('/welt/');
+  // Auf Karte und Kalender keinen Footer zeigen — beide brauchen den vollen Bildschirm
+  const footerAnzeigen = location.pathname !== '/karte'
+    && location.pathname !== '/kalender'
+    && !location.pathname.startsWith('/karte/')
+    && !location.pathname.startsWith('/kalender/');
 
   const anmeldungWert = useMemo(() => ({
     oeffne: () => setAnmeldungOffen(true),
@@ -251,33 +256,35 @@ export function App() {
               <Route path="*" element={<NichtGefunden />} />
             </Routes>
 
-            <footer className="app-fuss">
-              <div className="app-fuss-zeile">
-                <span className="app-fuss-marke">Mein kosmischer Garten</span>
-                <span className="app-fuss-trenner">·</span>
-                <button
-                  type="button"
-                  className="app-fuss-link"
-                  onClick={() => setFreundeskreisTab('freundeskreis')}
-                >Unter Freunden</button>
-                <span className="app-fuss-trenner">·</span>
-                <button
-                  type="button"
-                  className="app-fuss-link"
-                  onClick={() => setFreundeskreisTab('recht')}
-                >Recht</button>
-                <span className="app-fuss-trenner">·</span>
-                <button
-                  type="button"
-                  className="app-fuss-link"
-                  onClick={() => setFreundeskreisTab('datenschutz')}
-                >Datenschutz</button>
-              </div>
-              <p className="app-fuss-zusatz">
-                Im internationalen Privatrecht — von Freunden für Freunde. Kein
-                Tracking, kein Impressum, keine Werbung.
-              </p>
-            </footer>
+            {footerAnzeigen && (
+              <footer className="app-fuss">
+                <div className="app-fuss-zeile">
+                  <span className="app-fuss-marke">Mein kosmischer Garten</span>
+                  <span className="app-fuss-trenner">·</span>
+                  <button
+                    type="button"
+                    className="app-fuss-link"
+                    onClick={() => setFreundeskreisTab('freundeskreis')}
+                  >Unter Freunden</button>
+                  <span className="app-fuss-trenner">·</span>
+                  <button
+                    type="button"
+                    className="app-fuss-link"
+                    onClick={() => setFreundeskreisTab('recht')}
+                  >Recht</button>
+                  <span className="app-fuss-trenner">·</span>
+                  <button
+                    type="button"
+                    className="app-fuss-link"
+                    onClick={() => setFreundeskreisTab('datenschutz')}
+                  >Datenschutz</button>
+                </div>
+                <p className="app-fuss-zusatz">
+                  Im internationalen Privatrecht — von Freunden für Freunde. Kein
+                  Tracking, kein Impressum, keine Werbung.
+                </p>
+              </footer>
+            )}
           </main>
         </div>
 
