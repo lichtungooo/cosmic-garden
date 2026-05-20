@@ -189,14 +189,13 @@ export function StartView({ onWelt, onTag }: Props) {
                   aria-label="Einen Tag weiter"
                   title="Einen Tag weiter"
                 >›</button>
-                {!istHeute && (
-                  <button
-                    type="button"
-                    className="start-heute-heute"
-                    onClick={zuHeute}
-                    title="Zurück zu heute"
-                  >Heute</button>
-                )}
+                <button
+                  type="button"
+                  className={`start-heute-heute ${istHeute ? 'aktiv' : ''}`}
+                  onClick={zuHeute}
+                  disabled={istHeute}
+                  title={istHeute ? 'Du bist auf heute' : 'Zurück zu heute'}
+                >Heute</button>
                 <span className="start-heute-trenner" aria-hidden="true" />
                 <span className="start-heute-ort">{ort.name}</span>
               </span>

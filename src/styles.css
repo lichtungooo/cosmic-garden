@@ -4721,18 +4721,28 @@ button { font-family: inherit; cursor: pointer; }
   font-variant-numeric: tabular-nums;
 }
 .start-heute-heute {
-  background: var(--karte-farbe, var(--accent));
-  border: 1px solid var(--karte-farbe, var(--accent));
-  color: white;
+  background: transparent;
+  border: 1px solid var(--line);
+  color: var(--ink-mute);
   font-family: inherit;
   font-size: .7rem;
-  padding: .15rem .55rem;
+  padding: .15rem .65rem;
   border-radius: 9999px;
   cursor: pointer;
   margin-left: .35rem;
+  font-weight: 500;
+  transition: all .15s ease;
 }
-.start-heute-heute:hover {
-  opacity: .85;
+.start-heute-heute:hover:not(:disabled) {
+  border-color: var(--kosmos);
+  color: var(--kosmos);
+  background: var(--bg-soft);
+}
+.start-heute-heute.aktiv {
+  background: var(--kosmos);
+  border-color: var(--kosmos);
+  color: var(--paper);
+  cursor: default;
 }
 .start-heute-trenner {
   display: inline-block;
