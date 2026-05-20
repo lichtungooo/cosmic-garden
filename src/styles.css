@@ -6972,7 +6972,8 @@ button { font-family: inherit; cursor: pointer; }
 .karte-view {
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 60px);
+  flex: 1;
+  min-height: 0;
   background: var(--bg);
   overflow: hidden;
 }
