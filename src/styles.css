@@ -4957,18 +4957,180 @@ button { font-family: inherit; cursor: pointer; }
   .start-portraits-grid { grid-template-columns: 1fr; }
 }
 
+/* === Träger / Spenden-Section === */
+.start-traeger {
+  margin: 0;
+  min-height: 90vh;
+  padding: 3rem 0;
+  border-top: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+.start-traeger-text h2 {
+  margin-bottom: 1.25rem;
+}
+.start-traeger-lead {
+  font-family: 'Spectral', Georgia, serif;
+  font-size: 1.1rem;
+  line-height: 1.65;
+  color: var(--ink);
+  margin: 0 0 1rem;
+}
+.start-traeger-lead em {
+  font-style: italic;
+  color: var(--kosmos);
+}
+.start-traeger-absatz {
+  font-family: 'Spectral', Georgia, serif;
+  font-size: 1rem;
+  line-height: 1.65;
+  color: var(--ink-mute);
+  margin: 0 0 1.25rem;
+}
+.start-traeger-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin-top: 1.25rem;
+}
+.start-traeger-link {
+  display: inline-block;
+  padding: .45rem .9rem;
+  background: var(--bg-soft);
+  border: 1px solid var(--line);
+  border-radius: 9999px;
+  color: var(--ink-mute);
+  text-decoration: none;
+  font-size: .85rem;
+  transition: all .15s ease;
+}
+.start-traeger-link:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--paper);
+}
+
+.start-traeger-spende {
+  background: linear-gradient(135deg, #faf3e8 0%, #f4ebd0 100%);
+  border: 1px solid #d6c896;
+  border-radius: var(--radius);
+  padding: 1.75rem 1.65rem;
+}
+.start-traeger-spende h3 {
+  font-family: 'Spectral', Georgia, serif;
+  font-size: 1.35rem;
+  font-weight: 500;
+  margin: 0 0 .5rem;
+  color: #4d3a18;
+}
+.start-traeger-spende-lead {
+  margin: 0 0 1.25rem;
+  font-family: 'Spectral', Georgia, serif;
+  font-size: .95rem;
+  line-height: 1.55;
+  color: #6b5333;
+}
+.start-traeger-paypal {
+  display: inline-flex;
+  align-items: center;
+  gap: .55rem;
+  background: #4a8a3a;
+  color: white;
+  border: none;
+  padding: .85rem 1.5rem;
+  border-radius: var(--radius);
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all .15s ease;
+  margin-bottom: .65rem;
+}
+.start-traeger-paypal:hover {
+  background: #3a6e2b;
+  transform: translateY(-1px);
+}
+.start-traeger-paypal-icon {
+  font-size: 1.15rem;
+}
+.start-traeger-spende-info {
+  margin: 0 0 1rem;
+  font-size: .82rem;
+  color: #6b5333;
+  font-style: italic;
+}
+.start-traeger-konto {
+  margin-top: 1rem;
+  border-top: 1px solid rgba(0, 0, 0, .08);
+  padding-top: 1rem;
+}
+.start-traeger-konto summary {
+  cursor: pointer;
+  font-size: .9rem;
+  color: #6b5333;
+  font-weight: 500;
+  padding: .35rem 0;
+  list-style: none;
+}
+.start-traeger-konto summary::-webkit-details-marker {
+  display: none;
+}
+.start-traeger-konto summary::before {
+  content: '▸ ';
+  color: #8b6f47;
+}
+.start-traeger-konto[open] summary::before {
+  content: '▾ ';
+}
+.start-traeger-konto-inhalt {
+  margin-top: .75rem;
+  display: flex;
+  flex-direction: column;
+  gap: .55rem;
+}
+.start-traeger-konto-inhalt > div {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: .65rem;
+  font-size: .85rem;
+}
+.start-traeger-konto-inhalt span {
+  color: #6b5333;
+  text-transform: uppercase;
+  font-size: .72rem;
+  letter-spacing: .08em;
+  font-weight: 600;
+}
+.start-traeger-konto-inhalt code {
+  font-family: ui-monospace, 'SF Mono', Monaco, Consolas, monospace;
+  background: rgba(255, 255, 255, .55);
+  padding: .15rem .35rem;
+  border-radius: 4px;
+  font-size: .82rem;
+}
+
 /* Mobile: keine 100vh-Sections — natuerliches Scrollen */
 @media (max-width: 720px) {
   .start-hero,
   .start-heute,
   .start-werkzeuge,
   .start-portraits,
-  .start-welten {
+  .start-welten,
+  .start-traeger {
     min-height: 0;
     padding: 1.5rem 0;
   }
   .start-hero { padding: 2rem 0 1.5rem; min-height: 0; }
   .start-hero-logo { width: 96px; height: 96px; }
+  .start-traeger {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .start-traeger-spende { padding: 1.25rem 1.1rem; }
+  .start-traeger-konto-inhalt > div { grid-template-columns: 1fr; gap: .15rem; }
 }
 
 /* === Welten === */

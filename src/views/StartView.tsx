@@ -307,6 +307,76 @@ export function StartView({ onWelt, onTag }: Props) {
         </div>
       </section>
 
+      <section className="start-traeger">
+        <div className="start-traeger-text">
+          <h2 className="start-section-titel">Aus der Mitte heraus</h2>
+          <p className="start-traeger-lead">
+            Mein kosmischer Garten wird getragen vom Verein{' '}
+            <strong>Kollektiv Lichtung e.V.</strong> — gegründet 2019,
+            gemeinnützig anerkannt. <em>Lichtungen sind Orte der Begegnung</em> —
+            zur Erdung des Projekts.
+          </p>
+          <p className="start-traeger-absatz">
+            Das Werk ist Teil des <strong>Real Life Network</strong>. Seit über
+            drei Jahren bauen wir an einem Netzwerk für echte Begegnung in der
+            realen Welt — Vertrauen über das Web of Trust, Selbstbestimmung statt
+            zentrale Server, von Mensch zu Mensch.
+          </p>
+          <div className="start-traeger-links">
+            <a
+              href="https://lichtung.ooo"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="start-traeger-link"
+            >Lichtung →</a>
+            <a
+              href="https://web-of-trust.de"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="start-traeger-link"
+            >Web of Trust →</a>
+            <a
+              href="https://real-life.network"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="start-traeger-link"
+            >Real Life Network →</a>
+          </div>
+        </div>
+
+        <div className="start-traeger-spende">
+          <h3>Unterstütze das Projekt</h3>
+          <p className="start-traeger-spende-lead">
+            Wenn dir der Garten etwas gibt — schenk uns etwas zurück. Jeder Beitrag
+            hält das Werk lebendig.
+          </p>
+
+          <a
+            href="https://www.paypal.com/donate?hosted_button_id=KOLLEKTIV_LICHTUNG"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="start-traeger-paypal"
+          >
+            <span className="start-traeger-paypal-icon">🌱</span>
+            <span>Mit PayPal spenden</span>
+          </a>
+
+          <p className="start-traeger-spende-info">
+            Einmal oder monatlich. Spendenquittung auf Anfrage.
+          </p>
+
+          <details className="start-traeger-konto">
+            <summary>Lieber per Überweisung</summary>
+            <div className="start-traeger-konto-inhalt">
+              <div><span>Empfänger</span><strong>Kollektiv Lichtung e.V.</strong></div>
+              <div><span>IBAN</span><code>DE.. .... .... .... .... ..</code></div>
+              <div><span>BIC</span><code>...</code></div>
+              <div><span>Verwendungszweck</span><strong>Spende kosmischer Garten</strong></div>
+            </div>
+          </details>
+        </div>
+      </section>
+
     </div>
   );
 }
