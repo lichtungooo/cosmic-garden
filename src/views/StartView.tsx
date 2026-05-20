@@ -167,17 +167,19 @@ export function StartView({ onWerkzeug, onJahreskreis, onMaya, onWelt, onTag }: 
         <p className="start-hero-eyebrow">Sonne, Mond und Sterne</p>
       </header>
 
-      <section className="start-heute" style={{ borderTopColor: tagestypFarbe }}>
-        <div className="start-heute-datumzeile">
-          <span className="start-heute-datum-gross">
-            {WT_LANG[heute.getDay()]}, {heute.getDate()}. {MONATE_LANG[heute.getMonth()]} {heute.getFullYear()}
-          </span>
-          <span className="start-heute-trenner" aria-hidden="true" />
-          <span className="start-heute-ort-zeile">{ort.name}</span>
-        </div>
+      <section className="start-heute">
         <div className="start-heute-grid">
           <button className="start-heute-card start-heute-haupt" onClick={onTag} style={{ ['--karte-farbe' as string]: tagestypFarbe }}>
-            <span className="start-heute-label">Heute am Himmel</span>
+            <div className="start-heute-card-kopf">
+              <span className="start-heute-label">Heute am Himmel</span>
+              <span className="start-heute-datumzeile">
+                <span className="start-heute-datum">
+                  {WT_LANG[heute.getDay()]}, {heute.getDate()}. {MONATE_LANG[heute.getMonth()]} {heute.getFullYear()}
+                </span>
+                <span className="start-heute-trenner" aria-hidden="true" />
+                <span className="start-heute-ort">{ort.name}</span>
+              </span>
+            </div>
             <span className="start-heute-tagestyp">{tagestypName}</span>
             <span className="start-heute-zeichen">
               <span className="zodiak-glyph">{mond.zeichen.symbol}</span> Mond in {mond.zeichen.name}

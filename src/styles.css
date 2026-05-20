@@ -4593,19 +4593,19 @@ button { font-family: inherit; cursor: pointer; }
 }
 .start-hero {
   text-align: center;
-  padding: .5rem 0 .35rem;
-  margin-bottom: .65rem;
+  padding: 1rem 0 1rem;
+  margin-bottom: 1.25rem;
 }
 .start-hero-logo {
   display: block;
-  width: 44px;
-  height: 44px;
-  margin: 0 auto .35rem;
+  width: 84px;
+  height: 84px;
+  margin: 0 auto .5rem;
 }
 .start-hero-eyebrow {
-  font-size: .7rem;
+  font-size: .78rem;
   font-weight: 500;
-  letter-spacing: .14em;
+  letter-spacing: .18em;
   color: var(--ink-mute);
   margin: 0;
   text-transform: uppercase;
@@ -4622,51 +4622,48 @@ button { font-family: inherit; cursor: pointer; }
 
 /* === Heute-Karte === */
 .start-heute {
-  background: var(--paper);
-  border: 1px solid var(--line);
-  border-top: 3px solid var(--accent);
-  border-radius: var(--radius);
-  padding: 1.25rem 1.5rem 1.5rem;
-  margin-bottom: 2.5rem;
-}
-.start-heute-datumzeile {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: .5rem;
-  text-align: center;
-  margin-bottom: .85rem;
-  padding-bottom: .65rem;
-  border-bottom: 1px solid var(--line);
-  flex-wrap: wrap;
-}
-.start-heute-datum-gross {
-  font-family: 'Spectral', Georgia, serif;
-  font-size: .92rem;
-  font-weight: 500;
-  color: var(--kosmos);
-  line-height: 1.2;
-  letter-spacing: -.005em;
-}
-.start-heute-trenner {
-  display: inline-block;
-  width: 1px;
-  height: 14px;
-  background: var(--line-strong);
-  align-self: center;
-}
-.start-heute-ort-zeile {
-  font-size: .88rem;
-  color: var(--ink-mute);
+  margin-bottom: 3rem;
 }
 .start-heute-grid {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 1rem;
 }
+.start-heute-card-kopf {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .75rem;
+  flex-wrap: wrap;
+  padding-bottom: .5rem;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: .5rem;
+}
+.start-heute-datumzeile {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  font-size: .82rem;
+  color: var(--ink-mute);
+}
+.start-heute-datum {
+  font-family: 'Spectral', Georgia, serif;
+  font-weight: 500;
+  color: var(--ink);
+}
+.start-heute-trenner {
+  display: inline-block;
+  width: 1px;
+  height: 12px;
+  background: var(--line-strong);
+}
+.start-heute-ort {
+  color: var(--ink-mute);
+}
 @media (max-width: 720px) {
-  .start-heute-datum-gross { font-size: .88rem; }
   .start-heute-grid { grid-template-columns: 1fr; }
+  .start-heute-card-kopf { gap: .35rem; }
+  .start-heute-datumzeile { font-size: .78rem; }
 }
 .start-heute-card {
   background: var(--bg-soft);
@@ -4771,7 +4768,9 @@ button { font-family: inherit; cursor: pointer; }
 
 /* === Werkzeuge === */
 .start-werkzeuge {
-  margin-bottom: 2.5rem;
+  margin: 0 0 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--line);
 }
 .start-werkzeuge-grid {
   display: grid;
@@ -4819,7 +4818,9 @@ button { font-family: inherit; cursor: pointer; }
 
 /* === Saison === */
 .start-saison {
-  margin-bottom: 2.5rem;
+  margin: 0 0 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--line);
 }
 .start-saison-grid {
   display: grid;
@@ -4875,7 +4876,9 @@ button { font-family: inherit; cursor: pointer; }
 
 /* === Wissen-Empfehlungen === */
 .start-wissen {
-  margin-bottom: 2.5rem;
+  margin: 0 0 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--line);
 }
 .start-wissen-grid {
   display: grid;
@@ -4934,7 +4937,9 @@ button { font-family: inherit; cursor: pointer; }
 
 /* === Welten === */
 .start-welten {
-  margin-bottom: 2rem;
+  margin: 0 0 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--line);
 }
 .start-welten-grid {
   display: grid;

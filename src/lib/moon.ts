@@ -25,9 +25,9 @@ export interface TierkreisZeichen {
 export const TIERKREIS: (TierkreisZeichen & { startGrad: number })[] = [
   { name: 'Widder',     symbol: '♈', element: 'feuer',  thunTyp: 'frucht', startGrad:   0 },
   { name: 'Stier',      symbol: '♉', element: 'erde',   thunTyp: 'wurzel', startGrad:  27 },
-  { name: 'Zwillinge',  symbol: '♊', element: 'luft',   thunTyp: 'bluete', startGrad:  75 },
-  { name: 'Krebs',      symbol: '♋', element: 'wasser', thunTyp: 'blatt',  startGrad: 110 },
-  { name: 'Löwe',       symbol: '♌', element: 'feuer',  thunTyp: 'frucht', startGrad: 137 },
+  { name: 'Zwillinge',  symbol: '♊', element: 'luft',   thunTyp: 'bluete', startGrad:  90 },
+  { name: 'Krebs',      symbol: '♋', element: 'wasser', thunTyp: 'blatt',  startGrad: 118 },
+  { name: 'Löwe',       symbol: '♌', element: 'feuer',  thunTyp: 'frucht', startGrad: 140 },
   { name: 'Jungfrau',   symbol: '♍', element: 'erde',   thunTyp: 'wurzel', startGrad: 174 },
   { name: 'Waage',      symbol: '♎', element: 'luft',   thunTyp: 'bluete', startGrad: 217 },
   { name: 'Skorpion',   symbol: '♏', element: 'wasser', thunTyp: 'blatt',  startGrad: 241 },

@@ -6,9 +6,9 @@ const DEG = Math.PI / 180;
 const TIERKREIS = [
   { name: 'Widder',     symbol: '♈', thunTyp: 'frucht', startGrad:   0 },
   { name: 'Stier',      symbol: '♉', thunTyp: 'wurzel', startGrad:  27 },
-  { name: 'Zwillinge',  symbol: '♊', thunTyp: 'bluete', startGrad:  75 },
-  { name: 'Krebs',      symbol: '♋', thunTyp: 'blatt',  startGrad: 110 },
-  { name: 'Löwe',       symbol: '♌', thunTyp: 'frucht', startGrad: 137 },
+  { name: 'Zwillinge',  symbol: '♊', thunTyp: 'bluete', startGrad:  90 },
+  { name: 'Krebs',      symbol: '♋', thunTyp: 'blatt',  startGrad: 118 },
+  { name: 'Löwe',       symbol: '♌', thunTyp: 'frucht', startGrad: 140 },
   { name: 'Jungfrau',   symbol: '♍', thunTyp: 'wurzel', startGrad: 174 },
   { name: 'Waage',      symbol: '♎', thunTyp: 'bluete', startGrad: 217 },
   { name: 'Skorpion',   symbol: '♏', thunTyp: 'blatt',  startGrad: 241 },
