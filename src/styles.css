@@ -3,9 +3,9 @@
      Himmel-Indigo, Sonnenuntergangs-Apricot, Pergament-Sand, Garten-Gruen,
      Mangold-Weinrot, Sand-Holzbraun, Mond-Silber. */
   --bg:           #ffffff;   /* Reinweiss */
-  --bg-soft:      #fafaf6;   /* Hauch warmer Off-White */
-  --paper:        #ffffff;   /* Karten weiss */
-  --paper-soft:   #f6f7f3;   /* leichter Hauch */
+  --bg-soft:      #ffffff;   /* Reinweiss */
+  --paper:        #ffffff;   /* Reinweiss */
+  --paper-soft:   #ffffff;   /* Reinweiss */
   --ink:          #1A2638;   /* tiefes Himmelblau statt schwarz */
   --ink-mute:     #5B6D80;   /* Blau-Grau, dunst-blau wie Bild-Huegel */
   --ink-soft:     #9AA9B5;   /* Hellgrau-Blau */
