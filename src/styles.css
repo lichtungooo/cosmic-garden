@@ -3634,9 +3634,6 @@ button { font-family: inherit; cursor: pointer; }
 
 /* ====== DETAIL-SEITE (Modal ersetzt) ====== */
 .detail-seite {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
   background: var(--paper);
   animation: fadeIn .15s ease;
 }
@@ -3735,9 +3732,8 @@ button { font-family: inherit; cursor: pointer; }
   color: var(--ink);
 }
 .detail-inhalt {
-  flex: 1;
   padding: 1.25rem 1.5rem 2rem;
-  /* KEIN overflow-y: auto — sonst doppelter Scrollbar zusammen mit .app-main */
+  /* Kein eigener Scroll — nur .app-main scrollt, sonst doppelter Scrollbar */
 }
 .detail-leer {
   padding: 2rem;
