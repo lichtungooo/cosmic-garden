@@ -30,7 +30,7 @@ export function PrivacyBanner({ onMehrErfahren }: Props) {
     <div className="privacy-banner" role="region" aria-label="Datenschutz-Hinweis">
       <span className="privacy-banner-symbol" aria-hidden="true">🔒</span>
       <p className="privacy-banner-text">
-        <strong>Keine Cookies. Kein Tracking. Keine Werbung.</strong>{' '}
+        <strong>Von Freunden für Freunde. Keine Cookies, kein Tracking, keine Werbung.</strong>{' '}
         Diese Seite respektiert deine Privatsphäre vollständig — alle Daten
         bleiben lokal in deinem Browser.
       </p>
