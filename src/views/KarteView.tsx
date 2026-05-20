@@ -315,8 +315,9 @@ export function KarteView({ onProfil }: { onProfil: () => void }) {
           className="karte-rln-hinweis"
           onClick={() => setRlnModalOffen(true)}
         >
-          <strong>Garten ist die Vorstufe</strong>
-          <span>Marktplatz, Veranstaltungen und Gemeinschaftsgärten kommen im Real Life Network. Mehr erfahren →</span>
+          <strong>Mein kosmischer Garten im Real Life Network</strong>
+          <span>Marktplatz, Veranstaltungen, Gemeinschaftsgärten, Abenteuer im echten Leben.</span>
+          <span className="karte-rln-mehr">Mehr erfahren →</span>
         </button>
 
         {rlnModalOffen && (
@@ -475,8 +476,8 @@ function RlnModal({ onSchliessen }: { onSchliessen: () => void }) {
                 <a href="https://web-of-trust.de" target="_blank" rel="noopener noreferrer" className="rln-modal-link">
                   Web of Trust →
                 </a>
-                <a href="https://real-life.network" target="_blank" rel="noopener noreferrer" className="rln-modal-link">
-                  Real Life Network →
+                <a href="https://github.com/real-life-org/real-life-stack" target="_blank" rel="noopener noreferrer" className="rln-modal-link">
+                  Real Life Stack →
                 </a>
               </div>
             </div>

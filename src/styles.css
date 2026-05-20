@@ -9105,27 +9105,32 @@ body:has(.privacy-banner) .app-fuss {
   bottom: 1.5rem;
   left: 1.5rem;
   z-index: 1000;
-  background: rgba(255, 255, 255, .92);
+  background: rgba(255, 255, 255, .94);
   backdrop-filter: blur(4px);
   border: 1px solid var(--line);
-  border-left: 3px solid var(--gold);
   border-radius: var(--radius);
-  padding: .65rem .85rem;
+  padding: .65rem .9rem;
   max-width: 320px;
   display: flex;
   flex-direction: column;
-  gap: .2rem;
+  gap: .25rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, .08);
 }
 .karte-rln-hinweis strong {
   font-size: .85rem;
   color: var(--kosmos);
   font-weight: 600;
+  line-height: 1.3;
 }
 .karte-rln-hinweis span {
-  font-size: .8rem;
+  font-size: .78rem;
   color: var(--ink-mute);
-  line-height: 1.45;
+  line-height: 1.4;
+}
+.karte-rln-mehr {
+  margin-top: .15rem;
+  color: var(--accent) !important;
+  font-weight: 500;
 }
 
 .karte-vorschau {
@@ -9461,8 +9466,11 @@ body:has(.privacy-banner) .app-fuss {
   transition: all .15s ease;
 }
 .karte-rln-hinweis:hover {
-  border-color: var(--gold);
+  border-color: var(--accent);
   box-shadow: 0 4px 14px rgba(0, 0, 0, .12);
+}
+.karte-rln-hinweis:hover .karte-rln-mehr {
+  color: var(--accent-deep) !important;
 }
 
 @media (max-width: 720px) {
