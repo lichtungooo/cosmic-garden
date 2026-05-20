@@ -88,6 +88,18 @@ export function TagebuchTag({ datum, kompakt = false }: Props) {
                 )}
                 <button
                   type="button"
+                  className="tagebuch-teilen"
+                  onClick={() => {
+                    const tag = `${e.datum} · ${artLabel(e.art)}${e.thunTyp ? ' · ' + thunTypLabel(e.thunTyp) : ''}`;
+                    const text = `🌱 Aus dem Garten\n${tag}\n\n${e.text}`;
+                    const url = `https://t.me/share/url?url=${encodeURIComponent('https://mein-kosmischer-garten.de')}&text=${encodeURIComponent(text)}`;
+                    window.open(url, '_blank', 'noopener,noreferrer');
+                  }}
+                  title="In Telegram-Gruppe teilen"
+                  aria-label="In Telegram-Gruppe teilen"
+                >↗</button>
+                <button
+                  type="button"
                   className="tagebuch-loeschen"
                   onClick={() => { if (confirm('Eintrag wirklich löschen?')) loesche(e.id); }}
                   title="Löschen"

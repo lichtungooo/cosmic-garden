@@ -156,27 +156,6 @@ export function ProfilView({ onTagebuch, onKarte, onVerifizieren, onKontakte }: 
         />
       </Abschnitt>
 
-      <Abschnitt
-        titel="Meine Gartenkarriere"
-        feld="gartenkarriere"
-        sichtbarkeit={werk.sichtbarkeit.gartenkarriere}
-        onSichtbarkeit={setzeSicht}
-      >
-        <textarea
-          className="profil-textarea"
-          value={werk.gartenkarriere}
-          onChange={e => setWerk({ ...werk, gartenkarriere: e.target.value })}
-          onBlur={() => speichereExtra({ gartenkarriere: werk.gartenkarriere })}
-          placeholder="Wie du zum Garten gekommen bist, was du gelernt hast, was du gerade ausprobierst — Markdown ist erlaubt."
-          rows={5}
-        />
-        {werk.gartenkarriere && (
-          <details className="profil-vorschau">
-            <summary>Vorschau</summary>
-            <MarkdownText text={werk.gartenkarriere} />
-          </details>
-        )}
-      </Abschnitt>
 
       <Abschnitt
         titel="Begabungen"
@@ -209,58 +188,17 @@ export function ProfilView({ onTagebuch, onKarte, onVerifizieren, onKontakte }: 
       </Abschnitt>
 
       <Abschnitt
-        titel="Mein Garten-Ort"
+        titel="Auf der Karte"
         feld="ort"
         sichtbarkeit={werk.sichtbarkeit.ort}
         onSichtbarkeit={setzeSicht}
-        beschreibung="Damit andere wissen, mit welchem Klima und Boden du arbeitest. Karten-Pin kommt bald."
+        beschreibung="Zeig dich auf der Karte, damit andere Gärtner sehen, wo du in etwa bist. Dein genauer Ort bleibt bei dir — nur die ungefähre Position erscheint als Pin."
       >
-        <div className="profil-felder-grid">
-          <label className="profil-feldzeile">
-            <span>Ort</span>
-            <input
-              value={werk.standort}
-              onChange={e => setWerk({ ...werk, standort: e.target.value })}
-              onBlur={() => speichereExtra({ standort: werk.standort })}
-              placeholder="z.B. Kassel, Nordhessen"
-            />
-          </label>
-          <label className="profil-feldzeile">
-            <span>Klimazone</span>
-            <input
-              value={werk.klimazone}
-              onChange={e => setWerk({ ...werk, klimazone: e.target.value })}
-              onBlur={() => speichereExtra({ klimazone: werk.klimazone })}
-              placeholder="z.B. 7a"
-            />
-          </label>
-          <label className="profil-feldzeile">
-            <span>Bodenart</span>
-            <input
-              value={werk.bodenart}
-              onChange={e => setWerk({ ...werk, bodenart: e.target.value })}
-              onBlur={() => speichereExtra({ bodenart: werk.bodenart })}
-              placeholder="z.B. lehmig, sandig, humus"
-            />
-          </label>
-        </div>
-        <div className="profil-unterabschnitt">
-          <span className="profil-feldlabel">Lieblings-Pflanzen</span>
-          <HashtagEingabe
-            tags={werk.lieblingsPflanzen}
-            onChange={(lieblingsPflanzen) => speichereExtra({ lieblingsPflanzen })}
-            platzhalter="z.B. tomate, calendula, apfel"
-            farbe="#8a6438"
-          />
-        </div>
-        <div className="profil-unterabschnitt">
-          <span className="profil-feldlabel">Auf der Karte</span>
-          <AufKarteZeigen
-            name={name}
-            standort={werk.standort}
-            onZurKarte={onKarte}
-          />
-        </div>
+        <AufKarteZeigen
+          name={name}
+          standort={werk.standort}
+          onZurKarte={onKarte}
+        />
       </Abschnitt>
 
       <Abschnitt
@@ -268,7 +206,7 @@ export function ProfilView({ onTagebuch, onKarte, onVerifizieren, onKontakte }: 
         feld="kontakt"
         sichtbarkeit={werk.sichtbarkeit.kontakt}
         onSichtbarkeit={setzeSicht}
-        beschreibung="Per Telegram. Handle ohne @, Gruppe als kompletter Link."
+        beschreibung="Per Telegram. Wenn du eine Garten-Gruppe verlinkst, kannst du Tagebuch-Einträge direkt dort teilen."
       >
         <div className="profil-felder-grid">
           <label className="profil-feldzeile">
@@ -343,16 +281,6 @@ export function ProfilView({ onTagebuch, onKarte, onVerifizieren, onKontakte }: 
         </div>
       </section>
 
-      <section className="profil-abschnitt profil-did-block">
-        <header className="profil-abschnitt-kopf">
-          <h2 className="profil-abschnitt-titel">Schlüssel-Kennung</h2>
-        </header>
-        <code
-          className="profil-did-kennung"
-          onClick={() => { if (user?.id) navigator.clipboard?.writeText(user.id); }}
-          title="Klick: kopieren"
-        >{user?.id ?? '—'}</code>
-      </section>
     </div>
   );
 }

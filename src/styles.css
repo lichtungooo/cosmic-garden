@@ -1701,8 +1701,8 @@ button { font-family: inherit; cursor: pointer; }
   font-style: italic;
   font-weight: 500;
 }
+.tagebuch-teilen,
 .tagebuch-loeschen {
-  margin-left: auto;
   background: transparent;
   border: none;
   color: var(--ink-soft);
@@ -1710,7 +1710,13 @@ button { font-family: inherit; cursor: pointer; }
   cursor: pointer;
   padding: 0 .25rem;
   font-family: inherit;
+  line-height: 1;
 }
+.tagebuch-teilen {
+  margin-left: auto;
+  font-size: .95rem;
+}
+.tagebuch-teilen:hover { color: var(--accent); }
 .tagebuch-loeschen:hover { color: var(--warn); }
 .tagebuch-eintrag-text {
   font-size: .9rem;
