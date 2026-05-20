@@ -8690,3 +8690,80 @@ body:has(.privacy-banner) .app-fuss {
   padding-bottom: 8rem;
 }
 
+/* ====== VOTE-KNOPF (Fragen, Antworten, Wünsche) ====== */
+.vote-knopf {
+  display: inline-flex;
+  align-items: center;
+  gap: .25rem;
+  background: none;
+  border: 1px solid var(--line);
+  border-radius: 9999px;
+  padding: .15rem .55rem .15rem .45rem;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: .78rem;
+  color: var(--ink-mute);
+  transition: all .12s ease;
+  flex-shrink: 0;
+}
+.vote-knopf:hover {
+  border-color: #4a8a3a;
+  color: #4a8a3a;
+  background: rgba(74, 138, 58, .06);
+}
+.vote-knopf.gevotet {
+  border-color: #4a8a3a;
+  background: rgba(74, 138, 58, .12);
+  color: #2a6e1f;
+}
+.vote-knopf svg {
+  flex-shrink: 0;
+}
+.vote-zahl {
+  font-weight: 500;
+  min-width: .8rem;
+  text-align: center;
+}
+
+/* Frage-Titel mit Vote-Knopf davor */
+.frage-titel-zeile {
+  display: flex;
+  align-items: flex-start;
+  gap: .55rem;
+  flex: 1;
+  min-width: 0;
+}
+.frage-titel-zeile .vote-knopf {
+  margin-top: .15rem;
+}
+
+/* Antwort: Vote-Knopf links neben Text */
+.antwort-zeile {
+  display: flex;
+  align-items: flex-start;
+  gap: .55rem;
+}
+.antwort-zeile .vote-knopf {
+  margin-top: .15rem;
+}
+.antwort-zeile .antwort-text {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Wunschlisten-Eintrag: Vote-Knopf vor Titel */
+.wunschlisten-eintrag-titel-zeile {
+  display: flex;
+  align-items: flex-start;
+  gap: .55rem;
+  margin-bottom: .35rem;
+}
+.wunschlisten-eintrag-titel-zeile .vote-knopf {
+  margin-top: .2rem;
+}
+.wunschlisten-eintrag-titel-zeile .wunschlisten-eintrag-titel {
+  margin: 0;
+  flex: 1;
+  min-width: 0;
+}
+

@@ -23,6 +23,8 @@ import {
 import { useCurrentUser, useAuthState } from '@real-life-stack/toolkit';
 import { useAnmeldung } from '../lib/anmeldung-context';
 import { useProfilName } from '../lib/profil-name';
+import { useVoteAnzahlen } from '../lib/votes';
+import { VoteKnopf } from '../components/VoteKnopf';
 import { WoTEinladung } from '../components/WoTEinladung';
 import { MarkdownText } from '../components/MarkdownText';
 
@@ -44,14 +46,21 @@ export function WunschlistenView() {
   const [formularOffen, setFormularOffen] = useState(false);
 
   const wunschStats = useMemo(() => stats(wuensche), [wuensche]);
+  const wunschVotes = useVoteAnzahlen('wunsch');
 
   const gruppiert = useMemo(() => {
+    function nachVoten(a: Wunsch, b: Wunsch) {
+      const va = wunschVotes.get(a.id) ?? 0;
+      const vb = wunschVotes.get(b.id) ?? 0;
+      if (vb !== va) return vb - va;
+      return b.erstellt - a.erstellt;
+    }
     return {
-      inArbeit: wuensche.filter(w => w.status === 'in-arbeit'),
-      offen: wuensche.filter(w => w.status === 'offen'),
-      eingebaut: wuensche.filter(w => w.status === 'eingebaut'),
+      inArbeit: wuensche.filter(w => w.status === 'in-arbeit').sort(nachVoten),
+      offen: wuensche.filter(w => w.status === 'offen').sort(nachVoten),
+      eingebaut: wuensche.filter(w => w.status === 'eingebaut').sort(nachVoten),
     };
-  }, [wuensche]);
+  }, [wuensche, wunschVotes]);
 
   async function neuerWunsch(titel: string, beschreibung: string, tiefe: WunschTiefe, tags: string[]) {
     await wuenscheAuf(titel, beschreibung, tiefe, tags);
@@ -204,7 +213,10 @@ function WunschEintrag({ wunsch, istAutor, onLoeschen }: WunschEintragProps) {
   return (
     <li className="wunschlisten-eintrag" style={{ borderLeftColor: statusFarbe(wunsch.status) }}>
       <header className="wunschlisten-eintrag-kopf">
-        <h3 className="wunschlisten-eintrag-titel">{wunsch.titel}</h3>
+        <div className="wunschlisten-eintrag-titel-zeile">
+          <VoteKnopf zielArt="wunsch" zielId={wunsch.id} />
+          <h3 className="wunschlisten-eintrag-titel">{wunsch.titel}</h3>
+        </div>
         <span className="wunschlisten-eintrag-meta">
           <span className="wunschlisten-eintrag-autor">{autorName}</span>
           <span className="wunschlisten-trenner">·</span>

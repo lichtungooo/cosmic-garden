@@ -2,13 +2,15 @@
 // Frage stellen → öffnet Formular mit Titel, Beobachtung, Pflicht-Erst-Antwort.
 // Bestehende Fragen werden mit ihren Antworten gelistet.
 
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useMemo } from 'react';
 import { useFragenZuScope, useAntworten, type Frage } from '../lib/fragen';
 import { useCurrentUser, useAuthState } from '@real-life-stack/toolkit';
 import { MarkdownText } from './MarkdownText';
 import { WoTEinladung } from './WoTEinladung';
 import { useAnmeldung } from '../lib/anmeldung-context';
 import { useProfilName } from '../lib/profil-name';
+import { useVoteAnzahlen } from '../lib/votes';
+import { VoteKnopf } from './VoteKnopf';
 
 interface Props {
   scope: string;          // z.B. 'pflanze:kopfsalat'
@@ -16,12 +18,23 @@ interface Props {
 }
 
 export function FragenBlock({ scope, kontextLabel }: Props) {
-  const { fragen, stelleFrage, loescheFrage } = useFragenZuScope(scope);
+  const { fragen: fragenRoh, stelleFrage, loescheFrage } = useFragenZuScope(scope);
   const { data: user } = useCurrentUser();
   const authState = useAuthState();
   const anmeldung = useAnmeldung();
   const istAngemeldet = authState.status === 'authenticated';
   const [formularOffen, setFormularOffen] = useState(false);
+
+  const frageVotes = useVoteAnzahlen('frage');
+  const fragen = useMemo(() => {
+    // Sortierung: erst nach Vote-Anzahl absteigend, bei Gleichstand nach Datum absteigend (neueste oben)
+    return [...fragenRoh].sort((a, b) => {
+      const va = frageVotes.get(a.id) ?? 0;
+      const vb = frageVotes.get(b.id) ?? 0;
+      if (vb !== va) return vb - va;
+      return b.erstellt - a.erstellt;
+    });
+  }, [fragenRoh, frageVotes]);
 
   async function neueFrageMitAntwort(titel: string, beobachtung: string, ersteAntwort: string) {
     const frage = await stelleFrage(titel, beobachtung, 'frage');
@@ -101,7 +114,7 @@ interface FrageEintragProps {
 }
 
 function FrageEintrag({ frage, istAutor, onLoeschen, ersteAntwortText, onErsteAntwortGeschrieben }: FrageEintragProps) {
-  const { antworten, schreibeAntwort, loescheAntwort } = useAntworten(frage.id);
+  const { antworten: antwortenRoh, schreibeAntwort, loescheAntwort } = useAntworten(frage.id);
   const { data: user } = useCurrentUser();
   const authState = useAuthState();
   const anmeldung = useAnmeldung();
@@ -110,6 +123,16 @@ function FrageEintrag({ frage, istAutor, onLoeschen, ersteAntwortText, onErsteAn
   const [antwortFormular, setAntwortFormular] = useState(false);
   const [antwortEntwurf, setAntwortEntwurf] = useState('');
   const ersteAntwortGeschrieben = useRef(false);
+
+  const antwortVotes = useVoteAnzahlen('antwort');
+  const antworten = useMemo(() => {
+    return [...antwortenRoh].sort((a, b) => {
+      const va = antwortVotes.get(a.id) ?? 0;
+      const vb = antwortVotes.get(b.id) ?? 0;
+      if (vb !== va) return vb - va;
+      return a.erstellt - b.erstellt;  // bei Gleichstand älteste zuerst (erste Antwort des Fragestellers steht oben)
+    });
+  }, [antwortenRoh, antwortVotes]);
 
   // Pflicht-Erst-Antwort schreiben, sobald die Frage erstellt ist und
   // die Komponente in der Liste auftaucht.
@@ -134,7 +157,10 @@ function FrageEintrag({ frage, istAutor, onLoeschen, ersteAntwortText, onErsteAn
   return (
     <li className="fragen-eintrag">
       <header className="frage-kopf">
-        <h3 className="frage-titel">{frage.titel}</h3>
+        <div className="frage-titel-zeile">
+          <VoteKnopf zielArt="frage" zielId={frage.id} />
+          <h3 className="frage-titel">{frage.titel}</h3>
+        </div>
         <span className="frage-meta">
           <span className="frage-autor">{autorName}</span>
           <span className="frage-trenner">·</span>
@@ -225,8 +251,11 @@ function AntwortEintrag({ antwort, istAutor, onLoeschen }: AntwortEintragProps) 
   });
   return (
     <article className="antwort-eintrag">
-      <div className="antwort-text">
-        <MarkdownText text={antwort.text} />
+      <div className="antwort-zeile">
+        <VoteKnopf zielArt="antwort" zielId={antwort.id} />
+        <div className="antwort-text">
+          <MarkdownText text={antwort.text} />
+        </div>
       </div>
       <footer className="antwort-fuss">
         <span className="antwort-autor">{autorName}</span>
