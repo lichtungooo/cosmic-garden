@@ -36,17 +36,19 @@
 }
 
 * { box-sizing: border-box; }
-html, body {
+html {
+  height: 100vh;
+  overflow: hidden;
+}
+body {
   margin: 0;
   padding: 0;
-  height: 100%;
-  max-height: 100vh;
+  height: 100vh;
   background: var(--bg);
   overflow: hidden;  /* NUR .app-main scrollt, keine doppelten Scrollbars */
 }
 #root {
-  height: 100%;
-  max-height: 100vh;
+  height: 100vh;
   overflow: hidden;
 }
 
