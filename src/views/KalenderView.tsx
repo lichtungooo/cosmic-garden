@@ -1,5 +1,8 @@
 import { useMemo, useRef, useState } from 'react';
 import { mondTag, thunTypFarbe, thunTypLabel, phaseLabel } from '../lib/moon';
+
+// Variation Selector 15: erzwingt Text-Rendering von Unicode-Glyphen statt bunter Emoji.
+const VS_TEXT = String.fromCharCode(0xFE0E);
 import { tagesHimmel, formatZeit, findPhaseAtDay, phaseEventLabel } from '../lib/himmel';
 import { useStandort } from '../lib/standort';
 import { useSwipe } from '../lib/useSwipe';
@@ -218,7 +221,7 @@ function MonatsAnsicht({ datum, onTag }: MonatsAnsichtProps) {
               </div>
               <div className="zelle-mitte">
                 <span className={`zelle-zeichen ${t.zeichenWechsel ? 'wechsel' : ''}`}>
-                  {t.zeichenSymbol}
+                  {t.zeichenSymbol ? t.zeichenSymbol + VS_TEXT : null}
                 </span>
                 {istVollOderNeu && t.phaseEventZeit && (
                   <span className="zelle-phase-zeit">{t.phaseEventZeit}</span>
@@ -236,7 +239,7 @@ function MonatsAnsicht({ datum, onTag }: MonatsAnsichtProps) {
               </div>
               {hoverTag === t.day && (
                 <div className="zelle-tooltip">
-                  <div className="tt-titel">{t.day}. {MONATE[monat]} · {t.zeichenSymbol} {t.zeichenName}</div>
+                  <div className="tt-titel">{t.day}. {MONATE[monat]} · {t.zeichenSymbol ? t.zeichenSymbol + VS_TEXT : ''} {t.zeichenName}</div>
                   <div className="tt-thun" style={{ background: t.color! }}>{thunTypLabel(t.thunTypFull!)}</div>
                   <div className="tt-zeile"><span>Mond</span><span>{t.phaseLabelText} · {Math.round(t.illumination! * 100)}%</span></div>
                   {t.phaseEvent && (

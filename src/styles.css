@@ -455,8 +455,8 @@ button { font-family: inherit; cursor: pointer; }
   .zelle-phase-zeit,
   .zelle-mond-gross { display: none; }
   .zelle-mond { display: none; }   /* schon vorher versteckt, sicherheitshalber */
-  .zelle-zeichen { font-size: .7rem; opacity: .5; }
-  .zelle-zeichen.wechsel { font-size: .85rem; opacity: .9; }
+  .zelle-zeichen { font-size: 1.05rem; opacity: 1; color: var(--kosmos); }
+  .zelle-zeichen.wechsel { font-size: 1.05rem; opacity: 1; color: var(--kosmos); font-weight: 600; }
   .zelle-tag { font-size: .75rem; font-weight: 500; }
   .monat-zelle.heute .zelle-tag {
     width: 1.4em; height: 1.4em;
@@ -642,16 +642,18 @@ button { font-family: inherit; cursor: pointer; }
 .zelle-oben { display: flex; justify-content: space-between; align-items: flex-start; }
 .zelle-mitte { display: flex; align-items: center; justify-content: center; gap: .35rem; flex: 1; min-height: 0; }
 .zelle-zeichen {
-  font-size: 1.1rem;
-  color: var(--ink-mute);
-  opacity: .65;
+  font-size: 1.55rem;
+  color: var(--kosmos);
+  opacity: 1;
   position: static;
+  font-variant-emoji: text;
+  line-height: 1;
 }
 .zelle-zeichen.wechsel {
-  font-size: 1.4rem;
-  opacity: .95;
-  color: var(--ink);
-  font-weight: 500;
+  font-size: 1.55rem;
+  opacity: 1;
+  color: var(--kosmos);
+  font-weight: 600;
 }
 .zelle-phase-zeit {
   font-size: .62rem;
