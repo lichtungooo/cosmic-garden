@@ -29,18 +29,21 @@ const WT_LANG = ['Sonntag', 'Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Fre
 const MONATE_LANG = ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember'];
 
 interface Werkzeug {
-  id: 'kalender' | 'jahreskreis' | 'maya' | 'tagebuch';
+  id: 'kalender' | 'jahreskreis' | 'karte' | 'gemeinschaft' | 'tagebuch' | 'mitgestalten';
   name: string;
   symbol: string;
   beschreibung: string;
   farbe: string;
+  pfad: string;
 }
 
 const WERKZEUGE: Werkzeug[] = [
-  { id: 'kalender',    name: 'Kalender',     symbol: '☷', beschreibung: 'Tag für Tag durchs Jahr. Tagestypen nach Maria Thun, Mondphasen, Sonnenzeiten, Wetter.', farbe: '#4a8a3a' },
-  { id: 'jahreskreis', name: 'Jahreskreis',  symbol: '◯', beschreibung: 'Das ganze Jahr als runder Kreis. Sonnwenden, Tagundnachtgleichen, der Tierkreis von oben.', farbe: '#d4a542' },
-  { id: 'maya',        name: 'Maya-Kalender',symbol: '✶', beschreibung: 'Tzolkin, Haab, Long Count — die drei Maya-Kalender, die immer noch laufen. Plus Venus.', farbe: '#c0432f' },
-  { id: 'tagebuch',    name: 'Tagebuch',     symbol: '✎', beschreibung: 'Eigene Notizen, Ernten, Beobachtungen. Was du im Garten erlebst, bleibt mit dir.', farbe: '#5b3a8a' },
+  { id: 'kalender',     name: 'Kalender',           symbol: '☷', pfad: '/kalender',           farbe: '#4a8a3a', beschreibung: 'Tag für Tag durchs Jahr. Tagestypen nach Maria Thun, Mondphasen, Sonnenzeiten, Wetter.' },
+  { id: 'jahreskreis',  name: 'Jahreskreis',        symbol: '◯', pfad: '/kalender',           farbe: '#d4a542', beschreibung: 'Das ganze Jahr als runder Kreis. Sonnwenden, Tagundnachtgleichen, der Tierkreis von oben.' },
+  { id: 'karte',        name: 'Karte',              symbol: '⌖', pfad: '/karte',              farbe: '#3b4b6b', beschreibung: 'Gärtner in der Nachbarschaft, Pins für Pflanztreffs, Gärten, Märkte. Begegnung in der realen Welt.' },
+  { id: 'gemeinschaft', name: 'Gemeinschaftsgärten', symbol: '❀', pfad: '/welt/gemeinschaft',  farbe: '#d4783a', beschreibung: 'Allmende, Stadtgärten, Schulgärten. Wo Erde, Hände und Menschen zusammenkommen.' },
+  { id: 'tagebuch',     name: 'Tagebuch',           symbol: '✎', pfad: '/tagebuch',           farbe: '#5b3a8a', beschreibung: 'Eigene Notizen, Ernten, Beobachtungen. Was du im Garten erlebst, bleibt mit dir.' },
+  { id: 'mitgestalten', name: 'Mitgestalten',       symbol: '✚', pfad: '/wunschliste/app',    farbe: '#8b6f47', beschreibung: 'Was fehlt dir? Was würde dir den Garten leichter machen? Trag deine Ideen und Wünsche ein.' },
 ];
 
 function jahreszeitFuer(monat: number): Jahreszeit {
@@ -277,11 +280,7 @@ export function StartView({ onWerkzeug, onJahreskreis, onMaya, onWelt, onTag }: 
               key={w.id}
               className="start-werkzeug-karte"
               style={{ ['--karte-farbe' as string]: w.farbe }}
-              onClick={() => {
-                if (w.id === 'kalender' || w.id === 'tagebuch') onWerkzeug(w.id);
-                else if (w.id === 'jahreskreis') onJahreskreis();
-                else if (w.id === 'maya') onMaya();
-              }}
+              onClick={() => navigate(w.pfad)}
             >
               <span className="start-werkzeug-symbol">{w.symbol}</span>
               <span className="start-werkzeug-name">{w.name}</span>
