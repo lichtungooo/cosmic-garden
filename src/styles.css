@@ -2,10 +2,10 @@
   /* Mein kosmischer Garten — Corporate Identity aus dem Hero-Bild abgeleitet:
      Himmel-Indigo, Sonnenuntergangs-Apricot, Pergament-Sand, Garten-Gruen,
      Mangold-Weinrot, Sand-Holzbraun, Mond-Silber. */
-  --bg:           #FAF6E9;   /* Pergament-Sand vom Horizont */
-  --bg-soft:      #F2EBD4;   /* Sand-Helligkeit */
-  --paper:        #FFFCF2;   /* Cream-Weiss, weniger steril als Reinweiss */
-  --paper-soft:   #F5EFDE;   /* Sand-Hauch */
+  --bg:           #ffffff;   /* Reinweiss */
+  --bg-soft:      #fafaf6;   /* Hauch warmer Off-White */
+  --paper:        #ffffff;   /* Karten weiss */
+  --paper-soft:   #f6f7f3;   /* leichter Hauch */
   --ink:          #1A2638;   /* tiefes Himmelblau statt schwarz */
   --ink-mute:     #5B6D80;   /* Blau-Grau, dunst-blau wie Bild-Huegel */
   --ink-soft:     #9AA9B5;   /* Hellgrau-Blau */
