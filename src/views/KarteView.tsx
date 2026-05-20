@@ -21,26 +21,28 @@ import { useMeinProfil } from '../lib/profil';
 import { HashtagEingabe } from '../components/HashtagEingabe';
 import { MarkdownText } from '../components/MarkdownText';
 
-// === Pin-Icon: kleines menschliches Symbol fuer Gaertner-Pins ===
-// Klein gehalten, weil viele Pins auf der Karte erwartet werden.
+// === Pin-Icon: Tropfen-Form mit kleinem Maennchen drin ===
+// Spitze unten zeigt genau auf den Ort. Klein gehalten — viele Pins erwartet.
 
 function pinIcon(_art: PinArt, fokus: boolean = false): L.DivIcon {
   const farbe = pinArtFarbe('gaertner');
-  const size = fokus ? 30 : 24;
+  const breite = fokus ? 30 : 24;
+  const hoehe = Math.round(breite * 1.3);
   const html = `
-    <div class="garten-pin ${fokus ? 'fokus' : ''}" style="--pin-farbe:${farbe};width:${size}px;height:${size}px">
-      <svg viewBox="0 0 24 24" width="${size}" height="${size}" xmlns="http://www.w3.org/2000/svg" fill="${farbe}" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="garten-pin-figur">
-        <circle cx="12" cy="7" r="3.5"/>
-        <path d="M5 22 C 5 16 8 13 12 13 C 16 13 19 16 19 22 Z"/>
+    <div class="garten-pin ${fokus ? 'fokus' : ''}" style="--pin-farbe:${farbe};width:${breite}px;height:${hoehe}px">
+      <svg viewBox="0 0 24 32" width="${breite}" height="${hoehe}" xmlns="http://www.w3.org/2000/svg" class="garten-pin-tropfen">
+        <path d="M12 0 C 5.4 0 0 5.4 0 12 C 0 21 12 32 12 32 C 12 32 24 21 24 12 C 24 5.4 18.6 0 12 0 Z" fill="${farbe}" stroke="white" stroke-width="1.6"/>
+        <circle cx="12" cy="9" r="2.2" fill="white"/>
+        <path d="M7 16 C 7 12.8 9.2 11 12 11 C 14.8 11 17 12.8 17 16 Z" fill="white"/>
       </svg>
     </div>
   `;
   return L.divIcon({
     html,
     className: 'garten-pin-wrap',
-    iconSize: [size, size],
-    iconAnchor: [size / 2, size / 2],
-    popupAnchor: [0, -size / 2],
+    iconSize: [breite, hoehe],
+    iconAnchor: [breite / 2, hoehe],  // Spitze des Tropfens zeigt auf den Ort
+    popupAnchor: [0, -hoehe],
   });
 }
 
@@ -80,6 +82,7 @@ export function KarteView({ onProfil }: { onProfil: () => void }) {
   const [neuLatLng, setNeuLatLng] = useState<{ lat: number; lng: number } | null>(null);
   const [bling, setBling] = useState<{ lat: number; lng: number; id: number } | null>(null);
   const [profilHinweis, setProfilHinweis] = useState<string | null>(null);
+  const [rlnModalOffen, setRlnModalOffen] = useState(false);
 
   const gefiltert = pins;
 
@@ -274,20 +277,29 @@ export function KarteView({ onProfil }: { onProfil: () => void }) {
           type="button"
           className="karte-profil-knopf"
           onClick={profilPinSetzen}
-          title={meinProfilPin ? 'Profil-Pin aktualisieren' : 'Mein Profil auf die Karte'}
+          title="Mein Profil auf die Karte setzen"
         >
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" stroke="white" strokeWidth="1.4" strokeLinejoin="round" aria-hidden="true">
-            <circle cx="12" cy="8" r="3.5" />
-            <path d="M5 22 C 5 16 8 13 12 13 C 16 13 19 16 19 22 Z" />
+          <svg viewBox="0 0 24 32" width="22" height="28" fill="currentColor" stroke="white" strokeWidth="1.4" strokeLinejoin="round" aria-hidden="true">
+            <path d="M12 0 C 5.4 0 0 5.4 0 12 C 0 21 12 32 12 32 C 12 32 24 21 24 12 C 24 5.4 18.6 0 12 0 Z" />
+            <circle cx="12" cy="9" r="2.2" fill="white" />
+            <path d="M7 16 C 7 12.8 9.2 11 12 11 C 14.8 11 17 12.8 17 16 Z" fill="white" />
           </svg>
-          <span>{meinProfilPin ? 'Mein Pin aktualisieren' : 'Mich auf die Karte setzen'}</span>
+          <span>Mein Profil auf die Karte setzen</span>
         </button>
 
-        {/* RLN-Hinweis links unten */}
-        <div className="karte-rln-hinweis">
+        {/* RLN-Hinweis links unten — klickbar, oeffnet Modal */}
+        <button
+          type="button"
+          className="karte-rln-hinweis"
+          onClick={() => setRlnModalOffen(true)}
+        >
           <strong>Garten ist die Vorstufe</strong>
-          <span>Marktplatz, Veranstaltungen und Gemeinschaftsgärten kommen im Real Life Network — bald.</span>
-        </div>
+          <span>Marktplatz, Veranstaltungen und Gemeinschaftsgärten kommen im Real Life Network. Mehr erfahren →</span>
+        </button>
+
+        {rlnModalOffen && (
+          <RlnModal onSchliessen={() => setRlnModalOffen(false)} />
+        )}
 
         {/* Kurzer Profil-Hinweis (z.B. nach Profil-Pin-Aktion) */}
         {profilHinweis && (
@@ -340,9 +352,127 @@ function PinVorschau({ pin, istMeiner, onSchliessen, onZuProfil }: {
           className="karte-vorschau-zumprofil"
           onClick={onZuProfil}
         >
-          {istMeiner ? 'Mein Profil bearbeiten →' : 'Zum Profil →'}
+          Profil anzeigen →
         </button>
       </div>
     </aside>
+  );
+}
+
+// === RLN-Modal: erklaert was Real Life Network ist, mit Tabs + Spende-Link ===
+
+function RlnModal({ onSchliessen }: { onSchliessen: () => void }) {
+  const [tab, setTab] = useState<'vision' | 'module' | 'fundament'>('vision');
+
+  useEffect(() => {
+    function aufEsc(e: KeyboardEvent) {
+      if (e.key === 'Escape') onSchliessen();
+    }
+    document.addEventListener('keydown', aufEsc);
+    return () => document.removeEventListener('keydown', aufEsc);
+  }, [onSchliessen]);
+
+  return (
+    <>
+      <div className="rln-modal-overlay" onClick={onSchliessen} />
+      <div className="rln-modal" role="dialog" aria-modal="true" aria-label="Real Life Network">
+        <button className="rln-modal-x" onClick={onSchliessen} aria-label="Schließen">×</button>
+        <header className="rln-modal-kopf">
+          <span className="rln-modal-eyebrow">Wohin wir gehen</span>
+          <h2>Real Life Network</h2>
+          <p className="rln-modal-lead">
+            Mein kosmischer Garten ist die <strong>erste Sektion</strong> eines viel größeren Werks.
+            Das <strong>Real Life Network</strong> verbindet Menschen über echte Begegnung in der realen Welt —
+            ohne Tracking, ohne zentrale Server, von Freunden für Freunde.
+          </p>
+        </header>
+
+        <nav className="rln-modal-tabs">
+          <button
+            type="button"
+            className={`rln-modal-tab ${tab === 'vision' ? 'aktiv' : ''}`}
+            onClick={() => setTab('vision')}
+          >Vision</button>
+          <button
+            type="button"
+            className={`rln-modal-tab ${tab === 'module' ? 'aktiv' : ''}`}
+            onClick={() => setTab('module')}
+          >Was kommt</button>
+          <button
+            type="button"
+            className={`rln-modal-tab ${tab === 'fundament' ? 'aktiv' : ''}`}
+            onClick={() => setTab('fundament')}
+          >Fundament</button>
+        </nav>
+
+        <div className="rln-modal-koerper">
+          {tab === 'vision' && (
+            <div className="rln-modal-inhalt">
+              <p>
+                Wir leveln das echte Leben draußen in der Realität. Echte Treffen, echtes
+                Vertrauen, echte Begegnungen — alles, was im virtuellen Netz fehlt, holen
+                wir zurück in die Welt.
+              </p>
+              <p>
+                Der Garten ist der Anfang. Hier zeigen sich Gärtner, geben Wissen weiter,
+                treffen sich am Zaun, beim Markt, im Gemeinschaftsgarten. Das Real Life
+                Network wird daraus eine ganze Bewegung machen — mit allen Lebensbereichen
+                drin, mit Werkzeugen für gelebte Gemeinschaft.
+              </p>
+            </div>
+          )}
+          {tab === 'module' && (
+            <div className="rln-modal-inhalt">
+              <ul className="rln-modal-liste">
+                <li><strong>Reale Begegnungen</strong> — Handshake, Markt-Treffen, Gartenwanderungen</li>
+                <li><strong>Karte mit allem Drum und Dran</strong> — nicht nur Profile, auch Marktstände, Veranstaltungen, Werkstätten</li>
+                <li><strong>Marktplatz</strong> — Saatgut, Werkzeug, Begabungen, Bedürfnisse</li>
+                <li><strong>Veranstaltungen</strong> — Kurse, Festivals, Erntehilfen, Schwarmaktionen</li>
+                <li><strong>Gamification</strong> — Skill-Tree, Quests, Abenteuer in der echten Welt</li>
+                <li><strong>Spaces</strong> — eigene Netzwerke für Gemeinden, Schulen, Höfe, Initiativen</li>
+                <li><strong>AI-Begleiter</strong> — eigene KI, die dir hilft, ohne deine Daten zu verlieren</li>
+              </ul>
+            </div>
+          )}
+          {tab === 'fundament' && (
+            <div className="rln-modal-inhalt">
+              <p>
+                Die Identität lebt im <strong>Web of Trust</strong> — zwölf Wörter,
+                kein Konto, keine E-Mail, kein Server, der dich kennt. Vertrauen wächst
+                durch persönliche Begegnung, Handshake für Handshake.
+              </p>
+              <p>
+                Die Werkzeuge laufen auf dem <strong>Real Life Stack</strong> — Open-Source-
+                Bausteine, die jeder Initiative gehören. Kein Konzern dazwischen, kein
+                Algorithmus, der nach Reichweite optimiert.
+              </p>
+              <div className="rln-modal-links">
+                <a href="https://web-of-trust.de" target="_blank" rel="noopener noreferrer" className="rln-modal-link">
+                  Web of Trust →
+                </a>
+                <a href="https://real-life.network" target="_blank" rel="noopener noreferrer" className="rln-modal-link">
+                  Real Life Network →
+                </a>
+              </div>
+            </div>
+          )}
+        </div>
+
+        <footer className="rln-modal-fuss">
+          <p className="rln-modal-fuss-text">
+            <strong>Unterstütze, was wächst.</strong> Spenden gehen direkt an Kollektiv Lichtung e.V.
+            und tragen das Real Life Network.
+          </p>
+          <a
+            href="https://www.paypal.com/donate?hosted_button_id=KOLLEKTIV_LICHTUNG"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rln-modal-spende"
+          >
+            🌱 Jetzt unterstützen
+          </a>
+        </footer>
+      </div>
+    </>
   );
 }
