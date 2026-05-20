@@ -70,7 +70,7 @@ export function TzolkinRad({ datum, setDatum }: Props) {
         <defs>
           <radialGradient id="tz-zentrum-grad" cx="50%" cy="50%">
             <stop offset="0%" stopColor="var(--paper)" />
-            <stop offset="100%" stopColor="color-mix(in srgb, #a8423a 8%, var(--paper))" />
+            <stop offset="100%" stopColor="color-mix(in srgb, #8B3A3A 8%, var(--paper))" />
           </radialGradient>
         </defs>
 
@@ -92,7 +92,7 @@ export function TzolkinRad({ datum, setDatum }: Props) {
             >
               <path
                 d={sektorPath(w1, w2, R_GLYPHEN_INNEN, R_GLYPHEN_AUSSEN)}
-                fill={aktiv ? '#a8423a' : (name === hover?.glyphe ? 'color-mix(in srgb, #a8423a 25%, var(--paper))' : 'var(--paper)')}
+                fill={aktiv ? '#8B3A3A' : (name === hover?.glyphe ? 'color-mix(in srgb, #8B3A3A 25%, var(--paper))' : 'var(--paper)')}
                 stroke="var(--line)"
                 strokeWidth={0.6}
               />
@@ -110,7 +110,7 @@ export function TzolkinRad({ datum, setDatum }: Props) {
                 {name.toUpperCase()}
               </text>
               {aktiv && (
-                <circle cx={p.x} cy={p.y} r={4} fill="white" stroke="#a8423a" strokeWidth={1.5} pointerEvents="none" />
+                <circle cx={p.x} cy={p.y} r={4} fill="white" stroke="#8B3A3A" strokeWidth={1.5} pointerEvents="none" />
               )}
             </g>
           );
@@ -130,7 +130,7 @@ export function TzolkinRad({ datum, setDatum }: Props) {
             >
               <path
                 d={sektorPath(w1, w2, R_ZAHLEN_INNEN, R_ZAHLEN_AUSSEN)}
-                fill={aktiv ? '#a8423a' : (zahl === hover?.zahl ? 'color-mix(in srgb, #a8423a 18%, var(--paper))' : 'color-mix(in srgb, #a8423a 5%, var(--paper))')}
+                fill={aktiv ? '#8B3A3A' : (zahl === hover?.zahl ? 'color-mix(in srgb, #8B3A3A 18%, var(--paper))' : 'color-mix(in srgb, #8B3A3A 5%, var(--paper))')}
                 stroke="var(--line)"
                 strokeWidth={0.6}
               />
@@ -158,7 +158,7 @@ export function TzolkinRad({ datum, setDatum }: Props) {
           <text fontSize={11} fill="var(--ink-mute)" letterSpacing="0.5">
             <tspan x={0} y={-60}>TZOLKIN</tspan>
           </text>
-          <text fontSize={42} fill="#a8423a" fontWeight={600}>
+          <text fontSize={42} fill="#8B3A3A" fontWeight={600}>
             <tspan x={0} y={-18}>{aktuell.zahl}</tspan>
           </text>
           <text fontSize={18} fill="var(--ink)" fontWeight={500}>

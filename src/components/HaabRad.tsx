@@ -63,7 +63,7 @@ export function HaabRad({ datum, setDatum }: Props) {
         <defs>
           <radialGradient id="ha-zentrum-grad" cx="50%" cy="50%">
             <stop offset="0%" stopColor="var(--paper)" />
-            <stop offset="100%" stopColor="color-mix(in srgb, #c89b3a 10%, var(--paper))" />
+            <stop offset="100%" stopColor="color-mix(in srgb, #C49758 10%, var(--paper))" />
           </radialGradient>
         </defs>
 
@@ -85,9 +85,9 @@ export function HaabRad({ datum, setDatum }: Props) {
               <path
                 d={sektorPath(w1, w2, R_MONAT_INNEN, R_MONAT_AUSSEN)}
                 fill={
-                  aktiv ? '#c89b3a' :
-                  istWayeb ? 'color-mix(in srgb, #5b3a8a 14%, var(--paper))' :
-                  hover === index ? 'color-mix(in srgb, #c89b3a 20%, var(--paper))' :
+                  aktiv ? '#C49758' :
+                  istWayeb ? 'color-mix(in srgb, #1F3556 14%, var(--paper))' :
+                  hover === index ? 'color-mix(in srgb, #C49758 20%, var(--paper))' :
                   index % 2 === 0 ? '#faf2dc' : '#f3ead4'
                 }
                 stroke="var(--line)"
@@ -136,7 +136,7 @@ export function HaabRad({ datum, setDatum }: Props) {
           <text fontSize={11} fill="var(--ink-mute)" letterSpacing="0.5">
             <tspan x={0} y={-80}>HAAB</tspan>
           </text>
-          <text fontSize={48} fill="#c89b3a" fontWeight={600}>
+          <text fontSize={48} fill="#C49758" fontWeight={600}>
             <tspan x={0} y={-30}>{aktuell.tagImMonat}</tspan>
           </text>
           <text fontSize={20} fill="var(--ink)" fontWeight={500}>
