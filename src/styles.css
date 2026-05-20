@@ -4594,26 +4594,47 @@ button { font-family: inherit; cursor: pointer; }
 .start-hero {
   text-align: center;
   padding: 1rem 0 1rem;
-  margin-bottom: 0;
-  min-height: 80vh;
+  margin: 0 -1.5rem 0;  /* aus dem Content-Padding herausziehen, damit Bild bis zum Rand laeuft */
+  min-height: 88vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
+  background-image: url('/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+/* Sanfter Verlauf am oberen Rand fuer bessere Lesbarkeit, da Logo dort liegt */
+.start-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, .25) 0%, rgba(255, 255, 255, 0) 35%, rgba(255, 255, 255, 0) 65%, rgba(255, 255, 255, .4) 100%);
+  pointer-events: none;
+}
+.start-hero > * {
+  position: relative;
+  z-index: 1;
 }
 .start-hero-logo {
   display: block;
-  width: 140px;
-  height: 140px;
-  margin: 0 auto 1rem;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 1.25rem;
+  filter: drop-shadow(0 2px 12px rgba(255, 255, 255, .7)) drop-shadow(0 1px 3px rgba(0, 0, 0, .15));
 }
 .start-hero-eyebrow {
-  font-size: .9rem;
-  font-weight: 500;
-  letter-spacing: .22em;
-  color: var(--ink-mute);
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: .26em;
+  color: #2a4a6b;
   margin: 0;
   text-transform: uppercase;
+  text-shadow: 0 2px 12px rgba(255, 255, 255, .9), 0 1px 3px rgba(255, 255, 255, .8);
 }
 
 .start-section-titel {
