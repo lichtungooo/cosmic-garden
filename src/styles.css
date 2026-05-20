@@ -4593,31 +4593,21 @@ button { font-family: inherit; cursor: pointer; }
 }
 .start-hero {
   text-align: center;
-  padding: .5rem 0 .25rem;
-  margin-bottom: .75rem;
-}
-.start-hero-titel {
-  font-family: 'Spectral', Georgia, serif;
-  font-size: 1.2rem;
-  line-height: 1.1;
-  margin: 0;
-  color: var(--kosmos);
-  font-weight: 500;
-  letter-spacing: -.005em;
+  padding: .5rem 0 .35rem;
+  margin-bottom: .65rem;
 }
 .start-hero-logo {
   display: block;
-  width: 28px;
-  height: 28px;
-  margin: .2rem auto;
-  opacity: .85;
+  width: 44px;
+  height: 44px;
+  margin: 0 auto .35rem;
 }
 .start-hero-eyebrow {
-  font-size: .68rem;
+  font-size: .7rem;
   font-weight: 500;
-  letter-spacing: .12em;
+  letter-spacing: .14em;
   color: var(--ink-mute);
-  margin: .15rem 0 0;
+  margin: 0;
   text-transform: uppercase;
 }
 
@@ -4641,25 +4631,33 @@ button { font-family: inherit; cursor: pointer; }
 }
 .start-heute-datumzeile {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  gap: .5rem;
   text-align: center;
-  margin-bottom: 1.25rem;
-  padding-bottom: 1rem;
+  margin-bottom: .85rem;
+  padding-bottom: .65rem;
   border-bottom: 1px solid var(--line);
+  flex-wrap: wrap;
 }
 .start-heute-datum-gross {
   font-family: 'Spectral', Georgia, serif;
-  font-size: 1.6rem;
+  font-size: .92rem;
   font-weight: 500;
   color: var(--kosmos);
-  line-height: 1.15;
+  line-height: 1.2;
   letter-spacing: -.005em;
 }
+.start-heute-trenner {
+  display: inline-block;
+  width: 1px;
+  height: 14px;
+  background: var(--line-strong);
+  align-self: center;
+}
 .start-heute-ort-zeile {
-  font-size: .9rem;
+  font-size: .88rem;
   color: var(--ink-mute);
-  margin-top: .15rem;
 }
 .start-heute-grid {
   display: grid;
@@ -4667,7 +4665,7 @@ button { font-family: inherit; cursor: pointer; }
   gap: 1rem;
 }
 @media (max-width: 720px) {
-  .start-heute-datum-gross { font-size: 1.25rem; }
+  .start-heute-datum-gross { font-size: .88rem; }
   .start-heute-grid { grid-template-columns: 1fr; }
 }
 .start-heute-card {

@@ -163,17 +163,17 @@ export function StartView({ onWerkzeug, onJahreskreis, onMaya, onWelt, onTag }: 
   return (
     <div className="start-view">
       <header className="start-hero">
-        <h1 className="start-hero-titel">Mein kosmischer Garten</h1>
-        <img src="/logo.svg" alt="" className="start-hero-logo" aria-hidden="true" />
+        <img src="/logo.svg" alt="Mein kosmischer Garten" className="start-hero-logo" />
         <p className="start-hero-eyebrow">Sonne, Mond und Sterne</p>
       </header>
 
       <section className="start-heute" style={{ borderTopColor: tagestypFarbe }}>
         <div className="start-heute-datumzeile">
-          <div className="start-heute-datum-gross">
+          <span className="start-heute-datum-gross">
             {WT_LANG[heute.getDay()]}, {heute.getDate()}. {MONATE_LANG[heute.getMonth()]} {heute.getFullYear()}
-          </div>
-          <div className="start-heute-ort-zeile">in {ort.name}</div>
+          </span>
+          <span className="start-heute-trenner" aria-hidden="true" />
+          <span className="start-heute-ort-zeile">{ort.name}</span>
         </div>
         <div className="start-heute-grid">
           <button className="start-heute-card start-heute-haupt" onClick={onTag} style={{ ['--karte-farbe' as string]: tagestypFarbe }}>
