@@ -363,10 +363,6 @@ export function StartView({ onWerkzeug, onJahreskreis, onMaya, onWelt, onTag }: 
           <span className="start-ideen-pfeil">→</span>
         </button>
       </section>
-
-      <footer className="start-fuss">
-        <p>Mein kosmischer Garten · Werkzeug für zyklisches Gärtnern · {heute.getFullYear()}</p>
-      </footer>
     </div>
   );
 }
