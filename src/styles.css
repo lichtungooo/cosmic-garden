@@ -1,26 +1,33 @@
 :root {
-  /* Mein kosmischer Garten — Magazin-Palette: weiss, lebendiges Gruen, tiefes Indigo */
-  --bg:           #ffffff;
-  --bg-soft:      #fafaf6;
-  --paper:        #ffffff;
-  --paper-soft:   #f6f7f3;
-  --ink:          #1a1f1c;   /* tiefes warmes Schwarz */
-  --ink-mute:     #5a5e58;
-  --ink-soft:     #989a92;
-  --line:         #e4e2dc;
-  --line-strong:  #c0bdb3;
-  --accent:       #4a8a3a;   /* lebendiges Gartengruen */
-  --accent-soft:  #a8c596;
-  --accent-deep:  #2c5a24;
-  --kosmos:       #0d1328;   /* Logo-Indigo — Marken-Akzent */
-  --gold:         #d4a542;   /* sparsamer Stern-Akzent */
-  --wurzel:       #8a6438;
-  --blatt:        #4a8a3a;
-  --bluete:       #d4a542;
-  --frucht:       #c0432f;
-  --warn:         #b85a3a;
+  /* Mein kosmischer Garten — Corporate Identity aus dem Hero-Bild abgeleitet:
+     Himmel-Indigo, Sonnenuntergangs-Apricot, Pergament-Sand, Garten-Gruen,
+     Mangold-Weinrot, Sand-Holzbraun, Mond-Silber. */
+  --bg:           #FAF6E9;   /* Pergament-Sand vom Horizont */
+  --bg-soft:      #F2EBD4;   /* Sand-Helligkeit */
+  --paper:        #FFFCF2;   /* Cream-Weiss, weniger steril als Reinweiss */
+  --paper-soft:   #F5EFDE;   /* Sand-Hauch */
+  --ink:          #1A2638;   /* tiefes Himmelblau statt schwarz */
+  --ink-mute:     #5B6D80;   /* Blau-Grau, dunst-blau wie Bild-Huegel */
+  --ink-soft:     #9AA9B5;   /* Hellgrau-Blau */
+  --line:         #DDD7BF;   /* Sand-Linien */
+  --line-strong:  #B5A87E;   /* warme Beige-Linien */
+  --accent:       #5B8A4B;   /* frischer Garten-Gruen */
+  --accent-soft:  #A8C596;
+  --accent-deep:  #2D5530;
+  --kosmos:       #1F3556;   /* Indigo wie der dunkle Himmel oben */
+  --gold:         #E8B860;   /* Sonnenuntergangs-Apricot */
+  --wurzel:       #A8845C;   /* warmes Sand-Holz vom Bohnen-Tipi */
+  --blatt:        #5B8A4B;   /* Garten-Gruen */
+  --bluete:       #E8B860;   /* Apricot-Gold vom Sonnenuntergang */
+  --frucht:       #8B3A3A;   /* Mangold-Weinrot */
+  --warn:         #B85A3A;
+  /* Zusatz-Toene aus dem Bild fuer spezielle Akzente */
+  --himmel-tief:  #1F3556;
+  --himmel-hell:  #6789AB;
+  --horizont:     #F4D5A5;
+  --mond:         #D6DDE5;
   --radius:       4px;
-  --shadow:       0 1px 2px rgba(0,0,0,.04), 0 4px 14px rgba(0,0,0,.03);
+  --shadow:       0 1px 2px rgba(13, 38, 56, .05), 0 4px 14px rgba(13, 38, 56, .04);
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
   font-size: 15px;
   line-height: 1.55;
