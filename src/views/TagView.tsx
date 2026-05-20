@@ -81,7 +81,7 @@ export function TagView({ datum, onPflanze, onArbeit }: Props) {
           disabled={!zeichenId}
           title={`Mehr über ${mond.zeichen.name}`}
         >
-          <div className="tag-zeichen-groß">{mond.zeichen.symbol}</div>
+          <div className="tag-zeichen-gross">{mond.zeichen.symbol + String.fromCharCode(0xFE0E)}</div>
           <div className="tag-zeichen-name">{mond.zeichen.name}</div>
           <div className="tag-element">Element {mond.element}</div>
         </button>

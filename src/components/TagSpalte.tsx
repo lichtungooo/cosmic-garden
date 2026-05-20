@@ -42,7 +42,6 @@ export function TagSpalte({ datum, fokus, istHeute, onClick, onPflanze, onArbeit
   return (
     <article
       className={`tag-spalte ${fokus ? 'fokus' : ''} ${istHeute ? 'heute' : ''} ${variante === 'tag' ? 'breit' : ''}`}
-      style={{ borderTopColor: farbe }}
       onClick={onClick}
     >
       <header className="spalte-kopf">
@@ -52,7 +51,7 @@ export function TagSpalte({ datum, fokus, istHeute, onClick, onPflanze, onArbeit
         </div>
         <div className="kopf-marker">
           <span className="kopf-zeichen" title={`${mond.zeichen.name} (${thunTypLabel(mond.thunTyp)})`}>
-            {mond.zeichen.symbol}
+            {mond.zeichen.symbol + String.fromCharCode(0xFE0E)}
           </span>
           <span className="kopf-mond" title={`${phaseLabel(mond.phase)} · ${Math.round(mond.illumination * 100)}%`}>
             <MondSymbol illumination={mond.illumination} waxing={mond.waxing} size={14} />

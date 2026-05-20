@@ -682,11 +682,11 @@ button { font-family: inherit; cursor: pointer; }
 .monat-zelle:nth-child(7n) { border-right: none; }
 .monat-zelle.leer { background: var(--bg); cursor: default; }
 .monat-zelle:not(.leer):hover {
-  background: color-mix(in srgb, var(--thun-color, var(--accent)) 14%, var(--paper));
+  background: color-mix(in srgb, var(--accent) 8%, var(--paper));
   z-index: 2;
 }
 .monat-zelle.heute {
-  background: color-mix(in srgb, var(--thun-color) 22%, var(--paper));
+  background: color-mix(in srgb, var(--accent) 10%, var(--paper));
 }
 .monat-zelle.heute .zelle-tag {
   background: var(--ink);
@@ -716,13 +716,8 @@ button { font-family: inherit; cursor: pointer; }
   opacity: .35;
   pointer-events: none;
 }
-.monat-zelle:not(.leer)::before {
-  content: '';
-  position: absolute;
-  bottom: 0; left: 0; right: 0;
-  height: 2px;
-  background: var(--thun-color);
-}
+/* Frueher: 2px Tagestyp-Farbstreifen am unteren Rand jeder Zelle.
+   Entfernt — der Kalender ist jetzt visuell ruhiger und einheitlich. */
 
 /* Tooltip */
 .zelle-tooltip {
@@ -2657,10 +2652,10 @@ button { font-family: inherit; cursor: pointer; }
 }
 .tag-voll-kopf {
   background: var(--paper);
-  border: 1px solid var(--line);
-  border-top: 3px solid var(--accent);
-  border-radius: var(--radius);
-  padding: .5rem .85rem;
+  border: none;
+  border-bottom: 1px solid var(--line);
+  border-radius: 0;
+  padding: .85rem 1rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: .75rem;
@@ -2689,9 +2684,10 @@ button { font-family: inherit; cursor: pointer; }
   text-align: center;
 }
 .tag-zeichen-gross {
-  font-size: 1.75rem;
-  color: var(--ink);
+  font-size: 2rem;
+  color: var(--kosmos);
   line-height: 1;
+  font-variant-emoji: text;
 }
 .tag-zeichen-name {
   font-size: .85rem;
@@ -2774,11 +2770,10 @@ button { font-family: inherit; cursor: pointer; }
   gap: .55rem;
 }
 .tag-maya-karte {
-  background: var(--paper);
-  border: 1px solid var(--line);
-  border-left: 3px solid var(--accent);
+  background: color-mix(in srgb, var(--accent) 3%, var(--paper));
+  border: none;
   border-radius: var(--radius);
-  padding: .55rem .75rem;
+  padding: .65rem .85rem;
   cursor: pointer;
   font-family: inherit;
   text-align: left;
@@ -2786,12 +2781,10 @@ button { font-family: inherit; cursor: pointer; }
   display: flex;
   flex-direction: column;
   gap: .15rem;
-  transition: transform .12s ease, box-shadow .12s ease, border-color .12s ease;
+  transition: background .12s ease;
 }
 .tag-maya-karte:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 4px 10px rgba(0,0,0,.06);
-  border-color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 6%, var(--paper));
 }
 .tag-maya-label {
   font-size: .68rem;
@@ -2833,8 +2826,8 @@ button { font-family: inherit; cursor: pointer; }
   gap: .5rem;
 }
 .himmel-block {
-  background: var(--paper);
-  border: 1px solid var(--line);
+  background: color-mix(in srgb, var(--accent) 3%, var(--paper));
+  border: none;
   border-radius: var(--radius);
   padding: .65rem .85rem;
   display: flex;
@@ -2874,10 +2867,10 @@ button { font-family: inherit; cursor: pointer; }
 .himmel-block.knoten-warn span { font-size: .85rem; color: var(--ink); }
 
 .tag-empfehlung-block {
-  background: var(--paper);
-  border: 1px solid var(--line);
+  background: color-mix(in srgb, var(--accent) 4%, var(--paper));
+  border: none;
   border-radius: var(--radius);
-  padding: .65rem 1rem;
+  padding: .85rem 1.1rem;
 }
 .tag-empfehlung-block p {
   margin: 0;
@@ -2977,8 +2970,9 @@ button { font-family: inherit; cursor: pointer; }
 .woche-spalten {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  gap: .3rem;
-  padding: .5rem .5rem 1rem;
+  gap: 0;
+  padding: .5rem 0 1rem;
+  border-top: 1px solid var(--line);
 }
 .tag-mit-fokus {
   grid-template-columns: repeat(7, 1fr);
@@ -2996,25 +2990,25 @@ button { font-family: inherit; cursor: pointer; }
 
 .tag-spalte {
   background: var(--paper);
-  border: 1px solid var(--line);
-  border-top: 3px solid var(--line-strong);
-  border-radius: var(--radius);
+  border: none;
+  border-right: 1px solid var(--line);
+  border-radius: 0;
   display: flex;
   flex-direction: column;
   overflow: visible;
   cursor: pointer;
-  transition: transform .12s, box-shadow .12s;
+  transition: background .12s;
 }
+.woche-spalten .tag-spalte:last-child { border-right: none; }
 .tag-spalte:hover:not(.fokus) {
-  transform: translateY(-1px);
-  box-shadow: var(--shadow);
+  background: color-mix(in srgb, var(--accent) 5%, var(--paper));
 }
 .tag-spalte.heute {
-  box-shadow: inset 0 0 0 2px var(--accent);
+  background: color-mix(in srgb, var(--accent) 8%, var(--paper));
 }
 .tag-spalte.fokus {
   cursor: default;
-  box-shadow: 0 2px 12px rgba(0,0,0,.06);
+  background: color-mix(in srgb, var(--accent) 3%, var(--paper));
 }
 .tag-spalte.breit .kopf-datum { font-size: 1.1rem; }
 
@@ -3045,7 +3039,12 @@ button { font-family: inherit; cursor: pointer; }
   font-size: .8rem;
   color: var(--ink-mute);
 }
-.kopf-zeichen { font-size: .95rem; color: var(--ink); }
+.kopf-zeichen {
+  font-size: 1.1rem;
+  color: var(--kosmos);
+  font-variant-emoji: text;
+  line-height: 1;
+}
 .kopf-warn { color: var(--warn); font-size: .8rem; }
 .kopf-thun {
   color: white;
