@@ -36,7 +36,12 @@
 }
 
 * { box-sizing: border-box; }
-body { margin: 0; min-height: 100vh; background: var(--bg); }
+html, body {
+  margin: 0;
+  height: 100vh;
+  background: var(--bg);
+  overflow: hidden;  /* nur .app-main scrollt, kein doppelter Scrollbar */
+}
 
 /* Magazin-Titel-Schrift fuer Headlines */
 h1, h2, h3, h4, h5,
@@ -9032,3 +9037,170 @@ body:has(.privacy-banner) .app-fuss {
   min-width: 0;
 }
 
+
+/* ====== KARTE: Profil-Knopf + RLN-Hinweis + Vorschau ====== */
+
+.karte-profil-knopf {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 1000;
+  display: inline-flex;
+  align-items: center;
+  gap: .55rem;
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: .65rem 1.1rem;
+  border-radius: 9999px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: .92rem;
+  font-weight: 500;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .15);
+  transition: background .15s;
+}
+.karte-profil-knopf:hover { background: var(--accent-deep); }
+.karte-profil-knopf svg { flex-shrink: 0; }
+
+.karte-rln-hinweis {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  z-index: 1000;
+  background: rgba(255, 255, 255, .92);
+  backdrop-filter: blur(4px);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--gold);
+  border-radius: var(--radius);
+  padding: .65rem .85rem;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: .2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .08);
+}
+.karte-rln-hinweis strong {
+  font-size: .85rem;
+  color: var(--kosmos);
+  font-weight: 600;
+}
+.karte-rln-hinweis span {
+  font-size: .8rem;
+  color: var(--ink-mute);
+  line-height: 1.45;
+}
+
+.karte-vorschau {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  z-index: 1100;
+  width: 280px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, .15);
+  overflow: hidden;
+  animation: vorschau-in .15s ease;
+}
+@keyframes vorschau-in {
+  from { opacity: 0; transform: translateY(-6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.karte-vorschau-x {
+  position: absolute;
+  top: .35rem;
+  right: .5rem;
+  background: rgba(255, 255, 255, .85);
+  border: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  font-size: 1.1rem;
+  color: var(--ink);
+  cursor: pointer;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.karte-vorschau-bild {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+.karte-vorschau-bild img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.karte-vorschau-inhalt {
+  padding: .85rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: .45rem;
+}
+.karte-vorschau-name {
+  font-family: 'Spectral', Georgia, serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 0;
+  color: var(--kosmos);
+}
+.karte-vorschau-kurz {
+  font-size: .88rem;
+  line-height: 1.45;
+  color: var(--ink);
+  margin: 0;
+}
+.karte-vorschau-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .25rem;
+}
+.karte-vorschau-zumprofil {
+  margin-top: .35rem;
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: .5rem .85rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-family: inherit;
+  font-size: .88rem;
+  font-weight: 500;
+  text-align: center;
+}
+.karte-vorschau-zumprofil:hover { background: var(--accent-deep); }
+
+@media (max-width: 720px) {
+  .karte-profil-knopf {
+    bottom: 1rem;
+    right: 1rem;
+    padding: .55rem .9rem;
+    font-size: .85rem;
+  }
+  .karte-profil-knopf span { display: none; }
+  .karte-profil-knopf {
+    width: 3rem;
+    height: 3rem;
+    padding: 0;
+    justify-content: center;
+  }
+  .karte-rln-hinweis {
+    bottom: 1rem;
+    left: 1rem;
+    right: 5rem;
+    max-width: none;
+    padding: .55rem .75rem;
+  }
+  .karte-vorschau {
+    top: auto;
+    bottom: 5rem;
+    left: 1rem;
+    right: 1rem;
+    width: auto;
+  }
+}

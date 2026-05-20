@@ -21,42 +21,26 @@ import { useMeinProfil } from '../lib/profil';
 import { HashtagEingabe } from '../components/HashtagEingabe';
 import { MarkdownText } from '../components/MarkdownText';
 
-const ALLE_ARTEN: PinArt[] = ['gaertner', 'gartenprojekt', 'veranstaltung', 'angebot'];
+// === Pin-Icon: kleines menschliches Symbol fuer Gaertner-Pins ===
+// Klein gehalten, weil viele Pins auf der Karte erwartet werden.
 
-// === Pin-Icons (lucide-style SVG-Pfade inline) ===
-
-const ICON_PFADE: Record<PinArt, string> = {
-  // gaertner = Sprout: zwei Bogenblätter aus einem Stiel
-  gaertner: '<path d="M7 17.6c0-5.3 5-9.6 10-9.6-1 3.6-3 6.4-6 8.2"/><path d="M2 22c0-5.3 3.4-7.4 9.5-7.4"/><path d="M14 5c0-1.7 1.3-3 3-3s3 1.3 3 3-1.3 3-3 3"/>',
-  // gartenprojekt = Haus mit Garten-Symbol drinnen (Logo-Anlehnung)
-  gartenprojekt: '<path d="M3 11l9-8 9 8v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M12 14c-1.5-1-1.5-3 0-4 1.5 1 1.5 3 0 4z"/>',
-  // veranstaltung = Kalender mit Datums-Kreis
-  veranstaltung: '<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 9h18M8 3v4M16 3v4"/><circle cx="12" cy="15" r="2" fill="currentColor"/>',
-  // angebot = Marktstand: Dach + Theke
-  angebot: '<path d="M3 9l2-5h14l2 5"/><path d="M3 9v11a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V9"/><path d="M3 9h18"/><path d="M8 21v-6h8v6"/>',
-};
-
-function pinIcon(art: PinArt, fokus: boolean = false): L.DivIcon {
-  const farbe = pinArtFarbe(art);
-  const size = fokus ? 44 : 38;
-  const symbolPfad = ICON_PFADE[art];
+function pinIcon(_art: PinArt, fokus: boolean = false): L.DivIcon {
+  const farbe = pinArtFarbe('gaertner');
+  const size = fokus ? 30 : 24;
   const html = `
     <div class="garten-pin ${fokus ? 'fokus' : ''}" style="--pin-farbe:${farbe};width:${size}px;height:${size}px">
-      <svg viewBox="0 0 40 50" width="${size}" height="${size * 1.25}" xmlns="http://www.w3.org/2000/svg" class="garten-pin-shape">
-        <path d="M20 0 C 9 0 0 9 0 20 C 0 35 20 50 20 50 C 20 50 40 35 40 20 C 40 9 31 0 20 0 Z" fill="${farbe}" stroke="white" stroke-width="2.5"/>
-        <circle cx="20" cy="19" r="12" fill="white"/>
-      </svg>
-      <svg viewBox="0 0 24 24" class="garten-pin-icon" width="${size * 0.5}" height="${size * 0.5}" fill="none" stroke="${farbe}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-        ${symbolPfad}
+      <svg viewBox="0 0 24 24" width="${size}" height="${size}" xmlns="http://www.w3.org/2000/svg" fill="${farbe}" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="garten-pin-figur">
+        <circle cx="12" cy="7" r="3.5"/>
+        <path d="M5 22 C 5 16 8 13 12 13 C 16 13 19 16 19 22 Z"/>
       </svg>
     </div>
   `;
   return L.divIcon({
     html,
     className: 'garten-pin-wrap',
-    iconSize: [size, size * 1.25],
-    iconAnchor: [size / 2, size * 1.25],
-    popupAnchor: [0, -size],
+    iconSize: [size, size],
+    iconAnchor: [size / 2, size / 2],
+    popupAnchor: [0, -size / 2],
   });
 }
 
@@ -280,68 +264,43 @@ export function KarteView({ onProfil }: { onProfil: () => void }) {
     }
   }
 
-  function fabAuswahl(art: PinArt) {
-    setFokusPin(null);
-    if (art === 'gaertner') {
-      profilPinSetzen();
-      return;
-    }
-    setNeuModus(art);
-  }
-
   return (
     <div className="karte-view">
       <div className="karte-buehne">
         <div ref={containerRef} className="karte-leinwand" />
 
-        {/* Hinweis-Banner bei Setz-Modus */}
-        {neuModus && !neuLatLng && (
-          <div className="karte-hinweis-banner">
-            <span>Klick auf die Karte, um deinen <strong>{pinArtLabel(neuModus)}</strong>-Pin zu setzen.</span>
-            <button className="karte-banner-knopf" onClick={abbrechen}>Abbrechen</button>
-          </div>
-        )}
+        {/* Einfacher Knopf unten rechts — eigenes Profil auf die Karte setzen */}
+        <button
+          type="button"
+          className="karte-profil-knopf"
+          onClick={profilPinSetzen}
+          title={meinProfilPin ? 'Profil-Pin aktualisieren' : 'Mein Profil auf die Karte'}
+        >
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" stroke="white" strokeWidth="1.4" strokeLinejoin="round" aria-hidden="true">
+            <circle cx="12" cy="8" r="3.5" />
+            <path d="M5 22 C 5 16 8 13 12 13 C 16 13 19 16 19 22 Z" />
+          </svg>
+          <span>{meinProfilPin ? 'Mein Pin aktualisieren' : 'Mich auf die Karte setzen'}</span>
+        </button>
 
-        {/* FAB unten rechts */}
-        {!neuModus && (
-          <PinFab onAuswahl={fabAuswahl} />
-        )}
+        {/* RLN-Hinweis links unten */}
+        <div className="karte-rln-hinweis">
+          <strong>Garten ist die Vorstufe</strong>
+          <span>Marktplatz, Veranstaltungen und Gemeinschaftsgärten kommen im Real Life Network — bald.</span>
+        </div>
 
         {/* Kurzer Profil-Hinweis (z.B. nach Profil-Pin-Aktion) */}
         {profilHinweis && (
           <div className="karte-meldung">{profilHinweis}</div>
         )}
 
-        {/* Modal für neuen Pin */}
-        {neuModus && neuLatLng && neuModus !== 'gaertner' && (
-          <NeuPinFormular
-            art={neuModus}
-            lat={neuLatLng.lat}
-            lng={neuLatLng.lng}
-            onSpeichern={async (entwurf) => {
-              const lat = neuLatLng.lat;
-              const lng = neuLatLng.lng;
-              await aktionen.lege({ ...entwurf, art: neuModus, lat, lng });
-              abbrechen();
-              setBling({ lat, lng, id: Date.now() });
-            }}
-            onAbbrechen={abbrechen}
-          />
-        )}
-
-        {/* Pin-Detail-Panel */}
+        {/* Vorschau-Modal beim Pin-Klick: Bild + Name + Kurz */}
         {fokusPin && (
-          <PinDetailPanel
+          <PinVorschau
             pin={fokusPin}
             istMeiner={!!user && fokusPin.autorId === user.id}
             onSchliessen={() => setFokusPin(null)}
-            onLoeschen={async () => {
-              if (confirm(`Pin "${fokusPin.titel}" wirklich loeschen?`)) {
-                await aktionen.loesche(fokusPin.id);
-                setFokusPin(null);
-              }
-            }}
-            onProfil={fokusPin.art === 'gaertner' && fokusPin.autorId === user?.id ? onProfil : undefined}
+            onZuProfil={onProfil}
           />
         )}
       </div>
@@ -349,298 +308,41 @@ export function KarteView({ onProfil }: { onProfil: () => void }) {
   );
 }
 
-// === FAB ===
 
-function PinFab({ onAuswahl }: { onAuswahl: (art: PinArt) => void }) {
-  const [offen, setOffen] = useState(false);
-  const wrap = useRef<HTMLDivElement | null>(null);
+// === PinVorschau — kleines Modal beim Klick auf einen Pin auf der Karte ===
 
-  // Klick ausserhalb schließt das Menue
-  useEffect(() => {
-    if (!offen) return;
-    function aufKlick(e: MouseEvent) {
-      if (wrap.current && !wrap.current.contains(e.target as Node)) {
-        setOffen(false);
-      }
-    }
-    function aufEsc(e: KeyboardEvent) {
-      if (e.key === 'Escape') setOffen(false);
-    }
-    document.addEventListener('mousedown', aufKlick);
-    document.addEventListener('keydown', aufEsc);
-    return () => {
-      document.removeEventListener('mousedown', aufKlick);
-      document.removeEventListener('keydown', aufEsc);
-    };
-  }, [offen]);
-
-  return (
-    <div className={`karte-fab ${offen ? 'offen' : ''}`} ref={wrap}>
-      {offen && (
-        <div className="karte-fab-liste">
-          {ALLE_ARTEN.map(a => (
-            <button
-              key={a}
-              className="karte-fab-eintrag"
-              onClick={() => { setOffen(false); onAuswahl(a); }}
-              style={{ '--art-farbe': pinArtFarbe(a) } as React.CSSProperties}
-            >
-              <span className="karte-fab-symbol">{pinArtSymbol(a)}</span>
-              <span>{pinArtLabel(a)}</span>
-            </button>
-          ))}
-        </div>
-      )}
-      {!offen && (
-        <button
-          className="karte-fab-haupt"
-          onClick={() => setOffen(true)}
-          aria-label="Pin setzen"
-        >+</button>
-      )}
-    </div>
-  );
-}
-
-// === Formular für neuen Pin ===
-
-async function komprimiereBild(datei: File, maxKante = 1024, qualitaet = 0.78): Promise<string | null> {
-  try {
-    const url = URL.createObjectURL(datei);
-    try {
-      const bild = await new Promise<HTMLImageElement>((res, rej) => {
-        const b = new Image();
-        b.onload = () => res(b);
-        b.onerror = rej;
-        b.src = url;
-      });
-      const skala = Math.min(1, maxKante / Math.max(bild.naturalWidth, bild.naturalHeight));
-      const w = Math.max(1, Math.round(bild.naturalWidth * skala));
-      const h = Math.max(1, Math.round(bild.naturalHeight * skala));
-      const c = document.createElement('canvas');
-      c.width = w; c.height = h;
-      const ctx = c.getContext('2d');
-      if (!ctx) return null;
-      ctx.drawImage(bild, 0, 0, w, h);
-      return c.toDataURL('image/jpeg', qualitaet);
-    } finally { URL.revokeObjectURL(url); }
-  } catch { return null; }
-}
-
-interface PinEntwurf {
-  titel: string;
-  text: string;
-  hashtags: string[];
-  ortBeschreibung?: string;
-  bild?: string;
-  datum?: string;
-  preis?: string;
-}
-
-function NeuPinFormular({
-  art, lat, lng, onSpeichern, onAbbrechen,
-}: {
-  art: PinArt;
-  lat: number;
-  lng: number;
-  onSpeichern: (entwurf: PinEntwurf) => Promise<void>;
-  onAbbrechen: () => void;
-}) {
-  const [titel, setTitel] = useState('');
-  const [text, setText] = useState('');
-  const [hashtags, setHashtags] = useState<string[]>([]);
-  const [datum, setDatum] = useState('');
-  const [preis, setPreis] = useState('');
-  const [ortBeschreibung, setOrtBeschreibung] = useState('');
-  const [bild, setBild] = useState<string | undefined>(undefined);
-  const [busy, setBusy] = useState(false);
-  const bildEingabe = useRef<HTMLInputElement | null>(null);
-
-  const istGueltig = titel.trim().length >= 2;
-
-  async function bildWaehlen(datei: File | undefined) {
-    if (!datei) return;
-    const url = await komprimiereBild(datei);
-    if (url) setBild(url);
-  }
-
-  async function speichern() {
-    if (!istGueltig) return;
-    setBusy(true);
-    try {
-      await onSpeichern({
-        titel: titel.trim(),
-        text: text.trim(),
-        hashtags,
-        ortBeschreibung: ortBeschreibung.trim() || undefined,
-        bild,
-        datum: art === 'veranstaltung' ? datum || undefined : undefined,
-        preis: art === 'angebot' ? preis || undefined : undefined,
-      });
-    } finally { setBusy(false); }
-  }
-
-  // Escape schliesst
-  useEffect(() => {
-    function aufEsc(e: KeyboardEvent) { if (e.key === 'Escape') onAbbrechen(); }
-    window.addEventListener('keydown', aufEsc);
-    return () => window.removeEventListener('keydown', aufEsc);
-  }, [onAbbrechen]);
-
-  return (
-    <div className="karte-modal-overlay" onClick={onAbbrechen}>
-      <div className="karte-modal" role="dialog" onClick={e => e.stopPropagation()}>
-        <header className="karte-modal-kopf">
-          <h2>
-            <span
-              className="karte-panel-symbol"
-              style={{ background: pinArtFarbe(art), color: 'white' }}
-            >{pinArtSymbol(art)}</span>
-            Neue {pinArtLabel(art)}
-          </h2>
-          <button className="karte-panel-x" onClick={onAbbrechen}>×</button>
-        </header>
-        <div className="karte-modal-koerper">
-          <label className="karte-feld">
-            <span>Titel</span>
-            <input value={titel} onChange={e => setTitel(e.target.value)} autoFocus placeholder="Kurz und treffend" />
-          </label>
-          {art === 'veranstaltung' && (
-            <label className="karte-feld">
-              <span>Datum & Uhrzeit</span>
-              <input type="datetime-local" value={datum} onChange={e => setDatum(e.target.value)} />
-            </label>
-          )}
-          <label className="karte-feld">
-            <span>Ort (Adresse, frei beschrieben)</span>
-            <input
-              value={ortBeschreibung}
-              onChange={e => setOrtBeschreibung(e.target.value)}
-              placeholder="z.B. Stadtgarten Kassel, Wilhelmshöher Allee 12"
-            />
-            <span className="karte-koords">Pin sitzt bei {lat.toFixed(5)}, {lng.toFixed(5)}</span>
-          </label>
-          <label className="karte-feld">
-            <span>Beschreibung (Markdown)</span>
-            <textarea
-              value={text}
-              onChange={e => setText(e.target.value)}
-              rows={4}
-              placeholder="Was wartet hier? Verweise auf Pflanzen wie [Tomate](pflanze:tomate) gehen."
-            />
-          </label>
-          <div className="karte-feld">
-            <span>Bild (optional)</span>
-            <div className="karte-bild-wahl">
-              {bild ? (
-                <div className="karte-bild-vorschau">
-                  <img src={bild} alt="" />
-                  <button type="button" className="karte-bild-loeschen" onClick={() => setBild(undefined)}>×</button>
-                </div>
-              ) : (
-                <button type="button" className="karte-bild-knopf" onClick={() => bildEingabe.current?.click()}>
-                  Bild wählen
-                </button>
-              )}
-              <input
-                ref={bildEingabe}
-                type="file"
-                accept="image/*"
-                hidden
-                onChange={(e) => { bildWaehlen(e.target.files?.[0]); e.target.value = ''; }}
-              />
-            </div>
-          </div>
-          {art === 'angebot' && (
-            <label className="karte-feld">
-              <span>Preis / Tausch (optional)</span>
-              <input
-                value={preis}
-                onChange={e => setPreis(e.target.value)}
-                placeholder="z.B. 2 EUR/kg oder Tausch gegen Saatgut"
-              />
-            </label>
-          )}
-          <div className="karte-feld">
-            <span>Hashtags</span>
-            <HashtagEingabe tags={hashtags} onChange={setHashtags} platzhalter="z.B. tomate, saatgut" />
-          </div>
-        </div>
-        <footer className="karte-modal-fuss">
-          <button className="karte-knopf-zweit" onClick={onAbbrechen} disabled={busy}>Abbrechen</button>
-          <button className="karte-knopf-primary" onClick={speichern} disabled={!istGueltig || busy}>
-            {busy ? 'Lege Pin …' : 'Pin setzen'}
-          </button>
-        </footer>
-      </div>
-    </div>
-  );
-}
-
-// === Pin-Detail-Panel ===
-
-function PinDetailPanel({
-  pin, istMeiner, onSchliessen, onLoeschen, onProfil,
-}: {
+function PinVorschau({ pin, istMeiner, onSchliessen, onZuProfil }: {
   pin: Pin;
   istMeiner: boolean;
   onSchliessen: () => void;
-  onLoeschen: () => void;
-  onProfil?: () => void;
+  onZuProfil: () => void;
 }) {
   return (
-    <aside className="karte-panel karte-panel-detail" role="dialog">
-      <header className="karte-panel-kopf">
-        <h2>
-          <span
-            className="karte-panel-symbol"
-            style={{ background: pinArtFarbe(pin.art), color: 'white' }}
-          >{pinArtSymbol(pin.art)}</span>
-          {pin.titel}
-        </h2>
-        <button className="karte-panel-x" onClick={onSchliessen}>×</button>
-      </header>
-      <div className="karte-panel-koerper">
-        {pin.bild && (
-          <div className="karte-detail-bild">
-            <img src={pin.bild} alt="" />
-          </div>
-        )}
-        <p className="karte-meta-zeile">
-          <span className="karte-art-tag" style={{ background: pinArtFarbe(pin.art), color: 'white' }}>
-            {pinArtLabel(pin.art)}
-          </span>
-          <span>von {pin.autorName}</span>
-        </p>
-        {pin.datum && (
-          <p className="karte-detail-datum">{new Date(pin.datum).toLocaleString('de-DE', { dateStyle: 'long', timeStyle: 'short' })}</p>
-        )}
-        {pin.ortBeschreibung && (
-          <p className="karte-detail-ort">📍 {pin.ortBeschreibung}</p>
-        )}
-        {pin.preis && (
-          <p className="karte-detail-preis"><strong>{pin.preis}</strong></p>
-        )}
+    <aside className="karte-vorschau" role="dialog" aria-label={`Profil ${pin.titel}`}>
+      <button className="karte-vorschau-x" onClick={onSchliessen} aria-label="Schließen">×</button>
+      {pin.bild && (
+        <div className="karte-vorschau-bild">
+          <img src={pin.bild} alt="" />
+        </div>
+      )}
+      <div className="karte-vorschau-inhalt">
+        <h3 className="karte-vorschau-name">{pin.titel || pin.autorName}</h3>
         {pin.text && (
-          <div className="karte-detail-text">
-            <MarkdownText text={pin.text} />
-          </div>
+          <p className="karte-vorschau-kurz">{pin.text.length > 120 ? pin.text.slice(0, 120) + '…' : pin.text}</p>
         )}
         {pin.hashtags.length > 0 && (
-          <div className="karte-detail-hashtags">
-            {pin.hashtags.map(t => <span key={t} className="karte-hashtag">#{t}</span>)}
+          <div className="karte-vorschau-tags">
+            {pin.hashtags.slice(0, 4).map(t => <span key={t} className="karte-hashtag">#{t}</span>)}
           </div>
         )}
+        <button
+          type="button"
+          className="karte-vorschau-zumprofil"
+          onClick={onZuProfil}
+        >
+          {istMeiner ? 'Mein Profil bearbeiten →' : 'Zum Profil →'}
+        </button>
       </div>
-      <footer className="karte-panel-fuss">
-        {onProfil && (
-          <button className="karte-knopf-zweit" onClick={onProfil}>Mein Profil bearbeiten</button>
-        )}
-        {istMeiner && (
-          <button className="karte-knopf-loeschen" onClick={onLoeschen}>Pin löschen</button>
-        )}
-        <button className="karte-knopf-zweit" onClick={onSchliessen}>Schließen</button>
-      </footer>
     </aside>
   );
 }

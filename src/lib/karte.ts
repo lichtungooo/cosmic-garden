@@ -1,5 +1,8 @@
-// Karte — Pins als WoT-Items im persoenlichen/geteilten Doc.
-// Drei Pin-Typen, alle als type: "garten-pin" mit kind im data-Feld.
+// Karte — Pins als WoT-Items im persoenlichen Doc.
+// In der Vorstufe (Garten ohne Real Life Network) gibt es NUR den
+// 'gaertner'-Pin — das eigene Profil auf der Karte, damit andere
+// Gaertner sehen wo man ist. Gartenprojekte, Veranstaltungen,
+// Marktplatz-Pins sind Zukunftsmusik fuers Real Life Network.
 
 import { useCallback, useMemo } from 'react';
 import type { Item } from '@real-life-stack/data-interface';
@@ -13,7 +16,9 @@ import {
 
 export const PIN_TYPE = 'garten-pin';
 
-export type PinArt = 'gaertner' | 'gartenprojekt' | 'veranstaltung' | 'angebot';
+// Diskriminator-String bleibt ASCII, fuer Daten-Kompatibilitaet auch mit alten Items.
+// Alte Items mit anderen art-Werten werden als 'gaertner' interpretiert.
+export type PinArt = 'gaertner';
 
 export interface Pin {
   id: string;
@@ -30,39 +35,20 @@ export interface Pin {
   ortBeschreibung?: string;
   // optionales Bild als Data-URL
   bild?: string;
-  // veranstaltung-spezifisch
-  datum?: string;     // ISO
-  // angebot-spezifisch
-  preis?: string;
-  // gaertner-spezifisch — Verweis auf Profil-Item (falls vorhanden)
+  // Verweis auf Profil-Item (falls vorhanden)
   profilId?: string;
 }
 
-export function pinArtLabel(art: PinArt): string {
-  return {
-    gaertner:      'Profil',
-    gartenprojekt: 'Garten',
-    veranstaltung: 'Veranstaltung',
-    angebot:       'Marktplatz',
-  }[art];
+export function pinArtLabel(_art: PinArt = 'gaertner'): string {
+  return 'Gärtner';
 }
 
-export function pinArtFarbe(art: PinArt): string {
-  return {
-    gaertner:      '#4a8a3a', // accent-gruen
-    gartenprojekt: '#2c5a24', // accent-deep
-    veranstaltung: '#d4a542', // gold/bluete
-    angebot:       '#c0432f', // frucht
-  }[art];
+export function pinArtFarbe(_art: PinArt = 'gaertner'): string {
+  return '#5B8A4B';  // accent — Garten-Gruen aus der CI
 }
 
-export function pinArtSymbol(art: PinArt): string {
-  return {
-    gaertner:      '☘',
-    gartenprojekt: '⌂',
-    veranstaltung: '★',
-    angebot:       '⚇',
-  }[art];
+export function pinArtSymbol(_art: PinArt = 'gaertner'): string {
+  return '☘';
 }
 
 // === Mapping ===
@@ -72,7 +58,9 @@ function itemZuPin(item: Item): Pin {
   const erstellt = typeof d.erstellt === 'number' ? d.erstellt : Date.parse(item.createdAt) || Date.now();
   return {
     id: item.id,
-    art: (d.art as PinArt) ?? 'gaertner',
+    // Alte Items koennten andere art-Werte haben (gartenprojekt, veranstaltung, angebot)
+    // — wir interpretieren alles als 'gaertner', damit nichts verloren geht.
+    art: 'gaertner',
     titel: String(d.titel ?? ''),
     text: String(d.text ?? ''),
     lat: typeof d.lat === 'number' ? d.lat : 0,
@@ -83,8 +71,6 @@ function itemZuPin(item: Item): Pin {
     erstellt,
     ortBeschreibung: typeof d.ortBeschreibung === 'string' ? d.ortBeschreibung : undefined,
     bild: typeof d.bild === 'string' ? d.bild : undefined,
-    datum: typeof d.datum === 'string' ? d.datum : undefined,
-    preis: typeof d.preis === 'string' ? d.preis : undefined,
     profilId: typeof d.profilId === 'string' ? d.profilId : undefined,
   };
 }
@@ -127,8 +113,6 @@ export function usePinAktionen() {
       erstellt: Date.now(),
       ...(pin.ortBeschreibung && { ortBeschreibung: pin.ortBeschreibung }),
       ...(pin.bild && { bild: pin.bild }),
-      ...(pin.datum && { datum: pin.datum }),
-      ...(pin.preis && { preis: pin.preis }),
       ...(pin.profilId && { profilId: pin.profilId }),
     };
     return createItem({ type: PIN_TYPE, createdBy: meineId, data: daten });
@@ -149,8 +133,6 @@ export function usePinAktionen() {
     };
     if (next.ortBeschreibung) daten.ortBeschreibung = next.ortBeschreibung;
     if (next.bild) daten.bild = next.bild;
-    if (next.datum) daten.datum = next.datum;
-    if (next.preis) daten.preis = next.preis;
     if (next.profilId) daten.profilId = next.profilId;
     await updateItem(id, { data: daten });
   }, [updateItem]);
