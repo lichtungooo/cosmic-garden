@@ -209,9 +209,6 @@ export function App() {
             <Routes>
               <Route path="/" element={
                 <StartView
-                  onWerkzeug={(id) => gehZu(id === 'tagebuch' ? '/profil' : '/kalender', id === 'tagebuch')}
-                  onJahreskreis={() => navigate('/kalender')}
-                  onMaya={() => navigate('/kalender')}
                   onWelt={(weltId) => navigate(`/welt/${weltId}`)}
                   onTag={() => navigate('/kalender')}
                 />

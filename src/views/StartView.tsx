@@ -6,20 +6,11 @@ import { useNavigate } from 'react-router-dom';
 import { useStandort } from '../lib/standort';
 import { mondTag, thunTypFarbe, thunTypLabel, phaseLabel } from '../lib/moon';
 import {
-  pflanzenZumAuspflanzen,
-  pflanzenZurErnte,
-  pflanzenZurVorzucht,
-  arbeitenImMonat,
+  pflanzen as allePflanzen,
   type Pflanze,
-  type Gartenarbeit,
 } from '../lib/pflanzen';
 import { WELTEN, type WeltId } from '../lib/welten';
-import { useDetailNav, refAusId } from '../lib/detail-navigation';
-import {
-  heuteRelevanteEintraege,
-  type AstroKontext,
-} from '../lib/datenbank-suche';
-import type { Jahreszeit, Mondphase } from '../lib/datenbank';
+import { useDetailNav } from '../lib/detail-navigation';
 import type { MondPhase } from '../lib/moon';
 import { useWetter, findeWetterFuerDatum, klasse as wetterKlasse, klasseLabel as wetterKlasseLabel } from '../lib/wetter';
 import { WetterSymbol } from '../components/WetterSymbol';
@@ -110,14 +101,11 @@ function hinweisFuerTag(typ: string): TagestypHinweis {
 }
 
 interface Props {
-  onWerkzeug: (id: 'kalender' | 'tagebuch') => void;
-  onJahreskreis: () => void;
-  onMaya: () => void;
   onWelt: (id: WeltId) => void;
   onTag: () => void;
 }
 
-export function StartView({ onWerkzeug, onJahreskreis, onMaya, onWelt, onTag }: Props) {
+export function StartView({ onWelt, onTag }: Props) {
   const ort = useStandort();
   const nav = useDetailNav();
   const navigate = useNavigate();
@@ -146,38 +134,27 @@ export function StartView({ onWerkzeug, onJahreskreis, onMaya, onWelt, onTag }: 
   const wetterHeute = useMemo(() => findeWetterFuerDatum(wetterDaten, aktiverTag), [wetterDaten, tagKey]);
   const himmel = useMemo(() => tagesHimmel(aktiverTag, ort), [ort.lat, ort.lon, tagKey]);
 
-  const monat = aktiverTag.getMonth() + 1;
-  const tag = aktiverTag.getDate();
-
-  const auspflanzen = useMemo(() => pflanzenZumAuspflanzen(monat, tag).slice(0, 6), [monat, tag]);
-  const ernte = useMemo(() => pflanzenZurErnte(monat, tag).slice(0, 6), [monat, tag]);
-  const vorzucht = useMemo(() => pflanzenZurVorzucht(monat, tag).slice(0, 4), [monat, tag]);
-  const arbeiten = useMemo(() => arbeitenImMonat(monat).filter(a => a.thunEmpfehlung === mond.thunTyp).slice(0, 4), [monat, mond.thunTyp]);
-
-  const wissensEmpfehlung = useMemo(() => {
-    const kontext: AstroKontext = {
-      monat,
-      tagestyp: mond.thunTyp,
-      jahreszeit: jahreszeitFuer(monat),
-      mondphase: mondphaseFuerKontext(mond.phase),
-    };
-    return heuteRelevanteEintraege(kontext, 4)
-      .filter(t => t.eintrag.typ === 'wissen')
-      .slice(0, 3);
-  }, [monat, mond.thunTyp, mond.phase]);
+  // Drei Pflanzen-Portraits passend zum heutigen Tagestyp.
+  // Auswahl deterministisch nach Tag — wechselt taeglich, bleibt aber bei mehrfachem Render gleich.
+  const portraits = useMemo(() => {
+    const passend = allePflanzen.filter(p => p.thunTyp === mond.thunTyp);
+    if (passend.length === 0) return [];
+    // Tagesschluessel als Seed fuer pseudo-zufaellige Auswahl
+    const seed = aktiverTag.getFullYear() * 1000 + aktiverTag.getMonth() * 50 + aktiverTag.getDate();
+    const indices = new Set<number>();
+    let i = 0;
+    while (indices.size < Math.min(3, passend.length) && i < 100) {
+      indices.add((seed + i * 17) % passend.length);
+      i++;
+    }
+    return Array.from(indices).map(idx => passend[idx]);
+  }, [mond.thunTyp, tagKey]);
 
   const tagestypFarbe = thunTypFarbe(mond.thunTyp);
   const tagestypName = thunTypLabel(mond.thunTyp);
 
   function oeffnePflanze(p: Pflanze) {
     nav.oeffne({ kind: 'pflanze', id: p.id });
-  }
-  function oeffneArbeit(a: Gartenarbeit) {
-    nav.oeffne({ kind: 'arbeit', id: a.id });
-  }
-  function oeffneWissen(id: string) {
-    const ref = refAusId(id);
-    if (ref) nav.oeffne(ref);
   }
 
   const wetterKl = wetterHeute ? wetterKlasse(wetterHeute.wettercode) : null;
@@ -290,88 +267,22 @@ export function StartView({ onWerkzeug, onJahreskreis, onMaya, onWelt, onTag }: 
         </div>
       </section>
 
-      {(auspflanzen.length > 0 || ernte.length > 0 || vorzucht.length > 0 || arbeiten.length > 0) && (
-        <section className="start-saison">
-          <h2 className="start-section-titel">Diese Tage besonders</h2>
-          <div className="start-saison-grid">
-            {auspflanzen.length > 0 && (
-              <div className="start-saison-block">
-                <h3>Jetzt aussäen / auspflanzen</h3>
-                <ul className="start-saison-liste">
-                  {auspflanzen.map(p => (
-                    <li key={p.id}>
-                      <button onClick={() => oeffnePflanze(p)}>
-                        <span className="start-saison-name">{p.name}</span>
-                        <span className="start-saison-sub">{p.familie}</span>
-                      </button>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
-            {ernte.length > 0 && (
-              <div className="start-saison-block">
-                <h3>Jetzt ernten</h3>
-                <ul className="start-saison-liste">
-                  {ernte.map(p => (
-                    <li key={p.id}>
-                      <button onClick={() => oeffnePflanze(p)}>
-                        <span className="start-saison-name">{p.name}</span>
-                        <span className="start-saison-sub">{p.familie}</span>
-                      </button>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
-            {vorzucht.length > 0 && (
-              <div className="start-saison-block">
-                <h3>Vorzucht im Haus</h3>
-                <ul className="start-saison-liste">
-                  {vorzucht.map(p => (
-                    <li key={p.id}>
-                      <button onClick={() => oeffnePflanze(p)}>
-                        <span className="start-saison-name">{p.name}</span>
-                        <span className="start-saison-sub">{p.familie}</span>
-                      </button>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
-            {arbeiten.length > 0 && (
-              <div className="start-saison-block">
-                <h3>Heute passende Arbeiten</h3>
-                <ul className="start-saison-liste">
-                  {arbeiten.map(a => (
-                    <li key={a.id}>
-                      <button onClick={() => oeffneArbeit(a)}>
-                        <span className="start-saison-name">{a.name}</span>
-                        <span className="start-saison-sub">{a.kategorie}</span>
-                      </button>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
-          </div>
-        </section>
-      )}
-
-      {wissensEmpfehlung.length > 0 && (
-        <section className="start-wissen">
-          <h2 className="start-section-titel">Heute lesenswert</h2>
-          <div className="start-wissen-grid">
-            {wissensEmpfehlung.map(t => (
-              <button key={t.eintrag.id} className="start-wissen-karte" onClick={() => oeffneWissen(t.eintrag.id)}>
-                <span className="start-wissen-bildplatz">
-                  {t.eintrag.symbol && <span className="zodiak-glyph">{t.eintrag.symbol}</span>}
-                </span>
-                <div className="start-wissen-text">
-                  <h3>{t.eintrag.titel}</h3>
-                  {t.eintrag.untertitel && <p className="start-wissen-untertitel">{t.eintrag.untertitel}</p>}
-                  <p className="start-wissen-kurz">{t.eintrag.kurz}</p>
-                </div>
+      {portraits.length > 0 && (
+        <section className="start-portraits">
+          <h2 className="start-section-titel">Heute im Portrait — drei {tagestypName}-Pflanzen</h2>
+          <div className="start-portraits-grid">
+            {portraits.map(p => (
+              <button
+                key={p.id}
+                className="start-portrait-karte"
+                onClick={() => oeffnePflanze(p)}
+                style={{ ['--karte-farbe' as string]: tagestypFarbe }}
+              >
+                <span className="start-portrait-name">{p.name}</span>
+                <span className="start-portrait-lateinisch">{p.lateinisch}</span>
+                <span className="start-portrait-familie">{p.familie}</span>
+                {p.tipps && <p className="start-portrait-text">{p.tipps}</p>}
+                <span className="start-portrait-link">Zum Steckbrief →</span>
               </button>
             ))}
           </div>
@@ -396,20 +307,6 @@ export function StartView({ onWerkzeug, onJahreskreis, onMaya, onWelt, onTag }: 
         </div>
       </section>
 
-      <section className="start-ideen-bar">
-        <button
-          type="button"
-          className="start-ideen-knopf"
-          onClick={() => navigate('/wunschliste/app')}
-        >
-          <span className="start-ideen-symbol">💡</span>
-          <span className="start-ideen-text">
-            <strong>Ideen für die Seite?</strong>
-            <span>Was würde dir den Garten leichter machen? Trag deine Idee ein.</span>
-          </span>
-          <span className="start-ideen-pfeil">→</span>
-        </button>
-      </section>
     </div>
   );
 }

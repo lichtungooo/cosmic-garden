@@ -4594,18 +4594,23 @@ button { font-family: inherit; cursor: pointer; }
 .start-hero {
   text-align: center;
   padding: 1rem 0 1rem;
-  margin-bottom: 1.25rem;
+  margin-bottom: 0;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .start-hero-logo {
   display: block;
-  width: 84px;
-  height: 84px;
-  margin: 0 auto .5rem;
+  width: 140px;
+  height: 140px;
+  margin: 0 auto 1rem;
 }
 .start-hero-eyebrow {
-  font-size: .78rem;
+  font-size: .9rem;
   font-weight: 500;
-  letter-spacing: .18em;
+  letter-spacing: .22em;
   color: var(--ink-mute);
   margin: 0;
   text-transform: uppercase;
@@ -4622,7 +4627,12 @@ button { font-family: inherit; cursor: pointer; }
 
 /* === Heute-Karte === */
 .start-heute {
-  margin-bottom: 3rem;
+  margin-bottom: 0;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem 0;
 }
 .start-heute-grid {
   display: grid;
@@ -4816,9 +4826,13 @@ button { font-family: inherit; cursor: pointer; }
 
 /* === Werkzeuge === */
 .start-werkzeuge {
-  margin: 0 0 3rem;
-  padding-top: 2rem;
+  margin: 0;
+  min-height: 90vh;
+  padding: 3rem 0;
   border-top: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .start-werkzeuge-grid {
   display: grid;
@@ -4864,130 +4878,108 @@ button { font-family: inherit; cursor: pointer; }
   margin: 0;
 }
 
-/* === Saison === */
-.start-saison {
-  margin: 0 0 3rem;
-  padding-top: 2rem;
-  border-top: 1px solid var(--line);
-}
-.start-saison-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  gap: 1rem;
-}
-.start-saison-block {
-  background: var(--paper);
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  padding: 1rem 1.1rem;
-}
-.start-saison-block h3 {
-  font-family: 'Spectral', Georgia, serif;
-  font-size: 1rem;
-  color: var(--accent);
-  margin: 0 0 .55rem;
-  font-weight: 500;
-}
-.start-saison-liste {
-  list-style: none;
+/* === Portraits — drei Pflanzen passend zum Tagestyp === */
+.start-portraits {
   margin: 0;
-  padding: 0;
-}
-.start-saison-liste li + li {
-  border-top: 1px solid color-mix(in srgb, var(--line) 60%, transparent);
-}
-.start-saison-liste button {
-  background: transparent;
-  border: none;
-  padding: .4rem 0;
-  width: 100%;
-  text-align: left;
-  font-family: inherit;
-  cursor: pointer;
+  min-height: 90vh;
+  padding: 3rem 0;
+  border-top: 1px solid var(--line);
   display: flex;
   flex-direction: column;
-  gap: .1rem;
-  transition: color .12s ease;
+  justify-content: center;
 }
-.start-saison-liste button:hover {
-  color: var(--accent);
-}
-.start-saison-name {
-  font-size: .9rem;
-  color: var(--ink);
-}
-.start-saison-sub {
-  font-size: .73rem;
-  color: var(--ink-mute);
-  font-style: italic;
-}
-
-/* === Wissen-Empfehlungen === */
-.start-wissen {
-  margin: 0 0 3rem;
-  padding-top: 2rem;
-  border-top: 1px solid var(--line);
-}
-.start-wissen-grid {
+.start-portraits-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
 }
-.start-wissen-karte {
+.start-portrait-karte {
   background: var(--paper);
   border: 1px solid var(--line);
+  border-top: 3px solid var(--karte-farbe, var(--accent));
   border-radius: var(--radius);
+  padding: 1.5rem 1.4rem;
   text-align: left;
   font-family: inherit;
   cursor: pointer;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
+  gap: .35rem;
   transition: all .15s ease;
   color: var(--ink);
-  padding: 0;
 }
-.start-wissen-karte:hover {
+.start-portrait-karte:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(0,0,0,.08);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, .08);
 }
-.start-wissen-bildplatz {
-  height: 120px;
-  background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 12%, var(--bg-soft)), color-mix(in srgb, var(--kosmos) 8%, var(--bg-soft)));
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 3rem;
-  color: var(--accent);
-}
-.start-wissen-text {
-  padding: 1rem 1.1rem;
-}
-.start-wissen-text h3 {
+.start-portrait-name {
   font-family: 'Spectral', Georgia, serif;
-  font-size: 1.1rem;
-  margin: 0 0 .25rem;
+  font-size: 1.6rem;
+  font-weight: 500;
   color: var(--kosmos);
+  line-height: 1.1;
+  letter-spacing: -.005em;
+}
+.start-portrait-lateinisch {
+  font-style: italic;
+  font-size: .85rem;
+  color: var(--ink-mute);
+  font-family: 'Spectral', Georgia, serif;
+}
+.start-portrait-familie {
+  font-size: .72rem;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  color: var(--karte-farbe, var(--accent));
+  font-weight: 500;
+  margin-top: .35rem;
+}
+.start-portrait-text {
+  margin: .65rem 0 0;
+  font-size: .92rem;
+  line-height: 1.55;
+  color: var(--ink);
+  font-family: 'Spectral', Georgia, serif;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.start-portrait-link {
+  margin-top: auto;
+  padding-top: .85rem;
+  color: var(--karte-farbe, var(--accent));
+  font-size: .88rem;
   font-weight: 500;
 }
-.start-wissen-untertitel {
-  font-size: .82rem;
-  color: var(--ink-mute);
-  font-style: italic;
-  margin: 0 0 .55rem;
+
+@media (max-width: 900px) {
+  .start-portraits-grid { grid-template-columns: 1fr; }
 }
-.start-wissen-kurz {
-  font-size: .88rem;
-  color: var(--ink);
-  line-height: 1.5;
-  margin: 0;
+
+/* Mobile: keine 100vh-Sections — natuerliches Scrollen */
+@media (max-width: 720px) {
+  .start-hero,
+  .start-heute,
+  .start-werkzeuge,
+  .start-portraits,
+  .start-welten {
+    min-height: 0;
+    padding: 1.5rem 0;
+  }
+  .start-hero { padding: 2rem 0 1.5rem; min-height: 0; }
+  .start-hero-logo { width: 96px; height: 96px; }
 }
 
 /* === Welten === */
 .start-welten {
-  margin: 0 0 2rem;
-  padding-top: 2rem;
+  margin: 0;
+  min-height: 90vh;
+  padding: 3rem 0;
   border-top: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .start-welten-grid {
   display: grid;
