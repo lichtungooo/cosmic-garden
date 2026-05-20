@@ -1,7 +1,7 @@
 // Startseite — Magazin-Landingpage mit Hero, Heute-Karte, Werkzeugen, Saison-Empfehlungen, Welten.
 // Klick fuehrt jeweils direkt in die Action.
 
-import { useMemo } from 'react';
+import { useMemo, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useStandort } from '../lib/standort';
 import { mondTag, thunTypFarbe, thunTypLabel, phaseLabel } from '../lib/moon';
@@ -116,16 +116,35 @@ interface Props {
 
 export function StartView({ onWerkzeug, onJahreskreis, onMaya, onWelt, onTag }: Props) {
   const ort = useStandort();
-  const heute = new Date();
   const nav = useDetailNav();
   const navigate = useNavigate();
-  const mond = useMemo(() => mondTag(heute), []);
-  const wetterDaten = useWetter(ort);
-  const wetterHeute = useMemo(() => findeWetterFuerDatum(wetterDaten, heute), [wetterDaten]);
-  const himmel = useMemo(() => tagesHimmel(heute, ort), [ort.lat, ort.lon]);
+  const [aktiverTag, setAktiverTag] = useState(() => new Date());
+  const tagKey = `${aktiverTag.getFullYear()}-${aktiverTag.getMonth()}-${aktiverTag.getDate()}`;
+  const istHeute = useMemo(() => {
+    const j = new Date();
+    return j.getFullYear() === aktiverTag.getFullYear()
+      && j.getMonth() === aktiverTag.getMonth()
+      && j.getDate() === aktiverTag.getDate();
+  }, [tagKey]);
 
-  const monat = heute.getMonth() + 1;
-  const tag = heute.getDate();
+  function einenTagWeiter(richtung: -1 | 1) {
+    const naechster = new Date(aktiverTag);
+    naechster.setDate(naechster.getDate() + richtung);
+    setAktiverTag(naechster);
+  }
+  function zuHeute() {
+    setAktiverTag(new Date());
+  }
+
+  // Alle abgeleiteten Werte aus dem aktiven Tag berechnet — gleiche Logik
+  // wie KalenderView/TagView, damit Startseite und Kalender immer im Gleichlauf sind.
+  const mond = useMemo(() => mondTag(aktiverTag), [tagKey]);
+  const wetterDaten = useWetter(ort);
+  const wetterHeute = useMemo(() => findeWetterFuerDatum(wetterDaten, aktiverTag), [wetterDaten, tagKey]);
+  const himmel = useMemo(() => tagesHimmel(aktiverTag, ort), [ort.lat, ort.lon, tagKey]);
+
+  const monat = aktiverTag.getMonth() + 1;
+  const tag = aktiverTag.getDate();
 
   const auspflanzen = useMemo(() => pflanzenZumAuspflanzen(monat, tag).slice(0, 6), [monat, tag]);
   const ernte = useMemo(() => pflanzenZurErnte(monat, tag).slice(0, 6), [monat, tag]);
@@ -169,13 +188,35 @@ export function StartView({ onWerkzeug, onJahreskreis, onMaya, onWelt, onTag }: 
 
       <section className="start-heute">
         <div className="start-heute-grid">
-          <button className="start-heute-card start-heute-haupt" onClick={onTag} style={{ ['--karte-farbe' as string]: tagestypFarbe }}>
+          <div className="start-heute-card start-heute-haupt" style={{ ['--karte-farbe' as string]: tagestypFarbe }}>
             <div className="start-heute-card-kopf">
-              <span className="start-heute-label">Heute am Himmel</span>
+              <span className="start-heute-label">{istHeute ? 'Heute am Himmel' : 'Am Himmel'}</span>
               <span className="start-heute-datumzeile">
+                <button
+                  type="button"
+                  className="start-heute-pfeil"
+                  onClick={() => einenTagWeiter(-1)}
+                  aria-label="Einen Tag zurück"
+                  title="Einen Tag zurück"
+                >‹</button>
                 <span className="start-heute-datum">
-                  {WT_LANG[heute.getDay()]}, {heute.getDate()}. {MONATE_LANG[heute.getMonth()]} {heute.getFullYear()}
+                  {WT_LANG[aktiverTag.getDay()]}, {aktiverTag.getDate()}. {MONATE_LANG[aktiverTag.getMonth()]} {aktiverTag.getFullYear()}
                 </span>
+                <button
+                  type="button"
+                  className="start-heute-pfeil"
+                  onClick={() => einenTagWeiter(1)}
+                  aria-label="Einen Tag weiter"
+                  title="Einen Tag weiter"
+                >›</button>
+                {!istHeute && (
+                  <button
+                    type="button"
+                    className="start-heute-heute"
+                    onClick={zuHeute}
+                    title="Zurück zu heute"
+                  >Heute</button>
+                )}
                 <span className="start-heute-trenner" aria-hidden="true" />
                 <span className="start-heute-ort">{ort.name}</span>
               </span>
@@ -192,8 +233,12 @@ export function StartView({ onWerkzeug, onJahreskreis, onMaya, onWelt, onTag }: 
                 ))}
               </ul>
             )}
-            <span className="start-heute-link">Zur Tag-Ansicht →</span>
-          </button>
+            <button
+              type="button"
+              className="start-heute-link start-heute-link-knopf"
+              onClick={onTag}
+            >Zur Tag-Ansicht →</button>
+          </div>
           <div className="start-heute-neben">
             <div className="start-heute-kachel">
               <span className="start-heute-kachel-label">Mond</span>
