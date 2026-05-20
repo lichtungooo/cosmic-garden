@@ -4982,15 +4982,21 @@ button { font-family: inherit; cursor: pointer; }
 }
 .start-portrait-text {
   margin: .65rem 0 0;
+  font-family: 'Spectral', Georgia, serif;
+}
+.start-portrait-text p {
+  margin: 0 0 .35rem;
   font-size: .92rem;
   line-height: 1.55;
   color: var(--ink);
-  font-family: 'Spectral', Georgia, serif;
   display: -webkit-box;
   -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+.start-portrait-text p:last-child { margin-bottom: 0; }
+.start-portrait-text strong { font-weight: 600; color: var(--ink); }
+.start-portrait-text em { font-style: italic; color: var(--ink-mute); }
 .start-portrait-link {
   margin-top: auto;
   padding-top: .85rem;

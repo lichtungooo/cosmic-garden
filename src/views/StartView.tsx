@@ -15,6 +15,7 @@ import type { MondPhase } from '../lib/moon';
 import { useWetter, findeWetterFuerDatum, klasse as wetterKlasse, klasseLabel as wetterKlasseLabel } from '../lib/wetter';
 import { WetterSymbol } from '../components/WetterSymbol';
 import { tagesHimmel, formatZeit } from '../lib/himmel';
+import { MarkdownText } from '../components/MarkdownText';
 
 const WT_LANG = ['Sonntag', 'Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag'];
 const MONATE_LANG = ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember'];
@@ -280,7 +281,7 @@ export function StartView({ onWelt, onTag }: Props) {
                 <span className="start-portrait-name">{p.name}</span>
                 <span className="start-portrait-lateinisch">{p.lateinisch}</span>
                 <span className="start-portrait-familie">{p.familie}</span>
-                {p.tipps && <p className="start-portrait-text">{p.tipps}</p>}
+                {p.tipps && <MarkdownText text={p.tipps} className="start-portrait-text" />}
                 <span className="start-portrait-link">Zum Steckbrief →</span>
               </button>
             ))}
