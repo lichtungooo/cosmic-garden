@@ -15,6 +15,7 @@ import { GlobaleSuche } from './components/GlobaleSuche';
 import { ThemenMega } from './components/ThemenMega';
 import { NutzerMenue } from './components/NutzerMenue';
 import { FreundeskreisModal } from './components/FreundeskreisModal';
+import { ProfilModal } from './components/ProfilModal';
 import { PrivacyBanner } from './components/PrivacyBanner';
 import { StandortContext, ladeStandort, speicherStandort, type Ort } from './lib/standort';
 import { WissenContext } from './lib/wissen-context';
@@ -71,6 +72,7 @@ export function App() {
   const [verifyOffen, setVerifyOffen] = useState(false);
   const [anmeldungOffen, setAnmeldungOffen] = useState(false);
   const [freundeskreisTab, setFreundeskreisTab] = useState<'freundeskreis' | 'recht' | 'datenschutz' | null>(null);
+  const [profilModalOffen, setProfilModalOffen] = useState(false);
 
   useEffect(() => { speicherStandort(ort); }, [ort]);
 
@@ -180,16 +182,6 @@ export function App() {
           </div>
 
           <div className="app-header-rechts">
-            <button
-              className="app-einstellungen"
-              onClick={() => alert('Einstellungen folgen — hier wird man Karte, Marktplatz und Sichtbarkeit global einstellen können.')}
-              aria-label="Einstellungen"
-              title="Einstellungen"
-            >
-              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
-                <path d="M19.43 12.98c.04-.32.07-.65.07-.98s-.03-.66-.07-.98l2.11-1.65a.5.5 0 0 0 .12-.64l-2-3.46a.5.5 0 0 0-.61-.22l-2.49 1a7.03 7.03 0 0 0-1.69-.98l-.38-2.65A.5.5 0 0 0 14 2h-4a.5.5 0 0 0-.49.42l-.38 2.65c-.6.25-1.17.58-1.69.98l-2.49-1a.5.5 0 0 0-.61.22l-2 3.46a.5.5 0 0 0 .12.64l2.11 1.65c-.04.32-.07.65-.07.98s.03.66.07.98l-2.11 1.65a.5.5 0 0 0-.12.64l2 3.46c.14.24.43.34.69.22l2.49-1c.52.4 1.09.73 1.69.98l.38 2.65c.05.24.25.42.49.42h4c.24 0 .44-.18.49-.42l.38-2.65c.6-.25 1.17-.58 1.69-.98l2.49 1c.26.12.55.02.69-.22l2-3.46a.5.5 0 0 0-.12-.64l-2.11-1.65zM12 15.5A3.5 3.5 0 1 1 15.5 12 3.5 3.5 0 0 1 12 15.5z" fill="currentColor"/>
-              </svg>
-            </button>
             <NutzerMenue
               istAngemeldet={istAngemeldet}
               onAnmelden={() => setAnmeldungOffen(true)}
@@ -220,7 +212,10 @@ export function App() {
                 />
               } />
               <Route path="/karte" element={
-                <KarteView onProfil={() => gehZu('/profil', true)} />
+                <KarteView onProfil={() => {
+                  if (!istAngemeldet) { setAnmeldungOffen(true); return; }
+                  setProfilModalOffen(true);
+                }} />
               } />
               <Route path="/kalender" element={
                 <KalenderView
@@ -319,6 +314,15 @@ export function App() {
           offen={freundeskreisTab !== null}
           onSchliessen={() => setFreundeskreisTab(null)}
           startTab={freundeskreisTab ?? 'freundeskreis'}
+        />
+
+        <ProfilModal
+          offen={profilModalOffen}
+          onSchliessen={() => setProfilModalOffen(false)}
+          onBearbeiten={() => navigate('/profil/bearbeiten')}
+          onTagebuch={() => navigate('/tagebuch')}
+          onVerbinden={() => setVerifyOffen(true)}
+          onKontakte={() => setKontakteOffen(true)}
         />
 
         <PrivacyBanner onMehrErfahren={() => setFreundeskreisTab('datenschutz')} />

@@ -9130,8 +9130,8 @@ body:has(.privacy-banner) .app-fuss {
 
 .karte-vorschau {
   position: absolute;
-  /* left/top kommen inline aus der Pin-Position; transform zentriert + hebt ueber den Pin */
-  transform: translate(-50%, calc(-100% - 36px));
+  /* left/top kommen inline aus der Pin-Position; transform zentriert + hebt deutlich ueber den Pin */
+  transform: translate(-50%, calc(-100% - 56px));
   z-index: 1100;
   width: 260px;
   background: var(--paper);
@@ -9160,8 +9160,8 @@ body:has(.privacy-banner) .app-fuss {
   border-top-right-radius: var(--radius);
 }
 @keyframes vorschau-in {
-  from { opacity: 0; transform: translate(-50%, calc(-100% - 28px)); }
-  to   { opacity: 1; transform: translate(-50%, calc(-100% - 36px)); }
+  from { opacity: 0; transform: translate(-50%, calc(-100% - 48px)); }
+  to   { opacity: 1; transform: translate(-50%, calc(-100% - 56px)); }
 }
 .karte-vorschau-x {
   position: absolute;
@@ -9753,4 +9753,88 @@ body:has(.privacy-banner) .app-fuss {
   }
   .profil-lese-avatar { width: 80px; height: 80px; }
   .profil-lese-name { font-size: 1.45rem; }
+}
+
+/* ====== PROFIL-MODAL (rechts, ueber der Karte) ====== */
+.profil-modal {
+  position: fixed;
+  top: calc(var(--header-hoehe, 56px) + 1rem);
+  right: 1.25rem;
+  bottom: 1.25rem;
+  width: min(420px, calc(100vw - 2.5rem));
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: 0 18px 48px rgba(0, 0, 0, .28);
+  z-index: 9000;
+  display: flex;
+  flex-direction: column;
+  animation: profil-modal-in .18s ease;
+}
+@keyframes profil-modal-in {
+  from { opacity: 0; transform: translateX(12px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+.profil-modal-x {
+  position: absolute;
+  top: .5rem;
+  right: .65rem;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, .9);
+  font-size: 1.3rem;
+  line-height: 1;
+  color: var(--ink);
+  cursor: pointer;
+  z-index: 5;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, .12);
+}
+.profil-modal-x:hover {
+  background: white;
+  color: var(--accent);
+}
+.profil-modal-koerper {
+  overflow-y: auto;
+  flex: 1;
+  min-height: 0;
+}
+.profil-modal-koerper .profil-lese {
+  padding: 1.25rem 1.25rem 1.75rem;
+  max-width: none;
+}
+.profil-modal-koerper .profil-lese-name {
+  font-size: 1.4rem;
+}
+.profil-modal-koerper .profil-lese-avatar {
+  width: 88px;
+  height: 88px;
+}
+.profil-modal-koerper .profil-lese-avatar-block {
+  width: 88px;
+}
+.profil-modal-koerper .profil-lese-kopf {
+  gap: .85rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+@media (max-width: 720px) {
+  .profil-modal {
+    top: auto;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100vw;
+    max-height: 88vh;
+    border-radius: var(--radius) var(--radius) 0 0;
+  }
+  @keyframes profil-modal-in {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
 }
