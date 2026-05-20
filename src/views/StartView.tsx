@@ -162,6 +162,16 @@ export function StartView({ onWelt, onTag }: Props) {
   return (
     <div className="start-view">
       <header className="start-hero">
+        <video
+          className="start-hero-video"
+          autoPlay
+          loop
+          muted
+          playsInline
+          poster="/hero.jpg"
+        >
+          <source src="/hero.mp4" type="video/mp4" />
+        </video>
         <img src="/logo.svg" alt="Mein kosmischer Garten" className="start-hero-logo" />
         <p className="start-hero-eyebrow">Sonne, Mond und Sterne</p>
       </header>
