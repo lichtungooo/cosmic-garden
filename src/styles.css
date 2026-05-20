@@ -37,19 +37,23 @@
 
 * { box-sizing: border-box; }
 html {
-  height: 100vh;
-  overflow: hidden;
+  height: 100vh !important;
+  max-height: 100vh !important;
+  overflow: hidden !important;
 }
 body {
-  margin: 0;
-  padding: 0;
-  height: 100vh;
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 100vh !important;
+  max-height: 100vh !important;
+  min-height: 0 !important;
   background: var(--bg);
-  overflow: hidden;  /* NUR .app-main scrollt, keine doppelten Scrollbars */
+  overflow: hidden !important;  /* NUR .app-main scrollt, keine doppelten Scrollbars */
 }
 #root {
-  height: 100vh;
-  overflow: hidden;
+  height: 100vh !important;
+  max-height: 100vh !important;
+  overflow: hidden !important;
 }
 
 /* Magazin-Titel-Schrift fuer Headlines */
