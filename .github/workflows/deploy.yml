@@ -23,20 +23,23 @@ jobs:
         with:
           path: garten
 
-      # Real-Life-Stack: Timos Fork (stabil mit web-of-trust verzahnt)
+      # Real-Life-Stack und Web-of-Trust auf feste Stände, die zueinander passen.
+      # Der Fork-Stand (master, 10.04.2026) braucht web-of-trust vom 08.04.2026.
+      # Ab Mai hat web-of-trust seine Pakete umgebaut (WotIdentity und
+      # VerificationHelper raus, Unterpfade wie @web_of_trust/core/services).
+      # Ein neuer Stand kommt nur zusammen mit einem lokalen Bau.
       - name: Checkout real-life-stack (Timo-Fork)
         uses: actions/checkout@v4
         with:
           repository: lichtungooo/real-life-stack
-          ref: master
+          ref: 11941dcfcbf4dff28f17d3ecf2f9d30d8a653c9b
           path: real-life-stack
 
-      # Web-of-Trust (Antons Identitaets-Stack) — main-HEAD ist stabil
       - name: Checkout web-of-trust
         uses: actions/checkout@v4
         with:
-          repository: antontranelis/web-of-trust
-          ref: main
+          repository: real-life-org/web-of-trust
+          ref: 04aa16c83dae63c4c56e50d8743fbc222b9a2c28
           path: web-of-trust
 
       - name: Set up Docker Buildx
