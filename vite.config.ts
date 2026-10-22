@@ -8,6 +8,7 @@ const wot = path.resolve(__dirname, '../web-of-trust/packages');
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
+  cacheDir: 'node_modules/.vite-neu',
   resolve: {
     alias: [
       { find: '@real-life-stack/data-interface/demo-data', replacement: path.join(rls, 'data-interface/src/demo-data.ts') },
