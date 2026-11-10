@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "typecheck": "tsc -b",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "wissen": "node scripts/wissen.mjs",
+    "wissen:pruefen": "node scripts/wissen.mjs --pruefen"
   },
   "dependencies": {
     "@noble/ed25519": "^3.1.0",
